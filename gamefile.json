@@ -1,0 +1,422 @@
+{
+  "name": "Guild Rush (proto)",
+  "cardRotation": 90,
+  "customHelp": "Proto du TCG « Course aux Trésors » (cartes de test).\nZones : Expédition (board), Camp (Gardien, blessées), Reliques, Réserve de faction.\nAu centre (partagé) : Salles 1 à 4, Boss, deck et cimetière des monstres.\nCompteur = Trésors. Énergie : 3 cartes au départ, +1 au début de chaque tour ; incline une Énergie pour payer 1.\nJeton Initiative = premier joueur du tour. Jetons Dégât à poser sur les cartes.",
+  "deckBuilding": {
+    "mainFilters": [
+      "type",
+      "cost"
+    ],
+    "formats": [
+      {
+        "title": "Proto (cartes de test)",
+        "gameplay": "Standard",
+        "customCategories": [
+          "Gardien",
+          "Relique"
+        ],
+        "deckRuleset": "Proto",
+        "legalityCode": "PROTO"
+      }
+    ],
+    "deckRulesets": {
+      "Proto": {
+        "checkCardLegality": true,
+        "categories": [
+          {
+            "category": "Gardien",
+            "min": 1,
+            "max": 1
+          },
+          {
+            "category": "Relique",
+            "min": 0,
+            "max": 3
+          }
+        ]
+      }
+    }
+  },
+  "gameplay": {
+    "Standard": {
+      "defaultNotes": "Compteur = Trésors\nÉnergie = cartes Énergie (inclinées = dépensées)",
+      "countersStartingValues": [
+        0
+      ],
+      "mulligan": {
+        "startingHandSize": 5
+      },
+      "newTurn": {
+        "drawOnStart": false,
+        "drawPerTurn": 1,
+        "firstPlayerTokenName": "Initiative"
+      },
+      "tokens": [
+        {
+          "name": "Initiative",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/initiative.png",
+          "isUnique": true
+        }
+      ],
+      "draggableTokens": [
+        {
+          "id": "Degat",
+          "name": "Dégât",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/degat.png"
+        },
+        {
+          "id": "Baril",
+          "name": "Baril",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/baril.png"
+        }
+      ],
+      "beforeGameStart": {
+        "chooseAnotherStartingPlayer": true,
+        "initialBoardSetup": {
+          "0": [
+            {
+              "createCardId": "energie",
+              "count": 3,
+              "destination": "Energie"
+            },
+            {
+              "createCardId": "energie",
+              "count": 20,
+              "destination": "PiocheEnergie"
+            },
+            {
+              "createCardId": "boss-test",
+              "count": 1,
+              "destination": "Boss",
+              "overrideState": {
+                "isHidden": "no"
+              }
+            },
+            {
+              "createCardId": "monstre-1",
+              "count": 3,
+              "destination": "Monstres"
+            },
+            {
+              "createCardId": "monstre-2",
+              "count": 3,
+              "destination": "Monstres"
+            },
+            {
+              "createCardId": "monstre-3",
+              "count": 3,
+              "destination": "Monstres"
+            },
+            {
+              "createCardId": "monstre-4",
+              "count": 3,
+              "destination": "Monstres"
+            }
+          ],
+          "1": [
+            {
+              "createCardId": "energie",
+              "count": 3,
+              "destination": "Energie"
+            },
+            {
+              "createCardId": "energie",
+              "count": 20,
+              "destination": "PiocheEnergie"
+            }
+          ]
+        }
+      },
+      "sections": {
+        "layout": {
+          "direction": "column",
+          "content": [
+            {
+              "direction": "row",
+              "content": [
+                {
+                  "section": "Expedition",
+                  "style": {
+                    "width": "80%"
+                  }
+                },
+                {
+                  "section": "Gardien",
+                  "style": {
+                    "width": "20%"
+                  }
+                }
+              ]
+            },
+            {
+              "direction": "row",
+              "content": [
+                {
+                  "section": "Energie",
+                  "style": {
+                    "width": "30%"
+                  }
+                },
+                {
+                  "section": "Camp",
+                  "style": {
+                    "width": "22%"
+                  }
+                },
+                {
+                  "section": "Reliques",
+                  "style": {
+                    "width": "20%"
+                  }
+                },
+                {
+                  "section": "Relique",
+                  "style": {
+                    "width": "9%"
+                  }
+                },
+                {
+                  "section": "PiocheEnergie",
+                  "style": {
+                    "width": "7%"
+                  }
+                },
+                {
+                  "section": "Reserve",
+                  "style": {
+                    "width": "12%"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "sharedZone": {
+          "height": 24,
+          "layout": {
+            "direction": "row",
+            "content": [
+              {
+                "section": "Salle1"
+              },
+              {
+                "section": "Salle2"
+              },
+              {
+                "section": "Salle3"
+              },
+              {
+                "section": "Salle4"
+              },
+              {
+                "section": "Boss",
+                "style": {
+                  "width": "11%"
+                }
+              },
+              {
+                "section": "Monstres",
+                "style": {
+                  "width": "11%"
+                }
+              },
+              {
+                "section": "CimetiereMonstres",
+                "style": {
+                  "width": "11%"
+                }
+              },
+              {
+                "section": "Donjon",
+                "style": {
+                  "width": "12%"
+                }
+              }
+            ]
+          }
+        },
+        "sectionsDict": {
+          "Expedition": {
+            "isHidden": "no",
+            "height": 17,
+            "alignment": "START",
+            "displayedTitle": "Expédition",
+            "logWhenPlayed": true
+          },
+          "Camp": {
+            "isHidden": "no",
+            "height": 13,
+            "alignment": "START",
+            "displayedTitle": "Camp (blessées)",
+            "logWhenPlayed": true
+          },
+          "Reliques": {
+            "isHidden": "no",
+            "height": 13,
+            "alignment": "START",
+            "displayedTitle": "Reliques",
+            "logWhenPlayed": true
+          },
+          "Reserve": {
+            "isHidden": "yes",
+            "height": 13,
+            "alignment": "DECK",
+            "displayedTitle": "Réserve de faction"
+          },
+          "Salle1": {
+            "isHidden": "no",
+            "height": 22,
+            "alignment": "CENTER",
+            "displayedTitle": "Salle 1",
+            "logWhenPlayed": true
+          },
+          "Salle2": {
+            "isHidden": "no",
+            "height": 22,
+            "alignment": "CENTER",
+            "displayedTitle": "Salle 2",
+            "logWhenPlayed": true
+          },
+          "Salle3": {
+            "isHidden": "no",
+            "height": 22,
+            "alignment": "CENTER",
+            "displayedTitle": "Salle 3",
+            "logWhenPlayed": true
+          },
+          "Salle4": {
+            "isHidden": "no",
+            "height": 22,
+            "alignment": "CENTER",
+            "displayedTitle": "Salle 4",
+            "logWhenPlayed": true
+          },
+          "Boss": {
+            "isHidden": "no",
+            "height": 22,
+            "alignment": "CENTER",
+            "displayedTitle": "Boss"
+          },
+          "Monstres": {
+            "isHidden": "yes",
+            "height": 22,
+            "alignment": "DECK",
+            "displayedTitle": "Deck de monstres"
+          },
+          "CimetiereMonstres": {
+            "isHidden": "no",
+            "height": 22,
+            "alignment": "DECK",
+            "displayedTitle": "Cimetière des monstres"
+          },
+          "Relique": {
+            "isHidden": "yes",
+            "height": 13,
+            "alignment": "DECK",
+            "displayedTitle": "Pioche de reliques"
+          },
+          "Gardien": {
+            "isHidden": "no",
+            "height": 17,
+            "alignment": "CENTER",
+            "displayedTitle": "Gardien",
+            "logWhenPlayed": true
+          },
+          "Energie": {
+            "isHidden": "no",
+            "height": 13,
+            "alignment": "START",
+            "displayedTitle": "Énergie",
+            "noAutoPayTo": true
+          },
+          "PiocheEnergie": {
+            "isHidden": "yes",
+            "height": 13,
+            "alignment": "DECK",
+            "displayedTitle": "Réserve d'énergie",
+            "drawPerTurn": 1,
+            "drawDestinations": {
+              "_default": "Energie"
+            }
+          },
+          "Donjon": {
+            "type": "custom",
+            "isShared": true,
+            "isHidden": "no",
+            "height": 22,
+            "alignment": "CENTER",
+            "displayedTitle": "Donjon",
+            "defaultValue": {
+              "etage": 0
+            },
+            "blueprint": {
+              "type": "div",
+              "props": {
+                "style": {
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "gap": "8px",
+                  "height": "100%",
+                  "color": "white",
+                  "textAlign": "center"
+                }
+              },
+              "children": [
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "fontSize": "1.1em",
+                      "fontWeight": "bold"
+                    }
+                  },
+                  "children": "Étage {{ game.data.Donjon.etage }} / 3"
+                },
+                {
+                  "type": "button",
+                  "props": {
+                    "className": "btn btn-primary btn-sm"
+                  },
+                  "onClick": "const salles=['Salle1','Salle2','Salle3','Salle4'];\nconst d=game.data.Donjon;\nif(d.etage>=3){functions.chatLog('Les 3 étages sont terminés : place au Boss !');return;}\nconst restants=salles.flatMap(s=>cards[s]??[]);\nif(restants.length) await functions.moveCards(restants,'CimetiereMonstres');\nfor(const s of salles){await functions.drawFromExtraDeck('Monstres',1,false,s);}\nd.etage=d.etage+1;\nfunctions.chatLog('Étage '+d.etage+' : 4 nouveaux monstres dans les salles.');\nawait functions.repositionCards();",
+                  "children": "Étage suivant"
+                }
+              ]
+            },
+            "events": {
+              "onPlayersReady": "if(!game.isHost)return;\nawait functions.shuffleSection('Monstres');\nconst d=game.data.Donjon;\nfor(const s of ['Salle1','Salle2','Salle3','Salle4']){await functions.drawFromExtraDeck('Monstres',1,false,s);}\nd.etage=1;\nfunctions.chatLog('Étage 1 : 4 monstres dans les salles.');\nawait functions.repositionCards();"
+            }
+          }
+        },
+        "autoPlayFromHand": {
+          "Unite": "Expedition",
+          "Gardien": "Gardien",
+          "Relique": "Reliques",
+          "Tresor": "Reliques",
+          "Monstre": "Salle1",
+          "Boss": "Boss",
+          "Energie": "Energie"
+        },
+        "categoriesAlreadyOnBoard": [
+          "Gardien->Gardien",
+          "Relique->Relique"
+        ],
+        "autoPlayFromStack": {
+          "Unite": "Expedition",
+          "Gardien": "Gardien",
+          "Relique": "Reliques",
+          "Tresor": "Reliques",
+          "Monstre": "Salle1",
+          "Boss": "Boss",
+          "Energie": "Energie"
+        }
+      }
+    }
+  },
+  "cards": {
+    "dataUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/cards.json",
+    "cardBack": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/back.png",
+    "cardBackColor": "#2a2240"
+  }
+}
