@@ -50,7 +50,7 @@ H2=2*COLW+GAP
 B=[node('PiocheEnergie',RW,'ener','PIOCHE',pile=True),
    node('Energie',R(H2-RW-GAP),'ener','ÉNERGIE',ml=GAP),
    node('Relique',RW,'camp','RELIQUES',pile=True,ml=GAP)]
-B.append(node('Camp',R(TOTAL-LM-RW-GAP-(H2-RW-GAP)-GAP-RW-GAP),'camp','CAMP · RENFORTS, BLESSÉES, RELIQUES',ml=GAP))
+B.append(node('Camp',R(TOTAL-LM-RW-GAP-(H2-RW-GAP)-GAP-RW-GAP),'camp','CAMP · DÉFENSEURS, BLESSÉES, RELIQUES',ml=GAP))
 S['layout']={'direction':'column','content':[row(A), row(B)]}
 S['layout']['content'][1]['style']['marginBottom']='12vh'
 
@@ -83,7 +83,7 @@ st.update({'left':'0','width':'100%','top':'8%','height':'200%','backgroundColor
 for m in ('autoPlayFromHand','autoPlayFromStack'):
     for k in ('Relique','Tresor'):
         if k in S[m]: S[m][k]='Camp'
-    S[m]['Unite']='Camp'   # une unité invoquée arrive au Camp, épuisée
+    S[m]['Unite']='BF1'   # une unité invoquée arrive dans l'Expédition choisie (1 par défaut, à déplacer) ou au Camp
 
 g['customHelp']=g['customHelp'].replace(
  "Ta zone : Expédition, Camp (blessées) et Gardien en haut ; Énergie et sa pioche, Reliques et sa pioche, Réserve en bas.\nAu centre : Salles 1 à 4 (1 monstre par salle, 3 unités max par joueur et par salle, jetons compris), Boss, deck et cimetière des monstres, panneau Donjon.",
@@ -103,11 +103,13 @@ g=json.load(open(P)); strip(g['gameplay']['Standard']['sections']['sectionsDict'
 g['customHelp']=g['customHelp'].replace(", ou utilise les boutons « Ta Réserve » du panneau Donjon (piocher 1, piocher 3, mélanger).",". Pour piocher 3 (Cueillette), clique la pile trois fois, puis clic droit sur la pile > Mélanger.").replace(" et Réserve ; Expédition en bas."," et Réserve.").replace(" et Réserve ; les Salles sont l'Expédition."," et Réserve ; les Salles sont l'Expédition.")
 json.dump(g,open(P,'w'),ensure_ascii=False,indent=2)
 
-# règle : unités invoquées au Camp (épuisées), puis envoyées dans une Expédition 1-4 face au monstre
+# règle : une unité invoquée arrive dans l'Expédition 1-4 de son choix (combat ce tour) ou au Camp (défense)
 g=json.load(open(P))
 h=g['customHelp']
 h=h.replace("Chaque joueur a une Salle sous (ou au-dessus de) chaque monstre : 3 unités max par salle, jetons compris. Ta zone : Salles 1-4 et Gardien ; Énergie (avec sa pioche), Camp (blessées et reliques, avec la pioche de reliques) et Réserve.",
- "Chaque joueur a une Expédition sous (ou au-dessus de) chaque monstre : 3 unités max par Expédition, jetons compris. Ta zone : Expéditions 1-4, Gardien et Réserve ; Énergie (avec sa pioche), pioche de reliques et Camp.\nUnités : une unité invoquée arrive au Camp, épuisée (incline-la). Redressée, tu l'envoies dans une Expédition 1-4 pour affronter le monstre de cette colonne. Blessée, elle revient au Camp. Les reliques se jouent aussi au Camp.")
+ "Chaque joueur a une Expédition sous (ou au-dessus de) chaque monstre : 3 unités max par Expédition, jetons compris. Ta zone : Expéditions 1-4, Gardien et Réserve ; Énergie (avec sa pioche), pioche de reliques et Camp.\nUnités : une unité jouée arrive dans l'Expédition 1 ; déplace-la dans l'Expédition de ton choix pour affronter ce monstre ce tour-ci, ou au Camp pour défendre contre les raids. Blessée, elle revient au Camp. Les reliques se jouent au Camp.")
 h=h.replace("dans la salle du baril","dans l'Expédition du baril")
 g['customHelp']=h
+json.dump(g,open(P,'w'),ensure_ascii=False,indent=2)
+g=json.load(open(P)); g['customHelp']=g['customHelp'].replace("Unités : une unité invoquée arrive au Camp, épuisée (incline-la). Redressée, tu l'envoies dans une Expédition 1-4 pour affronter le monstre de cette colonne. Blessée, elle revient au Camp. Les reliques se jouent aussi au Camp.","Unités : une unité jouée arrive dans l'Expédition 1 ; déplace-la dans l'Expédition de ton choix pour affronter ce monstre ce tour-ci, ou au Camp pour défendre contre les raids. Blessée, elle revient au Camp. Les reliques se jouent au Camp.")
 json.dump(g,open(P,'w'),ensure_ascii=False,indent=2)
