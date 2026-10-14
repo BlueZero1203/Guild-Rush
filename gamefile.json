@@ -159,7 +159,7 @@
                 {
                   "section": "BF1",
                   "style": {
-                    "width": "12.5vh",
+                    "width": "18vh",
                     "flex": "0 0 auto",
                     "borderRadius": "6px",
                     "backgroundColor": "rgba(240,200,60,0.20)",
@@ -173,12 +173,12 @@
                 {
                   "section": "BF2",
                   "style": {
-                    "width": "12.5vh",
+                    "width": "18vh",
                     "flex": "0 0 auto",
                     "borderRadius": "6px",
                     "backgroundColor": "rgba(240,200,60,0.20)",
                     "border": "1px solid rgba(240,200,60,0.55)",
-                    "marginLeft": "2.5vh",
+                    "marginLeft": "2vh",
                     "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ESALLE 2%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px"
@@ -187,12 +187,12 @@
                 {
                   "section": "BF3",
                   "style": {
-                    "width": "12.5vh",
+                    "width": "18vh",
                     "flex": "0 0 auto",
                     "borderRadius": "6px",
                     "backgroundColor": "rgba(240,200,60,0.20)",
                     "border": "1px solid rgba(240,200,60,0.55)",
-                    "marginLeft": "2.5vh",
+                    "marginLeft": "2vh",
                     "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ESALLE 3%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px"
@@ -201,12 +201,12 @@
                 {
                   "section": "BF4",
                   "style": {
-                    "width": "12.5vh",
+                    "width": "18vh",
                     "flex": "0 0 auto",
                     "borderRadius": "6px",
                     "backgroundColor": "rgba(240,200,60,0.20)",
                     "border": "1px solid rgba(240,200,60,0.55)",
-                    "marginLeft": "2.5vh",
+                    "marginLeft": "2vh",
                     "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ESALLE 4%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px"
@@ -220,11 +220,11 @@
                     "borderRadius": "6px",
                     "backgroundColor": "rgba(245,170,60,0.20)",
                     "border": "1px solid rgba(245,170,60,0.55)",
-                    "marginLeft": "2.5vh",
+                    "marginLeft": "2vh",
                     "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EGARDIEN%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px",
-                    "marginRight": "25.0vh"
+                    "marginRight": "24vh"
                   }
                 }
               ],
@@ -253,12 +253,12 @@
                 {
                   "section": "Energie",
                   "style": {
-                    "width": "15.0vh",
+                    "width": "26vh",
                     "flex": "0 0 auto",
                     "borderRadius": "6px",
                     "backgroundColor": "rgba(175,85,205,0.20)",
                     "border": "1px solid rgba(175,85,205,0.55)",
-                    "marginLeft": "2.5vh",
+                    "marginLeft": "2vh",
                     "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3E%C3%89NERGIE%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px"
@@ -272,7 +272,7 @@
                     "borderRadius": "6px",
                     "backgroundColor": "rgba(255,205,160,0.20)",
                     "border": "1px solid rgba(255,205,160,0.55)",
-                    "marginLeft": "2.5vh",
+                    "marginLeft": "2vh",
                     "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ERELIQUES%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 4px bottom 1px"
@@ -281,12 +281,12 @@
                 {
                   "section": "Camp",
                   "style": {
-                    "width": "15.0vh",
+                    "width": "26vh",
                     "flex": "0 0 auto",
                     "borderRadius": "6px",
                     "backgroundColor": "rgba(255,205,160,0.20)",
                     "border": "1px solid rgba(255,205,160,0.55)",
-                    "marginLeft": "2.5vh",
+                    "marginLeft": "2vh",
                     "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ECAMP %C2%B7 BLESS%C3%89ES, RELIQUES%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px"
@@ -300,11 +300,11 @@
                     "borderRadius": "6px",
                     "backgroundColor": "rgba(245,150,30,0.20)",
                     "border": "1px solid rgba(245,150,30,0.55)",
-                    "marginLeft": "2.5vh",
+                    "marginLeft": "2vh",
                     "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ER%C3%89SERVE%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 4px bottom 1px",
-                    "marginRight": "25.0vh"
+                    "marginRight": "24vh"
                   }
                 }
               ],
@@ -334,7 +334,7 @@
                   {
                     "section": "Salle1",
                     "style": {
-                      "width": "12.5vh",
+                      "width": "18vh",
                       "flex": "0 0 auto",
                       "borderRadius": "6px",
                       "backgroundColor": "rgba(225,70,50,0.20)",
@@ -347,12 +347,12 @@
                   {
                     "section": "Salle2",
                     "style": {
-                      "width": "12.5vh",
+                      "width": "18vh",
                       "flex": "0 0 auto",
                       "borderRadius": "6px",
                       "backgroundColor": "rgba(225,70,50,0.20)",
                       "border": "1px solid rgba(225,70,50,0.55)",
-                      "marginLeft": "2.5vh",
+                      "marginLeft": "2vh",
                       "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EMONSTRE 2%3C/text%3E%3C/svg%3E\")",
                       "backgroundRepeat": "no-repeat",
                       "backgroundPosition": "left 22px top 3px"
@@ -361,12 +361,12 @@
                   {
                     "section": "Salle3",
                     "style": {
-                      "width": "12.5vh",
+                      "width": "18vh",
                       "flex": "0 0 auto",
                       "borderRadius": "6px",
                       "backgroundColor": "rgba(225,70,50,0.20)",
                       "border": "1px solid rgba(225,70,50,0.55)",
-                      "marginLeft": "2.5vh",
+                      "marginLeft": "2vh",
                       "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EMONSTRE 3%3C/text%3E%3C/svg%3E\")",
                       "backgroundRepeat": "no-repeat",
                       "backgroundPosition": "left 22px top 3px"
@@ -375,12 +375,12 @@
                   {
                     "section": "Salle4",
                     "style": {
-                      "width": "12.5vh",
+                      "width": "18vh",
                       "flex": "0 0 auto",
                       "borderRadius": "6px",
                       "backgroundColor": "rgba(225,70,50,0.20)",
                       "border": "1px solid rgba(225,70,50,0.55)",
-                      "marginLeft": "2.5vh",
+                      "marginLeft": "2vh",
                       "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EMONSTRE 4%3C/text%3E%3C/svg%3E\")",
                       "backgroundRepeat": "no-repeat",
                       "backgroundPosition": "left 22px top 3px"
@@ -394,7 +394,7 @@
                       "borderRadius": "6px",
                       "backgroundColor": "rgba(225,70,50,0.20)",
                       "border": "1px solid rgba(225,70,50,0.55)",
-                      "marginLeft": "2.5vh",
+                      "marginLeft": "2vh",
                       "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EBOSS%3C/text%3E%3C/svg%3E\")",
                       "backgroundRepeat": "no-repeat",
                       "backgroundPosition": "left 22px top 3px"
@@ -408,7 +408,7 @@
                       "borderRadius": "6px",
                       "backgroundColor": "rgba(150,150,150,0.20)",
                       "border": "1px solid rgba(150,150,150,0.55)",
-                      "marginLeft": "2.5vh",
+                      "marginLeft": "2vh",
                       "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EPIOCHE%3C/text%3E%3C/svg%3E\")",
                       "backgroundRepeat": "no-repeat",
                       "backgroundPosition": "left 4px bottom 1px"
@@ -422,7 +422,7 @@
                       "borderRadius": "6px",
                       "backgroundColor": "rgba(150,150,150,0.20)",
                       "border": "1px solid rgba(150,150,150,0.55)",
-                      "marginLeft": "2.5vh",
+                      "marginLeft": "2vh",
                       "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ED%C3%89FAUSSE%3C/text%3E%3C/svg%3E\")",
                       "backgroundRepeat": "no-repeat",
                       "backgroundPosition": "left 4px bottom 1px"

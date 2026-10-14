@@ -9,7 +9,7 @@ G=g['gameplay']['Standard']
 S=G['sections']
 D=S['sectionsDict']
 
-COLW,GAP,RW,LM=12.5,2.5,10,14
+COLW,GAP,RW,LM=18,2,10,14
 TOTAL=LM+4*COLW+3*GAP+GAP+RW+2*(GAP+RW)
 
 C={ 'bf':(240,200,60),'camp':(255,205,160),'ener':(175,85,205),'pile':(245,150,30),
