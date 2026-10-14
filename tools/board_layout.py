@@ -24,7 +24,7 @@ def label(txt,bottom=False):
 def node(sec,w,col,lab=None,ml=0,pile=False):
     r,gg,b=C[col]
     st={'width':'%svh'%w,'flex':'0 0 auto','borderRadius':'6px',
-        'backgroundColor':'rgba(%d,%d,%d,0.12)'%(r,gg,b),'border':'1px solid rgba(%d,%d,%d,0.40)'%(r,gg,b)}
+        'backgroundColor':'rgba(%d,%d,%d,0.20)'%(r,gg,b),'border':'1px solid rgba(%d,%d,%d,0.55)'%(r,gg,b)}
     if ml: st['marginLeft']='%svh'%ml
     if lab:
         st['backgroundImage']=label(lab); st['backgroundRepeat']='no-repeat'
@@ -79,7 +79,7 @@ D['Camp']['displayedTitle']='Camp (blessées, reliques)'
 D['Camp']['alignment']='START'; D['Energie']['alignment']='START'
 bp=D['Donjon']; bp['height']=11
 st=bp['blueprint']['props']['style']
-st.update({'left':'0','width':'100%','top':'-68%','height':'236%','backgroundColor':'rgba(255,255,255,0.05)','border':'1px solid rgba(255,255,255,0.18)'})
+st.update({'left':'0','width':'100%','top':'8%','height':'300%','backgroundColor':'rgba(255,255,255,0.05)','border':'1px solid rgba(255,255,255,0.18)'})
 
 # les reliques et trésors se jouent au Camp
 for m in ('autoPlayFromHand','autoPlayFromStack'):
