@@ -161,10 +161,12 @@
                   "style": {
                     "width": "50%",
                     "borderRadius": "8px",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EEXP%C3%89DITION%3C/text%3E%3C/svg%3E\")",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundPosition": "left 22px top 3px",
-                    "backgroundColor": "rgba(70,130,190,0.16)"
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EEXP%C3%89DITION%3C/text%3E%3C/svg%3E\"), linear-gradient(180deg, rgba(70,170,100,0.06), rgba(70,170,100,0.2))",
+                    "backgroundRepeat": "no-repeat, no-repeat",
+                    "backgroundPosition": "left 22px top 3px, center",
+                    "backgroundColor": "rgba(70,170,100,0.22)",
+                    "border": "1px solid rgba(70,170,100,0.45)",
+                    "boxShadow": "inset 0 0 14px rgba(70,170,100,0.3)"
                   }
                 },
                 {
@@ -172,10 +174,12 @@
                   "style": {
                     "width": "28%",
                     "borderRadius": "8px",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ECAMP %28BLESS%C3%89ES%29%3C/text%3E%3C/svg%3E\")",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundPosition": "left 22px top 3px",
-                    "backgroundColor": "rgba(200,80,80,0.16)"
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ECAMP %28BLESS%C3%89ES%29%3C/text%3E%3C/svg%3E\"), linear-gradient(180deg, rgba(230,120,60,0.06), rgba(230,120,60,0.2))",
+                    "backgroundRepeat": "no-repeat, no-repeat",
+                    "backgroundPosition": "left 22px top 3px, center",
+                    "backgroundColor": "rgba(230,120,60,0.22)",
+                    "border": "1px solid rgba(230,120,60,0.45)",
+                    "boxShadow": "inset 0 0 14px rgba(230,120,60,0.3)"
                   }
                 },
                 {
@@ -183,10 +187,12 @@
                   "style": {
                     "width": "22%",
                     "borderRadius": "8px",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EGARDIEN%3C/text%3E%3C/svg%3E\")",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundPosition": "left 22px top 3px",
-                    "backgroundColor": "rgba(150,100,200,0.22)"
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EGARDIEN%3C/text%3E%3C/svg%3E\"), linear-gradient(180deg, rgba(235,195,80,0.06), rgba(235,195,80,0.2))",
+                    "backgroundRepeat": "no-repeat, no-repeat",
+                    "backgroundPosition": "left 22px top 3px, center",
+                    "backgroundColor": "rgba(235,195,80,0.3)",
+                    "border": "1px solid rgba(235,195,80,0.6)",
+                    "boxShadow": "inset 0 0 14px rgba(235,195,80,0.3)"
                   }
                 }
               ]
@@ -199,10 +205,12 @@
                   "style": {
                     "width": "28%",
                     "borderRadius": "8px",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3E%C3%89NERGIE%3C/text%3E%3C/svg%3E\")",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundPosition": "left 22px top 3px",
-                    "backgroundColor": "rgba(60,190,210,0.16)"
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3E%C3%89NERGIE%3C/text%3E%3C/svg%3E\"), linear-gradient(180deg, rgba(60,190,210,0.06), rgba(60,190,210,0.2))",
+                    "backgroundRepeat": "no-repeat, no-repeat",
+                    "backgroundPosition": "left 22px top 3px, center",
+                    "backgroundColor": "rgba(60,190,210,0.22)",
+                    "border": "1px solid rgba(60,190,210,0.45)",
+                    "boxShadow": "inset 0 0 14px rgba(60,190,210,0.3)"
                   }
                 },
                 {
@@ -220,10 +228,12 @@
                   "style": {
                     "width": "22%",
                     "borderRadius": "8px",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ERELIQUES EN JEU%3C/text%3E%3C/svg%3E\")",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundPosition": "left 22px top 3px",
-                    "backgroundColor": "rgba(220,180,60,0.16)"
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ERELIQUES EN JEU%3C/text%3E%3C/svg%3E\"), linear-gradient(180deg, rgba(165,110,220,0.06), rgba(165,110,220,0.2))",
+                    "backgroundRepeat": "no-repeat, no-repeat",
+                    "backgroundPosition": "left 22px top 3px, center",
+                    "backgroundColor": "rgba(165,110,220,0.22)",
+                    "border": "1px solid rgba(165,110,220,0.45)",
+                    "boxShadow": "inset 0 0 14px rgba(165,110,220,0.3)"
                   }
                 },
                 {
@@ -241,10 +251,13 @@
                   "style": {
                     "width": "9%",
                     "borderRadius": "8px",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ER%C3%89SERVE%3C/text%3E%3C/svg%3E\")",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundPosition": "left 4px bottom 1px",
-                    "marginRight": "20%"
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ER%C3%89SERVE%3C/text%3E%3C/svg%3E\"), linear-gradient(180deg, rgba(80,120,230,0.06), rgba(80,120,230,0.2))",
+                    "backgroundRepeat": "no-repeat, no-repeat",
+                    "backgroundPosition": "left 22px top 3px, center",
+                    "marginRight": "20%",
+                    "backgroundColor": "rgba(80,120,230,0.22)",
+                    "border": "1px solid rgba(80,120,230,0.45)",
+                    "boxShadow": "inset 0 0 14px rgba(80,120,230,0.3)"
                   }
                 }
               ]
@@ -260,9 +273,16 @@
                 "direction": "row",
                 "content": [
                   {
+                    "section": "Donjon",
+                    "style": {
+                      "width": "14%",
+                      "overflow": "visible"
+                    }
+                  },
+                  {
                     "direction": "row",
                     "style": {
-                      "width": "40%"
+                      "width": "33%"
                     },
                     "content": [
                       {
@@ -270,10 +290,12 @@
                         "style": {
                           "width": "38%",
                           "borderRadius": "8px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EH%C3%94TE%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(70,130,190,0.14)"
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EH%C3%94TE%3C/text%3E%3C/svg%3E\"), linear-gradient(180deg, rgba(70,130,190,0.06), rgba(70,130,190,0.2))",
+                          "backgroundRepeat": "no-repeat, no-repeat",
+                          "backgroundPosition": "left 22px top 3px, center",
+                          "backgroundColor": "rgba(70,130,190,0.22)",
+                          "border": "1px solid rgba(70,130,190,0.45)",
+                          "boxShadow": "inset 0 0 14px rgba(70,130,190,0.3)"
                         }
                       },
                       {
@@ -281,10 +303,12 @@
                         "style": {
                           "width": "24%",
                           "borderRadius": "8px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ESALLE 1%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(140,140,150,0.18)"
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ESALLE 1%3C/text%3E%3C/svg%3E\"), radial-gradient(circle at 50% 28%, rgba(255,170,60,0.28), rgba(255,170,60,0) 65%), linear-gradient(180deg, rgba(150,140,130,0.06), rgba(150,140,130,0.2))",
+                          "backgroundRepeat": "no-repeat, no-repeat, no-repeat",
+                          "backgroundPosition": "left 22px top 3px, center, center",
+                          "backgroundColor": "rgba(150,140,130,0.22)",
+                          "border": "1px solid rgba(150,140,130,0.45)",
+                          "boxShadow": "inset 0 0 14px rgba(150,140,130,0.3)"
                         }
                       },
                       {
@@ -292,10 +316,12 @@
                         "style": {
                           "width": "38%",
                           "borderRadius": "8px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EINVIT%C3%89%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(214,150,60,0.14)"
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EINVIT%C3%89%3C/text%3E%3C/svg%3E\"), linear-gradient(180deg, rgba(210,90,130,0.06), rgba(210,90,130,0.2))",
+                          "backgroundRepeat": "no-repeat, no-repeat",
+                          "backgroundPosition": "left 22px top 3px, center",
+                          "backgroundColor": "rgba(210,90,130,0.22)",
+                          "border": "1px solid rgba(210,90,130,0.45)",
+                          "boxShadow": "inset 0 0 14px rgba(210,90,130,0.3)"
                         }
                       }
                     ]
@@ -303,7 +329,7 @@
                   {
                     "direction": "row",
                     "style": {
-                      "width": "40%"
+                      "width": "33%"
                     },
                     "content": [
                       {
@@ -311,10 +337,12 @@
                         "style": {
                           "width": "38%",
                           "borderRadius": "8px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EH%C3%94TE%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(70,130,190,0.14)"
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EH%C3%94TE%3C/text%3E%3C/svg%3E\"), linear-gradient(180deg, rgba(70,130,190,0.06), rgba(70,130,190,0.2))",
+                          "backgroundRepeat": "no-repeat, no-repeat",
+                          "backgroundPosition": "left 22px top 3px, center",
+                          "backgroundColor": "rgba(70,130,190,0.22)",
+                          "border": "1px solid rgba(70,130,190,0.45)",
+                          "boxShadow": "inset 0 0 14px rgba(70,130,190,0.3)"
                         }
                       },
                       {
@@ -322,10 +350,12 @@
                         "style": {
                           "width": "24%",
                           "borderRadius": "8px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ESALLE 2%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(140,140,150,0.18)"
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ESALLE 2%3C/text%3E%3C/svg%3E\"), radial-gradient(circle at 50% 28%, rgba(255,170,60,0.28), rgba(255,170,60,0) 65%), linear-gradient(180deg, rgba(150,140,130,0.06), rgba(150,140,130,0.2))",
+                          "backgroundRepeat": "no-repeat, no-repeat, no-repeat",
+                          "backgroundPosition": "left 22px top 3px, center, center",
+                          "backgroundColor": "rgba(150,140,130,0.22)",
+                          "border": "1px solid rgba(150,140,130,0.45)",
+                          "boxShadow": "inset 0 0 14px rgba(150,140,130,0.3)"
                         }
                       },
                       {
@@ -333,10 +363,12 @@
                         "style": {
                           "width": "38%",
                           "borderRadius": "8px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EINVIT%C3%89%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(214,150,60,0.14)"
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EINVIT%C3%89%3C/text%3E%3C/svg%3E\"), linear-gradient(180deg, rgba(210,90,130,0.06), rgba(210,90,130,0.2))",
+                          "backgroundRepeat": "no-repeat, no-repeat",
+                          "backgroundPosition": "left 22px top 3px, center",
+                          "backgroundColor": "rgba(210,90,130,0.22)",
+                          "border": "1px solid rgba(210,90,130,0.45)",
+                          "boxShadow": "inset 0 0 14px rgba(210,90,130,0.3)"
                         }
                       }
                     ]
@@ -346,27 +378,22 @@
                     "style": {
                       "width": "10%",
                       "borderRadius": "8px",
-                      "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EBOSS%3C/text%3E%3C/svg%3E\")",
-                      "backgroundRepeat": "no-repeat",
-                      "backgroundPosition": "left 22px top 3px",
-                      "backgroundColor": "rgba(225,60,40,0.18)"
+                      "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EBOSS%3C/text%3E%3C/svg%3E\"), linear-gradient(180deg, rgba(225,60,40,0.06), rgba(225,60,40,0.2))",
+                      "backgroundRepeat": "no-repeat, no-repeat",
+                      "backgroundPosition": "left 22px top 3px, center",
+                      "backgroundColor": "rgba(225,60,40,0.22)",
+                      "border": "1px solid rgba(225,60,40,0.45)",
+                      "boxShadow": "inset 0 0 14px rgba(225,60,40,0.3)"
                     }
                   },
                   {
                     "section": "Monstres",
                     "style": {
-                      "width": "9%",
+                      "width": "10%",
                       "borderRadius": "8px",
                       "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EMONSTRES%3C/text%3E%3C/svg%3E\")",
                       "backgroundRepeat": "no-repeat",
                       "backgroundPosition": "left 4px bottom 1px"
-                    }
-                  },
-                  {
-                    "section": "Donjon",
-                    "style": {
-                      "width": "1%",
-                      "overflow": "visible"
                     }
                   }
                 ]
@@ -377,7 +404,8 @@
                   {
                     "direction": "row",
                     "style": {
-                      "width": "40%"
+                      "width": "33%",
+                      "marginLeft": "14%"
                     },
                     "content": [
                       {
@@ -385,10 +413,12 @@
                         "style": {
                           "width": "38%",
                           "borderRadius": "8px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EH%C3%94TE%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(70,130,190,0.14)"
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EH%C3%94TE%3C/text%3E%3C/svg%3E\"), linear-gradient(180deg, rgba(70,130,190,0.06), rgba(70,130,190,0.2))",
+                          "backgroundRepeat": "no-repeat, no-repeat",
+                          "backgroundPosition": "left 22px top 3px, center",
+                          "backgroundColor": "rgba(70,130,190,0.22)",
+                          "border": "1px solid rgba(70,130,190,0.45)",
+                          "boxShadow": "inset 0 0 14px rgba(70,130,190,0.3)"
                         }
                       },
                       {
@@ -396,10 +426,12 @@
                         "style": {
                           "width": "24%",
                           "borderRadius": "8px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ESALLE 3%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(140,140,150,0.18)"
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ESALLE 3%3C/text%3E%3C/svg%3E\"), radial-gradient(circle at 50% 28%, rgba(255,170,60,0.28), rgba(255,170,60,0) 65%), linear-gradient(180deg, rgba(150,140,130,0.06), rgba(150,140,130,0.2))",
+                          "backgroundRepeat": "no-repeat, no-repeat, no-repeat",
+                          "backgroundPosition": "left 22px top 3px, center, center",
+                          "backgroundColor": "rgba(150,140,130,0.22)",
+                          "border": "1px solid rgba(150,140,130,0.45)",
+                          "boxShadow": "inset 0 0 14px rgba(150,140,130,0.3)"
                         }
                       },
                       {
@@ -407,10 +439,12 @@
                         "style": {
                           "width": "38%",
                           "borderRadius": "8px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EINVIT%C3%89%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(214,150,60,0.14)"
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EINVIT%C3%89%3C/text%3E%3C/svg%3E\"), linear-gradient(180deg, rgba(210,90,130,0.06), rgba(210,90,130,0.2))",
+                          "backgroundRepeat": "no-repeat, no-repeat",
+                          "backgroundPosition": "left 22px top 3px, center",
+                          "backgroundColor": "rgba(210,90,130,0.22)",
+                          "border": "1px solid rgba(210,90,130,0.45)",
+                          "boxShadow": "inset 0 0 14px rgba(210,90,130,0.3)"
                         }
                       }
                     ]
@@ -418,7 +452,7 @@
                   {
                     "direction": "row",
                     "style": {
-                      "width": "40%"
+                      "width": "33%"
                     },
                     "content": [
                       {
@@ -426,10 +460,12 @@
                         "style": {
                           "width": "38%",
                           "borderRadius": "8px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EH%C3%94TE%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(70,130,190,0.14)"
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EH%C3%94TE%3C/text%3E%3C/svg%3E\"), linear-gradient(180deg, rgba(70,130,190,0.06), rgba(70,130,190,0.2))",
+                          "backgroundRepeat": "no-repeat, no-repeat",
+                          "backgroundPosition": "left 22px top 3px, center",
+                          "backgroundColor": "rgba(70,130,190,0.22)",
+                          "border": "1px solid rgba(70,130,190,0.45)",
+                          "boxShadow": "inset 0 0 14px rgba(70,130,190,0.3)"
                         }
                       },
                       {
@@ -437,10 +473,12 @@
                         "style": {
                           "width": "24%",
                           "borderRadius": "8px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ESALLE 4%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(140,140,150,0.18)"
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ESALLE 4%3C/text%3E%3C/svg%3E\"), radial-gradient(circle at 50% 28%, rgba(255,170,60,0.28), rgba(255,170,60,0) 65%), linear-gradient(180deg, rgba(150,140,130,0.06), rgba(150,140,130,0.2))",
+                          "backgroundRepeat": "no-repeat, no-repeat, no-repeat",
+                          "backgroundPosition": "left 22px top 3px, center, center",
+                          "backgroundColor": "rgba(150,140,130,0.22)",
+                          "border": "1px solid rgba(150,140,130,0.45)",
+                          "boxShadow": "inset 0 0 14px rgba(150,140,130,0.3)"
                         }
                       },
                       {
@@ -448,10 +486,12 @@
                         "style": {
                           "width": "38%",
                           "borderRadius": "8px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EINVIT%C3%89%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(214,150,60,0.14)"
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EINVIT%C3%89%3C/text%3E%3C/svg%3E\"), linear-gradient(180deg, rgba(210,90,130,0.06), rgba(210,90,130,0.2))",
+                          "backgroundRepeat": "no-repeat, no-repeat",
+                          "backgroundPosition": "left 22px top 3px, center",
+                          "backgroundColor": "rgba(210,90,130,0.22)",
+                          "border": "1px solid rgba(210,90,130,0.45)",
+                          "boxShadow": "inset 0 0 14px rgba(210,90,130,0.3)"
                         }
                       }
                     ]
@@ -602,9 +642,9 @@
                   "color": "white",
                   "textAlign": "center",
                   "position": "absolute",
-                  "left": "calc(100% + 28px)",
+                  "left": "0",
                   "top": "0",
-                  "width": "15vw",
+                  "width": "100%",
                   "backgroundColor": "rgba(120,90,40,0.25)",
                   "border": "1px solid rgba(214,150,60,0.6)",
                   "borderRadius": "10px",
