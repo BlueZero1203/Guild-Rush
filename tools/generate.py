@@ -83,15 +83,15 @@ CARDS = [
     # --- Cartes de test (en attendant les Druides) ---
     C("gardien-druide", "Druide (nom temporaire)", "Gardien", 0, "Test",
       "Passif : à chaque monstre tué, récolte un ingrédient.", 2, 8, legal=1),
-    C("unite-a", "Unité test A", "Unite", 1, "Test", "Unité de base.", 2, 3),
-    C("unite-b", "Unité test B", "Unite", 2, "Test", "Unité de base.", 3, 2),
-    C("unite-c", "Unité test C", "Unite", 3, "Test", "Unité de base.", 3, 5),
-    C("unite-d", "Unité test D", "Unite", 4, "Test", "Unité de base.", 5, 4),
+    C("unite-a", "Unité test A", "Unite", 1, "Test", "Unité de base.", 2, 3, legal=8),
+    C("unite-b", "Unité test B", "Unite", 2, "Test", "Unité de base.", 3, 2, legal=8),
+    C("unite-c", "Unité test C", "Unite", 3, "Test", "Unité de base.", 3, 5, legal=8),
+    C("unite-d", "Unité test D", "Unite", 4, "Test", "Unité de base.", 5, 4, legal=8),
     # --- Communes ---
     C("relique-test", "Relique test", "Relique", 0, "Relique",
       "Passif de relique (à définir). Gardée au Camp, volable par raid.", legal=3),
     C("carte-tresor", "Carte au trésor", "Tresor", 0, "Relique",
-      "+1 trésor à chaque Nuit. Gardée au Camp, volable par raid.", legal=1),
+      "Prise par le premier joueur qui tue un monstre (crée-la avec le panneau des jetons). +1 trésor à chaque Nuit. Gardée au Camp, volable par raid.", legal=False, token=True),
     C("energie", "Énergie", "Energie", 0, "Energie",
       "Incline-la pour payer 1. 1 seule se redresse par tour.", legal=False, token=True),
     # --- Donjon ---

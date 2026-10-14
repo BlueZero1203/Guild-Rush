@@ -1,0 +1,144 @@
+[
+  {
+    "id": "precon-ivrognes",
+    "title": "Ivrognes de Guss (proto)",
+    "format": "Proto (cartes de test)",
+    "deckList": {
+      "categoriesOrder": [
+        "Gardien",
+        "Baril",
+        "Unite",
+        "Sort",
+        "Relique"
+      ],
+      "Gardien": [
+        {
+          "id": "guss",
+          "count": 1
+        }
+      ],
+      "Baril": [
+        {
+          "id": "baril",
+          "count": 1
+        }
+      ],
+      "Unite": [
+        {
+          "id": "habitue",
+          "count": 3
+        },
+        {
+          "id": "serveuse",
+          "count": 3
+        },
+        {
+          "id": "poker",
+          "count": 2
+        },
+        {
+          "id": "porteur",
+          "count": 2
+        },
+        {
+          "id": "barde",
+          "count": 2
+        },
+        {
+          "id": "soldat-ivre",
+          "count": 3
+        },
+        {
+          "id": "videur",
+          "count": 2
+        },
+        {
+          "id": "cracheur",
+          "count": 1
+        },
+        {
+          "id": "brute",
+          "count": 1
+        },
+        {
+          "id": "champion",
+          "count": 1
+        }
+      ],
+      "Sort": [
+        {
+          "id": "grosse-pinte",
+          "count": 3
+        },
+        {
+          "id": "jet-chaises",
+          "count": 2
+        },
+        {
+          "id": "roule-baril",
+          "count": 2
+        },
+        {
+          "id": "viree-bar",
+          "count": 2
+        },
+        {
+          "id": "ma-tournee",
+          "count": 1
+        }
+      ],
+      "Relique": [
+        {
+          "id": "relique-test",
+          "count": 3
+        }
+      ],
+      "Sideboard": [],
+      "_maybeboard": []
+    }
+  },
+  {
+    "id": "precon-test",
+    "title": "Druides (cartes de test)",
+    "format": "Proto (cartes de test)",
+    "deckList": {
+      "categoriesOrder": [
+        "Gardien",
+        "Unite",
+        "Relique"
+      ],
+      "Gardien": [
+        {
+          "id": "gardien-druide",
+          "count": 1
+        }
+      ],
+      "Unite": [
+        {
+          "id": "unite-a",
+          "count": 8
+        },
+        {
+          "id": "unite-b",
+          "count": 8
+        },
+        {
+          "id": "unite-c",
+          "count": 7
+        },
+        {
+          "id": "unite-d",
+          "count": 7
+        }
+      ],
+      "Relique": [
+        {
+          "id": "relique-test",
+          "count": 3
+        }
+      ],
+      "Sideboard": [],
+      "_maybeboard": []
+    }
+  }
+]
