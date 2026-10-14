@@ -60,7 +60,7 @@ if names(r1)[-1]=='Donjon':
     donjon=r1.pop()
     g1,g2,boss,mon=r1
     donjon['style']={'width':'14%','overflow':'visible'}
-    g1['style']['width']='33%'; g2['style']['width']='33%'
+    g1['style']['width']='33%'; g1['style']['marginLeft']='14%'; g2['style']['width']='33%'
     boss['style']['width']='10%'; mon['style']['width']='10%'
     r1[:]=[donjon,g1,g2,boss,mon]
     g3,g4,cim=r2
