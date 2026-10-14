@@ -6,7 +6,6 @@
     "deckList": {
       "categoriesOrder": [
         "Gardien",
-        "Baril",
         "Alcool",
         "Unite",
         "Sort",
@@ -15,12 +14,6 @@
       "Gardien": [
         {
           "id": "guss",
-          "count": 1
-        }
-      ],
-      "Baril": [
-        {
-          "id": "baril",
           "count": 1
         }
       ],
@@ -139,7 +132,6 @@
     "deckList": {
       "categoriesOrder": [
         "Gardien",
-        "Recettes",
         "Ingredient",
         "Unite",
         "Sort",
@@ -148,12 +140,6 @@
       "Gardien": [
         {
           "id": "cernun",
-          "count": 1
-        }
-      ],
-      "Recettes": [
-        {
-          "id": "livre-recettes",
           "count": 1
         }
       ],

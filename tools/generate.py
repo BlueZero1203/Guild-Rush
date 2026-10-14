@@ -49,13 +49,7 @@ CARDS = [
       "**Maître de guilde** : à chaque tour, si le baril est endommagé, Guss le soigne complètement. "
       "**Patron du bar** : quand Guss défend le Camp, tes défenseurs ont +1 Puissance. "
       "**Coup de torchon** : la première unité qui attaque Guss pendant un raid est Sonnée.",
-      3, 7, legal=1),
-    C("baril", "Le baril", "Baril", 0, IVR,
-      "Un seul baril, posé dans une salle au premier Crépuscule ; ne rentre jamais au Camp. "
-      "**Aura** : tes unités de sa salle ont +1 Puissance. **Encaisser** : il peut prendre les dégâts "
-      "d'une de tes unités de sa salle. **Tirer une pinte** : 1 fois par tour, retire-lui 1 PV pour piocher "
-      "1 carte de la Cave. **Explosion** à 0 PV : 1 dégât à tout ce qui est dans la salle.",
-      0, 6, legal=1),
+      3, 7, legal=1, tokens=["baril-chene"]),
     # --- Ivrognes : unités ---
     C("habitue", "Habitué du bar", "Unite", 1, IVR, "**Près du baril** : +1 PV.", 1, 2),
     C("serveuse", "Serveuse", "Unite", 2, IVR, "**Arrivée** : une de tes unités gagne +1/+1.", 1, 3),
@@ -102,16 +96,7 @@ CARDS = [
       "garde-en 2 sous Cernun (panier de 4 max), remets le 3e dans le Garde-manger et mélange. Chaque monstre tué par tes unités : "
       "+1 ingrédient. **Cuisine** : au début du Crépuscule, 1 recette du Livre. "
       "**Bosquet** : quand Cernun défend le Camp, invoque 2 Pousses qui défendent avec lui.",
-      2, 7, legal=1, tokens=["pousse"]),
-    C("livre-recettes", "Livre de recettes", "Recettes", 0, DRU,
-      "1 recette par tour, au début du Crépuscule ; effet jusqu'à la fin du tour. Les ingrédients "
-      "retournent dans le Garde-manger, puis mélange.\n"
-      "**Soupe de racines** (Racine + Champignon) : tes unités +2 PV. "
-      "\n**Tarte aux baies** (Baies + Miel) : tes unités +1 Puissance. "
-      "\n**Tisane des bois** (Herbes + Miel) : soigne tes unités d'une salle, elles ne peuvent pas être Sonnées. "
-      "\n**Poêlée des esprits** (Champignon + Herbes + Baies) : 1 Pousse dans chaque salle où tu as une unité. "
-      "\n**Banquet de Cernun** (4 ingrédients différents) : tes unités +2/+2.",
-      legal=1, tokens=["pousse"]),
+      2, 7, legal=1, tokens=["livre-ancien", "pousse"]),
     # --- Druides : le Garde-manger (Réserve de faction) ---
     C("champignon", "Champignon", "Ingredient", 0, DRU, "**Ingrédient**. Seul, il ne fait rien : il se cuisine avec le Livre de recettes."),
     C("baies", "Baies", "Ingredient", 0, DRU, "**Ingrédient**. Seules, elles ne font rien : elles se cuisinent avec le Livre de recettes."),
@@ -167,10 +152,23 @@ CARDS = [
       "Frappe d'abord la guilde qui a le plus de trésors.", 8, 20, legal=False, token=True),
 ]
 
-# Textes de cartes (règles d'écriture : une ligne par effet, le moment en gras)
+
+# --- Gardiens supplémentaires et fiches (jetons, pas dans les decks) ---
+CARDS += [
+    C("rosa", "Rosa la brasseuse", "Gardien", 0, IVR, "", 3, 6, legal=1, tokens=["baril-explosif"]),
+    C("belladone", "Belladone", "Gardien", 0, DRU, "", 1, 6, legal=1, tokens=["livre-empoisonneur"]),
+    C("sylve", "Sylve", "Gardien", 0, DRU, "", 2, 5, legal=1, tokens=["livre-secret", "loup"]),
+    C("baril-chene", "Baril de chêne", "Baril", 0, IVR, "", 0, 6, legal=False, token=True),
+    C("baril-explosif", "Baril explosif", "Baril", 0, IVR, "", 0, 4, legal=False, token=True),
+    C("livre-ancien", "Livre ancien", "Recettes", 0, DRU, "", legal=False, token=True),
+    C("livre-empoisonneur", "Livre empoisonneur", "Recettes", 0, DRU, "", legal=False, token=True),
+    C("livre-secret", "Livre secret", "Recettes", 0, DRU, "", legal=False, token=True),
+]
+_BAR = ("**Aura :** tes unités de sa salle ont +1 Puissance.\n**Encaisser :** prend les dégâts d'une de tes unités de sa salle.\n"
+        "**Tirer une pinte :** 1 fois par tour, perds 1 PV pour piocher 1 carte de la Cave.\n")
+
+# Textes de cartes (une ligne par effet, le moment en gras)
 TEXTS = {
- "guss": "**Aube :** soigne complètement le baril.\n**Quand Guss défend le Camp :** tes défenseurs ont +1 Puissance.\n**Raid :** la première unité qui attaque Guss est Sonnée.",
- "baril": "**Aura :** tes unités de sa salle ont +1 Puissance.\n**Encaisser :** prend les dégâts d'une de tes unités de sa salle.\n**Tirer une pinte :** 1 fois par tour, perds 1 PV pour piocher 1 carte de la Cave.\n**À 0 PV :** 1 dégât à tout ce qui est dans la salle.\nUn seul baril ; il ne rentre jamais au Camp.",
  "habitue": "**Près du baril :** +1 PV.",
  "serveuse": "**Arrivée :** une de tes unités gagne +1/+1.",
  "poker": "**Bluff :** se pose face cachée au Midi, révélée au Crépuscule.",
@@ -190,8 +188,7 @@ TEXTS = {
  "vin-chaud": "**Alcool.** Soigne complètement l'unité.",
  "absinthe": "**Alcool.** +3 Puissance.\n**Ton tour suivant :** l'unité perd 2 PV.",
  "liqueur-feu": "**Alcool.**\n**Dernier souffle :** 2 dégâts à chaque ennemi de sa salle.",
- "cernun": "**Aube :** Cueillette. Pioche 3 cartes de ta Réserve, garde-en 2 sous Cernun (4 max), remets l'autre et mélange.\n**Crépuscule :** cuisine 1 recette du Livre.\n**Monstre tué :** +1 ingrédient.\n**Quand il défend le Camp :** invoque 2 Pousses.",
- "livre-recettes": "**Crépuscule :** 1 recette par tour, effet ce tour. Les ingrédients retournent dans la Réserve (mélange).\n**Soupe de racines** (Racine + Champignon) : tes unités +2 PV.\n**Tarte aux baies** (Baies + Miel) : tes unités +1 Puissance.\n**Tisane des bois** (Herbes + Miel) : soigne une salle, ses unités ne sont pas Sonnées.\n**Poêlée des esprits** (Champignon + Herbes + Baies) : 1 Pousse par salle où tu as une unité.\n**Banquet de Cernun** (4 ingrédients différents) : tes unités +2/+2.",
+ "cernun": "**Livre ancien** (fiche liée) : recettes de buff.\n**Aube :** Cueillette. Pioche 3 ingrédients, défausse-en 1 dans ta Réserve (mélange), garde 2 sous Cernun (4 max).\n**Crépuscule :** cuisine 1 recette.\n**Monstre tué :** +1 ingrédient.\n**Défense du Camp :** invoque 2 Pousses.",
  "champignon": "**Ingrédient.** Seul, il ne fait rien : cuisine-le avec le Livre.",
  "baies": "**Ingrédient.** Seules, elles ne font rien : cuisine-les avec le Livre.",
  "racine": "**Ingrédient.** Seule, elle ne fait rien : cuisine-la avec le Livre.",
@@ -214,8 +211,18 @@ TEXTS = {
  "eveil-foret": "Invoque une Pousse dans chaque salle.\nTes unités gagnent +1/+1 ce tour.\nPioche 1 ingrédient.\n**Signature :** 1 exemplaire max.",
  "pousse": "**Jeton.** Compte dans la limite de 3 unités par salle.",
  "loup": "**Jeton.** Compte dans la limite de 3 unités par salle.",
- "jet-chaises": "2 dégâts à une cible, qui est Sonnée."
+ "jet-chaises": "2 dégâts à une cible, qui est Sonnée.",
+ "rosa": "**Baril explosif** (jeton 4 PV, voir fiche) : pose-le dans une salle au 1er Crépuscule.\n**Aube :** soigne 2 PV au baril.\n**Tirer une pinte :** regarde 2 cartes de la Cave, prends-en 1, remets l'autre et mélange.\n**Défense du Camp :** 1 dégât à chaque attaquant.",
+ "belladone": "**Livre empoisonneur** (fiche liée) : recettes qui blessent.\n**Aube :** Cueillette. Pioche 2 ingrédients, garde-les sous Belladone (4 max).\n**Crépuscule :** cuisine 1 recette.\n**Défense du Camp :** la première unité qui attaque Belladone est Sonnée.",
+ "sylve": "**Livre secret** (fiche liée) : chaque recette donne Rapide.\n**Aube :** Cueillette. Pioche 2 ingrédients, garde-les sous Sylve (4 max).\n**Midi :** choisis ta recette face cachée.\n**Crépuscule :** révèle-la et cuisine-la.",
+ "livre-ancien": "**Crépuscule :** 1 recette par tour, effet ce tour. Les ingrédients retournent dans la Réserve (mélange).\n**Soupe de racines** (Racine + Champignon) : tes unités +2 PV.\n**Tarte aux baies** (Baies + Miel) : tes unités +1 Puissance.\n**Tisane des bois** (Herbes + Miel) : soigne une salle, ses unités ne sont pas Sonnées.\n**Poêlée des esprits** (Champignon + Herbes + Baies) : 1 Pousse par salle où tu as une unité.\n**Banquet de Cernun** (4 ingrédients différents) : tes unités +2/+2.",
+ "livre-empoisonneur": "**Crépuscule :** 1 recette par tour. Les ingrédients retournent dans la Réserve (mélange).\n**Sève amère** (Racine + Champignon) : 1 dégât à chaque ennemi d'une salle.\n**Brouet de baies** (Baies + Miel) : 2 dégâts à une cible, qui est Sonnée.\n**Fumée d'herbes** (Herbes + Champignon) : les ennemis d'une salle sont Sonnés.\n**Philtre noir** (3 ingrédients différents) : 2 dégâts à chaque ennemi d'une salle.",
+ "livre-secret": "**Midi :** 1 recette face cachée. **Crépuscule :** révèle-la et cuisine-la. Les ingrédients retournent dans la Réserve (mélange).\n**Pain de route** (Racine + Miel) : tes unités gagnent Rapide.\n**Infusion vive** (Herbes + Baies) : Rapide et +1 Puissance.\n**Festin de l'ombre** (3 ingrédients différents) : Rapide et +1/+1.\n**Rapide :** une unité peut changer de salle après son combat.",
+ "guss": "**Baril de chêne** (jeton 6 PV, voir fiche) : pose-le dans une salle au 1er Crépuscule.\n**Aube :** soigne complètement le baril.\n**Défense du Camp :** tes défenseurs ont +1 Puissance.\n**Raid :** la première unité qui attaque Guss est Sonnée."
 }
+
+TEXTS["baril-chene"] = _BAR + "**À 0 PV :** 1 dégât à tout ce qui est dans la salle.\nUn seul baril ; il ne rentre jamais au Camp."
+TEXTS["baril-explosif"] = _BAR + "**À 0 PV :** 3 dégâts à tout ce qui est dans la salle.\nUn seul baril ; il ne rentre jamais au Camp."
 for _c in CARDS:
     if _c["id"] in TEXTS:
         _c["text"] = TEXTS[_c["id"]]

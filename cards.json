@@ -19,29 +19,10 @@
       "PROTO": 1
     },
     "power": 3,
-    "hp": 7
-  },
-  "baril": {
-    "id": "baril",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Le baril"
-        },
-        "type": "Baril",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/baril.png"
-      }
-    },
-    "name": "Le baril",
-    "type": "Baril",
-    "cost": 0,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 1
-    },
-    "power": 0,
-    "hp": 6
+    "hp": 7,
+    "tokens": [
+      "baril-chene"
+    ]
   },
   "habitue": {
     "id": "habitue",
@@ -545,29 +526,7 @@
     "power": 2,
     "hp": 7,
     "tokens": [
-      "pousse"
-    ]
-  },
-  "livre-recettes": {
-    "id": "livre-recettes",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Livre de recettes"
-        },
-        "type": "Recettes",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/livre-recettes.png"
-      }
-    },
-    "name": "Livre de recettes",
-    "type": "Recettes",
-    "cost": 0,
-    "faction": "Druides",
-    "_legal": {
-      "PROTO": 1
-    },
-    "tokens": [
+      "livre-ancien",
       "pousse"
     ]
   },
@@ -1209,6 +1168,176 @@
     "faction": "Boss",
     "power": 8,
     "hp": 20,
+    "isToken": true
+  },
+  "rosa": {
+    "id": "rosa",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Rosa la brasseuse"
+        },
+        "type": "Gardien",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/rosa.png"
+      }
+    },
+    "name": "Rosa la brasseuse",
+    "type": "Gardien",
+    "cost": 0,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 1
+    },
+    "power": 3,
+    "hp": 6,
+    "tokens": [
+      "baril-explosif"
+    ]
+  },
+  "belladone": {
+    "id": "belladone",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Belladone"
+        },
+        "type": "Gardien",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/belladone.png"
+      }
+    },
+    "name": "Belladone",
+    "type": "Gardien",
+    "cost": 0,
+    "faction": "Druides",
+    "_legal": {
+      "PROTO": 1
+    },
+    "power": 1,
+    "hp": 6,
+    "tokens": [
+      "livre-empoisonneur"
+    ]
+  },
+  "sylve": {
+    "id": "sylve",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Sylve"
+        },
+        "type": "Gardien",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sylve.png"
+      }
+    },
+    "name": "Sylve",
+    "type": "Gardien",
+    "cost": 0,
+    "faction": "Druides",
+    "_legal": {
+      "PROTO": 1
+    },
+    "power": 2,
+    "hp": 5,
+    "tokens": [
+      "livre-secret",
+      "loup"
+    ]
+  },
+  "baril-chene": {
+    "id": "baril-chene",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Baril de chêne"
+        },
+        "type": "Baril",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/baril-chene.png"
+      }
+    },
+    "name": "Baril de chêne",
+    "type": "Baril",
+    "cost": 0,
+    "faction": "Ivrognes",
+    "power": 0,
+    "hp": 6,
+    "isToken": true
+  },
+  "baril-explosif": {
+    "id": "baril-explosif",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Baril explosif"
+        },
+        "type": "Baril",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/baril-explosif.png"
+      }
+    },
+    "name": "Baril explosif",
+    "type": "Baril",
+    "cost": 0,
+    "faction": "Ivrognes",
+    "power": 0,
+    "hp": 4,
+    "isToken": true
+  },
+  "livre-ancien": {
+    "id": "livre-ancien",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Livre ancien"
+        },
+        "type": "Recettes",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/livre-ancien.png"
+      }
+    },
+    "name": "Livre ancien",
+    "type": "Recettes",
+    "cost": 0,
+    "faction": "Druides",
+    "isToken": true
+  },
+  "livre-empoisonneur": {
+    "id": "livre-empoisonneur",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Livre empoisonneur"
+        },
+        "type": "Recettes",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/livre-empoisonneur.png"
+      }
+    },
+    "name": "Livre empoisonneur",
+    "type": "Recettes",
+    "cost": 0,
+    "faction": "Druides",
+    "isToken": true
+  },
+  "livre-secret": {
+    "id": "livre-secret",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Livre secret"
+        },
+        "type": "Recettes",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/livre-secret.png"
+      }
+    },
+    "name": "Livre secret",
+    "type": "Recettes",
+    "cost": 0,
+    "faction": "Druides",
     "isToken": true
   }
 }
