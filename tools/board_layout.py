@@ -57,7 +57,7 @@ S['layout']['content'][1]['style']['marginBottom']='12vh'
 # --- zone partagée : monstres 1..4, boss, pile de monstres, cimetière ---
 M=[{'section':'Donjon','style':{'width':'%s%%'%LM,'overflow':'visible'}}]
 for i in range(1,5):
-    M.append(node('Salle%d'%i,COLW,'monstre','MONSTRE %d'%i,ml=(0 if i==1 else GAP)))
+    M.append(node('Salle%d'%i,COLW,'monstre','MONSTRE %d'%i,ml=(LM if i==1 else GAP)))
 M.append(node('Boss',RW,'boss','BOSS',ml=GAP))
 M.append(node('Monstres',RW,'neutre','PIOCHE',pile=True,ml=GAP))
 M.append(node('CimetiereMonstres',RW,'neutre','DÉFAUSSE',pile=True,ml=GAP))

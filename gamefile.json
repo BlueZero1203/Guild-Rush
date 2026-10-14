@@ -337,6 +337,7 @@
                       "borderRadius": "6px",
                       "backgroundColor": "rgba(225,70,50,0.20)",
                       "border": "1px solid rgba(225,70,50,0.55)",
+                      "marginLeft": "9%",
                       "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EMONSTRE 1%3C/text%3E%3C/svg%3E\")",
                       "backgroundRepeat": "no-repeat",
                       "backgroundPosition": "left 22px top 3px"
