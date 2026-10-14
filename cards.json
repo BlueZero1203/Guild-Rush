@@ -509,9 +509,6 @@
     "type": "Tresor",
     "cost": 0,
     "faction": "Relique",
-    "_legal": {
-      "PROTO": false
-    },
     "isToken": true
   },
   "energie": {
@@ -530,9 +527,6 @@
     "type": "Energie",
     "cost": 0,
     "faction": "Energie",
-    "_legal": {
-      "PROTO": false
-    },
     "isToken": true
   },
   "monstre-1": {
@@ -551,9 +545,6 @@
     "type": "Monstre",
     "cost": 0,
     "faction": "Monstre",
-    "_legal": {
-      "PROTO": false
-    },
     "power": 2,
     "hp": 3,
     "isToken": true
@@ -574,9 +565,6 @@
     "type": "Monstre",
     "cost": 0,
     "faction": "Monstre",
-    "_legal": {
-      "PROTO": false
-    },
     "power": 3,
     "hp": 5,
     "isToken": true
@@ -597,9 +585,6 @@
     "type": "Monstre",
     "cost": 0,
     "faction": "Monstre",
-    "_legal": {
-      "PROTO": false
-    },
     "power": 4,
     "hp": 6,
     "isToken": true
@@ -620,9 +605,6 @@
     "type": "Monstre",
     "cost": 0,
     "faction": "Monstre",
-    "_legal": {
-      "PROTO": false
-    },
     "power": 5,
     "hp": 8,
     "isToken": true
@@ -643,9 +625,6 @@
     "type": "Boss",
     "cost": 0,
     "faction": "Boss",
-    "_legal": {
-      "PROTO": false
-    },
     "power": 8,
     "hp": 20,
     "isToken": true

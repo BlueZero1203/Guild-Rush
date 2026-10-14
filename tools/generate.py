@@ -194,7 +194,9 @@ def main():
         img = f"{BASE}/img/cards/{c['id']}.png"
         front = {"name": {"name": c["name"]}, "type": c["type"], "cost": c["cost"], "image": img}
         e = {"id": c["id"], "face": {"front": front}, "name": c["name"], "type": c["type"],
-             "cost": c["cost"], "faction": c["faction"], "_legal": {"PROTO": c["legal"]}}
+             "cost": c["cost"], "faction": c["faction"]}
+        if not c["token"]:  # les jetons sont déjà exclus du deck : pas de marque « illégal » en jeu
+            e["_legal"] = {"PROTO": c["legal"]}
         if c["power"] is not None:
             e["power"], e["hp"] = c["power"], c["hp"]
         if c["token"]:
