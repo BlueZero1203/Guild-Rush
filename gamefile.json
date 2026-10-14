@@ -228,7 +228,8 @@
                     "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ERELIQUES EN JEU%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px",
-                    "backgroundColor": "rgba(220,180,60,0.16)"
+                    "backgroundColor": "rgba(220,180,60,0.16)",
+                    "marginRight": "20%"
                   }
                 }
               ]
