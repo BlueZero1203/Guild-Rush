@@ -1,6 +1,6 @@
 {
-  "gardien-guss": {
-    "id": "gardien-guss",
+  "guss": {
+    "id": "guss",
     "face": {
       "front": {
         "name": {
@@ -8,14 +8,357 @@
         },
         "type": "Gardien",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gardien-guss.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/guss.png"
       }
     },
     "name": "Guss le tavernier",
     "type": "Gardien",
     "cost": 0,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 1
+    },
+    "power": 3,
+    "hp": 7
+  },
+  "baril": {
+    "id": "baril",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Le baril"
+        },
+        "type": "Baril",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/baril.png"
+      }
+    },
+    "name": "Le baril",
+    "type": "Baril",
+    "cost": 0,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 1
+    },
+    "power": 0,
+    "hp": 4
+  },
+  "habitue": {
+    "id": "habitue",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Habitué du bar"
+        },
+        "type": "Unite",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/habitue.png"
+      }
+    },
+    "name": "Habitué du bar",
+    "type": "Unite",
+    "cost": 1,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 2
+  },
+  "serveuse": {
+    "id": "serveuse",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Serveuse"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/serveuse.png"
+      }
+    },
+    "name": "Serveuse",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 3
+  },
+  "poker": {
+    "id": "poker",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Joueurs de poker"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/poker.png"
+      }
+    },
+    "name": "Joueurs de poker",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 3
+    },
     "power": 2,
-    "hp": 8,
+    "hp": 2
+  },
+  "porteur": {
+    "id": "porteur",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Porteur de tonneaux"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/porteur.png"
+      }
+    },
+    "name": "Porteur de tonneaux",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 2
+  },
+  "barde": {
+    "id": "barde",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Barde éméché"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/barde.png"
+      }
+    },
+    "name": "Barde éméché",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 2
+  },
+  "soldat-ivre": {
+    "id": "soldat-ivre",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Soldat ivre"
+        },
+        "type": "Unite",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/soldat-ivre.png"
+      }
+    },
+    "name": "Soldat ivre",
+    "type": "Unite",
+    "cost": 3,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 4,
+    "hp": 4
+  },
+  "videur": {
+    "id": "videur",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Videur"
+        },
+        "type": "Unite",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/videur.png"
+      }
+    },
+    "name": "Videur",
+    "type": "Unite",
+    "cost": 3,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 5
+  },
+  "cracheur": {
+    "id": "cracheur",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Cracheur de feu"
+        },
+        "type": "Unite",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cracheur.png"
+      }
+    },
+    "name": "Cracheur de feu",
+    "type": "Unite",
+    "cost": 3,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 3
+  },
+  "brute": {
+    "id": "brute",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Brute de taverne"
+        },
+        "type": "Unite",
+        "cost": 4,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/brute.png"
+      }
+    },
+    "name": "Brute de taverne",
+    "type": "Unite",
+    "cost": 4,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 4,
+    "hp": 4
+  },
+  "champion": {
+    "id": "champion",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Champion de bras de fer"
+        },
+        "type": "Unite",
+        "cost": 5,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/champion.png"
+      }
+    },
+    "name": "Champion de bras de fer",
+    "type": "Unite",
+    "cost": 5,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 5,
+    "hp": 6
+  },
+  "grosse-pinte": {
+    "id": "grosse-pinte",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Grosse pinte"
+        },
+        "type": "Sort",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/grosse-pinte.png"
+      }
+    },
+    "name": "Grosse pinte",
+    "type": "Sort",
+    "cost": 1,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 3
+    }
+  },
+  "jet-chaises": {
+    "id": "jet-chaises",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Jet de chaises"
+        },
+        "type": "Sort",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/jet-chaises.png"
+      }
+    },
+    "name": "Jet de chaises",
+    "type": "Sort",
+    "cost": 2,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 3
+    }
+  },
+  "roule-baril": {
+    "id": "roule-baril",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Roulé de baril"
+        },
+        "type": "Sort",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/roule-baril.png"
+      }
+    },
+    "name": "Roulé de baril",
+    "type": "Sort",
+    "cost": 2,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 3
+    }
+  },
+  "viree-bar": {
+    "id": "viree-bar",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Virée du bar"
+        },
+        "type": "Sort",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/viree-bar.png"
+      }
+    },
+    "name": "Virée du bar",
+    "type": "Sort",
+    "cost": 3,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 3
+    }
+  },
+  "ma-tournee": {
+    "id": "ma-tournee",
+    "face": {
+      "front": {
+        "name": {
+          "name": "C'EST MA TOURNÉE !"
+        },
+        "type": "Sort",
+        "cost": 5,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ma-tournee.png"
+      }
+    },
+    "name": "C'EST MA TOURNÉE !",
+    "type": "Sort",
+    "cost": 5,
+    "faction": "Ivrognes",
     "_legal": {
       "PROTO": 1
     }
@@ -35,11 +378,12 @@
     "name": "Druide (nom temporaire)",
     "type": "Gardien",
     "cost": 0,
-    "power": 2,
-    "hp": 8,
+    "faction": "Test",
     "_legal": {
       "PROTO": 1
-    }
+    },
+    "power": 2,
+    "hp": 8
   },
   "unite-a": {
     "id": "unite-a",
@@ -56,11 +400,12 @@
     "name": "Unité test A",
     "type": "Unite",
     "cost": 1,
-    "power": 2,
-    "hp": 3,
+    "faction": "Test",
     "_legal": {
-      "PROTO": 4
-    }
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 3
   },
   "unite-b": {
     "id": "unite-b",
@@ -77,11 +422,12 @@
     "name": "Unité test B",
     "type": "Unite",
     "cost": 2,
-    "power": 3,
-    "hp": 2,
+    "faction": "Test",
     "_legal": {
-      "PROTO": 4
-    }
+      "PROTO": 3
+    },
+    "power": 3,
+    "hp": 2
   },
   "unite-c": {
     "id": "unite-c",
@@ -98,11 +444,12 @@
     "name": "Unité test C",
     "type": "Unite",
     "cost": 3,
-    "power": 3,
-    "hp": 5,
+    "faction": "Test",
     "_legal": {
-      "PROTO": 4
-    }
+      "PROTO": 3
+    },
+    "power": 3,
+    "hp": 5
   },
   "unite-d": {
     "id": "unite-d",
@@ -119,121 +466,12 @@
     "name": "Unité test D",
     "type": "Unite",
     "cost": 4,
+    "faction": "Test",
+    "_legal": {
+      "PROTO": 3
+    },
     "power": 5,
-    "hp": 4,
-    "_legal": {
-      "PROTO": 4
-    }
-  },
-  "monstre-1": {
-    "id": "monstre-1",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Monstre test 1"
-        },
-        "type": "Monstre",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/monstre-1.png"
-      }
-    },
-    "name": "Monstre test 1",
-    "type": "Monstre",
-    "cost": 0,
-    "power": 2,
-    "hp": 3,
-    "isToken": true,
-    "_legal": {
-      "PROTO": false
-    }
-  },
-  "monstre-2": {
-    "id": "monstre-2",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Monstre test 2"
-        },
-        "type": "Monstre",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/monstre-2.png"
-      }
-    },
-    "name": "Monstre test 2",
-    "type": "Monstre",
-    "cost": 0,
-    "power": 3,
-    "hp": 5,
-    "isToken": true,
-    "_legal": {
-      "PROTO": false
-    }
-  },
-  "monstre-3": {
-    "id": "monstre-3",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Monstre test 3"
-        },
-        "type": "Monstre",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/monstre-3.png"
-      }
-    },
-    "name": "Monstre test 3",
-    "type": "Monstre",
-    "cost": 0,
-    "power": 4,
-    "hp": 6,
-    "isToken": true,
-    "_legal": {
-      "PROTO": false
-    }
-  },
-  "monstre-4": {
-    "id": "monstre-4",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Monstre test 4"
-        },
-        "type": "Monstre",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/monstre-4.png"
-      }
-    },
-    "name": "Monstre test 4",
-    "type": "Monstre",
-    "cost": 0,
-    "power": 5,
-    "hp": 8,
-    "isToken": true,
-    "_legal": {
-      "PROTO": false
-    }
-  },
-  "boss-test": {
-    "id": "boss-test",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Boss test"
-        },
-        "type": "Boss",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/boss-test.png"
-      }
-    },
-    "name": "Boss test",
-    "type": "Boss",
-    "cost": 0,
-    "power": 8,
-    "hp": 20,
-    "isToken": true,
-    "_legal": {
-      "PROTO": false
-    }
+    "hp": 4
   },
   "relique-test": {
     "id": "relique-test",
@@ -250,6 +488,7 @@
     "name": "Relique test",
     "type": "Relique",
     "cost": 0,
+    "faction": "Relique",
     "_legal": {
       "PROTO": 3
     }
@@ -269,6 +508,7 @@
     "name": "Carte au trésor",
     "type": "Tresor",
     "cost": 0,
+    "faction": "Relique",
     "_legal": {
       "PROTO": 1
     }
@@ -288,9 +528,125 @@
     "name": "Énergie",
     "type": "Energie",
     "cost": 0,
-    "isToken": true,
+    "faction": "Energie",
     "_legal": {
       "PROTO": false
-    }
+    },
+    "isToken": true
+  },
+  "monstre-1": {
+    "id": "monstre-1",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Monstre test 1"
+        },
+        "type": "Monstre",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/monstre-1.png"
+      }
+    },
+    "name": "Monstre test 1",
+    "type": "Monstre",
+    "cost": 0,
+    "faction": "Monstre",
+    "_legal": {
+      "PROTO": false
+    },
+    "power": 2,
+    "hp": 3,
+    "isToken": true
+  },
+  "monstre-2": {
+    "id": "monstre-2",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Monstre test 2"
+        },
+        "type": "Monstre",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/monstre-2.png"
+      }
+    },
+    "name": "Monstre test 2",
+    "type": "Monstre",
+    "cost": 0,
+    "faction": "Monstre",
+    "_legal": {
+      "PROTO": false
+    },
+    "power": 3,
+    "hp": 5,
+    "isToken": true
+  },
+  "monstre-3": {
+    "id": "monstre-3",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Monstre test 3"
+        },
+        "type": "Monstre",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/monstre-3.png"
+      }
+    },
+    "name": "Monstre test 3",
+    "type": "Monstre",
+    "cost": 0,
+    "faction": "Monstre",
+    "_legal": {
+      "PROTO": false
+    },
+    "power": 4,
+    "hp": 6,
+    "isToken": true
+  },
+  "monstre-4": {
+    "id": "monstre-4",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Monstre test 4"
+        },
+        "type": "Monstre",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/monstre-4.png"
+      }
+    },
+    "name": "Monstre test 4",
+    "type": "Monstre",
+    "cost": 0,
+    "faction": "Monstre",
+    "_legal": {
+      "PROTO": false
+    },
+    "power": 5,
+    "hp": 8,
+    "isToken": true
+  },
+  "boss-test": {
+    "id": "boss-test",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Boss test"
+        },
+        "type": "Boss",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/boss-test.png"
+      }
+    },
+    "name": "Boss test",
+    "type": "Boss",
+    "cost": 0,
+    "faction": "Boss",
+    "_legal": {
+      "PROTO": false
+    },
+    "power": 8,
+    "hp": 20,
+    "isToken": true
   }
 }
