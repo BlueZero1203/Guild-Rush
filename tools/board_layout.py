@@ -113,3 +113,16 @@ g['customHelp']=h
 json.dump(g,open(P,'w'),ensure_ascii=False,indent=2)
 g=json.load(open(P)); g['customHelp']=g['customHelp'].replace("Unités : une unité invoquée arrive au Camp, épuisée (incline-la). Redressée, tu l'envoies dans une Expédition 1-4 pour affronter le monstre de cette colonne. Blessée, elle revient au Camp. Les reliques se jouent aussi au Camp.","Unités : une unité jouée arrive dans l'Expédition 1 ; déplace-la dans l'Expédition de ton choix pour affronter ce monstre ce tour-ci, ou au Camp pour défendre contre les raids. Blessée, elle revient au Camp. Les reliques se jouent au Camp.")
 json.dump(g,open(P,'w'),ensure_ascii=False,indent=2)
+
+# Énergie : 3 énergies se redressent à chaque Aube (au lieu d'1)
+g=json.load(open(P))
+ev=g['gameplay']['Standard']['sections']['sectionsDict']['Donjon']['events']
+ev['onNewTurn']=ev['onNewTurn'].replace(
+ "if(t.length){await functions.updateCards([t[0]],{isTapped:false});functions.chatLog('Aube : 1 énergie redressée.');}",
+ "if(t.length){const r=t.slice(0,3);await functions.updateCards(r,{isTapped:false});functions.chatLog('Aube : '+r.length+' énergie(s) redressée(s).');}")
+g['customHelp']=g['customHelp'].replace(
+ "elles ne se redressent pas toutes : 1 seule se redresse au début de ton tour.",
+ "3 se redressent au début de ton tour (pas plus).").replace(
+ "Blessée, elle revient au Camp.",
+ "À l'Aube, une unité intacte peut passer dans une Expédition voisine (1↔2, 2↔3, 3↔4) ou rentrer au Camp, une fois par tour. Blessée, elle revient au Camp.")
+json.dump(g,open(P,'w'),ensure_ascii=False,indent=2)
