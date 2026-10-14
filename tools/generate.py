@@ -73,7 +73,7 @@ CARDS = [
     C("roule-baril", "Roulé de baril", "Sort", 2, IVR,
       "Déplace ton baril vers une autre salle, puis 2 dégâts à chaque ennemi de la salle d'arrivée."),
     C("viree-bar", "Virée du bar", "Sort", 3, IVR,
-      "Expulse une unité adverse d'une salle : elle retourne en Expédition, Sonnée."),
+      "Expulse une unité adverse d'une salle : elle retourne au Camp, épuisée."),
     C("ma-tournee", "C'EST MA TOURNÉE !", "Sort", 5, IVR,
       "Toutes tes unités en jeu sont soignées et gagnent +1/+1 jusqu'à la fin du tour. "
       "Tes blessées du Camp reviennent en Expédition. +1 Puissance de plus si ton baril est intact. "
