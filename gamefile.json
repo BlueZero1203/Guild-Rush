@@ -144,17 +144,53 @@
                 {
                   "section": "Expedition",
                   "style": {
-                    "width": "80%",
-                    "backgroundColor": "rgba(70,130,190,0.16)",
-                    "borderRadius": "8px"
+                    "width": "62%",
+                    "borderRadius": "8px",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EEXP%C3%89DITION%3C/text%3E%3C/svg%3E\")",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundPosition": "left 22px top 3px",
+                    "backgroundColor": "rgba(70,130,190,0.16)"
                   }
                 },
                 {
                   "section": "Gardien",
                   "style": {
                     "width": "20%",
-                    "backgroundColor": "rgba(150,100,200,0.22)",
-                    "borderRadius": "8px"
+                    "borderRadius": "8px",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EGARDIEN%3C/text%3E%3C/svg%3E\")",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundPosition": "left 22px top 3px",
+                    "backgroundColor": "rgba(150,100,200,0.22)"
+                  }
+                },
+                {
+                  "section": "Relique",
+                  "style": {
+                    "width": "6%",
+                    "borderRadius": "8px",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ERELIQUES%3C/text%3E%3C/svg%3E\")",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundPosition": "left 4px top 3px"
+                  }
+                },
+                {
+                  "section": "PiocheEnergie",
+                  "style": {
+                    "width": "6%",
+                    "borderRadius": "8px",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3E%C3%89NERGIE%3C/text%3E%3C/svg%3E\")",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundPosition": "left 4px top 3px"
+                  }
+                },
+                {
+                  "section": "Reserve",
+                  "style": {
+                    "width": "6%",
+                    "borderRadius": "8px",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ER%C3%89SERVE%3C/text%3E%3C/svg%3E\")",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundPosition": "left 4px top 3px"
                   }
                 }
               ]
@@ -165,43 +201,34 @@
                 {
                   "section": "Energie",
                   "style": {
-                    "width": "30%",
-                    "backgroundColor": "rgba(60,190,210,0.16)",
-                    "borderRadius": "8px"
+                    "width": "34%",
+                    "borderRadius": "8px",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3E%C3%89NERGIE%3C/text%3E%3C/svg%3E\")",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundPosition": "left 22px top 3px",
+                    "backgroundColor": "rgba(60,190,210,0.16)"
                   }
                 },
                 {
                   "section": "Camp",
                   "style": {
-                    "width": "22%",
-                    "backgroundColor": "rgba(200,80,80,0.16)",
-                    "borderRadius": "8px"
+                    "width": "24%",
+                    "borderRadius": "8px",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ECAMP %28BLESS%C3%89ES%29%3C/text%3E%3C/svg%3E\")",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundPosition": "left 22px top 3px",
+                    "backgroundColor": "rgba(200,80,80,0.16)"
                   }
                 },
                 {
                   "section": "Reliques",
                   "style": {
-                    "width": "20%",
-                    "backgroundColor": "rgba(220,180,60,0.16)",
-                    "borderRadius": "8px"
-                  }
-                },
-                {
-                  "section": "Relique",
-                  "style": {
-                    "width": "9%"
-                  }
-                },
-                {
-                  "section": "PiocheEnergie",
-                  "style": {
-                    "width": "7%"
-                  }
-                },
-                {
-                  "section": "Reserve",
-                  "style": {
-                    "width": "12%"
+                    "width": "24%",
+                    "borderRadius": "8px",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ERELIQUES EN JEU%3C/text%3E%3C/svg%3E\")",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundPosition": "left 22px top 3px",
+                    "backgroundColor": "rgba(220,180,60,0.16)"
                   }
                 }
               ]
@@ -216,49 +243,72 @@
               {
                 "section": "Salle1",
                 "style": {
-                  "backgroundColor": "rgba(140,140,150,0.14)",
-                  "borderRadius": "8px"
+                  "borderRadius": "8px",
+                  "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ESALLE 1%3C/text%3E%3C/svg%3E\")",
+                  "backgroundRepeat": "no-repeat",
+                  "backgroundPosition": "left 22px top 3px",
+                  "backgroundColor": "rgba(140,140,150,0.14)"
                 }
               },
               {
                 "section": "Salle2",
                 "style": {
-                  "backgroundColor": "rgba(140,140,150,0.14)",
-                  "borderRadius": "8px"
+                  "borderRadius": "8px",
+                  "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ESALLE 2%3C/text%3E%3C/svg%3E\")",
+                  "backgroundRepeat": "no-repeat",
+                  "backgroundPosition": "left 22px top 3px",
+                  "backgroundColor": "rgba(140,140,150,0.14)"
                 }
               },
               {
                 "section": "Salle3",
                 "style": {
-                  "backgroundColor": "rgba(140,140,150,0.14)",
-                  "borderRadius": "8px"
+                  "borderRadius": "8px",
+                  "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ESALLE 3%3C/text%3E%3C/svg%3E\")",
+                  "backgroundRepeat": "no-repeat",
+                  "backgroundPosition": "left 22px top 3px",
+                  "backgroundColor": "rgba(140,140,150,0.14)"
                 }
               },
               {
                 "section": "Salle4",
                 "style": {
-                  "backgroundColor": "rgba(140,140,150,0.14)",
-                  "borderRadius": "8px"
+                  "borderRadius": "8px",
+                  "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ESALLE 4%3C/text%3E%3C/svg%3E\")",
+                  "backgroundRepeat": "no-repeat",
+                  "backgroundPosition": "left 22px top 3px",
+                  "backgroundColor": "rgba(140,140,150,0.14)"
                 }
               },
               {
                 "section": "Boss",
                 "style": {
                   "width": "11%",
-                  "backgroundColor": "rgba(225,60,40,0.18)",
-                  "borderRadius": "8px"
+                  "borderRadius": "8px",
+                  "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EBOSS%3C/text%3E%3C/svg%3E\")",
+                  "backgroundRepeat": "no-repeat",
+                  "backgroundPosition": "left 22px top 3px",
+                  "backgroundColor": "rgba(225,60,40,0.18)"
                 }
               },
               {
                 "section": "Monstres",
                 "style": {
-                  "width": "11%"
+                  "width": "11%",
+                  "borderRadius": "8px",
+                  "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EMONSTRES%3C/text%3E%3C/svg%3E\")",
+                  "backgroundRepeat": "no-repeat",
+                  "backgroundPosition": "left 4px top 3px"
                 }
               },
               {
                 "section": "CimetiereMonstres",
                 "style": {
-                  "width": "11%"
+                  "width": "11%",
+                  "borderRadius": "8px",
+                  "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ECIMETI%C3%88RE%3C/text%3E%3C/svg%3E\")",
+                  "backgroundRepeat": "no-repeat",
+                  "backgroundPosition": "left 4px top 3px"
                 }
               },
               {
@@ -360,7 +410,7 @@
           "Energie": {
             "isHidden": "no",
             "height": 13,
-            "alignment": "START",
+            "alignment": "CENTER",
             "displayedTitle": "Énergie",
             "noAutoPayTo": true
           },
@@ -413,14 +463,16 @@
                   "props": {
                     "className": "btn btn-primary btn-sm"
                   },
-                  "onClick": "const salles=['Salle1','Salle2','Salle3','Salle4'];\nconst d=game.data.Donjon;\nif(d.etage>=4){functions.chatLog('Le combat contre le Boss est déjà lancé.');return;}\nconst restants=salles.flatMap(s=>cards[s]??[]);\nif(restants.length) await functions.moveCards(restants,'CimetiereMonstres');\nif(d.etage>=3){d.etage=4;functions.chatLog('Les 3 étages sont terminés : place au Boss ! (+2 énergie)');await functions.repositionCards();return;}\nfor(const s of salles){await functions.drawFromExtraDeck('Monstres',1,false,s);}\nd.etage=d.etage+1;\nfunctions.chatLog('Étage '+d.etage+' : 4 nouveaux monstres dans les salles (+2 énergie).');\nawait functions.repositionCards();",
+                  "onClick": "const salles=['Salle1','Salle2','Salle3','Salle4'];\nconst d=game.data.Donjon;\nif(d.etage>=4){functions.chatLog('Le combat contre le Boss est déjà lancé.');return;}\nconst restants=salles.flatMap(s=>cards[s]??[]);\nif(restants.length) await functions.moveCards(restants,'CimetiereMonstres');\nif(d.etage>=3){d.etage=4;functions.chatLog('Les 3 étages sont terminés : place au Boss ! (+2 énergie)');{const e=game.data.Donjon?.etage??0;if(e<=1){window.__grEtage=e;}else{const prev=Math.max(window.__grEtage??1,1);if(e>prev){window.__grEtage=e;await functions.drawFromExtraDeck('PiocheEnergie',(e-prev)*2,false,'Energie');}}}await functions.repositionCards();return;}\nfor(const s of salles){await functions.drawFromExtraDeck('Monstres',1,false,s);}\nd.etage=d.etage+1;\nfunctions.chatLog('Étage '+d.etage+' : 4 nouveaux monstres dans les salles (+2 énergie).');{const e=game.data.Donjon?.etage??0;if(e<=1){window.__grEtage=e;}else{const prev=Math.max(window.__grEtage??1,1);if(e>prev){window.__grEtage=e;await functions.drawFromExtraDeck('PiocheEnergie',(e-prev)*2,false,'Energie');}}}\nawait functions.repositionCards();",
                   "children": "Étage suivant"
                 }
               ]
             },
             "events": {
               "onPlayersReady": "if(!game.isHost)return;\nawait functions.shuffleSection('Monstres');\nconst d=game.data.Donjon;\nfor(const s of ['Salle1','Salle2','Salle3','Salle4']){await functions.drawFromExtraDeck('Monstres',1,false,s);}\nd.etage=1;\nfunctions.chatLog('Étage 1 : 4 monstres dans les salles.');\nawait functions.repositionCards();",
-              "onUpdate": "const e=game.data.Donjon.etage;\nif(e<=1){window.__grEtage=e;return;}\nconst prev=Math.max(window.__grEtage??1,1);\nif(e>prev){window.__grEtage=e;await functions.drawFromExtraDeck('PiocheEnergie',(e-prev)*2,false,'Energie');}"
+              "onUpdate": "{const e=game.data.Donjon?.etage??0;if(e<=1){window.__grEtage=e;}else{const prev=Math.max(window.__grEtage??1,1);if(e>prev){window.__grEtage=e;await functions.drawFromExtraDeck('PiocheEnergie',(e-prev)*2,false,'Energie');}}}",
+              "onCardsUpdate": "{const e=game.data.Donjon?.etage??0;if(e<=1){window.__grEtage=e;}else{const prev=Math.max(window.__grEtage??1,1);if(e>prev){window.__grEtage=e;await functions.drawFromExtraDeck('PiocheEnergie',(e-prev)*2,false,'Energie');}}}",
+              "onNewTurn": "{const e=game.data.Donjon?.etage??0;if(e<=1){window.__grEtage=e;}else{const prev=Math.max(window.__grEtage??1,1);if(e>prev){window.__grEtage=e;await functions.drawFromExtraDeck('PiocheEnergie',(e-prev)*2,false,'Energie');}}}"
             }
           }
         },
