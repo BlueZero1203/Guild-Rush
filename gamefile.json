@@ -1,7 +1,7 @@
 {
   "name": "Guild Rush (proto)",
   "cardRotation": 90,
-  "customHelp": "Proto de Guild Rush. Ivrognes (Guss) contre cartes de test (Druides à venir).\nTa zone : Expédition et Gardien en haut ; Énergie, Camp (blessées), Reliques, pioches en bas.\nAu centre : Salles 1 à 4 (1 monstre par salle), Boss, deck et cimetière des monstres, panneau Donjon.\nÉnergie : 3 au départ, +2 à chaque nouvel étage (bouton « Étage suivant » de l'hôte). Incline une Énergie pour payer 1 ; elles ne se redressent pas toutes : 1 seule se redresse au début de ton tour.\nCompteur = Trésors. Jetons Dégât et Baril à poser sur les cartes.",
+  "customHelp": "Proto de Guild Rush. Ivrognes (Guss) contre cartes de test (Druides à venir).\nTa zone : Expédition et Gardien en haut ; Énergie, Camp (blessées), Reliques, pioches en bas.\nAu centre : Salles 1 à 4 (1 monstre par salle), Boss, deck et cimetière des monstres, panneau Donjon.\nÉnergie : 3 au départ, +2 à chaque nouvel étage (bouton « Étage suivant » de l'hôte). Incline une Énergie pour payer 1 ; elles ne se redressent pas toutes : 1 seule se redresse au début de ton tour.\nCompteur = Trésors. Jetons Dégât et Baril à poser sur les cartes.\nAlcools (Cave des Ivrognes) : tire une pinte (1 PV du baril) pour piocher 1 carte de la Cave, 1 fois par tour. Un alcool s'attache à ton unité dans la salle du baril (même en combat) et reste tant qu'elle est sur le terrain.",
   "deckBuilding": {
     "mainFilters": [
       "faction",
@@ -15,6 +15,7 @@
         "customCategories": [
           "Gardien",
           "Baril",
+          "Alcool",
           "Relique"
         ],
         "deckRuleset": "Proto",
@@ -40,6 +41,12 @@
             "category": "Baril",
             "min": 0,
             "max": 1,
+            "ignoreTotalCount": true
+          },
+          {
+            "category": "Alcool",
+            "min": 0,
+            "max": 12,
             "ignoreTotalCount": true
           },
           {
@@ -196,7 +203,7 @@
                   "style": {
                     "width": "10%",
                     "borderRadius": "8px",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ER%C3%89SERVE%3C/text%3E%3C/svg%3E\")",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ECAVE%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 4px bottom 1px"
                   }
@@ -491,7 +498,7 @@
             "isHidden": "yes",
             "height": 13,
             "alignment": "DECK",
-            "displayedTitle": "Réserve de faction"
+            "displayedTitle": "La Cave (réserve)"
           },
           "Salle1": {
             "isHidden": "no",
@@ -694,11 +701,13 @@
           "Monstre": "Salle1",
           "Boss": "Boss",
           "Energie": "Energie",
-          "Baril": "Gardien"
+          "Baril": "Gardien",
+          "Alcool": "GROUP"
         },
         "categoriesAlreadyOnBoard": [
           "Gardien->Gardien",
           "Baril->Gardien",
+          "Alcool->Reserve",
           "Relique->Relique"
         ],
         "autoPlayFromStack": {
@@ -710,7 +719,8 @@
           "Boss": "Boss",
           "Energie": "Energie",
           "Baril": "Gardien",
-          "Sort": "Discard"
+          "Sort": "Discard",
+          "Alcool": "GROUP"
         }
       }
     }

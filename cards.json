@@ -41,7 +41,7 @@
       "PROTO": 1
     },
     "power": 0,
-    "hp": 4
+    "hp": 6
   },
   "habitue": {
     "id": "habitue",
@@ -358,6 +358,166 @@
     "name": "C'EST MA TOURNÉE !",
     "type": "Sort",
     "cost": 5,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 1
+    }
+  },
+  "biere": {
+    "id": "biere",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Bière blonde"
+        },
+        "type": "Alcool",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/biere.png"
+      }
+    },
+    "name": "Bière blonde",
+    "type": "Alcool",
+    "cost": 0,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 3
+    }
+  },
+  "cidre": {
+    "id": "cidre",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Cidre"
+        },
+        "type": "Alcool",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cidre.png"
+      }
+    },
+    "name": "Cidre",
+    "type": "Alcool",
+    "cost": 0,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 2
+    }
+  },
+  "hydromel": {
+    "id": "hydromel",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Hydromel"
+        },
+        "type": "Alcool",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/hydromel.png"
+      }
+    },
+    "name": "Hydromel",
+    "type": "Alcool",
+    "cost": 1,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 2
+    }
+  },
+  "rhum": {
+    "id": "rhum",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Rhum"
+        },
+        "type": "Alcool",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/rhum.png"
+      }
+    },
+    "name": "Rhum",
+    "type": "Alcool",
+    "cost": 1,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 1
+    }
+  },
+  "whisky": {
+    "id": "whisky",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Whisky tourbé"
+        },
+        "type": "Alcool",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/whisky.png"
+      }
+    },
+    "name": "Whisky tourbé",
+    "type": "Alcool",
+    "cost": 1,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 1
+    }
+  },
+  "vin-chaud": {
+    "id": "vin-chaud",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Vin chaud"
+        },
+        "type": "Alcool",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/vin-chaud.png"
+      }
+    },
+    "name": "Vin chaud",
+    "type": "Alcool",
+    "cost": 1,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 1
+    }
+  },
+  "absinthe": {
+    "id": "absinthe",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Absinthe"
+        },
+        "type": "Alcool",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/absinthe.png"
+      }
+    },
+    "name": "Absinthe",
+    "type": "Alcool",
+    "cost": 1,
+    "faction": "Ivrognes",
+    "_legal": {
+      "PROTO": 1
+    }
+  },
+  "liqueur-feu": {
+    "id": "liqueur-feu",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Liqueur de feu"
+        },
+        "type": "Alcool",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/liqueur-feu.png"
+      }
+    },
+    "name": "Liqueur de feu",
+    "type": "Alcool",
+    "cost": 1,
     "faction": "Ivrognes",
     "_legal": {
       "PROTO": 1

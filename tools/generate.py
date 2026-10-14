@@ -31,7 +31,7 @@ PALETTE = {
 }
 TYPE_LABEL = {"Gardien": "Gardien", "Unite": "Unité", "Sort": "Sort", "Baril": "Baril",
               "Monstre": "Monstre", "Boss": "Boss", "Relique": "Relique", "Tresor": "Trésor",
-              "Energie": "Énergie"}
+              "Energie": "Énergie", "Alcool": "Alcool"}
 
 
 def C(id, name, type, cost, faction, text="", power=None, hp=None, legal=3, token=False):
@@ -48,10 +48,11 @@ CARDS = [
       "**Coup de torchon** : la première unité qui attaque Guss pendant un raid est Sonnée.",
       3, 7, legal=1),
     C("baril", "Le baril", "Baril", 0, IVR,
-      "Un seul baril. Posé dans une salle au premier Crépuscule, ne rentre jamais au Camp. "
+      "Un seul baril, posé dans une salle au premier Crépuscule ; ne rentre jamais au Camp. "
       "**Aura** : tes unités de sa salle ont +1 Puissance. **Encaisser** : il peut prendre les dégâts "
-      "d'une de tes unités de sa salle. **Explosion** à 0 PV : 1 dégât à tout ce qui est dans la salle.",
-      0, 4, legal=1),
+      "d'une de tes unités de sa salle. **Tirer une pinte** : 1 fois par tour, retire-lui 1 PV pour piocher "
+      "1 carte de la Cave. **Explosion** à 0 PV : 1 dégât à tout ce qui est dans la salle.",
+      0, 6, legal=1),
     # --- Ivrognes : unités ---
     C("habitue", "Habitué du bar", "Unite", 1, IVR, "**Près du baril** : +1 PV.", 1, 2),
     C("serveuse", "Serveuse", "Unite", 2, IVR, "**Arrivée** : une de tes unités gagne +1/+1.", 1, 3),
@@ -80,6 +81,18 @@ CARDS = [
       "Toutes tes unités en jeu sont soignées et gagnent +1/+1 jusqu'à la fin du tour. "
       "Tes blessées du Camp reviennent en Expédition. +1 Puissance de plus si ton baril est intact. "
       "**Signature** : 1 exemplaire max.", legal=1),
+    # --- Ivrognes : la Cave (Réserve de faction) ---
+    C("biere", "Bière blonde", "Alcool", 0, IVR, "**Alcool** (sur ton unité dans la salle du baril, même en combat). +1 Puissance.", legal=3),
+    C("cidre", "Cidre", "Alcool", 0, IVR, "**Alcool** (sur ton unité dans la salle du baril, même en combat). +1 PV.", legal=2),
+    C("hydromel", "Hydromel", "Alcool", 1, IVR, "**Alcool** (sur ton unité dans la salle du baril, même en combat). +2 PV et soigne 2 PV en s'attachant.", legal=2),
+    C("rhum", "Rhum", "Alcool", 1, IVR,
+      "**Alcool** (sur ton unité dans la salle du baril, même en combat). +2 Puissance. **Gueule de bois** : à la Nuit, l'unité est Sonnée pour le tour suivant.", legal=1),
+    C("whisky", "Whisky tourbé", "Alcool", 1, IVR, "**Alcool** (sur ton unité dans la salle du baril, même en combat). L'unité ne peut pas être Sonnée.", legal=1),
+    C("vin-chaud", "Vin chaud", "Alcool", 1, IVR, "**Alcool** (sur ton unité dans la salle du baril, même en combat). Soigne complètement l'unité en s'attachant.", legal=1),
+    C("absinthe", "Absinthe", "Alcool", 1, IVR,
+      "**Alcool** (sur ton unité dans la salle du baril, même en combat). +3 Puissance. Au début de ton tour suivant, l'unité perd 2 PV.", legal=1),
+    C("liqueur-feu", "Liqueur de feu", "Alcool", 1, IVR,
+      "**Alcool** (sur ton unité dans la salle du baril, même en combat). Quand l'unité meurt : 2 dégâts à chaque ennemi de sa salle.", legal=1),
     # --- Cartes de test (en attendant les Druides) ---
     C("gardien-druide", "Druide (nom temporaire)", "Gardien", 0, "Test",
       "Passif : à chaque monstre tué, récolte un ingrédient.", 2, 8, legal=1),
