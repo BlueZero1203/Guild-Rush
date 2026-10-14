@@ -1,7 +1,7 @@
 {
-  "name": "Guild Rush (proto)",
+  "name": "Guild Rush (design)",
   "cardRotation": 90,
-  "customHelp": "Proto de Guild Rush. Ivrognes (Guss) contre Druides (Cernun).\nPlateau en papillon : les monstres sont au centre (Monstre 1 à 4, Boss, pioche et défausse des monstres, panneau Donjon à gauche). Chaque joueur a une Salle sous (ou au-dessus de) chaque monstre : 3 unités max par salle, jetons compris. Ta zone : Salles 1-4 et Gardien ; Énergie (avec sa pioche), Camp (blessées et reliques, avec la pioche de reliques) et Réserve ; Expédition en bas.\nÉnergie : 3 au départ, +2 à chaque nouvel étage (bouton « Étage suivant » de l'hôte). Incline une Énergie pour payer 1 ; elles ne se redressent pas toutes : 1 seule se redresse au début de ton tour.\nCompteur = Trésors. Jetons Dégât et Baril à poser sur les cartes.\nAlcools (Cave des Ivrognes) : tire une pinte (1 PV du baril) pour piocher 1 carte de la Cave, 1 fois par tour. Un alcool s'attache à ton unité dans la salle du baril (même en combat) et reste tant qu'elle est sur le terrain.\nIngrédients (Garde-manger des Druides) : à chaque Aube, pioche 3 cartes de ta Réserve (12 cartes), garde-en 2 en les posant sur Cernun (panier de 4 max), remets la 3e dans la Réserve puis clique « Mélanger ». Au début du Crépuscule, cuisine 1 recette du Livre de recettes ; les ingrédients utilisés retournent dans la Réserve, puis « Mélanger ».\nJetons Pousse (1/1) et Loup (2/1) : clic droit sur la carte qui les invoque, ou panneau des jetons.\nRéserve : clique sur la pile pour piocher 1 carte, ou utilise les boutons « Ta Réserve » du panneau Donjon (piocher 1, piocher 3, mélanger).\nBaril et Livre de recettes ne sont plus des cartes de deck : ils sont décrits sur le Gardien. Crée la fiche (baril ou livre) avec le panneau des jetons de ton Gardien (clic droit sur lui).",
+  "customHelp": "Proto de Guild Rush. Ivrognes (Guss) contre Druides (Cernun).\nPlateau en papillon : les monstres sont au centre (Monstre 1 à 4, Boss, pioche et défausse des monstres, panneau Donjon à gauche). Chaque joueur a une Salle sous (ou au-dessus de) chaque monstre : 3 unités max par salle, jetons compris. Ta zone : Salles 1-4 et Gardien ; Énergie (avec sa pioche), Camp (blessées et reliques, avec la pioche de reliques) et Réserve.\nÉnergie : 3 au départ, +2 à chaque nouvel étage (bouton « Étage suivant » de l'hôte). Incline une Énergie pour payer 1 ; elles ne se redressent pas toutes : 1 seule se redresse au début de ton tour.\nCompteur = Trésors. Jetons Dégât et Baril à poser sur les cartes.\nAlcools (Cave des Ivrognes) : tire une pinte (1 PV du baril) pour piocher 1 carte de la Cave, 1 fois par tour. Un alcool s'attache à ton unité dans la salle du baril (même en combat) et reste tant qu'elle est sur le terrain.\nIngrédients (Garde-manger des Druides) : à chaque Aube, pioche 3 cartes de ta Réserve (12 cartes), garde-en 2 en les posant sur Cernun (panier de 4 max), remets la 3e dans la Réserve puis clique « Mélanger ». Au début du Crépuscule, cuisine 1 recette du Livre de recettes ; les ingrédients utilisés retournent dans la Réserve, puis « Mélanger ».\nJetons Pousse (1/1) et Loup (2/1) : clic droit sur la carte qui les invoque, ou panneau des jetons.\nRéserve : clique sur la pile pour piocher 1 carte. Pour piocher 3 (Cueillette), clique la pile trois fois, puis clic droit sur la pile > Mélanger.\nBaril et Livre de recettes ne sont plus des cartes de deck : ils sont décrits sur le Gardien. Crée la fiche (baril ou livre) avec le panneau des jetons de ton Gardien (clic droit sur lui).",
   "deckBuilding": {
     "mainFilters": [
       "faction",
@@ -159,7 +159,7 @@
                 {
                   "section": "BF1",
                   "style": {
-                    "width": "10.5vh",
+                    "width": "12.5vh",
                     "flex": "0 0 auto",
                     "borderRadius": "6px",
                     "backgroundColor": "rgba(240,200,60,0.20)",
@@ -167,18 +167,18 @@
                     "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ESALLE 1%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px",
-                    "marginLeft": "12.0vh"
+                    "marginLeft": "14.0vh"
                   }
                 },
                 {
                   "section": "BF2",
                   "style": {
-                    "width": "10.5vh",
+                    "width": "12.5vh",
                     "flex": "0 0 auto",
                     "borderRadius": "6px",
                     "backgroundColor": "rgba(240,200,60,0.20)",
                     "border": "1px solid rgba(240,200,60,0.55)",
-                    "marginLeft": "1.5vh",
+                    "marginLeft": "2.5vh",
                     "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ESALLE 2%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px"
@@ -187,12 +187,12 @@
                 {
                   "section": "BF3",
                   "style": {
-                    "width": "10.5vh",
+                    "width": "12.5vh",
                     "flex": "0 0 auto",
                     "borderRadius": "6px",
                     "backgroundColor": "rgba(240,200,60,0.20)",
                     "border": "1px solid rgba(240,200,60,0.55)",
-                    "marginLeft": "1.5vh",
+                    "marginLeft": "2.5vh",
                     "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ESALLE 3%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px"
@@ -201,12 +201,12 @@
                 {
                   "section": "BF4",
                   "style": {
-                    "width": "10.5vh",
+                    "width": "12.5vh",
                     "flex": "0 0 auto",
                     "borderRadius": "6px",
                     "backgroundColor": "rgba(240,200,60,0.20)",
                     "border": "1px solid rgba(240,200,60,0.55)",
-                    "marginLeft": "1.5vh",
+                    "marginLeft": "2.5vh",
                     "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ESALLE 4%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px"
@@ -215,16 +215,16 @@
                 {
                   "section": "Gardien",
                   "style": {
-                    "width": "8vh",
+                    "width": "10vh",
                     "flex": "0 0 auto",
                     "borderRadius": "6px",
                     "backgroundColor": "rgba(245,170,60,0.20)",
                     "border": "1px solid rgba(245,170,60,0.55)",
-                    "marginLeft": "1.5vh",
+                    "marginLeft": "2.5vh",
                     "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EGARDIEN%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px",
-                    "marginRight": "19.0vh"
+                    "marginRight": "25.0vh"
                   }
                 }
               ],
@@ -239,7 +239,7 @@
                 {
                   "section": "PiocheEnergie",
                   "style": {
-                    "width": "8vh",
+                    "width": "10vh",
                     "flex": "0 0 auto",
                     "borderRadius": "6px",
                     "backgroundColor": "rgba(175,85,205,0.20)",
@@ -247,18 +247,18 @@
                     "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EPIOCHE%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 4px bottom 1px",
-                    "marginLeft": "12.0vh"
+                    "marginLeft": "14.0vh"
                   }
                 },
                 {
                   "section": "Energie",
                   "style": {
-                    "width": "13.0vh",
+                    "width": "15.0vh",
                     "flex": "0 0 auto",
                     "borderRadius": "6px",
                     "backgroundColor": "rgba(175,85,205,0.20)",
                     "border": "1px solid rgba(175,85,205,0.55)",
-                    "marginLeft": "1.5vh",
+                    "marginLeft": "2.5vh",
                     "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3E%C3%89NERGIE%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px"
@@ -267,12 +267,12 @@
                 {
                   "section": "Relique",
                   "style": {
-                    "width": "8vh",
+                    "width": "10vh",
                     "flex": "0 0 auto",
                     "borderRadius": "6px",
                     "backgroundColor": "rgba(255,205,160,0.20)",
                     "border": "1px solid rgba(255,205,160,0.55)",
-                    "marginLeft": "1.5vh",
+                    "marginLeft": "2.5vh",
                     "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ERELIQUES%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 4px bottom 1px"
@@ -281,12 +281,12 @@
                 {
                   "section": "Camp",
                   "style": {
-                    "width": "13.0vh",
+                    "width": "15.0vh",
                     "flex": "0 0 auto",
                     "borderRadius": "6px",
                     "backgroundColor": "rgba(255,205,160,0.20)",
                     "border": "1px solid rgba(255,205,160,0.55)",
-                    "marginLeft": "1.5vh",
+                    "marginLeft": "2.5vh",
                     "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ECAMP %C2%B7 BLESS%C3%89ES, RELIQUES%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px"
@@ -295,29 +295,29 @@
                 {
                   "section": "Reserve",
                   "style": {
-                    "width": "8vh",
+                    "width": "10vh",
                     "flex": "0 0 auto",
                     "borderRadius": "6px",
                     "backgroundColor": "rgba(245,150,30,0.20)",
                     "border": "1px solid rgba(245,150,30,0.55)",
-                    "marginLeft": "1.5vh",
+                    "marginLeft": "2.5vh",
                     "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ER%C3%89SERVE%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 4px bottom 1px",
-                    "marginRight": "19.0vh"
+                    "marginRight": "25.0vh"
                   }
                 }
               ],
               "style": {
                 "justifyContent": "center",
-                "marginBottom": "24vh"
+                "marginBottom": "12vh"
               },
               "isSymmetricalForOpponents": true
             }
           ]
         },
         "sharedZone": {
-          "height": 12,
+          "height": 14,
           "layout": {
             "direction": "column",
             "content": [
@@ -327,14 +327,14 @@
                   {
                     "section": "Donjon",
                     "style": {
-                      "width": "12vh",
+                      "width": "14vh",
                       "overflow": "visible"
                     }
                   },
                   {
                     "section": "Salle1",
                     "style": {
-                      "width": "10.5vh",
+                      "width": "12.5vh",
                       "flex": "0 0 auto",
                       "borderRadius": "6px",
                       "backgroundColor": "rgba(225,70,50,0.20)",
@@ -347,12 +347,12 @@
                   {
                     "section": "Salle2",
                     "style": {
-                      "width": "10.5vh",
+                      "width": "12.5vh",
                       "flex": "0 0 auto",
                       "borderRadius": "6px",
                       "backgroundColor": "rgba(225,70,50,0.20)",
                       "border": "1px solid rgba(225,70,50,0.55)",
-                      "marginLeft": "1.5vh",
+                      "marginLeft": "2.5vh",
                       "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EMONSTRE 2%3C/text%3E%3C/svg%3E\")",
                       "backgroundRepeat": "no-repeat",
                       "backgroundPosition": "left 22px top 3px"
@@ -361,12 +361,12 @@
                   {
                     "section": "Salle3",
                     "style": {
-                      "width": "10.5vh",
+                      "width": "12.5vh",
                       "flex": "0 0 auto",
                       "borderRadius": "6px",
                       "backgroundColor": "rgba(225,70,50,0.20)",
                       "border": "1px solid rgba(225,70,50,0.55)",
-                      "marginLeft": "1.5vh",
+                      "marginLeft": "2.5vh",
                       "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EMONSTRE 3%3C/text%3E%3C/svg%3E\")",
                       "backgroundRepeat": "no-repeat",
                       "backgroundPosition": "left 22px top 3px"
@@ -375,12 +375,12 @@
                   {
                     "section": "Salle4",
                     "style": {
-                      "width": "10.5vh",
+                      "width": "12.5vh",
                       "flex": "0 0 auto",
                       "borderRadius": "6px",
                       "backgroundColor": "rgba(225,70,50,0.20)",
                       "border": "1px solid rgba(225,70,50,0.55)",
-                      "marginLeft": "1.5vh",
+                      "marginLeft": "2.5vh",
                       "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EMONSTRE 4%3C/text%3E%3C/svg%3E\")",
                       "backgroundRepeat": "no-repeat",
                       "backgroundPosition": "left 22px top 3px"
@@ -389,12 +389,12 @@
                   {
                     "section": "Boss",
                     "style": {
-                      "width": "8vh",
+                      "width": "10vh",
                       "flex": "0 0 auto",
                       "borderRadius": "6px",
                       "backgroundColor": "rgba(225,70,50,0.20)",
                       "border": "1px solid rgba(225,70,50,0.55)",
-                      "marginLeft": "1.5vh",
+                      "marginLeft": "2.5vh",
                       "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EBOSS%3C/text%3E%3C/svg%3E\")",
                       "backgroundRepeat": "no-repeat",
                       "backgroundPosition": "left 22px top 3px"
@@ -403,12 +403,12 @@
                   {
                     "section": "Monstres",
                     "style": {
-                      "width": "8vh",
+                      "width": "10vh",
                       "flex": "0 0 auto",
                       "borderRadius": "6px",
                       "backgroundColor": "rgba(150,150,150,0.20)",
                       "border": "1px solid rgba(150,150,150,0.55)",
-                      "marginLeft": "1.5vh",
+                      "marginLeft": "2.5vh",
                       "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EPIOCHE%3C/text%3E%3C/svg%3E\")",
                       "backgroundRepeat": "no-repeat",
                       "backgroundPosition": "left 4px bottom 1px"
@@ -417,12 +417,12 @@
                   {
                     "section": "CimetiereMonstres",
                     "style": {
-                      "width": "8vh",
+                      "width": "10vh",
                       "flex": "0 0 auto",
                       "borderRadius": "6px",
                       "backgroundColor": "rgba(150,150,150,0.20)",
                       "border": "1px solid rgba(150,150,150,0.55)",
-                      "marginLeft": "1.5vh",
+                      "marginLeft": "2.5vh",
                       "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ED%C3%89FAUSSE%3C/text%3E%3C/svg%3E\")",
                       "backgroundRepeat": "no-repeat",
                       "backgroundPosition": "left 4px bottom 1px"
@@ -439,14 +439,14 @@
         "sectionsDict": {
           "Camp": {
             "isHidden": "no",
-            "height": 12,
+            "height": 14,
             "alignment": "START",
             "displayedTitle": "Camp (blessées, reliques)",
             "logWhenPlayed": true
           },
           "Reserve": {
             "isHidden": "yes",
-            "height": 12,
+            "height": 14,
             "alignment": "DECK",
             "displayedTitle": "Réserve (Cave / Garde-manger)",
             "drawDestinations": {
@@ -455,66 +455,66 @@
           },
           "Salle1": {
             "isHidden": "no",
-            "height": 11,
+            "height": 13,
             "alignment": "CENTER",
             "displayedTitle": "Monstre salle 1",
             "logWhenPlayed": true
           },
           "Salle2": {
             "isHidden": "no",
-            "height": 11,
+            "height": 13,
             "alignment": "CENTER",
             "displayedTitle": "Monstre salle 2",
             "logWhenPlayed": true
           },
           "Salle3": {
             "isHidden": "no",
-            "height": 11,
+            "height": 13,
             "alignment": "CENTER",
             "displayedTitle": "Monstre salle 3",
             "logWhenPlayed": true
           },
           "Salle4": {
             "isHidden": "no",
-            "height": 11,
+            "height": 13,
             "alignment": "CENTER",
             "displayedTitle": "Monstre salle 4",
             "logWhenPlayed": true
           },
           "Boss": {
             "isHidden": "no",
-            "height": 11,
+            "height": 13,
             "alignment": "CENTER",
             "displayedTitle": "Boss"
           },
           "Monstres": {
             "isHidden": "yes",
-            "height": 11,
+            "height": 13,
             "alignment": "DECK",
             "displayedTitle": "Deck de monstres"
           },
           "CimetiereMonstres": {
             "isHidden": "no",
-            "height": 11,
+            "height": 13,
             "alignment": "DECK",
             "displayedTitle": "Cimetière des monstres"
           },
           "Relique": {
             "isHidden": "yes",
-            "height": 12,
+            "height": 14,
             "alignment": "DECK",
             "displayedTitle": "Pioche de reliques"
           },
           "Gardien": {
             "isHidden": "no",
-            "height": 12,
+            "height": 14,
             "alignment": "CENTER",
             "displayedTitle": "Gardien",
             "logWhenPlayed": true
           },
           "Energie": {
             "isHidden": "no",
-            "height": 12,
+            "height": 14,
             "alignment": "START",
             "displayedTitle": "Énergie",
             "noAutoPayTo": true,
@@ -522,7 +522,7 @@
           },
           "PiocheEnergie": {
             "isHidden": "yes",
-            "height": 12,
+            "height": 14,
             "alignment": "DECK",
             "displayedTitle": "Réserve d'énergie",
             "drawDestinations": {
@@ -533,7 +533,7 @@
             "type": "custom",
             "isShared": true,
             "isHidden": "no",
-            "height": 11,
+            "height": 13,
             "alignment": "CENTER",
             "displayedTitle": "Donjon",
             "defaultValue": {
@@ -548,7 +548,7 @@
                   "alignItems": "center",
                   "justifyContent": "center",
                   "gap": "8px",
-                  "height": "300%",
+                  "height": "200%",
                   "color": "white",
                   "textAlign": "center",
                   "position": "absolute",
@@ -579,55 +579,6 @@
                   },
                   "onClick": "const salles=['Salle1','Salle2','Salle3','Salle4'];\nconst d=game.data.Donjon;\nif(d.etage>=4){functions.chatLog('Le combat contre le Boss est déjà lancé.');return;}\nconst restants=salles.flatMap(s=>cards[s]??[]);\nif(restants.length) await functions.moveCards(restants,'CimetiereMonstres');\nif(d.etage>=3){d.etage=4;functions.chatLog('Les 3 étages sont terminés : place au Boss ! (+2 énergie)');{const e=game.data.Donjon?.etage??0;if(e<=1){globalThis.__grEtage=e;}else{const prev=Math.max(globalThis.__grEtage??1,1);if(e>prev){globalThis.__grEtage=e;await functions.drawFromExtraDeck('PiocheEnergie',(e-prev)*2,false,'Energie');}}}await functions.repositionCards();return;}\nfor(const s of salles){await functions.drawFromExtraDeck('Monstres',1,false,s);}\nd.etage=d.etage+1;\nfunctions.chatLog('Étage '+d.etage+' : 4 nouveaux monstres dans les salles (+2 énergie).');{const e=game.data.Donjon?.etage??0;if(e<=1){globalThis.__grEtage=e;}else{const prev=Math.max(globalThis.__grEtage??1,1);if(e>prev){globalThis.__grEtage=e;await functions.drawFromExtraDeck('PiocheEnergie',(e-prev)*2,false,'Energie');}}}\nawait functions.repositionCards();",
                   "children": "Étage suivant"
-                },
-                {
-                  "type": "div",
-                  "props": {
-                    "data-gr": "res",
-                    "style": {
-                      "marginTop": "6px",
-                      "fontSize": "0.85em",
-                      "fontWeight": "bold",
-                      "opacity": "0.8"
-                    }
-                  },
-                  "children": "Ta Réserve"
-                },
-                {
-                  "type": "button",
-                  "props": {
-                    "className": "btn btn-sm btn-outline-light",
-                    "style": {
-                      "width": "85%"
-                    },
-                    "data-gr": "res"
-                  },
-                  "onClick": "const n=(cards.Reserve??[]).length;\nif(!n){functions.chatLog('Réserve vide.');return;}\nawait functions.drawFromExtraDeck('Reserve',Math.min(1,n),false,'Hand');\nfunctions.chatLog('pioche '+Math.min(1,n)+' carte(s) de sa Réserve.');\nawait functions.repositionCards();",
-                  "children": "Piocher 1"
-                },
-                {
-                  "type": "button",
-                  "props": {
-                    "className": "btn btn-sm btn-outline-light",
-                    "style": {
-                      "width": "85%"
-                    },
-                    "data-gr": "res"
-                  },
-                  "onClick": "const n=(cards.Reserve??[]).length;\nif(!n){functions.chatLog('Réserve vide.');return;}\nawait functions.drawFromExtraDeck('Reserve',Math.min(3,n),false,'Hand');\nfunctions.chatLog('pioche '+Math.min(3,n)+' carte(s) de sa Réserve.');\nawait functions.repositionCards();",
-                  "children": "Piocher 3 (Cueillette)"
-                },
-                {
-                  "type": "button",
-                  "props": {
-                    "className": "btn btn-sm btn-outline-light",
-                    "style": {
-                      "width": "85%"
-                    },
-                    "data-gr": "res"
-                  },
-                  "onClick": "if(!(cards.Reserve??[]).length){functions.chatLog('Réserve vide.');return;}\nawait functions.shuffleSection('Reserve');\nfunctions.chatLog('mélange sa Réserve.');",
-                  "children": "Mélanger"
                 }
               ]
             },
@@ -640,28 +591,28 @@
           },
           "BF1": {
             "isHidden": "no",
-            "height": 12,
+            "height": 14,
             "alignment": "CENTER",
             "displayedTitle": "Salle 1",
             "logWhenPlayed": true
           },
           "BF2": {
             "isHidden": "no",
-            "height": 12,
+            "height": 14,
             "alignment": "CENTER",
             "displayedTitle": "Salle 2",
             "logWhenPlayed": true
           },
           "BF3": {
             "isHidden": "no",
-            "height": 12,
+            "height": 14,
             "alignment": "CENTER",
             "displayedTitle": "Salle 3",
             "logWhenPlayed": true
           },
           "BF4": {
             "isHidden": "no",
-            "height": 12,
+            "height": 14,
             "alignment": "CENTER",
             "displayedTitle": "Salle 4",
             "logWhenPlayed": true

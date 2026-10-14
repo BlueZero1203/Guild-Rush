@@ -9,7 +9,7 @@ G=g['gameplay']['Standard']
 S=G['sections']
 D=S['sectionsDict']
 
-COLW,GAP,RW,LM=10.5,1.5,8,12
+COLW,GAP,RW,LM=12.5,2.5,10,14
 TOTAL=LM+4*COLW+3*GAP+GAP+RW+2*(GAP+RW)
 
 C={ 'bf':(240,200,60),'camp':(255,205,160),'ener':(175,85,205),'pile':(245,150,30),
@@ -51,7 +51,7 @@ B=[node('PiocheEnergie',RW,'ener','PIOCHE',pile=True),
    node('Reserve',RW,'pile','RÉSERVE',pile=True,ml=GAP)]
 wA=LM+4*COLW+3*GAP+GAP+RW
 S['layout']={'direction':'column','content':[row(A,right=TOTAL-wA), row(B,right=TOTAL-wA)]}
-S['layout']['content'][1]['style']['marginBottom']='24vh'
+S['layout']['content'][1]['style']['marginBottom']='12vh'
 
 # --- zone partagée : monstres 1..4, boss, pile de monstres, cimetière ---
 M=[{'section':'Donjon','style':{'width':'%svh'%LM,'overflow':'visible'}}]
@@ -60,23 +60,23 @@ for i in range(1,5):
 M.append(node('Boss',RW,'boss','BOSS',ml=GAP))
 M.append(node('Monstres',RW,'neutre','PIOCHE',pile=True,ml=GAP))
 M.append(node('CimetiereMonstres',RW,'neutre','DÉFAUSSE',pile=True,ml=GAP))
-S['sharedZone']={'height':12,'layout':{'direction':'column','content':[{'direction':'row','content':M,'style':{'justifyContent':'center'}}]}}
+S['sharedZone']={'height':14,'layout':{'direction':'column','content':[{'direction':'row','content':M,'style':{'justifyContent':'center'}}]}}
 
 # --- sections ---
 for k in list(D):
     if k in ('Reliques',) or (k.startswith('Salle') and k[-1] in 'HI'):
         D.pop(k)
 for i in range(1,5):
-    D['BF%d'%i]={'isHidden':'no','height':12,'alignment':'CENTER','displayedTitle':'Salle %d'%i,'logWhenPlayed':True}
-    D['Salle%d'%i].update({'height':11,'displayedTitle':'Monstre salle %d'%i})
-for k,h in (('Gardien',12),('Camp',12),('Energie',12),('PiocheEnergie',12),('Relique',12),('Reserve',12),            ('Boss',11),('Monstres',11),('CimetiereMonstres',11)):
+    D['BF%d'%i]={'isHidden':'no','height':14,'alignment':'CENTER','displayedTitle':'Salle %d'%i,'logWhenPlayed':True}
+    D['Salle%d'%i].update({'height':13,'displayedTitle':'Monstre salle %d'%i})
+for k,h in (('Gardien',14),('Camp',14),('Energie',14),('PiocheEnergie',14),('Relique',14),('Reserve',14),            ('Boss',13),('Monstres',13),('CimetiereMonstres',13)):
     D[k]['height']=h
 D.pop('Expedition',None)
 D['Camp']['displayedTitle']='Camp (blessées, reliques)'
 D['Camp']['alignment']='START'; D['Energie']['alignment']='START'
-bp=D['Donjon']; bp['height']=11
+bp=D['Donjon']; bp['height']=13
 st=bp['blueprint']['props']['style']
-st.update({'left':'0','width':'100%','top':'8%','height':'300%','backgroundColor':'rgba(255,255,255,0.05)','border':'1px solid rgba(255,255,255,0.18)'})
+st.update({'left':'0','width':'100%','top':'8%','height':'200%','backgroundColor':'rgba(255,255,255,0.05)','border':'1px solid rgba(255,255,255,0.18)'})
 
 # les reliques et trésors se jouent au Camp
 for m in ('autoPlayFromHand','autoPlayFromStack'):
@@ -89,3 +89,15 @@ g['customHelp']=g['customHelp'].replace(
  "Plateau en papillon : les monstres sont au centre (Monstre 1 à 4, Boss, pioche et défausse des monstres, panneau Donjon à gauche). Chaque joueur a une Salle sous (ou au-dessus de) chaque monstre : 3 unités max par salle, jetons compris. Ta zone : Salles 1-4 et Gardien ; Énergie (avec sa pioche), Camp (blessées et reliques, avec la pioche de reliques) et Réserve ; les Salles sont l'Expédition.")
 json.dump(g,open(P,'w'),ensure_ascii=False,indent=2)
 print('ok total',TOTAL)
+
+# panneau Donjon : on ne garde que « Étage suivant » (plus de boutons Réserve)
+def strip(n):
+    if isinstance(n,dict):
+        for k,v in n.items():
+            if isinstance(v,list): n[k]=[x for x in v if not (isinstance(x,dict) and (x.get('props',{}) or {}).get('data-gr')=='res')]
+            for v in n.values(): strip(v)
+    elif isinstance(n,list):
+        for x in n: strip(x)
+g=json.load(open(P)); strip(g['gameplay']['Standard']['sections']['sectionsDict']['Donjon'])
+g['customHelp']=g['customHelp'].replace(", ou utilise les boutons « Ta Réserve » du panneau Donjon (piocher 1, piocher 3, mélanger).",". Pour piocher 3 (Cueillette), clique la pile trois fois, puis clic droit sur la pile > Mélanger.").replace(" et Réserve ; Expédition en bas."," et Réserve.").replace(" et Réserve ; les Salles sont l'Expédition."," et Réserve ; les Salles sont l'Expédition.")
+json.dump(g,open(P,'w'),ensure_ascii=False,indent=2)
