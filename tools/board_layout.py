@@ -1,7 +1,7 @@
 """Plateau 'papillon' : rangée de monstres au centre, une colonne par salle (BF n du joueur sous/sur Monstre n).
 Construit sections.layout, sharedZone et les sections de gamefile.json. Idempotent.
 Usage: python3 tools/board_layout.py
-Unités : vh. Colonne de salle 12, écart 1, colonne de droite 9, marge gauche (panneau Donjon) 15."""
+Largeurs en % de la largeur du plateau (s'adapte à tout écran) ; hauteurs des cartes en vh."""
 import json, urllib.parse
 P='gamefile.json'
 g=json.load(open(P))
@@ -9,7 +9,7 @@ G=g['gameplay']['Standard']
 S=G['sections']
 D=S['sectionsDict']
 
-COLW,GAP,RW,LM=18,2,10,14
+COLW,GAP,RW,LM=15,1.2,7,9
 TOTAL=LM+4*COLW+3*GAP+GAP+RW+2*(GAP+RW)
 
 C={ 'bf':(240,200,60),'camp':(255,205,160),'ener':(175,85,205),'pile':(245,150,30),
@@ -23,38 +23,39 @@ def label(txt,bottom=False):
 
 def node(sec,w,col,lab=None,ml=0,pile=False):
     r,gg,b=C[col]
-    st={'width':'%svh'%w,'flex':'0 0 auto','borderRadius':'6px',
+    st={'width':'%s%%'%w,'flex':'0 0 auto','borderRadius':'6px',
         'backgroundColor':'rgba(%d,%d,%d,0.20)'%(r,gg,b),'border':'1px solid rgba(%d,%d,%d,0.55)'%(r,gg,b)}
-    if ml: st['marginLeft']='%svh'%ml
+    if ml: st['marginLeft']='%s%%'%ml
     if lab:
         st['backgroundImage']=label(lab); st['backgroundRepeat']='no-repeat'
         st['backgroundPosition']='left 4px bottom 1px' if pile else 'left 22px top 3px'
     return {'section':sec,'style':st}
 
 def row(content,left=LM,right=0,sym=True):
-    first=content[0]['style']; first['marginLeft']='%svh'%(left+float(first.get('marginLeft','0vh')[:-2]))
-    r={'direction':'row','content':content,'style':{'justifyContent':'center','marginRight':'%svh'%right} if right else {'justifyContent':'center'}}
+    first=content[0]['style']; first['marginLeft']='%s%%'%round(left+float(first.get('marginLeft','0%').rstrip('%')),2)
+    r={'direction':'row','content':content,'style':{'justifyContent':'center','marginRight':'%s%%'%right} if right else {'justifyContent':'center'}}
     # marge de droite portée par le dernier élément pour égaliser les largeurs
-    if right: content[-1]['style']['marginRight']='%svh'%right; r['style'].pop('marginRight')
+    if right: content[-1]['style']['marginRight']='%s%%'%round(right,2); r['style'].pop('marginRight')
     if sym: r['isSymmetricalForOpponents']=True
     return r
 
-# --- rangée A : salles BF1..4 + Gardien (largeur 76 -> marge droite 20) ---
+# Colonnes : [Donjon][S1][S2][S3][S4][Boss][Pioche][Défausse] ; chaque rangée remplit toute la largeur.
+R=lambda x: round(x,2)
+# --- rangée A : salles BF1..4 | Gardien (sous Boss + pioche) | Réserve (sous la défausse) ---
 A=[node('BF%d'%i,COLW,'bf','SALLE %d'%i,ml=(GAP if i>1 else 0)) for i in range(1,5)]
-A.append(node('Gardien',RW,'gard','GARDIEN',ml=GAP))
-# --- rangée B : pioche énergie + énergie | relique + camp | réserve (alignée sous le Gardien) ---
+A.append(node('Gardien',R(2*RW+GAP),'gard','GARDIEN · BARIL / LIVRE',ml=GAP))
+A.append(node('Reserve',RW,'pile','RÉSERVE',pile=True,ml=GAP))
+# --- rangée B : pioche énergie + énergie (sous S1-S2) | pioche reliques + Camp jusqu'au bout ---
 H2=2*COLW+GAP
 B=[node('PiocheEnergie',RW,'ener','PIOCHE',pile=True),
-   node('Energie',H2-RW-GAP,'ener','ÉNERGIE',ml=GAP),
-   node('Relique',RW,'camp','RELIQUES',pile=True,ml=GAP),
-   node('Camp',H2-RW-GAP,'camp','CAMP · BLESSÉES, RELIQUES',ml=GAP),
-   node('Reserve',RW,'pile','RÉSERVE',pile=True,ml=GAP)]
-wA=LM+4*COLW+3*GAP+GAP+RW
-S['layout']={'direction':'column','content':[row(A,right=TOTAL-wA), row(B,right=TOTAL-wA)]}
+   node('Energie',R(H2-RW-GAP),'ener','ÉNERGIE',ml=GAP),
+   node('Relique',RW,'camp','RELIQUES',pile=True,ml=GAP)]
+B.append(node('Camp',R(TOTAL-LM-RW-GAP-(H2-RW-GAP)-GAP-RW-GAP),'camp','CAMP · BLESSÉES, RELIQUES',ml=GAP))
+S['layout']={'direction':'column','content':[row(A), row(B)]}
 S['layout']['content'][1]['style']['marginBottom']='12vh'
 
 # --- zone partagée : monstres 1..4, boss, pile de monstres, cimetière ---
-M=[{'section':'Donjon','style':{'width':'%svh'%LM,'overflow':'visible'}}]
+M=[{'section':'Donjon','style':{'width':'%s%%'%LM,'overflow':'visible'}}]
 for i in range(1,5):
     M.append(node('Salle%d'%i,COLW,'monstre','MONSTRE %d'%i,ml=(0 if i==1 else GAP)))
 M.append(node('Boss',RW,'boss','BOSS',ml=GAP))
