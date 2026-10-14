@@ -167,6 +167,59 @@ CARDS = [
       "Frappe d'abord la guilde qui a le plus de trésors.", 8, 20, legal=False, token=True),
 ]
 
+# Textes de cartes (règles d'écriture : une ligne par effet, le moment en gras)
+TEXTS = {
+ "guss": "**Aube :** soigne complètement le baril.\n**Quand Guss défend le Camp :** tes défenseurs ont +1 Puissance.\n**Raid :** la première unité qui attaque Guss est Sonnée.",
+ "baril": "**Aura :** tes unités de sa salle ont +1 Puissance.\n**Encaisser :** prend les dégâts d'une de tes unités de sa salle.\n**Tirer une pinte :** 1 fois par tour, perds 1 PV pour piocher 1 carte de la Cave.\n**À 0 PV :** 1 dégât à tout ce qui est dans la salle.\nUn seul baril ; il ne rentre jamais au Camp.",
+ "habitue": "**Près du baril :** +1 PV.",
+ "serveuse": "**Arrivée :** une de tes unités gagne +1/+1.",
+ "poker": "**Bluff :** se pose face cachée au Midi, révélée au Crépuscule.",
+ "porteur": "**Arrivée :** déplace ton baril dans la salle de cette unité.",
+ "barde": "**Dans sa salle :** tes autres unités ont +1 Puissance.",
+ "videur": "**Protecteur.**\n**Défense :** peut défendre le Camp même s'il est en salle.",
+ "cracheur": "**Arrivée, près du baril :** 1 dégât à chaque ennemi de la salle.",
+ "brute": "**Arrivée :** Sonne une unité ou un monstre de sa salle.",
+ "champion": "**Près du baril :** +2 Puissance et ne peut pas être Sonné.",
+ "grosse-pinte": "Une unité gagne +2/+2 ce tour.",
+ "ma-tournee": "Tes unités en jeu sont soignées et gagnent +1/+1 ce tour (+1 Puissance de plus si ton baril est intact).\nTes blessées du Camp reviennent en Expédition.\n**Signature :** 1 exemplaire max.",
+ "biere": "**Alcool.** +1 Puissance.",
+ "cidre": "**Alcool.** +1 PV.",
+ "hydromel": "**Alcool.** +2 PV et soigne 2 PV.",
+ "rhum": "**Alcool.** +2 Puissance.\n**Nuit :** l'unité est Sonnée le tour suivant.",
+ "whisky": "**Alcool.** L'unité ne peut pas être Sonnée.",
+ "vin-chaud": "**Alcool.** Soigne complètement l'unité.",
+ "absinthe": "**Alcool.** +3 Puissance.\n**Ton tour suivant :** l'unité perd 2 PV.",
+ "liqueur-feu": "**Alcool.**\n**Dernier souffle :** 2 dégâts à chaque ennemi de sa salle.",
+ "cernun": "**Aube :** Cueillette. Pioche 3 cartes de ta Réserve, garde-en 2 sous Cernun (4 max), remets l'autre et mélange.\n**Crépuscule :** cuisine 1 recette du Livre.\n**Monstre tué :** +1 ingrédient.\n**Quand il défend le Camp :** invoque 2 Pousses.",
+ "livre-recettes": "**Crépuscule :** 1 recette par tour, effet ce tour. Les ingrédients retournent dans la Réserve (mélange).\n**Soupe de racines** (Racine + Champignon) : tes unités +2 PV.\n**Tarte aux baies** (Baies + Miel) : tes unités +1 Puissance.\n**Tisane des bois** (Herbes + Miel) : soigne une salle, ses unités ne sont pas Sonnées.\n**Poêlée des esprits** (Champignon + Herbes + Baies) : 1 Pousse par salle où tu as une unité.\n**Banquet de Cernun** (4 ingrédients différents) : tes unités +2/+2.",
+ "champignon": "**Ingrédient.** Seul, il ne fait rien : cuisine-le avec le Livre.",
+ "baies": "**Ingrédient.** Seules, elles ne font rien : cuisine-les avec le Livre.",
+ "racine": "**Ingrédient.** Seule, elle ne fait rien : cuisine-la avec le Livre.",
+ "miel": "**Ingrédient.** Seul, il ne fait rien : cuisine-le avec le Livre.",
+ "herbes": "**Ingrédient.** Seules, elles ne font rien : cuisine-les avec le Livre.",
+ "lutin": "**Arrivée :** invoque une Pousse.",
+ "chouette": "**Arrivée :** pioche 2 ingrédients, garde-en 1, remets l'autre et mélange.",
+ "cueilleuse": "**Nuit :** si elle est en salle, pioche 1 ingrédient.",
+ "invocateur": "**Combat :** invoque une Pousse dans sa salle.",
+ "chamane": "**Combat :** tes autres unités de sa salle ont +1 Puissance.",
+ "dryade": "**Dernier souffle :** invoque 2 Pousses.",
+ "meneuse": "**Arrivée :** invoque un Loup.",
+ "saule": "**Protecteur.**\n**Allié mort dans sa salle :** invoque une Pousse.",
+ "sanglier": "**Rapide.**",
+ "vieux-chene": "**Dans sa salle :** tes Pousses et Loups ont +1/+1.",
+ "lianes": "**Rapide.** Sonne une unité ou un monstre.",
+ "croissance": "**Rapide.** Une de tes unités gagne +2/+2 ce tour.",
+ "appel-meute": "Invoque 2 Loups, chacun dans une salle où tu as une unité.",
+ "spores": "1 dégât à chaque ennemi d'une salle. Invoque une Pousse par ennemi tué.",
+ "eveil-foret": "Invoque une Pousse dans chaque salle.\nTes unités gagnent +1/+1 ce tour.\nPioche 1 ingrédient.\n**Signature :** 1 exemplaire max.",
+ "pousse": "**Jeton.** Compte dans la limite de 3 unités par salle.",
+ "loup": "**Jeton.** Compte dans la limite de 3 unités par salle.",
+ "jet-chaises": "2 dégâts à une cible, qui est Sonnée."
+}
+for _c in CARDS:
+    if _c["id"] in TEXTS:
+        _c["text"] = TEXTS[_c["id"]]
+
 
 def rich_lines(draw, text, fnt, fnt_b, max_w):
     """Découpe un texte avec **gras** en lignes de segments (mot, gras?)."""
