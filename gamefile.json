@@ -245,87 +245,222 @@
           ]
         },
         "sharedZone": {
-          "height": 22,
+          "height": 31,
           "layout": {
-            "direction": "row",
+            "direction": "column",
             "content": [
               {
-                "section": "Salle1",
-                "style": {
-                  "borderRadius": "8px",
-                  "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ESALLE 1%3C/text%3E%3C/svg%3E\")",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundPosition": "left 22px top 3px",
-                  "backgroundColor": "rgba(140,140,150,0.14)"
-                }
+                "direction": "row",
+                "content": [
+                  {
+                    "direction": "row",
+                    "style": {
+                      "width": "40%"
+                    },
+                    "content": [
+                      {
+                        "section": "Salle1H",
+                        "style": {
+                          "width": "38%",
+                          "borderRadius": "8px",
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EH%C3%94TE%3C/text%3E%3C/svg%3E\")",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundPosition": "left 22px top 3px",
+                          "backgroundColor": "rgba(70,130,190,0.14)"
+                        }
+                      },
+                      {
+                        "section": "Salle1",
+                        "style": {
+                          "width": "24%",
+                          "borderRadius": "8px",
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ESALLE 1%3C/text%3E%3C/svg%3E\")",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundPosition": "left 22px top 3px",
+                          "backgroundColor": "rgba(140,140,150,0.18)"
+                        }
+                      },
+                      {
+                        "section": "Salle1I",
+                        "style": {
+                          "width": "38%",
+                          "borderRadius": "8px",
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EINVIT%C3%89%3C/text%3E%3C/svg%3E\")",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundPosition": "left 22px top 3px",
+                          "backgroundColor": "rgba(214,150,60,0.14)"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "direction": "row",
+                    "style": {
+                      "width": "40%"
+                    },
+                    "content": [
+                      {
+                        "section": "Salle2H",
+                        "style": {
+                          "width": "38%",
+                          "borderRadius": "8px",
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EH%C3%94TE%3C/text%3E%3C/svg%3E\")",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundPosition": "left 22px top 3px",
+                          "backgroundColor": "rgba(70,130,190,0.14)"
+                        }
+                      },
+                      {
+                        "section": "Salle2",
+                        "style": {
+                          "width": "24%",
+                          "borderRadius": "8px",
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ESALLE 2%3C/text%3E%3C/svg%3E\")",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundPosition": "left 22px top 3px",
+                          "backgroundColor": "rgba(140,140,150,0.18)"
+                        }
+                      },
+                      {
+                        "section": "Salle2I",
+                        "style": {
+                          "width": "38%",
+                          "borderRadius": "8px",
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EINVIT%C3%89%3C/text%3E%3C/svg%3E\")",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundPosition": "left 22px top 3px",
+                          "backgroundColor": "rgba(214,150,60,0.14)"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "section": "Boss",
+                    "style": {
+                      "width": "10%",
+                      "borderRadius": "8px",
+                      "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EBOSS%3C/text%3E%3C/svg%3E\")",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundPosition": "left 22px top 3px",
+                      "backgroundColor": "rgba(225,60,40,0.18)"
+                    }
+                  },
+                  {
+                    "section": "Monstres",
+                    "style": {
+                      "width": "9%",
+                      "borderRadius": "8px",
+                      "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EMONSTRES%3C/text%3E%3C/svg%3E\")",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundPosition": "left 4px bottom 1px"
+                    }
+                  },
+                  {
+                    "section": "Donjon",
+                    "style": {
+                      "width": "1%",
+                      "overflow": "visible"
+                    }
+                  }
+                ]
               },
               {
-                "section": "Salle2",
-                "style": {
-                  "borderRadius": "8px",
-                  "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ESALLE 2%3C/text%3E%3C/svg%3E\")",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundPosition": "left 22px top 3px",
-                  "backgroundColor": "rgba(140,140,150,0.14)"
-                }
-              },
-              {
-                "section": "Salle3",
-                "style": {
-                  "borderRadius": "8px",
-                  "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ESALLE 3%3C/text%3E%3C/svg%3E\")",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundPosition": "left 22px top 3px",
-                  "backgroundColor": "rgba(140,140,150,0.14)"
-                }
-              },
-              {
-                "section": "Salle4",
-                "style": {
-                  "borderRadius": "8px",
-                  "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ESALLE 4%3C/text%3E%3C/svg%3E\")",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundPosition": "left 22px top 3px",
-                  "backgroundColor": "rgba(140,140,150,0.14)"
-                }
-              },
-              {
-                "section": "Boss",
-                "style": {
-                  "width": "11%",
-                  "borderRadius": "8px",
-                  "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EBOSS%3C/text%3E%3C/svg%3E\")",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundPosition": "left 22px top 3px",
-                  "backgroundColor": "rgba(225,60,40,0.18)"
-                }
-              },
-              {
-                "section": "Monstres",
-                "style": {
-                  "width": "12%",
-                  "borderRadius": "8px",
-                  "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EMONSTRES%3C/text%3E%3C/svg%3E\")",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundPosition": "left 4px bottom 1px"
-                }
-              },
-              {
-                "section": "CimetiereMonstres",
-                "style": {
-                  "width": "12%",
-                  "borderRadius": "8px",
-                  "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ECIMETI%C3%88RE%3C/text%3E%3C/svg%3E\")",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundPosition": "left 4px top 3px"
-                }
-              },
-              {
-                "section": "Donjon",
-                "style": {
-                  "width": "1%",
-                  "overflow": "visible"
-                }
+                "direction": "row",
+                "content": [
+                  {
+                    "direction": "row",
+                    "style": {
+                      "width": "40%"
+                    },
+                    "content": [
+                      {
+                        "section": "Salle3H",
+                        "style": {
+                          "width": "38%",
+                          "borderRadius": "8px",
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EH%C3%94TE%3C/text%3E%3C/svg%3E\")",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundPosition": "left 22px top 3px",
+                          "backgroundColor": "rgba(70,130,190,0.14)"
+                        }
+                      },
+                      {
+                        "section": "Salle3",
+                        "style": {
+                          "width": "24%",
+                          "borderRadius": "8px",
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ESALLE 3%3C/text%3E%3C/svg%3E\")",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundPosition": "left 22px top 3px",
+                          "backgroundColor": "rgba(140,140,150,0.18)"
+                        }
+                      },
+                      {
+                        "section": "Salle3I",
+                        "style": {
+                          "width": "38%",
+                          "borderRadius": "8px",
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EINVIT%C3%89%3C/text%3E%3C/svg%3E\")",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundPosition": "left 22px top 3px",
+                          "backgroundColor": "rgba(214,150,60,0.14)"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "direction": "row",
+                    "style": {
+                      "width": "40%"
+                    },
+                    "content": [
+                      {
+                        "section": "Salle4H",
+                        "style": {
+                          "width": "38%",
+                          "borderRadius": "8px",
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EH%C3%94TE%3C/text%3E%3C/svg%3E\")",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundPosition": "left 22px top 3px",
+                          "backgroundColor": "rgba(70,130,190,0.14)"
+                        }
+                      },
+                      {
+                        "section": "Salle4",
+                        "style": {
+                          "width": "24%",
+                          "borderRadius": "8px",
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ESALLE 4%3C/text%3E%3C/svg%3E\")",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundPosition": "left 22px top 3px",
+                          "backgroundColor": "rgba(140,140,150,0.18)"
+                        }
+                      },
+                      {
+                        "section": "Salle4I",
+                        "style": {
+                          "width": "38%",
+                          "borderRadius": "8px",
+                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EINVIT%C3%89%3C/text%3E%3C/svg%3E\")",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundPosition": "left 22px top 3px",
+                          "backgroundColor": "rgba(214,150,60,0.14)"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "section": "CimetiereMonstres",
+                    "style": {
+                      "width": "10%",
+                      "borderRadius": "8px",
+                      "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ECIMETI%C3%88RE%3C/text%3E%3C/svg%3E\")",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundPosition": "left 4px top 3px",
+                      "marginRight": "10%"
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -360,47 +495,47 @@
           },
           "Salle1": {
             "isHidden": "no",
-            "height": 20,
+            "height": 14,
             "alignment": "CENTER",
             "displayedTitle": "Salle 1",
             "logWhenPlayed": true
           },
           "Salle2": {
             "isHidden": "no",
-            "height": 20,
+            "height": 14,
             "alignment": "CENTER",
             "displayedTitle": "Salle 2",
             "logWhenPlayed": true
           },
           "Salle3": {
             "isHidden": "no",
-            "height": 20,
+            "height": 14,
             "alignment": "CENTER",
             "displayedTitle": "Salle 3",
             "logWhenPlayed": true
           },
           "Salle4": {
             "isHidden": "no",
-            "height": 20,
+            "height": 14,
             "alignment": "CENTER",
             "displayedTitle": "Salle 4",
             "logWhenPlayed": true
           },
           "Boss": {
             "isHidden": "no",
-            "height": 20,
+            "height": 14,
             "alignment": "CENTER",
             "displayedTitle": "Boss"
           },
           "Monstres": {
             "isHidden": "yes",
-            "height": 20,
+            "height": 14,
             "alignment": "DECK",
             "displayedTitle": "Deck de monstres"
           },
           "CimetiereMonstres": {
             "isHidden": "no",
-            "height": 20,
+            "height": 14,
             "alignment": "DECK",
             "displayedTitle": "Cimetière des monstres"
           },
@@ -438,7 +573,7 @@
             "type": "custom",
             "isShared": true,
             "isHidden": "no",
-            "height": 20,
+            "height": 14,
             "alignment": "CENTER",
             "displayedTitle": "Donjon",
             "defaultValue": {
@@ -453,7 +588,7 @@
                   "alignItems": "center",
                   "justifyContent": "center",
                   "gap": "8px",
-                  "height": "100%",
+                  "height": "200%",
                   "color": "white",
                   "textAlign": "center",
                   "position": "absolute",
@@ -493,6 +628,62 @@
               "onCardsUpdate": "{const e=game.data.Donjon?.etage??0;if(e<=1){globalThis.__grEtage=e;}else{const prev=Math.max(globalThis.__grEtage??1,1);if(e>prev){globalThis.__grEtage=e;await functions.drawFromExtraDeck('PiocheEnergie',(e-prev)*2,false,'Energie');}}}",
               "onNewTurn": "{const e=game.data.Donjon?.etage??0;if(e<=1){globalThis.__grEtage=e;}else{const prev=Math.max(globalThis.__grEtage??1,1);if(e>prev){globalThis.__grEtage=e;await functions.drawFromExtraDeck('PiocheEnergie',(e-prev)*2,false,'Energie');}}}{if(game.turn?.isMyTurn){const t=(cards.Energie??[]).filter(c=>c.isTapped);if(t.length){await functions.updateCards([t[0]],{isTapped:false});functions.chatLog('Aube : 1 énergie redressée.');}}}"
             }
+          },
+          "Salle1H": {
+            "isHidden": "no",
+            "height": 14,
+            "alignment": "END",
+            "displayedTitle": "Salle 1 — hôte",
+            "logWhenPlayed": true
+          },
+          "Salle1I": {
+            "isHidden": "no",
+            "height": 14,
+            "alignment": "START",
+            "displayedTitle": "Salle 1 — invité",
+            "logWhenPlayed": true
+          },
+          "Salle2H": {
+            "isHidden": "no",
+            "height": 14,
+            "alignment": "END",
+            "displayedTitle": "Salle 2 — hôte",
+            "logWhenPlayed": true
+          },
+          "Salle2I": {
+            "isHidden": "no",
+            "height": 14,
+            "alignment": "START",
+            "displayedTitle": "Salle 2 — invité",
+            "logWhenPlayed": true
+          },
+          "Salle3H": {
+            "isHidden": "no",
+            "height": 14,
+            "alignment": "END",
+            "displayedTitle": "Salle 3 — hôte",
+            "logWhenPlayed": true
+          },
+          "Salle3I": {
+            "isHidden": "no",
+            "height": 14,
+            "alignment": "START",
+            "displayedTitle": "Salle 3 — invité",
+            "logWhenPlayed": true
+          },
+          "Salle4H": {
+            "isHidden": "no",
+            "height": 14,
+            "alignment": "END",
+            "displayedTitle": "Salle 4 — hôte",
+            "logWhenPlayed": true
+          },
+          "Salle4I": {
+            "isHidden": "no",
+            "height": 14,
+            "alignment": "START",
+            "displayedTitle": "Salle 4 — invité",
+            "logWhenPlayed": true
           }
         },
         "autoPlayFromHand": {
