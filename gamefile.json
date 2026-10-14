@@ -237,7 +237,7 @@
           ]
         },
         "sharedZone": {
-          "height": 24,
+          "height": 22,
           "layout": {
             "direction": "row",
             "content": [
@@ -295,7 +295,7 @@
               {
                 "section": "Monstres",
                 "style": {
-                  "width": "11%",
+                  "width": "12%",
                   "borderRadius": "8px",
                   "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3EMONSTRES%3C/text%3E%3C/svg%3E\")",
                   "backgroundRepeat": "no-repeat",
@@ -305,7 +305,7 @@
               {
                 "section": "CimetiereMonstres",
                 "style": {
-                  "width": "11%",
+                  "width": "12%",
                   "borderRadius": "8px",
                   "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.55%29'%3ECIMETI%C3%88RE%3C/text%3E%3C/svg%3E\")",
                   "backgroundRepeat": "no-repeat",
@@ -315,7 +315,7 @@
               {
                 "section": "Donjon",
                 "style": {
-                  "width": "12%"
+                  "width": "13%"
                 }
               }
             ]
@@ -351,47 +351,47 @@
           },
           "Salle1": {
             "isHidden": "no",
-            "height": 22,
+            "height": 20,
             "alignment": "CENTER",
             "displayedTitle": "Salle 1",
             "logWhenPlayed": true
           },
           "Salle2": {
             "isHidden": "no",
-            "height": 22,
+            "height": 20,
             "alignment": "CENTER",
             "displayedTitle": "Salle 2",
             "logWhenPlayed": true
           },
           "Salle3": {
             "isHidden": "no",
-            "height": 22,
+            "height": 20,
             "alignment": "CENTER",
             "displayedTitle": "Salle 3",
             "logWhenPlayed": true
           },
           "Salle4": {
             "isHidden": "no",
-            "height": 22,
+            "height": 20,
             "alignment": "CENTER",
             "displayedTitle": "Salle 4",
             "logWhenPlayed": true
           },
           "Boss": {
             "isHidden": "no",
-            "height": 22,
+            "height": 20,
             "alignment": "CENTER",
             "displayedTitle": "Boss"
           },
           "Monstres": {
             "isHidden": "yes",
-            "height": 22,
+            "height": 20,
             "alignment": "DECK",
             "displayedTitle": "Deck de monstres"
           },
           "CimetiereMonstres": {
             "isHidden": "no",
-            "height": 22,
+            "height": 20,
             "alignment": "DECK",
             "displayedTitle": "Cimetière des monstres"
           },
@@ -428,7 +428,7 @@
             "type": "custom",
             "isShared": true,
             "isHidden": "no",
-            "height": 22,
+            "height": 20,
             "alignment": "CENTER",
             "displayedTitle": "Donjon",
             "defaultValue": {
