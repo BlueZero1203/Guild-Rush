@@ -56,8 +56,8 @@ clean(S['layout']); clean(S['sharedZone']['layout'])
 L=S['sharedZone']['layout']['content']
 r1,r2=L[0]['content'],L[1]['content']
 names=lambda r:[ (x.get('section') or 'grp') for x in r]
-if names(r1)[-1]=='Donjon':
-    donjon=r1.pop()
+if 'Donjon' in names(r1):
+    donjon=r1.pop(names(r1).index('Donjon'))
     g1,g2,boss,mon=r1
     donjon['style']={'width':'14%','overflow':'visible'}
     g1['style']['width']='33%'; g1['style']['marginLeft']='14%'; g2['style']['width']='33%'

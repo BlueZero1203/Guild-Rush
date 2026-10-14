@@ -282,7 +282,8 @@
                   {
                     "direction": "row",
                     "style": {
-                      "width": "33%"
+                      "width": "33%",
+                      "marginLeft": "14%"
                     },
                     "content": [
                       {
