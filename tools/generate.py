@@ -23,6 +23,7 @@ def font(size, bold=False):
 # Couleurs (fond, cadre) par famille de carte
 PALETTE = {
     "Ivrognes": ((62, 40, 22), (214, 150, 60)),
+    "Druides": ((24, 52, 30), (120, 190, 90)),
     "Test": ((34, 44, 60), (110, 130, 160)),
     "Monstre": ((80, 30, 30), (190, 70, 60)),
     "Boss": ((55, 15, 15), (225, 60, 40)),
@@ -31,15 +32,17 @@ PALETTE = {
 }
 TYPE_LABEL = {"Gardien": "Gardien", "Unite": "Unité", "Sort": "Sort", "Baril": "Baril",
               "Monstre": "Monstre", "Boss": "Boss", "Relique": "Relique", "Tresor": "Trésor",
-              "Energie": "Énergie", "Alcool": "Alcool"}
+              "Energie": "Énergie", "Alcool": "Alcool",
+              "Ingredient": "Ingrédient", "Recettes": "Recettes"}
 
 
-def C(id, name, type, cost, faction, text="", power=None, hp=None, legal=3, token=False):
+def C(id, name, type, cost, faction, text="", power=None, hp=None, legal=3, token=False, tokens=None):
     return dict(id=id, name=name, type=type, cost=cost, faction=faction, text=text,
-                power=power, hp=hp, legal=legal, token=token)
+                power=power, hp=hp, legal=legal, token=token, tokens=tokens or [])
 
 
 IVR = "Ivrognes"
+DRU = "Druides"
 CARDS = [
     # --- Ivrognes : Guss et son baril ---
     C("guss", "Guss le tavernier", "Gardien", 0, IVR,
@@ -93,13 +96,61 @@ CARDS = [
       "**Alcool** (sur ton unité dans la salle du baril, même en combat ; **Mélange** : 2 alcools = Sonnée au prochain combat). +3 Puissance. Au début de ton tour suivant, l'unité perd 2 PV.", legal=1),
     C("liqueur-feu", "Liqueur de feu", "Alcool", 1, IVR,
       "**Alcool** (sur ton unité dans la salle du baril, même en combat ; **Mélange** : 2 alcools = Sonnée au prochain combat). Quand l'unité meurt : 2 dégâts à chaque ennemi de sa salle.", legal=1),
-    # --- Cartes de test (en attendant les Druides) ---
-    C("gardien-druide", "Druide (nom temporaire)", "Gardien", 0, "Test",
-      "Passif : à chaque monstre tué, récolte un ingrédient.", 2, 8, legal=1),
-    C("unite-a", "Unité test A", "Unite", 1, "Test", "Unité de base.", 2, 3, legal=8),
-    C("unite-b", "Unité test B", "Unite", 2, "Test", "Unité de base.", 3, 2, legal=8),
-    C("unite-c", "Unité test C", "Unite", 3, "Test", "Unité de base.", 3, 5, legal=8),
-    C("unite-d", "Unité test D", "Unite", 4, "Test", "Unité de base.", 5, 4, legal=8),
+    # --- Druides : Cernun et son livre ---
+    C("cernun", "Cernun", "Gardien", 0, DRU,
+      "**Maître de guilde** : à chaque Aube, **Cueillette** : pioche 3 ingrédients du Garde-manger, "
+      "garde-en 2 sous Cernun (panier de 4 max), remets le 3e sous la pile. Chaque monstre tué par tes unités : "
+      "+1 ingrédient. **Cuisine** : au début du Crépuscule, 1 recette du Livre. "
+      "**Bosquet** : quand Cernun défend le Camp, invoque 2 Pousses qui défendent avec lui.",
+      2, 7, legal=1, tokens=["pousse"]),
+    C("livre-recettes", "Livre de recettes", "Recettes", 0, DRU,
+      "1 recette par tour, au début du Crépuscule ; effet jusqu'à la fin du tour. Les ingrédients "
+      "retournent sous le Garde-manger.\n"
+      "**Soupe de racines** (Racine + Champignon) : tes unités +2 PV. "
+      "\n**Tarte aux baies** (Baies + Miel) : tes unités +1 Puissance. "
+      "\n**Tisane des bois** (Herbes + Miel) : soigne tes unités d'une salle, elles ne peuvent pas être Sonnées. "
+      "\n**Poêlée des esprits** (Champignon + Herbes + Baies) : 1 Pousse dans chaque salle où tu as une unité. "
+      "\n**Banquet de Cernun** (4 ingrédients différents) : tes unités +2/+2.",
+      legal=1, tokens=["pousse"]),
+    # --- Druides : le Garde-manger (Réserve de faction) ---
+    C("champignon", "Champignon", "Ingredient", 0, DRU, "**Ingrédient**. Seul, il ne fait rien : il se cuisine avec le Livre de recettes."),
+    C("baies", "Baies", "Ingredient", 0, DRU, "**Ingrédient**. Seules, elles ne font rien : elles se cuisinent avec le Livre de recettes."),
+    C("racine", "Racine", "Ingredient", 0, DRU, "**Ingrédient**. Seule, elle ne fait rien : elle se cuisine avec le Livre de recettes."),
+    C("miel", "Miel", "Ingredient", 0, DRU, "**Ingrédient**. Seul, il ne fait rien : il se cuisine avec le Livre de recettes."),
+    C("herbes", "Herbes", "Ingredient", 0, DRU, "**Ingrédient**. Seules, elles ne font rien : elles se cuisinent avec le Livre de recettes."),
+    # --- Druides : unités ---
+    C("lutin", "Lutin des mousses", "Unite", 1, DRU, "**Arrivée** : invoque une Pousse (1/1) à côté de lui.", 1, 1, tokens=["pousse"]),
+    C("chouette", "Chouette guetteuse", "Unite", 1, DRU,
+      "**Arrivée** : regarde les 2 premières cartes du Garde-manger et remets-les dans l'ordre de ton choix.", 1, 2),
+    C("cueilleuse", "Cueilleuse", "Unite", 2, DRU,
+      "**Nuit** : si elle est dans une salle, pioche 1 ingrédient (dans ton panier).", 1, 3),
+    C("invocateur", "Invocateur de la clairière", "Unite", 2, DRU,
+      "**Combat** : invoque une Pousse dans sa salle.", 0, 3, tokens=["pousse"]),
+    C("chamane", "Chamane des racines", "Unite", 2, DRU,
+      "**Combat** : tes autres unités de sa salle ont +1 Puissance.", 0, 4),
+    C("dryade", "Dryade fleurie", "Unite", 2, DRU,
+      "**Dernier souffle** : invoque 2 Pousses à sa place.", 1, 2, tokens=["pousse"]),
+    C("meneuse", "Meneuse de loups", "Unite", 3, DRU, "**Arrivée** : invoque un Loup (2/1).", 2, 3, tokens=["loup"]),
+    C("saule", "Esprit du saule", "Unite", 3, DRU,
+      "**Protecteur**. Quand une de tes autres unités de sa salle meurt, invoque une Pousse.", 1, 5, tokens=["pousse"]),
+    C("sanglier", "Sanglier furieux", "Unite", 3, DRU, "**Rapide**.", 3, 3),
+    C("vieux-chene", "Vieux chêne", "Unite", 4, DRU, "Tes Pousses et tes Loups de sa salle ont +1/+1.", 3, 6),
+    # --- Druides : sorts ---
+    C("lianes", "Lianes", "Sort", 1, DRU, "**Rapide**. Une unité ou un monstre est Sonné."),
+    C("croissance", "Croissance soudaine", "Sort", 1, DRU, "**Rapide**. Une de tes unités gagne +2/+2 jusqu'à la fin du tour."),
+    C("appel-meute", "Appel de la meute", "Sort", 2, DRU,
+      "Invoque 2 Loups (2/1), chacun dans une salle où tu as une unité.", tokens=["loup"]),
+    C("spores", "Pluie de spores", "Sort", 3, DRU,
+      "1 dégât à chaque ennemi d'une salle (unités adverses et monstre). Invoque une Pousse par ennemi tué.",
+      tokens=["pousse"]),
+    C("eveil-foret", "Éveil de la forêt", "Sort", 5, DRU,
+      "Invoque une Pousse dans chaque salle. Toutes tes unités gagnent +1/+1 jusqu'à la fin du tour. "
+      "Pioche 1 ingrédient. **Signature** : 1 exemplaire max.", legal=1, tokens=["pousse"]),
+    # --- Druides : jetons ---
+    C("pousse", "Pousse", "Unite", 0, DRU, "**Jeton** (esprit de la forêt). Compte dans la limite de 3 unités par salle.",
+      1, 1, legal=False, token=True),
+    C("loup", "Loup", "Unite", 0, DRU, "**Jeton** (bête). Compte dans la limite de 3 unités par salle.",
+      2, 1, legal=False, token=True),
     # --- Communes ---
     C("relique-test", "Relique test", "Relique", 0, "Relique",
       "Passif de relique (à définir). Gardée au Camp, volable par raid.", legal=3),
@@ -121,11 +172,19 @@ def rich_lines(draw, text, fnt, fnt_b, max_w):
     """Découpe un texte avec **gras** en lignes de segments (mot, gras?)."""
     words = []
     for i, part in enumerate(re.split(r"\*\*", text)):
-        for w in part.split():
-            words.append((w, i % 2 == 1))
+        for j, chunk in enumerate(part.split("\n")):
+            if j:
+                words.append(("\n", False))
+            for w in chunk.split():
+                words.append((w, i % 2 == 1))
     lines, cur, cur_w = [], [], 0
     space = draw.textlength(" ", font=fnt)
     for w, b in words:
+        if w == "\n":
+            if cur:
+                lines.append(cur)
+            cur, cur_w = [], 0
+            continue
         ww = draw.textlength(w, font=fnt_b if b else fnt)
         add = ww if not cur else ww + space
         if cur and cur_w + add > max_w:
@@ -214,6 +273,8 @@ def main():
             e["power"], e["hp"] = c["power"], c["hp"]
         if c["token"]:
             e["isToken"] = True
+        if c["tokens"]:
+            e["tokens"] = c["tokens"]
         cards[c["id"]] = e
     with open(os.path.join(ROOT, "cards.json"), "w", encoding="utf-8") as fh:
         json.dump(cards, fh, ensure_ascii=False, indent=2)

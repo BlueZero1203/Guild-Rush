@@ -133,37 +133,114 @@
     }
   },
   {
-    "id": "precon-test",
-    "title": "Druides (cartes de test)",
+    "id": "precon-druides",
+    "title": "Druides de Cernun (proto)",
     "format": "Proto (cartes de test)",
     "deckList": {
       "categoriesOrder": [
         "Gardien",
+        "Recettes",
+        "Ingredient",
         "Unite",
+        "Sort",
         "Relique"
       ],
       "Gardien": [
         {
-          "id": "gardien-druide",
+          "id": "cernun",
           "count": 1
+        }
+      ],
+      "Recettes": [
+        {
+          "id": "livre-recettes",
+          "count": 1
+        }
+      ],
+      "Ingredient": [
+        {
+          "id": "champignon",
+          "count": 3
+        },
+        {
+          "id": "baies",
+          "count": 3
+        },
+        {
+          "id": "racine",
+          "count": 3
+        },
+        {
+          "id": "miel",
+          "count": 3
+        },
+        {
+          "id": "herbes",
+          "count": 3
         }
       ],
       "Unite": [
         {
-          "id": "unite-a",
-          "count": 8
+          "id": "lutin",
+          "count": 3
         },
         {
-          "id": "unite-b",
-          "count": 8
+          "id": "chouette",
+          "count": 2
         },
         {
-          "id": "unite-c",
-          "count": 7
+          "id": "cueilleuse",
+          "count": 2
         },
         {
-          "id": "unite-d",
-          "count": 7
+          "id": "invocateur",
+          "count": 3
+        },
+        {
+          "id": "chamane",
+          "count": 2
+        },
+        {
+          "id": "dryade",
+          "count": 2
+        },
+        {
+          "id": "meneuse",
+          "count": 2
+        },
+        {
+          "id": "saule",
+          "count": 2
+        },
+        {
+          "id": "sanglier",
+          "count": 1
+        },
+        {
+          "id": "vieux-chene",
+          "count": 1
+        }
+      ],
+      "Sort": [
+        {
+          "id": "lianes",
+          "count": 3
+        },
+        {
+          "id": "croissance",
+          "count": 3
+        },
+        {
+          "id": "appel-meute",
+          "count": 2
+        },
+        {
+          "id": "spores",
+          "count": 1
+        },
+        {
+          "id": "eveil-foret",
+          "count": 1
         }
       ],
       "Relique": [
