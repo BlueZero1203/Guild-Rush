@@ -99,13 +99,13 @@ CARDS = [
     # --- Druides : Cernun et son livre ---
     C("cernun", "Cernun", "Gardien", 0, DRU,
       "**Maître de guilde** : à chaque Aube, **Cueillette** : pioche 3 ingrédients du Garde-manger, "
-      "garde-en 2 sous Cernun (panier de 4 max), remets le 3e sous la pile. Chaque monstre tué par tes unités : "
+      "garde-en 2 sous Cernun (panier de 4 max), remets le 3e dans le Garde-manger et mélange. Chaque monstre tué par tes unités : "
       "+1 ingrédient. **Cuisine** : au début du Crépuscule, 1 recette du Livre. "
       "**Bosquet** : quand Cernun défend le Camp, invoque 2 Pousses qui défendent avec lui.",
       2, 7, legal=1, tokens=["pousse"]),
     C("livre-recettes", "Livre de recettes", "Recettes", 0, DRU,
       "1 recette par tour, au début du Crépuscule ; effet jusqu'à la fin du tour. Les ingrédients "
-      "retournent sous le Garde-manger.\n"
+      "retournent dans le Garde-manger, puis mélange.\n"
       "**Soupe de racines** (Racine + Champignon) : tes unités +2 PV. "
       "\n**Tarte aux baies** (Baies + Miel) : tes unités +1 Puissance. "
       "\n**Tisane des bois** (Herbes + Miel) : soigne tes unités d'une salle, elles ne peuvent pas être Sonnées. "
@@ -121,7 +121,7 @@ CARDS = [
     # --- Druides : unités ---
     C("lutin", "Lutin des mousses", "Unite", 1, DRU, "**Arrivée** : invoque une Pousse (1/1) à côté de lui.", 1, 1, tokens=["pousse"]),
     C("chouette", "Chouette guetteuse", "Unite", 1, DRU,
-      "**Arrivée** : regarde les 2 premières cartes du Garde-manger et remets-les dans l'ordre de ton choix.", 1, 2),
+      "**Arrivée** : pioche 2 ingrédients, garde-en 1 dans ton panier, remets l'autre et mélange le Garde-manger.", 1, 2),
     C("cueilleuse", "Cueilleuse", "Unite", 2, DRU,
       "**Nuit** : si elle est dans une salle, pioche 1 ingrédient (dans ton panier).", 1, 3),
     C("invocateur", "Invocateur de la clairière", "Unite", 2, DRU,
