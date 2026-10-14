@@ -42,7 +42,7 @@ def row(content,left=LM,right=0,sym=True):
 # Colonnes : [Donjon][S1][S2][S3][S4][Boss][Pioche][Défausse] ; chaque rangée remplit toute la largeur.
 R=lambda x: round(x,2)
 # --- rangée A : salles BF1..4 | Gardien (sous Boss + pioche) | Réserve (sous la défausse) ---
-A=[node('BF%d'%i,COLW,'bf','SALLE %d'%i,ml=(GAP if i>1 else 0)) for i in range(1,5)]
+A=[node('BF%d'%i,COLW,'bf','EXPÉDITION %d'%i,ml=(GAP if i>1 else 0)) for i in range(1,5)]
 A.append(node('Gardien',R(2*RW+GAP),'gard','GARDIEN · BARIL / LIVRE',ml=GAP))
 A.append(node('Reserve',RW,'pile','RÉSERVE',pile=True,ml=GAP))
 # --- rangée B : pioche énergie + énergie (sous S1-S2) | pioche reliques + Camp jusqu'au bout ---
@@ -50,7 +50,7 @@ H2=2*COLW+GAP
 B=[node('PiocheEnergie',RW,'ener','PIOCHE',pile=True),
    node('Energie',R(H2-RW-GAP),'ener','ÉNERGIE',ml=GAP),
    node('Relique',RW,'camp','RELIQUES',pile=True,ml=GAP)]
-B.append(node('Camp',R(TOTAL-LM-RW-GAP-(H2-RW-GAP)-GAP-RW-GAP),'camp','CAMP · BLESSÉES, RELIQUES',ml=GAP))
+B.append(node('Camp',R(TOTAL-LM-RW-GAP-(H2-RW-GAP)-GAP-RW-GAP),'camp','CAMP · RENFORTS, BLESSÉES, RELIQUES',ml=GAP))
 S['layout']={'direction':'column','content':[row(A), row(B)]}
 S['layout']['content'][1]['style']['marginBottom']='12vh'
 
@@ -68,7 +68,7 @@ for k in list(D):
     if k in ('Reliques',) or (k.startswith('Salle') and k[-1] in 'HI'):
         D.pop(k)
 for i in range(1,5):
-    D['BF%d'%i]={'isHidden':'no','height':14,'alignment':'CENTER','displayedTitle':'Salle %d'%i,'logWhenPlayed':True}
+    D['BF%d'%i]={'isHidden':'no','height':14,'alignment':'CENTER','displayedTitle':'Expédition %d'%i,'logWhenPlayed':True}
     D['Salle%d'%i].update({'height':13,'displayedTitle':'Monstre salle %d'%i})
 for k,h in (('Gardien',14),('Camp',14),('Energie',14),('PiocheEnergie',14),('Relique',14),('Reserve',14),            ('Boss',13),('Monstres',13),('CimetiereMonstres',13)):
     D[k]['height']=h
@@ -83,7 +83,7 @@ st.update({'left':'0','width':'100%','top':'8%','height':'200%','backgroundColor
 for m in ('autoPlayFromHand','autoPlayFromStack'):
     for k in ('Relique','Tresor'):
         if k in S[m]: S[m][k]='Camp'
-    if S[m].get('Unite')=='Expedition': S[m]['Unite']='BF1'
+    S[m]['Unite']='Camp'   # une unité invoquée arrive au Camp, épuisée
 
 g['customHelp']=g['customHelp'].replace(
  "Ta zone : Expédition, Camp (blessées) et Gardien en haut ; Énergie et sa pioche, Reliques et sa pioche, Réserve en bas.\nAu centre : Salles 1 à 4 (1 monstre par salle, 3 unités max par joueur et par salle, jetons compris), Boss, deck et cimetière des monstres, panneau Donjon.",
@@ -101,4 +101,13 @@ def strip(n):
         for x in n: strip(x)
 g=json.load(open(P)); strip(g['gameplay']['Standard']['sections']['sectionsDict']['Donjon'])
 g['customHelp']=g['customHelp'].replace(", ou utilise les boutons « Ta Réserve » du panneau Donjon (piocher 1, piocher 3, mélanger).",". Pour piocher 3 (Cueillette), clique la pile trois fois, puis clic droit sur la pile > Mélanger.").replace(" et Réserve ; Expédition en bas."," et Réserve.").replace(" et Réserve ; les Salles sont l'Expédition."," et Réserve ; les Salles sont l'Expédition.")
+json.dump(g,open(P,'w'),ensure_ascii=False,indent=2)
+
+# règle : unités invoquées au Camp (épuisées), puis envoyées dans une Expédition 1-4 face au monstre
+g=json.load(open(P))
+h=g['customHelp']
+h=h.replace("Chaque joueur a une Salle sous (ou au-dessus de) chaque monstre : 3 unités max par salle, jetons compris. Ta zone : Salles 1-4 et Gardien ; Énergie (avec sa pioche), Camp (blessées et reliques, avec la pioche de reliques) et Réserve.",
+ "Chaque joueur a une Expédition sous (ou au-dessus de) chaque monstre : 3 unités max par Expédition, jetons compris. Ta zone : Expéditions 1-4, Gardien et Réserve ; Énergie (avec sa pioche), pioche de reliques et Camp.\nUnités : une unité invoquée arrive au Camp, épuisée (incline-la). Redressée, tu l'envoies dans une Expédition 1-4 pour affronter le monstre de cette colonne. Blessée, elle revient au Camp. Les reliques se jouent aussi au Camp.")
+h=h.replace("dans la salle du baril","dans l'Expédition du baril")
+g['customHelp']=h
 json.dump(g,open(P,'w'),ensure_ascii=False,indent=2)

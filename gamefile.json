@@ -1,7 +1,7 @@
 {
   "name": "Guild Rush (proto)",
   "cardRotation": 90,
-  "customHelp": "Proto de Guild Rush. Ivrognes (Guss) contre Druides (Cernun).\nPlateau en papillon : les monstres sont au centre (Monstre 1 à 4, Boss, pioche et défausse des monstres, panneau Donjon à gauche). Chaque joueur a une Salle sous (ou au-dessus de) chaque monstre : 3 unités max par salle, jetons compris. Ta zone : Salles 1-4 et Gardien ; Énergie (avec sa pioche), Camp (blessées et reliques, avec la pioche de reliques) et Réserve.\nÉnergie : 3 au départ, +2 à chaque nouvel étage (bouton « Étage suivant » de l'hôte). Incline une Énergie pour payer 1 ; elles ne se redressent pas toutes : 1 seule se redresse au début de ton tour.\nCompteur = Trésors. Jetons Dégât et Baril à poser sur les cartes.\nAlcools (Cave des Ivrognes) : tire une pinte (1 PV du baril) pour piocher 1 carte de la Cave, 1 fois par tour. Un alcool s'attache à ton unité dans la salle du baril (même en combat) et reste tant qu'elle est sur le terrain.\nIngrédients (Garde-manger des Druides) : à chaque Aube, pioche 3 cartes de ta Réserve (12 cartes), garde-en 2 en les posant sur Cernun (panier de 4 max), remets la 3e dans la Réserve puis clique « Mélanger ». Au début du Crépuscule, cuisine 1 recette du Livre de recettes ; les ingrédients utilisés retournent dans la Réserve, puis « Mélanger ».\nJetons Pousse (1/1) et Loup (2/1) : clic droit sur la carte qui les invoque, ou panneau des jetons.\nRéserve : clique sur la pile pour piocher 1 carte. Pour piocher 3 (Cueillette), clique la pile trois fois, puis clic droit sur la pile > Mélanger.\nBaril et Livre de recettes ne sont plus des cartes de deck : ils sont décrits sur le Gardien. Crée la fiche (baril ou livre) avec le panneau des jetons de ton Gardien (clic droit sur lui).",
+  "customHelp": "Proto de Guild Rush. Ivrognes (Guss) contre Druides (Cernun).\nPlateau en papillon : les monstres sont au centre (Monstre 1 à 4, Boss, pioche et défausse des monstres, panneau Donjon à gauche). Chaque joueur a une Expédition sous (ou au-dessus de) chaque monstre : 3 unités max par Expédition, jetons compris. Ta zone : Expéditions 1-4, Gardien et Réserve ; Énergie (avec sa pioche), pioche de reliques et Camp.\nUnités : une unité invoquée arrive au Camp, épuisée (incline-la). Redressée, tu l'envoies dans une Expédition 1-4 pour affronter le monstre de cette colonne. Blessée, elle revient au Camp. Les reliques se jouent aussi au Camp.\nÉnergie : 3 au départ, +2 à chaque nouvel étage (bouton « Étage suivant » de l'hôte). Incline une Énergie pour payer 1 ; elles ne se redressent pas toutes : 1 seule se redresse au début de ton tour.\nCompteur = Trésors. Jetons Dégât et Baril à poser sur les cartes.\nAlcools (Cave des Ivrognes) : tire une pinte (1 PV du baril) pour piocher 1 carte de la Cave, 1 fois par tour. Un alcool s'attache à ton unité dans l'Expédition du baril (même en combat) et reste tant qu'elle est sur le terrain.\nIngrédients (Garde-manger des Druides) : à chaque Aube, pioche 3 cartes de ta Réserve (12 cartes), garde-en 2 en les posant sur Cernun (panier de 4 max), remets la 3e dans la Réserve puis clique « Mélanger ». Au début du Crépuscule, cuisine 1 recette du Livre de recettes ; les ingrédients utilisés retournent dans la Réserve, puis « Mélanger ».\nJetons Pousse (1/1) et Loup (2/1) : clic droit sur la carte qui les invoque, ou panneau des jetons.\nRéserve : clique sur la pile pour piocher 1 carte. Pour piocher 3 (Cueillette), clique la pile trois fois, puis clic droit sur la pile > Mélanger.\nBaril et Livre de recettes ne sont plus des cartes de deck : ils sont décrits sur le Gardien. Crée la fiche (baril ou livre) avec le panneau des jetons de ton Gardien (clic droit sur lui).",
   "deckBuilding": {
     "mainFilters": [
       "faction",
@@ -164,7 +164,7 @@
                     "borderRadius": "6px",
                     "backgroundColor": "rgba(240,200,60,0.20)",
                     "border": "1px solid rgba(240,200,60,0.55)",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ESALLE 1%3C/text%3E%3C/svg%3E\")",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EEXP%C3%89DITION 1%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px",
                     "marginLeft": "9.0%"
@@ -179,7 +179,7 @@
                     "backgroundColor": "rgba(240,200,60,0.20)",
                     "border": "1px solid rgba(240,200,60,0.55)",
                     "marginLeft": "1.2%",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ESALLE 2%3C/text%3E%3C/svg%3E\")",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EEXP%C3%89DITION 2%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px"
                   }
@@ -193,7 +193,7 @@
                     "backgroundColor": "rgba(240,200,60,0.20)",
                     "border": "1px solid rgba(240,200,60,0.55)",
                     "marginLeft": "1.2%",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ESALLE 3%3C/text%3E%3C/svg%3E\")",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EEXP%C3%89DITION 3%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px"
                   }
@@ -207,7 +207,7 @@
                     "backgroundColor": "rgba(240,200,60,0.20)",
                     "border": "1px solid rgba(240,200,60,0.55)",
                     "marginLeft": "1.2%",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ESALLE 4%3C/text%3E%3C/svg%3E\")",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EEXP%C3%89DITION 4%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px"
                   }
@@ -300,7 +300,7 @@
                     "backgroundColor": "rgba(255,205,160,0.20)",
                     "border": "1px solid rgba(255,205,160,0.55)",
                     "marginLeft": "1.2%",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ECAMP %C2%B7 BLESS%C3%89ES, RELIQUES%3C/text%3E%3C/svg%3E\")",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ECAMP %C2%B7 RENFORTS, BLESS%C3%89ES, RELIQUES%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px"
                   }
@@ -592,33 +592,33 @@
             "isHidden": "no",
             "height": 14,
             "alignment": "CENTER",
-            "displayedTitle": "Salle 1",
+            "displayedTitle": "Expédition 1",
             "logWhenPlayed": true
           },
           "BF2": {
             "isHidden": "no",
             "height": 14,
             "alignment": "CENTER",
-            "displayedTitle": "Salle 2",
+            "displayedTitle": "Expédition 2",
             "logWhenPlayed": true
           },
           "BF3": {
             "isHidden": "no",
             "height": 14,
             "alignment": "CENTER",
-            "displayedTitle": "Salle 3",
+            "displayedTitle": "Expédition 3",
             "logWhenPlayed": true
           },
           "BF4": {
             "isHidden": "no",
             "height": 14,
             "alignment": "CENTER",
-            "displayedTitle": "Salle 4",
+            "displayedTitle": "Expédition 4",
             "logWhenPlayed": true
           }
         },
         "autoPlayFromHand": {
-          "Unite": "BF1",
+          "Unite": "Camp",
           "Gardien": "Gardien",
           "Relique": "Camp",
           "Tresor": "Camp",
@@ -637,7 +637,7 @@
           "Ingredient->Reserve"
         ],
         "autoPlayFromStack": {
-          "Unite": "BF1",
+          "Unite": "Camp",
           "Gardien": "Gardien",
           "Relique": "Camp",
           "Tresor": "Camp",
