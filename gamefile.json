@@ -1,7 +1,7 @@
 {
-  "name": "Guild Rush (proto)",
+  "name": "Guild Rush (design)",
   "cardRotation": 90,
-  "customHelp": "Proto de Guild Rush. Ivrognes (Guss) contre Druides (Cernun).\nTa zone : Expédition, Camp (blessées) et Gardien en haut ; Énergie et sa pioche, Reliques et sa pioche, Réserve en bas.\nAu centre : Salles 1 à 4 (1 monstre par salle, 3 unités max par joueur et par salle, jetons compris), Boss, deck et cimetière des monstres, panneau Donjon.\nÉnergie : 3 au départ, +2 à chaque nouvel étage (bouton « Étage suivant » de l'hôte). Incline une Énergie pour payer 1 ; elles ne se redressent pas toutes : 1 seule se redresse au début de ton tour.\nCompteur = Trésors. Jetons Dégât et Baril à poser sur les cartes.\nAlcools (Cave des Ivrognes) : tire une pinte (1 PV du baril) pour piocher 1 carte de la Cave, 1 fois par tour. Un alcool s'attache à ton unité dans la salle du baril (même en combat) et reste tant qu'elle est sur le terrain.\nIngrédients (Garde-manger des Druides) : à chaque Aube, pioche 3 cartes de ta Réserve (12 cartes), garde-en 2 en les posant sur Cernun (panier de 4 max), remets la 3e dans la Réserve puis clique « Mélanger ». Au début du Crépuscule, cuisine 1 recette du Livre de recettes ; les ingrédients utilisés retournent dans la Réserve, puis « Mélanger ».\nJetons Pousse (1/1) et Loup (2/1) : clic droit sur la carte qui les invoque, ou panneau des jetons.\nRéserve : clique sur la pile pour piocher 1 carte, ou utilise les boutons « Ta Réserve » du panneau Donjon (piocher 1, piocher 3, mélanger).\nBaril et Livre de recettes ne sont plus des cartes de deck : ils sont décrits sur le Gardien. Crée la fiche (baril ou livre) avec le panneau des jetons de ton Gardien (clic droit sur lui).",
+  "customHelp": "Proto de Guild Rush. Ivrognes (Guss) contre Druides (Cernun).\nPlateau en papillon : les monstres sont au centre (Monstre 1 à 4, Boss, pioche et défausse des monstres, panneau Donjon à gauche). Chaque joueur a une Salle sous (ou au-dessus de) chaque monstre : 3 unités max par salle, jetons compris. Ta zone : Salles 1-4 et Gardien ; Énergie (avec sa pioche), Camp (blessées et reliques, avec la pioche de reliques) et Réserve ; Expédition en bas.\nÉnergie : 3 au départ, +2 à chaque nouvel étage (bouton « Étage suivant » de l'hôte). Incline une Énergie pour payer 1 ; elles ne se redressent pas toutes : 1 seule se redresse au début de ton tour.\nCompteur = Trésors. Jetons Dégât et Baril à poser sur les cartes.\nAlcools (Cave des Ivrognes) : tire une pinte (1 PV du baril) pour piocher 1 carte de la Cave, 1 fois par tour. Un alcool s'attache à ton unité dans la salle du baril (même en combat) et reste tant qu'elle est sur le terrain.\nIngrédients (Garde-manger des Druides) : à chaque Aube, pioche 3 cartes de ta Réserve (12 cartes), garde-en 2 en les posant sur Cernun (panier de 4 max), remets la 3e dans la Réserve puis clique « Mélanger ». Au début du Crépuscule, cuisine 1 recette du Livre de recettes ; les ingrédients utilisés retournent dans la Réserve, puis « Mélanger ».\nJetons Pousse (1/1) et Loup (2/1) : clic droit sur la carte qui les invoque, ou panneau des jetons.\nRéserve : clique sur la pile pour piocher 1 carte, ou utilise les boutons « Ta Réserve » du panneau Donjon (piocher 1, piocher 3, mélanger).\nBaril et Livre de recettes ne sont plus des cartes de deck : ils sont décrits sur le Gardien. Crée la fiche (baril ou livre) avec le panneau des jetons de ton Gardien (clic droit sur lui).",
   "deckBuilding": {
     "mainFilters": [
       "faction",
@@ -157,116 +157,189 @@
               "direction": "row",
               "content": [
                 {
-                  "section": "Expedition",
+                  "section": "BF1",
                   "style": {
+                    "width": "12vh",
+                    "flex": "0 0 auto",
                     "borderRadius": "6px",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.38%29'%3EEXP%C3%89DITION%3C/text%3E%3C/svg%3E\")",
+                    "backgroundColor": "rgba(240,200,60,0.12)",
+                    "border": "1px solid rgba(240,200,60,0.40)",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ESALLE 1%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px",
-                    "backgroundColor": "rgba(70,170,100,0.10)",
-                    "border": "1px solid rgba(70,170,100,0.35)",
-                    "flex": "1 1 0",
-                    "minWidth": "0"
+                    "marginLeft": "15.0vh"
                   }
                 },
                 {
-                  "section": "Camp",
+                  "section": "BF2",
                   "style": {
+                    "width": "12vh",
+                    "flex": "0 0 auto",
                     "borderRadius": "6px",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.38%29'%3ECAMP %28BLESS%C3%89ES%29%3C/text%3E%3C/svg%3E\")",
+                    "backgroundColor": "rgba(240,200,60,0.12)",
+                    "border": "1px solid rgba(240,200,60,0.40)",
+                    "marginLeft": "1vh",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ESALLE 2%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
-                    "backgroundPosition": "left 22px top 3px",
-                    "backgroundColor": "rgba(230,130,70,0.10)",
-                    "border": "1px solid rgba(230,130,70,0.35)",
-                    "width": "min(30vh, 24%)",
-                    "flex": "0 0 auto"
+                    "backgroundPosition": "left 22px top 3px"
+                  }
+                },
+                {
+                  "section": "BF3",
+                  "style": {
+                    "width": "12vh",
+                    "flex": "0 0 auto",
+                    "borderRadius": "6px",
+                    "backgroundColor": "rgba(240,200,60,0.12)",
+                    "border": "1px solid rgba(240,200,60,0.40)",
+                    "marginLeft": "1vh",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ESALLE 3%3C/text%3E%3C/svg%3E\")",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundPosition": "left 22px top 3px"
+                  }
+                },
+                {
+                  "section": "BF4",
+                  "style": {
+                    "width": "12vh",
+                    "flex": "0 0 auto",
+                    "borderRadius": "6px",
+                    "backgroundColor": "rgba(240,200,60,0.12)",
+                    "border": "1px solid rgba(240,200,60,0.40)",
+                    "marginLeft": "1vh",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ESALLE 4%3C/text%3E%3C/svg%3E\")",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundPosition": "left 22px top 3px"
                   }
                 },
                 {
                   "section": "Gardien",
                   "style": {
+                    "width": "9vh",
+                    "flex": "0 0 auto",
                     "borderRadius": "6px",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.38%29'%3EGARDIEN%3C/text%3E%3C/svg%3E\")",
+                    "backgroundColor": "rgba(245,170,60,0.12)",
+                    "border": "1px solid rgba(245,170,60,0.40)",
+                    "marginLeft": "1vh",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EGARDIEN%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px",
-                    "backgroundColor": "rgba(235,195,80,0.10)",
-                    "border": "1px solid rgba(235,195,80,0.35)",
-                    "width": "min(14vh, 10%)",
-                    "flex": "0 0 auto"
+                    "marginRight": "20vh"
                   }
                 }
-              ]
+              ],
+              "style": {
+                "justifyContent": "center"
+              },
+              "isSymmetricalForOpponents": true
             },
             {
               "direction": "row",
               "content": [
                 {
-                  "section": "Energie",
-                  "style": {
-                    "borderRadius": "6px",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.38%29'%3E%C3%89NERGIE%3C/text%3E%3C/svg%3E\")",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundPosition": "left 22px top 3px",
-                    "backgroundColor": "rgba(60,190,210,0.10)",
-                    "border": "1px solid rgba(60,190,210,0.35)",
-                    "flex": "1 1 0",
-                    "minWidth": "0"
-                  }
-                },
-                {
                   "section": "PiocheEnergie",
                   "style": {
+                    "width": "9vh",
+                    "flex": "0 0 auto",
                     "borderRadius": "6px",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.38%29'%3E%C3%89NERGIE%3C/text%3E%3C/svg%3E\")",
+                    "backgroundColor": "rgba(175,85,205,0.12)",
+                    "border": "1px solid rgba(175,85,205,0.40)",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EPIOCHE%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 4px bottom 1px",
-                    "width": "min(11vh, 8%)",
-                    "flex": "0 0 auto"
+                    "marginLeft": "15.0vh"
                   }
                 },
                 {
-                  "section": "Reliques",
+                  "section": "Energie",
                   "style": {
+                    "width": "15vh",
+                    "flex": "0 0 auto",
                     "borderRadius": "6px",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.38%29'%3ERELIQUES EN JEU%3C/text%3E%3C/svg%3E\")",
+                    "backgroundColor": "rgba(175,85,205,0.12)",
+                    "border": "1px solid rgba(175,85,205,0.40)",
+                    "marginLeft": "1vh",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3E%C3%89NERGIE%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
-                    "backgroundPosition": "left 22px top 3px",
-                    "backgroundColor": "rgba(165,110,220,0.10)",
-                    "border": "1px solid rgba(165,110,220,0.35)",
-                    "width": "min(22vh, 18%)",
-                    "flex": "0 0 auto"
+                    "backgroundPosition": "left 22px top 3px"
+                  }
+                },
+                {
+                  "section": "Camp",
+                  "style": {
+                    "width": "15vh",
+                    "flex": "0 0 auto",
+                    "borderRadius": "6px",
+                    "backgroundColor": "rgba(255,205,160,0.12)",
+                    "border": "1px solid rgba(255,205,160,0.40)",
+                    "marginLeft": "1vh",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ECAMP %C2%B7 RELIQUES%3C/text%3E%3C/svg%3E\")",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundPosition": "left 22px top 3px"
                   }
                 },
                 {
                   "section": "Relique",
                   "style": {
+                    "width": "9vh",
+                    "flex": "0 0 auto",
                     "borderRadius": "6px",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.38%29'%3ERELIQUES%3C/text%3E%3C/svg%3E\")",
+                    "backgroundColor": "rgba(255,205,160,0.12)",
+                    "border": "1px solid rgba(255,205,160,0.40)",
+                    "marginLeft": "1vh",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ERELIQUES%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
-                    "backgroundPosition": "left 4px bottom 1px",
-                    "width": "min(11vh, 8%)",
-                    "flex": "0 0 auto"
+                    "backgroundPosition": "left 4px bottom 1px"
                   }
                 },
                 {
                   "section": "Reserve",
                   "style": {
+                    "width": "9vh",
+                    "flex": "0 0 auto",
                     "borderRadius": "6px",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.38%29'%3ER%C3%89SERVE%3C/text%3E%3C/svg%3E\")",
+                    "backgroundColor": "rgba(245,150,30,0.12)",
+                    "border": "1px solid rgba(245,150,30,0.40)",
+                    "marginLeft": "1vh",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ER%C3%89SERVE%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 4px bottom 1px",
-                    "backgroundColor": "rgba(90,130,235,0.10)",
-                    "border": "1px solid rgba(90,130,235,0.35)",
-                    "width": "min(11vh, 8%)",
-                    "flex": "0 0 auto"
+                    "marginRight": "20vh"
                   }
                 }
-              ]
+              ],
+              "style": {
+                "justifyContent": "center"
+              },
+              "isSymmetricalForOpponents": true
+            },
+            {
+              "direction": "row",
+              "content": [
+                {
+                  "section": "Expedition",
+                  "style": {
+                    "width": "61vh",
+                    "flex": "0 0 auto",
+                    "borderRadius": "6px",
+                    "backgroundColor": "rgba(70,170,100,0.12)",
+                    "border": "1px solid rgba(70,170,100,0.40)",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EEXP%C3%89DITION%3C/text%3E%3C/svg%3E\")",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundPosition": "left 22px top 3px",
+                    "marginLeft": "15.0vh",
+                    "marginRight": "20vh"
+                  }
+                }
+              ],
+              "style": {
+                "justifyContent": "center"
+              }
             }
           ]
         },
         "sharedZone": {
-          "height": 24,
+          "height": 12,
           "layout": {
             "direction": "column",
             "content": [
@@ -276,249 +349,106 @@
                   {
                     "section": "Donjon",
                     "style": {
-                      "width": "15vh",
+                      "width": "14vh",
                       "overflow": "visible"
                     }
                   },
                   {
-                    "direction": "row",
+                    "section": "Salle1",
                     "style": {
+                      "width": "12vh",
                       "flex": "0 0 auto",
-                      "width": "min(37vh, 33%)",
-                      "marginLeft": "min(15vh, 13%)"
-                    },
-                    "content": [
-                      {
-                        "section": "Salle1H",
-                        "style": {
-                          "borderRadius": "6px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.38%29'%3EH%C3%94TE%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(80,140,200,0.10)",
-                          "border": "1px solid rgba(80,140,200,0.35)",
-                          "width": "min(14vh, 38%)",
-                          "flex": "0 0 auto"
-                        }
-                      },
-                      {
-                        "section": "Salle1",
-                        "style": {
-                          "borderRadius": "6px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.38%29'%3ESALLE 1%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(150,150,150,0.10)",
-                          "border": "1px solid rgba(150,150,150,0.35)",
-                          "width": "min(9vh, 24%)",
-                          "flex": "0 0 auto"
-                        }
-                      },
-                      {
-                        "section": "Salle1I",
-                        "style": {
-                          "borderRadius": "6px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.38%29'%3EINVIT%C3%89%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(205,100,135,0.10)",
-                          "border": "1px solid rgba(205,100,135,0.35)",
-                          "width": "min(14vh, 38%)",
-                          "flex": "0 0 auto"
-                        }
-                      }
-                    ]
+                      "borderRadius": "6px",
+                      "backgroundColor": "rgba(225,70,50,0.12)",
+                      "border": "1px solid rgba(225,70,50,0.40)",
+                      "marginLeft": "15vh",
+                      "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EMONSTRE 1%3C/text%3E%3C/svg%3E\")",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundPosition": "left 22px top 3px"
+                    }
                   },
                   {
-                    "direction": "row",
+                    "section": "Salle2",
                     "style": {
+                      "width": "12vh",
                       "flex": "0 0 auto",
-                      "width": "min(37vh, 33%)",
-                      "marginLeft": "2vh"
-                    },
-                    "content": [
-                      {
-                        "section": "Salle2H",
-                        "style": {
-                          "borderRadius": "6px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.38%29'%3EH%C3%94TE%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(80,140,200,0.10)",
-                          "border": "1px solid rgba(80,140,200,0.35)",
-                          "width": "min(14vh, 38%)",
-                          "flex": "0 0 auto"
-                        }
-                      },
-                      {
-                        "section": "Salle2",
-                        "style": {
-                          "borderRadius": "6px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.38%29'%3ESALLE 2%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(150,150,150,0.10)",
-                          "border": "1px solid rgba(150,150,150,0.35)",
-                          "width": "min(9vh, 24%)",
-                          "flex": "0 0 auto"
-                        }
-                      },
-                      {
-                        "section": "Salle2I",
-                        "style": {
-                          "borderRadius": "6px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.38%29'%3EINVIT%C3%89%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(205,100,135,0.10)",
-                          "border": "1px solid rgba(205,100,135,0.35)",
-                          "width": "min(14vh, 38%)",
-                          "flex": "0 0 auto"
-                        }
-                      }
-                    ]
+                      "borderRadius": "6px",
+                      "backgroundColor": "rgba(225,70,50,0.12)",
+                      "border": "1px solid rgba(225,70,50,0.40)",
+                      "marginLeft": "1vh",
+                      "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EMONSTRE 2%3C/text%3E%3C/svg%3E\")",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundPosition": "left 22px top 3px"
+                    }
+                  },
+                  {
+                    "section": "Salle3",
+                    "style": {
+                      "width": "12vh",
+                      "flex": "0 0 auto",
+                      "borderRadius": "6px",
+                      "backgroundColor": "rgba(225,70,50,0.12)",
+                      "border": "1px solid rgba(225,70,50,0.40)",
+                      "marginLeft": "1vh",
+                      "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EMONSTRE 3%3C/text%3E%3C/svg%3E\")",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundPosition": "left 22px top 3px"
+                    }
+                  },
+                  {
+                    "section": "Salle4",
+                    "style": {
+                      "width": "12vh",
+                      "flex": "0 0 auto",
+                      "borderRadius": "6px",
+                      "backgroundColor": "rgba(225,70,50,0.12)",
+                      "border": "1px solid rgba(225,70,50,0.40)",
+                      "marginLeft": "1vh",
+                      "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EMONSTRE 4%3C/text%3E%3C/svg%3E\")",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundPosition": "left 22px top 3px"
+                    }
                   },
                   {
                     "section": "Boss",
                     "style": {
+                      "width": "9vh",
+                      "flex": "0 0 auto",
                       "borderRadius": "6px",
-                      "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.38%29'%3EBOSS%3C/text%3E%3C/svg%3E\")",
+                      "backgroundColor": "rgba(225,70,50,0.12)",
+                      "border": "1px solid rgba(225,70,50,0.40)",
+                      "marginLeft": "1vh",
+                      "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EBOSS%3C/text%3E%3C/svg%3E\")",
                       "backgroundRepeat": "no-repeat",
-                      "backgroundPosition": "left 22px top 3px",
-                      "backgroundColor": "rgba(225,70,50,0.10)",
-                      "border": "1px solid rgba(225,70,50,0.35)",
-                      "width": "min(9vh, 9%)",
-                      "flex": "0 0 auto"
+                      "backgroundPosition": "left 22px top 3px"
                     }
                   },
                   {
                     "section": "Monstres",
                     "style": {
+                      "width": "9vh",
+                      "flex": "0 0 auto",
                       "borderRadius": "6px",
-                      "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.38%29'%3EMONSTRES%3C/text%3E%3C/svg%3E\")",
+                      "backgroundColor": "rgba(150,150,150,0.12)",
+                      "border": "1px solid rgba(150,150,150,0.40)",
+                      "marginLeft": "1vh",
+                      "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EPIOCHE%3C/text%3E%3C/svg%3E\")",
                       "backgroundRepeat": "no-repeat",
-                      "backgroundPosition": "left 4px bottom 1px",
-                      "width": "min(9vh, 9%)",
-                      "flex": "0 0 auto"
+                      "backgroundPosition": "left 4px bottom 1px"
                     }
-                  }
-                ],
-                "style": {
-                  "justifyContent": "center"
-                }
-              },
-              {
-                "direction": "row",
-                "content": [
-                  {
-                    "direction": "row",
-                    "style": {
-                      "flex": "0 0 auto",
-                      "width": "min(37vh, 33%)",
-                      "marginLeft": "min(15vh, 13%)"
-                    },
-                    "content": [
-                      {
-                        "section": "Salle3H",
-                        "style": {
-                          "borderRadius": "6px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.38%29'%3EH%C3%94TE%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(80,140,200,0.10)",
-                          "border": "1px solid rgba(80,140,200,0.35)",
-                          "width": "min(14vh, 38%)",
-                          "flex": "0 0 auto"
-                        }
-                      },
-                      {
-                        "section": "Salle3",
-                        "style": {
-                          "borderRadius": "6px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.38%29'%3ESALLE 3%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(150,150,150,0.10)",
-                          "border": "1px solid rgba(150,150,150,0.35)",
-                          "width": "min(9vh, 24%)",
-                          "flex": "0 0 auto"
-                        }
-                      },
-                      {
-                        "section": "Salle3I",
-                        "style": {
-                          "borderRadius": "6px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.38%29'%3EINVIT%C3%89%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(205,100,135,0.10)",
-                          "border": "1px solid rgba(205,100,135,0.35)",
-                          "width": "min(14vh, 38%)",
-                          "flex": "0 0 auto"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "direction": "row",
-                    "style": {
-                      "flex": "0 0 auto",
-                      "width": "min(37vh, 33%)",
-                      "marginLeft": "2vh"
-                    },
-                    "content": [
-                      {
-                        "section": "Salle4H",
-                        "style": {
-                          "borderRadius": "6px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.38%29'%3EH%C3%94TE%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(80,140,200,0.10)",
-                          "border": "1px solid rgba(80,140,200,0.35)",
-                          "width": "min(14vh, 38%)",
-                          "flex": "0 0 auto"
-                        }
-                      },
-                      {
-                        "section": "Salle4",
-                        "style": {
-                          "borderRadius": "6px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.38%29'%3ESALLE 4%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(150,150,150,0.10)",
-                          "border": "1px solid rgba(150,150,150,0.35)",
-                          "width": "min(9vh, 24%)",
-                          "flex": "0 0 auto"
-                        }
-                      },
-                      {
-                        "section": "Salle4I",
-                        "style": {
-                          "borderRadius": "6px",
-                          "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.38%29'%3EINVIT%C3%89%3C/text%3E%3C/svg%3E\")",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundPosition": "left 22px top 3px",
-                          "backgroundColor": "rgba(205,100,135,0.10)",
-                          "border": "1px solid rgba(205,100,135,0.35)",
-                          "width": "min(14vh, 38%)",
-                          "flex": "0 0 auto"
-                        }
-                      }
-                    ]
                   },
                   {
                     "section": "CimetiereMonstres",
                     "style": {
-                      "borderRadius": "6px",
-                      "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial%2Csans-serif' font-size='13' font-weight='700' letter-spacing='1' fill='rgba%28255%2C255%2C255%2C0.38%29'%3ECIMETI%C3%88RE%3C/text%3E%3C/svg%3E\")",
-                      "backgroundRepeat": "no-repeat",
-                      "backgroundPosition": "left 4px bottom 1px",
-                      "width": "min(9vh, 9%)",
+                      "width": "9vh",
                       "flex": "0 0 auto",
-                      "marginLeft": "2vh",
-                      "marginRight": "7vh"
+                      "borderRadius": "6px",
+                      "backgroundColor": "rgba(150,150,150,0.12)",
+                      "border": "1px solid rgba(150,150,150,0.40)",
+                      "marginLeft": "1vh",
+                      "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ED%C3%89FAUSSE%3C/text%3E%3C/svg%3E\")",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundPosition": "left 4px bottom 1px"
                     }
                   }
                 ],
@@ -532,28 +462,21 @@
         "sectionsDict": {
           "Expedition": {
             "isHidden": "no",
-            "height": 17,
+            "height": 13,
             "alignment": "START",
             "displayedTitle": "Expédition",
             "logWhenPlayed": true
           },
           "Camp": {
             "isHidden": "no",
-            "height": 17,
+            "height": 12,
             "alignment": "START",
-            "displayedTitle": "Camp (blessées)",
-            "logWhenPlayed": true
-          },
-          "Reliques": {
-            "isHidden": "no",
-            "height": 13,
-            "alignment": "START",
-            "displayedTitle": "Reliques",
+            "displayedTitle": "Camp (blessées, reliques)",
             "logWhenPlayed": true
           },
           "Reserve": {
             "isHidden": "yes",
-            "height": 13,
+            "height": 12,
             "alignment": "DECK",
             "displayedTitle": "Réserve (Cave / Garde-manger)",
             "drawDestinations": {
@@ -564,28 +487,28 @@
             "isHidden": "no",
             "height": 11,
             "alignment": "CENTER",
-            "displayedTitle": "Salle 1",
+            "displayedTitle": "Monstre salle 1",
             "logWhenPlayed": true
           },
           "Salle2": {
             "isHidden": "no",
             "height": 11,
             "alignment": "CENTER",
-            "displayedTitle": "Salle 2",
+            "displayedTitle": "Monstre salle 2",
             "logWhenPlayed": true
           },
           "Salle3": {
             "isHidden": "no",
             "height": 11,
             "alignment": "CENTER",
-            "displayedTitle": "Salle 3",
+            "displayedTitle": "Monstre salle 3",
             "logWhenPlayed": true
           },
           "Salle4": {
             "isHidden": "no",
             "height": 11,
             "alignment": "CENTER",
-            "displayedTitle": "Salle 4",
+            "displayedTitle": "Monstre salle 4",
             "logWhenPlayed": true
           },
           "Boss": {
@@ -608,28 +531,28 @@
           },
           "Relique": {
             "isHidden": "yes",
-            "height": 13,
+            "height": 12,
             "alignment": "DECK",
             "displayedTitle": "Pioche de reliques"
           },
           "Gardien": {
             "isHidden": "no",
-            "height": 17,
+            "height": 12,
             "alignment": "CENTER",
             "displayedTitle": "Gardien",
             "logWhenPlayed": true
           },
           "Energie": {
             "isHidden": "no",
-            "height": 13,
-            "alignment": "END",
+            "height": 12,
+            "alignment": "START",
             "displayedTitle": "Énergie",
             "noAutoPayTo": true,
             "keepTappedNewTurn": true
           },
           "PiocheEnergie": {
             "isHidden": "yes",
-            "height": 13,
+            "height": 12,
             "alignment": "DECK",
             "displayedTitle": "Réserve d'énergie",
             "drawDestinations": {
@@ -640,7 +563,7 @@
             "type": "custom",
             "isShared": true,
             "isHidden": "no",
-            "height": 14,
+            "height": 11,
             "alignment": "CENTER",
             "displayedTitle": "Donjon",
             "defaultValue": {
@@ -655,12 +578,12 @@
                   "alignItems": "center",
                   "justifyContent": "center",
                   "gap": "8px",
-                  "height": "200%",
+                  "height": "236%",
                   "color": "white",
                   "textAlign": "center",
                   "position": "absolute",
                   "left": "0",
-                  "top": "0",
+                  "top": "-68%",
                   "width": "100%",
                   "backgroundColor": "rgba(255,255,255,0.05)",
                   "border": "1px solid rgba(255,255,255,0.18)",
@@ -745,68 +668,40 @@
               "onNewTurn": "{const e=game.data.Donjon?.etage??0;if(e<=1){globalThis.__grEtage=e;}else{const prev=Math.max(globalThis.__grEtage??1,1);if(e>prev){globalThis.__grEtage=e;await functions.drawFromExtraDeck('PiocheEnergie',(e-prev)*2,false,'Energie');}}}{if(game.turn?.isMyTurn){const t=(cards.Energie??[]).filter(c=>c.isTapped);if(t.length){await functions.updateCards([t[0]],{isTapped:false});functions.chatLog('Aube : 1 énergie redressée.');}}}"
             }
           },
-          "Salle1H": {
+          "BF1": {
             "isHidden": "no",
-            "height": 11,
-            "alignment": "END",
-            "displayedTitle": "Salle 1 — hôte",
+            "height": 12,
+            "alignment": "CENTER",
+            "displayedTitle": "Salle 1",
             "logWhenPlayed": true
           },
-          "Salle1I": {
+          "BF2": {
             "isHidden": "no",
-            "height": 11,
-            "alignment": "START",
-            "displayedTitle": "Salle 1 — invité",
+            "height": 12,
+            "alignment": "CENTER",
+            "displayedTitle": "Salle 2",
             "logWhenPlayed": true
           },
-          "Salle2H": {
+          "BF3": {
             "isHidden": "no",
-            "height": 11,
-            "alignment": "END",
-            "displayedTitle": "Salle 2 — hôte",
+            "height": 12,
+            "alignment": "CENTER",
+            "displayedTitle": "Salle 3",
             "logWhenPlayed": true
           },
-          "Salle2I": {
+          "BF4": {
             "isHidden": "no",
-            "height": 11,
-            "alignment": "START",
-            "displayedTitle": "Salle 2 — invité",
-            "logWhenPlayed": true
-          },
-          "Salle3H": {
-            "isHidden": "no",
-            "height": 11,
-            "alignment": "END",
-            "displayedTitle": "Salle 3 — hôte",
-            "logWhenPlayed": true
-          },
-          "Salle3I": {
-            "isHidden": "no",
-            "height": 11,
-            "alignment": "START",
-            "displayedTitle": "Salle 3 — invité",
-            "logWhenPlayed": true
-          },
-          "Salle4H": {
-            "isHidden": "no",
-            "height": 11,
-            "alignment": "END",
-            "displayedTitle": "Salle 4 — hôte",
-            "logWhenPlayed": true
-          },
-          "Salle4I": {
-            "isHidden": "no",
-            "height": 11,
-            "alignment": "START",
-            "displayedTitle": "Salle 4 — invité",
+            "height": 12,
+            "alignment": "CENTER",
+            "displayedTitle": "Salle 4",
             "logWhenPlayed": true
           }
         },
         "autoPlayFromHand": {
           "Unite": "Expedition",
           "Gardien": "Gardien",
-          "Relique": "Reliques",
-          "Tresor": "Reliques",
+          "Relique": "Camp",
+          "Tresor": "Camp",
           "Monstre": "Salle1",
           "Boss": "Boss",
           "Energie": "Energie",
@@ -824,8 +719,8 @@
         "autoPlayFromStack": {
           "Unite": "Expedition",
           "Gardien": "Gardien",
-          "Relique": "Reliques",
-          "Tresor": "Reliques",
+          "Relique": "Camp",
+          "Tresor": "Camp",
           "Monstre": "Salle1",
           "Boss": "Boss",
           "Energie": "Energie",
