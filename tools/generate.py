@@ -93,7 +93,7 @@ CARDS = [
     C("carte-tresor", "Carte au trésor", "Tresor", 0, "Relique",
       "+1 trésor à chaque Nuit. Gardée au Camp, volable par raid.", legal=1),
     C("energie", "Énergie", "Energie", 0, "Energie",
-      "Incline-la pour payer 1. Se redresse à l'Aube.", legal=False, token=True),
+      "Incline-la pour payer 1. 1 seule se redresse par tour.", legal=False, token=True),
     # --- Donjon ---
     C("monstre-1", "Monstre test 1", "Monstre", 0, "Monstre", "Valeur : 1 trésor.", 2, 3, legal=False, token=True),
     C("monstre-2", "Monstre test 2", "Monstre", 0, "Monstre", "Valeur : 2 trésors.", 3, 5, legal=False, token=True),

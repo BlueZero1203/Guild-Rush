@@ -1,7 +1,7 @@
 {
   "name": "Guild Rush (proto)",
   "cardRotation": 90,
-  "customHelp": "Proto de Guild Rush. Ivrognes (Guss) contre cartes de test (Druides à venir).\nTa zone : Expédition et Gardien en haut ; Énergie, Camp (blessées), Reliques, pioches en bas.\nAu centre : Salles 1 à 4 (1 monstre par salle), Boss, deck et cimetière des monstres, panneau Donjon.\nÉnergie : 3 au départ, +2 à chaque nouvel étage (bouton « Étage suivant » de l'hôte). Incline une Énergie pour payer 1.\nCompteur = Trésors. Jetons Dégât et Baril à poser sur les cartes.",
+  "customHelp": "Proto de Guild Rush. Ivrognes (Guss) contre cartes de test (Druides à venir).\nTa zone : Expédition et Gardien en haut ; Énergie, Camp (blessées), Reliques, pioches en bas.\nAu centre : Salles 1 à 4 (1 monstre par salle), Boss, deck et cimetière des monstres, panneau Donjon.\nÉnergie : 3 au départ, +2 à chaque nouvel étage (bouton « Étage suivant » de l'hôte). Incline une Énergie pour payer 1 ; elles ne se redressent pas toutes : 1 seule se redresse au début de ton tour.\nCompteur = Trésors. Jetons Dégât et Baril à poser sur les cartes.",
   "deckBuilding": {
     "mainFilters": [
       "faction",
@@ -413,7 +413,8 @@
             "height": 13,
             "alignment": "END",
             "displayedTitle": "Énergie",
-            "noAutoPayTo": true
+            "noAutoPayTo": true,
+            "keepTappedNewTurn": true
           },
           "PiocheEnergie": {
             "isHidden": "yes",
@@ -473,7 +474,7 @@
               "onPlayersReady": "if(!game.isHost)return;\nawait functions.shuffleSection('Monstres');\nconst d=game.data.Donjon;\nfor(const s of ['Salle1','Salle2','Salle3','Salle4']){await functions.drawFromExtraDeck('Monstres',1,false,s);}\nd.etage=1;\nfunctions.chatLog('Étage 1 : 4 monstres dans les salles.');\nawait functions.repositionCards();",
               "onUpdate": "{const e=game.data.Donjon?.etage??0;if(e<=1){globalThis.__grEtage=e;}else{const prev=Math.max(globalThis.__grEtage??1,1);if(e>prev){globalThis.__grEtage=e;await functions.drawFromExtraDeck('PiocheEnergie',(e-prev)*2,false,'Energie');}}}",
               "onCardsUpdate": "{const e=game.data.Donjon?.etage??0;if(e<=1){globalThis.__grEtage=e;}else{const prev=Math.max(globalThis.__grEtage??1,1);if(e>prev){globalThis.__grEtage=e;await functions.drawFromExtraDeck('PiocheEnergie',(e-prev)*2,false,'Energie');}}}",
-              "onNewTurn": "{const e=game.data.Donjon?.etage??0;if(e<=1){globalThis.__grEtage=e;}else{const prev=Math.max(globalThis.__grEtage??1,1);if(e>prev){globalThis.__grEtage=e;await functions.drawFromExtraDeck('PiocheEnergie',(e-prev)*2,false,'Energie');}}}"
+              "onNewTurn": "{const e=game.data.Donjon?.etage??0;if(e<=1){globalThis.__grEtage=e;}else{const prev=Math.max(globalThis.__grEtage??1,1);if(e>prev){globalThis.__grEtage=e;await functions.drawFromExtraDeck('PiocheEnergie',(e-prev)*2,false,'Energie');}}}{if(game.turn?.isMyTurn){const t=(cards.Energie??[]).filter(c=>c.isTapped);if(t.length){await functions.updateCards([t[0]],{isTapped:false});functions.chatLog('Aube : 1 énergie redressée.');}}}"
             }
           }
         },
