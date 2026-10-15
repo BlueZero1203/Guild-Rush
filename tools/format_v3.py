@@ -13,10 +13,11 @@ S = G['sections']
 D = S['sectionsDict']
 
 # --- construction : 1 Gardien + 30 cartes, c'est tout ---
-g['deckBuilding']['formats'][0]['customCategories'] = ['Gardien']
+g['deckBuilding']['formats'][0]['customCategories'] = ['Gardien', 'Terrain']
 g['deckBuilding']['deckRulesets']['Proto']['categories'] = [
-    {'category': 'Gardien', 'min': 1, 'max': 1, 'ignoreTotalCount': True}]
-S['categoriesAlreadyOnBoard'] = ['Gardien->Gardien']
+    {'category': 'Gardien', 'min': 1, 'max': 1, 'ignoreTotalCount': True},
+    {'category': 'Terrain', 'min': 1, 'max': 1, 'ignoreTotalCount': True}]
+S['categoriesAlreadyOnBoard'] = ['Gardien->Gardien', 'Terrain->Gardien']
 
 # --- sections : plus de Réserve ; Terrain dans l'Expédition 1 (à déplacer), Menu près du Gardien ---
 D.pop('Reserve', None)
@@ -71,7 +72,7 @@ h = [l for l in h if not l.startswith('Réserve (8 cartes)') and not l.startswit
 h = [l.replace('Expéditions 1-4, Gardien, Réserve ; Énergie et Camp', 'Expéditions 1-4, Gardien ; Énergie et Camp')
       .replace('chacun joue une carte Rapide ou instantanée ou passe', 'chacun joue une carte Rapide, ou un bonus de son Terrain si le Duel a lieu dans sa salle, ou passe').replace('Jetons Dégât et Baril à poser sur les cartes.', 'Jetons (panneau des jetons, à glisser sur les cartes) : Dégât, Sève, Niveau 1-3, Sonné, Rapide, +1 Puissance, +1 PV, alcools, Piège.') for l in h]
 h += [
-    "Gardien : clic droit dessus pour créer son Terrain (baril, bosquet). Il arrive dans l'Expédition 1 : glisse-le dans l'Expédition voulue au 1er Assaut. Le Terrain porte les bonus de la guilde (alcools, recettes) et leur prix.",
+    "Deck : 1 Gardien + 1 Terrain de la même faction (n'importe lequel) + 30 cartes. Le Terrain commence à côté du Gardien : glisse-le dans l'Expédition voulue à ton 1er Assaut. Il porte les bonus de la guilde (alcools, recettes) et leur prix.",
     "Bonus du Terrain : à ton Assaut, ou pendant n'importe quel Duel dans la salle de ton Terrain (même au tour adverse). Ils visent tes unités de cette salle. Pose un jeton d'effet pour t'en souvenir.",
     "Niveau : jeton Niv 1 à la pose. À ton Retrait, +1 s'il était déjà à sa place au début du tour (3 max). Niv. 1 bonus de lieu, niv. 2 ressource renforcée, niv. 3 Fief (+1 trésor par monstre tué ici). Lever le camp (Stratagème) : Expédition voisine, -1 niveau.",
     "Le Terrain a des PV, ne frappe pas, ne bloque pas les raids. Une unité adverse qui combat dans sa salle peut l'attaquer. Détruit par l'adversaire : +1 trésor pour lui (pillage) ; il revient au niveau 1 à ton Assaut suivant.",
@@ -88,7 +89,8 @@ for d in dk:
     L = d['deckList']
     for k in ('Alcool', 'Ingredient', 'Relique'):
         L.pop(k, None)
-    L['categoriesOrder'] = [c for c in L['categoriesOrder'] if c in ('Gardien', 'Unite', 'Sort')]
+    L['Terrain'] = [{'id': 'baril-chene' if d['id'] == 'precon-ivrognes' else 'bosquet', 'count': 1}]
+    L['categoriesOrder'] = ['Gardien', 'Terrain', 'Unite', 'Sort']
     if d['id'] == 'precon-druides':
         sorts = [e for e in L['Sort'] if e['id'] != 'transplantation']
         for e in sorts:

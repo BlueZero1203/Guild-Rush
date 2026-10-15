@@ -6,6 +6,7 @@
     "deckList": {
       "categoriesOrder": [
         "Gardien",
+        "Terrain",
         "Unite",
         "Sort"
       ],
@@ -80,7 +81,13 @@
         }
       ],
       "Sideboard": [],
-      "_maybeboard": []
+      "_maybeboard": [],
+      "Terrain": [
+        {
+          "id": "baril-chene",
+          "count": 1
+        }
+      ]
     }
   },
   {
@@ -90,6 +97,7 @@
     "deckList": {
       "categoriesOrder": [
         "Gardien",
+        "Terrain",
         "Unite",
         "Sort"
       ],
@@ -168,7 +176,13 @@
         }
       ],
       "Sideboard": [],
-      "_maybeboard": []
+      "_maybeboard": [],
+      "Terrain": [
+        {
+          "id": "bosquet",
+          "count": 1
+        }
+      ]
     }
   }
 ]

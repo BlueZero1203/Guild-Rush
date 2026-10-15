@@ -272,9 +272,9 @@ TYPE_LABEL.update({"Terrain": "Terrain", "Menu": "Menu"})
 PALETTE.update({"Terrain": ((58, 50, 34), (205, 170, 95)), "Menu": ((40, 36, 52), (170, 150, 210))})
 CARDS = [c for c in CARDS if c["type"] != "Recettes"]   # les Livres sont fusionnés dans les bosquets
 CARDS += [
-    C("bosquet", "Bosquet ancien", "Terrain", 0, DRU, "", 0, 5, legal=False, token=True),
-    C("bosquet-poison", "Bosquet empoisonné", "Terrain", 0, DRU, "", 0, 5, legal=False, token=True),
-    C("bosquet-ombre", "Bosquet d'ombre", "Terrain", 0, DRU, "", 0, 3, legal=False, token=True),
+    C("bosquet", "Bosquet ancien", "Terrain", 0, DRU, "", 0, 5, legal=1),
+    C("bosquet-poison", "Bosquet empoisonné", "Terrain", 0, DRU, "", 0, 5, legal=1),
+    C("bosquet-ombre", "Bosquet d'ombre", "Terrain", 0, DRU, "", 0, 3, legal=1),
     C("transplantation", "Transplantation", "Sort", 2, DRU, ""),
 ]
 _NIV = ""
@@ -297,11 +297,11 @@ NEW = {
  "bosquet-ombre": _NIV + _FORET + "**Rapide :** ses recettes se jouent dans n'importe quel Duel.\n"
    "**1 Pain de route :** tes unités d'ici gagnent Rapide.\n**1 Infusion vive :** une unité, Rapide et +1 P.\n"
    "**2 Festin de l'ombre :** tes unités d'ici, Rapide et +1/+1.",
- "guss": "**Terrain :** Baril de chêne (6 PV).\n**Repos :** soigne 2 PV au baril.\n**Défense du Camp :** tes défenseurs ont +1 Puissance.\n**Raid :** la première unité qui attaque Guss est Sonnée.",
- "rosa": "**Terrain :** Baril explosif (4 PV).\n**Repos :** soigne 2 PV au baril.\n**Pinte :** 2 alcools à 1 PV pour une seule pinte.\n**Défense du Camp :** 1 dégât à chaque attaquant.",
- "cernun": "**Terrain :** Bosquet ancien (5 PV), recettes de buff.\n**Repos :** +1 Sève (Cueillette).\n**Récolte :** +1 Sève par monstre tué par tes unités.\n**Défense du Camp :** invoque 2 Pousses.",
- "belladone": "**Terrain :** Bosquet empoisonné (5 PV), recettes qui blessent.\n**Repos :** +1 Sève (Cueillette).\n**Défense du Camp :** la première unité qui attaque Belladone est Sonnée.",
- "sylve": "**Terrain :** Bosquet d'ombre (3 PV), recettes Rapides.\n**Repos :** +1 Sève (Cueillette).",
+ "guss": "**Repos :** soigne 2 PV à ton baril.\n**Défense du Camp :** tes défenseurs ont +1 Puissance.\n**Raid :** la première unité qui attaque Guss est Sonnée.",
+ "rosa": "**Repos :** soigne 2 PV à ton baril.\n**Pinte :** 2 alcools à 1 PV pour une seule pinte.\n**Défense du Camp :** 1 dégât à chaque attaquant.",
+ "cernun": "**Repos :** +1 Sève (Cueillette).\n**Récolte :** +1 Sève par monstre tué par tes unités.\n**Défense du Camp :** invoque 2 Pousses.",
+ "belladone": "**Repos :** +1 Sève (Cueillette).\n**Défense du Camp :** la première unité qui attaque Belladone est Sonnée.",
+ "sylve": "**Repos :** +1 Sève (Cueillette).\n**Nomade :** lever le camp ne fait pas perdre de niveau à ton bosquet.",
  "habitue": "**Dans la Taverne :** +1 PV.",
  "champion": "**Dans la Taverne :** +2 Puissance et ne peut pas être Sonné.",
  "cracheur": "**Arrivée, dans la Taverne :** 1 dégât à chaque ennemi de la salle.",
@@ -313,15 +313,15 @@ NEW = {
  "eveil-foret": "Invoque une Pousse dans chaque salle.\nTes unités gagnent +1/+1 ce tour. +2 Sève.\nToutes tes Expéditions comptent comme Forêt ce tour.\n**Signature :** 1 exemplaire max.",
  "transplantation": "Déplace ton bosquet dans une autre de tes Expéditions, sans perte de niveau.",
 }
-TOKS = {"guss": ["baril-chene"], "rosa": ["baril-explosif"], "cernun": ["bosquet", "pousse"],
-        "belladone": ["bosquet-poison"], "sylve": ["bosquet-ombre", "loup"]}
+TOKS = {"guss": [], "rosa": [], "cernun": ["pousse"], "belladone": [], "sylve": ["loup"]}
 for _c in CARDS:
     if _c["id"] in NEW:
         _c["text"] = NEW[_c["id"]]
     if _c["id"] in TOKS:
         _c["tokens"] = TOKS[_c["id"]]
-    if _c["type"] == "Baril":
+    if _c["type"] == "Baril":   # les barils deviennent des Terrains, à mettre dans le deck (1 par deck)
         _c["type"] = "Terrain"
+        _c["token"], _c["legal"] = False, 1
 
 
 
