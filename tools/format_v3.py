@@ -46,11 +46,13 @@ for t in G['draggableTokens'] + G.get('tokens', []):
 # --- aide ---
 h = g['customHelp'].split('\n')
 h = [l for l in h if not l.startswith('Réserve (8 cartes)') and not l.startswith('Jetons Pousse')]
+h = [l.replace('Expéditions 1-4, Gardien, Réserve ; Énergie et Camp', 'Expéditions 1-4, Gardien et son Menu ; Énergie et Camp')
+      .replace('chacun joue une carte Rapide ou instantanée ou passe', 'chacun joue une carte Rapide ou un effet de son Menu, ou passe') for l in h]
 h += [
     "Gardien : clic droit dessus pour créer son Terrain (baril, bosquet) et son Menu (Carte des alcools, Livre). Le Menu va près du Gardien ; le Terrain arrive dans l'Expédition 1 : glisse-le dans l'Expédition voulue au 1er Assaut.",
-    "Terrain : pose un jeton Niveau dessus ; +1 à chacun de tes Retraits s'il est debout (3 max). Niv. 1 bonus de lieu, niv. 2 ressource renforcée, niv. 3 Fief (+1 trésor par monstre tué ici). Lever le camp (Stratagème) : Expédition voisine, -1 niveau. Détruit par l'adversaire : il pille 1 trésor ; le Terrain revient au niveau 1 à ton Assaut suivant.",
+    "Terrain : son niveau se note avec un jeton Niveau ou le compteur de la carte (clic droit > Toggle counter, touche C) ; +1 à chacun de tes Retraits s'il est debout (3 max). Niv. 1 bonus de lieu, niv. 2 ressource renforcée, niv. 3 Fief (+1 trésor par monstre tué ici). Lever le camp (Stratagème) : Expédition voisine, -1 niveau. Détruit par l'adversaire : il pille 1 trésor ; le Terrain revient au niveau 1 à ton Assaut suivant.",
     "Ivrognes : tirer une pinte = jetons Dégât sur le baril (1 PV, 2 pour un alcool fort), annonce l'alcool dans le chat. 2 pintes par tour, 3 au niveau 2. Guss soigne 2 PV au Repos.",
-    "Druides : la Sève = jetons Sève sur ton Livre (4 max), +1 à ton Repos (+2 au niveau 2). 1 recette par tour, payée en Sève. Bosquet détruit : tu perds la moitié de ta Sève.",
+    "Druides : la Sève = jetons Sève ou compteur sur ton Livre (4 max), +1 à ton Repos (+2 au niveau 2). 1 recette par tour, payée en Sève. Bosquet détruit : tu perds la moitié de ta Sève.",
     "Jetons Pousse et Loup : clic droit sur la carte qui les invoque.",
 ]
 g['customHelp'] = '\n'.join(h)
