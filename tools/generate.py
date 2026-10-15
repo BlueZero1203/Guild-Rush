@@ -10,7 +10,7 @@ import re
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE = "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main"
+BASE = "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/" + os.environ.get("GR_REF", "main")
 W, H = 500, 700
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 FONT_B = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
@@ -36,9 +36,11 @@ TYPE_LABEL = {"Gardien": "Gardien", "Unite": "Unité", "Sort": "Sort", "Baril": 
               "Ingredient": "Ingrédient", "Recettes": "Recettes"}
 
 
-def C(id, name, type, cost, faction, text="", power=None, hp=None, legal=3, token=False, tokens=None):
+def C(id, name, type, cost, faction, text="", power=None, hp=None, legal=3, token=False, tokens=None,
+      tresors=None, relique=False, back=None):
     return dict(id=id, name=name, type=type, cost=cost, faction=faction, text=text,
-                power=power, hp=hp, legal=legal, token=token, tokens=tokens or [])
+                power=power, hp=hp, legal=legal, token=token, tokens=tokens or [],
+                tresors=tresors, relique=relique, back=back)
 
 
 IVR = "Ivrognes"
@@ -137,19 +139,10 @@ CARDS = [
     C("loup", "Loup", "Unite", 0, DRU, "**Jeton** (bête). Compte dans la limite de 3 unités par salle.",
       2, 1, legal=False, token=True),
     # --- Communes ---
-    C("relique-test", "Relique test", "Relique", 0, "Relique",
-      "Passif de relique (à définir). Gardée au Camp, volable par raid.", legal=3),
     C("carte-tresor", "Carte au trésor", "Tresor", 0, "Relique",
-      "Prise par le premier joueur qui tue un monstre (crée-la avec le panneau des jetons). +1 trésor à chaque Retrait de son porteur. Gardée au Camp, volable par raid.", legal=False, token=True),
+      "Option de comeback (à tester). +1 trésor à chaque Retrait de son porteur. Gardée au Camp, volable par raid.", legal=False, token=True),
     C("energie", "Énergie", "Energie", 0, "Energie",
-      "Incline-la pour payer 1. 1 seule se redresse par tour.", legal=False, token=True),
-    # --- Donjon ---
-    C("monstre-1", "Monstre test 1", "Monstre", 0, "Monstre", "Valeur : 1 trésor.", 2, 3, legal=False, token=True),
-    C("monstre-2", "Monstre test 2", "Monstre", 0, "Monstre", "Valeur : 2 trésors.", 3, 5, legal=False, token=True),
-    C("monstre-3", "Monstre test 3", "Monstre", 0, "Monstre", "Valeur : 2 trésors.", 4, 6, legal=False, token=True),
-    C("monstre-4", "Monstre test 4", "Monstre", 0, "Monstre", "Valeur : 3 trésors.", 5, 8, legal=False, token=True),
-    C("boss-test", "Boss test", "Boss", 0, "Boss",
-      "Frappe d'abord la guilde qui a le plus de trésors.", 8, 20, legal=False, token=True),
+      "Incline-la pour payer 1.\nToutes se redressent à ton Repos.\nMax : 3 à la manche 1, +1 par manche, 6 au plus.", legal=False, token=True),
 ]
 
 
@@ -228,6 +221,51 @@ for _c in CARDS:
         _c["text"] = TEXTS[_c["id"]]
 
 
+# --- Donjons préconstruits : 8 monstres (recto normal / verso évolué), 1 boss, 3 reliques ---
+MINE = "Mine des Gobelins"
+
+
+def M(id, name, p, pv, tr, text, vname, vp, vpv, vtr, vtext, relique=False):
+    """Monstre recto/verso. Le verso est la face évoluée (même carte, retournée)."""
+    return C(id, name, "Monstre", 0, MINE, text, p, pv, legal=False, token=True, tresors=tr, relique=relique,
+             back=dict(name=vname, power=vp, hp=vpv, tresors=vtr, text=vtext))
+
+
+CARDS += [
+    M("gobelin", "Gobelin fouineur", 2, 3, 1, "Il fouille, il mord, il s'enfuit avec ce qu'il trouve.",
+      "Hobgobelin", 3, 5, 2, "Plus grand, plus méchant, plus riche."),
+    M("rat", "Rat des galeries", 1, 3, 1, "**Embuscade :** 1 dégât à chaque unité de sa salle.",
+      "Rat géant", 2, 5, 2, "**Morsure :** une unité qu'il blesse est Sonnée."),
+    M("archer", "Archer gobelin", 2, 2, 1, "**Embuscade :** 2 dégâts à une unité de sa salle (guilde la plus riche d'abord).",
+      "Tireur gobelin", 3, 4, 2, "**Combat :** 1 dégât à la première unité qui l'attaque, avant le coup."),
+    M("chaman", "Chaman gobelin", 1, 4, 2, "**Les autres monstres** ont +1 Puissance.",
+      "Grand chaman", 2, 6, 3, "**Les autres monstres** ont +1/+1.", relique=True),
+    M("araignee", "Araignée des puits", 2, 4, 2, "**Embuscade :** une unité de sa salle est Sonnée.",
+      "Reine araignée", 3, 6, 3, "**Toile :** les unités de sa salle ne peuvent pas changer de salle.", relique=True),
+    M("golem", "Golem de minerai", 2, 7, 2, "**Carapace :** chaque attaque lui inflige 1 dégât de moins.",
+      "Golem de cristal", 3, 9, 3, "**Carapace :** chaque attaque lui inflige 1 dégât de moins."),
+    M("contremaitre", "Contremaître hobgobelin", 3, 5, 2, "Il compte les pépites. Et les doigts.",
+      "Chef de guerre", 4, 7, 4, "**Riposte :** frappe aussi une 2e unité de la salle.", relique=True),
+    M("troll", "Troll des mines", 4, 6, 3, "**Régénération :** au Retrait, il est soigné complètement.",
+      "Troll ancien", 5, 8, 4, "**Régénération :** au Retrait, il est soigné complètement."),
+    C("grombak", "Grombak, roi gobelin", "Boss", 0, MINE,
+      "Entre quand la pioche de monstres est vide.\n**Enragé :** à 9 PV ou moins, +2 Puissance.\n"
+      "**Fin :** sa mort termine la partie à la fin du tour.", 6, 18, legal=False, token=True, tresors=6),
+    C("lanterne", "Lanterne du mineur", "Relique", 0, MINE,
+      "**Stratagème :** regarde le monstre du dessus de la pioche ; tu peux le mettre en dessous.",
+      legal=False, token=True),
+    C("pioche-runique", "Pioche runique", "Relique", 0, MINE,
+      "**Assaut :** ta première unité qui attaque un monstre a +2 Puissance pour ce combat.",
+      legal=False, token=True),
+    C("bourse", "Bourse du contremaître", "Relique", 0, MINE,
+      "**Retrait :** si tu as tué au moins un monstre ce tour, +1 trésor.",
+      legal=False, token=True),
+]
+DONJONS = {"mine": {"nom": MINE, "monstres": ["gobelin", "rat", "archer", "chaman", "araignee", "golem",
+                                               "contremaitre", "troll"],
+                    "boss": "grombak", "reliques": ["lanterne", "pioche-runique", "bourse"]}}
+
+
 def rich_lines(draw, text, fnt, fnt_b, max_w):
     """Découpe un texte avec **gras** en lignes de segments (mot, gras?)."""
     words = []
@@ -273,20 +311,30 @@ def draw_card(c, path):
     while d.textlength(c["name"], font=tf) > W - 150 and tf.size > 16:
         tf = font(tf.size - 1, True)
     d.text((W // 2 + 24, 61), c["name"], font=tf, fill=(20, 14, 10), anchor="mm")
-    # Coût
-    d.ellipse((30, 28, 94, 92), fill=(15, 15, 25), outline="white", width=3)
-    d.text((62, 60), str(c["cost"]), font=font(34, True), fill="white", anchor="mm")
+    # Coût (ou trésors pour un monstre : pastille dorée)
+    if c.get("tresors") is not None:
+        d.ellipse((30, 28, 94, 92), fill=(232, 186, 60), outline="white", width=3)
+        d.text((62, 60), str(c["tresors"]), font=font(34, True), fill=(40, 25, 5), anchor="mm")
+    else:
+        d.ellipse((30, 28, 94, 92), fill=(15, 15, 25), outline="white", width=3)
+        d.text((62, 60), str(c["cost"]), font=font(34, True), fill="white", anchor="mm")
 
     # Illustration (placeholder)
     d.rounded_rectangle((24, 114, W - 25, 330), radius=14, fill=(12, 10, 10))
-    d.text((W // 2, 205), TYPE_LABEL[c["type"]].upper(), font=font(44, True), fill=frame, anchor="mm")
-    fac = c["faction"] if c["faction"] not in ("Monstre", "Boss", "Energie", "Relique") else ""
+    big = "ÉVOLUÉ" if c.get("verso") else TYPE_LABEL[c["type"]].upper()
+    d.text((W // 2, 205), big, font=font(44, True), fill=frame, anchor="mm")
+    if c.get("relique"):
+        d.rounded_rectangle((W - 190, 122, W - 33, 160), radius=10, fill=(225, 190, 70))
+        d.text((W - 111, 141), "◆ RELIQUE", font=font(20, True), fill=(40, 25, 5), anchor="mm")
+    fac = c["faction"] if c["type"] not in ("Monstre", "Boss", "Energie", "Relique") and c["faction"] != "Relique" else ""
     if fac:
         d.text((W // 2, 260), fac.upper(), font=font(22, True), fill=(200, 200, 205), anchor="mm")
     d.text((W // 2, 300), "illustration à venir", font=font(17), fill=(120, 120, 130), anchor="mm")
 
     # Ligne de type
     tl = TYPE_LABEL[c["type"]] + (f" — {c['faction']}" if fac else "")
+    if c.get("tresors") is not None:
+        tl = TYPE_LABEL[c["type"]] + (" évolué" if c.get("verso") else "") + f" — {c['tresors']} trésor" + ("s" if c["tresors"] > 1 else "")
     d.text((30, 346), tl, font=font(22, True), fill=frame)
 
     # Texte de règles (taille auto)
@@ -335,12 +383,19 @@ def main():
             e["isToken"] = True
         if c["tokens"]:
             e["tokens"] = c["tokens"]
+        if c.get("back"):
+            b = dict(c, **c["back"], verso=True, back=None)
+            draw_card(b, os.path.join(out_dir, f"{c['id']}-verso.png"))
+            e["face"]["back"] = {"name": {"name": b["name"]}, "type": c["type"], "cost": 0,
+                                 "image": f"{BASE}/img/cards/{c['id']}-verso.png"}
+        if c.get("tresors") is not None:
+            e["tresors"] = c["tresors"]
         cards[c["id"]] = e
     with open(os.path.join(ROOT, "cards.json"), "w", encoding="utf-8") as fh:
         json.dump(cards, fh, ensure_ascii=False, indent=2)
     # nettoie les images de cartes qui n'existent plus
     for fn in os.listdir(out_dir):
-        if fn.endswith(".png") and fn[:-4] not in cards:
+        if fn.endswith(".png") and fn[:-4].removesuffix("-verso") not in cards:
             os.remove(os.path.join(out_dir, fn))
     print(len(cards), "cartes")
 

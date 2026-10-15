@@ -1,7 +1,7 @@
 {
   "name": "Guild Rush (proto)",
   "cardRotation": 90,
-  "customHelp": "Proto de Guild Rush. Ivrognes (Guss) contre Druides (Cernun).\nPlateau : les monstres au centre (Monstre 1 à 4, Boss, pioche et défausse, panneau Donjon). En face de chaque monstre, une Expédition par joueur (3 unités max, jetons compris). Ta zone : Expéditions 1-4, Gardien, Réserve ; Énergie, pioche de reliques, Camp.\nTon tour : Repos (3 énergies se redressent toutes seules, pioche 1, passif du Gardien) → Stratagème (Éclaireurs, cartes face cachée) → Assaut → Retrait (trésors, soins au Camp).\nAssaut : pose tes unités (elles arrivent dans l'Expédition 1 : déplace-les dans l'Expédition voulue ou au Camp) ; une unité déjà en jeu peut aller dans une Expédition voisine ou au Camp, une fois par tour. Puis attaque salle par salle : chaque attaque ouvre un Duel (annonce-le dans le chat). L'adversaire répond en premier, puis chacun joue une carte Rapide ou instantanée (alcool, recette) ou passe ; deux passes de suite = combat. Si les deux joueurs ont des unités dans la salle : mêlée (le monstre frappe d'abord, puis les unités alternent ; le coup de grâce prend les trésors).\nFin de manche (après le tour du second joueur) : les monstres survivants évoluent (dès l'étage 2) ; si l'étage est vidé, l'hôte clique « Étage suivant » (4 nouveaux monstres, +2 énergies).\nÉnergie : 3 au départ, +2 par étage. Incline une Énergie pour payer 1.\nCompteur = Trésors. Jetons Dégât et Baril à poser sur les cartes.\nRéserve des Ivrognes (alcools) : tire une pinte (1 PV du baril) pour piocher 1 carte de ta Réserve, 1 fois par tour. Un alcool s'attache à ton unité dans la salle du baril, même en combat.\nRéserve des Druides (ingrédients) : au Repos, pioche 3 cartes de ta Réserve, garde-en 2 sur Cernun (panier de 4 max), remets la 3e et mélange. À l'Assaut, cuisine 1 recette ; les cartes utilisées retournent dans ta Réserve.\nPile de Réserve : clique dessus pour piocher 1 carte ; clic droit pour la mélanger.\nJetons Pousse et Loup : clic droit sur la carte qui les invoque, ou panneau des jetons.\nBaril et Livre de recettes : fiches à créer avec le panneau des jetons du Gardien (clic droit sur lui).",
+  "customHelp": "Guild Rush (proto) · donjon : Mine des Gobelins. Fin : boss vaincu (fin de ce tour) ou un joueur à 12 trésors en fin de manche.\nPlateau : 4 monstres au centre, pioche de monstres, boss, monstres vaincus, panneau Donjon. En face de chaque monstre, une Expédition par joueur (3 unités max, jetons compris). Ta zone : Expéditions 1-4, Gardien, Réserve ; Énergie et Camp.\nTon tour : Repos (automatique : énergie au max, +1 par manche jusqu'à 6 ; pioche 1 ; passif du Gardien) → Stratagème (Éclaireurs, cartes face cachée) → Assaut → Retrait (trésors sur ton compteur, soins au Camp).\nAssaut : pose tes unités (elles arrivent dans l'Expédition 1 : déplace-les dans l'Expédition voulue ou au Camp). Une unité intacte déjà en jeu peut aller dans une Expédition voisine ou au Camp, une fois par tour. Puis attaque salle par salle : chaque attaque ouvre un Duel (annonce-le dans le chat). L'adversaire répond en premier, puis chacun joue une carte Rapide ou instantanée ou passe ; deux passes = combat. Les deux joueurs dans la salle : mêlée (le monstre frappe d'abord, coup de grâce). Puis 1 raid au plus.\nMonstre tué : l'hôte le met dans « Monstres vaincus », le tueur ajoute ses trésors (pastille dorée) à son compteur. Icône Relique : clique « Prendre la relique » dans le panneau Donjon.\nAutomatique au début de chaque tour : les salles vides reçoivent le monstre suivant (puis le boss quand la pioche est vide) ; en fin de manche, les monstres en jeu depuis une manche entière se retournent sur leur face évoluée.\nCompteur = Trésors. Jetons Dégât et Baril à poser sur les cartes.\nRéserve (8 cartes) : clique sur la pile pour piocher 1 carte ; clic droit pour la mélanger. Ivrognes : tire une pinte (1 PV du baril) pour piocher, 1 fois par tour ; un alcool s'attache à ton unité près du baril, même en Duel. Druides : Cueillette au Repos, 1 recette à l'Assaut.\nJetons Pousse et Loup, baril et Livre : clic droit sur la carte qui les crée (ou sur le Gardien).",
   "deckBuilding": {
     "mainFilters": [
       "faction",
@@ -15,8 +15,7 @@
         "customCategories": [
           "Gardien",
           "Alcool",
-          "Ingredient",
-          "Relique"
+          "Ingredient"
         ],
         "deckRuleset": "Proto",
         "legalityCode": "PROTO"
@@ -40,19 +39,13 @@
           {
             "category": "Alcool",
             "min": 0,
-            "max": 12,
+            "max": 8,
             "ignoreTotalCount": true
           },
           {
             "category": "Ingredient",
             "min": 0,
-            "max": 15,
-            "ignoreTotalCount": true
-          },
-          {
-            "category": "Relique",
-            "min": 0,
-            "max": 3,
+            "max": 8,
             "ignoreTotalCount": true
           }
         ]
@@ -102,12 +95,7 @@
               "destination": "Energie"
             },
             {
-              "createCardId": "energie",
-              "count": 20,
-              "destination": "PiocheEnergie"
-            },
-            {
-              "createCardId": "boss-test",
+              "createCardId": "grombak",
               "count": 1,
               "destination": "Boss",
               "overrideState": {
@@ -115,23 +103,43 @@
               }
             },
             {
-              "createCardId": "monstre-1",
-              "count": 3,
+              "createCardId": "gobelin",
+              "count": 1,
               "destination": "Monstres"
             },
             {
-              "createCardId": "monstre-2",
-              "count": 3,
+              "createCardId": "rat",
+              "count": 1,
               "destination": "Monstres"
             },
             {
-              "createCardId": "monstre-3",
-              "count": 3,
+              "createCardId": "archer",
+              "count": 1,
               "destination": "Monstres"
             },
             {
-              "createCardId": "monstre-4",
-              "count": 3,
+              "createCardId": "chaman",
+              "count": 1,
+              "destination": "Monstres"
+            },
+            {
+              "createCardId": "araignee",
+              "count": 1,
+              "destination": "Monstres"
+            },
+            {
+              "createCardId": "golem",
+              "count": 1,
+              "destination": "Monstres"
+            },
+            {
+              "createCardId": "contremaitre",
+              "count": 1,
+              "destination": "Monstres"
+            },
+            {
+              "createCardId": "troll",
+              "count": 1,
               "destination": "Monstres"
             }
           ],
@@ -140,11 +148,6 @@
               "createCardId": "energie",
               "count": 3,
               "destination": "Energie"
-            },
-            {
-              "createCardId": "energie",
-              "count": 20,
-              "destination": "PiocheEnergie"
             }
           ]
         }
@@ -250,51 +253,23 @@
               "direction": "row",
               "content": [
                 {
-                  "section": "PiocheEnergie",
-                  "style": {
-                    "width": "7%",
-                    "flex": "0 0 auto",
-                    "borderRadius": "6px",
-                    "backgroundColor": "rgba(175,85,205,0.20)",
-                    "border": "1px solid rgba(175,85,205,0.55)",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EPIOCHE%3C/text%3E%3C/svg%3E\")",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundPosition": "left 4px bottom 1px",
-                    "marginLeft": "9.0%"
-                  }
-                },
-                {
                   "section": "Energie",
                   "style": {
-                    "width": "23.0%",
+                    "width": "31.2%",
                     "flex": "0 0 auto",
                     "borderRadius": "6px",
                     "backgroundColor": "rgba(175,85,205,0.20)",
                     "border": "1px solid rgba(175,85,205,0.55)",
-                    "marginLeft": "1.2%",
                     "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3E%C3%89NERGIE%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
-                    "backgroundPosition": "left 22px top 3px"
-                  }
-                },
-                {
-                  "section": "Relique",
-                  "style": {
-                    "width": "7%",
-                    "flex": "0 0 auto",
-                    "borderRadius": "6px",
-                    "backgroundColor": "rgba(255,205,160,0.20)",
-                    "border": "1px solid rgba(255,205,160,0.55)",
-                    "marginLeft": "1.2%",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ERELIQUES%3C/text%3E%3C/svg%3E\")",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundPosition": "left 4px bottom 1px"
+                    "backgroundPosition": "left 22px top 3px",
+                    "marginLeft": "9.0%"
                   }
                 },
                 {
                   "section": "Camp",
                   "style": {
-                    "width": "47.6%",
+                    "width": "55.8%",
                     "flex": "0 0 auto",
                     "borderRadius": "6px",
                     "backgroundColor": "rgba(255,205,160,0.20)",
@@ -484,25 +459,19 @@
             "isHidden": "no",
             "height": 13,
             "alignment": "CENTER",
-            "displayedTitle": "Boss"
+            "displayedTitle": "Boss (entre quand la pioche est vide)"
           },
           "Monstres": {
             "isHidden": "yes",
             "height": 13,
             "alignment": "DECK",
-            "displayedTitle": "Deck de monstres"
+            "displayedTitle": "Pioche de monstres"
           },
           "CimetiereMonstres": {
             "isHidden": "no",
             "height": 13,
             "alignment": "DECK",
-            "displayedTitle": "Cimetière des monstres"
-          },
-          "Relique": {
-            "isHidden": "yes",
-            "height": 14,
-            "alignment": "DECK",
-            "displayedTitle": "Pioche de reliques"
+            "displayedTitle": "Monstres vaincus"
           },
           "Gardien": {
             "isHidden": "no",
@@ -519,15 +488,6 @@
             "noAutoPayTo": true,
             "keepTappedNewTurn": true
           },
-          "PiocheEnergie": {
-            "isHidden": "yes",
-            "height": 14,
-            "alignment": "DECK",
-            "displayedTitle": "Réserve d'énergie",
-            "drawDestinations": {
-              "_default": "Energie"
-            }
-          },
           "Donjon": {
             "type": "custom",
             "isShared": true,
@@ -536,7 +496,21 @@
             "alignment": "CENTER",
             "displayedTitle": "Donjon",
             "defaultValue": {
-              "etage": 0
+              "nom": "Mine des Gobelins",
+              "manche": 1,
+              "pioche": 4,
+              "boss": false,
+              "arrivee": {
+                "Salle1": 0,
+                "Salle2": 0,
+                "Salle3": 0,
+                "Salle4": 0
+              },
+              "reliques": [
+                "lanterne",
+                "pioche-runique",
+                "bourse"
+              ]
             },
             "blueprint": {
               "type": "div",
@@ -565,27 +539,56 @@
                   "type": "div",
                   "props": {
                     "style": {
-                      "fontSize": "1.05em",
+                      "fontSize": "1.0em",
                       "fontWeight": "bold"
                     }
                   },
-                  "children": "{{ game.data.Donjon.etage >= 4 ? 'Boss !' : 'Étage ' + game.data.Donjon.etage + ' / 3' }}"
+                  "children": "{{ game.data.Donjon.nom }}"
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "fontSize": "1.15em",
+                      "fontWeight": "bold",
+                      "color": "#f0c040"
+                    }
+                  },
+                  "children": "Manche {{ game.data.Donjon.manche }}"
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "fontSize": "0.85em",
+                      "opacity": "0.85"
+                    }
+                  },
+                  "children": "{{ game.data.Donjon.boss ? 'Le boss est entré !' : 'Pioche : ' + game.data.Donjon.pioche + ' monstre(s)' }}"
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "fontSize": "0.85em",
+                      "opacity": "0.85"
+                    }
+                  },
+                  "children": "Reliques : {{ (game.data.Donjon.reliques || []).length }} / 3"
                 },
                 {
                   "type": "button",
                   "props": {
-                    "className": "btn btn-warning"
+                    "className": "btn btn-warning btn-sm"
                   },
-                  "onClick": "const salles=['Salle1','Salle2','Salle3','Salle4'];\nconst d=game.data.Donjon;\nif(d.etage>=4){functions.chatLog('Le combat contre le Boss est déjà lancé.');return;}\nconst restants=salles.flatMap(s=>cards[s]??[]);\nif(restants.length) await functions.moveCards(restants,'CimetiereMonstres');\nif(d.etage>=3){d.etage=4;functions.chatLog('Les 3 étages sont terminés : place au Boss ! (+2 énergie)');{const e=game.data.Donjon?.etage??0;if(e<=1){globalThis.__grEtage=e;}else{const prev=Math.max(globalThis.__grEtage??1,1);if(e>prev){globalThis.__grEtage=e;await functions.drawFromExtraDeck('PiocheEnergie',(e-prev)*2,false,'Energie');}}}await functions.repositionCards();return;}\nfor(const s of salles){await functions.drawFromExtraDeck('Monstres',1,false,s);}\nd.etage=d.etage+1;\nfunctions.chatLog('Étage '+d.etage+' : 4 nouveaux monstres dans les salles (+2 énergie).');{const e=game.data.Donjon?.etage??0;if(e<=1){globalThis.__grEtage=e;}else{const prev=Math.max(globalThis.__grEtage??1,1);if(e>prev){globalThis.__grEtage=e;await functions.drawFromExtraDeck('PiocheEnergie',(e-prev)*2,false,'Energie');}}}\nawait functions.repositionCards();",
-                  "children": "Étage suivant"
+                  "onClick": "const d=game.data.Donjon;const r=d.reliques||[];if(!r.length){functions.chatLog('Plus aucune relique dans le donjon.');return;}const id=r[0];d.reliques=r.slice(1);await functions.createCard(id,'Camp');functions.chatLog('Relique gagnée : '+({\"lanterne\": \"Lanterne du mineur\", \"pioche-runique\": \"Pioche runique\", \"bourse\": \"Bourse du contremaître\"}[id]||id)+' (au Camp).');await functions.repositionCards();",
+                  "children": "Prendre la relique"
                 }
               ]
             },
             "events": {
-              "onPlayersReady": "if(!game.isHost)return;\nawait functions.shuffleSection('Monstres');\nconst d=game.data.Donjon;\nfor(const s of ['Salle1','Salle2','Salle3','Salle4']){await functions.drawFromExtraDeck('Monstres',1,false,s);}\nd.etage=1;\nfunctions.chatLog('Étage 1 : 4 monstres dans les salles.');\nawait functions.repositionCards();",
-              "onUpdate": "{const e=game.data.Donjon?.etage??0;if(e<=1){globalThis.__grEtage=e;}else{const prev=Math.max(globalThis.__grEtage??1,1);if(e>prev){globalThis.__grEtage=e;await functions.drawFromExtraDeck('PiocheEnergie',(e-prev)*2,false,'Energie');}}}",
-              "onCardsUpdate": "{const e=game.data.Donjon?.etage??0;if(e<=1){globalThis.__grEtage=e;}else{const prev=Math.max(globalThis.__grEtage??1,1);if(e>prev){globalThis.__grEtage=e;await functions.drawFromExtraDeck('PiocheEnergie',(e-prev)*2,false,'Energie');}}}",
-              "onNewTurn": "{const e=game.data.Donjon?.etage??0;if(e<=1){globalThis.__grEtage=e;}else{const prev=Math.max(globalThis.__grEtage??1,1);if(e>prev){globalThis.__grEtage=e;await functions.drawFromExtraDeck('PiocheEnergie',(e-prev)*2,false,'Energie');}}}{if(game.turn?.isMyTurn){const t=(cards.Energie??[]).filter(c=>c.isTapped);if(t.length){const r=t.slice(0,3);await functions.updateCards(r,{isTapped:false});functions.chatLog('Aube : '+r.length+' énergie(s) redressée(s).');}}}"
+              "onPlayersReady": "if(!game.isHost)return;\nawait functions.shuffleSection('Monstres');\nconst d=game.data.Donjon;\nfor(const s of ['Salle1','Salle2','Salle3','Salle4']){await functions.drawFromExtraDeck('Monstres',1,false,s);d.arrivee[s]=0;}\nd.manche=1;d.pioche=4;d.boss=false;\nconst r=[...(d.reliques||[])];for(let i=r.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[r[i],r[j]]=[r[j],r[i]];}d.reliques=r;\nfunctions.chatLog('Mine des Gobelins : 4 monstres dans les salles, 4 dans la pioche, puis Grombak.');\nawait functions.repositionCards();",
+              "onNewTurn": "const n=game.turn?.count??1, tp=game.turn?.totalPlayers||2;\nconst m=Math.ceil(n/tp);\nif(game.turn?.isMyTurn){\n  const max=Math.min(6,2+m);\n  const en=cards.Energie??[];\n  for(let i=en.length;i<max;i++){await functions.createCard('energie','Energie');}\n  const t=en.filter(c=>c.isTapped);\n  if(t.length){await functions.updateCards(t,{isTapped:false});}\n  functions.chatLog('Repos (manche '+m+') : énergie '+max+' / '+max+'.');\n}\nif(game.isHost && n>1){\n  const d=game.data.Donjon; d.arrivee=d.arrivee||{};\n  const pm=Math.ceil((n-1)/tp);\n  const salles=['Salle1','Salle2','Salle3','Salle4'];\n  let pioche=(cards.Monstres??[]).length; const boss=(cards.Boss??[])[0];\n  for(const s of salles){\n    if((cards[s]??[]).length) continue;\n    if(pioche>0){await functions.drawFromExtraDeck('Monstres',1,false,s);pioche--;d.arrivee[s]=pm;functions.chatLog('Retrait : un monstre entre dans la salle '+s.slice(-1)+'.');}\n    else if(boss && !d.boss){await functions.moveCard(boss,s);d.boss=true;d.arrivee[s]=pm;functions.chatLog('Retrait : le boss entre dans la salle '+s.slice(-1)+' !');}\n  }\n  if(m>pm){\n    const evo=[];\n    for(const s of salles){for(const c of (cards[s]??[])){\n      if(!c.isFlipped && (d.arrivee[s]??0)<pm && functions.getCardData(c)?.type==='Monstre') evo.push(c);}}\n    if(evo.length){await functions.updateCards(evo,{isFlipped:true});functions.chatLog('Fin de manche '+pm+' : '+evo.length+' monstre(s) évoluent.');}\n    d.manche=m;\n  }\n  d.pioche=pioche;\n  await functions.repositionCards();\n}"
             }
           },
           "BF1": {
@@ -633,7 +636,6 @@
         "categoriesAlreadyOnBoard": [
           "Gardien->Gardien",
           "Alcool->Reserve",
-          "Relique->Relique",
           "Ingredient->Reserve"
         ],
         "autoPlayFromStack": {
@@ -654,11 +656,11 @@
     }
   },
   "cards": {
-    "dataUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/cards.json",
-    "cardBack": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/back.png",
+    "dataUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/nouveau-format/cards.json",
+    "cardBack": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/nouveau-format/img/back.png",
     "cardBackColor": "#2a2240"
   },
   "defaultRessources": {
-    "decksUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/decks.json"
+    "decksUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/nouveau-format/decks.json"
   }
 }
