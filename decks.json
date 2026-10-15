@@ -8,8 +8,7 @@
         "Gardien",
         "Alcool",
         "Unite",
-        "Sort",
-        "Relique"
+        "Sort"
       ],
       "Gardien": [
         {
@@ -81,26 +80,20 @@
           "count": 1
         }
       ],
-      "Relique": [
-        {
-          "id": "relique-test",
-          "count": 3
-        }
-      ],
       "Sideboard": [],
       "_maybeboard": [],
       "Alcool": [
         {
           "id": "biere",
-          "count": 3
+          "count": 2
         },
         {
           "id": "cidre",
-          "count": 2
+          "count": 1
         },
         {
           "id": "hydromel",
-          "count": 2
+          "count": 1
         },
         {
           "id": "rhum",
@@ -117,10 +110,6 @@
         {
           "id": "absinthe",
           "count": 1
-        },
-        {
-          "id": "liqueur-feu",
-          "count": 1
         }
       ]
     }
@@ -134,8 +123,7 @@
         "Gardien",
         "Ingredient",
         "Unite",
-        "Sort",
-        "Relique"
+        "Sort"
       ],
       "Gardien": [
         {
@@ -146,14 +134,10 @@
       "Ingredient": [
         {
           "id": "champignon",
-          "count": 3
+          "count": 2
         },
         {
           "id": "baies",
-          "count": 3
-        },
-        {
-          "id": "racine",
           "count": 2
         },
         {
@@ -161,8 +145,12 @@
           "count": 2
         },
         {
+          "id": "racine",
+          "count": 1
+        },
+        {
           "id": "herbes",
-          "count": 2
+          "count": 1
         }
       ],
       "Unite": [
@@ -227,12 +215,6 @@
         {
           "id": "eveil-foret",
           "count": 1
-        }
-      ],
-      "Relique": [
-        {
-          "id": "relique-test",
-          "count": 3
         }
       ],
       "Sideboard": [],

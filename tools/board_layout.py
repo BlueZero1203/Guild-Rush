@@ -45,12 +45,10 @@ R=lambda x: round(x,2)
 A=[node('BF%d'%i,COLW,'bf','EXPÉDITION %d'%i,ml=(GAP if i>1 else 0)) for i in range(1,5)]
 A.append(node('Gardien',R(2*RW+GAP),'gard','GARDIEN · BARIL / LIVRE',ml=GAP))
 A.append(node('Reserve',RW,'pile','RÉSERVE',pile=True,ml=GAP))
-# --- rangée B : pioche énergie + énergie (sous S1-S2) | pioche reliques + Camp jusqu'au bout ---
+# --- rangée B : Énergie (sous Expéditions 1-2) | Camp jusqu'au bout ---
 H2=2*COLW+GAP
-B=[node('PiocheEnergie',RW,'ener','PIOCHE',pile=True),
-   node('Energie',R(H2-RW-GAP),'ener','ÉNERGIE',ml=GAP),
-   node('Relique',RW,'camp','RELIQUES',pile=True,ml=GAP)]
-B.append(node('Camp',R(TOTAL-LM-RW-GAP-(H2-RW-GAP)-GAP-RW-GAP),'camp','CAMP · DÉFENSEURS, BLESSÉES, RELIQUES',ml=GAP))
+B=[node('Energie',R(H2),'ener','ÉNERGIE')]
+B.append(node('Camp',R(TOTAL-LM-H2-GAP),'camp','CAMP · DÉFENSEURS, BLESSÉES, RELIQUES',ml=GAP))
 S['layout']={'direction':'column','content':[row(A), row(B)]}
 S['layout']['content'][1]['style']['marginBottom']='12vh'
 
@@ -70,7 +68,7 @@ for k in list(D):
 for i in range(1,5):
     D['BF%d'%i]={'isHidden':'no','height':14,'alignment':'CENTER','displayedTitle':'Expédition %d'%i,'logWhenPlayed':True}
     D['Salle%d'%i].update({'height':13,'displayedTitle':'Monstre salle %d'%i})
-for k,h in (('Gardien',14),('Camp',14),('Energie',14),('PiocheEnergie',14),('Relique',14),('Reserve',14),            ('Boss',13),('Monstres',13),('CimetiereMonstres',13)):
+for k,h in (('Gardien',14),('Camp',14),('Energie',14),('Reserve',14),            ('Boss',13),('Monstres',13),('CimetiereMonstres',13)):
     D[k]['height']=h
 D.pop('Expedition',None)
 D['Camp']['displayedTitle']='Camp (blessées, reliques)'

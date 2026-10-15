@@ -1014,26 +1014,6 @@
     "hp": 1,
     "isToken": true
   },
-  "relique-test": {
-    "id": "relique-test",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Relique test"
-        },
-        "type": "Relique",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/relique-test.png"
-      }
-    },
-    "name": "Relique test",
-    "type": "Relique",
-    "cost": 0,
-    "faction": "Relique",
-    "_legal": {
-      "PROTO": 3
-    }
-  },
   "carte-tresor": {
     "id": "carte-tresor",
     "face": {
@@ -1068,106 +1048,6 @@
     "type": "Energie",
     "cost": 0,
     "faction": "Energie",
-    "isToken": true
-  },
-  "monstre-1": {
-    "id": "monstre-1",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Monstre test 1"
-        },
-        "type": "Monstre",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/monstre-1.png"
-      }
-    },
-    "name": "Monstre test 1",
-    "type": "Monstre",
-    "cost": 0,
-    "faction": "Monstre",
-    "power": 2,
-    "hp": 3,
-    "isToken": true
-  },
-  "monstre-2": {
-    "id": "monstre-2",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Monstre test 2"
-        },
-        "type": "Monstre",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/monstre-2.png"
-      }
-    },
-    "name": "Monstre test 2",
-    "type": "Monstre",
-    "cost": 0,
-    "faction": "Monstre",
-    "power": 3,
-    "hp": 5,
-    "isToken": true
-  },
-  "monstre-3": {
-    "id": "monstre-3",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Monstre test 3"
-        },
-        "type": "Monstre",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/monstre-3.png"
-      }
-    },
-    "name": "Monstre test 3",
-    "type": "Monstre",
-    "cost": 0,
-    "faction": "Monstre",
-    "power": 4,
-    "hp": 6,
-    "isToken": true
-  },
-  "monstre-4": {
-    "id": "monstre-4",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Monstre test 4"
-        },
-        "type": "Monstre",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/monstre-4.png"
-      }
-    },
-    "name": "Monstre test 4",
-    "type": "Monstre",
-    "cost": 0,
-    "faction": "Monstre",
-    "power": 5,
-    "hp": 8,
-    "isToken": true
-  },
-  "boss-test": {
-    "id": "boss-test",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Boss test"
-        },
-        "type": "Boss",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/boss-test.png"
-      }
-    },
-    "name": "Boss test",
-    "type": "Boss",
-    "cost": 0,
-    "faction": "Boss",
-    "power": 8,
-    "hp": 20,
     "isToken": true
   },
   "rosa": {
@@ -1338,6 +1218,313 @@
     "type": "Recettes",
     "cost": 0,
     "faction": "Druides",
+    "isToken": true
+  },
+  "gobelin": {
+    "id": "gobelin",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Gobelin fouineur"
+        },
+        "type": "Monstre",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gobelin.png"
+      },
+      "back": {
+        "name": {
+          "name": "Hobgobelin"
+        },
+        "type": "Monstre",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gobelin-verso.png"
+      }
+    },
+    "name": "Gobelin fouineur",
+    "type": "Monstre",
+    "cost": 0,
+    "faction": "Mine des Gobelins",
+    "power": 2,
+    "hp": 3,
+    "isToken": true,
+    "tresors": 1
+  },
+  "rat": {
+    "id": "rat",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Rat des galeries"
+        },
+        "type": "Monstre",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/rat.png"
+      },
+      "back": {
+        "name": {
+          "name": "Rat géant"
+        },
+        "type": "Monstre",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/rat-verso.png"
+      }
+    },
+    "name": "Rat des galeries",
+    "type": "Monstre",
+    "cost": 0,
+    "faction": "Mine des Gobelins",
+    "power": 1,
+    "hp": 3,
+    "isToken": true,
+    "tresors": 1
+  },
+  "archer": {
+    "id": "archer",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Archer gobelin"
+        },
+        "type": "Monstre",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/archer.png"
+      },
+      "back": {
+        "name": {
+          "name": "Tireur gobelin"
+        },
+        "type": "Monstre",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/archer-verso.png"
+      }
+    },
+    "name": "Archer gobelin",
+    "type": "Monstre",
+    "cost": 0,
+    "faction": "Mine des Gobelins",
+    "power": 2,
+    "hp": 2,
+    "isToken": true,
+    "tresors": 1
+  },
+  "chaman": {
+    "id": "chaman",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Chaman gobelin"
+        },
+        "type": "Monstre",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chaman.png"
+      },
+      "back": {
+        "name": {
+          "name": "Grand chaman"
+        },
+        "type": "Monstre",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chaman-verso.png"
+      }
+    },
+    "name": "Chaman gobelin",
+    "type": "Monstre",
+    "cost": 0,
+    "faction": "Mine des Gobelins",
+    "power": 1,
+    "hp": 4,
+    "isToken": true,
+    "tresors": 2
+  },
+  "araignee": {
+    "id": "araignee",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Araignée des puits"
+        },
+        "type": "Monstre",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/araignee.png"
+      },
+      "back": {
+        "name": {
+          "name": "Reine araignée"
+        },
+        "type": "Monstre",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/araignee-verso.png"
+      }
+    },
+    "name": "Araignée des puits",
+    "type": "Monstre",
+    "cost": 0,
+    "faction": "Mine des Gobelins",
+    "power": 2,
+    "hp": 4,
+    "isToken": true,
+    "tresors": 2
+  },
+  "golem": {
+    "id": "golem",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Golem de minerai"
+        },
+        "type": "Monstre",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/golem.png"
+      },
+      "back": {
+        "name": {
+          "name": "Golem de cristal"
+        },
+        "type": "Monstre",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/golem-verso.png"
+      }
+    },
+    "name": "Golem de minerai",
+    "type": "Monstre",
+    "cost": 0,
+    "faction": "Mine des Gobelins",
+    "power": 2,
+    "hp": 7,
+    "isToken": true,
+    "tresors": 2
+  },
+  "contremaitre": {
+    "id": "contremaitre",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Contremaître hobgobelin"
+        },
+        "type": "Monstre",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/contremaitre.png"
+      },
+      "back": {
+        "name": {
+          "name": "Chef de guerre"
+        },
+        "type": "Monstre",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/contremaitre-verso.png"
+      }
+    },
+    "name": "Contremaître hobgobelin",
+    "type": "Monstre",
+    "cost": 0,
+    "faction": "Mine des Gobelins",
+    "power": 3,
+    "hp": 5,
+    "isToken": true,
+    "tresors": 2
+  },
+  "troll": {
+    "id": "troll",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Troll des mines"
+        },
+        "type": "Monstre",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/troll.png"
+      },
+      "back": {
+        "name": {
+          "name": "Troll ancien"
+        },
+        "type": "Monstre",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/troll-verso.png"
+      }
+    },
+    "name": "Troll des mines",
+    "type": "Monstre",
+    "cost": 0,
+    "faction": "Mine des Gobelins",
+    "power": 4,
+    "hp": 6,
+    "isToken": true,
+    "tresors": 3
+  },
+  "grombak": {
+    "id": "grombak",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Grombak, roi gobelin"
+        },
+        "type": "Boss",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/grombak.png"
+      }
+    },
+    "name": "Grombak, roi gobelin",
+    "type": "Boss",
+    "cost": 0,
+    "faction": "Mine des Gobelins",
+    "power": 6,
+    "hp": 18,
+    "isToken": true,
+    "tresors": 6
+  },
+  "lanterne": {
+    "id": "lanterne",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Lanterne du mineur"
+        },
+        "type": "Relique",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lanterne.png"
+      }
+    },
+    "name": "Lanterne du mineur",
+    "type": "Relique",
+    "cost": 0,
+    "faction": "Mine des Gobelins",
+    "isToken": true
+  },
+  "pioche-runique": {
+    "id": "pioche-runique",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Pioche runique"
+        },
+        "type": "Relique",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pioche-runique.png"
+      }
+    },
+    "name": "Pioche runique",
+    "type": "Relique",
+    "cost": 0,
+    "faction": "Mine des Gobelins",
+    "isToken": true
+  },
+  "bourse": {
+    "id": "bourse",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Bourse du contremaître"
+        },
+        "type": "Relique",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bourse.png"
+      }
+    },
+    "name": "Bourse du contremaître",
+    "type": "Relique",
+    "cost": 0,
+    "faction": "Mine des Gobelins",
     "isToken": true
   }
 }
