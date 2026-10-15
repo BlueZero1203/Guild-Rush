@@ -422,7 +422,7 @@
             "isHidden": "yes",
             "height": 14,
             "alignment": "DECK",
-            "displayedTitle": "Réserve (Cave / Garde-manger)",
+            "displayedTitle": "Réserve",
             "drawDestinations": {
               "_default": "Hand"
             }
@@ -656,11 +656,11 @@
     }
   },
   "cards": {
-    "dataUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/nouveau-format/cards.json",
-    "cardBack": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/nouveau-format/img/back.png",
+    "dataUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/cards.json",
+    "cardBack": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/back.png",
     "cardBackColor": "#2a2240"
   },
   "defaultRessources": {
-    "decksUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/nouveau-format/decks.json"
+    "decksUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/decks.json"
   }
 }
