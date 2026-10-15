@@ -33,7 +33,7 @@ for m in ('autoPlayFromHand', 'autoPlayFromStack'):
 for k in ('PiocheEnergie', 'Relique'):
     D.pop(k, None)
 D['Energie']['keepTappedNewTurn'] = True   # c'est le script du Repos qui redresse (et ajoute) l'énergie
-D['Reserve']['displayedTitle'] = 'Réserve'
+if 'Reserve' in D: D['Reserve']['displayedTitle'] = 'Réserve'
 D['Boss']['displayedTitle'] = 'Boss (entre quand la pioche est vide)'
 D['Monstres']['displayedTitle'] = 'Pioche de monstres'
 D['CimetiereMonstres']['displayedTitle'] = 'Monstres vaincus'

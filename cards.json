@@ -8,7 +8,7 @@
         },
         "type": "Gardien",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/guss.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/guss.png"
       }
     },
     "name": "Guss le tavernier",
@@ -21,7 +21,8 @@
     "power": 3,
     "hp": 7,
     "tokens": [
-      "baril-chene"
+      "baril-chene",
+      "carte-alcools"
     ]
   },
   "habitue": {
@@ -33,7 +34,7 @@
         },
         "type": "Unite",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/habitue.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/habitue.png"
       }
     },
     "name": "Habitué du bar",
@@ -55,7 +56,7 @@
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/serveuse.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/serveuse.png"
       }
     },
     "name": "Serveuse",
@@ -77,7 +78,7 @@
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/poker.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/poker.png"
       }
     },
     "name": "Joueurs de poker",
@@ -99,7 +100,7 @@
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/porteur.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/porteur.png"
       }
     },
     "name": "Porteur de tonneaux",
@@ -121,7 +122,7 @@
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/barde.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/barde.png"
       }
     },
     "name": "Barde éméché",
@@ -143,7 +144,7 @@
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/soldat-ivre.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/soldat-ivre.png"
       }
     },
     "name": "Soldat ivre",
@@ -165,7 +166,7 @@
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/videur.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/videur.png"
       }
     },
     "name": "Videur",
@@ -187,7 +188,7 @@
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cracheur.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/cracheur.png"
       }
     },
     "name": "Cracheur de feu",
@@ -209,7 +210,7 @@
         },
         "type": "Unite",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/brute.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/brute.png"
       }
     },
     "name": "Brute de taverne",
@@ -231,7 +232,7 @@
         },
         "type": "Unite",
         "cost": 5,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/champion.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/champion.png"
       }
     },
     "name": "Champion de bras de fer",
@@ -253,7 +254,7 @@
         },
         "type": "Sort",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/grosse-pinte.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/grosse-pinte.png"
       }
     },
     "name": "Grosse pinte",
@@ -273,7 +274,7 @@
         },
         "type": "Sort",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/jet-chaises.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/jet-chaises.png"
       }
     },
     "name": "Jet de chaises",
@@ -293,7 +294,7 @@
         },
         "type": "Sort",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/roule-baril.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/roule-baril.png"
       }
     },
     "name": "Roulé de baril",
@@ -313,7 +314,7 @@
         },
         "type": "Sort",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/viree-bar.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/viree-bar.png"
       }
     },
     "name": "Virée du bar",
@@ -333,172 +334,12 @@
         },
         "type": "Sort",
         "cost": 5,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ma-tournee.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/ma-tournee.png"
       }
     },
     "name": "C'EST MA TOURNÉE !",
     "type": "Sort",
     "cost": 5,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 1
-    }
-  },
-  "biere": {
-    "id": "biere",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Bière blonde"
-        },
-        "type": "Alcool",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/biere.png"
-      }
-    },
-    "name": "Bière blonde",
-    "type": "Alcool",
-    "cost": 0,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 3
-    }
-  },
-  "cidre": {
-    "id": "cidre",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Cidre"
-        },
-        "type": "Alcool",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cidre.png"
-      }
-    },
-    "name": "Cidre",
-    "type": "Alcool",
-    "cost": 0,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 2
-    }
-  },
-  "hydromel": {
-    "id": "hydromel",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Hydromel"
-        },
-        "type": "Alcool",
-        "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/hydromel.png"
-      }
-    },
-    "name": "Hydromel",
-    "type": "Alcool",
-    "cost": 1,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 2
-    }
-  },
-  "rhum": {
-    "id": "rhum",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Rhum"
-        },
-        "type": "Alcool",
-        "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/rhum.png"
-      }
-    },
-    "name": "Rhum",
-    "type": "Alcool",
-    "cost": 1,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 1
-    }
-  },
-  "whisky": {
-    "id": "whisky",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Whisky tourbé"
-        },
-        "type": "Alcool",
-        "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/whisky.png"
-      }
-    },
-    "name": "Whisky tourbé",
-    "type": "Alcool",
-    "cost": 1,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 1
-    }
-  },
-  "vin-chaud": {
-    "id": "vin-chaud",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Vin chaud"
-        },
-        "type": "Alcool",
-        "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/vin-chaud.png"
-      }
-    },
-    "name": "Vin chaud",
-    "type": "Alcool",
-    "cost": 1,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 1
-    }
-  },
-  "absinthe": {
-    "id": "absinthe",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Absinthe"
-        },
-        "type": "Alcool",
-        "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/absinthe.png"
-      }
-    },
-    "name": "Absinthe",
-    "type": "Alcool",
-    "cost": 1,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 1
-    }
-  },
-  "liqueur-feu": {
-    "id": "liqueur-feu",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Liqueur de feu"
-        },
-        "type": "Alcool",
-        "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/liqueur-feu.png"
-      }
-    },
-    "name": "Liqueur de feu",
-    "type": "Alcool",
-    "cost": 1,
     "faction": "Ivrognes",
     "_legal": {
       "PROTO": 1
@@ -513,7 +354,7 @@
         },
         "type": "Gardien",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cernun.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/cernun.png"
       }
     },
     "name": "Cernun",
@@ -526,109 +367,10 @@
     "power": 2,
     "hp": 7,
     "tokens": [
+      "bosquet",
       "livre-ancien",
       "pousse"
     ]
-  },
-  "champignon": {
-    "id": "champignon",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Champignon"
-        },
-        "type": "Ingredient",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/champignon.png"
-      }
-    },
-    "name": "Champignon",
-    "type": "Ingredient",
-    "cost": 0,
-    "faction": "Druides",
-    "_legal": {
-      "PROTO": 3
-    }
-  },
-  "baies": {
-    "id": "baies",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Baies"
-        },
-        "type": "Ingredient",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/baies.png"
-      }
-    },
-    "name": "Baies",
-    "type": "Ingredient",
-    "cost": 0,
-    "faction": "Druides",
-    "_legal": {
-      "PROTO": 3
-    }
-  },
-  "racine": {
-    "id": "racine",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Racine"
-        },
-        "type": "Ingredient",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/racine.png"
-      }
-    },
-    "name": "Racine",
-    "type": "Ingredient",
-    "cost": 0,
-    "faction": "Druides",
-    "_legal": {
-      "PROTO": 3
-    }
-  },
-  "miel": {
-    "id": "miel",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Miel"
-        },
-        "type": "Ingredient",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/miel.png"
-      }
-    },
-    "name": "Miel",
-    "type": "Ingredient",
-    "cost": 0,
-    "faction": "Druides",
-    "_legal": {
-      "PROTO": 3
-    }
-  },
-  "herbes": {
-    "id": "herbes",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Herbes"
-        },
-        "type": "Ingredient",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/herbes.png"
-      }
-    },
-    "name": "Herbes",
-    "type": "Ingredient",
-    "cost": 0,
-    "faction": "Druides",
-    "_legal": {
-      "PROTO": 3
-    }
   },
   "lutin": {
     "id": "lutin",
@@ -639,7 +381,7 @@
         },
         "type": "Unite",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lutin.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/lutin.png"
       }
     },
     "name": "Lutin des mousses",
@@ -664,7 +406,7 @@
         },
         "type": "Unite",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chouette.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/chouette.png"
       }
     },
     "name": "Chouette guetteuse",
@@ -686,7 +428,7 @@
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cueilleuse.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/cueilleuse.png"
       }
     },
     "name": "Cueilleuse",
@@ -708,7 +450,7 @@
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/invocateur.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/invocateur.png"
       }
     },
     "name": "Invocateur de la clairière",
@@ -733,7 +475,7 @@
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chamane.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/chamane.png"
       }
     },
     "name": "Chamane des racines",
@@ -755,7 +497,7 @@
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/dryade.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/dryade.png"
       }
     },
     "name": "Dryade fleurie",
@@ -780,7 +522,7 @@
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/meneuse.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/meneuse.png"
       }
     },
     "name": "Meneuse de loups",
@@ -805,7 +547,7 @@
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/saule.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/saule.png"
       }
     },
     "name": "Esprit du saule",
@@ -830,7 +572,7 @@
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sanglier.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/sanglier.png"
       }
     },
     "name": "Sanglier furieux",
@@ -852,7 +594,7 @@
         },
         "type": "Unite",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/vieux-chene.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/vieux-chene.png"
       }
     },
     "name": "Vieux chêne",
@@ -874,7 +616,7 @@
         },
         "type": "Sort",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lianes.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/lianes.png"
       }
     },
     "name": "Lianes",
@@ -894,7 +636,7 @@
         },
         "type": "Sort",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/croissance.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/croissance.png"
       }
     },
     "name": "Croissance soudaine",
@@ -914,7 +656,7 @@
         },
         "type": "Sort",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/appel-meute.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/appel-meute.png"
       }
     },
     "name": "Appel de la meute",
@@ -937,7 +679,7 @@
         },
         "type": "Sort",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/spores.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/spores.png"
       }
     },
     "name": "Pluie de spores",
@@ -960,7 +702,7 @@
         },
         "type": "Sort",
         "cost": 5,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/eveil-foret.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/eveil-foret.png"
       }
     },
     "name": "Éveil de la forêt",
@@ -983,7 +725,7 @@
         },
         "type": "Unite",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pousse.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/pousse.png"
       }
     },
     "name": "Pousse",
@@ -1003,7 +745,7 @@
         },
         "type": "Unite",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/loup.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/loup.png"
       }
     },
     "name": "Loup",
@@ -1023,7 +765,7 @@
         },
         "type": "Tresor",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/carte-tresor.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/carte-tresor.png"
       }
     },
     "name": "Carte au trésor",
@@ -1041,7 +783,7 @@
         },
         "type": "Energie",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/energie.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/energie.png"
       }
     },
     "name": "Énergie",
@@ -1059,7 +801,7 @@
         },
         "type": "Gardien",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/rosa.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/rosa.png"
       }
     },
     "name": "Rosa la brasseuse",
@@ -1072,7 +814,8 @@
     "power": 3,
     "hp": 6,
     "tokens": [
-      "baril-explosif"
+      "baril-explosif",
+      "carte-alcools"
     ]
   },
   "belladone": {
@@ -1084,7 +827,7 @@
         },
         "type": "Gardien",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/belladone.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/belladone.png"
       }
     },
     "name": "Belladone",
@@ -1097,6 +840,7 @@
     "power": 1,
     "hp": 6,
     "tokens": [
+      "bosquet",
       "livre-empoisonneur"
     ]
   },
@@ -1109,7 +853,7 @@
         },
         "type": "Gardien",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sylve.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/sylve.png"
       }
     },
     "name": "Sylve",
@@ -1122,6 +866,7 @@
     "power": 2,
     "hp": 5,
     "tokens": [
+      "bosquet-ombre",
       "livre-secret",
       "loup"
     ]
@@ -1133,13 +878,13 @@
         "name": {
           "name": "Baril de chêne"
         },
-        "type": "Baril",
+        "type": "Terrain",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/baril-chene.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/baril-chene.png"
       }
     },
     "name": "Baril de chêne",
-    "type": "Baril",
+    "type": "Terrain",
     "cost": 0,
     "faction": "Ivrognes",
     "power": 0,
@@ -1153,13 +898,13 @@
         "name": {
           "name": "Baril explosif"
         },
-        "type": "Baril",
+        "type": "Terrain",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/baril-explosif.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/baril-explosif.png"
       }
     },
     "name": "Baril explosif",
-    "type": "Baril",
+    "type": "Terrain",
     "cost": 0,
     "faction": "Ivrognes",
     "power": 0,
@@ -1173,13 +918,13 @@
         "name": {
           "name": "Livre ancien"
         },
-        "type": "Recettes",
+        "type": "Menu",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/livre-ancien.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/livre-ancien.png"
       }
     },
     "name": "Livre ancien",
-    "type": "Recettes",
+    "type": "Menu",
     "cost": 0,
     "faction": "Druides",
     "isToken": true
@@ -1191,13 +936,13 @@
         "name": {
           "name": "Livre empoisonneur"
         },
-        "type": "Recettes",
+        "type": "Menu",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/livre-empoisonneur.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/livre-empoisonneur.png"
       }
     },
     "name": "Livre empoisonneur",
-    "type": "Recettes",
+    "type": "Menu",
     "cost": 0,
     "faction": "Druides",
     "isToken": true
@@ -1209,13 +954,13 @@
         "name": {
           "name": "Livre secret"
         },
-        "type": "Recettes",
+        "type": "Menu",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/livre-secret.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/livre-secret.png"
       }
     },
     "name": "Livre secret",
-    "type": "Recettes",
+    "type": "Menu",
     "cost": 0,
     "faction": "Druides",
     "isToken": true
@@ -1229,7 +974,7 @@
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gobelin.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/gobelin.png"
       },
       "back": {
         "name": {
@@ -1237,7 +982,7 @@
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gobelin-verso.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/gobelin-verso.png"
       }
     },
     "name": "Gobelin fouineur",
@@ -1258,7 +1003,7 @@
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/rat.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/rat.png"
       },
       "back": {
         "name": {
@@ -1266,7 +1011,7 @@
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/rat-verso.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/rat-verso.png"
       }
     },
     "name": "Rat des galeries",
@@ -1287,7 +1032,7 @@
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/archer.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/archer.png"
       },
       "back": {
         "name": {
@@ -1295,7 +1040,7 @@
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/archer-verso.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/archer-verso.png"
       }
     },
     "name": "Archer gobelin",
@@ -1316,7 +1061,7 @@
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chaman.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/chaman.png"
       },
       "back": {
         "name": {
@@ -1324,7 +1069,7 @@
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chaman-verso.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/chaman-verso.png"
       }
     },
     "name": "Chaman gobelin",
@@ -1345,7 +1090,7 @@
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/araignee.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/araignee.png"
       },
       "back": {
         "name": {
@@ -1353,7 +1098,7 @@
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/araignee-verso.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/araignee-verso.png"
       }
     },
     "name": "Araignée des puits",
@@ -1374,7 +1119,7 @@
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/golem.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/golem.png"
       },
       "back": {
         "name": {
@@ -1382,7 +1127,7 @@
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/golem-verso.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/golem-verso.png"
       }
     },
     "name": "Golem de minerai",
@@ -1403,7 +1148,7 @@
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/contremaitre.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/contremaitre.png"
       },
       "back": {
         "name": {
@@ -1411,7 +1156,7 @@
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/contremaitre-verso.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/contremaitre-verso.png"
       }
     },
     "name": "Contremaître hobgobelin",
@@ -1432,7 +1177,7 @@
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/troll.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/troll.png"
       },
       "back": {
         "name": {
@@ -1440,7 +1185,7 @@
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/troll-verso.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/troll-verso.png"
       }
     },
     "name": "Troll des mines",
@@ -1461,7 +1206,7 @@
         },
         "type": "Boss",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/grombak.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/grombak.png"
       }
     },
     "name": "Grombak, roi gobelin",
@@ -1482,7 +1227,7 @@
         },
         "type": "Relique",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lanterne.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/lanterne.png"
       }
     },
     "name": "Lanterne du mineur",
@@ -1500,7 +1245,7 @@
         },
         "type": "Relique",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pioche-runique.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/pioche-runique.png"
       }
     },
     "name": "Pioche runique",
@@ -1518,7 +1263,7 @@
         },
         "type": "Relique",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bourse.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/bourse.png"
       }
     },
     "name": "Bourse du contremaître",
@@ -1526,5 +1271,83 @@
     "cost": 0,
     "faction": "Mine des Gobelins",
     "isToken": true
+  },
+  "carte-alcools": {
+    "id": "carte-alcools",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Carte des alcools"
+        },
+        "type": "Menu",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/carte-alcools.png"
+      }
+    },
+    "name": "Carte des alcools",
+    "type": "Menu",
+    "cost": 0,
+    "faction": "Ivrognes",
+    "isToken": true
+  },
+  "bosquet": {
+    "id": "bosquet",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Bosquet"
+        },
+        "type": "Terrain",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/bosquet.png"
+      }
+    },
+    "name": "Bosquet",
+    "type": "Terrain",
+    "cost": 0,
+    "faction": "Druides",
+    "power": 0,
+    "hp": 5,
+    "isToken": true
+  },
+  "bosquet-ombre": {
+    "id": "bosquet-ombre",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Bosquet d'ombre"
+        },
+        "type": "Terrain",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/bosquet-ombre.png"
+      }
+    },
+    "name": "Bosquet d'ombre",
+    "type": "Terrain",
+    "cost": 0,
+    "faction": "Druides",
+    "power": 0,
+    "hp": 3,
+    "isToken": true
+  },
+  "transplantation": {
+    "id": "transplantation",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Transplantation"
+        },
+        "type": "Sort",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/cards/transplantation.png"
+      }
+    },
+    "name": "Transplantation",
+    "type": "Sort",
+    "cost": 2,
+    "faction": "Druides",
+    "_legal": {
+      "PROTO": 3
+    }
   }
 }

@@ -265,6 +265,71 @@ DONJONS = {"mine": {"nom": MINE, "monstres": ["gobelin", "rat", "archer", "chama
                                                "contremaitre", "troll"],
                     "boss": "grombak", "reliques": ["lanterne", "pioche-runique", "bourse"]}}
 
+# --- Format Terrains (2026-10-15) : plus de Réserve. Le Gardien vient avec un Terrain et un Menu ---
+# L'ancien système (alcools et ingrédients en cartes) est sur la branche archive-reserve.
+CARDS = [c for c in CARDS if c["type"] not in ("Alcool", "Ingredient")]
+TYPE_LABEL.update({"Terrain": "Terrain", "Menu": "Menu"})
+PALETTE.update({"Terrain": ((58, 50, 34), (205, 170, 95)), "Menu": ((40, 36, 52), (170, 150, 210))})
+CARDS += [
+    C("carte-alcools", "Carte des alcools", "Menu", 0, IVR, "", legal=False, token=True),
+    C("bosquet", "Bosquet", "Terrain", 0, DRU, "", 0, 5, legal=False, token=True),
+    C("bosquet-ombre", "Bosquet d'ombre", "Terrain", 0, DRU, "", 0, 3, legal=False, token=True),
+    C("transplantation", "Transplantation", "Sort", 2, DRU, ""),
+]
+_TER = "**Terrain :** dans une de tes Expéditions. **+1 niveau** à chaque Retrait debout (3 max).\n"
+_FIEF = "**Niv. 3, Fief :** +1 trésor par monstre tué ici.\n"
+NEW = {
+ "baril-chene": _TER + "**Niv. 1, Aura :** tes unités de la Taverne +1 Puissance.\n**Niv. 2 :** 3 pintes par tour.\n" + _FIEF
+   + "**Encaisser :** prend les dégâts d'une de tes unités de la Taverne.\n**À 0 PV :** 1 dégât à tout ce qui est dans la salle.",
+ "baril-explosif": _TER + "**Niv. 1, Aura :** tes unités de la Taverne +1 Puissance.\n**Niv. 2 :** 3 pintes par tour.\n" + _FIEF
+   + "**Encaisser :** prend les dégâts d'une de tes unités de la Taverne.\n**À 0 PV :** 3 dégâts à tout ce qui est dans la salle.",
+ "bosquet": _TER + "**Niv. 1, Sous-bois :** 4 de tes unités dans la Forêt au lieu de 3.\n**Niv. 2 :** +2 Sève au Repos.\n" + _FIEF
+   + "**Détruit :** tu perds la moitié de ta Sève.",
+ "bosquet-ombre": _TER + "**Niv. 1, Sous-bois :** 4 de tes unités dans la Forêt au lieu de 3.\n**Niv. 2 :** +2 Sève au Repos.\n" + _FIEF
+   + "**Détruit :** tu perds la moitié de ta Sève.",
+ "carte-alcools": "**Tirer une pinte** (Assaut, même en Duel) : le baril perd des PV, une de tes unités de la Taverne boit. 2 par tour (3 au niv. 2).\n"
+   "**1 PV · Bière :** +1 Puissance ce tour. **Cidre :** +2 PV ce tour. **Hydromel :** soigne 2 PV.\n"
+   "**2 PV · Rhum :** +2 Puissance ce tour, Sonnée au tour suivant. **Whisky :** pas Sonnée ce tour. **Absinthe :** +3 Puissance ce tour, -2 PV à ton Repos.\n"
+   "**Mélange :** 2 alcools le même tour = Sonnée au prochain combat.",
+ "livre-ancien": "**Menu de la Forêt** : 1 recette par tour (Assaut, même en Duel), payée en Sève (jetons sur ce Livre, 4 max).\n"
+   "**2 · Soupe de racines :** tes unités de la Forêt +2 PV ce tour.\n**2 · Tarte aux baies :** +1 Puissance ce tour.\n"
+   "**2 · Tisane des bois :** soigne tes unités de la Forêt, pas Sonnées.\n**3 · Poêlée des esprits :** 1 Pousse dans la Forêt et dans chaque salle voisine où tu as une unité.\n"
+   "**4 · Banquet de Cernun :** toutes tes unités +2/+2 ce tour.",
+ "livre-empoisonneur": "**Menu de la Forêt** : 1 recette par tour (Assaut, même en Duel), payée en Sève (4 max).\n"
+   "**2 · Sève amère :** 1 dégât à chaque ennemi de la Forêt.\n**2 · Brouet de baies :** 2 dégâts à une cible de la Forêt, Sonnée.\n"
+   "**3 · Fumée d'herbes :** les ennemis de la Forêt sont Sonnés.\n**4 · Philtre noir :** 2 dégâts à chaque ennemi d'une salle.",
+ "livre-secret": "**Menu de la Forêt** : 1 recette par tour, payée en Sève (4 max). **Rapide :** aussi pendant les Duels adverses.\n"
+   "**1 · Pain de route :** tes unités de la Forêt gagnent Rapide.\n**1 · Infusion vive :** une unité de la Forêt, Rapide et +1 Puissance.\n"
+   "**2 · Festin de l'ombre :** tes unités de la Forêt, Rapide et +1/+1.",
+ "guss": "**Terrain :** Baril de chêne (6 PV). **Menu :** Carte des alcools.\n**Repos :** soigne 2 PV au baril.\n**Défense du Camp :** tes défenseurs ont +1 Puissance.\n**Raid :** la première unité qui attaque Guss est Sonnée.",
+ "rosa": "**Terrain :** Baril explosif (4 PV). **Menu :** Carte des alcools.\n**Repos :** soigne 2 PV au baril.\n**Pinte :** 2 alcools à 1 PV pour une seule pinte.\n**Défense du Camp :** 1 dégât à chaque attaquant.",
+ "cernun": "**Terrain :** Bosquet (5 PV). **Menu :** Livre ancien.\n**Repos :** +1 Sève (Cueillette).\n**Récolte :** +1 Sève par monstre tué par tes unités.\n**Défense du Camp :** invoque 2 Pousses.",
+ "belladone": "**Terrain :** Bosquet (5 PV). **Menu :** Livre empoisonneur.\n**Repos :** +1 Sève (Cueillette).\n**Défense du Camp :** la première unité qui attaque Belladone est Sonnée.",
+ "sylve": "**Terrain :** Bosquet d'ombre (3 PV). **Menu :** Livre secret.\n**Repos :** +1 Sève (Cueillette).\n**Rapide :** ses recettes se jouent aussi pendant les Duels adverses.",
+ "habitue": "**Dans la Taverne :** +1 PV.",
+ "champion": "**Dans la Taverne :** +2 Puissance et ne peut pas être Sonné.",
+ "cracheur": "**Arrivée, dans la Taverne :** 1 dégât à chaque ennemi de la salle.",
+ "porteur": "**Arrivée :** déplace ton baril dans l'Expédition de cette unité, sans perte de niveau.",
+ "roule-baril": "Déplace ton baril dans une autre de tes Expéditions, sans perte de niveau, puis 2 dégâts à chaque ennemi de la salle d'arrivée.",
+ "ma-tournee": "Tes unités en jeu sont soignées et gagnent +1/+1 ce tour.\nTes blessées du Camp reviennent en Expédition.\nChaque unité de la Taverne boit une Bière gratuite.\n**Signature :** 1 exemplaire max.",
+ "chouette": "**Arrivée :** +1 Sève.",
+ "cueilleuse": "**Retrait :** si elle est dans la Forêt, +1 Sève.",
+ "eveil-foret": "Invoque une Pousse dans chaque salle.\nTes unités gagnent +1/+1 ce tour. +2 Sève.\nToutes tes Expéditions comptent comme Forêt ce tour.\n**Signature :** 1 exemplaire max.",
+ "transplantation": "Déplace ton bosquet dans une autre de tes Expéditions, sans perte de niveau.",
+}
+TOKS = {"guss": ["baril-chene", "carte-alcools"], "rosa": ["baril-explosif", "carte-alcools"],
+        "cernun": ["bosquet", "livre-ancien", "pousse"], "belladone": ["bosquet", "livre-empoisonneur"],
+        "sylve": ["bosquet-ombre", "livre-secret", "loup"]}
+for _c in CARDS:
+    if _c["id"] in NEW:
+        _c["text"] = NEW[_c["id"]]
+    if _c["id"] in TOKS:
+        _c["tokens"] = TOKS[_c["id"]]
+    if _c["type"] == "Baril":
+        _c["type"] = "Terrain"
+    if _c["type"] == "Recettes":
+        _c["type"] = "Menu"
+
 
 def rich_lines(draw, text, fnt, fnt_b, max_w):
     """Découpe un texte avec **gras** en lignes de segments (mot, gras?)."""
@@ -310,9 +375,13 @@ def draw_card(c, path):
     tf = font(30, True)
     while d.textlength(c["name"], font=tf) > W - 150 and tf.size > 16:
         tf = font(tf.size - 1, True)
-    d.text((W // 2 + 24, 61), c["name"], font=tf, fill=(20, 14, 10), anchor="mm")
-    # Coût (ou trésors pour un monstre : pastille dorée)
-    if c.get("tresors") is not None:
+    d.text((W // 2 + (0 if c["type"] in ("Terrain", "Menu") else 24), 61), c["name"], font=tf, fill=(20, 14, 10), anchor="mm")
+    fiche = c["type"] in ("Terrain", "Menu")
+    top = 214 if fiche else 330   # bas de l'illustration (plus de place pour le texte des fiches)
+    # Coût (ou trésors pour un monstre : pastille dorée ; rien pour une fiche)
+    if fiche:
+        pass
+    elif c.get("tresors") is not None:
         d.ellipse((30, 28, 94, 92), fill=(232, 186, 60), outline="white", width=3)
         d.text((62, 60), str(c["tresors"]), font=font(34, True), fill=(40, 25, 5), anchor="mm")
     else:
@@ -320,22 +389,23 @@ def draw_card(c, path):
         d.text((62, 60), str(c["cost"]), font=font(34, True), fill="white", anchor="mm")
 
     # Illustration (placeholder)
-    d.rounded_rectangle((24, 114, W - 25, 330), radius=14, fill=(12, 10, 10))
+    d.rounded_rectangle((24, 114, W - 25, top), radius=14, fill=(12, 10, 10))
     big = "ÉVOLUÉ" if c.get("verso") else TYPE_LABEL[c["type"]].upper()
-    d.text((W // 2, 205), big, font=font(44, True), fill=frame, anchor="mm")
+    d.text((W // 2, 150 if fiche else 205), big, font=font(40 if fiche else 44, True), fill=frame, anchor="mm")
     if c.get("relique"):
         d.rounded_rectangle((W - 190, 122, W - 33, 160), radius=10, fill=(225, 190, 70))
         d.text((W - 111, 141), "◆ RELIQUE", font=font(20, True), fill=(40, 25, 5), anchor="mm")
     fac = c["faction"] if c["type"] not in ("Monstre", "Boss", "Energie", "Relique") and c["faction"] != "Relique" else ""
     if fac:
-        d.text((W // 2, 260), fac.upper(), font=font(22, True), fill=(200, 200, 205), anchor="mm")
-    d.text((W // 2, 300), "illustration à venir", font=font(17), fill=(120, 120, 130), anchor="mm")
+        d.text((W // 2, 190 if fiche else 260), fac.upper(), font=font(20 if fiche else 22, True), fill=(200, 200, 205), anchor="mm")
+    if not fiche:
+        d.text((W // 2, 300), "illustration à venir", font=font(17), fill=(120, 120, 130), anchor="mm")
 
     # Ligne de type
     tl = TYPE_LABEL[c["type"]] + (f" — {c['faction']}" if fac else "")
     if c.get("tresors") is not None:
         tl = TYPE_LABEL[c["type"]] + (" évolué" if c.get("verso") else "") + f" — {c['tresors']} trésor" + ("s" if c["tresors"] > 1 else "")
-    d.text((30, 346), tl, font=font(22, True), fill=frame)
+    d.text((30, top + 16), tl, font=font(22, True), fill=frame)
 
     # Texte de règles (taille auto)
     box_bottom = H - 112 if c["power"] is not None else H - 36
@@ -344,10 +414,10 @@ def draw_card(c, path):
         f, fb = font(size), font(size, True)
         lines = rich_lines(d, c["text"], f, fb, W - 64)
         lh = int(size * 1.3)
-        if 384 + len(lines) * lh <= box_bottom or size <= 14:
+        if top + 54 + len(lines) * lh <= box_bottom or size <= 14:
             break
         size -= 1
-    y = 384
+    y = top + 54
     for line in lines:
         x = 32
         for w, b in line:

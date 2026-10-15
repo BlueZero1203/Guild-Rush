@@ -6,7 +6,6 @@
     "deckList": {
       "categoriesOrder": [
         "Gardien",
-        "Alcool",
         "Unite",
         "Sort"
       ],
@@ -81,37 +80,7 @@
         }
       ],
       "Sideboard": [],
-      "_maybeboard": [],
-      "Alcool": [
-        {
-          "id": "biere",
-          "count": 2
-        },
-        {
-          "id": "cidre",
-          "count": 1
-        },
-        {
-          "id": "hydromel",
-          "count": 1
-        },
-        {
-          "id": "rhum",
-          "count": 1
-        },
-        {
-          "id": "whisky",
-          "count": 1
-        },
-        {
-          "id": "vin-chaud",
-          "count": 1
-        },
-        {
-          "id": "absinthe",
-          "count": 1
-        }
-      ]
+      "_maybeboard": []
     }
   },
   {
@@ -121,35 +90,12 @@
     "deckList": {
       "categoriesOrder": [
         "Gardien",
-        "Ingredient",
         "Unite",
         "Sort"
       ],
       "Gardien": [
         {
           "id": "cernun",
-          "count": 1
-        }
-      ],
-      "Ingredient": [
-        {
-          "id": "champignon",
-          "count": 2
-        },
-        {
-          "id": "baies",
-          "count": 2
-        },
-        {
-          "id": "miel",
-          "count": 2
-        },
-        {
-          "id": "racine",
-          "count": 1
-        },
-        {
-          "id": "herbes",
           "count": 1
         }
       ],
@@ -202,7 +148,7 @@
         },
         {
           "id": "croissance",
-          "count": 3
+          "count": 2
         },
         {
           "id": "appel-meute",
@@ -214,6 +160,10 @@
         },
         {
           "id": "eveil-foret",
+          "count": 1
+        },
+        {
+          "id": "transplantation",
           "count": 1
         }
       ],

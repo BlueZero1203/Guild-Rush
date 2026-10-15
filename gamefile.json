@@ -1,7 +1,7 @@
 {
   "name": "Guild Rush (proto)",
   "cardRotation": 90,
-  "customHelp": "Guild Rush (proto) · donjon : Mine des Gobelins. Fin : boss vaincu (fin de ce tour) ou un joueur à 12 trésors en fin de manche.\nPlateau : 4 monstres au centre, pioche de monstres, boss, monstres vaincus, panneau Donjon. En face de chaque monstre, une Expédition par joueur (3 unités max, jetons compris). Ta zone : Expéditions 1-4, Gardien, Réserve ; Énergie et Camp.\nTon tour : Repos (automatique : énergie au max, +1 par manche jusqu'à 6 ; pioche 1 ; passif du Gardien) → Stratagème (Éclaireurs, cartes face cachée) → Assaut → Retrait (trésors sur ton compteur, soins au Camp).\nAssaut : pose tes unités (elles arrivent dans l'Expédition 1 : déplace-les dans l'Expédition voulue ou au Camp). Une unité intacte déjà en jeu peut aller dans une Expédition voisine ou au Camp, une fois par tour. Puis attaque salle par salle : chaque attaque ouvre un Duel (annonce-le dans le chat). L'adversaire répond en premier, puis chacun joue une carte Rapide ou instantanée ou passe ; deux passes = combat. Les deux joueurs dans la salle : mêlée (le monstre frappe d'abord, coup de grâce). Puis 1 raid au plus.\nMonstre tué : l'hôte le met dans « Monstres vaincus », le tueur ajoute ses trésors (pastille dorée) à son compteur. Icône Relique : clique « Prendre la relique » dans le panneau Donjon.\nAutomatique au début de chaque tour : les salles vides reçoivent le monstre suivant (puis le boss quand la pioche est vide) ; en fin de manche, les monstres en jeu depuis une manche entière se retournent sur leur face évoluée.\nCompteur = Trésors. Jetons Dégât et Baril à poser sur les cartes.\nRéserve (8 cartes) : clique sur la pile pour piocher 1 carte ; clic droit pour la mélanger. Ivrognes : tire une pinte (1 PV du baril) pour piocher, 1 fois par tour ; un alcool s'attache à ton unité près du baril, même en Duel. Druides : Cueillette au Repos, 1 recette à l'Assaut.\nJetons Pousse et Loup, baril et Livre : clic droit sur la carte qui les crée (ou sur le Gardien).",
+  "customHelp": "Guild Rush (proto) · donjon : Mine des Gobelins. Fin : boss vaincu (fin de ce tour) ou un joueur à 12 trésors en fin de manche.\nPlateau : 4 monstres au centre, pioche de monstres, boss, monstres vaincus, panneau Donjon. En face de chaque monstre, une Expédition par joueur (3 unités max, jetons compris). Ta zone : Expéditions 1-4, Gardien, Réserve ; Énergie et Camp.\nTon tour : Repos (automatique : énergie au max, +1 par manche jusqu'à 6 ; pioche 1 ; passif du Gardien) → Stratagème (Éclaireurs, cartes face cachée) → Assaut → Retrait (trésors sur ton compteur, soins au Camp).\nAssaut : pose tes unités (elles arrivent dans l'Expédition 1 : déplace-les dans l'Expédition voulue ou au Camp). Une unité intacte déjà en jeu peut aller dans une Expédition voisine ou au Camp, une fois par tour. Puis attaque salle par salle : chaque attaque ouvre un Duel (annonce-le dans le chat). L'adversaire répond en premier, puis chacun joue une carte Rapide ou instantanée ou passe ; deux passes = combat. Les deux joueurs dans la salle : mêlée (le monstre frappe d'abord, coup de grâce). Puis 1 raid au plus.\nMonstre tué : l'hôte le met dans « Monstres vaincus », le tueur ajoute ses trésors (pastille dorée) à son compteur. Icône Relique : clique « Prendre la relique » dans le panneau Donjon.\nAutomatique au début de chaque tour : les salles vides reçoivent le monstre suivant (puis le boss quand la pioche est vide) ; en fin de manche, les monstres en jeu depuis une manche entière se retournent sur leur face évoluée.\nCompteur = Trésors. Jetons Dégât et Baril à poser sur les cartes.\nGardien : clic droit dessus pour créer son Terrain (baril, bosquet) et son Menu (Carte des alcools, Livre). Le Menu va près du Gardien ; le Terrain arrive dans l'Expédition 1 : glisse-le dans l'Expédition voulue au 1er Assaut.\nTerrain : pose un jeton Niveau dessus ; +1 à chacun de tes Retraits s'il est debout (3 max). Niv. 1 bonus de lieu, niv. 2 ressource renforcée, niv. 3 Fief (+1 trésor par monstre tué ici). Lever le camp (Stratagème) : Expédition voisine, -1 niveau. Détruit par l'adversaire : il pille 1 trésor ; le Terrain revient au niveau 1 à ton Assaut suivant.\nIvrognes : tirer une pinte = jetons Dégât sur le baril (1 PV, 2 pour un alcool fort), annonce l'alcool dans le chat. 2 pintes par tour, 3 au niveau 2. Guss soigne 2 PV au Repos.\nDruides : la Sève = jetons Sève sur ton Livre (4 max), +1 à ton Repos (+2 au niveau 2). 1 recette par tour, payée en Sève. Bosquet détruit : tu perds la moitié de ta Sève.\nJetons Pousse et Loup : clic droit sur la carte qui les invoque.",
   "deckBuilding": {
     "mainFilters": [
       "faction",
@@ -13,9 +13,7 @@
         "title": "Proto (cartes de test)",
         "gameplay": "Standard",
         "customCategories": [
-          "Gardien",
-          "Alcool",
-          "Ingredient"
+          "Gardien"
         ],
         "deckRuleset": "Proto",
         "legalityCode": "PROTO"
@@ -34,18 +32,6 @@
             "category": "Gardien",
             "min": 1,
             "max": 1,
-            "ignoreTotalCount": true
-          },
-          {
-            "category": "Alcool",
-            "min": 0,
-            "max": 8,
-            "ignoreTotalCount": true
-          },
-          {
-            "category": "Ingredient",
-            "min": 0,
-            "max": 8,
             "ignoreTotalCount": true
           }
         ]
@@ -69,7 +55,7 @@
       "tokens": [
         {
           "name": "Initiative",
-          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/initiative.png",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/tokens/initiative.png",
           "isUnique": true
         }
       ],
@@ -77,12 +63,17 @@
         {
           "id": "Degat",
           "name": "Dégât",
-          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/degat.png"
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/tokens/degat.png"
         },
         {
-          "id": "Baril",
-          "name": "Baril",
-          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/baril.png"
+          "id": "Seve",
+          "name": "Sève",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/tokens/seve.png"
+        },
+        {
+          "id": "Niveau",
+          "name": "Niveau",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/tokens/niveau.png"
         }
       ],
       "beforeGameStart": {
@@ -218,29 +209,15 @@
                 {
                   "section": "Gardien",
                   "style": {
-                    "width": "15.2%",
+                    "width": "23.4%",
                     "flex": "0 0 auto",
                     "borderRadius": "6px",
                     "backgroundColor": "rgba(245,170,60,0.20)",
                     "border": "1px solid rgba(245,170,60,0.55)",
                     "marginLeft": "1.2%",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EGARDIEN %C2%B7 BARIL / LIVRE%3C/text%3E%3C/svg%3E\")",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EGARDIEN %C2%B7 MENU %28ALCOOLS, LIVRE%29%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px"
-                  }
-                },
-                {
-                  "section": "Reserve",
-                  "style": {
-                    "width": "7%",
-                    "flex": "0 0 auto",
-                    "borderRadius": "6px",
-                    "backgroundColor": "rgba(245,150,30,0.20)",
-                    "border": "1px solid rgba(245,150,30,0.55)",
-                    "marginLeft": "1.2%",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ER%C3%89SERVE%3C/text%3E%3C/svg%3E\")",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundPosition": "left 4px bottom 1px"
                   }
                 }
               ],
@@ -418,15 +395,6 @@
             "displayedTitle": "Camp (blessées, reliques)",
             "logWhenPlayed": true
           },
-          "Reserve": {
-            "isHidden": "yes",
-            "height": 14,
-            "alignment": "DECK",
-            "displayedTitle": "Réserve",
-            "drawDestinations": {
-              "_default": "Hand"
-            }
-          },
           "Salle1": {
             "isHidden": "no",
             "height": 13,
@@ -477,7 +445,7 @@
             "isHidden": "no",
             "height": 14,
             "alignment": "CENTER",
-            "displayedTitle": "Gardien",
+            "displayedTitle": "Gardien et Menu",
             "logWhenPlayed": true
           },
           "Energie": {
@@ -628,15 +596,11 @@
           "Monstre": "Salle1",
           "Boss": "Boss",
           "Energie": "Energie",
-          "Baril": "Gardien",
-          "Alcool": "GROUP",
-          "Recettes": "Gardien",
-          "Ingredient": "GROUP"
+          "Terrain": "BF1",
+          "Menu": "Gardien"
         },
         "categoriesAlreadyOnBoard": [
-          "Gardien->Gardien",
-          "Alcool->Reserve",
-          "Ingredient->Reserve"
+          "Gardien->Gardien"
         ],
         "autoPlayFromStack": {
           "Unite": "BF1",
@@ -646,21 +610,19 @@
           "Monstre": "Salle1",
           "Boss": "Boss",
           "Energie": "Energie",
-          "Baril": "Gardien",
           "Sort": "Discard",
-          "Alcool": "GROUP",
-          "Recettes": "Gardien",
-          "Ingredient": "GROUP"
+          "Terrain": "BF1",
+          "Menu": "Gardien"
         }
       }
     }
   },
   "cards": {
-    "dataUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/cards.json",
-    "cardBack": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/back.png",
+    "dataUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/cards.json",
+    "cardBack": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/img/back.png",
     "cardBackColor": "#2a2240"
   },
   "defaultRessources": {
-    "decksUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/decks.json"
+    "decksUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains/decks.json"
   }
 }

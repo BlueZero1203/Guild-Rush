@@ -43,8 +43,7 @@ def row(content,left=LM,right=0,sym=True):
 R=lambda x: round(x,2)
 # --- rangée A : salles BF1..4 | Gardien (sous Boss + pioche) | Réserve (sous la défausse) ---
 A=[node('BF%d'%i,COLW,'bf','EXPÉDITION %d'%i,ml=(GAP if i>1 else 0)) for i in range(1,5)]
-A.append(node('Gardien',R(2*RW+GAP),'gard','GARDIEN · BARIL / LIVRE',ml=GAP))
-A.append(node('Reserve',RW,'pile','RÉSERVE',pile=True,ml=GAP))
+A.append(node('Gardien',R(3*RW+2*GAP),'gard','GARDIEN · MENU (ALCOOLS, LIVRE)',ml=GAP))
 # --- rangée B : Énergie (sous Expéditions 1-2) | Camp jusqu'au bout ---
 H2=2*COLW+GAP
 B=[node('Energie',R(H2),'ener','ÉNERGIE')]
@@ -68,7 +67,7 @@ for k in list(D):
 for i in range(1,5):
     D['BF%d'%i]={'isHidden':'no','height':14,'alignment':'CENTER','displayedTitle':'Expédition %d'%i,'logWhenPlayed':True}
     D['Salle%d'%i].update({'height':13,'displayedTitle':'Monstre salle %d'%i})
-for k,h in (('Gardien',14),('Camp',14),('Energie',14),('Reserve',14),            ('Boss',13),('Monstres',13),('CimetiereMonstres',13)):
+for k,h in (('Gardien',14),('Camp',14),('Energie',14),            ('Boss',13),('Monstres',13),('CimetiereMonstres',13)):
     D[k]['height']=h
 D.pop('Expedition',None)
 D['Camp']['displayedTitle']='Camp (blessées, reliques)'
