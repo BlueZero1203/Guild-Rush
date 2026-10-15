@@ -45,23 +45,28 @@ def jeton(nom, txt, coul):
     for k, l in enumerate(lignes):
         d.text((60, y0 + k * size * 1.16), l, font=f, fill=(255, 255, 255), anchor='mm')
     im.save(f'img/tokens/{nom}.png')
-JETONS = [  # id, nom affiché, texte, couleur
+JETONS = [  # id, nom affiché, texte, couleur — ressources du Terrain et effets (bonus/malus) ; PV et Puissance : compteurs
     ('Seve', 'Sève', 'SÈVE', (60, 150, 70)),
     ('Niv1', 'Niveau 1', 'NIV|1', (200, 150, 30)), ('Niv2', 'Niveau 2', 'NIV|2', (215, 130, 20)),
     ('Niv3', 'Niveau 3 (Fief)', 'NIV|3', (230, 100, 10)),
-    ('Sonne', 'Sonné', 'SONNÉ', (120, 70, 170)), ('Rapide', 'Rapide', 'RAPIDE', (30, 150, 190)),
-    ('PlusP', '+1 Puissance', '+1|P', (190, 50, 45)), ('PlusPV', '+1 PV', '+1|PV', (40, 90, 190)),
-    ('Biere', 'Bière (+1 P)', 'BIÈRE', (205, 160, 40)), ('Cidre', 'Cidre (+2 PV)', 'CIDRE', (150, 170, 50)),
-    ('Rhum', 'Rhum (+2 P, Sonnée ensuite)', 'RHUM', (140, 70, 30)), ('Whisky', 'Whisky (pas Sonnée)', 'WHISKY', (170, 110, 40)),
-    ('Absinthe', 'Absinthe (+3 P, -2 PV au Repos)', 'ABSIN|THE', (70, 150, 60)),
-    ('Piege', 'Piège', 'PIÈGE', (90, 90, 90)),
+    ('Sonne', 'Sonné : ne frappe pas à son prochain combat', 'SONNÉ', (120, 70, 170)),
+    ('Empoisonne', 'Empoisonné : perd 1 PV à chaque Repos de son propriétaire, jusqu\'à être soigné', 'POISON', (70, 140, 40)),
+    ('Rapide', 'Rapide (gagné ce tour)', 'RAPIDE', (30, 150, 190)),
+    ('Insensible', 'Insensible : ne peut pas être Sonné ce tour (Whisky)', 'INSEN|SIBLE', (60, 110, 160)),
+    ('Ivre', 'Ivre : a bu un alcool ce tour (un 2e = Sonné)', 'IVRE', (200, 90, 130)),
+    ('GueuleDeBois', 'Gueule de bois : sera Sonné au tour suivant (Rhum)', 'GUEULE|DE BOIS', (140, 70, 30)),
+    ('Contrecoup', 'Contrecoup : perd 2 PV à ton prochain Repos (Absinthe)', 'CONTRE|COUP', (110, 40, 90)),
+    ('Entrave', 'Entravé : ne peut pas changer de salle (Toile)', 'ENTRAVÉ', (90, 90, 90)),
+    ('EnSoin', 'En soin : blessé au Camp, rate un tour', 'EN|SOIN', (190, 60, 60)),
+    ('Piege', 'Piège (Éclaireur)', 'PIÈGE', (60, 60, 60)),
 ]
 for tid, _, txt, coul in JETONS:
     jeton(tid.lower(), txt, coul)
-for old in ('seve.png', 'niveau.png'):
-    if os.path.exists('img/tokens/' + old) and old[:-4] not in [t[0].lower() for t in JETONS]:
-        os.remove('img/tokens/' + old)
-G['draggableTokens'] = [{'id': 'Degat', 'name': 'Dégât', 'image': BASE + '/img/tokens/degat.png'}] + [
+garder = {t[0].lower() + '.png' for t in JETONS} | {'initiative.png'}
+for f in os.listdir('img/tokens'):
+    if f not in garder:
+        os.remove('img/tokens/' + f)
+G['draggableTokens'] = [
     {'id': tid, 'name': nom, 'image': BASE + '/img/tokens/' + tid.lower() + '.png'} for tid, nom, _, _ in JETONS]
 for t in G.get('tokens', []):
     t['image'] = BASE + '/img/tokens/' + t['image'].rsplit('/', 1)[1]
@@ -70,13 +75,13 @@ for t in G.get('tokens', []):
 h = g['customHelp'].split('\n')
 h = [l for l in h if not l.startswith('Réserve (8 cartes)') and not l.startswith('Jetons Pousse')]
 h = [l.replace('Expéditions 1-4, Gardien, Réserve ; Énergie et Camp', 'Expéditions 1-4, Gardien ; Énergie et Camp')
-      .replace('chacun joue une carte Rapide ou instantanée ou passe', 'chacun joue une carte Rapide, ou un bonus de son Terrain si le Duel a lieu dans sa salle, ou passe').replace('Jetons Dégât et Baril à poser sur les cartes.', 'Jetons (panneau des jetons, à glisser sur les cartes) : Dégât, Sève, Niveau 1-3, Sonné, Rapide, +1 Puissance, +1 PV, alcools, Piège.') for l in h]
+      .replace('chacun joue une carte Rapide ou instantanée ou passe', 'chacun joue une carte Rapide, ou un bonus de son Terrain si le Duel a lieu dans sa salle, ou passe').replace('Jetons Dégât et Baril à poser sur les cartes.', 'PV et Puissance (dégâts, bonus, malus) : compteurs de la carte (clic droit > Toggle counter 1 = PV, touche C ; counter 2 = Puissance, Ctrl C). Jetons à glisser sur les cartes : Sève, Niveau 1-3 et effets (Sonné, Empoisonné, Rapide, Insensible, Ivre, Gueule de bois, Contrecoup, Entravé, En soin, Piège). Effets détaillés : livret, Récap des effets.') for l in h]
 h += [
     "Deck : 1 Gardien + 1 Terrain de la même faction (n'importe lequel) + 30 cartes. Le Terrain commence à côté du Gardien : glisse-le dans l'Expédition voulue à ton 1er Assaut. Il porte les bonus de la guilde (alcools, recettes) et leur prix.",
-    "Bonus du Terrain : à ton Assaut, ou pendant n'importe quel Duel dans la salle de ton Terrain (même au tour adverse). Ils visent tes unités de cette salle. Pose un jeton d'effet pour t'en souvenir.",
+    "Bonus du Terrain : à ton Assaut, ou pendant n'importe quel Duel dans la salle de ton Terrain (même au tour adverse). Ils visent tes unités de cette salle. Bonus de PV ou Puissance : compteurs ; autres effets : jetons.",
     "Niveau : jeton Niv 1 à la pose. À ton Retrait, +1 s'il était déjà à sa place au début du tour (3 max). Niv. 1 bonus de lieu, niv. 2 ressource renforcée, niv. 3 Fief (+1 trésor par monstre tué ici). Lever le camp (Stratagème) : Expédition voisine, -1 niveau.",
     "Le Terrain a des PV, ne frappe pas, ne bloque pas les raids. Une unité adverse qui combat dans sa salle peut l'attaquer. Détruit par l'adversaire : +1 trésor pour lui (pillage) ; il revient au niveau 1 à ton Assaut suivant.",
-    "Ivrognes : tirer une pinte = jetons Dégât sur le baril (1 PV, 2 pour un alcool fort) + jeton de l'alcool sur l'unité. 2 pintes par tour, 3 au niveau 2. Dernière tournée : la pinte peut vider le baril, qui explose (sans pillage). Guss soigne 2 PV au Repos.",
+    "Ivrognes : tirer une pinte = -1 au compteur de PV du baril (-2 pour un alcool fort) + compteur ou jeton d'effet sur l'unité (Ivre, Gueule de bois, Insensible, Contrecoup). 2 pintes par tour, 3 au niveau 2. Dernière tournée : la pinte peut vider le baril, qui explose (sans pillage). Guss soigne 2 PV au Repos.",
     "Druides : jetons Sève sur ton bosquet (4 max), +1 à ton Repos (+2 au niveau 2). 1 recette par tour, payée en Sève. Bosquet détruit : tu perds la moitié de ta Sève.",
     "Jetons Pousse et Loup : clic droit sur la carte qui les invoque.",
 ]

@@ -252,7 +252,7 @@ CARDS += [
       "Entre quand la pioche de monstres est vide.\n**Enragé :** à 9 PV ou moins, +2 Puissance.\n"
       "**Fin :** sa mort termine la partie à la fin du tour.", 6, 18, legal=False, token=True, tresors=6),
     C("lanterne", "Lanterne du mineur", "Relique", 0, MINE,
-      "**Stratagème :** regarde le monstre du dessus de la pioche ; tu peux le mettre en dessous.",
+      "**Stratagème :** regarde le monstre du dessus de la pioche ; tu peux ensuite mélanger la pioche.",
       legal=False, token=True),
     C("pioche-runique", "Pioche runique", "Relique", 0, MINE,
       "**Assaut :** ta première unité qui attaque un monstre a +2 Puissance pour ce combat.",
@@ -292,7 +292,7 @@ NEW = {
  "bosquet": _NIV + _FORET + "**2 Soupe de racines :** +2 PV ce tour.\n**2 Tarte aux baies :** +1 P ce tour.\n"
    "**2 Tisane des bois :** soin, pas Sonnées.\n**3 Poêlée des esprits :** 1 Pousse ici et dans chaque salle voisine où tu as une unité.\n"
    "**4 Banquet :** toutes tes unités +2/+2 ce tour.",
- "bosquet-poison": _NIV + _FORET + "**2 Sève amère :** 1 dégât à chaque ennemi d'ici.\n**2 Brouet de baies :** 2 dégâts à une cible d'ici, Sonnée.\n"
+ "bosquet-poison": _NIV + _FORET + "**2 Sève amère :** 1 dégât à chaque ennemi d'ici, qui est Empoisonné.\n**2 Brouet de baies :** 2 dégâts à une cible d'ici, Sonnée.\n"
    "**3 Fumée d'herbes :** les ennemis d'ici sont Sonnés.\n**4 Philtre noir :** 2 dégâts à chaque ennemi d'une salle.",
  "bosquet-ombre": _NIV + _FORET + "**Rapide :** ses recettes se jouent dans n'importe quel Duel.\n"
    "**1 Pain de route :** tes unités d'ici gagnent Rapide.\n**1 Infusion vive :** une unité, Rapide et +1 P.\n"
