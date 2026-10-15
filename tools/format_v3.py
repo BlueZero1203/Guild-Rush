@@ -47,7 +47,7 @@ for t in G['draggableTokens'] + G.get('tokens', []):
 h = g['customHelp'].split('\n')
 h = [l for l in h if not l.startswith('Réserve (8 cartes)') and not l.startswith('Jetons Pousse')]
 h = [l.replace('Expéditions 1-4, Gardien, Réserve ; Énergie et Camp', 'Expéditions 1-4, Gardien et son Menu ; Énergie et Camp')
-      .replace('chacun joue une carte Rapide ou instantanée ou passe', 'chacun joue une carte Rapide ou un effet de son Menu, ou passe') for l in h]
+      .replace('chacun joue une carte Rapide ou instantanée ou passe', 'chacun joue une carte Rapide ou un effet de son Menu, ou passe').replace('Jetons Dégât et Baril à poser sur les cartes.', 'Jetons Dégât, Sève et Niveau à poser sur les cartes.') for l in h]
 h += [
     "Gardien : clic droit dessus pour créer son Terrain (baril, bosquet) et son Menu (Carte des alcools, Livre). Le Menu va près du Gardien ; le Terrain arrive dans l'Expédition 1 : glisse-le dans l'Expédition voulue au 1er Assaut.",
     "Terrain : son niveau se note avec un jeton Niveau ou le compteur de la carte (clic droit > Toggle counter, touche C) ; +1 à chacun de tes Retraits s'il est debout (3 max). Niv. 1 bonus de lieu, niv. 2 ressource renforcée, niv. 3 Fief (+1 trésor par monstre tué ici). Lever le camp (Stratagème) : Expédition voisine, -1 niveau. Détruit par l'adversaire : il pille 1 trésor ; le Terrain revient au niveau 1 à ton Assaut suivant.",
