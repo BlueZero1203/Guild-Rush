@@ -126,3 +126,21 @@ g['customHelp']=g['customHelp'].replace(
  "Blessée, elle revient au Camp.",
  "À l'Aube, une unité intacte peut passer dans une Expédition voisine (1↔2, 2↔3, 3↔4) ou rentrer au Camp, une fois par tour. Blessée, elle revient au Camp.")
 json.dump(g,open(P,'w'),ensure_ascii=False,indent=2)
+
+# Aide complète (tours individuels, Duel, mêlée, Réserve) : remplace tout le texte
+g=json.load(open(P))
+g['customHelp']="\n".join([
+ "Proto de Guild Rush. Ivrognes (Guss) contre Druides (Cernun).",
+ "Plateau : les monstres au centre (Monstre 1 à 4, Boss, pioche et défausse, panneau Donjon). En face de chaque monstre, une Expédition par joueur (3 unités max, jetons compris). Ta zone : Expéditions 1-4, Gardien, Réserve ; Énergie, pioche de reliques, Camp.",
+ "Ton tour : Repos (3 énergies se redressent toutes seules, pioche 1, passif du Gardien) → Stratagème (Éclaireurs, cartes face cachée) → Assaut → Retrait (trésors, soins au Camp).",
+ "Assaut : pose tes unités (elles arrivent dans l'Expédition 1 : déplace-les dans l'Expédition voulue ou au Camp) ; une unité déjà en jeu peut aller dans une Expédition voisine ou au Camp, une fois par tour. Puis attaque salle par salle : chaque attaque ouvre un Duel (annonce-le dans le chat). L'adversaire répond en premier, puis chacun joue une carte Rapide ou instantanée (alcool, recette) ou passe ; deux passes de suite = combat. Si les deux joueurs ont des unités dans la salle : mêlée (le monstre frappe d'abord, puis les unités alternent ; le coup de grâce prend les trésors).",
+ "Fin de manche (après le tour du second joueur) : les monstres survivants évoluent (dès l'étage 2) ; si l'étage est vidé, l'hôte clique « Étage suivant » (4 nouveaux monstres, +2 énergies).",
+ "Énergie : 3 au départ, +2 par étage. Incline une Énergie pour payer 1.",
+ "Compteur = Trésors. Jetons Dégât et Baril à poser sur les cartes.",
+ "Réserve des Ivrognes (alcools) : tire une pinte (1 PV du baril) pour piocher 1 carte de ta Réserve, 1 fois par tour. Un alcool s'attache à ton unité dans la salle du baril, même en combat.",
+ "Réserve des Druides (ingrédients) : au Repos, pioche 3 cartes de ta Réserve, garde-en 2 sur Cernun (panier de 4 max), remets la 3e et mélange. À l'Assaut, cuisine 1 recette ; les cartes utilisées retournent dans ta Réserve.",
+ "Pile de Réserve : clique dessus pour piocher 1 carte ; clic droit pour la mélanger.",
+ "Jetons Pousse et Loup : clic droit sur la carte qui les invoque, ou panneau des jetons.",
+ "Baril et Livre de recettes : fiches à créer avec le panneau des jetons du Gardien (clic droit sur lui).",
+])
+json.dump(g,open(P,'w'),ensure_ascii=False,indent=2)
