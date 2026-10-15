@@ -62,7 +62,7 @@
       "tokens": [
         {
           "name": "Initiative",
-          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-libres/img/tokens/initiative.png",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/initiative.png",
           "isUnique": true
         }
       ],
@@ -70,77 +70,77 @@
         {
           "id": "Degat",
           "name": "Dégât",
-          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-libres/img/tokens/degat.png"
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/degat.png"
         },
         {
           "id": "Seve",
           "name": "Sève",
-          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-libres/img/tokens/seve.png"
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/seve.png"
         },
         {
           "id": "Niv1",
           "name": "Niveau 1",
-          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-libres/img/tokens/niv1.png"
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/niv1.png"
         },
         {
           "id": "Niv2",
           "name": "Niveau 2",
-          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-libres/img/tokens/niv2.png"
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/niv2.png"
         },
         {
           "id": "Niv3",
           "name": "Niveau 3 (Fief)",
-          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-libres/img/tokens/niv3.png"
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/niv3.png"
         },
         {
           "id": "Sonne",
           "name": "Sonné",
-          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-libres/img/tokens/sonne.png"
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/sonne.png"
         },
         {
           "id": "Rapide",
           "name": "Rapide",
-          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-libres/img/tokens/rapide.png"
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/rapide.png"
         },
         {
           "id": "PlusP",
           "name": "+1 Puissance",
-          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-libres/img/tokens/plusp.png"
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/plusp.png"
         },
         {
           "id": "PlusPV",
           "name": "+1 PV",
-          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-libres/img/tokens/pluspv.png"
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/pluspv.png"
         },
         {
           "id": "Biere",
           "name": "Bière (+1 P)",
-          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-libres/img/tokens/biere.png"
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/biere.png"
         },
         {
           "id": "Cidre",
           "name": "Cidre (+2 PV)",
-          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-libres/img/tokens/cidre.png"
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/cidre.png"
         },
         {
           "id": "Rhum",
           "name": "Rhum (+2 P, Sonnée ensuite)",
-          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-libres/img/tokens/rhum.png"
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/rhum.png"
         },
         {
           "id": "Whisky",
           "name": "Whisky (pas Sonnée)",
-          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-libres/img/tokens/whisky.png"
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/whisky.png"
         },
         {
           "id": "Absinthe",
           "name": "Absinthe (+3 P, -2 PV au Repos)",
-          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-libres/img/tokens/absinthe.png"
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/absinthe.png"
         },
         {
           "id": "Piege",
           "name": "Piège",
-          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-libres/img/tokens/piege.png"
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/piege.png"
         }
       ],
       "beforeGameStart": {
@@ -684,11 +684,11 @@
     }
   },
   "cards": {
-    "dataUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-libres/cards.json",
-    "cardBack": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-libres/img/back.png",
+    "dataUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/cards.json",
+    "cardBack": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/back.png",
     "cardBackColor": "#2a2240"
   },
   "defaultRessources": {
-    "decksUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-libres/decks.json"
+    "decksUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/decks.json"
   }
 }
