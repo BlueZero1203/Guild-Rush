@@ -88,20 +88,40 @@ h += [
 g['customHelp'] = '\n'.join(h)
 json.dump(g, open(P, 'w'), ensure_ascii=False, indent=2)
 
-# --- decks préconstruits : plus de Réserve ; Transplantation chez les Druides ---
-dk = json.load(open('decks.json'))
-for d in dk:
-    L = d['deckList']
-    for k in ('Alcool', 'Ingredient', 'Relique'):
-        L.pop(k, None)
-    L['Terrain'] = [{'id': 'baril-chene' if d['id'] == 'precon-ivrognes' else 'bosquet', 'count': 1}]
-    L['categoriesOrder'] = ['Gardien', 'Terrain', 'Unite', 'Sort']
-    if d['id'] == 'precon-druides':
-        sorts = [e for e in L['Sort'] if e['id'] != 'transplantation']
-        for e in sorts:
-            if e['id'] == 'croissance':
-                e['count'] = 2
-        L['Sort'] = sorts + [{'id': 'transplantation', 'count': 1}]
-    assert sum(e['count'] for k in ('Unite', 'Sort') for e in L[k]) == 30, d['id']
+# --- decks de base : un par Gardien (1 Gardien + 1 Terrain + 30 cartes) ---
+PRECONS = [
+    ('precon-guss', 'Ivrognes de Guss — La Taverne', 'guss', 'baril-chene',
+     dict(habitue=3, serveuse=2, poker=2, porteur=2, barde=2, **{'soldat-ivre': 3}, videur=2, cracheur=2, brute=1, champion=2),
+     {'grosse-pinte': 3, 'jet-chaises': 2, 'roule-baril': 2, 'viree-bar': 1, 'ma-tournee': 1}),
+    ('precon-rosa', 'Ivrognes de Rosa — Poudrière', 'rosa', 'baril-explosif',
+     dict(habitue=3, serveuse=3, poker=2, porteur=3, barde=3, **{'soldat-ivre': 2}, cracheur=3, champion=1),
+     {'grosse-pinte': 3, 'jet-chaises': 2, 'roule-baril': 3, 'viree-bar': 1, 'ma-tournee': 1}),
+    ('precon-cernun', 'Druides de Cernun — Bosquet ancien', 'cernun', 'bosquet',
+     dict(lutin=3, chouette=2, cueilleuse=2, invocateur=3, chamane=2, dryade=2, meneuse=2, saule=2, sanglier=1, **{'vieux-chene': 1}),
+     {'lianes': 3, 'croissance': 2, 'appel-meute': 2, 'spores': 1, 'eveil-foret': 1, 'transplantation': 1}),
+    ('precon-belladone', 'Druides de Belladone — Ronces', 'belladone', 'bosquet-poison',
+     dict(lutin=2, chouette=3, cueilleuse=3, invocateur=2, chamane=2, dryade=2, saule=3, meneuse=1, sanglier=1, **{'vieux-chene': 1}),
+     {'lianes': 3, 'spores': 3, 'croissance': 1, 'appel-meute': 1, 'eveil-foret': 1, 'transplantation': 1}),
+    ('precon-sylve', 'Druides de Sylve — La Meute', 'sylve', 'bosquet-ombre',
+     dict(lutin=2, chouette=2, cueilleuse=2, invocateur=1, chamane=2, dryade=2, meneuse=3, saule=1, sanglier=3, **{'vieux-chene': 2}),
+     {'lianes': 2, 'croissance': 3, 'appel-meute': 3, 'eveil-foret': 1, 'transplantation': 1}),
+]
+cards = json.load(open('cards.json'))
+dk = []
+for did, title, gardien, terrain, unites, sorts in PRECONS:
+    L = {'categoriesOrder': ['Gardien', 'Terrain', 'Unite', 'Sort'],
+         'Gardien': [{'id': gardien, 'count': 1}], 'Terrain': [{'id': terrain, 'count': 1}],
+         'Unite': [{'id': k, 'count': v} for k, v in unites.items()],
+         'Sort': [{'id': k, 'count': v} for k, v in sorts.items()],
+         'Sideboard': [], '_maybeboard': []}
+    fac = cards[gardien]['faction']
+    for k in ('Terrain', 'Unite', 'Sort'):
+        for e in L[k]:
+            c = cards[e['id']]
+            assert c['faction'] == fac and c['type'] == k and e['count'] <= 3, (did, e)
+    assert sum(e['count'] for k in ('Unite', 'Sort') for e in L[k]) == 30, did
+    for sig in ('ma-tournee', 'eveil-foret'):
+        assert all(e['count'] <= 1 for e in L['Sort'] if e['id'] == sig), did
+    dk.append({'id': did, 'title': title, 'format': 'Proto (cartes de test)', 'deckList': L})
 json.dump(dk, open('decks.json', 'w'), ensure_ascii=False, indent=2)
 print('format v3 (Terrains) ok')

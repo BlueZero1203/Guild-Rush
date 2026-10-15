@@ -143,20 +143,7 @@ g['customHelp'] = "\n".join([
 ])
 json.dump(g, open(P, 'w'), ensure_ascii=False, indent=2)
 
-# --- decks préconstruits : Réserve de 8, plus de reliques ---
-dk = json.load(open('decks.json'))
-RES = {'precon-ivrognes': ('Alcool', [('biere', 2), ('cidre', 1), ('hydromel', 1), ('rhum', 1), ('whisky', 1),
-                                     ('vin-chaud', 1), ('absinthe', 1)]),
-       'precon-druides': ('Ingredient', [('champignon', 2), ('baies', 2), ('miel', 2), ('racine', 1), ('herbes', 1)])}
-for d in dk:
-    L = d['deckList']
-    L.pop('Relique', None)
-    L['categoriesOrder'] = [c for c in L['categoriesOrder'] if c != 'Relique']
-    cat, lst = RES[d['id']]
-    L[cat] = [{'id': i, 'count': n} for i, n in lst]
-    assert sum(e['count'] for e in L[cat]) == 8
-    assert sum(e['count'] for k in ('Unite', 'Sort') for e in L[k]) == 30
-json.dump(dk, open('decks.json', 'w'), ensure_ascii=False, indent=2)
+# (decks préconstruits : reconstruits entièrement par format_v3.py)
 print('format v2 ok')
 
 # --- branche des fichiers (GR_REF=nom-de-branche pour tester sans toucher main) ---
