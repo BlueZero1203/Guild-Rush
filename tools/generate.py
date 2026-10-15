@@ -252,7 +252,7 @@ CARDS += [
       "Entre quand la pioche de monstres est vide.\n**Enragé :** à 9 PV ou moins, +2 Puissance.\n"
       "**Fin :** sa mort termine la partie à la fin du tour.", 6, 18, legal=False, token=True, tresors=6),
     C("lanterne", "Lanterne du mineur", "Relique", 0, MINE,
-      "**Stratagème :** regarde le monstre du dessus de la pioche ; tu peux ensuite mélanger la pioche.",
+      "**Stratagème :** regarde le monstre du dessus de la pioche ; tu peux le mettre en dessous (bouton « Dessus → dessous » du panneau Donjon).",
       legal=False, token=True),
     C("pioche-runique", "Pioche runique", "Relique", 0, MINE,
       "**Assaut :** ta première unité qui attaque un monstre a +2 Puissance pour ce combat.",

@@ -59,6 +59,8 @@ M.append(node('Boss',RW,'boss','BOSS',ml=GAP))
 M.append(node('Monstres',RW,'neutre','PIOCHE',pile=True,ml=GAP))
 M.append(node('CimetiereMonstres',RW,'neutre','DÉFAUSSE',pile=True,ml=GAP))
 S['sharedZone']={'height':14,'layout':{'direction':'column','content':[{'direction':'row','content':M,'style':{'justifyContent':'center'}}]}}
+# section cachée « Coulisse » (sert au script de la Lanterne), invisible et non cliquable
+M.append({'section':'Coulisse','style':{'width':'0','position':'absolute','opacity':0,'pointerEvents':'none','scale':0}})
 
 # --- sections ---
 for k in list(D):

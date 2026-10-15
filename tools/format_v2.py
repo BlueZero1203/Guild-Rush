@@ -13,6 +13,23 @@ D = S['sectionsDict']
 DJ = DONJONS['mine']
 SALLES = ['Salle1', 'Salle2', 'Salle3', 'Salle4']
 
+# --- Lanterne : le monstre du dessus passe sous la pioche ---
+# La pioche de monstres est dans la zone partagée : c'est l'hôte qui en garde l'ordre, et les boutons « To bottom »
+# du simulateur y sont annulés. On passe donc par un script exécuté chez l'hôte, via une section cachée « Coulisse ».
+DESSOUS = ("const n=(cards.Monstres??[]).length;"
+           "if(n<2){functions.chatLog('Lanterne : rien à réordonner.');}else{"
+           "await functions.drawFromExtraDeck('Monstres',1,false,'Coulisse');"
+           "for(let i=0;i<n-1;i++){await functions.drawFromExtraDeck('Monstres',1,true,'Coulisse');}"
+           "for(let i=0;i<n;i++){await functions.drawFromExtraDeck('Coulisse',1,true,'Monstres');}"
+           "functions.chatLog('Lanterne : le monstre du dessus est passé sous la pioche.');"
+           "await functions.repositionCards();}")
+LANTERNE_CLICK = ("const d=game.data.Donjon;"
+                  "if(!game.isHost){d.lanterne=Date.now();functions.chatLog('Lanterne : demande envoyée à l’hôte.');return;}"
+                  "d.lanterne=Date.now();d.lanterneFait=d.lanterne;" + DESSOUS)
+ON_UPDATE = ("if(!game.isHost)return;const d=game.data.Donjon;"
+             "if(d.lanterne&&d.lanterne!==d.lanterneFait){d.lanterneFait=d.lanterne;" + DESSOUS + "}")
+
+
 # --- construction de deck : 30 cartes, 1 Gardien, Réserve de 8, plus de reliques dans les decks ---
 fmt = g['deckBuilding']['formats'][0]
 fmt['customCategories'] = ['Gardien', 'Alcool', 'Ingredient']
@@ -66,6 +83,8 @@ dj['blueprint']['children'] = [
                  "functions.chatLog('Relique gagnée : '+(%s[id]||id)+' (au Camp).');"
                  "await functions.repositionCards();") % json.dumps(REL_NOMS, ensure_ascii=False),
      'children': 'Prendre la relique'},
+    {'type': 'button', 'props': {'className': 'btn btn-secondary btn-sm', 'title': "Lanterne : le monstre du dessus de la pioche passe en dessous"},
+     'onClick': LANTERNE_CLICK, 'children': 'Dessus → dessous'},
 ]
 
 ON_READY = ("if(!game.isHost)return;\n"
@@ -107,7 +126,8 @@ if(game.isHost && n>1){
   d.pioche=pioche;
   await functions.repositionCards();
 }"""
-dj['events'] = {'onPlayersReady': ON_READY, 'onNewTurn': ON_TURN}
+dj['events'] = {'onPlayersReady': ON_READY, 'onNewTurn': ON_TURN, 'onUpdate': ON_UPDATE}
+D['Coulisse'] = {'isHidden': 'yes', 'height': 1, 'alignment': 'DECK', 'displayedTitle': 'Coulisse'}
 
 # --- aide ---
 g['customHelp'] = "\n".join([
