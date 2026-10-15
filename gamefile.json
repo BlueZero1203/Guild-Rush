@@ -1,7 +1,7 @@
 {
   "name": "Guild Rush (proto)",
   "cardRotation": 90,
-  "customHelp": "Guild Rush (proto) · donjon : Mine des Gobelins. Fin : boss vaincu (fin de ce tour) ou un joueur à 12 trésors en fin de manche.\nPlateau : 4 monstres au centre, pioche de monstres, boss, monstres vaincus, panneau Donjon. En face de chaque monstre, une Expédition par joueur (3 unités max, jetons compris). Ta zone : Expéditions 1-4, Gardien et son Menu ; Énergie et Camp.\nTon tour : Repos (automatique : énergie au max, +1 par manche jusqu'à 6 ; pioche 1 ; passif du Gardien) → Stratagème (Éclaireurs, cartes face cachée) → Assaut → Retrait (trésors sur ton compteur, soins au Camp).\nAssaut : pose tes unités (elles arrivent dans l'Expédition 1 : déplace-les dans l'Expédition voulue ou au Camp). Une unité intacte déjà en jeu peut aller dans une Expédition voisine ou au Camp, une fois par tour. Puis attaque salle par salle : chaque attaque ouvre un Duel (annonce-le dans le chat). L'adversaire répond en premier, puis chacun joue une carte Rapide ou un effet de son Menu, ou passe ; deux passes = combat. Les deux joueurs dans la salle : mêlée (le monstre frappe d'abord, coup de grâce). Puis 1 raid au plus.\nMonstre tué : l'hôte le met dans « Monstres vaincus », le tueur ajoute ses trésors (pastille dorée) à son compteur. Icône Relique : clique « Prendre la relique » dans le panneau Donjon.\nAutomatique au début de chaque tour : les salles vides reçoivent le monstre suivant (puis le boss quand la pioche est vide) ; en fin de manche, les monstres en jeu depuis une manche entière se retournent sur leur face évoluée.\nCompteur = Trésors. Jetons Dégât, Sève et Niveau à poser sur les cartes.\nGardien : clic droit dessus pour créer son Terrain (baril, bosquet) et son Menu (Carte des alcools, Livre). Le Menu va près du Gardien ; le Terrain arrive dans l'Expédition 1 : glisse-le dans l'Expédition voulue au 1er Assaut.\nTerrain : son niveau se note avec un jeton Niveau ou le compteur de la carte (clic droit > Toggle counter, touche C) ; +1 à chacun de tes Retraits s'il est debout (3 max). Niv. 1 bonus de lieu, niv. 2 ressource renforcée, niv. 3 Fief (+1 trésor par monstre tué ici). Lever le camp (Stratagème) : Expédition voisine, -1 niveau. Détruit par l'adversaire : il pille 1 trésor ; le Terrain revient au niveau 1 à ton Assaut suivant.\nIvrognes : tirer une pinte = jetons Dégât sur le baril (1 PV, 2 pour un alcool fort), annonce l'alcool dans le chat. 2 pintes par tour, 3 au niveau 2. Guss soigne 2 PV au Repos.\nDruides : la Sève = jetons Sève ou compteur sur ton Livre (4 max), +1 à ton Repos (+2 au niveau 2). 1 recette par tour, payée en Sève. Bosquet détruit : tu perds la moitié de ta Sève.\nJetons Pousse et Loup : clic droit sur la carte qui les invoque.",
+  "customHelp": "Guild Rush (proto) · donjon : Mine des Gobelins. Fin : boss vaincu (fin de ce tour) ou un joueur à 12 trésors en fin de manche.\nPlateau : 4 monstres au centre, pioche de monstres, boss, monstres vaincus, panneau Donjon. En face de chaque monstre, une Expédition par joueur (3 unités max, jetons compris). Ta zone : Expéditions 1-4, Gardien ; Énergie et Camp.\nTon tour : Repos (automatique : énergie au max, +1 par manche jusqu'à 6 ; pioche 1 ; passif du Gardien) → Stratagème (Éclaireurs, cartes face cachée) → Assaut → Retrait (trésors sur ton compteur, soins au Camp).\nAssaut : pose tes unités (elles arrivent dans l'Expédition 1 : déplace-les dans l'Expédition voulue ou au Camp). Une unité intacte déjà en jeu peut aller dans une Expédition voisine ou au Camp, une fois par tour. Puis attaque salle par salle : chaque attaque ouvre un Duel (annonce-le dans le chat). L'adversaire répond en premier, puis chacun joue une carte Rapide, ou un bonus de son Terrain si le Duel a lieu dans sa salle, ou passe ; deux passes = combat. Les deux joueurs dans la salle : mêlée (le monstre frappe d'abord, coup de grâce). Puis 1 raid au plus.\nMonstre tué : l'hôte le met dans « Monstres vaincus », le tueur ajoute ses trésors (pastille dorée) à son compteur. Icône Relique : clique « Prendre la relique » dans le panneau Donjon.\nAutomatique au début de chaque tour : les salles vides reçoivent le monstre suivant (puis le boss quand la pioche est vide) ; en fin de manche, les monstres en jeu depuis une manche entière se retournent sur leur face évoluée.\nCompteur = Trésors. Jetons (panneau des jetons, à glisser sur les cartes) : Dégât, Sève, Niveau 1-3, Sonné, Rapide, +1 Puissance, +1 PV, alcools, Piège.\nGardien : clic droit dessus pour créer son Terrain (baril, bosquet). Il arrive dans l'Expédition 1 : glisse-le dans l'Expédition voulue au 1er Assaut. Le Terrain porte les bonus de la guilde (alcools, recettes) et leur prix.\nBonus du Terrain : à ton Assaut, ou pendant n'importe quel Duel dans la salle de ton Terrain (même au tour adverse). Ils visent tes unités de cette salle. Pose un jeton d'effet pour t'en souvenir.\nNiveau : jeton Niv 1 à la pose. À ton Retrait, +1 s'il était déjà à sa place au début du tour (3 max). Niv. 1 bonus de lieu, niv. 2 ressource renforcée, niv. 3 Fief (+1 trésor par monstre tué ici). Lever le camp (Stratagème) : Expédition voisine, -1 niveau.\nLe Terrain a des PV, ne frappe pas, ne bloque pas les raids. Une unité adverse qui combat dans sa salle peut l'attaquer. Détruit par l'adversaire : +1 trésor pour lui (pillage) ; il revient au niveau 1 à ton Assaut suivant.\nIvrognes : tirer une pinte = jetons Dégât sur le baril (1 PV, 2 pour un alcool fort) + jeton de l'alcool sur l'unité. 2 pintes par tour, 3 au niveau 2. Dernière tournée : la pinte peut vider le baril, qui explose (sans pillage). Guss soigne 2 PV au Repos.\nDruides : jetons Sève sur ton bosquet (4 max), +1 à ton Repos (+2 au niveau 2). 1 recette par tour, payée en Sève. Bosquet détruit : tu perds la moitié de ta Sève.\nJetons Pousse et Loup : clic droit sur la carte qui les invoque.",
   "deckBuilding": {
     "mainFilters": [
       "faction",
@@ -55,7 +55,7 @@
       "tokens": [
         {
           "name": "Initiative",
-          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/initiative.png",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-v2/img/tokens/initiative.png",
           "isUnique": true
         }
       ],
@@ -63,17 +63,77 @@
         {
           "id": "Degat",
           "name": "Dégât",
-          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/degat.png"
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-v2/img/tokens/degat.png"
         },
         {
           "id": "Seve",
           "name": "Sève",
-          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/seve.png"
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-v2/img/tokens/seve.png"
         },
         {
-          "id": "Niveau",
-          "name": "Niveau",
-          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/niveau.png"
+          "id": "Niv1",
+          "name": "Niveau 1",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-v2/img/tokens/niv1.png"
+        },
+        {
+          "id": "Niv2",
+          "name": "Niveau 2",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-v2/img/tokens/niv2.png"
+        },
+        {
+          "id": "Niv3",
+          "name": "Niveau 3 (Fief)",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-v2/img/tokens/niv3.png"
+        },
+        {
+          "id": "Sonne",
+          "name": "Sonné",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-v2/img/tokens/sonne.png"
+        },
+        {
+          "id": "Rapide",
+          "name": "Rapide",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-v2/img/tokens/rapide.png"
+        },
+        {
+          "id": "PlusP",
+          "name": "+1 Puissance",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-v2/img/tokens/plusp.png"
+        },
+        {
+          "id": "PlusPV",
+          "name": "+1 PV",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-v2/img/tokens/pluspv.png"
+        },
+        {
+          "id": "Biere",
+          "name": "Bière (+1 P)",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-v2/img/tokens/biere.png"
+        },
+        {
+          "id": "Cidre",
+          "name": "Cidre (+2 PV)",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-v2/img/tokens/cidre.png"
+        },
+        {
+          "id": "Rhum",
+          "name": "Rhum (+2 P, Sonnée ensuite)",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-v2/img/tokens/rhum.png"
+        },
+        {
+          "id": "Whisky",
+          "name": "Whisky (pas Sonnée)",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-v2/img/tokens/whisky.png"
+        },
+        {
+          "id": "Absinthe",
+          "name": "Absinthe (+3 P, -2 PV au Repos)",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-v2/img/tokens/absinthe.png"
+        },
+        {
+          "id": "Piege",
+          "name": "Piège",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-v2/img/tokens/piege.png"
         }
       ],
       "beforeGameStart": {
@@ -215,7 +275,7 @@
                     "backgroundColor": "rgba(245,170,60,0.20)",
                     "border": "1px solid rgba(245,170,60,0.55)",
                     "marginLeft": "1.2%",
-                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EGARDIEN %C2%B7 MENU %28ALCOOLS, LIVRE%29%3C/text%3E%3C/svg%3E\")",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EGARDIEN%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px"
                   }
@@ -445,7 +505,7 @@
             "isHidden": "no",
             "height": 14,
             "alignment": "CENTER",
-            "displayedTitle": "Gardien et Menu",
+            "displayedTitle": "Gardien",
             "logWhenPlayed": true
           },
           "Energie": {
@@ -596,8 +656,7 @@
           "Monstre": "Salle1",
           "Boss": "Boss",
           "Energie": "Energie",
-          "Terrain": "BF1",
-          "Menu": "Gardien"
+          "Terrain": "BF1"
         },
         "categoriesAlreadyOnBoard": [
           "Gardien->Gardien"
@@ -611,18 +670,17 @@
           "Boss": "Boss",
           "Energie": "Energie",
           "Sort": "Discard",
-          "Terrain": "BF1",
-          "Menu": "Gardien"
+          "Terrain": "BF1"
         }
       }
     }
   },
   "cards": {
-    "dataUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/cards.json",
-    "cardBack": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/back.png",
+    "dataUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-v2/cards.json",
+    "cardBack": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-v2/img/back.png",
     "cardBackColor": "#2a2240"
   },
   "defaultRessources": {
-    "decksUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/decks.json"
+    "decksUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/terrains-v2/decks.json"
   }
 }

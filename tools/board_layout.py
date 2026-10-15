@@ -43,7 +43,7 @@ def row(content,left=LM,right=0,sym=True):
 R=lambda x: round(x,2)
 # --- rangée A : salles BF1..4 | Gardien (sous Boss + pioche) | Réserve (sous la défausse) ---
 A=[node('BF%d'%i,COLW,'bf','EXPÉDITION %d'%i,ml=(GAP if i>1 else 0)) for i in range(1,5)]
-A.append(node('Gardien',R(3*RW+2*GAP),'gard','GARDIEN · MENU (ALCOOLS, LIVRE)',ml=GAP))
+A.append(node('Gardien',R(3*RW+2*GAP),'gard','GARDIEN',ml=GAP))
 # --- rangée B : Énergie (sous Expéditions 1-2) | Camp jusqu'au bout ---
 H2=2*COLW+GAP
 B=[node('Energie',R(H2),'ener','ÉNERGIE')]
