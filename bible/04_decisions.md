@@ -73,7 +73,7 @@
 - [OK] « Entrer » est le seul verbe de salle (Piège, Glyphe, Comptoir, Ronces, Fermeture !) ; « s'arrêter » n'est plus utilisé.
 - [OK] Protecteur : redirige les attaques (unités et monstres) de sa salle ; sorts, effets et Embuscades ciblent librement. Protège même Sonné, passe avant le Gardien au raid.
 - [OK] Éclaireur : pose au Stratagème dans l'Expédition voulue ; effet « Stratagème : » récurrent.
-- [OK] Piège : jeton face cachée, 1 par joueur et par salle, déclenché par la 1re unité adverse qui s'arrête ; Leurre possible.
+- [OK] Piège : jeton face cachée, 1 par joueur et par salle, déclenché par la 1re unité adverse qui entre ; Leurre possible.
 - [OK] Premières cartes Éclaireur : Renard des fourrés, Pisteuse des ronces (Druides), Gamin des ruelles, Contrebandier (Ivrognes).
 
 ## Combat (2026-10-16)
@@ -93,4 +93,4 @@
 ## Ouvert
 - [?] Donjon : 6 monstres en pioche au lieu de 4 (2 nouveaux monstres), pour équilibrer fin à 12 / fin au boss.
 - [OK] Carte au trésor : rattrapage seulement (+1 au Retrait si mené), arrive fin de manche 1 chez le dernier, volable par raid à la place du 1er trésor.
-- [?] Mages (Gardien Soffia) et Savants : pas encore conçus.
+- [OK] Clos (2026-10-16) : Mages conçus, Savants en pause (voir Rédaction).
