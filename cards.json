@@ -84,6 +84,14 @@
         "type": "Terrain",
         "cost": 0,
         "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet.png"
+      },
+      "back": {
+        "name": {
+          "name": "Bosquet ancien"
+        },
+        "type": "Terrain",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-verso.png"
       }
     },
     "name": "Bosquet ancien",
@@ -109,6 +117,14 @@
         "type": "Terrain",
         "cost": 0,
         "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-ombre.png"
+      },
+      "back": {
+        "name": {
+          "name": "Bosquet d'ombre"
+        },
+        "type": "Terrain",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-ombre-verso.png"
       }
     },
     "name": "Bosquet d'ombre",
@@ -131,6 +147,14 @@
         "type": "Terrain",
         "cost": 0,
         "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-poison.png"
+      },
+      "back": {
+        "name": {
+          "name": "Bosquet empoisonné"
+        },
+        "type": "Terrain",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-poison-verso.png"
       }
     },
     "name": "Bosquet empoisonné",
@@ -715,6 +739,14 @@
         "type": "Terrain",
         "cost": 0,
         "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/baril-chene.png"
+      },
+      "back": {
+        "name": {
+          "name": "Baril de chêne"
+        },
+        "type": "Terrain",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/baril-chene-verso.png"
       }
     },
     "name": "Baril de chêne",
@@ -737,6 +769,14 @@
         "type": "Terrain",
         "cost": 0,
         "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/baril-explosif.png"
+      },
+      "back": {
+        "name": {
+          "name": "Baril explosif"
+        },
+        "type": "Terrain",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/baril-explosif-verso.png"
       }
     },
     "name": "Baril explosif",
@@ -759,6 +799,14 @@
         "type": "Terrain",
         "cost": 0,
         "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tonneau-paris.png"
+      },
+      "back": {
+        "name": {
+          "name": "Tonneau des paris"
+        },
+        "type": "Terrain",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tonneau-paris-verso.png"
       }
     },
     "name": "Tonneau des paris",
@@ -1501,6 +1549,14 @@
         "type": "Terrain",
         "cost": 0,
         "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cercle.png"
+      },
+      "back": {
+        "name": {
+          "name": "Cercle de runes"
+        },
+        "type": "Terrain",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cercle-verso.png"
       }
     },
     "name": "Cercle de runes",
@@ -1839,6 +1895,14 @@
         "type": "Terrain",
         "cost": 0,
         "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sanctuaire.png"
+      },
+      "back": {
+        "name": {
+          "name": "Sanctuaire runique"
+        },
+        "type": "Terrain",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sanctuaire-verso.png"
       }
     },
     "name": "Sanctuaire runique",
@@ -2177,6 +2241,14 @@
         "type": "Terrain",
         "cost": 0,
         "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/foyer.png"
+      },
+      "back": {
+        "name": {
+          "name": "Foyer instable"
+        },
+        "type": "Terrain",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/foyer-verso.png"
       }
     },
     "name": "Foyer instable",

@@ -49,6 +49,7 @@ Termes : voir `00_glossaire.md`.
 - Un raid réussi peut prendre la carte au lieu du 1er trésor volé.
 
 ## Terrain
+- Carte recto verso : recto visible en jeu (PV, passifs, ce que l'adversaire doit lire) ; verso = menu (ressource et recettes).
 - A des PV, ne frappe pas, ne bloque pas les raids. Une unité adverse qui combat dans sa salle peut l'attaquer.
 - Bonus : à ton Assaut, ou pendant n'importe quel Duel dans sa salle (même au tour adverse). Visent tes unités de la salle.
 - Détruit (par l'adversaire ou explosé) : revient au niveau 1 à ton Assaut suivant. Détruit par l'adversaire : +1 trésor pour lui (pillage).
