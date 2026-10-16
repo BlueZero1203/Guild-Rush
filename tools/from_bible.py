@@ -8,6 +8,7 @@ Usage : python3 tools/from_bible.py   (depuis la racine du dépôt)
 import csv
 import json
 import os
+import re
 import sys
 
 from PIL import Image, ImageDraw, ImageFont
@@ -53,6 +54,71 @@ def terrain_rich(texte):
         t = t.replace(f". {niv}", f".\n**{niv}**")
     t = t.replace("**Encaisser. À 0 PV :**", "**Encaisser.**\n**À 0 PV :**")
     return "\n".join(f"**{l}**" if l.endswith(" :") else l for l in t.split("\n"))
+
+
+# --- Lexique : définitions tirées de bible/00_glossaire.md, rappelées sur les cartes et dans l'aide ---
+SECTIONS_LEXIQUE = ("Mots-clés", "États (jetons)", "Ressources")
+EN_PLUS = {"Mêlée", "Repli", "Pillage", "Blessé", "Lever le camp", "Signature"}
+SANS_RAPPEL = {"Arrivée", "Dernier souffle", "Combat", "Tue un monstre", "Sort lancé", "Révélé", "Retrait",
+               "Énergie", "Trésors", "Carte au trésor", "Rapide (état)"}
+TERME = re.compile(r"\*\*([^*]+)\*\*(?:\s*\([^)]*\))?\s*:\s*")
+
+
+def lexique():
+    """{terme: définition}, dans l'ordre du glossaire, pour les sections utiles en partie."""
+    lex, section = {}, ""
+    for ligne in open(os.path.join(BIBLE, "00_glossaire.md"), encoding="utf-8"):
+        if ligne.startswith("## "):
+            section = ligne[3:].strip()
+            continue
+        if not ligne.startswith("- **"):
+            continue
+        morceaux = TERME.split(ligne[2:].strip())   # ["", terme, déf, terme, déf, ...]
+        for terme, defi in zip(morceaux[1::2], morceaux[2::2]):
+            if section in SECTIONS_LEXIQUE or terme in EN_PLUS:
+                if terme in lex:   # « Rapide » existe en mot-clé et en état : on garde le mot-clé
+                    terme = f"{terme} (état)"
+                lex[terme] = defi.strip()
+    return lex
+
+
+LEXIQUE = lexique()
+
+
+def court(defi, n=170):
+    """Définition phrase par phrase tant qu'elle reste courte ; sans ses apartés « (…) » si ça en garde plus."""
+    def coupe(txt):
+        phrases = re.split(r"(?<=\.)\s+", txt)
+        out, k = phrases[0], 1
+        for ph in phrases[1:]:
+            if len(out) + 1 + len(ph) > n:
+                break
+            out, k = out + " " + ph, k + 1
+        return k, out if out.endswith(".") else out + "."
+    avec, sans = coupe(defi), coupe(re.sub(r"\s*\([^)]*\)", "", defi))
+    return sans[1] if sans[0] > avec[0] else avec[1]
+
+
+def motif(terme):
+    # 1re lettre insensible à la casse (« lever le camp ») ; accords (Sonnée, Pièges) ; « Sonne » le verbe.
+    t = re.escape(terme)
+    t = f"[{terme[0].upper()}{terme[0].lower()}]{t[1:]}"
+    if terme == "Sonné":
+        return re.compile(r"\bSonn(?:e|é|ée|és|ées|ent)\b")
+    return re.compile(rf"(?<![\w-]){t}(?:e|s|es)?(?![\w-])")
+
+
+MOTIFS = {t: motif(t) for t in LEXIQUE if t not in SANS_RAPPEL}
+
+
+def rappels_pour(texte):
+    """Mots-clés du lexique présents dans le texte, sauf ceux que la carte définit elle-même (« Bluff : … »)."""
+    texte = texte.replace("**", "")
+    out = []
+    for terme, m in MOTIFS.items():
+        if m.search(texte) and f"{terme} :" not in texte:
+            out.append(f"**{terme}** : {court(LEXIQUE[terme])}")
+    return out
 
 
 def invoque(texte):
@@ -114,6 +180,7 @@ def ecrire_cartes(cards_list):
     os.makedirs(out_dir, exist_ok=True)
     cards = {}
     for c in cards_list:
+        c["rappels"] = rappels_pour(c["text"])
         gen.draw_card(c, os.path.join(out_dir, f"{c['id']}.png"))
         img = f"{BASE}/img/cards/{c['id']}.png"
         e = {"id": c["id"], "face": {"front": {"name": {"name": c["name"]}, "type": c["type"], "cost": c["cost"], "image": img}},
@@ -132,6 +199,7 @@ def ecrire_cartes(cards_list):
             e["tokens"] = c["tokens"]
         if c.get("back"):
             b = dict(c, **c["back"], verso=True, back=None)
+            b["rappels"] = rappels_pour(b["text"])
             gen.draw_card(b, os.path.join(out_dir, f"{c['id']}-verso.png"))
             e["face"]["back"] = {"name": {"name": b["name"]}, "type": c["type"], "cost": 0,
                                  "image": f"{BASE}/img/cards/{c['id']}-verso.png"}
@@ -206,7 +274,8 @@ def maj_gamefile():
         jeton(tid.lower(), txt, coul)
         toks.append({"id": tid, "name": nom, "image": f"{BASE}/img/tokens/{tid.lower()}.png"})
     G["draggableTokens"] = toks
-    g["customHelp"] = "\n".join(AIDE)
+    lex = [f"{t} : {d}" for t, d in LEXIQUE.items() if t in MOTIFS]
+    g["customHelp"] = "\n".join(AIDE + ["", "LEXIQUE (bible/00_glossaire.md ; rappelé en bas des cartes qui l'utilisent)"] + lex)
     if "gardien" not in g["deckBuilding"]["mainFilters"]:
         g["deckBuilding"]["mainFilters"].insert(1, "gardien")
     json.dump(g, open(p, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
