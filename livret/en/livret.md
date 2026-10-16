@@ -22,6 +22,7 @@ Most treasure wins. Tie: the boss's killer wins, otherwise whoever killed the mo
 | **Guardian** | 1: the leader of your guild |
 | **Terrain** | 1, from the Guardian's faction (your choice) |
 | **Deck** | 30 cards from your faction, including **at least 20 from your Guardian's pool** |
+| **Personal dungeon** | 4 monsters (2 **Elites**, 2 normal, 1 copy each, **9 treasure max** in total) and 1 boss |
 
 - 3 copies max per card, only 1 for a **Signature**.
 - A Guardian's **pool**: its 10 units and 3 spells.
@@ -44,9 +45,9 @@ Most treasure wins. Tie: the boss's killer wins, otherwise whoever killed the mo
 
 ## 4. Setup
 
-1. Shuffle the 8 Mine monsters. Place 1 in each room; the other 4 form the monster deck. The boss Grombak waits beside it.
-2. Each player places their Guardian in their Camp and their Terrain beside it, shuffles their deck and draws **5 cards**.
-3. Randomly determine the first player.
+1. Randomly determine the first player. The second player chooses one of the 2 bosses brought; it waits beside the dungeon and its **Reign** applies from now on.
+2. Shuffle face down the players' 8 monsters and the 2 Mine monsters (Goblin Sapper, Mimic Minecart). Place 1 in each room; the other 6 form the monster deck.
+3. Each player places their Guardian in their Camp and their Terrain beside it, shuffles their deck and draws **5 cards**.
 4. At the 1st Assault, each player places their Terrain in the Expedition of their choice.
 
 ## 5. The turn
@@ -112,11 +113,14 @@ A monster's **killer** is the player who controls the source of the last damage 
 
 ## 8. The dungeon
 
-- Each monster has **treasure** (gold dot); some have a **relic**.
+- Each monster has **treasure** (gold dot). An **Elite** also carries a **relic**.
 - **Ambush**: effect when the monster arrives.
 - Damage on a monster stays from one turn to the next.
-- **Evolution**: at the end of a round, a monster that has been in play for a full round flips to its evolved side, with no damage. Stronger, richer.
-- The **boss** enters when the monster deck is empty. Killing it ends the game at the end of the turn.
+- Monsters don't evolve.
+- A monster gives its owner no advantage: treasure and relic go to the killer, whoever it is.
+- The **boss** enters when the monster deck is empty. Its **Reign** works from setup. Killing it ends the game at the end of the turn.
+
+**Prototype**: until decks have their monsters, play with the 10 Mine monsters and Grombak (Reign: monsters in play have +1 HP).
 
 **Mine relics**: Miner's Lantern (look at the next monster), Rune Pickaxe (+2 PWR on your first monster attack), Foreman's Purse (+1 treasure if you killed this turn).
 

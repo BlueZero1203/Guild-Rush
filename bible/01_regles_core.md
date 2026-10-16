@@ -6,8 +6,9 @@ Termes : voir `00_glossaire.md`.
 
 ## Mise en place
 - Deck : 1 Gardien + 1 Terrain de sa faction + 30 cartes de sa faction, dont 20 min. de son pool (3 ex. max, Signature 1).
+- Donjon perso : 4 monstres (2 Élites, 2 normaux, 1 ex. chacun, 9 trésors max au total) et 1 boss.
 - Main de départ : 5.
-- Plateau : 4 salles en ligne (1-2-3-4) avec un monstre chacune, pioche de monstres, boss, défausse des vaincus. Chaque joueur a une Expédition face à chaque salle et son Camp.
+- Plateau : 4 salles en ligne (1-2-3-4). Mélange les 8 monstres des joueurs et les 2 monstres de la Mine, face cachée ; pose-en 1 par salle, les 6 autres forment la pioche. Le second joueur choisit l'un des 2 boss, qui attend à côté (Règne actif). Défausse des vaincus. Chaque joueur a une Expédition face à chaque salle et son Camp.
 - Le Terrain commence à côté du Gardien et se pose dans une Expédition au 1er Assaut.
 
 ## Tour
@@ -26,12 +27,12 @@ Termes : voir `00_glossaire.md`.
 4. **Retrait** : trésors au compteur, niveau du Terrain.
 
 ## Monstres
-- Monstre tué : le tueur prend ses trésors. Icône Relique : il prend aussi la relique.
+- Monstre tué : le tueur prend ses trésors. Élite : il prend aussi sa relique. Le propriétaire d'un monstre n'a aucun avantage à le tuer.
 - Le tueur est le joueur qui contrôle la source du dernier dégât (unité, sort, Terrain).
 - Un sort ne se lance que dans une salle où tu as une unité. Avec Portée : une salle où tu as une unité, ou une salle voisine.
 - Début de chaque tour : les salles vides reçoivent le monstre suivant, puis le boss quand la pioche est vide.
-- Fin de manche : un monstre en jeu depuis une manche entière évolue (verso).
-- Les dégâts d'un monstre restent d'un tour à l'autre. En évoluant, il passe au verso sans dégâts.
+- Les monstres n'évoluent pas.
+- Les dégâts d'un monstre restent d'un tour à l'autre.
 
 ## Raid
 - Condition : dès la manche 2, à ton Assaut, si une de tes unités de cette salle y a tué ce tour le monstre ou la dernière unité adverse.

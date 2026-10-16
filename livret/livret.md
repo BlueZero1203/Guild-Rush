@@ -22,6 +22,7 @@ Le plus de trésors gagne. Égalité : le tueur du boss, sinon celui qui a tué 
 | **Gardien** | 1 : le chef de ta guilde |
 | **Terrain** | 1, de la faction du Gardien (au choix) |
 | **Deck** | 30 cartes de ta faction, dont **20 minimum du pool de ton Gardien** |
+| **Donjon perso** | 4 monstres (2 **Élites**, 2 normaux, 1 ex. chacun, **9 trésors max** au total) et 1 boss |
 
 - 3 exemplaires max par carte, 1 seul pour une **Signature**.
 - Le **pool** d'un Gardien : ses 10 unités et ses 3 sorts.
@@ -44,9 +45,9 @@ Le plus de trésors gagne. Égalité : le tueur du boss, sinon celui qui a tué 
 
 ## 4. Mise en place
 
-1. Mélange les 8 monstres de la Mine. Pose-en 1 dans chaque salle ; les 4 autres forment la pioche de monstres. Le boss Grombak attend à côté.
-2. Chaque joueur pose son Gardien au Camp, son Terrain à côté, mélange son deck et pioche **5 cartes**.
-3. Tire au sort le premier joueur.
+1. Tire au sort le premier joueur. Le second choisit l'un des 2 boss apportés ; il attend à côté du donjon et son **Règne** s'applique dès maintenant.
+2. Mélange face cachée les 8 monstres des joueurs et les 2 monstres de la Mine (Sapeur gobelin, Wagonnet mimique). Pose-en 1 dans chaque salle ; les 6 autres forment la pioche de monstres.
+3. Chaque joueur pose son Gardien au Camp, son Terrain à côté, mélange son deck et pioche **5 cartes**.
 4. Au 1er Assaut, chaque joueur pose son Terrain dans l'Expédition de son choix.
 
 ## 5. Le tour
@@ -112,11 +113,14 @@ Le **tueur** d'un monstre est le joueur qui contrôle la source du dernier dég�
 
 ## 8. Le donjon
 
-- Chaque monstre a des **trésors** (pastille dorée) ; certains ont une **relique**.
+- Chaque monstre a des **trésors** (pastille dorée). Une **Élite** porte aussi une **relique**.
 - **Embuscade** : effet quand le monstre arrive.
 - Les dégâts d'un monstre restent d'un tour à l'autre.
-- **Évolution** : à la fin d'une manche, un monstre en jeu depuis une manche entière se retourne sur sa face évoluée, sans dégâts. Plus fort, plus riche.
-- Le **boss** entre quand la pioche est vide. Le tuer termine la partie à la fin du tour.
+- Les monstres n'évoluent pas.
+- Un monstre ne profite pas à son propriétaire : trésors et relique vont au tueur, quel qu'il soit.
+- Le **boss** entre quand la pioche est vide. Son **Règne** agit dès la mise en place. Le tuer termine la partie à la fin du tour.
+
+**Prototype** : tant que les decks n'ont pas leurs monstres, on joue avec les 10 monstres de la Mine et Grombak (Règne : les monstres en jeu ont +1 PV).
 
 **Reliques de la Mine** : Lanterne du mineur (regarde le prochain monstre), Pioche runique (+2 P à ta première attaque de monstre), Bourse du contremaître (+1 trésor si tu as tué ce tour).
 

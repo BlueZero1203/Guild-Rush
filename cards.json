@@ -4512,20 +4512,6 @@
           "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gobelin-en.png",
           "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gobelin.png"
         }
-      },
-      "back": {
-        "name": {
-          "name": {
-            "en": "Hobgoblin",
-            "fr": "Hobgobelin"
-          }
-        },
-        "type": "Monstre",
-        "cost": 0,
-        "image": {
-          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gobelin-verso-en.png",
-          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gobelin-verso.png"
-        }
       }
     },
     "name": {
@@ -4555,20 +4541,6 @@
         "image": {
           "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/rat-en.png",
           "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/rat.png"
-        }
-      },
-      "back": {
-        "name": {
-          "name": {
-            "en": "Giant Rat",
-            "fr": "Rat géant"
-          }
-        },
-        "type": "Monstre",
-        "cost": 0,
-        "image": {
-          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/rat-verso-en.png",
-          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/rat-verso.png"
         }
       }
     },
@@ -4600,20 +4572,6 @@
           "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/archer-en.png",
           "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/archer.png"
         }
-      },
-      "back": {
-        "name": {
-          "name": {
-            "en": "Goblin Sharpshooter",
-            "fr": "Tireur gobelin"
-          }
-        },
-        "type": "Monstre",
-        "cost": 0,
-        "image": {
-          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/archer-verso-en.png",
-          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/archer-verso.png"
-        }
       }
     },
     "name": {
@@ -4634,8 +4592,8 @@
       "front": {
         "name": {
           "name": {
-            "en": "Goblin Shaman",
-            "fr": "Chaman gobelin"
+            "en": "Great Shaman",
+            "fr": "Grand chaman"
           }
         },
         "type": "Monstre",
@@ -4644,52 +4602,24 @@
           "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chaman-en.png",
           "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chaman.png"
         }
-      },
-      "back": {
-        "name": {
-          "name": {
-            "en": "Great Shaman",
-            "fr": "Grand chaman"
-          }
-        },
-        "type": "Monstre",
-        "cost": 0,
-        "image": {
-          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chaman-verso-en.png",
-          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chaman-verso.png"
-        }
       }
     },
     "name": {
-      "en": "Goblin Shaman",
-      "fr": "Chaman gobelin"
+      "en": "Great Shaman",
+      "fr": "Grand chaman"
     },
     "type": "Monstre",
     "cost": 0,
     "faction": "Mine des Gobelins",
-    "power": 1,
-    "hp": 4,
+    "power": 2,
+    "hp": 6,
     "isToken": true,
-    "tresors": 2
+    "tresors": 3
   },
   "araignee": {
     "id": "araignee",
     "face": {
       "front": {
-        "name": {
-          "name": {
-            "en": "Pit Spider",
-            "fr": "Araignée des puits"
-          }
-        },
-        "type": "Monstre",
-        "cost": 0,
-        "image": {
-          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/araignee-en.png",
-          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/araignee.png"
-        }
-      },
-      "back": {
         "name": {
           "name": {
             "en": "Spider Queen",
@@ -4699,22 +4629,22 @@
         "type": "Monstre",
         "cost": 0,
         "image": {
-          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/araignee-verso-en.png",
-          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/araignee-verso.png"
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/araignee-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/araignee.png"
         }
       }
     },
     "name": {
-      "en": "Pit Spider",
-      "fr": "Araignée des puits"
+      "en": "Spider Queen",
+      "fr": "Reine araignée"
     },
     "type": "Monstre",
     "cost": 0,
     "faction": "Mine des Gobelins",
-    "power": 2,
-    "hp": 4,
+    "power": 3,
+    "hp": 6,
     "isToken": true,
-    "tresors": 2
+    "tresors": 3
   },
   "golem": {
     "id": "golem",
@@ -4731,20 +4661,6 @@
         "image": {
           "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/golem-en.png",
           "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/golem.png"
-        }
-      },
-      "back": {
-        "name": {
-          "name": {
-            "en": "Crystal Golem",
-            "fr": "Golem de cristal"
-          }
-        },
-        "type": "Monstre",
-        "cost": 0,
-        "image": {
-          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/golem-verso-en.png",
-          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/golem-verso.png"
         }
       }
     },
@@ -4766,8 +4682,8 @@
       "front": {
         "name": {
           "name": {
-            "en": "Hobgoblin Foreman",
-            "fr": "Contremaître hobgobelin"
+            "en": "Warchief",
+            "fr": "Chef de guerre"
           }
         },
         "type": "Monstre",
@@ -4776,33 +4692,19 @@
           "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/contremaitre-en.png",
           "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/contremaitre.png"
         }
-      },
-      "back": {
-        "name": {
-          "name": {
-            "en": "Warchief",
-            "fr": "Chef de guerre"
-          }
-        },
-        "type": "Monstre",
-        "cost": 0,
-        "image": {
-          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/contremaitre-verso-en.png",
-          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/contremaitre-verso.png"
-        }
       }
     },
     "name": {
-      "en": "Hobgoblin Foreman",
-      "fr": "Contremaître hobgobelin"
+      "en": "Warchief",
+      "fr": "Chef de guerre"
     },
     "type": "Monstre",
     "cost": 0,
     "faction": "Mine des Gobelins",
-    "power": 3,
-    "hp": 5,
+    "power": 4,
+    "hp": 7,
     "isToken": true,
-    "tresors": 2
+    "tresors": 4
   },
   "troll": {
     "id": "troll",
@@ -4820,20 +4722,6 @@
           "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/troll-en.png",
           "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/troll.png"
         }
-      },
-      "back": {
-        "name": {
-          "name": {
-            "en": "Ancient Troll",
-            "fr": "Troll ancien"
-          }
-        },
-        "type": "Monstre",
-        "cost": 0,
-        "image": {
-          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/troll-verso-en.png",
-          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/troll-verso.png"
-        }
       }
     },
     "name": {
@@ -4847,6 +4735,66 @@
     "hp": 6,
     "isToken": true,
     "tresors": 3
+  },
+  "sapeur": {
+    "id": "sapeur",
+    "face": {
+      "front": {
+        "name": {
+          "name": {
+            "en": "Goblin Sapper",
+            "fr": "Sapeur gobelin"
+          }
+        },
+        "type": "Monstre",
+        "cost": 0,
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sapeur-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sapeur.png"
+        }
+      }
+    },
+    "name": {
+      "en": "Goblin Sapper",
+      "fr": "Sapeur gobelin"
+    },
+    "type": "Monstre",
+    "cost": 0,
+    "faction": "Mine des Gobelins",
+    "power": 2,
+    "hp": 2,
+    "isToken": true,
+    "tresors": 1
+  },
+  "mimique": {
+    "id": "mimique",
+    "face": {
+      "front": {
+        "name": {
+          "name": {
+            "en": "Mimic Minecart",
+            "fr": "Wagonnet mimique"
+          }
+        },
+        "type": "Monstre",
+        "cost": 0,
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mimique-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mimique.png"
+        }
+      }
+    },
+    "name": {
+      "en": "Mimic Minecart",
+      "fr": "Wagonnet mimique"
+    },
+    "type": "Monstre",
+    "cost": 0,
+    "faction": "Mine des Gobelins",
+    "power": 3,
+    "hp": 4,
+    "isToken": true,
+    "tresors": 2
   },
   "grombak": {
     "id": "grombak",
