@@ -1,345 +1,26 @@
 {
-  "guss": {
-    "id": "guss",
+  "belladone": {
+    "id": "belladone",
     "face": {
       "front": {
         "name": {
-          "name": "Guss le tavernier"
+          "name": "Belladone"
         },
         "type": "Gardien",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/guss.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/belladone.png"
       }
     },
-    "name": "Guss le tavernier",
+    "name": "Belladone",
     "type": "Gardien",
     "cost": 0,
-    "faction": "Ivrognes",
+    "faction": "Druides",
+    "gardien": "belladone",
     "_legal": {
       "PROTO": 1
     },
-    "power": 3,
-    "hp": 7
-  },
-  "habitue": {
-    "id": "habitue",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Habitué du bar"
-        },
-        "type": "Unite",
-        "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/habitue.png"
-      }
-    },
-    "name": "Habitué du bar",
-    "type": "Unite",
-    "cost": 1,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 3
-    },
     "power": 1,
-    "hp": 2
-  },
-  "serveuse": {
-    "id": "serveuse",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Serveuse"
-        },
-        "type": "Unite",
-        "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/serveuse.png"
-      }
-    },
-    "name": "Serveuse",
-    "type": "Unite",
-    "cost": 2,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 3
-    },
-    "power": 1,
-    "hp": 3
-  },
-  "poker": {
-    "id": "poker",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Joueurs de poker"
-        },
-        "type": "Unite",
-        "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/poker.png"
-      }
-    },
-    "name": "Joueurs de poker",
-    "type": "Unite",
-    "cost": 2,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 3
-    },
-    "power": 2,
-    "hp": 2
-  },
-  "porteur": {
-    "id": "porteur",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Porteur de tonneaux"
-        },
-        "type": "Unite",
-        "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/porteur.png"
-      }
-    },
-    "name": "Porteur de tonneaux",
-    "type": "Unite",
-    "cost": 2,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 3
-    },
-    "power": 2,
-    "hp": 2
-  },
-  "barde": {
-    "id": "barde",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Barde éméché"
-        },
-        "type": "Unite",
-        "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/barde.png"
-      }
-    },
-    "name": "Barde éméché",
-    "type": "Unite",
-    "cost": 2,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 3
-    },
-    "power": 1,
-    "hp": 2
-  },
-  "soldat-ivre": {
-    "id": "soldat-ivre",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Soldat ivre"
-        },
-        "type": "Unite",
-        "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/soldat-ivre.png"
-      }
-    },
-    "name": "Soldat ivre",
-    "type": "Unite",
-    "cost": 3,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 3
-    },
-    "power": 4,
-    "hp": 4
-  },
-  "videur": {
-    "id": "videur",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Videur"
-        },
-        "type": "Unite",
-        "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/videur.png"
-      }
-    },
-    "name": "Videur",
-    "type": "Unite",
-    "cost": 3,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 3
-    },
-    "power": 2,
-    "hp": 5
-  },
-  "cracheur": {
-    "id": "cracheur",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Cracheur de feu"
-        },
-        "type": "Unite",
-        "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cracheur.png"
-      }
-    },
-    "name": "Cracheur de feu",
-    "type": "Unite",
-    "cost": 3,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 3
-    },
-    "power": 2,
-    "hp": 3
-  },
-  "brute": {
-    "id": "brute",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Brute de taverne"
-        },
-        "type": "Unite",
-        "cost": 4,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/brute.png"
-      }
-    },
-    "name": "Brute de taverne",
-    "type": "Unite",
-    "cost": 4,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 3
-    },
-    "power": 4,
-    "hp": 4
-  },
-  "champion": {
-    "id": "champion",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Champion de bras de fer"
-        },
-        "type": "Unite",
-        "cost": 5,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/champion.png"
-      }
-    },
-    "name": "Champion de bras de fer",
-    "type": "Unite",
-    "cost": 5,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 3
-    },
-    "power": 5,
     "hp": 6
-  },
-  "grosse-pinte": {
-    "id": "grosse-pinte",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Grosse pinte"
-        },
-        "type": "Sort",
-        "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/grosse-pinte.png"
-      }
-    },
-    "name": "Grosse pinte",
-    "type": "Sort",
-    "cost": 1,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 3
-    }
-  },
-  "jet-chaises": {
-    "id": "jet-chaises",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Jet de chaises"
-        },
-        "type": "Sort",
-        "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/jet-chaises.png"
-      }
-    },
-    "name": "Jet de chaises",
-    "type": "Sort",
-    "cost": 2,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 3
-    }
-  },
-  "roule-baril": {
-    "id": "roule-baril",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Roulé de baril"
-        },
-        "type": "Sort",
-        "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/roule-baril.png"
-      }
-    },
-    "name": "Roulé de baril",
-    "type": "Sort",
-    "cost": 2,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 3
-    }
-  },
-  "viree-bar": {
-    "id": "viree-bar",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Virée du bar"
-        },
-        "type": "Sort",
-        "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/viree-bar.png"
-      }
-    },
-    "name": "Virée du bar",
-    "type": "Sort",
-    "cost": 3,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 3
-    }
-  },
-  "ma-tournee": {
-    "id": "ma-tournee",
-    "face": {
-      "front": {
-        "name": {
-          "name": "C'EST MA TOURNÉE !"
-        },
-        "type": "Sort",
-        "cost": 5,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ma-tournee.png"
-      }
-    },
-    "name": "C'EST MA TOURNÉE !",
-    "type": "Sort",
-    "cost": 5,
-    "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 1
-    }
   },
   "cernun": {
     "id": "cernun",
@@ -357,6 +38,7 @@
     "type": "Gardien",
     "cost": 0,
     "faction": "Druides",
+    "gardien": "cernun",
     "_legal": {
       "PROTO": 1
     },
@@ -366,30 +48,140 @@
       "pousse"
     ]
   },
-  "lutin": {
-    "id": "lutin",
+  "sylve": {
+    "id": "sylve",
     "face": {
       "front": {
         "name": {
-          "name": "Lutin des mousses"
+          "name": "Sylve"
         },
-        "type": "Unite",
-        "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lutin.png"
+        "type": "Gardien",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sylve.png"
       }
     },
-    "name": "Lutin des mousses",
-    "type": "Unite",
-    "cost": 1,
+    "name": "Sylve",
+    "type": "Gardien",
+    "cost": 0,
     "faction": "Druides",
+    "gardien": "sylve",
     "_legal": {
-      "PROTO": 3
+      "PROTO": 1
     },
-    "power": 1,
-    "hp": 1,
+    "power": 2,
+    "hp": 5,
+    "tokens": [
+      "loup"
+    ]
+  },
+  "bosquet": {
+    "id": "bosquet",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Bosquet ancien"
+        },
+        "type": "Terrain",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet.png"
+      }
+    },
+    "name": "Bosquet ancien",
+    "type": "Terrain",
+    "cost": 0,
+    "faction": "Druides",
+    "gardien": "cernun",
+    "_legal": {
+      "PROTO": 1
+    },
+    "hp": 5,
     "tokens": [
       "pousse"
     ]
+  },
+  "bosquet-ombre": {
+    "id": "bosquet-ombre",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Bosquet d'ombre"
+        },
+        "type": "Terrain",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-ombre.png"
+      }
+    },
+    "name": "Bosquet d'ombre",
+    "type": "Terrain",
+    "cost": 0,
+    "faction": "Druides",
+    "gardien": "sylve",
+    "_legal": {
+      "PROTO": 1
+    },
+    "hp": 3
+  },
+  "bosquet-poison": {
+    "id": "bosquet-poison",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Bosquet empoisonné"
+        },
+        "type": "Terrain",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-poison.png"
+      }
+    },
+    "name": "Bosquet empoisonné",
+    "type": "Terrain",
+    "cost": 0,
+    "faction": "Druides",
+    "gardien": "belladone",
+    "_legal": {
+      "PROTO": 1
+    },
+    "hp": 5
+  },
+  "loup": {
+    "id": "loup",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Loup"
+        },
+        "type": "Unite",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/loup.png"
+      }
+    },
+    "name": "Loup",
+    "type": "Unite",
+    "cost": 0,
+    "faction": "Druides",
+    "power": 2,
+    "hp": 1,
+    "isToken": true
+  },
+  "pousse": {
+    "id": "pousse",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Pousse"
+        },
+        "type": "Unite",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pousse.png"
+      }
+    },
+    "name": "Pousse",
+    "type": "Unite",
+    "cost": 0,
+    "faction": "Druides",
+    "power": 1,
+    "hp": 1,
+    "isToken": true
   },
   "chouette": {
     "id": "chouette",
@@ -407,55 +199,81 @@
     "type": "Unite",
     "cost": 1,
     "faction": "Druides",
+    "gardien": "cernun",
     "_legal": {
       "PROTO": 3
     },
     "power": 1,
     "hp": 2
   },
-  "cueilleuse": {
-    "id": "cueilleuse",
+  "renard": {
+    "id": "renard",
     "face": {
       "front": {
         "name": {
-          "name": "Cueilleuse"
+          "name": "Renard des fourrés"
+        },
+        "type": "Unite",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/renard.png"
+      }
+    },
+    "name": "Renard des fourrés",
+    "type": "Unite",
+    "cost": 1,
+    "faction": "Druides",
+    "gardien": "sylve",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 1
+  },
+  "pisteuse": {
+    "id": "pisteuse",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Pisteuse des ronces"
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cueilleuse.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pisteuse.png"
       }
     },
-    "name": "Cueilleuse",
+    "name": "Pisteuse des ronces",
     "type": "Unite",
     "cost": 2,
     "faction": "Druides",
+    "gardien": "belladone",
     "_legal": {
       "PROTO": 3
     },
     "power": 1,
     "hp": 3
   },
-  "invocateur": {
-    "id": "invocateur",
+  "lutin": {
+    "id": "lutin",
     "face": {
       "front": {
         "name": {
-          "name": "Invocateur de la clairière"
+          "name": "Lutin des mousses"
         },
         "type": "Unite",
-        "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/invocateur.png"
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lutin.png"
       }
     },
-    "name": "Invocateur de la clairière",
+    "name": "Lutin des mousses",
     "type": "Unite",
-    "cost": 2,
+    "cost": 1,
     "faction": "Druides",
+    "gardien": "cernun",
     "_legal": {
       "PROTO": 3
     },
-    "power": 0,
-    "hp": 3,
+    "power": 1,
+    "hp": 1,
     "tokens": [
       "pousse"
     ]
@@ -476,11 +294,35 @@
     "type": "Unite",
     "cost": 2,
     "faction": "Druides",
+    "gardien": "cernun",
     "_legal": {
       "PROTO": 3
     },
     "power": 0,
     "hp": 4
+  },
+  "cueilleuse": {
+    "id": "cueilleuse",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Cueilleuse"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cueilleuse.png"
+      }
+    },
+    "name": "Cueilleuse",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Druides",
+    "gardien": "cernun",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 3
   },
   "dryade": {
     "id": "dryade",
@@ -498,11 +340,38 @@
     "type": "Unite",
     "cost": 2,
     "faction": "Druides",
+    "gardien": "belladone",
     "_legal": {
       "PROTO": 3
     },
     "power": 1,
     "hp": 2,
+    "tokens": [
+      "pousse"
+    ]
+  },
+  "invocateur": {
+    "id": "invocateur",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Invocateur de la clairière"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/invocateur.png"
+      }
+    },
+    "name": "Invocateur de la clairière",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Druides",
+    "gardien": "belladone",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 0,
+    "hp": 3,
     "tokens": [
       "pousse"
     ]
@@ -523,6 +392,7 @@
     "type": "Unite",
     "cost": 3,
     "faction": "Druides",
+    "gardien": "sylve",
     "_legal": {
       "PROTO": 3
     },
@@ -530,31 +400,6 @@
     "hp": 3,
     "tokens": [
       "loup"
-    ]
-  },
-  "saule": {
-    "id": "saule",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Esprit du saule"
-        },
-        "type": "Unite",
-        "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/saule.png"
-      }
-    },
-    "name": "Esprit du saule",
-    "type": "Unite",
-    "cost": 3,
-    "faction": "Druides",
-    "_legal": {
-      "PROTO": 3
-    },
-    "power": 1,
-    "hp": 5,
-    "tokens": [
-      "pousse"
     ]
   },
   "sanglier": {
@@ -573,10 +418,60 @@
     "type": "Unite",
     "cost": 3,
     "faction": "Druides",
+    "gardien": "sylve",
     "_legal": {
       "PROTO": 3
     },
     "power": 3,
+    "hp": 3
+  },
+  "saule": {
+    "id": "saule",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Esprit du saule"
+        },
+        "type": "Unite",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/saule.png"
+      }
+    },
+    "name": "Esprit du saule",
+    "type": "Unite",
+    "cost": 3,
+    "faction": "Druides",
+    "gardien": "belladone",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 5,
+    "tokens": [
+      "pousse"
+    ]
+  },
+  "ronce-garde": {
+    "id": "ronce-garde",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Gardienne des ronces"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ronce-garde.png"
+      }
+    },
+    "name": "Gardienne des ronces",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Druides",
+    "gardien": "belladone",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
     "hp": 3
   },
   "vieux-chene": {
@@ -595,31 +490,16 @@
     "type": "Unite",
     "cost": 4,
     "faction": "Druides",
+    "gardien": "cernun",
     "_legal": {
       "PROTO": 3
     },
     "power": 3,
-    "hp": 6
-  },
-  "lianes": {
-    "id": "lianes",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Lianes"
-        },
-        "type": "Sort",
-        "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lianes.png"
-      }
-    },
-    "name": "Lianes",
-    "type": "Sort",
-    "cost": 1,
-    "faction": "Druides",
-    "_legal": {
-      "PROTO": 3
-    }
+    "hp": 6,
+    "tokens": [
+      "pousse",
+      "loup"
+    ]
   },
   "croissance": {
     "id": "croissance",
@@ -637,6 +517,28 @@
     "type": "Sort",
     "cost": 1,
     "faction": "Druides",
+    "gardien": "cernun",
+    "_legal": {
+      "PROTO": 3
+    }
+  },
+  "lianes": {
+    "id": "lianes",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Lianes"
+        },
+        "type": "Sort",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lianes.png"
+      }
+    },
+    "name": "Lianes",
+    "type": "Sort",
+    "cost": 1,
+    "faction": "Druides",
+    "gardien": "belladone",
     "_legal": {
       "PROTO": 3
     }
@@ -657,12 +559,34 @@
     "type": "Sort",
     "cost": 2,
     "faction": "Druides",
+    "gardien": "sylve",
     "_legal": {
       "PROTO": 3
     },
     "tokens": [
       "loup"
     ]
+  },
+  "transplantation": {
+    "id": "transplantation",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Transplantation"
+        },
+        "type": "Sort",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/transplantation.png"
+      }
+    },
+    "name": "Transplantation",
+    "type": "Sort",
+    "cost": 2,
+    "faction": "Druides",
+    "gardien": "sylve",
+    "_legal": {
+      "PROTO": 3
+    }
   },
   "spores": {
     "id": "spores",
@@ -680,6 +604,7 @@
     "type": "Sort",
     "cost": 3,
     "faction": "Druides",
+    "gardien": "belladone",
     "_legal": {
       "PROTO": 3
     },
@@ -703,6 +628,7 @@
     "type": "Sort",
     "cost": 5,
     "faction": "Druides",
+    "gardien": "cernun",
     "_legal": {
       "PROTO": 1
     },
@@ -710,81 +636,28 @@
       "pousse"
     ]
   },
-  "pousse": {
-    "id": "pousse",
+  "guss": {
+    "id": "guss",
     "face": {
       "front": {
         "name": {
-          "name": "Pousse"
+          "name": "Guss le tavernier"
         },
-        "type": "Unite",
+        "type": "Gardien",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pousse.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/guss.png"
       }
     },
-    "name": "Pousse",
-    "type": "Unite",
+    "name": "Guss le tavernier",
+    "type": "Gardien",
     "cost": 0,
-    "faction": "Druides",
-    "power": 1,
-    "hp": 1,
-    "isToken": true
-  },
-  "loup": {
-    "id": "loup",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Loup"
-        },
-        "type": "Unite",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/loup.png"
-      }
+    "faction": "Ivrognes",
+    "gardien": "guss",
+    "_legal": {
+      "PROTO": 1
     },
-    "name": "Loup",
-    "type": "Unite",
-    "cost": 0,
-    "faction": "Druides",
-    "power": 2,
-    "hp": 1,
-    "isToken": true
-  },
-  "carte-tresor": {
-    "id": "carte-tresor",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Carte au trésor"
-        },
-        "type": "Tresor",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/carte-tresor.png"
-      }
-    },
-    "name": "Carte au trésor",
-    "type": "Tresor",
-    "cost": 0,
-    "faction": "Relique",
-    "isToken": true
-  },
-  "energie": {
-    "id": "energie",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Énergie"
-        },
-        "type": "Energie",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/energie.png"
-      }
-    },
-    "name": "Énergie",
-    "type": "Energie",
-    "cost": 0,
-    "faction": "Energie",
-    "isToken": true
+    "power": 3,
+    "hp": 7
   },
   "rosa": {
     "id": "rosa",
@@ -802,58 +675,35 @@
     "type": "Gardien",
     "cost": 0,
     "faction": "Ivrognes",
-    "_legal": {
-      "PROTO": 1
-    },
-    "power": 3,
-    "hp": 6
-  },
-  "belladone": {
-    "id": "belladone",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Belladone"
-        },
-        "type": "Gardien",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/belladone.png"
-      }
-    },
-    "name": "Belladone",
-    "type": "Gardien",
-    "cost": 0,
-    "faction": "Druides",
-    "_legal": {
-      "PROTO": 1
-    },
-    "power": 1,
-    "hp": 6
-  },
-  "sylve": {
-    "id": "sylve",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Sylve"
-        },
-        "type": "Gardien",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sylve.png"
-      }
-    },
-    "name": "Sylve",
-    "type": "Gardien",
-    "cost": 0,
-    "faction": "Druides",
+    "gardien": "rosa",
     "_legal": {
       "PROTO": 1
     },
     "power": 2,
-    "hp": 5,
-    "tokens": [
-      "loup"
-    ]
+    "hp": 7
+  },
+  "robin": {
+    "id": "robin",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Robin le joueur"
+        },
+        "type": "Gardien",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/robin.png"
+      }
+    },
+    "name": "Robin le joueur",
+    "type": "Gardien",
+    "cost": 0,
+    "faction": "Ivrognes",
+    "gardien": "robin",
+    "_legal": {
+      "PROTO": 1
+    },
+    "power": 4,
+    "hp": 5
   },
   "baril-chene": {
     "id": "baril-chene",
@@ -871,10 +721,10 @@
     "type": "Terrain",
     "cost": 0,
     "faction": "Ivrognes",
+    "gardien": "guss",
     "_legal": {
       "PROTO": 1
     },
-    "power": 0,
     "hp": 6
   },
   "baril-explosif": {
@@ -893,11 +743,2399 @@
     "type": "Terrain",
     "cost": 0,
     "faction": "Ivrognes",
+    "gardien": "rosa",
     "_legal": {
       "PROTO": 1
     },
-    "power": 0,
+    "hp": 6
+  },
+  "tonneau-paris": {
+    "id": "tonneau-paris",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Tonneau des paris"
+        },
+        "type": "Terrain",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tonneau-paris.png"
+      }
+    },
+    "name": "Tonneau des paris",
+    "type": "Terrain",
+    "cost": 0,
+    "faction": "Ivrognes",
+    "gardien": "robin",
+    "_legal": {
+      "PROTO": 1
+    },
     "hp": 4
+  },
+  "habitue": {
+    "id": "habitue",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Habitué du bar"
+        },
+        "type": "Unite",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/habitue.png"
+      }
+    },
+    "name": "Habitué du bar",
+    "type": "Unite",
+    "cost": 1,
+    "faction": "Ivrognes",
+    "gardien": "rosa",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 2
+  },
+  "gamin": {
+    "id": "gamin",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Gamin des ruelles"
+        },
+        "type": "Unite",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gamin.png"
+      }
+    },
+    "name": "Gamin des ruelles",
+    "type": "Unite",
+    "cost": 1,
+    "faction": "Ivrognes",
+    "gardien": "guss",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 2
+  },
+  "contrebandier": {
+    "id": "contrebandier",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Contrebandier"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/contrebandier.png"
+      }
+    },
+    "name": "Contrebandier",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Ivrognes",
+    "gardien": "guss",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 2
+  },
+  "barde": {
+    "id": "barde",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Barde éméché"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/barde.png"
+      }
+    },
+    "name": "Barde éméché",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Ivrognes",
+    "gardien": "guss",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 2
+  },
+  "poker": {
+    "id": "poker",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Joueurs de poker"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/poker.png"
+      }
+    },
+    "name": "Joueurs de poker",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Ivrognes",
+    "gardien": "guss",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 2
+  },
+  "porteur": {
+    "id": "porteur",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Porteur de tonneaux"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/porteur.png"
+      }
+    },
+    "name": "Porteur de tonneaux",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Ivrognes",
+    "gardien": "guss",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 2
+  },
+  "serveuse": {
+    "id": "serveuse",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Serveuse"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/serveuse.png"
+      }
+    },
+    "name": "Serveuse",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Ivrognes",
+    "gardien": "guss",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 3
+  },
+  "cracheur": {
+    "id": "cracheur",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Cracheur de feu"
+        },
+        "type": "Unite",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cracheur.png"
+      }
+    },
+    "name": "Cracheur de feu",
+    "type": "Unite",
+    "cost": 3,
+    "faction": "Ivrognes",
+    "gardien": "rosa",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 3
+  },
+  "soldat-ivre": {
+    "id": "soldat-ivre",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Soldat ivre"
+        },
+        "type": "Unite",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/soldat-ivre.png"
+      }
+    },
+    "name": "Soldat ivre",
+    "type": "Unite",
+    "cost": 3,
+    "faction": "Ivrognes",
+    "gardien": "guss",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 4,
+    "hp": 4
+  },
+  "videur": {
+    "id": "videur",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Videur"
+        },
+        "type": "Unite",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/videur.png"
+      }
+    },
+    "name": "Videur",
+    "type": "Unite",
+    "cost": 3,
+    "faction": "Ivrognes",
+    "gardien": "rosa",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 5
+  },
+  "sentinelle-ivre": {
+    "id": "sentinelle-ivre",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Sentinelle ivre"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sentinelle-ivre.png"
+      }
+    },
+    "name": "Sentinelle ivre",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Ivrognes",
+    "gardien": "guss",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 2
+  },
+  "brute": {
+    "id": "brute",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Brute de taverne"
+        },
+        "type": "Unite",
+        "cost": 4,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/brute.png"
+      }
+    },
+    "name": "Brute de taverne",
+    "type": "Unite",
+    "cost": 4,
+    "faction": "Ivrognes",
+    "gardien": "guss",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 4,
+    "hp": 4
+  },
+  "champion": {
+    "id": "champion",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Champion de bras de fer"
+        },
+        "type": "Unite",
+        "cost": 5,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/champion.png"
+      }
+    },
+    "name": "Champion de bras de fer",
+    "type": "Unite",
+    "cost": 5,
+    "faction": "Ivrognes",
+    "gardien": "rosa",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 5,
+    "hp": 6
+  },
+  "grosse-pinte": {
+    "id": "grosse-pinte",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Grosse pinte"
+        },
+        "type": "Sort",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/grosse-pinte.png"
+      }
+    },
+    "name": "Grosse pinte",
+    "type": "Sort",
+    "cost": 1,
+    "faction": "Ivrognes",
+    "gardien": "guss",
+    "_legal": {
+      "PROTO": 3
+    }
+  },
+  "jet-chaises": {
+    "id": "jet-chaises",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Jet de chaises"
+        },
+        "type": "Sort",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/jet-chaises.png"
+      }
+    },
+    "name": "Jet de chaises",
+    "type": "Sort",
+    "cost": 2,
+    "faction": "Ivrognes",
+    "gardien": "guss",
+    "_legal": {
+      "PROTO": 3
+    }
+  },
+  "roule-baril": {
+    "id": "roule-baril",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Roulé de baril"
+        },
+        "type": "Sort",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/roule-baril.png"
+      }
+    },
+    "name": "Roulé de baril",
+    "type": "Sort",
+    "cost": 2,
+    "faction": "Ivrognes",
+    "gardien": "rosa",
+    "_legal": {
+      "PROTO": 3
+    }
+  },
+  "viree-bar": {
+    "id": "viree-bar",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Virée du bar"
+        },
+        "type": "Sort",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/viree-bar.png"
+      }
+    },
+    "name": "Virée du bar",
+    "type": "Sort",
+    "cost": 3,
+    "faction": "Ivrognes",
+    "gardien": "rosa",
+    "_legal": {
+      "PROTO": 3
+    }
+  },
+  "ma-tournee": {
+    "id": "ma-tournee",
+    "face": {
+      "front": {
+        "name": {
+          "name": "C'EST MA TOURNÉE !"
+        },
+        "type": "Sort",
+        "cost": 5,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ma-tournee.png"
+      }
+    },
+    "name": "C'EST MA TOURNÉE !",
+    "type": "Sort",
+    "cost": 5,
+    "faction": "Ivrognes",
+    "gardien": "guss",
+    "_legal": {
+      "PROTO": 1
+    }
+  },
+  "parieur": {
+    "id": "parieur",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Parieur fauché"
+        },
+        "type": "Unite",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/parieur.png"
+      }
+    },
+    "name": "Parieur fauché",
+    "type": "Unite",
+    "cost": 1,
+    "faction": "Ivrognes",
+    "gardien": "robin",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 1
+  },
+  "pickpocket": {
+    "id": "pickpocket",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Pickpocket"
+        },
+        "type": "Unite",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pickpocket.png"
+      }
+    },
+    "name": "Pickpocket",
+    "type": "Unite",
+    "cost": 1,
+    "faction": "Ivrognes",
+    "gardien": "robin",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 1
+  },
+  "lanceuse": {
+    "id": "lanceuse",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Lanceuse de couteaux"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lanceuse.png"
+      }
+    },
+    "name": "Lanceuse de couteaux",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Ivrognes",
+    "gardien": "robin",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 1
+  },
+  "credit": {
+    "id": "credit",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Bagarreur à crédit"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/credit.png"
+      }
+    },
+    "name": "Bagarreur à crédit",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Ivrognes",
+    "gardien": "robin",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 3,
+    "hp": 2
+  },
+  "tricheur": {
+    "id": "tricheur",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Tricheur"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tricheur.png"
+      }
+    },
+    "name": "Tricheur",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Ivrognes",
+    "gardien": "robin",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 2
+  },
+  "croupier": {
+    "id": "croupier",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Croupier"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/croupier.png"
+      }
+    },
+    "name": "Croupier",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Ivrognes",
+    "gardien": "robin",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 3
+  },
+  "mercenaire": {
+    "id": "mercenaire",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Mercenaire de comptoir"
+        },
+        "type": "Unite",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mercenaire.png"
+      }
+    },
+    "name": "Mercenaire de comptoir",
+    "type": "Unite",
+    "cost": 3,
+    "faction": "Ivrognes",
+    "gardien": "robin",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 3,
+    "hp": 2
+  },
+  "duelliste": {
+    "id": "duelliste",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Duelliste"
+        },
+        "type": "Unite",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/duelliste.png"
+      }
+    },
+    "name": "Duelliste",
+    "type": "Unite",
+    "cost": 3,
+    "faction": "Ivrognes",
+    "gardien": "robin",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 4,
+    "hp": 2
+  },
+  "flambeur": {
+    "id": "flambeur",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Flambeur"
+        },
+        "type": "Unite",
+        "cost": 4,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/flambeur.png"
+      }
+    },
+    "name": "Flambeur",
+    "type": "Unite",
+    "cost": 4,
+    "faction": "Ivrognes",
+    "gardien": "robin",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 5,
+    "hp": 3
+  },
+  "gagnant": {
+    "id": "gagnant",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Grand gagnant"
+        },
+        "type": "Unite",
+        "cost": 5,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gagnant.png"
+      }
+    },
+    "name": "Grand gagnant",
+    "type": "Unite",
+    "cost": 5,
+    "faction": "Ivrognes",
+    "gardien": "robin",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 5,
+    "hp": 4
+  },
+  "double-rien": {
+    "id": "double-rien",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Double ou rien"
+        },
+        "type": "Sort",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/double-rien.png"
+      }
+    },
+    "name": "Double ou rien",
+    "type": "Sort",
+    "cost": 1,
+    "faction": "Ivrognes",
+    "gardien": "robin",
+    "_legal": {
+      "PROTO": 3
+    }
+  },
+  "coup-monte": {
+    "id": "coup-monte",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Coup monté"
+        },
+        "type": "Sort",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/coup-monte.png"
+      }
+    },
+    "name": "Coup monté",
+    "type": "Sort",
+    "cost": 2,
+    "faction": "Ivrognes",
+    "gardien": "robin",
+    "_legal": {
+      "PROTO": 3
+    }
+  },
+  "tapis": {
+    "id": "tapis",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Tapis !"
+        },
+        "type": "Sort",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tapis.png"
+      }
+    },
+    "name": "Tapis !",
+    "type": "Sort",
+    "cost": 3,
+    "faction": "Ivrognes",
+    "gardien": "robin",
+    "_legal": {
+      "PROTO": 3
+    }
+  },
+  "soffia": {
+    "id": "soffia",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Soffia"
+        },
+        "type": "Gardien",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/soffia.png"
+      }
+    },
+    "name": "Soffia",
+    "type": "Gardien",
+    "cost": 0,
+    "faction": "Mages",
+    "gardien": "soffia",
+    "_legal": {
+      "PROTO": 1
+    },
+    "power": 2,
+    "hp": 6
+  },
+  "cercle": {
+    "id": "cercle",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Cercle de runes"
+        },
+        "type": "Terrain",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cercle.png"
+      }
+    },
+    "name": "Cercle de runes",
+    "type": "Terrain",
+    "cost": 0,
+    "faction": "Mages",
+    "gardien": "soffia",
+    "_legal": {
+      "PROTO": 1
+    },
+    "hp": 5
+  },
+  "apprenti": {
+    "id": "apprenti",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Apprenti"
+        },
+        "type": "Unite",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/apprenti.png"
+      }
+    },
+    "name": "Apprenti",
+    "type": "Unite",
+    "cost": 1,
+    "faction": "Mages",
+    "gardien": "soffia",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 1
+  },
+  "bibliothecaire": {
+    "id": "bibliothecaire",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Bibliothécaire"
+        },
+        "type": "Unite",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bibliothecaire.png"
+      }
+    },
+    "name": "Bibliothécaire",
+    "type": "Unite",
+    "cost": 1,
+    "faction": "Mages",
+    "gardien": "soffia",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 0,
+    "hp": 2
+  },
+  "adepte": {
+    "id": "adepte",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Adepte des runes"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/adepte.png"
+      }
+    },
+    "name": "Adepte des runes",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Mages",
+    "gardien": "soffia",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 2
+  },
+  "etudiante": {
+    "id": "etudiante",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Étudiante studieuse"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/etudiante.png"
+      }
+    },
+    "name": "Étudiante studieuse",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Mages",
+    "gardien": "soffia",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 3
+  },
+  "garde-tour": {
+    "id": "garde-tour",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Garde de la tour"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/garde-tour.png"
+      }
+    },
+    "name": "Garde de la tour",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Mages",
+    "gardien": "soffia",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 3
+  },
+  "familier": {
+    "id": "familier",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Familier"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/familier.png"
+      }
+    },
+    "name": "Familier",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Mages",
+    "gardien": "soffia",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 2
+  },
+  "enchanteur": {
+    "id": "enchanteur",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Enchanteur"
+        },
+        "type": "Unite",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/enchanteur.png"
+      }
+    },
+    "name": "Enchanteur",
+    "type": "Unite",
+    "cost": 3,
+    "faction": "Mages",
+    "gardien": "soffia",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 3
+  },
+  "mage-bataille": {
+    "id": "mage-bataille",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Mage de bataille"
+        },
+        "type": "Unite",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mage-bataille.png"
+      }
+    },
+    "name": "Mage de bataille",
+    "type": "Unite",
+    "cost": 3,
+    "faction": "Mages",
+    "gardien": "soffia",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 3
+  },
+  "mage-errant": {
+    "id": "mage-errant",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Mage errant"
+        },
+        "type": "Unite",
+        "cost": 4,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mage-errant.png"
+      }
+    },
+    "name": "Mage errant",
+    "type": "Unite",
+    "cost": 4,
+    "faction": "Mages",
+    "gardien": "soffia",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 3,
+    "hp": 4
+  },
+  "sentinelle-cristal": {
+    "id": "sentinelle-cristal",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Sentinelle de cristal"
+        },
+        "type": "Unite",
+        "cost": 5,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sentinelle-cristal.png"
+      }
+    },
+    "name": "Sentinelle de cristal",
+    "type": "Unite",
+    "cost": 5,
+    "faction": "Mages",
+    "gardien": "soffia",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 4,
+    "hp": 6
+  },
+  "projectile": {
+    "id": "projectile",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Projectile magique"
+        },
+        "type": "Sort",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/projectile.png"
+      }
+    },
+    "name": "Projectile magique",
+    "type": "Sort",
+    "cost": 1,
+    "faction": "Mages",
+    "gardien": "soffia",
+    "_legal": {
+      "PROTO": 3
+    }
+  },
+  "dissipation": {
+    "id": "dissipation",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Dissipation"
+        },
+        "type": "Sort",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/dissipation.png"
+      }
+    },
+    "name": "Dissipation",
+    "type": "Sort",
+    "cost": 2,
+    "faction": "Mages",
+    "gardien": "soffia",
+    "_legal": {
+      "PROTO": 3
+    }
+  },
+  "convergence": {
+    "id": "convergence",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Convergence"
+        },
+        "type": "Sort",
+        "cost": 5,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/convergence.png"
+      }
+    },
+    "name": "Convergence",
+    "type": "Sort",
+    "cost": 5,
+    "faction": "Mages",
+    "gardien": "soffia",
+    "_legal": {
+      "PROTO": 1
+    }
+  },
+  "orsin": {
+    "id": "orsin",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Orsin le runiste"
+        },
+        "type": "Gardien",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/orsin.png"
+      }
+    },
+    "name": "Orsin le runiste",
+    "type": "Gardien",
+    "cost": 0,
+    "faction": "Mages",
+    "gardien": "orsin",
+    "_legal": {
+      "PROTO": 1
+    },
+    "power": 2,
+    "hp": 7
+  },
+  "sanctuaire": {
+    "id": "sanctuaire",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Sanctuaire runique"
+        },
+        "type": "Terrain",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sanctuaire.png"
+      }
+    },
+    "name": "Sanctuaire runique",
+    "type": "Terrain",
+    "cost": 0,
+    "faction": "Mages",
+    "gardien": "orsin",
+    "_legal": {
+      "PROTO": 1
+    },
+    "hp": 7
+  },
+  "scribe": {
+    "id": "scribe",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Scribe des runes"
+        },
+        "type": "Unite",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/scribe.png"
+      }
+    },
+    "name": "Scribe des runes",
+    "type": "Unite",
+    "cost": 1,
+    "faction": "Mages",
+    "gardien": "orsin",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 0,
+    "hp": 3
+  },
+  "veilleur": {
+    "id": "veilleur",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Veilleur"
+        },
+        "type": "Unite",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/veilleur.png"
+      }
+    },
+    "name": "Veilleur",
+    "type": "Unite",
+    "cost": 1,
+    "faction": "Mages",
+    "gardien": "orsin",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 2
+  },
+  "graveur": {
+    "id": "graveur",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Graveur de sceaux"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/graveur.png"
+      }
+    },
+    "name": "Graveur de sceaux",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Mages",
+    "gardien": "orsin",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 3
+  },
+  "acolyte": {
+    "id": "acolyte",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Acolyte du bouclier"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/acolyte.png"
+      }
+    },
+    "name": "Acolyte du bouclier",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Mages",
+    "gardien": "orsin",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 4
+  },
+  "sentinelle-runique": {
+    "id": "sentinelle-runique",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Sentinelle runique"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sentinelle-runique.png"
+      }
+    },
+    "name": "Sentinelle runique",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Mages",
+    "gardien": "orsin",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 3
+  },
+  "tisseuse": {
+    "id": "tisseuse",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Tisseuse de protections"
+        },
+        "type": "Unite",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tisseuse.png"
+      }
+    },
+    "name": "Tisseuse de protections",
+    "type": "Unite",
+    "cost": 3,
+    "faction": "Mages",
+    "gardien": "orsin",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 4
+  },
+  "portier": {
+    "id": "portier",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Portier du seuil"
+        },
+        "type": "Unite",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/portier.png"
+      }
+    },
+    "name": "Portier du seuil",
+    "type": "Unite",
+    "cost": 3,
+    "faction": "Mages",
+    "gardien": "orsin",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 5
+  },
+  "statue": {
+    "id": "statue",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Statue animée"
+        },
+        "type": "Unite",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/statue.png"
+      }
+    },
+    "name": "Statue animée",
+    "type": "Unite",
+    "cost": 3,
+    "faction": "Mages",
+    "gardien": "orsin",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 0,
+    "hp": 7
+  },
+  "maitre-glyphes": {
+    "id": "maitre-glyphes",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Maître des glyphes"
+        },
+        "type": "Unite",
+        "cost": 4,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/maitre-glyphes.png"
+      }
+    },
+    "name": "Maître des glyphes",
+    "type": "Unite",
+    "cost": 4,
+    "faction": "Mages",
+    "gardien": "orsin",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 5
+  },
+  "colosse": {
+    "id": "colosse",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Colosse runique"
+        },
+        "type": "Unite",
+        "cost": 5,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/colosse.png"
+      }
+    },
+    "name": "Colosse runique",
+    "type": "Unite",
+    "cost": 5,
+    "faction": "Mages",
+    "gardien": "orsin",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 3,
+    "hp": 8
+  },
+  "bouclier-runique": {
+    "id": "bouclier-runique",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Bouclier runique"
+        },
+        "type": "Sort",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bouclier-runique.png"
+      }
+    },
+    "name": "Bouclier runique",
+    "type": "Sort",
+    "cost": 1,
+    "faction": "Mages",
+    "gardien": "orsin",
+    "_legal": {
+      "PROTO": 3
+    }
+  },
+  "repulsion": {
+    "id": "repulsion",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Répulsion"
+        },
+        "type": "Sort",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/repulsion.png"
+      }
+    },
+    "name": "Répulsion",
+    "type": "Sort",
+    "cost": 2,
+    "faction": "Mages",
+    "gardien": "orsin",
+    "_legal": {
+      "PROTO": 3
+    }
+  },
+  "citadelle": {
+    "id": "citadelle",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Citadelle de runes"
+        },
+        "type": "Sort",
+        "cost": 5,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/citadelle.png"
+      }
+    },
+    "name": "Citadelle de runes",
+    "type": "Sort",
+    "cost": 5,
+    "faction": "Mages",
+    "gardien": "orsin",
+    "_legal": {
+      "PROTO": 1
+    }
+  },
+  "ignis": {
+    "id": "ignis",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Ignis la pyromancienne"
+        },
+        "type": "Gardien",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ignis.png"
+      }
+    },
+    "name": "Ignis la pyromancienne",
+    "type": "Gardien",
+    "cost": 0,
+    "faction": "Mages",
+    "gardien": "ignis",
+    "_legal": {
+      "PROTO": 1
+    },
+    "power": 3,
+    "hp": 5
+  },
+  "foyer": {
+    "id": "foyer",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Foyer instable"
+        },
+        "type": "Terrain",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/foyer.png"
+      }
+    },
+    "name": "Foyer instable",
+    "type": "Terrain",
+    "cost": 0,
+    "faction": "Mages",
+    "gardien": "ignis",
+    "_legal": {
+      "PROTO": 1
+    },
+    "hp": 4
+  },
+  "feu-follet": {
+    "id": "feu-follet",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Feu follet"
+        },
+        "type": "Unite",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/feu-follet.png"
+      }
+    },
+    "name": "Feu follet",
+    "type": "Unite",
+    "cost": 1,
+    "faction": "Mages",
+    "gardien": "ignis",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 1
+  },
+  "novice-feu": {
+    "id": "novice-feu",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Novice du feu"
+        },
+        "type": "Unite",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/novice-feu.png"
+      }
+    },
+    "name": "Novice du feu",
+    "type": "Unite",
+    "cost": 1,
+    "faction": "Mages",
+    "gardien": "ignis",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 1
+  },
+  "jongleur": {
+    "id": "jongleur",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Jongleur de flammes"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/jongleur.png"
+      }
+    },
+    "name": "Jongleur de flammes",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Mages",
+    "gardien": "ignis",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 1
+  },
+  "salamandre": {
+    "id": "salamandre",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Salamandre"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/salamandre.png"
+      }
+    },
+    "name": "Salamandre",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Mages",
+    "gardien": "ignis",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 2
+  },
+  "pyromane": {
+    "id": "pyromane",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Pyromane"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pyromane.png"
+      }
+    },
+    "name": "Pyromane",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Mages",
+    "gardien": "ignis",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 2
+  },
+  "embraseuse": {
+    "id": "embraseuse",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Embraseuse"
+        },
+        "type": "Unite",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/embraseuse.png"
+      }
+    },
+    "name": "Embraseuse",
+    "type": "Unite",
+    "cost": 3,
+    "faction": "Mages",
+    "gardien": "ignis",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 3,
+    "hp": 2
+  },
+  "elementaire": {
+    "id": "elementaire",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Élémentaire de feu"
+        },
+        "type": "Unite",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/elementaire.png"
+      }
+    },
+    "name": "Élémentaire de feu",
+    "type": "Unite",
+    "cost": 3,
+    "faction": "Mages",
+    "gardien": "ignis",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 4,
+    "hp": 2
+  },
+  "mage-cendres": {
+    "id": "mage-cendres",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Mage des cendres"
+        },
+        "type": "Unite",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mage-cendres.png"
+      }
+    },
+    "name": "Mage des cendres",
+    "type": "Unite",
+    "cost": 3,
+    "faction": "Mages",
+    "gardien": "ignis",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 2
+  },
+  "phenix": {
+    "id": "phenix",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Phénix"
+        },
+        "type": "Unite",
+        "cost": 4,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/phenix.png"
+      }
+    },
+    "name": "Phénix",
+    "type": "Unite",
+    "cost": 4,
+    "faction": "Mages",
+    "gardien": "ignis",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 3,
+    "hp": 3
+  },
+  "incarnation": {
+    "id": "incarnation",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Incarnation du brasier"
+        },
+        "type": "Unite",
+        "cost": 5,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/incarnation.png"
+      }
+    },
+    "name": "Incarnation du brasier",
+    "type": "Unite",
+    "cost": 5,
+    "faction": "Mages",
+    "gardien": "ignis",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 6,
+    "hp": 3
+  },
+  "trait-feu": {
+    "id": "trait-feu",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Trait de feu"
+        },
+        "type": "Sort",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/trait-feu.png"
+      }
+    },
+    "name": "Trait de feu",
+    "type": "Sort",
+    "cost": 1,
+    "faction": "Mages",
+    "gardien": "ignis",
+    "_legal": {
+      "PROTO": 3
+    }
+  },
+  "boule-feu": {
+    "id": "boule-feu",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Boule de feu"
+        },
+        "type": "Sort",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/boule-feu.png"
+      }
+    },
+    "name": "Boule de feu",
+    "type": "Sort",
+    "cost": 3,
+    "faction": "Mages",
+    "gardien": "ignis",
+    "_legal": {
+      "PROTO": 3
+    }
+  },
+  "meteore": {
+    "id": "meteore",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Météore"
+        },
+        "type": "Sort",
+        "cost": 5,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/meteore.png"
+      }
+    },
+    "name": "Météore",
+    "type": "Sort",
+    "cost": 5,
+    "faction": "Mages",
+    "gardien": "ignis",
+    "_legal": {
+      "PROTO": 1
+    }
+  },
+  "garcon-cave": {
+    "id": "garcon-cave",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Garçon de cave"
+        },
+        "type": "Unite",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/garcon-cave.png"
+      }
+    },
+    "name": "Garçon de cave",
+    "type": "Unite",
+    "cost": 1,
+    "faction": "Ivrognes",
+    "gardien": "rosa",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 2
+  },
+  "tonnelier": {
+    "id": "tonnelier",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Tonnelier"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tonnelier.png"
+      }
+    },
+    "name": "Tonnelier",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Ivrognes",
+    "gardien": "rosa",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 3
+  },
+  "pilier": {
+    "id": "pilier",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Pilier de comptoir"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pilier.png"
+      }
+    },
+    "name": "Pilier de comptoir",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Ivrognes",
+    "gardien": "rosa",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 4
+  },
+  "gardienne-fut": {
+    "id": "gardienne-fut",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Gardienne du fût"
+        },
+        "type": "Unite",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gardienne-fut.png"
+      }
+    },
+    "name": "Gardienne du fût",
+    "type": "Unite",
+    "cost": 3,
+    "faction": "Ivrognes",
+    "gardien": "rosa",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 5
+  },
+  "videuse-chef": {
+    "id": "videuse-chef",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Videuse en chef"
+        },
+        "type": "Unite",
+        "cost": 4,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/videuse-chef.png"
+      }
+    },
+    "name": "Videuse en chef",
+    "type": "Unite",
+    "cost": 4,
+    "faction": "Ivrognes",
+    "gardien": "rosa",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 3,
+    "hp": 5
+  },
+  "ours": {
+    "id": "ours",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Ours de la brasserie"
+        },
+        "type": "Unite",
+        "cost": 5,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ours.png"
+      }
+    },
+    "name": "Ours de la brasserie",
+    "type": "Unite",
+    "cost": 5,
+    "faction": "Ivrognes",
+    "gardien": "rosa",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 3,
+    "hp": 8
+  },
+  "fermeture": {
+    "id": "fermeture",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Fermeture !"
+        },
+        "type": "Sort",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/fermeture.png"
+      }
+    },
+    "name": "Fermeture !",
+    "type": "Sort",
+    "cost": 2,
+    "faction": "Ivrognes",
+    "gardien": "rosa",
+    "_legal": {
+      "PROTO": 3
+    }
+  },
+  "cuisinier": {
+    "id": "cuisinier",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Cuisinier de la taverne"
+        },
+        "type": "Unite",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cuisinier.png"
+      }
+    },
+    "name": "Cuisinier de la taverne",
+    "type": "Unite",
+    "cost": 3,
+    "faction": "Ivrognes",
+    "gardien": "guss",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 4
+  },
+  "semeuse": {
+    "id": "semeuse",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Semeuse"
+        },
+        "type": "Unite",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/semeuse.png"
+      }
+    },
+    "name": "Semeuse",
+    "type": "Unite",
+    "cost": 1,
+    "faction": "Druides",
+    "gardien": "cernun",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 2
+  },
+  "herboriste": {
+    "id": "herboriste",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Herboriste"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/herboriste.png"
+      }
+    },
+    "name": "Herboriste",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Druides",
+    "gardien": "cernun",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 3
+  },
+  "greffeur": {
+    "id": "greffeur",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Druide greffeur"
+        },
+        "type": "Unite",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/greffeur.png"
+      }
+    },
+    "name": "Druide greffeur",
+    "type": "Unite",
+    "cost": 3,
+    "faction": "Druides",
+    "gardien": "cernun",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 3,
+    "tokens": [
+      "pousse",
+      "loup"
+    ]
+  },
+  "ours-clairiere": {
+    "id": "ours-clairiere",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Ours des clairières"
+        },
+        "type": "Unite",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ours-clairiere.png"
+      }
+    },
+    "name": "Ours des clairières",
+    "type": "Unite",
+    "cost": 3,
+    "faction": "Druides",
+    "gardien": "cernun",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 3,
+    "hp": 4
+  },
+  "cerf": {
+    "id": "cerf",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Cerf ancestral"
+        },
+        "type": "Unite",
+        "cost": 4,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cerf.png"
+      }
+    },
+    "name": "Cerf ancestral",
+    "type": "Unite",
+    "cost": 4,
+    "faction": "Druides",
+    "gardien": "cernun",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 3,
+    "hp": 5,
+    "tokens": [
+      "pousse"
+    ]
+  },
+  "recolte": {
+    "id": "recolte",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Récolte abondante"
+        },
+        "type": "Sort",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/recolte.png"
+      }
+    },
+    "name": "Récolte abondante",
+    "type": "Sort",
+    "cost": 2,
+    "faction": "Druides",
+    "gardien": "cernun",
+    "_legal": {
+      "PROTO": 3
+    }
+  },
+  "crapaud": {
+    "id": "crapaud",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Crapaud vénéneux"
+        },
+        "type": "Unite",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/crapaud.png"
+      }
+    },
+    "name": "Crapaud vénéneux",
+    "type": "Unite",
+    "cost": 1,
+    "faction": "Druides",
+    "gardien": "belladone",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 1
+  },
+  "araignee-ronces": {
+    "id": "araignee-ronces",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Araignée des ronces"
+        },
+        "type": "Unite",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/araignee-ronces.png"
+      }
+    },
+    "name": "Araignée des ronces",
+    "type": "Unite",
+    "cost": 1,
+    "faction": "Druides",
+    "gardien": "belladone",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 0,
+    "hp": 2
+  },
+  "mur-ronces": {
+    "id": "mur-ronces",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Mur de ronces"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mur-ronces.png"
+      }
+    },
+    "name": "Mur de ronces",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Druides",
+    "gardien": "belladone",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 0,
+    "hp": 5
+  },
+  "sorciere": {
+    "id": "sorciere",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Sorcière des marais"
+        },
+        "type": "Unite",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sorciere.png"
+      }
+    },
+    "name": "Sorcière des marais",
+    "type": "Unite",
+    "cost": 3,
+    "faction": "Druides",
+    "gardien": "belladone",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 3
+  },
+  "mandragore": {
+    "id": "mandragore",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Mandragore"
+        },
+        "type": "Unite",
+        "cost": 4,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mandragore.png"
+      }
+    },
+    "name": "Mandragore",
+    "type": "Unite",
+    "cost": 4,
+    "faction": "Druides",
+    "gardien": "belladone",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 6
+  },
+  "enchevetrement": {
+    "id": "enchevetrement",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Enchevêtrement"
+        },
+        "type": "Sort",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/enchevetrement.png"
+      }
+    },
+    "name": "Enchevêtrement",
+    "type": "Sort",
+    "cost": 2,
+    "faction": "Druides",
+    "gardien": "belladone",
+    "_legal": {
+      "PROTO": 3
+    }
+  },
+  "louveteau": {
+    "id": "louveteau",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Louveteau"
+        },
+        "type": "Unite",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/louveteau.png"
+      }
+    },
+    "name": "Louveteau",
+    "type": "Unite",
+    "cost": 1,
+    "faction": "Druides",
+    "gardien": "sylve",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 1
+  },
+  "faucon": {
+    "id": "faucon",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Faucon chasseur"
+        },
+        "type": "Unite",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/faucon.png"
+      }
+    },
+    "name": "Faucon chasseur",
+    "type": "Unite",
+    "cost": 1,
+    "faction": "Druides",
+    "gardien": "sylve",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 1,
+    "hp": 1
+  },
+  "chasseresse": {
+    "id": "chasseresse",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Chasseresse"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chasseresse.png"
+      }
+    },
+    "name": "Chasseresse",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Druides",
+    "gardien": "sylve",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 2,
+    "hp": 2,
+    "tokens": [
+      "loup"
+    ]
+  },
+  "lynx": {
+    "id": "lynx",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Lynx des ombres"
+        },
+        "type": "Unite",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lynx.png"
+      }
+    },
+    "name": "Lynx des ombres",
+    "type": "Unite",
+    "cost": 2,
+    "faction": "Druides",
+    "gardien": "sylve",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 3,
+    "hp": 1
+  },
+  "loup-alpha": {
+    "id": "loup-alpha",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Loup alpha"
+        },
+        "type": "Unite",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/loup-alpha.png"
+      }
+    },
+    "name": "Loup alpha",
+    "type": "Unite",
+    "cost": 3,
+    "faction": "Druides",
+    "gardien": "sylve",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 3,
+    "hp": 3,
+    "tokens": [
+      "loup"
+    ]
+  },
+  "ours-enrage": {
+    "id": "ours-enrage",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Ours enragé"
+        },
+        "type": "Unite",
+        "cost": 4,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ours-enrage.png"
+      }
+    },
+    "name": "Ours enragé",
+    "type": "Unite",
+    "cost": 4,
+    "faction": "Druides",
+    "gardien": "sylve",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 5,
+    "hp": 3
+  },
+  "loup-blanc": {
+    "id": "loup-blanc",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Grand loup blanc"
+        },
+        "type": "Unite",
+        "cost": 5,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/loup-blanc.png"
+      }
+    },
+    "name": "Grand loup blanc",
+    "type": "Unite",
+    "cost": 5,
+    "faction": "Druides",
+    "gardien": "sylve",
+    "_legal": {
+      "PROTO": 3
+    },
+    "power": 5,
+    "hp": 4,
+    "tokens": [
+      "loup"
+    ]
+  },
+  "hallali": {
+    "id": "hallali",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Hallali"
+        },
+        "type": "Sort",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/hallali.png"
+      }
+    },
+    "name": "Hallali",
+    "type": "Sort",
+    "cost": 2,
+    "faction": "Druides",
+    "gardien": "sylve",
+    "_legal": {
+      "PROTO": 3
+    },
+    "tokens": [
+      "loup"
+    ]
   },
   "gobelin": {
     "id": "gobelin",
@@ -1167,7 +3405,7 @@
     "name": "Lanterne du mineur",
     "type": "Relique",
     "cost": 0,
-    "faction": "Mine des Gobelins",
+    "faction": "Relique",
     "isToken": true
   },
   "pioche-runique": {
@@ -1185,7 +3423,7 @@
     "name": "Pioche runique",
     "type": "Relique",
     "cost": 0,
-    "faction": "Mine des Gobelins",
+    "faction": "Relique",
     "isToken": true
   },
   "bourse": {
@@ -1203,93 +3441,43 @@
     "name": "Bourse du contremaître",
     "type": "Relique",
     "cost": 0,
-    "faction": "Mine des Gobelins",
+    "faction": "Relique",
     "isToken": true
   },
-  "bosquet": {
-    "id": "bosquet",
+  "carte-tresor": {
+    "id": "carte-tresor",
     "face": {
       "front": {
         "name": {
-          "name": "Bosquet ancien"
+          "name": "Carte au trésor"
         },
-        "type": "Terrain",
+        "type": "Tresor",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/carte-tresor.png"
       }
     },
-    "name": "Bosquet ancien",
-    "type": "Terrain",
+    "name": "Carte au trésor",
+    "type": "Tresor",
     "cost": 0,
-    "faction": "Druides",
-    "_legal": {
-      "PROTO": 1
-    },
-    "power": 0,
-    "hp": 5
+    "faction": "Relique",
+    "isToken": true
   },
-  "bosquet-poison": {
-    "id": "bosquet-poison",
+  "energie": {
+    "id": "energie",
     "face": {
       "front": {
         "name": {
-          "name": "Bosquet empoisonné"
+          "name": "Énergie"
         },
-        "type": "Terrain",
+        "type": "Energie",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-poison.png"
+        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/energie.png"
       }
     },
-    "name": "Bosquet empoisonné",
-    "type": "Terrain",
+    "name": "Énergie",
+    "type": "Energie",
     "cost": 0,
-    "faction": "Druides",
-    "_legal": {
-      "PROTO": 1
-    },
-    "power": 0,
-    "hp": 5
-  },
-  "bosquet-ombre": {
-    "id": "bosquet-ombre",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Bosquet d'ombre"
-        },
-        "type": "Terrain",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-ombre.png"
-      }
-    },
-    "name": "Bosquet d'ombre",
-    "type": "Terrain",
-    "cost": 0,
-    "faction": "Druides",
-    "_legal": {
-      "PROTO": 1
-    },
-    "power": 0,
-    "hp": 3
-  },
-  "transplantation": {
-    "id": "transplantation",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Transplantation"
-        },
-        "type": "Sort",
-        "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/transplantation.png"
-      }
-    },
-    "name": "Transplantation",
-    "type": "Sort",
-    "cost": 2,
-    "faction": "Druides",
-    "_legal": {
-      "PROTO": 3
-    }
+    "faction": "Energie",
+    "isToken": true
   }
 }
