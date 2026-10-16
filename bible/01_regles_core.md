@@ -16,12 +16,12 @@ Termes : voir `00_glossaire.md`.
 3. **Assaut** :
    - Les unités posées arrivent directement dans l'Expédition voulue ou au Camp.
    - Une unité déjà en jeu se déplace 1 fois par tour : d'une Expédition vers une voisine ou le Camp, ou du Camp vers n'importe quelle Expédition. Blessée : seulement au Camp (elle passe En soin).
-   - Attaquer est optionnel. Combat, salle par salle : choisis tes attaquants de la salle et leur cible (monstre, unité ou Terrain adverse ; Protecteur respecté). Un Duel, puis les frappes :
+   - Attaquer est optionnel. Combat, salle par salle (ordre libre ; un combat se termine avant le suivant) : choisis tes attaquants de la salle et, pour chacun, sa cible (monstre, unité ou Terrain adverse ; Protecteur respecté). Un Duel (l'adversaire joue ou passe en premier), puis les frappes :
      1. Le monstre frappe 1 attaquant présent, choisi par l'adversaire.
-     2. Tes attaquants debout frappent ensemble. Dégâts = Puissance ; chaque frappe est une attaque.
-     3. Mêlée (l'adversaire a des unités dans la salle) : chacune frappe 1 fois la cible de son choix dans la salle. Si certaines frappent le monstre, il riposte sur 1 d'entre elles, choisie par toi, avant leurs frappes.
-   - Chaque unité frappe 1 fois par tour ; Rapide : 1 fois de plus après avoir changé de salle.
-   - Mêlée : le coup de grâce prend trésors et relique ; les unités du perdant qui ont frappé peuvent faire un Repli.
+     2. Tes attaquants debout et non Sonnés frappent tous en même temps. Dégâts = Puissance ; chaque frappe est une attaque.
+     3. Mêlée (l'adversaire a des unités dans son Expédition face à la salle) : chacune frappe 1 fois la cible de son choix (tes unités, ton Terrain ou le monstre). Si certaines frappent le monstre, il riposte sur 1 d'entre elles, choisie par toi, avant leurs frappes.
+   - Chaque unité frappe 1 fois par tour de joueur ; Rapide : 1 fois de plus après avoir changé de salle.
+   - Mêlée : le coup de grâce prend trésors et relique ; si l'adversaire a tué le monstre, tes unités qui ont attaqué peuvent faire un Repli.
    - Ensuite, 1 raid max sur le Camp adverse (voir Raid).
 4. **Retrait** : trésors au compteur, niveau du Terrain.
 

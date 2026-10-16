@@ -215,18 +215,19 @@ a{color:var(--accent)}
   </ul>
 
   <h3>Fighting</h3>
-  <p>Attacking is <strong>optional</strong>: staying in a room without attacking triggers nothing. Room by room, choose your attackers and their target (the monster, an enemy unit or the enemy Terrain; <span class="kw">Protector</span> applies). Then:</p>
+  <p>Attacking is <strong>optional</strong>: being in a room without attacking triggers nothing. You fight <strong>room by room</strong>, in any order; one combat ends before the next begins. Between two combats you can still play and move units.</p>
   <ol class="steps">
-    <li><strong>Duel.</strong> Your opponent responds first, then each player in turn plays a <span class="kw">Reflex</span> card, a bonus from their Terrain (if the Duel takes place in its room), or passes. Two passes in a row: strike.</li>
-    <li><strong>The monster strikes</strong> 1 of your present attackers, <strong>chosen by your opponent</strong>.</li>
-    <li><strong>Your standing attackers strike together.</strong> Damage = Power.</li>
-    <li><strong>Brawl</strong>, if your opponent has units in the room: each one strikes once at the target of its choice in the room. If some strike the monster, it first strikes back at 1 of them, chosen by you.</li>
+    <li><strong>Declare.</strong> Choose your attackers in this room (and at <span class="kw">Reach</span> from a neighboring one) and, for <strong>each one</strong>, its target: the monster, an enemy unit or the enemy Terrain in the room (<span class="kw">Protector</span> applies). A Stunned unit can be declared: it won't strike.</li>
+    <li><strong>Duel.</strong> Your opponent goes first: a <span class="kw">Reflex</span> card, a bonus from their Terrain if it is in this room, or pass. Then you, and so on. Two passes in a row: the Duel is over.</li>
+    <li><strong>The monster strikes</strong> 1 of your <strong>present</strong> attackers, <strong>chosen by your opponent</strong> (Protector applies). It strikes even if you attack another target. Units at Reach are not present.</li>
+    <li><strong>Your attackers all strike at the same time.</strong> Those that are dead or Stunned don't strike. Damage = Power.</li>
+    <li><strong>Brawl</strong>, only if your opponent has units in their Expedition facing this room: each one strikes once at the target of its choice (your units, your Terrain or the monster). If some strike the monster, it first strikes back at 1 of them, chosen by you.</li>
   </ol>
-  <p>Each unit strikes <strong>once per turn</strong>. <span class="kw">Swift</span>: once more after changing rooms.</p>
-
+  <p>Each unit strikes <strong>once per player turn</strong>: a unit that struck in a Brawl during your turn can still attack on its own turn. <span class="kw">Swift</span>: after its combat, the unit may change rooms and attack once more.</p>
+  <div class="note"><strong>Example.</strong> Room 2: a Goblin Snoop (2/3, 1 treasure). You have Drunken Soldier (4/4) and Barmaid (1/3) in your Exp. 2; your opponent has a Wolf Cub (2/1) in theirs.<ol><li>You declare: Drunken Soldier → Goblin, Barmaid → Wolf Cub.</li><li>Duel: your opponent passes, you pass.</li><li>The Goblin strikes: your opponent picks the Barmaid (2 damage, she has 1 HP left).</li><li>Your strikes: Drunken Soldier deals 4 damage to the Goblin (dead), Barmaid deals 1 to the Wolf Cub (dead). You take the treasure.</li><li>Brawl: the Wolf Cub is dead, it doesn't strike.</li></ol></div>
   <h3>The killing blow</h3>
   <p>A monster's <strong>killer</strong> is the player who controls the source of the last damage (unit, spell, Terrain). They take <strong>all</strong> of the monster's treasure, and its relic if it has one. In a Brawl, the kill can be stolen.</p>
-  <div class="note"><strong>Fall back</strong>: after a lost Brawl, your units that attacked may return to the Camp (not if Snared).</div>
+  <div class="note"><span class="kw">Fall back</span>: if your opponent kills the monster during a Brawl, your units that attacked may return to the Camp (not if Snared).</div>
 
   <h3>Spells</h3>
   <ul>
