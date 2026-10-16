@@ -34,6 +34,10 @@ TYPE_LABEL = {"Gardien": "Gardien", "Unite": "Unité", "Sort": "Sort", "Baril": 
               "Monstre": "Monstre", "Boss": "Boss", "Relique": "Relique", "Tresor": "Trésor",
               "Energie": "Énergie", "Alcool": "Alcool",
               "Ingredient": "Ingrédient", "Recettes": "Recettes"}
+# Libellés dessinés sur les cartes (from_bible.py les remplace pour dessiner la version anglaise)
+LABELS = {"evolue_big": "ÉVOLUÉ", "relique": "◆ RELIQUE", "illus": "illustration à venir", "evolue": " évolué",
+          "tresor": ("trésor", "trésors"), "P": "P", "PV": "PV"}
+FACTION_LABEL = {}
 
 
 def C(id, name, type, cost, faction, text="", power=None, hp=None, legal=3, token=False, tokens=None,
@@ -406,21 +410,22 @@ def draw_card(c, path):
 
     # Illustration (placeholder)
     d.rounded_rectangle((24, 114, W - 25, top), radius=14, fill=(12, 10, 10))
-    big = c.get("big") or ("ÉVOLUÉ" if c.get("verso") else TYPE_LABEL[c["type"]].upper())
+    big = c.get("big") or (LABELS["evolue_big"] if c.get("verso") else TYPE_LABEL[c["type"]].upper())
     d.text((W // 2, 136 if fiche else 205), big, font=font(30 if fiche else 44, True), fill=frame, anchor="mm")
     if c.get("relique"):
         d.rounded_rectangle((W - 190, 122, W - 33, 160), radius=10, fill=(225, 190, 70))
-        d.text((W - 111, 141), "◆ RELIQUE", font=font(20, True), fill=(40, 25, 5), anchor="mm")
+        d.text((W - 111, 141), LABELS["relique"], font=font(20, True), fill=(40, 25, 5), anchor="mm")
     fac = c["faction"] if c["type"] not in ("Monstre", "Boss", "Energie", "Relique") and c["faction"] != "Relique" else ""
+    fac = FACTION_LABEL.get(fac, fac)
     if fac:
         d.text((W // 2, 160 if fiche else 260), fac.upper(), font=font(16 if fiche else 22, True), fill=(200, 200, 205), anchor="mm")
     if not fiche:
-        d.text((W // 2, 300), "illustration à venir", font=font(17), fill=(120, 120, 130), anchor="mm")
+        d.text((W // 2, 300), LABELS["illus"], font=font(17), fill=(120, 120, 130), anchor="mm")
 
     # Ligne de type
-    tl = TYPE_LABEL[c["type"]] + (f" — {c['faction']}" if fac else "")
+    tl = TYPE_LABEL[c["type"]] + (f" — {fac}" if fac else "")
     if c.get("tresors") is not None:
-        tl = TYPE_LABEL[c["type"]] + (" évolué" if c.get("verso") else "") + f" — {c['tresors']} trésor" + ("s" if c["tresors"] > 1 else "")
+        tl = TYPE_LABEL[c["type"]] + (LABELS["evolue"] if c.get("verso") else "") + f" — {c['tresors']} " + LABELS["tresor"][c["tresors"] > 1]
     d.text((30, top + 16), tl, font=font(22, True), fill=frame)
 
     # Texte de règles (taille auto)
@@ -445,13 +450,16 @@ def draw_card(c, path):
 
     # Stats
     if c["power"] is not None:
-        for (x0, label) in ((24, f"P {c['power']}"), (W - 154, f"PV {c['hp']}")):
+        for (x0, label) in ((24, f"{LABELS['P']} {c['power']}"), (W - 154, f"{LABELS['PV']} {c['hp']}")):
             d.rounded_rectangle((x0, H - 98, x0 + 130, H - 28), radius=14, fill=(15, 15, 25),
                                 outline="white", width=3)
-            d.text((x0 + 65, H - 63), label, font=font(34, True), fill="white", anchor="mm")
+            sf = font(34, True)
+            while d.textlength(label, font=sf) > 112:   # « PWR 10 » (anglais) doit tenir dans la case
+                sf = font(sf.size - 1, True)
+            d.text((x0 + 65, H - 63), label, font=sf, fill="white", anchor="mm")
     elif c.get("recto"):
         d.rounded_rectangle((W - 154, H - 98, W - 24, H - 28), radius=14, fill=(15, 15, 25), outline="white", width=3)
-        d.text((W - 89, H - 63), f"PV {c['hp_terrain']}", font=font(34, True), fill="white", anchor="mm")
+        d.text((W - 89, H - 63), f"{LABELS['PV']} {c['hp_terrain']}", font=font(34, True), fill="white", anchor="mm")
     img.save(path, optimize=True)
 
 

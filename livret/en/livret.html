@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guild Rush Rulebook</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500;700;800&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap">
+<style>
+/* Layout: single reading-column rulebook, sticky contents on the left on large screens, guild sheets as colored bands. */
+:root{
+  --bg:#efece4; --paper:#f8f6f0; --ink:#2a2420; --muted:#6c625a; --rule:#d8d0c2;
+  --accent:#8a2f22; --gold:#b8862b; --gold-soft:#f1e3c2;
+  --ivr:#a5651e; --ivr-soft:#f4e6d3; --dru:#3f7a3c; --dru-soft:#e0eedb; --mag:#4b54a8; --mag-soft:#e2e4f5;
+  --stone:#e3ddd1; --monster:#8a2f22;
+  --f-display:"Alegreya SC", "Palatino Linotype", Georgia, serif;
+  --f-body:"Alegreya", "Palatino Linotype", Georgia, serif;
+  --f-ui:"Alegreya Sans", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1b1916; --paper:#23201c; --ink:#ebe4d8; --muted:#a69b8d; --rule:#3c362f;
+  --accent:#e0806c; --gold:#d9a94b; --gold-soft:#3a3020;
+  --ivr:#e09a52; --ivr-soft:#352a1c; --dru:#7fbf74; --dru-soft:#1f2e1d; --mag:#9aa3ee; --mag-soft:#24263d;
+  --stone:#2d2924; --monster:#e0806c; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1b1916; --paper:#23201c; --ink:#ebe4d8; --muted:#a69b8d; --rule:#3c362f;
+  --accent:#e0806c; --gold:#d9a94b; --gold-soft:#3a3020;
+  --ivr:#e09a52; --ivr-soft:#352a1c; --dru:#7fbf74; --dru-soft:#1f2e1d; --mag:#9aa3ee; --mag-soft:#24263d;
+  --stone:#2d2924; --monster:#e0806c; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:1.12rem;line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:0 4rem}
+.wrap{max-width:68rem;margin:0 auto;display:grid;grid-template-columns:13rem minmax(0,1fr);gap:3rem}
+@media (max-width:860px){.wrap{grid-template-columns:minmax(0,1fr);gap:0}}
+nav.toc{position:sticky;top:calc(env(safe-area-inset-top, 0px) + 1.5rem);align-self:start;padding-top:3rem;font-family:var(--f-ui);font-size:.92rem}
+nav.toc ol{list-style:none;margin:0;padding:0;display:grid;gap:.15rem;counter-reset:t}
+nav.toc a{color:var(--muted);text-decoration:none;display:block;padding:.2rem .5rem;border-radius:4px}
+nav.toc a:hover,nav.toc a:focus-visible{color:var(--accent);background:var(--stone);outline:none}
+nav.toc .lbl{font-family:var(--f-display);color:var(--gold);letter-spacing:.08em;font-size:.85rem;margin:0 0 .6rem .5rem}
+@media (max-width:860px){nav.toc{position:static;padding-top:1rem}
+  nav.toc ol{display:flex;flex-wrap:wrap;gap:.3rem}
+  nav.toc a{border:1px solid var(--rule);padding:.15rem .55rem}}
+main{min-width:0;max-width:44rem}
+header.hero{padding:3.5rem 0 2rem;border-bottom:2px solid var(--ink);margin-bottom:1rem}
+.eyebrow{font-family:var(--f-ui);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 .6rem}
+h1{font-family:var(--f-display);font-weight:800;font-size:clamp(2.6rem,7vw,4.2rem);line-height:1;margin:0 0 1rem;letter-spacing:.01em}
+h1 span{color:var(--accent)}
+.lede{font-size:1.25rem;margin:0;max-width:38rem;text-wrap:pretty}
+section{padding-top:2.2rem;scroll-margin-top:1rem}
+h2{font-family:var(--f-display);font-weight:700;font-size:1.75rem;margin:0 0 .8rem;display:flex;gap:.7rem;align-items:baseline;text-wrap:balance}
+h2 .n{font-family:var(--f-ui);font-size:.85rem;font-weight:700;color:var(--paper);background:var(--accent);border-radius:999px;min-width:1.8rem;height:1.8rem;display:inline-grid;place-items:center;flex:none;transform:translateY(-.2rem)}
+h3{font-family:var(--f-display);font-weight:700;font-size:1.25rem;margin:1.6rem 0 .5rem}
+p{margin:.6rem 0}
+ul,ol.steps{margin:.6rem 0;padding-left:1.3rem}
+li{margin:.3rem 0}
+strong{font-weight:700}
+.kw{font-weight:700;color:var(--accent)}
+.note{font-family:var(--f-ui);font-size:.95rem;background:var(--gold-soft);border-left:4px solid var(--gold);padding:.7rem 1rem;border-radius:0 6px 6px 0;margin:1rem 0}
+.tbl{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-family:var(--f-ui);font-size:.97rem}
+th,td{text-align:left;padding:.5rem .7rem;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}
+td:first-child{white-space:nowrap;font-weight:700}
+td.wrap1{white-space:normal}
+.win{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1rem;margin:1rem 0}
+.win div{background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:1rem 1.1rem}
+.win b{display:block;font-family:var(--f-display);font-size:2.4rem;line-height:1;color:var(--gold)}
+.win span{font-family:var(--f-ui);font-size:.95rem}
+/* board */
+.board{overflow-x:auto;margin:1.2rem 0}
+.bgrid{min-width:34rem;display:grid;grid-template-columns:5.5rem repeat(4,1fr) 6.5rem;gap:.4rem;font-family:var(--f-ui);font-size:.85rem;text-align:center}
+.bgrid .lab{color:var(--muted);align-self:center;text-align:right;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
+.exp{border:1.5px dashed var(--rule);border-radius:6px;padding:.55rem .3rem;color:var(--muted)}
+.exp.me{border-color:var(--gold);color:var(--ink);background:var(--gold-soft)}
+.room{background:var(--stone);border:1.5px solid var(--monster);border-radius:6px;padding:.9rem .3rem;font-weight:700;color:var(--monster)}
+.camp{border:1.5px solid var(--ink);border-radius:6px;padding:.55rem .3rem;font-weight:700;align-self:stretch;display:grid;place-items:center}
+.camp.opp{border-color:var(--muted);color:var(--muted);font-weight:500}
+.pile{color:var(--muted);font-size:.78rem;align-self:center;text-align:left}
+/* phases */
+.phases{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.6rem;margin:1rem 0;counter-reset:ph}
+@media (max-width:640px){.phases{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.phase{background:var(--paper);border:1px solid var(--rule);border-top:4px solid var(--accent);border-radius:6px;padding:.8rem .9rem;font-family:var(--f-ui);font-size:.93rem;line-height:1.45}
+.phase h4{margin:0 0 .35rem;font-family:var(--f-display);font-size:1.15rem;color:var(--accent)}
+.phase h4::before{counter-increment:ph;content:counter(ph) ". ";color:var(--muted)}
+/* combat steps */
+ol.steps{list-style:none;padding:0;counter-reset:s;display:grid;gap:.6rem}
+ol.steps>li{position:relative;padding-left:2.6rem;margin:0}
+ol.steps>li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:.05rem;width:1.8rem;height:1.8rem;border-radius:50%;border:2px solid var(--accent);color:var(--accent);font-family:var(--f-ui);font-weight:700;font-size:.9rem;display:grid;place-items:center}
+/* guilds */
+.guild{border-radius:10px;padding:1.2rem 1.3rem 1rem;margin:1.2rem 0;border:1px solid var(--rule)}
+.guild h3{margin:0 0 .2rem;font-size:1.5rem}
+.guild .tag{font-family:var(--f-ui);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin:0 0 .6rem}
+.guild.ivr{background:var(--ivr-soft)} .guild.ivr h3,.guild.ivr .tag{color:var(--ivr)}
+.guild.dru{background:var(--dru-soft)} .guild.dru h3,.guild.dru .tag{color:var(--dru)}
+.guild.mag{background:var(--mag-soft)} .guild.mag h3,.guild.mag .tag{color:var(--mag)}
+.guild table{font-size:.93rem}
+.guild th,.guild td{border-color:color-mix(in srgb, var(--ink) 15%, transparent)}
+.style{display:inline-block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;border:1px solid currentColor;border-radius:3px;padding:0 .35rem;margin-right:.35rem;color:var(--muted)}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font-family:var(--f-ui);font-size:.88rem;color:var(--muted)}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+<nav class="toc" aria-label="Contents">
+  <p class="lbl">Contents</p>
+  <ol>
+    <li><a href="#but">Goal</a></li>
+    <li><a href="#deck">Your deck</a></li>
+    <li><a href="#plateau">Board</a></li>
+    <li><a href="#miseenplace">Setup</a></li>
+    <li><a href="#tour">The turn</a></li>
+    <li><a href="#assaut">The Assault</a></li>
+    <li><a href="#degats">Damage and healing</a></li>
+    <li><a href="#donjon">The dungeon</a></li>
+    <li><a href="#raid">The raid</a></li>
+    <li><a href="#terrain">The Terrain</a></li>
+    <li><a href="#carte">Treasure map</a></li>
+    <li><a href="#guildes">The guilds</a></li>
+    <li><a href="#motscles">Keywords</a></li>
+    <li><a href="#etats">Conditions</a></li>
+  </ol>
+</nav>
+
+<main>
+<header class="hero">
+  <p class="eyebrow">Rulebook · proto version · October 16, 2026</p>
+  <h1>Guild <span>Rush</span></h1>
+  <p class="lede">Two guilds descend into the same dungeon. They kill monsters to take their treasure, steal each other's killing blows and plunder each other's Camp. At the end, the richest guild wins.</p>
+</header>
+
+<section id="but">
+  <h2><span class="n">1</span>The goal</h2>
+  <p>Score more treasure than your opponent. The game ends in either of these two cases:</p>
+  <div class="win">
+    <div><b>12</b><span>treasure or more for one player at the <strong>end of a round</strong>.</span></div>
+    <div><b>Boss</b><span>killed: the game ends at the <strong>end of that turn</strong>.</span></div>
+  </div>
+  <p>Most treasure wins. Tie: the boss's killer wins, otherwise whoever killed the most monsters.</p>
+</section>
+
+<section id="deck">
+  <h2><span class="n">2</span>Your deck</h2>
+  <div class="tbl"><table>
+    <tr><th>Card</th><th>Count</th></tr>
+    <tr><td>Guardian</td><td class="wrap1">1: the leader of your guild.</td></tr>
+    <tr><td>Terrain</td><td class="wrap1">1, from the Guardian's faction, your choice.</td></tr>
+    <tr><td>Deck</td><td class="wrap1">30 cards from your faction, including <strong>at least 20 from your Guardian's pool</strong>.</td></tr>
+  </table></div>
+  <ul>
+    <li>3 copies max per card, only 1 for a <span class="kw">Signature</span>.</li>
+    <li>A Guardian's <strong>pool</strong>: its 10 units and 3 spells.</li>
+    <li>Three factions, each with 3 Guardians: <strong>Drunkards</strong> (the Tavern), <strong>Druids</strong> (the Forest), <strong>Mages</strong> (the Circle).</li>
+  </ul>
+</section>
+
+<section id="plateau">
+  <h2><span class="n">3</span>The board</h2>
+  <div class="board" role="img" aria-label="Board: 4 rooms in a row, one Expedition per room for each player, and one Camp per player outside the dungeon">
+    <div class="bgrid">
+      <div class="lab">Opponent</div>
+      <div class="exp">Exp. 1</div><div class="exp">Exp. 2</div><div class="exp">Exp. 3</div><div class="exp">Exp. 4</div>
+      <div class="camp opp">Opponent's Camp</div>
+      <div class="lab">Dungeon</div>
+      <div class="room">Room 1</div><div class="room">Room 2</div><div class="room">Room 3</div><div class="room">Room 4</div>
+      <div class="pile">Monster deck · boss · defeated</div>
+      <div class="lab">You</div>
+      <div class="exp me">Exp. 1</div><div class="exp me">Exp. 2</div><div class="exp me">Exp. 3</div><div class="exp me">Exp. 4</div>
+      <div class="camp">Your Camp</div>
+    </div>
+  </div>
+  <ul>
+    <li><strong>Rooms</strong>: 4 in a row, each with a monster. Adjacent = number ±1.</li>
+    <li><strong>Expeditions</strong>: one per room per player, facing the room. <strong>3 units max</strong>, tokens included.</li>
+    <li><strong>Camp</strong>: your fall-back and healing zone, outside the dungeon. It touches all your Expeditions, has no unit limit and is never a room. Your Guardian lives there.</li>
+    <li>Your <strong>Terrain</strong> is placed in an Expedition. Its room is your <strong>Tavern</strong>, your <strong>Forest</strong> or your <strong>Circle</strong>. The card is double-sided: the front, visible in play, shows its HP and passives; the back gives its menu (pints, recipes or Incantations).</li>
+  </ul>
+</section>
+
+<section id="miseenplace">
+  <h2><span class="n">4</span>Setup</h2>
+  <ol class="steps">
+    <li>Shuffle the 8 Mine monsters. Place 1 in each room; the other 4 form the monster deck. The boss Grombak waits beside it.</li>
+    <li>Each player places their Guardian in their Camp and their Terrain beside it, shuffles their deck and draws <strong>5 cards</strong>.</li>
+    <li>Randomly determine the first player.</li>
+    <li>At the 1st Assault, each player places their Terrain in the Expedition of their choice.</li>
+  </ol>
+</section>
+
+<section id="tour">
+  <h2><span class="n">5</span>The turn</h2>
+  <p>A <strong>round</strong> is one turn for each player. Your turn has 4 phases:</p>
+  <div class="phases">
+    <div class="phase"><h4>Rest</h4>Energy to max, draw 1, heal Recovering units, Guardian passive.</div>
+    <div class="phase"><h4>Scheme</h4>Scouts, face-down cards (Bluff), break camp.</div>
+    <div class="phase"><h4>Assault</h4>Play, move, fight room by room, then 1 raid max.</div>
+    <div class="phase"><h4>Withdrawal</h4>Count your treasure, the Terrain levels up.</div>
+  </div>
+  <p><strong>Energy</strong>: 3 in round 1, +1 per round, 6 max. Energy you don't spend stays until your Rest: it pays for your Reflexes on your opponent's turn.</p>
+  <p>At the start of each turn, empty rooms receive the next monster, then the boss when the monster deck is empty.</p>
+</section>
+
+<section id="assaut">
+  <h2><span class="n">6</span>The Assault</h2>
+  <h3>Playing and moving</h3>
+  <ul>
+    <li>A unit you play arrives <strong>directly</strong> in the Expedition you choose or in your Camp.</li>
+    <li>A unit already in play moves <strong>once per turn</strong>: to an adjacent Expedition or to the Camp, or from the Camp to any Expedition.</li>
+    <li>A <span class="kw">Wounded</span> unit can only go to the Camp, where it becomes <span class="kw">Recovering</span>.</li>
+    <li><strong>Entering</strong> a room (playing, moving, returning from the Camp) triggers Traps, Glyphs and "enters" effects.</li>
+  </ul>
+
+  <h3>Fighting</h3>
+  <p>Attacking is <strong>optional</strong>: staying in a room without attacking triggers nothing. Room by room, choose your attackers and their target (the monster, an enemy unit or the enemy Terrain; <span class="kw">Protector</span> applies). Then:</p>
+  <ol class="steps">
+    <li><strong>Duel.</strong> Your opponent responds first, then each player in turn plays a <span class="kw">Reflex</span> card, a bonus from their Terrain (if the Duel takes place in its room), or passes. Two passes in a row: strike.</li>
+    <li><strong>The monster strikes</strong> 1 of your present attackers, <strong>chosen by your opponent</strong>.</li>
+    <li><strong>Your standing attackers strike together.</strong> Damage = Power.</li>
+    <li><strong>Brawl</strong>, if your opponent has units in the room: each one strikes once at the target of its choice in the room. If some strike the monster, it first strikes back at 1 of them, chosen by you.</li>
+  </ol>
+  <p>Each unit strikes <strong>once per turn</strong>. <span class="kw">Swift</span>: once more after changing rooms.</p>
+
+  <h3>The killing blow</h3>
+  <p>A monster's <strong>killer</strong> is the player who controls the source of the last damage (unit, spell, Terrain). They take <strong>all</strong> of the monster's treasure, and its relic if it has one. In a Brawl, the kill can be stolen.</p>
+  <div class="note"><strong>Fall back</strong>: after a lost Brawl, your units that attacked may return to the Camp (not if Snared).</div>
+
+  <h3>Spells</h3>
+  <ul>
+    <li>A spell is cast in a room where you have a <strong>unit</strong>; your Terrain doesn't count. With <span class="kw">Reach</span>: also an adjacent room.</li>
+    <li>Without Reflex, a spell is played during your Assault, outside a Duel. With Reflex, it is played in a Duel, even on your opponent's turn.</li>
+  </ul>
+</section>
+
+<section id="degats">
+  <h2><span class="n">7</span>Damage and healing</h2>
+  <ul>
+    <li>Damage <strong>stays</strong> on the card until healed. At 0 HP, the unit dies; a Terrain is destroyed; a Guardian is <span class="kw">Knocked out</span>.</li>
+    <li><strong>Bonus HP</strong> (+X HP, +X/+X) takes damage first and disappears with the buff.</li>
+    <li><span class="kw">Wounded</span>: at least 1 damage on its base HP. It can only move to the Camp.</li>
+    <li><span class="kw">Recovering</span>: a wounded unit that reached the Camp is fully healed at your next Rest, then stays in the Camp until the end of that turn.</li>
+  </ul>
+</section>
+
+<section id="donjon">
+  <h2><span class="n">8</span>The dungeon</h2>
+  <ul>
+    <li>Each monster has <strong>treasure</strong> (gold dot); some carry a <strong>relic</strong>.</li>
+    <li><span class="kw">Ambush</span>: effect when the monster arrives.</li>
+    <li>Damage on a monster stays from one turn to the next.</li>
+    <li><strong>Evolution</strong>: at the end of a round, a monster that has been in play for a full round flips to its evolved side, with no damage. Stronger, richer.</li>
+    <li>The <strong>boss</strong> enters when the monster deck is empty. Killing it ends the game at the end of the turn.</li>
+  </ul>
+  <div class="tbl"><table>
+    <tr><th>Mine relic</th><th>Effect</th></tr>
+    <tr><td>Miner's Lantern</td><td class="wrap1">Scheme: look at the top monster of the monster deck; you may put it on the bottom.</td></tr>
+    <tr><td>Rune Pickaxe</td><td class="wrap1">Your first unit that attacks a monster during the Assault has +2 Power.</td></tr>
+    <tr><td>Foreman's Purse</td><td class="wrap1">Withdrawal: +1 treasure if you killed a monster this turn.</td></tr>
+  </table></div>
+</section>
+
+<section id="raid">
+  <h2><span class="n">9</span>The raid</h2>
+  <p>The raid strikes the opponent's Camp to steal treasure.</p>
+  <ol class="steps">
+    <li><strong>Condition</strong>: from round 2, during your Assault, 1 raid max. One of your units has just killed, in this room, the monster or the last enemy unit.</li>
+    <li><strong>Departure</strong>: your standing units in this room go to the opponent's Camp (not Snared ones).</li>
+    <li><strong>Recall</strong>: the defender brings back to the Camp any Expedition units they want (not Snared ones).</li>
+    <li><strong>Effects</strong>: <span class="kw">Reinforce</span> and Camp Defense, defender first.</li>
+    <li><strong>Raid Brawl</strong>, with no monster: a Duel, then each raider strikes (Protector first, Guardian next), then each standing defender strikes a raider.</li>
+    <li><strong>Result</strong>: successful if <strong>more raiders than standing defenders</strong> remain, Guardian included. Tie: the defender wins.</li>
+    <li><strong>Loot</strong>: 1 treasure stolen, <strong>+1 if the Guardian is Knocked out</strong> (2 max).</li>
+  </ol>
+  <p>After the raid, the wounded on both sides become Recovering, the dead are discarded, and your raiders return to your Camp.</p>
+</section>
+
+<section id="terrain">
+  <h2><span class="n">10</span>The Terrain</h2>
+  <ul>
+    <li>It has HP, doesn't strike and doesn't block raids. An enemy unit fighting in its room can attack it.</li>
+    <li><strong>Bonuses</strong>: during your Assault, or during any Duel in its room, even on your opponent's turn. They target your units in the room.</li>
+    <li><strong>Level</strong>: Lvl 1 when placed, +1 at Withdrawal if it hasn't moved (3 max). At Lvl 3, it's a <span class="kw">Stronghold</span>: +1 treasure per monster killed in its room by your units or spells.</li>
+    <li><strong>Break camp</strong> (Scheme): move it to an adjacent Expedition; it loses 1 level.</li>
+    <li><strong>Destroyed</strong>: it returns at Lvl 1 at your next Assault. If your opponent destroyed it, they gain +1 treasure (<span class="kw">plunder</span>).</li>
+  </ul>
+</section>
+
+<section id="carte">
+  <h2><span class="n">11</span>The Treasure map</h2>
+  <p>The catch-up mechanic. At the end of round 1, it goes to the Camp of the player with the least treasure (tie: the second player). At each Withdrawal, its holder gains <strong>+1 treasure if behind</strong>. A successful raid can take it instead of the 1st stolen treasure.</p>
+</section>
+
+<section id="guildes">
+  <h2><span class="n">12</span>The guilds</h2>
+
+  <div class="guild ivr">
+    <h3>Drunkards</h3>
+    <p class="tag">The Tavern · resource: Pint</p>
+    <p>Brawling and big bodies around the barrel. A <strong>pint</strong> makes the barrel lose HP to make a unit in its room drink: 2 pints per turn, 3 at Lvl 2.</p>
+    <div class="tbl"><table>
+      <tr><th>Cost</th><th>Drinks</th></tr>
+      <tr><td>1 HP</td><td class="wrap1">Beer +1 PWR · Cider +2 HP · Mead heals 2</td></tr>
+      <tr><td>2 HP</td><td class="wrap1">Rum +2 PWR then Hangover · Whisky Unflinching · Absinthe +3 PWR then Backlash</td></tr>
+    </table></div>
+    <p><strong>Mixing</strong>: 2 drinks in the same turn = Stunned. <strong>Soak</strong>: once per turn, the barrel takes a hit instead of a unit in its room. <strong>Last round</strong>, once per game: the pint empties the barrel, which explodes.</p>
+    <div class="tbl"><table>
+      <tr><th>Guardian</th><th>Style</th><th>Terrain</th></tr>
+      <tr><td>Guss the Innkeeper · 3/7</td><td class="wrap1"><span class="style">Balanced</span>Daily Special, defenders +1 PWR</td><td class="wrap1">Oak Barrel (Aura +1 PWR)</td></tr>
+      <tr><td>Rosa the Brewer · 2/7</td><td class="wrap1"><span class="style">Zone</span>On the House, 1 damage to raiders</td><td class="wrap1">Explosive Barrel (Counter)</td></tr>
+      <tr><td>Robin the Gambler · 4/5</td><td class="wrap1"><span class="style">Aggressive</span>Double Down, raiders +1 PWR</td><td class="wrap1">Betting Keg (Pot, Wagers)</td></tr>
+    </table></div>
+  </div>
+
+  <div class="guild dru">
+    <h3>Druids</h3>
+    <p class="tag">The Forest · resource: Sap</p>
+    <p>Numbers and summons (Sprouts, Wolves). <strong>Sap</strong> builds up on the grove (4 max): +1 at Rest, +2 at Lvl 2. It pays for 1 recipe per turn. <strong>Undergrowth</strong>: 4 units in the Forest instead of 3.</p>
+    <div class="tbl"><table>
+      <tr><th>Guardian</th><th>Style</th><th>Terrain</th></tr>
+      <tr><td>Cernun · 2/7</td><td class="wrap1"><span class="style">Balanced</span>Sap per monster killed, 2 Sprouts on defense</td><td class="wrap1">Ancient Grove (buffs)</td></tr>
+      <tr><td>Belladonna · 1/6</td><td class="wrap1"><span class="style">Zone</span>Brambles, Stuns on raids</td><td class="wrap1">Poison Grove (damage, Poison)</td></tr>
+      <tr><td>Sylve · 2/5</td><td class="wrap1"><span class="style">Aggressive</span>Nomad, Pack (Swift Wolves)</td><td class="wrap1">Shadow Grove (Reflex recipes)</td></tr>
+    </table></div>
+  </div>
+
+  <div class="guild mag">
+    <h3>Mages</h3>
+    <p class="tag">The Circle · resource: Arcana</p>
+    <p>Few bodies, lots of spells: strike with Reach and take the killing blows. <strong>Arcana</strong> builds up on the circle (4 max), +1 per spell cast, and pays for 1 Incantation per turn. An Incantation is not a spell. Circle Lvl 1: Incantations with Reach; Lvl 2: +1 Arcana at Rest.</p>
+    <div class="tbl"><table>
+      <tr><th>Guardian</th><th>Style</th><th>Terrain</th></tr>
+      <tr><td>Soffia · 2/6</td><td class="wrap1"><span class="style">Balanced</span>Draws if 2 spells in the turn</td><td class="wrap1">Rune Circle</td></tr>
+      <tr><td>Orsin the Runesmith · 2/7</td><td class="wrap1"><span class="style">Zone</span>Glyphs, defenders with Aegis</td><td class="wrap1">Rune Sanctuary (Frost, Bastion)</td></tr>
+      <tr><td>Ignis the Pyromancer · 3/5</td><td class="wrap1"><span class="style">Aggressive</span>Spells +1 damage to monsters</td><td class="wrap1">Unstable Hearth (Overload, Pyroclasm)</td></tr>
+    </table></div>
+  </div>
+</section>
+
+<section id="motscles">
+  <h2><span class="n">13</span>Keywords</h2>
+  <div class="tbl"><table>
+    <tr><th>Keyword</th><th>Effect</th></tr>
+    <tr><td>Arrival</td><td class="wrap1">When played.</td></tr>
+    <tr><td>Last breath</td><td class="wrap1">When it dies.</td></tr>
+    <tr><td>Combat</td><td class="wrap1">During the unit's combat.</td></tr>
+    <tr><td>Monster kill</td><td class="wrap1">When it deals the blow that kills a monster.</td></tr>
+    <tr><td>Spellcast</td><td class="wrap1">When you play a Spell card.</td></tr>
+    <tr><td>Revealed</td><td class="wrap1">When its Bluff card is flipped.</td></tr>
+    <tr><td>Withdrawal</td><td class="wrap1">During your Withdrawal phase.</td></tr>
+    <tr><td>Swift</td><td class="wrap1">After its combat during your Assault, changes rooms (outside the limit) and attacks once more.</td></tr>
+    <tr><td>Reflex</td><td class="wrap1">Playable in a Duel.</td></tr>
+    <tr><td>Reach</td><td class="wrap1">Attacks a room adjacent to its Expedition. The monster doesn't strike back; the unit is not present in the room (no Brawl, no Stronghold, no Fall back). Respects Protector.</td></tr>
+    <tr><td>Protector</td><td class="wrap1">Attacks (units and monsters) against your units or your Terrain in its room must target it. Spells and effects target freely. Protects even when Stunned; in a raid, goes before the Guardian.</td></tr>
+    <tr><td>Reinforce</td><td class="wrap1">When the unit is recalled to the Camp during a raid.</td></tr>
+    <tr><td>Scout</td><td class="wrap1">Placed during the Scheme in the Expedition you choose and doesn't move again this turn. Its "Scheme:" effect repeats at each of your Schemes.</td></tr>
+    <tr><td>Bluff</td><td class="wrap1">Placed face down during the Scheme, revealed at the Assault.</td></tr>
+    <tr><td>Try your luck</td><td class="wrap1">Reveal the top card of your deck, then put it on the bottom. Success if its cost is 2 or more.</td></tr>
+    <tr><td>Ambush</td><td class="wrap1">Monster: effect when it arrives.</td></tr>
+    <tr><td>Signature</td><td class="wrap1">1 copy max per deck.</td></tr>
+    <tr><td>Token</td><td class="wrap1">Summoned unit (Sprout 1/1, Wolf 2/1). Counts toward the limit of 3; full Expedition: no summon.</td></tr>
+  </table></div>
+  <p><strong>Enemy</strong>: an opposing unit, Guardian or Terrain; a monster is never an enemy. <strong>Target</strong>: anything, monsters included.</p>
+</section>
+
+<section id="etats">
+  <h2><span class="n">14</span>Conditions</h2>
+  <div class="tbl"><table>
+    <tr><th>Condition</th><th>Effect</th></tr>
+    <tr><td>Stunned</td><td class="wrap1">Doesn't strike in its next combat; its current attack is cancelled.</td></tr>
+    <tr><td>Poisoned</td><td class="wrap1">-1 HP at each of its owner's Rests, until healed.</td></tr>
+    <tr><td>Snared</td><td class="wrap1">Can't change rooms.</td></tr>
+    <tr><td>Unflinching</td><td class="wrap1">Can't be Stunned this turn.</td></tr>
+    <tr><td>Tipsy</td><td class="wrap1">Drank this turn; a 2nd drink = Stunned.</td></tr>
+    <tr><td>Hangover</td><td class="wrap1">Stunned until the end of your next turn.</td></tr>
+    <tr><td>Backlash</td><td class="wrap1">-2 HP at your next Rest.</td></tr>
+    <tr><td>Recovering</td><td class="wrap1">Wounded in the Camp: fully healed at your next Rest, then stays in the Camp that turn.</td></tr>
+    <tr><td>Knocked out</td><td class="wrap1">Guardian at 0 HP: no longer defends, returns at its next Rest with full HP.</td></tr>
+    <tr><td>Aegis</td><td class="wrap1">Ignores the next hit received, then disappears. Doesn't stack; doesn't block HP loss.</td></tr>
+    <tr><td>Trap</td><td class="wrap1">Face down, placed by a Scout (1 per player per room). Hits the 1st enemy unit that enters. A Decoy is a fake Trap.</td></tr>
+    <tr><td>Glyph</td><td class="wrap1">Face up, placed by a Mage (2 max per player per room). The 1st enemy unit that enters or attacks here, Reach included, takes 1 damage and is Stunned. 1 Glyph per unit per turn.</td></tr>
+    <tr><td>Wager</td><td class="wrap1">On the Betting Keg (3 max), +1 per monster killed here. 3 Wagers = 1 treasure at Withdrawal.</td></tr>
+  </table></div>
+</section>
+
+<footer>Guild Rush · proto rulebook, drawn from the bible of October 16, 2026 (glossary, core rules, factions, decisions). Full card texts: 03_cartes.csv.</footer>
+</main>
+</div>
+</body>
+</html>
