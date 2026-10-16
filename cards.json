@@ -4720,6 +4720,38 @@
     "hp": 7,
     "tresors": 4
   },
+  "ver": {
+    "id": "ver",
+    "face": {
+      "front": {
+        "name": {
+          "name": {
+            "en": "Deep Worm",
+            "fr": "Ver des profondeurs"
+          }
+        },
+        "type": "Monstre",
+        "cost": 0,
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ver-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ver.png"
+        }
+      }
+    },
+    "name": {
+      "en": "Deep Worm",
+      "fr": "Ver des profondeurs"
+    },
+    "type": "Monstre",
+    "cost": 0,
+    "faction": "Mine des Gobelins",
+    "_legal": {
+      "PROTO": 1
+    },
+    "power": 4,
+    "hp": 7,
+    "tresors": 3
+  },
   "troll": {
     "id": "troll",
     "face": {
@@ -4919,6 +4951,33 @@
     "name": {
       "en": "Foreman's Purse",
       "fr": "Bourse du contremaître"
+    },
+    "type": "Relique",
+    "cost": 0,
+    "faction": "Relique",
+    "isToken": true
+  },
+  "ecaille": {
+    "id": "ecaille",
+    "face": {
+      "front": {
+        "name": {
+          "name": {
+            "en": "Worm Scale",
+            "fr": "Écaille du ver"
+          }
+        },
+        "type": "Relique",
+        "cost": 0,
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ecaille-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ecaille.png"
+        }
+      }
+    },
+    "name": {
+      "en": "Worm Scale",
+      "fr": "Écaille du ver"
     },
     "type": "Relique",
     "cost": 0,

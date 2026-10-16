@@ -1,6 +1,6 @@
 # Guild Rush — Preconstructed decks
 
-One deck per Guardian: 1 Guardian + its Terrain + 30 cards (at least 20 from its pool), and its personal dungeon: 2 Elites (Great Shaman, Spider Queen or Warchief), 2 normal monsters, 9 treasure max, and Grombak. On TCG Arena: base decks of the Proto format.
+One deck per Guardian: 1 Guardian + its Terrain + 30 cards (at least 20 from its pool), and its personal dungeon: 2 Elites (Great Shaman, Spider Queen, Warchief or Deep Worm), 2 normal monsters, 9 treasure max, and Grombak. On TCG Arena: base decks of the Proto format.
 
 ## Guss's Drunkards — The Tavern
 **Guss the Innkeeper** · Terrain: Oak Barrel · 29 cards from the pool
@@ -21,7 +21,7 @@ One deck per Guardian: 1 Guardian + its Terrain + 30 cards (at least 20 from its
 
 - **Units** (21): 3× Broke Bettor, 2× Pickpocket, 2× Brawler on Credit, 2× Croupier, 3× Knife Thrower, 2× Cheat, 2× Duelist, 2× Bar Mercenary, 2× High Roller, 1× Big Winner
 - **Spells** (9): 3× Double or Nothing, 2× Frame-Up, 2× Chair Toss*, 2× All In!
-- **Dungeon** (4): Warchief, Great Shaman, Goblin Archer, Goblin Snoop · Grombak (boss) · 9 treasure
+- **Dungeon** (4): Deep Worm, Great Shaman, Goblin Archer, Goblin Snoop · Grombak (boss) · 8 treasure
 
 ## Cernun's Druids — Ancient Grove
 **Cernun** · Terrain: Ancient Grove · 27 cards from the pool
@@ -35,14 +35,14 @@ One deck per Guardian: 1 Guardian + its Terrain + 30 cards (at least 20 from its
 
 - **Units** (22): 2× Bramble Spider, 2× Venomous Toad, 2× Moss Sprite*, 2× Blossom Dryad, 2× Bramble Keeper, 2× Glade Summoner, 2× Bramble Wall, 2× Bramble Tracker, 2× Willow Spirit, 2× Swamp Witch, 2× Mandrake
 - **Spells** (8): 1× Sudden Growth*, 3× Vines, 2× Entanglement, 2× Spore Rain
-- **Dungeon** (4): Spider Queen, Warchief, Tunnel Rat, Goblin Archer · Grombak (boss) · 9 treasure
+- **Dungeon** (4): Spider Queen, Deep Worm, Tunnel Rat, Ore Golem · Grombak (boss) · 9 treasure
 
 ## Sylve's Druids — The Pack
 **Sylve** · Terrain: Shadow Grove · 27 cards from the pool
 
 - **Units** (22): 2× Hunting Falcon, 3× Wolf Cub, 1× Moss Sprite*, 2× Thicket Fox, 3× Huntress, 2× Shadow Lynx, 2× Alpha Wolf, 3× Wolf Leader, 2× Raging Boar, 1× Enraged Bear, 1× Great White Wolf
 - **Spells** (8): 2× Sudden Growth*, 3× Call of the Pack, 2× Tally-Ho, 1× Transplant
-- **Dungeon** (4): Warchief, Great Shaman, Tunnel Rat, Goblin Snoop · Grombak (boss) · 9 treasure
+- **Dungeon** (4): Deep Worm, Warchief, Tunnel Rat, Goblin Snoop · Grombak (boss) · 9 treasure
 
 ## Soffia's Mages — Arcana
 **Soffia** · Terrain: Rune Circle · 26 cards from the pool
@@ -63,6 +63,6 @@ One deck per Guardian: 1 Guardian + its Terrain + 30 cards (at least 20 from its
 
 - **Units** (20): 2× Will-o'-the-Wisp, 3× Fire Novice, 2× Flame Juggler, 2× Pyromaniac, 2× Salamander, 2× Kindler, 2× Ash Mage, 2× Fire Elemental, 2× Phoenix, 1× Blaze Incarnate
 - **Spells** (10): 3× Magic Missile*, 3× Fire Bolt, 1× Dispel*, 2× Fireball, 1× Meteor
-- **Dungeon** (4): Warchief, Spider Queen, Goblin Archer, Tunnel Rat · Grombak (boss) · 9 treasure
+- **Dungeon** (4): Deep Worm, Spider Queen, Ore Golem, Tunnel Rat · Grombak (boss) · 9 treasure
 
 \* outside the Guardian's pool.

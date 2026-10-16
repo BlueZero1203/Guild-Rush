@@ -7,7 +7,7 @@
 - [OK] Un monstre ne profite pas à son propriétaire ; reliques neutres.
 - [OK] Le second joueur choisit le boss parmi les 2 apportés ; effet « Règne : » dès la mise en place.
 - [NON] Évolution après une manche entière : tout le donjon évoluait en manche 1 (playtest). Remplacée par les Élites.
-- [?] Proposé : chaque Élite a sa relique, imprimée sur sa carte (Grand chaman → Lanterne du mineur, Reine araignée → Pioche runique, Chef de guerre → Bourse du contremaître). Decks de base : 2 Élites + 2 normaux + Grombak (livret/decks.md).
+- [?] Proposé : chaque Élite a sa relique, imprimée sur sa carte (Grand chaman → Lanterne du mineur, Reine araignée → Pioche runique, Chef de guerre → Bourse du contremaître, Ver des profondeurs → Écaille du ver). 4e Élite : Ver des profondeurs 4/7, 3 trésors, Dévoreur. Decks de base : 2 Élites + 2 normaux + Grombak (livret/decks.md).
 - [?] À tester : plafond de 9 trésors pour les 4 monstres ; Lanterne trop forte quand on connaît ses monstres ; boss = fin de manche si J1 vole le boss ; Règne de Grombak (+1 PV aux monstres en jeu) à tester.
 
 ## Plateau (2026-10-16)

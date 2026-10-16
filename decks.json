@@ -260,7 +260,7 @@
       ],
       "Monstre": [
         {
-          "id": "contremaitre",
+          "id": "ver",
           "count": 1
         },
         {
@@ -494,7 +494,7 @@
           "count": 1
         },
         {
-          "id": "contremaitre",
+          "id": "ver",
           "count": 1
         },
         {
@@ -502,7 +502,7 @@
           "count": 1
         },
         {
-          "id": "archer",
+          "id": "golem",
           "count": 1
         }
       ],
@@ -607,11 +607,11 @@
       ],
       "Monstre": [
         {
-          "id": "contremaitre",
+          "id": "ver",
           "count": 1
         },
         {
-          "id": "chaman",
+          "id": "contremaitre",
           "count": 1
         },
         {
@@ -958,7 +958,7 @@
       ],
       "Monstre": [
         {
-          "id": "contremaitre",
+          "id": "ver",
           "count": 1
         },
         {
@@ -966,7 +966,7 @@
           "count": 1
         },
         {
-          "id": "archer",
+          "id": "golem",
           "count": 1
         },
         {

@@ -1,6 +1,6 @@
 # Guild Rush — Decks préconstruits
 
-Un deck par Gardien : 1 Gardien + son Terrain + 30 cartes (20 min. de son pool), et son donjon perso : 2 Élites (Grand chaman, Reine araignée ou Chef de guerre), 2 monstres normaux, 9 trésors max, et Grombak. Sur TCG Arena : decks de base du format Proto.
+Un deck par Gardien : 1 Gardien + son Terrain + 30 cartes (20 min. de son pool), et son donjon perso : 2 Élites (Grand chaman, Reine araignée, Chef de guerre ou Ver des profondeurs), 2 monstres normaux, 9 trésors max, et Grombak. Sur TCG Arena : decks de base du format Proto.
 
 ## Ivrognes de Guss — La Taverne
 **Guss le tavernier** · Terrain : Baril de chêne · 29 cartes du pool
@@ -21,7 +21,7 @@ Un deck par Gardien : 1 Gardien + son Terrain + 30 cartes (20 min. de son pool),
 
 - **Unités** (21) : 3× Parieur fauché, 2× Pickpocket, 2× Bagarreur à crédit, 2× Croupier, 3× Lanceuse de couteaux, 2× Tricheur, 2× Duelliste, 2× Mercenaire de comptoir, 2× Flambeur, 1× Grand gagnant
 - **Sorts** (9) : 3× Double ou rien, 2× Coup monté, 2× Jet de chaises*, 2× Tapis !
-- **Donjon** (4) : Chef de guerre, Grand chaman, Archer gobelin, Gobelin fouineur · Grombak (boss) · 9 trésors
+- **Donjon** (4) : Ver des profondeurs, Grand chaman, Archer gobelin, Gobelin fouineur · Grombak (boss) · 8 trésors
 
 ## Druides de Cernun — Bosquet ancien
 **Cernun** · Terrain : Bosquet ancien · 27 cartes du pool
@@ -35,14 +35,14 @@ Un deck par Gardien : 1 Gardien + son Terrain + 30 cartes (20 min. de son pool),
 
 - **Unités** (22) : 2× Araignée des ronces, 2× Crapaud vénéneux, 2× Lutin des mousses*, 2× Dryade fleurie, 2× Gardienne des ronces, 2× Invocateur de la clairière, 2× Mur de ronces, 2× Pisteuse des ronces, 2× Esprit du saule, 2× Sorcière des marais, 2× Mandragore
 - **Sorts** (8) : 1× Croissance soudaine*, 3× Lianes, 2× Enchevêtrement, 2× Pluie de spores
-- **Donjon** (4) : Reine araignée, Chef de guerre, Rat des galeries, Archer gobelin · Grombak (boss) · 9 trésors
+- **Donjon** (4) : Reine araignée, Ver des profondeurs, Rat des galeries, Golem de minerai · Grombak (boss) · 9 trésors
 
 ## Druides de Sylve — La Meute
 **Sylve** · Terrain : Bosquet d'ombre · 27 cartes du pool
 
 - **Unités** (22) : 2× Faucon chasseur, 3× Louveteau, 1× Lutin des mousses*, 2× Renard des fourrés, 3× Chasseresse, 2× Lynx des ombres, 2× Loup alpha, 3× Meneuse de loups, 2× Sanglier furieux, 1× Ours enragé, 1× Grand loup blanc
 - **Sorts** (8) : 2× Croissance soudaine*, 3× Appel de la meute, 2× Hallali, 1× Transplantation
-- **Donjon** (4) : Chef de guerre, Grand chaman, Rat des galeries, Gobelin fouineur · Grombak (boss) · 9 trésors
+- **Donjon** (4) : Ver des profondeurs, Chef de guerre, Rat des galeries, Gobelin fouineur · Grombak (boss) · 9 trésors
 
 ## Mages de Soffia — Arcanes
 **Soffia** · Terrain : Cercle de runes · 26 cartes du pool
@@ -63,6 +63,6 @@ Un deck par Gardien : 1 Gardien + son Terrain + 30 cartes (20 min. de son pool),
 
 - **Unités** (20) : 2× Feu follet, 3× Novice du feu, 2× Jongleur de flammes, 2× Pyromane, 2× Salamandre, 2× Embraseuse, 2× Mage des cendres, 2× Élémentaire de feu, 2× Phénix, 1× Incarnation du brasier
 - **Sorts** (10) : 3× Projectile magique*, 3× Trait de feu, 1× Dissipation*, 2× Boule de feu, 1× Météore
-- **Donjon** (4) : Chef de guerre, Reine araignée, Archer gobelin, Rat des galeries · Grombak (boss) · 9 trésors
+- **Donjon** (4) : Ver des profondeurs, Reine araignée, Golem de minerai, Rat des galeries · Grombak (boss) · 9 trésors
 
 \* hors pool du Gardien.

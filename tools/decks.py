@@ -54,13 +54,13 @@ DECKS = [
 DONJONS = {
     "precon-guss": ["chaman", "araignee", "gobelin", "rat"],
     "precon-rosa": ["contremaitre", "araignee", "gobelin", "rat"],
-    "precon-robin": ["contremaitre", "chaman", "archer", "gobelin"],
+    "precon-robin": ["ver", "chaman", "archer", "gobelin"],
     "precon-cernun": ["chaman", "araignee", "golem", "gobelin"],
-    "precon-belladone": ["araignee", "contremaitre", "rat", "archer"],
-    "precon-sylve": ["contremaitre", "chaman", "rat", "gobelin"],
+    "precon-belladone": ["araignee", "ver", "rat", "golem"],
+    "precon-sylve": ["ver", "contremaitre", "rat", "gobelin"],
     "precon-soffia": ["chaman", "araignee", "archer", "golem"],
     "precon-orsin": ["araignee", "chaman", "golem", "rat"],
-    "precon-ignis": ["contremaitre", "araignee", "archer", "rat"],
+    "precon-ignis": ["ver", "araignee", "golem", "rat"],
 }
 BOSS = "grombak"
 

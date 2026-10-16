@@ -612,7 +612,7 @@
                   "props": {
                     "className": "btn btn-warning btn-sm"
                   },
-                  "onClick": "const d=game.data.Donjon;const R={chaman:'lanterne',araignee:'pioche-runique',contremaitre:'bourse'};const N={lanterne:'Lanterne du mineur','pioche-runique':'Pioche runique',bourse:'Bourse du contremaître'};const el=(cards.CimetiereMonstres??[]).map(c=>functions.getCardData(c)?.id).filter(id=>R[id]);const n=d.relDonnees||0;if(el.length<=n){functions.chatLog('Aucune Élite vaincue dont la relique reste à prendre.');return;}const id=R[el[n]];d.relDonnees=n+1;await functions.createCard(id,'Camp');functions.chatLog('Relique gagnée : '+N[id]+' (au Camp).');await functions.repositionCards();",
+                  "onClick": "const d=game.data.Donjon;const R={chaman:'lanterne',araignee:'pioche-runique',contremaitre:'bourse',ver:'ecaille'};const N={lanterne:'Lanterne du mineur','pioche-runique':'Pioche runique',bourse:'Bourse du contremaître',ecaille:'Écaille du ver'};const el=(cards.CimetiereMonstres??[]).map(c=>functions.getCardData(c)?.id).filter(id=>R[id]);const n=d.relDonnees||0;if(el.length<=n){functions.chatLog('Aucune Élite vaincue dont la relique reste à prendre.');return;}const id=R[el[n]];d.relDonnees=n+1;await functions.createCard(id,'Camp');functions.chatLog('Relique gagnée : '+N[id]+' (au Camp).');await functions.repositionCards();",
                   "children": "Prendre la relique"
                 },
                 {
