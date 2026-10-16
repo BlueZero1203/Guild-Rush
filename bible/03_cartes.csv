@@ -1,0 +1,138 @@
+id,nom,faction,gardien,type,cout,P,PV,max,texte
+belladone,Belladone,Druides,belladone,Gardien,0,1,6,1,"Repos : +1 Sève (Cueillette). / Ronces : la première unité adverse qui entre dans la Forêt chaque tour est Empoisonnée. / Défense du Camp : la première unité qui attaque Belladone est Sonnée."
+cernun,Cernun,Druides,cernun,Gardien,0,2,7,1,Repos : +1 Sève (Cueillette). / Récolte : +1 Sève par monstre tué par tes unités. / Défense du Camp : invoque 2 Pousses.
+sylve,Sylve,Druides,sylve,Gardien,0,2,5,1,"Repos : +1 Sève (Cueillette). / Nomade : lever le camp ne fait pas perdre de niveau à ton bosquet. / Meute : tes Loups ont Rapide."
+bosquet,Bosquet ancien,Druides,cernun,Terrain,0,0,5,1,"Niv. 1, Sous-bois : 4 de tes unités ici au lieu de 3. Niv. 2 : +1 Sève au Repos. Niv. 3, Fief : +1 trésor par monstre tué ici. / Sève : jetons sur ce bosquet (4 max). 1 recette par tour (ton Assaut ou Duel ici). / 2 Soupe de racines : +2 PV ce tour. / 2 Tarte aux baies : +1 P ce tour. / 2 Tisane des bois : soin, pas Sonnées. / 3 Poêlée des esprits : 1 Pousse ici et dans chaque salle voisine où tu as une unité. / 4 Banquet : toutes tes unités +2/+2 ce tour."
+bosquet-ombre,Bosquet d'ombre,Druides,sylve,Terrain,0,0,3,1,"Niv. 1, Sous-bois : 4 de tes unités ici au lieu de 3. Niv. 2 : +1 Sève au Repos. Niv. 3, Fief : +1 trésor par monstre tué ici. / Sève : jetons sur ce bosquet (4 max). 1 recette par tour (ton Assaut ou Duel ici). / Réflexe : ses recettes se jouent dans n'importe quel Duel. / 1 Pain de route : tes unités d'ici gagnent Rapide. / 1 Infusion vive : une unité, Rapide et +1 P. / 2 Festin de l'ombre : tes unités d'ici, Rapide et +1/+1."
+bosquet-poison,Bosquet empoisonné,Druides,belladone,Terrain,0,0,5,1,"Niv. 1, Sous-bois : 4 de tes unités ici au lieu de 3. Niv. 2 : +1 Sève au Repos. Niv. 3, Fief : +1 trésor par monstre tué ici. / Sève : jetons sur ce bosquet (4 max). 1 recette par tour (ton Assaut ou Duel ici). / 2 Sève amère : 1 dégât à chaque ennemi d'ici, qui est Empoisonné. / 2 Brouet de baies : 2 dégâts à une cible d'ici, Sonnée. / 3 Fumée d'herbes : les ennemis d'ici sont Sonnés. / 4 Philtre noir : 2 dégâts à chaque ennemi d'une salle."
+loup,Loup,Druides,,Unité,0,2,1,jeton,Jeton. Compte dans la limite de 3 unités par salle.
+pousse,Pousse,Druides,,Unité,0,1,1,jeton,Jeton. Compte dans la limite de 3 unités par salle.
+chouette,Chouette guetteuse,Druides,cernun,Unité,1,1,2,3,Arrivée : +1 Sève.
+renard,Renard des fourrés,Druides,sylve,Unité,1,1,1,3,"Éclaireur. / Stratagème : pose un Piège Collet (1 dégât, Entravé)."
+pisteuse,Pisteuse des ronces,Druides,belladone,Unité,2,1,3,3,"Éclaireur. / Arrivée : regarde les cartes face cachée et les Pièges adverses de sa salle. / Stratagème : pose un Piège Épines (Empoisonné)."
+lutin,Lutin des mousses,Druides,cernun,Unité,1,1,1,3,Arrivée : invoque une Pousse.
+chamane,Chamane des racines,Druides,cernun,Unité,2,0,4,3,Combat : tes autres unités de sa salle ont +1 Puissance.
+cueilleuse,Cueilleuse,Druides,cernun,Unité,2,1,3,3,"Retrait : si elle est dans la Forêt, +1 Sève."
+dryade,Dryade fleurie,Druides,belladone,Unité,2,1,2,3,Dernier souffle : invoque 2 Pousses.
+invocateur,Invocateur de la clairière,Druides,belladone,Unité,2,0,3,3,Combat : invoque une Pousse dans sa salle.
+meneuse,Meneuse de loups,Druides,sylve,Unité,3,2,3,3,Arrivée : invoque un Loup.
+sanglier,Sanglier furieux,Druides,sylve,Unité,3,3,3,3,Rapide.
+saule,Esprit du saule,Druides,belladone,Unité,3,1,5,3,Protecteur. / Allié mort dans sa salle : invoque une Pousse.
+ronce-garde,Gardienne des ronces,Druides,belladone,Unité,2,1,3,3,Renfort : 1 dégât à un raider.
+vieux-chene,Vieux chêne,Druides,cernun,Unité,4,3,6,3,Dans sa salle : tes Pousses et Loups ont +1/+1.
+croissance,Croissance soudaine,Druides,cernun,Sort,1,,,3,Réflexe. Une de tes unités gagne +2/+2 ce tour.
+lianes,Lianes,Druides,belladone,Sort,1,,,3,Réflexe. Sonne une unité ou un monstre.
+appel-meute,Appel de la meute,Druides,sylve,Sort,2,,,3,"Invoque 2 Loups, chacun dans une salle où tu as une unité."
+transplantation,Transplantation,Druides,sylve,Sort,2,,,3,"Déplace ton bosquet dans une autre de tes Expéditions, sans perte de niveau."
+spores,Pluie de spores,Druides,belladone,Sort,3,,,3,1 dégât à chaque ennemi d'une salle. Invoque une Pousse par ennemi tué.
+eveil-foret,Éveil de la forêt,Druides,cernun,Sort,5,,,1,Invoque une Pousse dans chaque salle. / Tes unités gagnent +1/+1 ce tour. +2 Sève. / Toutes tes Expéditions comptent comme Forêt ce tour. / Signature : 1 exemplaire max.
+guss,Guss le tavernier,Ivrognes,guss,Gardien,0,3,7,1,"Repos : soigne 2 PV à ton baril. / Plat du jour : au Stratagème, choisis un alcool à 1 PV ; ta première pinte de cet alcool coûte 0 PV ce tour. / Défense du Camp : tes défenseurs ont +1 Puissance."
+rosa,Rosa la brasseuse,Ivrognes,rosa,Gardien,0,2,7,1,"Repos : soigne 2 PV à ton baril. / Tournée de la maison : au tour adverse, ta première pinte dans un Duel de la Taverne ne coûte pas de PV. / Défense du Camp : 1 dégât à chaque attaquant."
+robin,Robin le joueur,Ivrognes,robin,Gardien,0,4,5,1,"Repos : soigne 1 PV à ton baril. / Quitte ou double : 1 fois par tour, à ton Assaut, ton baril perd 1 PV : une de tes unités gagne +2 P ce tour. Si elle tue un monstre, pioche 1 ; sinon elle est Sonnée. / Défense du Camp : aucune. Raid : tes raiders ont +1 P."
+baril-chene,Baril de chêne,Ivrognes,guss,Terrain,0,0,6,1,"Niv. 1, Aura : tes unités ici +1 P. Niv. 3, Fief : +1 trésor par monstre tué ici. / Encaisser, 1 fois par tour : quand une de tes unités ici subit des dégâts, ce baril les subit à sa place. À 0 PV : 1 dégât à tout ce qui est dans la salle. / Pinte (ton Assaut ou Duel ici), 2 par tour (3 au niv. 2) : / 1 PV : Bière +1 P · Cidre +2 PV · Hydromel soigne 2. / 2 PV : Rhum +2 P puis Gueule de bois · Whisky pas Sonnée · Absinthe +3 P, -2 PV à ton Repos. / Mélange : 2 alcools le même tour = Sonnée. / Dernière tournée, 1 fois par partie : la pinte vide le baril, qui explose. Elle coûte tous ses PV, jamais réduits."
+baril-explosif,Baril explosif,Ivrognes,rosa,Terrain,0,0,6,1,"Niv. 1, Comptoir : la première unité adverse qui entre dans cette salle chaque tour subit 1 dégât. Niv. 3, Fief : +1 trésor par monstre tué ici. / Encaisser, 1 fois par tour : quand une de tes unités ici subit des dégâts, ce baril les subit à sa place. À 0 PV : 3 dégâts à chaque ennemi de la salle. / Pinte (ton Assaut ou Duel ici), 2 par tour (3 au niv. 2) : / 1 PV : Bière +1 P · Cidre +2 PV · Hydromel soigne 2. / 2 PV : Rhum +2 P puis Gueule de bois · Whisky pas Sonnée · Absinthe +3 P, -2 PV à ton Repos. / Mélange : 2 alcools le même tour = Sonnée. / Dernière tournée, 1 fois par partie : la pinte vide le baril, qui explose. Elle coûte tous ses PV, jamais réduits."
+tonneau-paris,Tonneau des paris,Ivrognes,robin,Terrain,0,0,4,1,"Niv. 1, Pot : quand une de tes unités d'ici tue un monstre, +1 Mise sur ce baril (3 max). Au Retrait, défausse 3 Mises : +1 trésor. Niv. 3, Fief : +1 trésor par monstre tué ici. / Encaisser, 1 fois par tour : quand une de tes unités ici subit des dégâts, ce baril les subit à sa place. À 0 PV : 2 dégâts à tout ce qui est dans la salle, les Mises sont perdues. / Pinte (ton Assaut ou Duel ici), 2 par tour (3 au niv. 2) : / 1 PV : Bière +1 P · Cidre +2 PV · Hydromel soigne 2. / 2 PV : Rhum +2 P puis Gueule de bois · Whisky pas Sonnée · Absinthe +3 P, -2 PV à ton Repos. / Mélange : 2 alcools le même tour = Sonnée. / Dernière tournée, 1 fois par partie : la pinte vide le baril, qui explose. Elle coûte tous ses PV, jamais réduits."
+habitue,Habitué du bar,Ivrognes,rosa,Unité,1,1,2,3,Dans la Taverne : +1 PV.
+gamin,Gamin des ruelles,Ivrognes,guss,Unité,1,1,2,3,"Éclaireur. / Stratagème : pose un Piège Peau de banane (Sonné)."
+contrebandier,Contrebandier,Ivrognes,guss,Unité,2,2,2,3,"Éclaireur. / Stratagème : pose un Piège Tonneau piégé (2 dégâts)."
+barde,Barde éméché,Ivrognes,guss,Unité,2,1,2,3,Dans sa salle : tes autres unités ont +1 Puissance.
+poker,Joueurs de poker,Ivrognes,guss,Unité,2,2,2,3,"Bluff : se pose face cachée au Stratagème, révélée à l'Assaut."
+porteur,Porteur de tonneaux,Ivrognes,guss,Unité,2,2,2,3,"Arrivée : déplace ton baril dans l'Expédition de cette unité, sans perte de niveau."
+serveuse,Serveuse,Ivrognes,guss,Unité,2,1,3,3,Arrivée : une de tes unités gagne +1/+1.
+cracheur,Cracheur de feu,Ivrognes,rosa,Unité,3,2,3,3,"Arrivée, dans la Taverne : 1 dégât à chaque ennemi de la salle."
+soldat-ivre,Soldat ivre,Ivrognes,guss,Unité,3,4,4,3,"Il a bu, il cogne."
+videur,Videur,Ivrognes,rosa,Unité,3,2,5,3,Protecteur. / Défense du Camp : défend sans quitter sa salle.
+sentinelle-ivre,Sentinelle ivre,Ivrognes,guss,Unité,2,2,2,3,Renfort : +2 Puissance pour ce raid.
+brute,Brute de taverne,Ivrognes,guss,Unité,4,4,4,3,Arrivée : Sonne une unité ou un monstre de sa salle.
+champion,Champion de bras de fer,Ivrognes,rosa,Unité,5,5,6,3,Dans la Taverne : +2 Puissance et ne peut pas être Sonné.
+grosse-pinte,Grosse pinte,Ivrognes,guss,Sort,1,,,3,Une unité gagne +2/+2 ce tour.
+jet-chaises,Jet de chaises,Ivrognes,guss,Sort,2,,,3,"Réflexe. 2 dégâts à une cible, qui est Sonnée."
+roule-baril,Roulé de baril,Ivrognes,rosa,Sort,2,,,3,"Déplace ton baril dans une autre de tes Expéditions, sans perte de niveau, puis 2 dégâts à chaque ennemi de la salle d'arrivée."
+viree-bar,Virée du bar,Ivrognes,rosa,Sort,3,,,3,"Expulse une unité adverse d'une salle : elle retourne au Camp, Sonnée."
+ma-tournee,C'EST MA TOURNÉE !,Ivrognes,guss,Sort,5,,,1,Tes unités en jeu sont soignées et gagnent +1/+1 ce tour. / Tes blessées du Camp reviennent en Expédition. / Chaque unité de la Taverne boit une Bière gratuite. / Signature : 1 exemplaire max.
+parieur,Parieur fauché,Ivrognes,robin,Unité,1,2,1,3,"Arrivée : tente ta chance. Réussite : +1/+1."
+pickpocket,Pickpocket,Ivrognes,robin,Unité,1,1,1,3,Rapide.
+lanceuse,Lanceuse de couteaux,Ivrognes,robin,Unité,2,2,1,3,Arrivée : 1 dégât à une cible de sa salle.
+credit,Bagarreur à crédit,Ivrognes,robin,Unité,2,3,2,3,Retrait : ton baril perd 1 PV.
+tricheur,Tricheur,Ivrognes,robin,Unité,2,2,2,3,"Bluff. / Révélé : Rapide et +1 P ce tour."
+croupier,Croupier,Ivrognes,robin,Unité,2,1,3,3,"Combat : tente ta chance. Réussite : tes unités de sa salle +1 P."
+mercenaire,Mercenaire de comptoir,Ivrognes,robin,Unité,3,3,2,3,"Rapide. / Tue un monstre : +1 P jusqu'à la fin du tour."
+duelliste,Duelliste,Ivrognes,robin,Unité,3,4,2,3,Combat : frappe avant le monstre.
+flambeur,Flambeur,Ivrognes,robin,Unité,4,5,3,3,"Arrivée : tu peux faire perdre 2 PV à ton baril : +2 P ce tour."
+gagnant,Grand gagnant,Ivrognes,robin,Unité,5,5,4,3,"Rapide. / Tue un monstre : pioche 1."
+double-rien,Double ou rien,Ivrognes,robin,Sort,1,,,3,"Réflexe. Une de tes unités : tente ta chance. Réussite : +3 P ce tour. Échec : Sonnée."
+coup-monte,Coup monté,Ivrognes,robin,Sort,2,,,3,Réflexe. Une unité adverse du Duel perd 2 P ce tour.
+tapis,Tapis !,Ivrognes,robin,Sort,3,,,3,"Tes unités d'une salle +2 P ce tour. Au Retrait, celles qui n'ont pas tué de monstre sont Sonnées."
+soffia,Soffia,Mages,soffia,Gardien,0,2,6,1,"Repos : +1 Arcane. / Retrait : si tu as lancé 2 sorts ou plus ce tour, pioche 1. / Défense du Camp : 1 dégât au premier raider."
+cercle,Cercle de runes,Mages,soffia,Terrain,0,0,5,1,"Niv. 1, Portée : tes Incantations visent aussi les salles voisines. Niv. 2 : +1 Arcane au Repos. Niv. 3, Fief : +1 trésor par monstre tué ici. / Arcane : jetons sur ce Terrain (4 max), +1 par sort que tu lances. 1 Incantation par tour (ton Assaut ou Duel ici). / 1 Étincelle : 1 dégât à une cible. / 2 Égide : une de tes unités gagne Égide. / 2 Clignement : une de tes unités change de salle, même si elle a déjà bougé. / 4 Éclair en chaîne : 3 dégâts à une cible, 1 à chaque autre ennemi de sa salle."
+apprenti,Apprenti,Mages,soffia,Unité,1,1,1,3,Arrivée : +1 Arcane.
+bibliothecaire,Bibliothécaire,Mages,soffia,Unité,1,0,2,3,"Arrivée : regarde les 2 cartes du dessus de ta pioche, remets-les dans l'ordre de ton choix."
+adepte,Adepte des runes,Mages,soffia,Unité,2,1,2,3,Portée.
+etudiante,Étudiante studieuse,Mages,soffia,Unité,2,1,3,3,Sort lancé : +1 P ce tour.
+garde-tour,Garde de la tour,Mages,soffia,Unité,2,2,3,3,Protecteur.
+familier,Familier,Mages,soffia,Unité,2,1,2,3,Rapide. / Dernier souffle : +1 Arcane.
+enchanteur,Enchanteur,Mages,soffia,Unité,3,1,3,3,Arrivée : une de tes unités gagne Égide.
+mage-bataille,Mage de bataille,Mages,soffia,Unité,3,2,3,3,Portée.
+mage-errant,Mage errant,Mages,soffia,Unité,4,3,4,3,Portée. / Arrivée : +1 Arcane.
+sentinelle-cristal,Sentinelle de cristal,Mages,soffia,Unité,5,4,6,3,Sort lancé : +1/+1 ce tour.
+projectile,Projectile magique,Mages,soffia,Sort,1,,,3,"Réflexe. Portée. 1 dégât à une cible. Si elle meurt, pioche 1."
+dissipation,Dissipation,Mages,soffia,Sort,2,,,3,Réflexe. Annule un sort adverse ou un bonus de Terrain adverse du Duel.
+convergence,Convergence,Mages,soffia,Sort,5,,,1,Tes unités gagnent Portée ce tour. / +2 Arcane. Pioche 2. / Signature : 1 exemplaire max.
+orsin,Orsin le runiste,Mages,orsin,Gardien,0,2,7,1,"Repos : +1 Arcane. / Stratagème : pose 1 Glyphe dans la salle de ton Terrain. / Défense du Camp : tes défenseurs gagnent Égide."
+sanctuaire,Sanctuaire runique,Mages,orsin,Terrain,0,0,7,1,"Niv. 1, Portée : tes Incantations visent aussi les salles voisines. Niv. 2 : +1 Arcane au Repos. Niv. 3, Fief : +1 trésor par monstre tué ici. / Arcane : jetons sur ce Terrain (4 max), +1 par sort que tu lances. 1 Incantation par tour (ton Assaut ou Duel ici). / 1 Glyphe : pose un Glyphe dans une salle. / 1 Égide : une de tes unités gagne Égide. / 2 Gel : une unité adverse est Entravée et Sonnée. / 4 Bastion : ce tour, tes unités d'une salle ne subissent pas plus de 1 dégât par coup."
+scribe,Scribe des runes,Mages,orsin,Unité,1,0,3,3,Arrivée : pose un Glyphe dans sa salle.
+veilleur,Veilleur,Mages,orsin,Unité,1,1,2,3,Arrivée : gagne Égide.
+graveur,Graveur de sceaux,Mages,orsin,Unité,2,1,3,3,Un Glyphe se déclenche dans sa salle : +1 Arcane.
+acolyte,Acolyte du bouclier,Mages,orsin,Unité,2,1,4,3,Protecteur.
+sentinelle-runique,Sentinelle runique,Mages,orsin,Unité,2,2,3,3,"Combat : s'il y a un Glyphe dans sa salle, +1 P."
+tisseuse,Tisseuse de protections,Mages,orsin,Unité,3,1,4,3,Arrivée : tes autres unités de sa salle gagnent Égide.
+portier,Portier du seuil,Mages,orsin,Unité,3,2,5,3,Protecteur. / Les ennemis de sa salle sont Entravés.
+statue,Statue animée,Mages,orsin,Unité,3,0,7,3,Protecteur. / Ne peut pas changer de salle.
+maitre-glyphes,Maître des glyphes,Mages,orsin,Unité,4,2,5,3,Arrivée : pose 2 Glyphes dans sa salle ou une salle voisine.
+colosse,Colosse runique,Mages,orsin,Unité,5,3,8,3,Protecteur. / Sort lancé : soigne 2 PV.
+bouclier-runique,Bouclier runique,Mages,orsin,Sort,1,,,3,Réflexe. Une de tes unités gagne Égide et +2 PV ce tour.
+repulsion,Répulsion,Mages,orsin,Sort,2,,,3,"Réflexe. Une unité adverse d'une salle avec ton Glyphe retourne dans l'Expédition d'où elle vient, Sonnée."
+citadelle,Citadelle de runes,Mages,orsin,Sort,5,,,1,Pose un Glyphe dans chaque salle où tu as une unité. / Tes unités +0/+2 jusqu'à ton prochain Repos. / Signature : 1 exemplaire max.
+ignis,Ignis la pyromancienne,Mages,ignis,Gardien,0,3,5,1,"Repos : +1 Arcane. / Brasier : tes sorts infligent +1 dégât aux monstres. / Défense du Camp : 2 dégâts au premier raider, puis Ignis perd 1 PV."
+foyer,Foyer instable,Mages,ignis,Terrain,0,0,4,1,"Niv. 1, Portée : tes Incantations visent aussi les salles voisines. Niv. 2 : +1 Arcane au Repos. Niv. 3, Fief : +1 trésor par monstre tué ici. / Arcane : jetons sur ce Terrain, +1 par sort que tu lances. 1 Incantation par tour (ton Assaut ou Duel ici). / Surcharge : Arcane jusqu'à 6 ; à ton Repos, 1 dégât à ce Terrain par jeton au-dessus de 4. / 1 Étincelle : 1 dégât à une cible. / 2 Boule de feu : 2 dégâts à une cible, 1 à chaque autre ennemi de sa salle. / 3 Embrasement : une de tes unités +3 P ce tour. / 5 Pyroclasme : 4 dégâts à une cible jusqu'à 2 salles de distance."
+feu-follet,Feu follet,Mages,ignis,Unité,1,2,1,3,Dernier souffle : 1 dégât à une cible de sa salle.
+novice-feu,Novice du feu,Mages,ignis,Unité,1,1,1,3,Arrivée : 1 dégât à une cible de sa salle.
+jongleur,Jongleur de flammes,Mages,ignis,Unité,2,2,1,3,Portée.
+salamandre,Salamandre,Mages,ignis,Unité,2,2,2,3,Rapide.
+pyromane,Pyromane,Mages,ignis,Unité,2,2,2,3,"Sort lancé, 1 fois par tour : 1 dégât à une cible de sa salle."
+embraseuse,Embraseuse,Mages,ignis,Unité,3,3,2,3,Portée. / Tue un monstre : +1 Arcane.
+elementaire,Élémentaire de feu,Mages,ignis,Unité,3,4,2,3,Ne peut pas être soigné.
+mage-cendres,Mage des cendres,Mages,ignis,Unité,3,2,2,3,Portée. / Combat : +1 P par jeton d'Arcane au-dessus de 4.
+phenix,Phénix,Mages,ignis,Unité,4,3,3,3,Rapide. / Dernier souffle : retourne dans ta main.
+incarnation,Incarnation du brasier,Mages,ignis,Unité,5,6,3,3,Portée. / Arrivée : 1 dégât à chaque autre unité de sa salle (les tiennes aussi).
+trait-feu,Trait de feu,Mages,ignis,Sort,1,,,3,Réflexe. Portée. 2 dégâts à un monstre.
+boule-feu,Boule de feu,Mages,ignis,Sort,3,,,3,"Portée. 3 dégâts à une cible, 1 à chaque autre ennemi de sa salle."
+meteore,Météore,Mages,ignis,Sort,5,,,1,"Portée. 6 dégâts à une cible. Si c'est un monstre et qu'il meurt, +1 trésor. / À ton prochain Repos, ton Terrain perd 2 PV. / Signature : 1 exemplaire max."
+garcon-cave,Garçon de cave,Ivrognes,rosa,Unité,1,1,2,3,Arrivée : soigne 1 PV à ton baril.
+tonnelier,Tonnelier,Ivrognes,rosa,Unité,2,1,3,3,"Retrait, dans la Taverne : soigne 2 PV à ton baril."
+pilier,Pilier de comptoir,Ivrognes,rosa,Unité,2,1,4,3,Protecteur. / Ne peut pas changer de salle.
+gardienne-fut,Gardienne du fût,Ivrognes,rosa,Unité,3,2,5,3,"Dans la Taverne : les dégâts subis par ton baril sont réduits de 1."
+videuse-chef,Videuse en chef,Ivrognes,rosa,Unité,4,3,5,3,Protecteur. / Tes autres Protecteurs ont +1 P.
+ours,Ours de la brasserie,Ivrognes,rosa,Unité,5,3,8,3,"Protecteur. / Dans la Taverne : quand il est attaqué, l'attaquant subit 2 dégâts."
+fermeture,Fermeture !,Ivrognes,rosa,Sort,2,,,3,"Réflexe. Jusqu'à la fin du tour, les unités adverses ne peuvent pas entrer dans la Taverne."
+cuisinier,Cuisinier de la taverne,Ivrognes,guss,Unité,3,2,4,3,"Arrivée, choisis : une de tes unités gagne +1/+1 ; ou 1 dégât à une cible de sa salle ; ou soigne 2 PV à ton baril."
+semeuse,Semeuse,Druides,cernun,Unité,1,1,2,3,Dernier souffle : +1 Sève.
+herboriste,Herboriste,Druides,cernun,Unité,2,1,3,3,"Arrivée, choisis : soigne 2 PV à une unité ; ou +1 Sève."
+greffeur,Druide greffeur,Druides,cernun,Unité,3,2,3,3,Arrivée : une de tes Pousses devient un Loup.
+ours-clairiere,Ours des clairières,Druides,cernun,Unité,3,3,4,3,Dans la Forêt : +1 PV.
+cerf,Cerf ancestral,Druides,cernun,Unité,4,3,5,3,"Arrivée, choisis : invoque 2 Pousses ; ou +2 Sève."
+recolte,Récolte abondante,Druides,cernun,Sort,2,,,3,"+2 Sève. Si ton bosquet est niv. 2 ou plus, pioche 1."
+crapaud,Crapaud vénéneux,Druides,belladone,Unité,1,1,1,3,Dernier souffle : son tueur est Empoisonné.
+araignee-ronces,Araignée des ronces,Druides,belladone,Unité,1,0,2,3,Combat : l'unité qu'elle combat est Entravée.
+mur-ronces,Mur de ronces,Druides,belladone,Unité,2,0,5,3,Protecteur. / Une unité qui l'attaque est Empoisonnée.
+sorciere,Sorcière des marais,Druides,belladone,Unité,3,2,3,3,Arrivée : chaque ennemi de sa salle est Empoisonné.
+mandragore,Mandragore,Druides,belladone,Unité,4,2,6,3,"Protecteur. / Combat, dans la Forêt : l'unité qui l'attaque est Sonnée."
+enchevetrement,Enchevêtrement,Druides,belladone,Sort,2,,,3,Réflexe. Les unités adverses d'une salle sont Entravées ce tour.
+louveteau,Louveteau,Druides,sylve,Unité,1,2,1,3,Rapide.
+faucon,Faucon chasseur,Druides,sylve,Unité,1,1,1,3,Arrivée : une de tes unités gagne Rapide.
+chasseresse,Chasseresse,Druides,sylve,Unité,2,2,2,3,Tue un monstre : invoque un Loup.
+lynx,Lynx des ombres,Druides,sylve,Unité,2,3,1,3,Rapide. / Combat : +1 P s'il a changé de salle ce tour.
+loup-alpha,Loup alpha,Druides,sylve,Unité,3,3,3,3,Tes Loups ont +1 Puissance.
+ours-enrage,Ours enragé,Druides,sylve,Unité,4,5,3,3,Rapide. / Ne peut pas défendre le Camp.
+loup-blanc,Grand loup blanc,Druides,sylve,Unité,5,5,4,3,Rapide. / Tue un monstre : tes Loups gagnent +1/+1 ce tour.
+hallali,Hallali,Druides,sylve,Sort,2,,,3,"Réflexe. Une de tes unités gagne +2 P ce tour. Si le monstre meurt pendant ce Duel, invoque un Loup."

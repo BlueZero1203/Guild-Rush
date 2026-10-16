@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Livret Guild Rush</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500;700;800&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap">
+<style>
+/* Layout : livret à colonne de lecture unique, sommaire collant à gauche sur grand écran, fiches de guilde en bandeaux couleur. */
+:root{
+  --bg:#efece4; --paper:#f8f6f0; --ink:#2a2420; --muted:#6c625a; --rule:#d8d0c2;
+  --accent:#8a2f22; --gold:#b8862b; --gold-soft:#f1e3c2;
+  --ivr:#a5651e; --ivr-soft:#f4e6d3; --dru:#3f7a3c; --dru-soft:#e0eedb; --mag:#4b54a8; --mag-soft:#e2e4f5;
+  --stone:#e3ddd1; --monster:#8a2f22;
+  --f-display:"Alegreya SC", "Palatino Linotype", Georgia, serif;
+  --f-body:"Alegreya", "Palatino Linotype", Georgia, serif;
+  --f-ui:"Alegreya Sans", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1b1916; --paper:#23201c; --ink:#ebe4d8; --muted:#a69b8d; --rule:#3c362f;
+  --accent:#e0806c; --gold:#d9a94b; --gold-soft:#3a3020;
+  --ivr:#e09a52; --ivr-soft:#352a1c; --dru:#7fbf74; --dru-soft:#1f2e1d; --mag:#9aa3ee; --mag-soft:#24263d;
+  --stone:#2d2924; --monster:#e0806c; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1b1916; --paper:#23201c; --ink:#ebe4d8; --muted:#a69b8d; --rule:#3c362f;
+  --accent:#e0806c; --gold:#d9a94b; --gold-soft:#3a3020;
+  --ivr:#e09a52; --ivr-soft:#352a1c; --dru:#7fbf74; --dru-soft:#1f2e1d; --mag:#9aa3ee; --mag-soft:#24263d;
+  --stone:#2d2924; --monster:#e0806c; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:1.12rem;line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:0 4rem}
+.wrap{max-width:68rem;margin:0 auto;display:grid;grid-template-columns:13rem minmax(0,1fr);gap:3rem}
+@media (max-width:860px){.wrap{grid-template-columns:minmax(0,1fr);gap:0}}
+nav.toc{position:sticky;top:calc(env(safe-area-inset-top, 0px) + 1.5rem);align-self:start;padding-top:3rem;font-family:var(--f-ui);font-size:.92rem}
+nav.toc ol{list-style:none;margin:0;padding:0;display:grid;gap:.15rem;counter-reset:t}
+nav.toc a{color:var(--muted);text-decoration:none;display:block;padding:.2rem .5rem;border-radius:4px}
+nav.toc a:hover,nav.toc a:focus-visible{color:var(--accent);background:var(--stone);outline:none}
+nav.toc .lbl{font-family:var(--f-display);color:var(--gold);letter-spacing:.08em;font-size:.85rem;margin:0 0 .6rem .5rem}
+@media (max-width:860px){nav.toc{position:static;padding-top:1rem}
+  nav.toc ol{display:flex;flex-wrap:wrap;gap:.3rem}
+  nav.toc a{border:1px solid var(--rule);padding:.15rem .55rem}}
+main{min-width:0;max-width:44rem}
+header.hero{padding:3.5rem 0 2rem;border-bottom:2px solid var(--ink);margin-bottom:1rem}
+.eyebrow{font-family:var(--f-ui);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 .6rem}
+h1{font-family:var(--f-display);font-weight:800;font-size:clamp(2.6rem,7vw,4.2rem);line-height:1;margin:0 0 1rem;letter-spacing:.01em}
+h1 span{color:var(--accent)}
+.lede{font-size:1.25rem;margin:0;max-width:38rem;text-wrap:pretty}
+section{padding-top:2.2rem;scroll-margin-top:1rem}
+h2{font-family:var(--f-display);font-weight:700;font-size:1.75rem;margin:0 0 .8rem;display:flex;gap:.7rem;align-items:baseline;text-wrap:balance}
+h2 .n{font-family:var(--f-ui);font-size:.85rem;font-weight:700;color:var(--paper);background:var(--accent);border-radius:999px;min-width:1.8rem;height:1.8rem;display:inline-grid;place-items:center;flex:none;transform:translateY(-.2rem)}
+h3{font-family:var(--f-display);font-weight:700;font-size:1.25rem;margin:1.6rem 0 .5rem}
+p{margin:.6rem 0}
+ul,ol.steps{margin:.6rem 0;padding-left:1.3rem}
+li{margin:.3rem 0}
+strong{font-weight:700}
+.kw{font-weight:700;color:var(--accent)}
+.note{font-family:var(--f-ui);font-size:.95rem;background:var(--gold-soft);border-left:4px solid var(--gold);padding:.7rem 1rem;border-radius:0 6px 6px 0;margin:1rem 0}
+.tbl{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-family:var(--f-ui);font-size:.97rem}
+th,td{text-align:left;padding:.5rem .7rem;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}
+td:first-child{white-space:nowrap;font-weight:700}
+td.wrap1{white-space:normal}
+.win{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1rem;margin:1rem 0}
+.win div{background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:1rem 1.1rem}
+.win b{display:block;font-family:var(--f-display);font-size:2.4rem;line-height:1;color:var(--gold)}
+.win span{font-family:var(--f-ui);font-size:.95rem}
+/* plateau */
+.board{overflow-x:auto;margin:1.2rem 0}
+.bgrid{min-width:34rem;display:grid;grid-template-columns:5.5rem repeat(4,1fr) 6.5rem;gap:.4rem;font-family:var(--f-ui);font-size:.85rem;text-align:center}
+.bgrid .lab{color:var(--muted);align-self:center;text-align:right;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
+.exp{border:1.5px dashed var(--rule);border-radius:6px;padding:.55rem .3rem;color:var(--muted)}
+.exp.me{border-color:var(--gold);color:var(--ink);background:var(--gold-soft)}
+.room{background:var(--stone);border:1.5px solid var(--monster);border-radius:6px;padding:.9rem .3rem;font-weight:700;color:var(--monster)}
+.camp{border:1.5px solid var(--ink);border-radius:6px;padding:.55rem .3rem;font-weight:700;align-self:stretch;display:grid;place-items:center}
+.camp.opp{border-color:var(--muted);color:var(--muted);font-weight:500}
+.pile{color:var(--muted);font-size:.78rem;align-self:center;text-align:left}
+/* phases */
+.phases{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.6rem;margin:1rem 0;counter-reset:ph}
+@media (max-width:640px){.phases{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.phase{background:var(--paper);border:1px solid var(--rule);border-top:4px solid var(--accent);border-radius:6px;padding:.8rem .9rem;font-family:var(--f-ui);font-size:.93rem;line-height:1.45}
+.phase h4{margin:0 0 .35rem;font-family:var(--f-display);font-size:1.15rem;color:var(--accent)}
+.phase h4::before{counter-increment:ph;content:counter(ph) ". ";color:var(--muted)}
+/* étapes de combat */
+ol.steps{list-style:none;padding:0;counter-reset:s;display:grid;gap:.6rem}
+ol.steps>li{position:relative;padding-left:2.6rem;margin:0}
+ol.steps>li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:.05rem;width:1.8rem;height:1.8rem;border-radius:50%;border:2px solid var(--accent);color:var(--accent);font-family:var(--f-ui);font-weight:700;font-size:.9rem;display:grid;place-items:center}
+/* guildes */
+.guild{border-radius:10px;padding:1.2rem 1.3rem 1rem;margin:1.2rem 0;border:1px solid var(--rule)}
+.guild h3{margin:0 0 .2rem;font-size:1.5rem}
+.guild .tag{font-family:var(--f-ui);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin:0 0 .6rem}
+.guild.ivr{background:var(--ivr-soft)} .guild.ivr h3,.guild.ivr .tag{color:var(--ivr)}
+.guild.dru{background:var(--dru-soft)} .guild.dru h3,.guild.dru .tag{color:var(--dru)}
+.guild.mag{background:var(--mag-soft)} .guild.mag h3,.guild.mag .tag{color:var(--mag)}
+.guild table{font-size:.93rem}
+.guild th,.guild td{border-color:color-mix(in srgb, var(--ink) 15%, transparent)}
+.style{display:inline-block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;border:1px solid currentColor;border-radius:3px;padding:0 .35rem;margin-right:.35rem;color:var(--muted)}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font-family:var(--f-ui);font-size:.88rem;color:var(--muted)}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+<nav class="toc" aria-label="Sommaire">
+  <p class="lbl">Sommaire</p>
+  <ol>
+    <li><a href="#but">But</a></li>
+    <li><a href="#deck">Ton deck</a></li>
+    <li><a href="#plateau">Plateau</a></li>
+    <li><a href="#miseenplace">Mise en place</a></li>
+    <li><a href="#tour">Le tour</a></li>
+    <li><a href="#assaut">L'Assaut</a></li>
+    <li><a href="#degats">Dégâts et soin</a></li>
+    <li><a href="#donjon">Le donjon</a></li>
+    <li><a href="#raid">Le raid</a></li>
+    <li><a href="#terrain">Le Terrain</a></li>
+    <li><a href="#carte">Carte au trésor</a></li>
+    <li><a href="#guildes">Les guildes</a></li>
+    <li><a href="#motscles">Mots-clés</a></li>
+    <li><a href="#etats">États</a></li>
+  </ol>
+</nav>
+
+<main>
+<header class="hero">
+  <p class="eyebrow">Livret de règles · version proto · 16 octobre 2026</p>
+  <h1>Guild <span>Rush</span></h1>
+  <p class="lede">Deux guildes descendent dans le même donjon. Elles tuent des monstres pour prendre leurs trésors, se volent les coups de grâce et pillent le Camp de l'autre. À la fin, la guilde la plus riche gagne.</p>
+</header>
+
+<section id="but">
+  <h2><span class="n">1</span>Le but</h2>
+  <p>Marque plus de trésors que ton adversaire. La partie s'arrête dans l'un de ces deux cas :</p>
+  <div class="win">
+    <div><b>12</b><span>trésors ou plus pour un joueur à la <strong>fin d'une manche</strong>.</span></div>
+    <div><b>Boss</b><span>tué : la partie s'arrête à la <strong>fin de ce tour</strong>.</span></div>
+  </div>
+  <p>Le plus de trésors gagne. Égalité : le tueur du boss, sinon celui qui a tué le plus de monstres.</p>
+</section>
+
+<section id="deck">
+  <h2><span class="n">2</span>Ton deck</h2>
+  <div class="tbl"><table>
+    <tr><th>Carte</th><th>Nombre</th></tr>
+    <tr><td>Gardien</td><td class="wrap1">1 : le chef de ta guilde.</td></tr>
+    <tr><td>Terrain</td><td class="wrap1">1, de la faction du Gardien, au choix.</td></tr>
+    <tr><td>Deck</td><td class="wrap1">30 cartes de ta faction, dont <strong>20 minimum du pool de ton Gardien</strong>.</td></tr>
+  </table></div>
+  <ul>
+    <li>3 exemplaires max par carte, 1 seul pour une <span class="kw">Signature</span>.</li>
+    <li>Le <strong>pool</strong> d'un Gardien : ses 10 unités et ses 3 sorts.</li>
+    <li>Trois factions, chacune avec 3 Gardiens : <strong>Ivrognes</strong> (la Taverne), <strong>Druides</strong> (la Forêt), <strong>Mages</strong> (le Cercle).</li>
+  </ul>
+</section>
+
+<section id="plateau">
+  <h2><span class="n">3</span>Le plateau</h2>
+  <div class="board" role="img" aria-label="Plateau : 4 salles en ligne, une Expédition par salle pour chaque joueur, et un Camp par joueur hors du donjon">
+    <div class="bgrid">
+      <div class="lab">Adversaire</div>
+      <div class="exp">Exp. 1</div><div class="exp">Exp. 2</div><div class="exp">Exp. 3</div><div class="exp">Exp. 4</div>
+      <div class="camp opp">Camp adverse</div>
+      <div class="lab">Donjon</div>
+      <div class="room">Salle 1</div><div class="room">Salle 2</div><div class="room">Salle 3</div><div class="room">Salle 4</div>
+      <div class="pile">Pioche de monstres · boss · vaincus</div>
+      <div class="lab">Toi</div>
+      <div class="exp me">Exp. 1</div><div class="exp me">Exp. 2</div><div class="exp me">Exp. 3</div><div class="exp me">Exp. 4</div>
+      <div class="camp">Ton Camp</div>
+    </div>
+  </div>
+  <ul>
+    <li><strong>Salles</strong> : 4 en ligne, chacune avec un monstre. Voisine = numéro ±1.</li>
+    <li><strong>Expéditions</strong> : une par salle et par joueur, face à la salle. <strong>3 unités max</strong>, jetons compris.</li>
+    <li><strong>Camp</strong> : ta zone de repli et de soin, hors du donjon. Il touche toutes tes Expéditions, n'a pas de limite d'unités et n'est jamais une salle. Ton Gardien y vit.</li>
+    <li>Ton <strong>Terrain</strong> se pose dans une Expédition. Sa salle est ta <strong>Taverne</strong>, ta <strong>Forêt</strong> ou ton <strong>Cercle</strong>.</li>
+  </ul>
+</section>
+
+<section id="miseenplace">
+  <h2><span class="n">4</span>Mise en place</h2>
+  <ol class="steps">
+    <li>Mélange les 8 monstres de la Mine. Pose-en 1 dans chaque salle ; les 4 autres forment la pioche de monstres. Le boss Grombak attend à côté.</li>
+    <li>Chaque joueur pose son Gardien au Camp et son Terrain à côté, mélange son deck et pioche <strong>5 cartes</strong>.</li>
+    <li>Tire au sort le premier joueur.</li>
+    <li>Au 1er Assaut, chaque joueur pose son Terrain dans l'Expédition de son choix.</li>
+  </ol>
+</section>
+
+<section id="tour">
+  <h2><span class="n">5</span>Le tour</h2>
+  <p>Une <strong>manche</strong>, c'est un tour de chaque joueur. Ton tour a 4 phases :</p>
+  <div class="phases">
+    <div class="phase"><h4>Repos</h4>Énergie au max, pioche 1, soin des unités En soin, passif du Gardien.</div>
+    <div class="phase"><h4>Stratagème</h4>Éclaireurs, cartes face cachée (Bluff), lever le camp.</div>
+    <div class="phase"><h4>Assaut</h4>Poser, déplacer, combattre salle par salle, puis 1 raid max.</div>
+    <div class="phase"><h4>Retrait</h4>Compter tes trésors, le Terrain monte de niveau.</div>
+  </div>
+  <p><strong>Énergie</strong> : 3 à la manche 1, +1 par manche, 6 max. Celle que tu ne dépenses pas reste jusqu'à ton Repos : elle paie tes Réflexes au tour adverse.</p>
+  <p>Au début de chaque tour, les salles vides reçoivent le monstre suivant, puis le boss quand la pioche est vide.</p>
+</section>
+
+<section id="assaut">
+  <h2><span class="n">6</span>L'Assaut</h2>
+  <h3>Poser et déplacer</h3>
+  <ul>
+    <li>Une unité posée arrive <strong>directement</strong> dans l'Expédition voulue ou au Camp.</li>
+    <li>Une unité déjà en jeu se déplace <strong>1 fois par tour</strong> : vers une Expédition voisine ou le Camp, ou du Camp vers n'importe quelle Expédition.</li>
+    <li>Une unité <span class="kw">Blessée</span> ne peut aller qu'au Camp, où elle passe <span class="kw">En soin</span>.</li>
+    <li><strong>Entrer</strong> dans une salle (pose, déplacement, retour du Camp) déclenche les Pièges, Glyphes et effets « entre ».</li>
+  </ul>
+
+  <h3>Combattre</h3>
+  <p>Attaquer est <strong>optionnel</strong> : rester dans une salle sans attaquer ne déclenche rien. Salle par salle, choisis tes attaquants et leur cible (le monstre, une unité adverse ou le Terrain adverse ; <span class="kw">Protecteur</span> respecté). Puis :</p>
+  <ol class="steps">
+    <li><strong>Duel.</strong> L'adversaire répond d'abord, puis chacun joue à tour de rôle une carte <span class="kw">Réflexe</span>, un bonus de son Terrain (si le Duel a lieu dans sa salle), ou passe. Deux passes de suite : on frappe.</li>
+    <li><strong>Le monstre frappe</strong> 1 de tes attaquants présents, <strong>choisi par l'adversaire</strong>.</li>
+    <li><strong>Tes attaquants debout frappent ensemble.</strong> Dégâts = Puissance.</li>
+    <li><strong>Mêlée</strong>, si l'adversaire a des unités dans la salle : chacune frappe 1 fois la cible de son choix dans la salle. Si certaines frappent le monstre, il riposte d'abord sur 1 d'entre elles, choisie par toi.</li>
+  </ol>
+  <p>Chaque unité frappe <strong>1 fois par tour</strong>. <span class="kw">Rapide</span> : 1 fois de plus après avoir changé de salle.</p>
+
+  <h3>Le coup de grâce</h3>
+  <p>Le <strong>tueur</strong> d'un monstre est le joueur qui contrôle la source du dernier dégât (unité, sort, Terrain). Il prend <strong>tous</strong> les trésors du monstre, et sa relique s'il en a une. En Mêlée, le kill se vole.</p>
+  <div class="note"><strong>Repli</strong> : après une Mêlée perdue, tes unités qui ont attaqué peuvent retourner au Camp (pas si Entravées).</div>
+
+  <h3>Les sorts</h3>
+  <ul>
+    <li>Un sort se lance dans une salle où tu as une <strong>unité</strong> ; ton Terrain ne compte pas. Avec <span class="kw">Portée</span> : aussi une salle voisine.</li>
+    <li>Sans Réflexe, un sort se joue à ton Assaut, hors Duel. Avec Réflexe, il se joue en Duel, même au tour adverse.</li>
+  </ul>
+</section>
+
+<section id="degats">
+  <h2><span class="n">7</span>Dégâts et soin</h2>
+  <ul>
+    <li>Les dégâts <strong>restent</strong> sur la carte jusqu'au soin. À 0 PV, l'unité meurt ; un Terrain est détruit ; un Gardien est <span class="kw">Assommé</span>.</li>
+    <li>Les <strong>PV bonus</strong> (+X PV, +X/+X) prennent les dégâts en premier et disparaissent avec le buff.</li>
+    <li><span class="kw">Blessé</span> : au moins 1 dégât sur ses PV de base. Il ne peut se déplacer que vers le Camp.</li>
+    <li><span class="kw">En soin</span> : une unité blessée arrivée au Camp est soignée complètement à ton prochain Repos, puis reste au Camp jusqu'à la fin de ce tour.</li>
+  </ul>
+</section>
+
+<section id="donjon">
+  <h2><span class="n">8</span>Le donjon</h2>
+  <ul>
+    <li>Chaque monstre a des <strong>trésors</strong> (pastille dorée) ; certains portent une <strong>relique</strong>.</li>
+    <li><span class="kw">Embuscade</span> : effet quand le monstre arrive.</li>
+    <li>Les dégâts d'un monstre restent d'un tour à l'autre.</li>
+    <li><strong>Évolution</strong> : à la fin d'une manche, un monstre en jeu depuis une manche entière se retourne sur sa face évoluée, sans dégâts. Plus fort, plus riche.</li>
+    <li>Le <strong>boss</strong> entre quand la pioche est vide. Le tuer termine la partie à la fin du tour.</li>
+  </ul>
+  <div class="tbl"><table>
+    <tr><th>Relique de la Mine</th><th>Effet</th></tr>
+    <tr><td>Lanterne du mineur</td><td class="wrap1">Stratagème : regarde le monstre du dessus de la pioche ; tu peux le mettre en dessous.</td></tr>
+    <tr><td>Pioche runique</td><td class="wrap1">Ta première unité qui attaque un monstre à l'Assaut a +2 Puissance.</td></tr>
+    <tr><td>Bourse du contremaître</td><td class="wrap1">Retrait : +1 trésor si tu as tué un monstre ce tour.</td></tr>
+  </table></div>
+</section>
+
+<section id="raid">
+  <h2><span class="n">9</span>Le raid</h2>
+  <p>Le raid frappe le Camp adverse pour voler des trésors.</p>
+  <ol class="steps">
+    <li><strong>Condition</strong> : dès la manche 2, à ton Assaut, 1 raid max. Une de tes unités vient de tuer, dans cette salle, le monstre ou la dernière unité adverse.</li>
+    <li><strong>Départ</strong> : tes unités debout de cette salle partent au Camp adverse (pas les Entravées).</li>
+    <li><strong>Rappel</strong> : le défenseur ramène au Camp les unités d'Expédition qu'il veut (pas les Entravées).</li>
+    <li><strong>Effets</strong> : <span class="kw">Renfort</span> et Défense du Camp, défenseur d'abord.</li>
+    <li><strong>Mêlée de raid</strong>, sans monstre : un Duel, puis chaque raider frappe (Protecteur d'abord, Gardien ensuite), puis chaque défenseur debout frappe un raider.</li>
+    <li><strong>Résultat</strong> : réussi s'il reste <strong>plus de raiders que de défenseurs debout</strong>, Gardien compris. Égalité : le défenseur gagne.</li>
+    <li><strong>Butin</strong> : 1 trésor volé, <strong>+1 si le Gardien est Assommé</strong> (2 max).</li>
+  </ol>
+  <p>Après le raid, les blessés des deux camps passent En soin, les morts sont défaussés, et tes raiders rentrent à ton Camp.</p>
+</section>
+
+<section id="terrain">
+  <h2><span class="n">10</span>Le Terrain</h2>
+  <ul>
+    <li>Il a des PV, ne frappe pas et ne bloque pas les raids. Une unité adverse qui combat dans sa salle peut l'attaquer.</li>
+    <li><strong>Bonus</strong> : à ton Assaut, ou pendant n'importe quel Duel dans sa salle, même au tour adverse. Ils visent tes unités de la salle.</li>
+    <li><strong>Niveau</strong> : niv. 1 à la pose, +1 au Retrait s'il n'a pas bougé (3 max). Au niv. 3, c'est un <span class="kw">Fief</span> : +1 trésor par monstre tué dans sa salle par tes unités ou tes sorts.</li>
+    <li><strong>Lever le camp</strong> (Stratagème) : déplace-le vers une Expédition voisine ; il perd 1 niveau.</li>
+    <li><strong>Détruit</strong> : il revient au niv. 1 à ton Assaut suivant. Si l'adversaire l'a détruit, il gagne +1 trésor (<span class="kw">pillage</span>).</li>
+  </ul>
+</section>
+
+<section id="carte">
+  <h2><span class="n">11</span>La Carte au trésor</h2>
+  <p>Le rattrapage. À la fin de la manche 1, elle va au Camp du joueur qui a le moins de trésors (égalité : le second joueur). À chaque Retrait, son détenteur gagne <strong>+1 trésor s'il est mené</strong>. Un raid réussi peut la prendre à la place du 1er trésor volé.</p>
+</section>
+
+<section id="guildes">
+  <h2><span class="n">12</span>Les guildes</h2>
+
+  <div class="guild ivr">
+    <h3>Ivrognes</h3>
+    <p class="tag">La Taverne · ressource : Pinte</p>
+    <p>Bagarre et gros corps autour du baril. Une <strong>pinte</strong> fait perdre des PV au baril pour faire boire une unité de sa salle : 2 pintes par tour, 3 au niv. 2.</p>
+    <div class="tbl"><table>
+      <tr><th>Prix</th><th>Alcools</th></tr>
+      <tr><td>1 PV</td><td class="wrap1">Bière +1 P · Cidre +2 PV · Hydromel soigne 2</td></tr>
+      <tr><td>2 PV</td><td class="wrap1">Rhum +2 P puis Gueule de bois · Whisky Insensible · Absinthe +3 P puis Contrecoup</td></tr>
+    </table></div>
+    <p><strong>Mélange</strong> : 2 alcools le même tour = Sonné. <strong>Encaisser</strong> : 1 fois par tour, le baril prend un coup à la place d'une unité de sa salle. <strong>Dernière tournée</strong>, 1 fois par partie : la pinte vide le baril, qui explose.</p>
+    <div class="tbl"><table>
+      <tr><th>Gardien</th><th>Style</th><th>Terrain</th></tr>
+      <tr><td>Guss le tavernier · 3/7</td><td class="wrap1"><span class="style">Équilibré</span>Plat du jour, défenseurs +1 P</td><td class="wrap1">Baril de chêne (Aura +1 P)</td></tr>
+      <tr><td>Rosa la brasseuse · 2/7</td><td class="wrap1"><span class="style">Zone</span>Tournée de la maison, 1 dégât aux raiders</td><td class="wrap1">Baril explosif (Comptoir)</td></tr>
+      <tr><td>Robin le joueur · 4/5</td><td class="wrap1"><span class="style">Agressif</span>Quitte ou double, raiders +1 P</td><td class="wrap1">Tonneau des paris (Pot, Mises)</td></tr>
+    </table></div>
+  </div>
+
+  <div class="guild dru">
+    <h3>Druides</h3>
+    <p class="tag">La Forêt · ressource : Sève</p>
+    <p>Nombre et invocations (Pousses, Loups). La <strong>Sève</strong> s'accumule sur le bosquet (4 max) : +1 au Repos, +2 au niv. 2. Elle paie 1 recette par tour. <strong>Sous-bois</strong> : 4 unités dans la Forêt au lieu de 3.</p>
+    <div class="tbl"><table>
+      <tr><th>Gardien</th><th>Style</th><th>Terrain</th></tr>
+      <tr><td>Cernun · 2/7</td><td class="wrap1"><span class="style">Équilibré</span>Sève par monstre tué, 2 Pousses en défense</td><td class="wrap1">Bosquet ancien (buffs)</td></tr>
+      <tr><td>Belladone · 1/6</td><td class="wrap1"><span class="style">Zone</span>Ronces, Sonne au raid</td><td class="wrap1">Bosquet empoisonné (dégâts, Poison)</td></tr>
+      <tr><td>Sylve · 2/5</td><td class="wrap1"><span class="style">Agressive</span>Nomade, Meute (Loups Rapides)</td><td class="wrap1">Bosquet d'ombre (recettes Réflexe)</td></tr>
+    </table></div>
+  </div>
+
+  <div class="guild mag">
+    <h3>Mages</h3>
+    <p class="tag">Le Cercle · ressource : Arcane</p>
+    <p>Peu de corps, beaucoup de sorts : frapper à Portée et prendre les coups de grâce. L'<strong>Arcane</strong> s'accumule sur le cercle (4 max), +1 par sort lancé, et paie 1 Incantation par tour. Une Incantation n'est pas un sort. Cercle niv. 1 : Incantations à Portée ; niv. 2 : +1 Arcane au Repos.</p>
+    <div class="tbl"><table>
+      <tr><th>Gardien</th><th>Style</th><th>Terrain</th></tr>
+      <tr><td>Soffia · 2/6</td><td class="wrap1"><span class="style">Équilibrée</span>Pioche si 2 sorts dans le tour</td><td class="wrap1">Cercle de runes</td></tr>
+      <tr><td>Orsin le runiste · 2/7</td><td class="wrap1"><span class="style">Zone</span>Glyphes, défenseurs avec Égide</td><td class="wrap1">Sanctuaire runique (Gel, Bastion)</td></tr>
+      <tr><td>Ignis la pyromancienne · 3/5</td><td class="wrap1"><span class="style">Agressive</span>Sorts +1 dégât aux monstres</td><td class="wrap1">Foyer instable (Surcharge, Pyroclasme)</td></tr>
+    </table></div>
+  </div>
+</section>
+
+<section id="motscles">
+  <h2><span class="n">13</span>Mots-clés</h2>
+  <div class="tbl"><table>
+    <tr><th>Mot-clé</th><th>Effet</th></tr>
+    <tr><td>Arrivée</td><td class="wrap1">À la pose.</td></tr>
+    <tr><td>Dernier souffle</td><td class="wrap1">À la mort.</td></tr>
+    <tr><td>Combat</td><td class="wrap1">Pendant le combat de l'unité.</td></tr>
+    <tr><td>Tue un monstre</td><td class="wrap1">Quand elle porte le coup qui tue un monstre.</td></tr>
+    <tr><td>Sort lancé</td><td class="wrap1">Quand tu joues une carte Sort.</td></tr>
+    <tr><td>Révélé</td><td class="wrap1">Quand sa carte Bluff est retournée.</td></tr>
+    <tr><td>Retrait</td><td class="wrap1">À ta phase de Retrait.</td></tr>
+    <tr><td>Rapide</td><td class="wrap1">Après son combat à ton Assaut, change de salle (hors limite) et attaque 1 fois de plus.</td></tr>
+    <tr><td>Réflexe</td><td class="wrap1">Jouable en Duel.</td></tr>
+    <tr><td>Portée</td><td class="wrap1">Attaque une salle voisine de son Expédition. Le monstre ne riposte pas ; l'unité n'est pas présente dans la salle (ni Mêlée, ni Fief, ni Repli). Respecte Protecteur.</td></tr>
+    <tr><td>Protecteur</td><td class="wrap1">Les attaques (unités et monstres) contre tes unités ou ton Terrain de sa salle doivent le viser. Sorts et effets ciblent librement. Protège même Sonné ; au raid, passe avant le Gardien.</td></tr>
+    <tr><td>Renfort</td><td class="wrap1">Quand l'unité est rappelée au Camp pendant un raid.</td></tr>
+    <tr><td>Éclaireur</td><td class="wrap1">Se pose au Stratagème dans l'Expédition voulue et ne bouge plus ce tour. Son effet « Stratagème : » revient à chacun de tes Stratagèmes.</td></tr>
+    <tr><td>Bluff</td><td class="wrap1">Posée face cachée au Stratagème, révélée à l'Assaut.</td></tr>
+    <tr><td>Tente ta chance</td><td class="wrap1">Révèle le dessus de ta pioche, puis mets-le dessous. Réussite si son coût est 2 ou plus.</td></tr>
+    <tr><td>Embuscade</td><td class="wrap1">Monstre : effet à son arrivée.</td></tr>
+    <tr><td>Signature</td><td class="wrap1">1 exemplaire max par deck.</td></tr>
+    <tr><td>Jeton</td><td class="wrap1">Unité invoquée (Pousse 1/1, Loup 2/1). Compte dans la limite de 3 ; Expédition pleine : pas d'invocation.</td></tr>
+  </table></div>
+  <p><strong>Ennemi</strong> : unité, Gardien ou Terrain adverse ; un monstre n'est jamais un ennemi. <strong>Cible</strong> : n'importe quoi, monstres compris.</p>
+</section>
+
+<section id="etats">
+  <h2><span class="n">14</span>États</h2>
+  <div class="tbl"><table>
+    <tr><th>État</th><th>Effet</th></tr>
+    <tr><td>Sonné</td><td class="wrap1">Ne frappe pas à son prochain combat ; son attaque en cours est annulée.</td></tr>
+    <tr><td>Empoisonné</td><td class="wrap1">-1 PV à chaque Repos de son propriétaire, jusqu'au soin.</td></tr>
+    <tr><td>Entravé</td><td class="wrap1">Ne peut pas changer de salle.</td></tr>
+    <tr><td>Insensible</td><td class="wrap1">Ne peut pas être Sonné ce tour.</td></tr>
+    <tr><td>Ivre</td><td class="wrap1">A bu ce tour ; un 2e alcool = Sonné.</td></tr>
+    <tr><td>Gueule de bois</td><td class="wrap1">Sonné jusqu'à la fin de ton prochain tour.</td></tr>
+    <tr><td>Contrecoup</td><td class="wrap1">-2 PV à ton prochain Repos.</td></tr>
+    <tr><td>En soin</td><td class="wrap1">Blessé au Camp : soigné complètement à ton prochain Repos, puis reste au Camp ce tour-là.</td></tr>
+    <tr><td>Assommé</td><td class="wrap1">Gardien à 0 PV : ne défend plus, revient à son prochain Repos avec tous ses PV.</td></tr>
+    <tr><td>Égide</td><td class="wrap1">Ignore le prochain coup reçu, puis disparaît. Non cumulable ; ne bloque pas les pertes de PV.</td></tr>
+    <tr><td>Piège</td><td class="wrap1">Face cachée, posé par un Éclaireur (1 par joueur et par salle). Touche la 1re unité adverse qui entre. Un Leurre est un faux Piège.</td></tr>
+    <tr><td>Glyphe</td><td class="wrap1">Face visible, posé par un Mage (2 max par joueur et par salle). La 1re unité adverse qui entre ou attaque ici, Portée comprise, prend 1 dégât et est Sonnée. 1 Glyphe par unité et par tour.</td></tr>
+    <tr><td>Mise</td><td class="wrap1">Sur le Tonneau des paris (3 max), +1 par monstre tué ici. 3 Mises = 1 trésor au Retrait.</td></tr>
+  </table></div>
+</section>
+
+<footer>Guild Rush · livret proto, tiré de la bible du 16 octobre 2026 (glossaire, règles core, factions, décisions). Textes complets des cartes : 03_cartes.csv.</footer>
+</main>
+</div>
+</body>
+</html>

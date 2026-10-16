@@ -1,10 +1,11 @@
 {
   "name": "Guild Rush (proto)",
   "cardRotation": 90,
-  "customHelp": "Guild Rush (proto) · donjon : Mine des Gobelins. Fin : boss vaincu (fin de ce tour) ou un joueur à 12 trésors en fin de manche.\nPlateau : 4 monstres au centre, pioche de monstres, boss, monstres vaincus, panneau Donjon. En face de chaque monstre, une Expédition par joueur (3 unités max, jetons compris). Ta zone : Expéditions 1-4, Gardien ; Énergie et Camp.\nTon tour : Repos (automatique : énergie au max, +1 par manche jusqu'à 6 ; pioche 1 ; passif du Gardien) → Stratagème (Éclaireurs, cartes face cachée) → Assaut → Retrait (trésors sur ton compteur, soins au Camp).\nAssaut : pose tes unités (elles arrivent dans l'Expédition 1 : déplace-les dans l'Expédition voulue ou au Camp). Une unité intacte déjà en jeu peut aller dans une Expédition voisine ou au Camp, une fois par tour. Puis attaque salle par salle : chaque attaque ouvre un Duel (annonce-le dans le chat). L'adversaire répond en premier, puis chacun joue une carte Rapide, ou un bonus de son Terrain si le Duel a lieu dans sa salle, ou passe ; deux passes = combat. Les deux joueurs dans la salle : mêlée (le monstre frappe d'abord, coup de grâce). Puis 1 raid au plus.\nMonstre tué : l'hôte le met dans « Monstres vaincus », le tueur ajoute ses trésors (pastille dorée) à son compteur. Icône Relique : clique « Prendre la relique » dans le panneau Donjon.\nAutomatique au début de chaque tour : les salles vides reçoivent le monstre suivant (puis le boss quand la pioche est vide) ; en fin de manche, les monstres en jeu depuis une manche entière se retournent sur leur face évoluée.\nCompteur = Trésors. PV et Puissance (dégâts, bonus, malus) : compteurs de la carte (clic droit > Toggle counter 1 = PV, touche C ; counter 2 = Puissance, Ctrl C). Jetons à glisser sur les cartes : Sève, Niveau 1-3 et effets (Sonné, Empoisonné, Rapide, Insensible, Ivre, Gueule de bois, Contrecoup, Entravé, En soin, Piège). Effets détaillés : livret, Récap des effets.\nDeck : 1 Gardien + 1 Terrain de la même faction (n'importe lequel) + 30 cartes. Le Terrain commence à côté du Gardien : glisse-le dans l'Expédition voulue à ton 1er Assaut. Il porte les bonus de la guilde (alcools, recettes) et leur prix.\nBonus du Terrain : à ton Assaut, ou pendant n'importe quel Duel dans la salle de ton Terrain (même au tour adverse). Ils visent tes unités de cette salle. Bonus de PV ou Puissance : compteurs ; autres effets : jetons.\nNiveau : jeton Niv 1 à la pose. À ton Retrait, +1 s'il était déjà à sa place au début du tour (3 max). Niv. 1 bonus de lieu, niv. 2 ressource renforcée, niv. 3 Fief (+1 trésor par monstre tué ici). Lever le camp (Stratagème) : Expédition voisine, -1 niveau.\nLe Terrain a des PV, ne frappe pas, ne bloque pas les raids. Une unité adverse qui combat dans sa salle peut l'attaquer. Détruit par l'adversaire : +1 trésor pour lui (pillage) ; il revient au niveau 1 à ton Assaut suivant.\nIvrognes : tirer une pinte = -1 au compteur de PV du baril (-2 pour un alcool fort) + compteur ou jeton d'effet sur l'unité (Ivre, Gueule de bois, Insensible, Contrecoup). 2 pintes par tour, 3 au niveau 2. Dernière tournée : la pinte peut vider le baril, qui explose (sans pillage). Guss soigne 2 PV au Repos.\nDruides : jetons Sève sur ton bosquet (4 max), +1 à ton Repos (+2 au niveau 2). 1 recette par tour, payée en Sève. Bosquet détruit : tu perds la moitié de ta Sève.\nJetons Pousse et Loup : clic droit sur la carte qui les invoque.",
+  "customHelp": "Guild Rush (proto) · donjon : Mine des Gobelins. Règles complètes : livret/livret.md du dépôt.\nBut : le plus de trésors. Fin : un joueur à 12 trésors en fin de manche, ou boss tué (fin de ce tour). Égalité : tueur du boss, puis le plus de monstres tués.\nPlateau : 4 salles en ligne (voisine = ±1), un monstre chacune. Face à chaque salle, une Expédition par joueur (3 unités max, jetons compris). Le Camp touche toutes tes Expéditions, sans limite ; ce n'est pas une salle.\nTour : Repos (énergie au max, 3 puis +1 par manche jusqu'à 6 ; pioche 1 ; soin des unités En soin ; passif du Gardien) → Stratagème (Éclaireurs, Bluff face cachée, lever le camp) → Assaut → Retrait (trésors au compteur, niveau du Terrain).\nAssaut : une unité posée arrive directement dans l'Expédition voulue ou au Camp (TCG Arena la pose en Exp. 1 : glisse-la). Une unité en jeu se déplace 1 fois par tour (Expédition voisine, Camp, ou du Camp vers n'importe quelle Expédition). Blessée : seulement vers le Camp (En soin).\nCombat (optionnel), salle par salle : Duel (annonce-le dans le chat ; l'adversaire répond d'abord, puis Réflexe / bonus de Terrain / passe ; 2 passes = frappes). Puis le monstre frappe 1 attaquant choisi par l'adversaire, tes attaquants frappent ensemble, puis (Mêlée) les unités adverses. 1 frappe par unité et par tour.\nCoup de grâce : le tueur (contrôleur du dernier dégât) prend tous les trésors et la relique. Repli : après une Mêlée perdue, tes unités qui ont attaqué peuvent rentrer au Camp. Un sort se lance dans une salle où tu as une unité (Portée : ou voisine).\nRaid (dès la manche 2, 1 par Assaut) : après un kill dans une salle, tes unités de cette salle attaquent le Camp adverse. Réussi si plus de raiders que de défenseurs debout (Gardien compris) : 1 trésor volé, +1 si le Gardien est Assommé.\nMonstre tué : l'hôte le met dans « Monstres vaincus », le tueur ajoute ses trésors (pastille dorée) à son compteur. Icône Relique : « Prendre la relique » dans le panneau Donjon. Automatique : salles vides remplies au début de chaque tour ; évolution en fin de manche.\nTerrain : commence à côté du Gardien, glisse-le dans une Expédition à ton 1er Assaut. Niv 1 à la pose, +1 au Retrait s'il n'a pas bougé (3 max, niv. 3 = Fief). Lever le camp : Expédition voisine, -1 niveau. Détruit par l'adversaire : +1 trésor pour lui (pillage), revient au niv. 1 à ton Assaut suivant.\nCompteur = Trésors. PV et Puissance : compteurs de la carte (clic droit > Toggle counter 1 = PV, touche C ; counter 2 = Puissance, Ctrl C). Jetons : Sève, Arcane, Mise, Niveau 1-3, états (Sonné, Empoisonné, Rapide, Insensible, Ivre, Gueule de bois, Contrecoup, Entravé, En soin, Égide, Piège, Glyphe).\nDeck : 1 Gardien + 1 Terrain de sa faction + 30 cartes de la faction, dont 20 min. du pool du Gardien (3 ex. max, Signature 1). TCG Arena ne vérifie pas la règle des 20.\nJetons Pousse et Loup : clic droit sur la carte qui les invoque.",
   "deckBuilding": {
     "mainFilters": [
       "faction",
+      "gardien",
       "type",
       "cost"
     ],
@@ -114,7 +115,7 @@
         },
         {
           "id": "GueuleDeBois",
-          "name": "Gueule de bois : sera Sonné au tour suivant (Rhum)",
+          "name": "Gueule de bois : Sonné jusqu'à la fin de ton prochain tour (Rhum)",
           "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/gueuledebois.png"
         },
         {
@@ -129,13 +130,33 @@
         },
         {
           "id": "EnSoin",
-          "name": "En soin : blessé au Camp, rate un tour",
+          "name": "En soin : blessé au Camp, soigné à ton prochain Repos puis reste au Camp ce tour",
           "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/ensoin.png"
         },
         {
           "id": "Piege",
-          "name": "Piège (Éclaireur)",
+          "name": "Piège (Éclaireur), face cachée ; Leurre possible",
           "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/piege.png"
+        },
+        {
+          "id": "Arcane",
+          "name": "Arcane (Mages) : jetons sur le cercle, payent les Incantations",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/arcane.png"
+        },
+        {
+          "id": "Mise",
+          "name": "Mise (Tonneau des paris) : 3 Mises = 1 trésor au Retrait",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/mise.png"
+        },
+        {
+          "id": "Egide",
+          "name": "Égide : ignore le prochain coup reçu",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/egide.png"
+        },
+        {
+          "id": "Glyphe",
+          "name": "Glyphe (Mages) : 1 dégât et Sonné à la 1re unité adverse qui entre ou attaque ici",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/glyphe.png"
         }
       ],
       "beforeGameStart": {
