@@ -4,14 +4,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Belladone"
+          "name": {
+            "en": "Belladonna",
+            "fr": "Belladone"
+          }
         },
         "type": "Gardien",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/belladone.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/belladone-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/belladone.png"
+        }
       }
     },
-    "name": "Belladone",
+    "name": {
+      "en": "Belladonna",
+      "fr": "Belladone"
+    },
     "type": "Gardien",
     "cost": 0,
     "faction": "Druides",
@@ -27,14 +36,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Cernun"
+          "name": {
+            "en": "Cernun",
+            "fr": "Cernun"
+          }
         },
         "type": "Gardien",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cernun.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cernun-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cernun.png"
+        }
       }
     },
-    "name": "Cernun",
+    "name": {
+      "en": "Cernun",
+      "fr": "Cernun"
+    },
     "type": "Gardien",
     "cost": 0,
     "faction": "Druides",
@@ -53,14 +71,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Sylve"
+          "name": {
+            "en": "Sylve",
+            "fr": "Sylve"
+          }
         },
         "type": "Gardien",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sylve.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sylve-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sylve.png"
+        }
       }
     },
-    "name": "Sylve",
+    "name": {
+      "en": "Sylve",
+      "fr": "Sylve"
+    },
     "type": "Gardien",
     "cost": 0,
     "faction": "Druides",
@@ -79,22 +106,37 @@
     "face": {
       "front": {
         "name": {
-          "name": "Bosquet ancien"
+          "name": {
+            "en": "Ancient Grove",
+            "fr": "Bosquet ancien"
+          }
         },
         "type": "Terrain",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet.png"
+        }
       },
       "back": {
         "name": {
-          "name": "Bosquet ancien"
+          "name": {
+            "en": "Ancient Grove",
+            "fr": "Bosquet ancien"
+          }
         },
         "type": "Terrain",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-verso.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-verso-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-verso.png"
+        }
       }
     },
-    "name": "Bosquet ancien",
+    "name": {
+      "en": "Ancient Grove",
+      "fr": "Bosquet ancien"
+    },
     "type": "Terrain",
     "cost": 0,
     "faction": "Druides",
@@ -112,22 +154,37 @@
     "face": {
       "front": {
         "name": {
-          "name": "Bosquet d'ombre"
+          "name": {
+            "en": "Shadow Grove",
+            "fr": "Bosquet d'ombre"
+          }
         },
         "type": "Terrain",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-ombre.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-ombre-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-ombre.png"
+        }
       },
       "back": {
         "name": {
-          "name": "Bosquet d'ombre"
+          "name": {
+            "en": "Shadow Grove",
+            "fr": "Bosquet d'ombre"
+          }
         },
         "type": "Terrain",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-ombre-verso.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-ombre-verso-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-ombre-verso.png"
+        }
       }
     },
-    "name": "Bosquet d'ombre",
+    "name": {
+      "en": "Shadow Grove",
+      "fr": "Bosquet d'ombre"
+    },
     "type": "Terrain",
     "cost": 0,
     "faction": "Druides",
@@ -142,22 +199,37 @@
     "face": {
       "front": {
         "name": {
-          "name": "Bosquet empoisonné"
+          "name": {
+            "en": "Poison Grove",
+            "fr": "Bosquet empoisonné"
+          }
         },
         "type": "Terrain",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-poison.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-poison-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-poison.png"
+        }
       },
       "back": {
         "name": {
-          "name": "Bosquet empoisonné"
+          "name": {
+            "en": "Poison Grove",
+            "fr": "Bosquet empoisonné"
+          }
         },
         "type": "Terrain",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-poison-verso.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-poison-verso-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bosquet-poison-verso.png"
+        }
       }
     },
-    "name": "Bosquet empoisonné",
+    "name": {
+      "en": "Poison Grove",
+      "fr": "Bosquet empoisonné"
+    },
     "type": "Terrain",
     "cost": 0,
     "faction": "Druides",
@@ -172,14 +244,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Loup"
+          "name": {
+            "en": "Wolf",
+            "fr": "Loup"
+          }
         },
         "type": "Unite",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/loup.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/loup-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/loup.png"
+        }
       }
     },
-    "name": "Loup",
+    "name": {
+      "en": "Wolf",
+      "fr": "Loup"
+    },
     "type": "Unite",
     "cost": 0,
     "faction": "Druides",
@@ -192,14 +273,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Pousse"
+          "name": {
+            "en": "Sprout",
+            "fr": "Pousse"
+          }
         },
         "type": "Unite",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pousse.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pousse-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pousse.png"
+        }
       }
     },
-    "name": "Pousse",
+    "name": {
+      "en": "Sprout",
+      "fr": "Pousse"
+    },
     "type": "Unite",
     "cost": 0,
     "faction": "Druides",
@@ -212,14 +302,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Chouette guetteuse"
+          "name": {
+            "en": "Lookout Owl",
+            "fr": "Chouette guetteuse"
+          }
         },
         "type": "Unite",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chouette.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chouette-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chouette.png"
+        }
       }
     },
-    "name": "Chouette guetteuse",
+    "name": {
+      "en": "Lookout Owl",
+      "fr": "Chouette guetteuse"
+    },
     "type": "Unite",
     "cost": 1,
     "faction": "Druides",
@@ -235,14 +334,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Renard des fourrés"
+          "name": {
+            "en": "Thicket Fox",
+            "fr": "Renard des fourrés"
+          }
         },
         "type": "Unite",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/renard.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/renard-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/renard.png"
+        }
       }
     },
-    "name": "Renard des fourrés",
+    "name": {
+      "en": "Thicket Fox",
+      "fr": "Renard des fourrés"
+    },
     "type": "Unite",
     "cost": 1,
     "faction": "Druides",
@@ -258,14 +366,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Pisteuse des ronces"
+          "name": {
+            "en": "Bramble Tracker",
+            "fr": "Pisteuse des ronces"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pisteuse.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pisteuse-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pisteuse.png"
+        }
       }
     },
-    "name": "Pisteuse des ronces",
+    "name": {
+      "en": "Bramble Tracker",
+      "fr": "Pisteuse des ronces"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Druides",
@@ -281,14 +398,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Lutin des mousses"
+          "name": {
+            "en": "Moss Sprite",
+            "fr": "Lutin des mousses"
+          }
         },
         "type": "Unite",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lutin.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lutin-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lutin.png"
+        }
       }
     },
-    "name": "Lutin des mousses",
+    "name": {
+      "en": "Moss Sprite",
+      "fr": "Lutin des mousses"
+    },
     "type": "Unite",
     "cost": 1,
     "faction": "Druides",
@@ -307,14 +433,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Chamane des racines"
+          "name": {
+            "en": "Root Shaman",
+            "fr": "Chamane des racines"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chamane.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chamane-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chamane.png"
+        }
       }
     },
-    "name": "Chamane des racines",
+    "name": {
+      "en": "Root Shaman",
+      "fr": "Chamane des racines"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Druides",
@@ -330,14 +465,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Cueilleuse"
+          "name": {
+            "en": "Gatherer",
+            "fr": "Cueilleuse"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cueilleuse.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cueilleuse-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cueilleuse.png"
+        }
       }
     },
-    "name": "Cueilleuse",
+    "name": {
+      "en": "Gatherer",
+      "fr": "Cueilleuse"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Druides",
@@ -353,14 +497,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Dryade fleurie"
+          "name": {
+            "en": "Blossom Dryad",
+            "fr": "Dryade fleurie"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/dryade.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/dryade-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/dryade.png"
+        }
       }
     },
-    "name": "Dryade fleurie",
+    "name": {
+      "en": "Blossom Dryad",
+      "fr": "Dryade fleurie"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Druides",
@@ -379,14 +532,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Invocateur de la clairière"
+          "name": {
+            "en": "Glade Summoner",
+            "fr": "Invocateur de la clairière"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/invocateur.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/invocateur-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/invocateur.png"
+        }
       }
     },
-    "name": "Invocateur de la clairière",
+    "name": {
+      "en": "Glade Summoner",
+      "fr": "Invocateur de la clairière"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Druides",
@@ -405,14 +567,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Meneuse de loups"
+          "name": {
+            "en": "Wolf Leader",
+            "fr": "Meneuse de loups"
+          }
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/meneuse.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/meneuse-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/meneuse.png"
+        }
       }
     },
-    "name": "Meneuse de loups",
+    "name": {
+      "en": "Wolf Leader",
+      "fr": "Meneuse de loups"
+    },
     "type": "Unite",
     "cost": 3,
     "faction": "Druides",
@@ -431,14 +602,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Sanglier furieux"
+          "name": {
+            "en": "Raging Boar",
+            "fr": "Sanglier furieux"
+          }
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sanglier.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sanglier-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sanglier.png"
+        }
       }
     },
-    "name": "Sanglier furieux",
+    "name": {
+      "en": "Raging Boar",
+      "fr": "Sanglier furieux"
+    },
     "type": "Unite",
     "cost": 3,
     "faction": "Druides",
@@ -454,14 +634,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Esprit du saule"
+          "name": {
+            "en": "Willow Spirit",
+            "fr": "Esprit du saule"
+          }
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/saule.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/saule-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/saule.png"
+        }
       }
     },
-    "name": "Esprit du saule",
+    "name": {
+      "en": "Willow Spirit",
+      "fr": "Esprit du saule"
+    },
     "type": "Unite",
     "cost": 3,
     "faction": "Druides",
@@ -480,14 +669,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Gardienne des ronces"
+          "name": {
+            "en": "Bramble Keeper",
+            "fr": "Gardienne des ronces"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ronce-garde.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ronce-garde-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ronce-garde.png"
+        }
       }
     },
-    "name": "Gardienne des ronces",
+    "name": {
+      "en": "Bramble Keeper",
+      "fr": "Gardienne des ronces"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Druides",
@@ -503,14 +701,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Vieux chêne"
+          "name": {
+            "en": "Old Oak",
+            "fr": "Vieux chêne"
+          }
         },
         "type": "Unite",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/vieux-chene.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/vieux-chene-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/vieux-chene.png"
+        }
       }
     },
-    "name": "Vieux chêne",
+    "name": {
+      "en": "Old Oak",
+      "fr": "Vieux chêne"
+    },
     "type": "Unite",
     "cost": 4,
     "faction": "Druides",
@@ -530,14 +737,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Croissance soudaine"
+          "name": {
+            "en": "Sudden Growth",
+            "fr": "Croissance soudaine"
+          }
         },
         "type": "Sort",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/croissance.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/croissance-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/croissance.png"
+        }
       }
     },
-    "name": "Croissance soudaine",
+    "name": {
+      "en": "Sudden Growth",
+      "fr": "Croissance soudaine"
+    },
     "type": "Sort",
     "cost": 1,
     "faction": "Druides",
@@ -551,14 +767,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Lianes"
+          "name": {
+            "en": "Vines",
+            "fr": "Lianes"
+          }
         },
         "type": "Sort",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lianes.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lianes-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lianes.png"
+        }
       }
     },
-    "name": "Lianes",
+    "name": {
+      "en": "Vines",
+      "fr": "Lianes"
+    },
     "type": "Sort",
     "cost": 1,
     "faction": "Druides",
@@ -572,14 +797,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Appel de la meute"
+          "name": {
+            "en": "Call of the Pack",
+            "fr": "Appel de la meute"
+          }
         },
         "type": "Sort",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/appel-meute.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/appel-meute-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/appel-meute.png"
+        }
       }
     },
-    "name": "Appel de la meute",
+    "name": {
+      "en": "Call of the Pack",
+      "fr": "Appel de la meute"
+    },
     "type": "Sort",
     "cost": 2,
     "faction": "Druides",
@@ -596,14 +830,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Transplantation"
+          "name": {
+            "en": "Transplant",
+            "fr": "Transplantation"
+          }
         },
         "type": "Sort",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/transplantation.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/transplantation-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/transplantation.png"
+        }
       }
     },
-    "name": "Transplantation",
+    "name": {
+      "en": "Transplant",
+      "fr": "Transplantation"
+    },
     "type": "Sort",
     "cost": 2,
     "faction": "Druides",
@@ -617,14 +860,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Pluie de spores"
+          "name": {
+            "en": "Spore Rain",
+            "fr": "Pluie de spores"
+          }
         },
         "type": "Sort",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/spores.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/spores-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/spores.png"
+        }
       }
     },
-    "name": "Pluie de spores",
+    "name": {
+      "en": "Spore Rain",
+      "fr": "Pluie de spores"
+    },
     "type": "Sort",
     "cost": 3,
     "faction": "Druides",
@@ -641,14 +893,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Éveil de la forêt"
+          "name": {
+            "en": "Forest Awakening",
+            "fr": "Éveil de la forêt"
+          }
         },
         "type": "Sort",
         "cost": 5,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/eveil-foret.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/eveil-foret-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/eveil-foret.png"
+        }
       }
     },
-    "name": "Éveil de la forêt",
+    "name": {
+      "en": "Forest Awakening",
+      "fr": "Éveil de la forêt"
+    },
     "type": "Sort",
     "cost": 5,
     "faction": "Druides",
@@ -665,14 +926,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Guss le tavernier"
+          "name": {
+            "en": "Guss the Innkeeper",
+            "fr": "Guss le tavernier"
+          }
         },
         "type": "Gardien",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/guss.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/guss-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/guss.png"
+        }
       }
     },
-    "name": "Guss le tavernier",
+    "name": {
+      "en": "Guss the Innkeeper",
+      "fr": "Guss le tavernier"
+    },
     "type": "Gardien",
     "cost": 0,
     "faction": "Ivrognes",
@@ -688,14 +958,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Rosa la brasseuse"
+          "name": {
+            "en": "Rosa the Brewer",
+            "fr": "Rosa la brasseuse"
+          }
         },
         "type": "Gardien",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/rosa.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/rosa-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/rosa.png"
+        }
       }
     },
-    "name": "Rosa la brasseuse",
+    "name": {
+      "en": "Rosa the Brewer",
+      "fr": "Rosa la brasseuse"
+    },
     "type": "Gardien",
     "cost": 0,
     "faction": "Ivrognes",
@@ -711,14 +990,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Robin le joueur"
+          "name": {
+            "en": "Robin the Gambler",
+            "fr": "Robin le joueur"
+          }
         },
         "type": "Gardien",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/robin.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/robin-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/robin.png"
+        }
       }
     },
-    "name": "Robin le joueur",
+    "name": {
+      "en": "Robin the Gambler",
+      "fr": "Robin le joueur"
+    },
     "type": "Gardien",
     "cost": 0,
     "faction": "Ivrognes",
@@ -734,22 +1022,37 @@
     "face": {
       "front": {
         "name": {
-          "name": "Baril de chêne"
+          "name": {
+            "en": "Oak Barrel",
+            "fr": "Baril de chêne"
+          }
         },
         "type": "Terrain",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/baril-chene.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/baril-chene-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/baril-chene.png"
+        }
       },
       "back": {
         "name": {
-          "name": "Baril de chêne"
+          "name": {
+            "en": "Oak Barrel",
+            "fr": "Baril de chêne"
+          }
         },
         "type": "Terrain",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/baril-chene-verso.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/baril-chene-verso-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/baril-chene-verso.png"
+        }
       }
     },
-    "name": "Baril de chêne",
+    "name": {
+      "en": "Oak Barrel",
+      "fr": "Baril de chêne"
+    },
     "type": "Terrain",
     "cost": 0,
     "faction": "Ivrognes",
@@ -764,22 +1067,37 @@
     "face": {
       "front": {
         "name": {
-          "name": "Baril explosif"
+          "name": {
+            "en": "Explosive Barrel",
+            "fr": "Baril explosif"
+          }
         },
         "type": "Terrain",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/baril-explosif.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/baril-explosif-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/baril-explosif.png"
+        }
       },
       "back": {
         "name": {
-          "name": "Baril explosif"
+          "name": {
+            "en": "Explosive Barrel",
+            "fr": "Baril explosif"
+          }
         },
         "type": "Terrain",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/baril-explosif-verso.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/baril-explosif-verso-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/baril-explosif-verso.png"
+        }
       }
     },
-    "name": "Baril explosif",
+    "name": {
+      "en": "Explosive Barrel",
+      "fr": "Baril explosif"
+    },
     "type": "Terrain",
     "cost": 0,
     "faction": "Ivrognes",
@@ -794,22 +1112,37 @@
     "face": {
       "front": {
         "name": {
-          "name": "Tonneau des paris"
+          "name": {
+            "en": "Betting Keg",
+            "fr": "Tonneau des paris"
+          }
         },
         "type": "Terrain",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tonneau-paris.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tonneau-paris-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tonneau-paris.png"
+        }
       },
       "back": {
         "name": {
-          "name": "Tonneau des paris"
+          "name": {
+            "en": "Betting Keg",
+            "fr": "Tonneau des paris"
+          }
         },
         "type": "Terrain",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tonneau-paris-verso.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tonneau-paris-verso-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tonneau-paris-verso.png"
+        }
       }
     },
-    "name": "Tonneau des paris",
+    "name": {
+      "en": "Betting Keg",
+      "fr": "Tonneau des paris"
+    },
     "type": "Terrain",
     "cost": 0,
     "faction": "Ivrognes",
@@ -824,14 +1157,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Habitué du bar"
+          "name": {
+            "en": "Bar Regular",
+            "fr": "Habitué du bar"
+          }
         },
         "type": "Unite",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/habitue.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/habitue-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/habitue.png"
+        }
       }
     },
-    "name": "Habitué du bar",
+    "name": {
+      "en": "Bar Regular",
+      "fr": "Habitué du bar"
+    },
     "type": "Unite",
     "cost": 1,
     "faction": "Ivrognes",
@@ -847,14 +1189,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Gamin des ruelles"
+          "name": {
+            "en": "Street Urchin",
+            "fr": "Gamin des ruelles"
+          }
         },
         "type": "Unite",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gamin.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gamin-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gamin.png"
+        }
       }
     },
-    "name": "Gamin des ruelles",
+    "name": {
+      "en": "Street Urchin",
+      "fr": "Gamin des ruelles"
+    },
     "type": "Unite",
     "cost": 1,
     "faction": "Ivrognes",
@@ -870,14 +1221,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Contrebandier"
+          "name": {
+            "en": "Smuggler",
+            "fr": "Contrebandier"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/contrebandier.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/contrebandier-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/contrebandier.png"
+        }
       }
     },
-    "name": "Contrebandier",
+    "name": {
+      "en": "Smuggler",
+      "fr": "Contrebandier"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Ivrognes",
@@ -893,14 +1253,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Barde éméché"
+          "name": {
+            "en": "Merry Bard",
+            "fr": "Barde éméché"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/barde.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/barde-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/barde.png"
+        }
       }
     },
-    "name": "Barde éméché",
+    "name": {
+      "en": "Merry Bard",
+      "fr": "Barde éméché"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Ivrognes",
@@ -916,14 +1285,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Joueurs de poker"
+          "name": {
+            "en": "Poker Players",
+            "fr": "Joueurs de poker"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/poker.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/poker-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/poker.png"
+        }
       }
     },
-    "name": "Joueurs de poker",
+    "name": {
+      "en": "Poker Players",
+      "fr": "Joueurs de poker"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Ivrognes",
@@ -939,14 +1317,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Porteur de tonneaux"
+          "name": {
+            "en": "Barrel Carrier",
+            "fr": "Porteur de tonneaux"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/porteur.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/porteur-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/porteur.png"
+        }
       }
     },
-    "name": "Porteur de tonneaux",
+    "name": {
+      "en": "Barrel Carrier",
+      "fr": "Porteur de tonneaux"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Ivrognes",
@@ -962,14 +1349,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Serveuse"
+          "name": {
+            "en": "Barmaid",
+            "fr": "Serveuse"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/serveuse.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/serveuse-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/serveuse.png"
+        }
       }
     },
-    "name": "Serveuse",
+    "name": {
+      "en": "Barmaid",
+      "fr": "Serveuse"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Ivrognes",
@@ -985,14 +1381,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Cracheur de feu"
+          "name": {
+            "en": "Fire Breather",
+            "fr": "Cracheur de feu"
+          }
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cracheur.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cracheur-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cracheur.png"
+        }
       }
     },
-    "name": "Cracheur de feu",
+    "name": {
+      "en": "Fire Breather",
+      "fr": "Cracheur de feu"
+    },
     "type": "Unite",
     "cost": 3,
     "faction": "Ivrognes",
@@ -1008,14 +1413,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Soldat ivre"
+          "name": {
+            "en": "Drunken Soldier",
+            "fr": "Soldat ivre"
+          }
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/soldat-ivre.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/soldat-ivre-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/soldat-ivre.png"
+        }
       }
     },
-    "name": "Soldat ivre",
+    "name": {
+      "en": "Drunken Soldier",
+      "fr": "Soldat ivre"
+    },
     "type": "Unite",
     "cost": 3,
     "faction": "Ivrognes",
@@ -1031,14 +1445,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Videur"
+          "name": {
+            "en": "Bouncer",
+            "fr": "Videur"
+          }
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/videur.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/videur-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/videur.png"
+        }
       }
     },
-    "name": "Videur",
+    "name": {
+      "en": "Bouncer",
+      "fr": "Videur"
+    },
     "type": "Unite",
     "cost": 3,
     "faction": "Ivrognes",
@@ -1054,14 +1477,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Sentinelle ivre"
+          "name": {
+            "en": "Drunken Sentry",
+            "fr": "Sentinelle ivre"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sentinelle-ivre.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sentinelle-ivre-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sentinelle-ivre.png"
+        }
       }
     },
-    "name": "Sentinelle ivre",
+    "name": {
+      "en": "Drunken Sentry",
+      "fr": "Sentinelle ivre"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Ivrognes",
@@ -1077,14 +1509,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Brute de taverne"
+          "name": {
+            "en": "Tavern Brute",
+            "fr": "Brute de taverne"
+          }
         },
         "type": "Unite",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/brute.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/brute-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/brute.png"
+        }
       }
     },
-    "name": "Brute de taverne",
+    "name": {
+      "en": "Tavern Brute",
+      "fr": "Brute de taverne"
+    },
     "type": "Unite",
     "cost": 4,
     "faction": "Ivrognes",
@@ -1100,14 +1541,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Champion de bras de fer"
+          "name": {
+            "en": "Arm-Wrestling Champion",
+            "fr": "Champion de bras de fer"
+          }
         },
         "type": "Unite",
         "cost": 5,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/champion.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/champion-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/champion.png"
+        }
       }
     },
-    "name": "Champion de bras de fer",
+    "name": {
+      "en": "Arm-Wrestling Champion",
+      "fr": "Champion de bras de fer"
+    },
     "type": "Unite",
     "cost": 5,
     "faction": "Ivrognes",
@@ -1123,14 +1573,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Grosse pinte"
+          "name": {
+            "en": "Big Pint",
+            "fr": "Grosse pinte"
+          }
         },
         "type": "Sort",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/grosse-pinte.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/grosse-pinte-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/grosse-pinte.png"
+        }
       }
     },
-    "name": "Grosse pinte",
+    "name": {
+      "en": "Big Pint",
+      "fr": "Grosse pinte"
+    },
     "type": "Sort",
     "cost": 1,
     "faction": "Ivrognes",
@@ -1144,14 +1603,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Jet de chaises"
+          "name": {
+            "en": "Chair Toss",
+            "fr": "Jet de chaises"
+          }
         },
         "type": "Sort",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/jet-chaises.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/jet-chaises-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/jet-chaises.png"
+        }
       }
     },
-    "name": "Jet de chaises",
+    "name": {
+      "en": "Chair Toss",
+      "fr": "Jet de chaises"
+    },
     "type": "Sort",
     "cost": 2,
     "faction": "Ivrognes",
@@ -1165,14 +1633,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Roulé de baril"
+          "name": {
+            "en": "Barrel Roll",
+            "fr": "Roulé de baril"
+          }
         },
         "type": "Sort",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/roule-baril.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/roule-baril-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/roule-baril.png"
+        }
       }
     },
-    "name": "Roulé de baril",
+    "name": {
+      "en": "Barrel Roll",
+      "fr": "Roulé de baril"
+    },
     "type": "Sort",
     "cost": 2,
     "faction": "Ivrognes",
@@ -1186,14 +1663,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Virée du bar"
+          "name": {
+            "en": "Kicked Out",
+            "fr": "Virée du bar"
+          }
         },
         "type": "Sort",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/viree-bar.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/viree-bar-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/viree-bar.png"
+        }
       }
     },
-    "name": "Virée du bar",
+    "name": {
+      "en": "Kicked Out",
+      "fr": "Virée du bar"
+    },
     "type": "Sort",
     "cost": 3,
     "faction": "Ivrognes",
@@ -1207,14 +1693,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "C'EST MA TOURNÉE !"
+          "name": {
+            "en": "THIS ROUND'S ON ME!",
+            "fr": "C'EST MA TOURNÉE !"
+          }
         },
         "type": "Sort",
         "cost": 5,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ma-tournee.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ma-tournee-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ma-tournee.png"
+        }
       }
     },
-    "name": "C'EST MA TOURNÉE !",
+    "name": {
+      "en": "THIS ROUND'S ON ME!",
+      "fr": "C'EST MA TOURNÉE !"
+    },
     "type": "Sort",
     "cost": 5,
     "faction": "Ivrognes",
@@ -1228,14 +1723,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Parieur fauché"
+          "name": {
+            "en": "Broke Bettor",
+            "fr": "Parieur fauché"
+          }
         },
         "type": "Unite",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/parieur.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/parieur-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/parieur.png"
+        }
       }
     },
-    "name": "Parieur fauché",
+    "name": {
+      "en": "Broke Bettor",
+      "fr": "Parieur fauché"
+    },
     "type": "Unite",
     "cost": 1,
     "faction": "Ivrognes",
@@ -1251,14 +1755,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Pickpocket"
+          "name": {
+            "en": "Pickpocket",
+            "fr": "Pickpocket"
+          }
         },
         "type": "Unite",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pickpocket.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pickpocket-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pickpocket.png"
+        }
       }
     },
-    "name": "Pickpocket",
+    "name": {
+      "en": "Pickpocket",
+      "fr": "Pickpocket"
+    },
     "type": "Unite",
     "cost": 1,
     "faction": "Ivrognes",
@@ -1274,14 +1787,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Lanceuse de couteaux"
+          "name": {
+            "en": "Knife Thrower",
+            "fr": "Lanceuse de couteaux"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lanceuse.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lanceuse-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lanceuse.png"
+        }
       }
     },
-    "name": "Lanceuse de couteaux",
+    "name": {
+      "en": "Knife Thrower",
+      "fr": "Lanceuse de couteaux"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Ivrognes",
@@ -1297,14 +1819,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Bagarreur à crédit"
+          "name": {
+            "en": "Brawler on Credit",
+            "fr": "Bagarreur à crédit"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/credit.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/credit-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/credit.png"
+        }
       }
     },
-    "name": "Bagarreur à crédit",
+    "name": {
+      "en": "Brawler on Credit",
+      "fr": "Bagarreur à crédit"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Ivrognes",
@@ -1320,14 +1851,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Tricheur"
+          "name": {
+            "en": "Cheat",
+            "fr": "Tricheur"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tricheur.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tricheur-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tricheur.png"
+        }
       }
     },
-    "name": "Tricheur",
+    "name": {
+      "en": "Cheat",
+      "fr": "Tricheur"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Ivrognes",
@@ -1343,14 +1883,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Croupier"
+          "name": {
+            "en": "Croupier",
+            "fr": "Croupier"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/croupier.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/croupier-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/croupier.png"
+        }
       }
     },
-    "name": "Croupier",
+    "name": {
+      "en": "Croupier",
+      "fr": "Croupier"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Ivrognes",
@@ -1366,14 +1915,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Mercenaire de comptoir"
+          "name": {
+            "en": "Bar Mercenary",
+            "fr": "Mercenaire de comptoir"
+          }
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mercenaire.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mercenaire-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mercenaire.png"
+        }
       }
     },
-    "name": "Mercenaire de comptoir",
+    "name": {
+      "en": "Bar Mercenary",
+      "fr": "Mercenaire de comptoir"
+    },
     "type": "Unite",
     "cost": 3,
     "faction": "Ivrognes",
@@ -1389,14 +1947,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Duelliste"
+          "name": {
+            "en": "Duelist",
+            "fr": "Duelliste"
+          }
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/duelliste.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/duelliste-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/duelliste.png"
+        }
       }
     },
-    "name": "Duelliste",
+    "name": {
+      "en": "Duelist",
+      "fr": "Duelliste"
+    },
     "type": "Unite",
     "cost": 3,
     "faction": "Ivrognes",
@@ -1412,14 +1979,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Flambeur"
+          "name": {
+            "en": "High Roller",
+            "fr": "Flambeur"
+          }
         },
         "type": "Unite",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/flambeur.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/flambeur-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/flambeur.png"
+        }
       }
     },
-    "name": "Flambeur",
+    "name": {
+      "en": "High Roller",
+      "fr": "Flambeur"
+    },
     "type": "Unite",
     "cost": 4,
     "faction": "Ivrognes",
@@ -1435,14 +2011,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Grand gagnant"
+          "name": {
+            "en": "Big Winner",
+            "fr": "Grand gagnant"
+          }
         },
         "type": "Unite",
         "cost": 5,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gagnant.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gagnant-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gagnant.png"
+        }
       }
     },
-    "name": "Grand gagnant",
+    "name": {
+      "en": "Big Winner",
+      "fr": "Grand gagnant"
+    },
     "type": "Unite",
     "cost": 5,
     "faction": "Ivrognes",
@@ -1458,14 +2043,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Double ou rien"
+          "name": {
+            "en": "Double or Nothing",
+            "fr": "Double ou rien"
+          }
         },
         "type": "Sort",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/double-rien.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/double-rien-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/double-rien.png"
+        }
       }
     },
-    "name": "Double ou rien",
+    "name": {
+      "en": "Double or Nothing",
+      "fr": "Double ou rien"
+    },
     "type": "Sort",
     "cost": 1,
     "faction": "Ivrognes",
@@ -1479,14 +2073,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Coup monté"
+          "name": {
+            "en": "Frame-Up",
+            "fr": "Coup monté"
+          }
         },
         "type": "Sort",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/coup-monte.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/coup-monte-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/coup-monte.png"
+        }
       }
     },
-    "name": "Coup monté",
+    "name": {
+      "en": "Frame-Up",
+      "fr": "Coup monté"
+    },
     "type": "Sort",
     "cost": 2,
     "faction": "Ivrognes",
@@ -1500,14 +2103,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Tapis !"
+          "name": {
+            "en": "All In!",
+            "fr": "Tapis !"
+          }
         },
         "type": "Sort",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tapis.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tapis-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tapis.png"
+        }
       }
     },
-    "name": "Tapis !",
+    "name": {
+      "en": "All In!",
+      "fr": "Tapis !"
+    },
     "type": "Sort",
     "cost": 3,
     "faction": "Ivrognes",
@@ -1521,14 +2133,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Soffia"
+          "name": {
+            "en": "Soffia",
+            "fr": "Soffia"
+          }
         },
         "type": "Gardien",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/soffia.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/soffia-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/soffia.png"
+        }
       }
     },
-    "name": "Soffia",
+    "name": {
+      "en": "Soffia",
+      "fr": "Soffia"
+    },
     "type": "Gardien",
     "cost": 0,
     "faction": "Mages",
@@ -1544,22 +2165,37 @@
     "face": {
       "front": {
         "name": {
-          "name": "Cercle de runes"
+          "name": {
+            "en": "Rune Circle",
+            "fr": "Cercle de runes"
+          }
         },
         "type": "Terrain",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cercle.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cercle-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cercle.png"
+        }
       },
       "back": {
         "name": {
-          "name": "Cercle de runes"
+          "name": {
+            "en": "Rune Circle",
+            "fr": "Cercle de runes"
+          }
         },
         "type": "Terrain",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cercle-verso.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cercle-verso-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cercle-verso.png"
+        }
       }
     },
-    "name": "Cercle de runes",
+    "name": {
+      "en": "Rune Circle",
+      "fr": "Cercle de runes"
+    },
     "type": "Terrain",
     "cost": 0,
     "faction": "Mages",
@@ -1574,14 +2210,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Apprenti"
+          "name": {
+            "en": "Apprentice",
+            "fr": "Apprenti"
+          }
         },
         "type": "Unite",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/apprenti.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/apprenti-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/apprenti.png"
+        }
       }
     },
-    "name": "Apprenti",
+    "name": {
+      "en": "Apprentice",
+      "fr": "Apprenti"
+    },
     "type": "Unite",
     "cost": 1,
     "faction": "Mages",
@@ -1597,14 +2242,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Bibliothécaire"
+          "name": {
+            "en": "Librarian",
+            "fr": "Bibliothécaire"
+          }
         },
         "type": "Unite",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bibliothecaire.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bibliothecaire-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bibliothecaire.png"
+        }
       }
     },
-    "name": "Bibliothécaire",
+    "name": {
+      "en": "Librarian",
+      "fr": "Bibliothécaire"
+    },
     "type": "Unite",
     "cost": 1,
     "faction": "Mages",
@@ -1620,14 +2274,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Adepte des runes"
+          "name": {
+            "en": "Rune Adept",
+            "fr": "Adepte des runes"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/adepte.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/adepte-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/adepte.png"
+        }
       }
     },
-    "name": "Adepte des runes",
+    "name": {
+      "en": "Rune Adept",
+      "fr": "Adepte des runes"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Mages",
@@ -1643,14 +2306,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Étudiante studieuse"
+          "name": {
+            "en": "Studious Student",
+            "fr": "Étudiante studieuse"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/etudiante.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/etudiante-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/etudiante.png"
+        }
       }
     },
-    "name": "Étudiante studieuse",
+    "name": {
+      "en": "Studious Student",
+      "fr": "Étudiante studieuse"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Mages",
@@ -1666,14 +2338,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Garde de la tour"
+          "name": {
+            "en": "Tower Guard",
+            "fr": "Garde de la tour"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/garde-tour.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/garde-tour-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/garde-tour.png"
+        }
       }
     },
-    "name": "Garde de la tour",
+    "name": {
+      "en": "Tower Guard",
+      "fr": "Garde de la tour"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Mages",
@@ -1689,14 +2370,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Familier"
+          "name": {
+            "en": "Familiar",
+            "fr": "Familier"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/familier.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/familier-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/familier.png"
+        }
       }
     },
-    "name": "Familier",
+    "name": {
+      "en": "Familiar",
+      "fr": "Familier"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Mages",
@@ -1712,14 +2402,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Enchanteur"
+          "name": {
+            "en": "Enchanter",
+            "fr": "Enchanteur"
+          }
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/enchanteur.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/enchanteur-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/enchanteur.png"
+        }
       }
     },
-    "name": "Enchanteur",
+    "name": {
+      "en": "Enchanter",
+      "fr": "Enchanteur"
+    },
     "type": "Unite",
     "cost": 3,
     "faction": "Mages",
@@ -1735,14 +2434,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Mage de bataille"
+          "name": {
+            "en": "Battle Mage",
+            "fr": "Mage de bataille"
+          }
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mage-bataille.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mage-bataille-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mage-bataille.png"
+        }
       }
     },
-    "name": "Mage de bataille",
+    "name": {
+      "en": "Battle Mage",
+      "fr": "Mage de bataille"
+    },
     "type": "Unite",
     "cost": 3,
     "faction": "Mages",
@@ -1758,14 +2466,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Mage errant"
+          "name": {
+            "en": "Wandering Mage",
+            "fr": "Mage errant"
+          }
         },
         "type": "Unite",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mage-errant.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mage-errant-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mage-errant.png"
+        }
       }
     },
-    "name": "Mage errant",
+    "name": {
+      "en": "Wandering Mage",
+      "fr": "Mage errant"
+    },
     "type": "Unite",
     "cost": 4,
     "faction": "Mages",
@@ -1781,14 +2498,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Sentinelle de cristal"
+          "name": {
+            "en": "Crystal Sentinel",
+            "fr": "Sentinelle de cristal"
+          }
         },
         "type": "Unite",
         "cost": 5,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sentinelle-cristal.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sentinelle-cristal-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sentinelle-cristal.png"
+        }
       }
     },
-    "name": "Sentinelle de cristal",
+    "name": {
+      "en": "Crystal Sentinel",
+      "fr": "Sentinelle de cristal"
+    },
     "type": "Unite",
     "cost": 5,
     "faction": "Mages",
@@ -1804,14 +2530,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Projectile magique"
+          "name": {
+            "en": "Magic Missile",
+            "fr": "Projectile magique"
+          }
         },
         "type": "Sort",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/projectile.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/projectile-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/projectile.png"
+        }
       }
     },
-    "name": "Projectile magique",
+    "name": {
+      "en": "Magic Missile",
+      "fr": "Projectile magique"
+    },
     "type": "Sort",
     "cost": 1,
     "faction": "Mages",
@@ -1825,14 +2560,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Dissipation"
+          "name": {
+            "en": "Dispel",
+            "fr": "Dissipation"
+          }
         },
         "type": "Sort",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/dissipation.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/dissipation-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/dissipation.png"
+        }
       }
     },
-    "name": "Dissipation",
+    "name": {
+      "en": "Dispel",
+      "fr": "Dissipation"
+    },
     "type": "Sort",
     "cost": 2,
     "faction": "Mages",
@@ -1846,14 +2590,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Convergence"
+          "name": {
+            "en": "Convergence",
+            "fr": "Convergence"
+          }
         },
         "type": "Sort",
         "cost": 5,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/convergence.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/convergence-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/convergence.png"
+        }
       }
     },
-    "name": "Convergence",
+    "name": {
+      "en": "Convergence",
+      "fr": "Convergence"
+    },
     "type": "Sort",
     "cost": 5,
     "faction": "Mages",
@@ -1867,14 +2620,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Orsin le runiste"
+          "name": {
+            "en": "Orsin the Runesmith",
+            "fr": "Orsin le runiste"
+          }
         },
         "type": "Gardien",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/orsin.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/orsin-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/orsin.png"
+        }
       }
     },
-    "name": "Orsin le runiste",
+    "name": {
+      "en": "Orsin the Runesmith",
+      "fr": "Orsin le runiste"
+    },
     "type": "Gardien",
     "cost": 0,
     "faction": "Mages",
@@ -1890,22 +2652,37 @@
     "face": {
       "front": {
         "name": {
-          "name": "Sanctuaire runique"
+          "name": {
+            "en": "Rune Sanctuary",
+            "fr": "Sanctuaire runique"
+          }
         },
         "type": "Terrain",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sanctuaire.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sanctuaire-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sanctuaire.png"
+        }
       },
       "back": {
         "name": {
-          "name": "Sanctuaire runique"
+          "name": {
+            "en": "Rune Sanctuary",
+            "fr": "Sanctuaire runique"
+          }
         },
         "type": "Terrain",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sanctuaire-verso.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sanctuaire-verso-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sanctuaire-verso.png"
+        }
       }
     },
-    "name": "Sanctuaire runique",
+    "name": {
+      "en": "Rune Sanctuary",
+      "fr": "Sanctuaire runique"
+    },
     "type": "Terrain",
     "cost": 0,
     "faction": "Mages",
@@ -1920,14 +2697,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Scribe des runes"
+          "name": {
+            "en": "Rune Scribe",
+            "fr": "Scribe des runes"
+          }
         },
         "type": "Unite",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/scribe.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/scribe-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/scribe.png"
+        }
       }
     },
-    "name": "Scribe des runes",
+    "name": {
+      "en": "Rune Scribe",
+      "fr": "Scribe des runes"
+    },
     "type": "Unite",
     "cost": 1,
     "faction": "Mages",
@@ -1943,14 +2729,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Veilleur"
+          "name": {
+            "en": "Watcher",
+            "fr": "Veilleur"
+          }
         },
         "type": "Unite",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/veilleur.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/veilleur-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/veilleur.png"
+        }
       }
     },
-    "name": "Veilleur",
+    "name": {
+      "en": "Watcher",
+      "fr": "Veilleur"
+    },
     "type": "Unite",
     "cost": 1,
     "faction": "Mages",
@@ -1966,14 +2761,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Graveur de sceaux"
+          "name": {
+            "en": "Seal Engraver",
+            "fr": "Graveur de sceaux"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/graveur.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/graveur-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/graveur.png"
+        }
       }
     },
-    "name": "Graveur de sceaux",
+    "name": {
+      "en": "Seal Engraver",
+      "fr": "Graveur de sceaux"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Mages",
@@ -1989,14 +2793,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Acolyte du bouclier"
+          "name": {
+            "en": "Shield Acolyte",
+            "fr": "Acolyte du bouclier"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/acolyte.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/acolyte-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/acolyte.png"
+        }
       }
     },
-    "name": "Acolyte du bouclier",
+    "name": {
+      "en": "Shield Acolyte",
+      "fr": "Acolyte du bouclier"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Mages",
@@ -2012,14 +2825,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Sentinelle runique"
+          "name": {
+            "en": "Rune Sentinel",
+            "fr": "Sentinelle runique"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sentinelle-runique.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sentinelle-runique-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sentinelle-runique.png"
+        }
       }
     },
-    "name": "Sentinelle runique",
+    "name": {
+      "en": "Rune Sentinel",
+      "fr": "Sentinelle runique"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Mages",
@@ -2035,14 +2857,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Tisseuse de protections"
+          "name": {
+            "en": "Ward Weaver",
+            "fr": "Tisseuse de protections"
+          }
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tisseuse.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tisseuse-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tisseuse.png"
+        }
       }
     },
-    "name": "Tisseuse de protections",
+    "name": {
+      "en": "Ward Weaver",
+      "fr": "Tisseuse de protections"
+    },
     "type": "Unite",
     "cost": 3,
     "faction": "Mages",
@@ -2058,14 +2889,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Portier du seuil"
+          "name": {
+            "en": "Threshold Keeper",
+            "fr": "Portier du seuil"
+          }
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/portier.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/portier-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/portier.png"
+        }
       }
     },
-    "name": "Portier du seuil",
+    "name": {
+      "en": "Threshold Keeper",
+      "fr": "Portier du seuil"
+    },
     "type": "Unite",
     "cost": 3,
     "faction": "Mages",
@@ -2081,14 +2921,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Statue animée"
+          "name": {
+            "en": "Animated Statue",
+            "fr": "Statue animée"
+          }
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/statue.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/statue-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/statue.png"
+        }
       }
     },
-    "name": "Statue animée",
+    "name": {
+      "en": "Animated Statue",
+      "fr": "Statue animée"
+    },
     "type": "Unite",
     "cost": 3,
     "faction": "Mages",
@@ -2104,14 +2953,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Maître des glyphes"
+          "name": {
+            "en": "Glyph Master",
+            "fr": "Maître des glyphes"
+          }
         },
         "type": "Unite",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/maitre-glyphes.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/maitre-glyphes-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/maitre-glyphes.png"
+        }
       }
     },
-    "name": "Maître des glyphes",
+    "name": {
+      "en": "Glyph Master",
+      "fr": "Maître des glyphes"
+    },
     "type": "Unite",
     "cost": 4,
     "faction": "Mages",
@@ -2127,14 +2985,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Colosse runique"
+          "name": {
+            "en": "Rune Colossus",
+            "fr": "Colosse runique"
+          }
         },
         "type": "Unite",
         "cost": 5,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/colosse.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/colosse-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/colosse.png"
+        }
       }
     },
-    "name": "Colosse runique",
+    "name": {
+      "en": "Rune Colossus",
+      "fr": "Colosse runique"
+    },
     "type": "Unite",
     "cost": 5,
     "faction": "Mages",
@@ -2150,14 +3017,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Bouclier runique"
+          "name": {
+            "en": "Rune Shield",
+            "fr": "Bouclier runique"
+          }
         },
         "type": "Sort",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bouclier-runique.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bouclier-runique-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bouclier-runique.png"
+        }
       }
     },
-    "name": "Bouclier runique",
+    "name": {
+      "en": "Rune Shield",
+      "fr": "Bouclier runique"
+    },
     "type": "Sort",
     "cost": 1,
     "faction": "Mages",
@@ -2171,14 +3047,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Répulsion"
+          "name": {
+            "en": "Repulsion",
+            "fr": "Répulsion"
+          }
         },
         "type": "Sort",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/repulsion.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/repulsion-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/repulsion.png"
+        }
       }
     },
-    "name": "Répulsion",
+    "name": {
+      "en": "Repulsion",
+      "fr": "Répulsion"
+    },
     "type": "Sort",
     "cost": 2,
     "faction": "Mages",
@@ -2192,14 +3077,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Citadelle de runes"
+          "name": {
+            "en": "Rune Citadel",
+            "fr": "Citadelle de runes"
+          }
         },
         "type": "Sort",
         "cost": 5,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/citadelle.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/citadelle-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/citadelle.png"
+        }
       }
     },
-    "name": "Citadelle de runes",
+    "name": {
+      "en": "Rune Citadel",
+      "fr": "Citadelle de runes"
+    },
     "type": "Sort",
     "cost": 5,
     "faction": "Mages",
@@ -2213,14 +3107,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Ignis la pyromancienne"
+          "name": {
+            "en": "Ignis the Pyromancer",
+            "fr": "Ignis la pyromancienne"
+          }
         },
         "type": "Gardien",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ignis.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ignis-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ignis.png"
+        }
       }
     },
-    "name": "Ignis la pyromancienne",
+    "name": {
+      "en": "Ignis the Pyromancer",
+      "fr": "Ignis la pyromancienne"
+    },
     "type": "Gardien",
     "cost": 0,
     "faction": "Mages",
@@ -2236,22 +3139,37 @@
     "face": {
       "front": {
         "name": {
-          "name": "Foyer instable"
+          "name": {
+            "en": "Unstable Hearth",
+            "fr": "Foyer instable"
+          }
         },
         "type": "Terrain",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/foyer.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/foyer-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/foyer.png"
+        }
       },
       "back": {
         "name": {
-          "name": "Foyer instable"
+          "name": {
+            "en": "Unstable Hearth",
+            "fr": "Foyer instable"
+          }
         },
         "type": "Terrain",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/foyer-verso.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/foyer-verso-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/foyer-verso.png"
+        }
       }
     },
-    "name": "Foyer instable",
+    "name": {
+      "en": "Unstable Hearth",
+      "fr": "Foyer instable"
+    },
     "type": "Terrain",
     "cost": 0,
     "faction": "Mages",
@@ -2266,14 +3184,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Feu follet"
+          "name": {
+            "en": "Will-o'-the-Wisp",
+            "fr": "Feu follet"
+          }
         },
         "type": "Unite",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/feu-follet.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/feu-follet-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/feu-follet.png"
+        }
       }
     },
-    "name": "Feu follet",
+    "name": {
+      "en": "Will-o'-the-Wisp",
+      "fr": "Feu follet"
+    },
     "type": "Unite",
     "cost": 1,
     "faction": "Mages",
@@ -2289,14 +3216,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Novice du feu"
+          "name": {
+            "en": "Fire Novice",
+            "fr": "Novice du feu"
+          }
         },
         "type": "Unite",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/novice-feu.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/novice-feu-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/novice-feu.png"
+        }
       }
     },
-    "name": "Novice du feu",
+    "name": {
+      "en": "Fire Novice",
+      "fr": "Novice du feu"
+    },
     "type": "Unite",
     "cost": 1,
     "faction": "Mages",
@@ -2312,14 +3248,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Jongleur de flammes"
+          "name": {
+            "en": "Flame Juggler",
+            "fr": "Jongleur de flammes"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/jongleur.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/jongleur-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/jongleur.png"
+        }
       }
     },
-    "name": "Jongleur de flammes",
+    "name": {
+      "en": "Flame Juggler",
+      "fr": "Jongleur de flammes"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Mages",
@@ -2335,14 +3280,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Salamandre"
+          "name": {
+            "en": "Salamander",
+            "fr": "Salamandre"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/salamandre.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/salamandre-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/salamandre.png"
+        }
       }
     },
-    "name": "Salamandre",
+    "name": {
+      "en": "Salamander",
+      "fr": "Salamandre"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Mages",
@@ -2358,14 +3312,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Pyromane"
+          "name": {
+            "en": "Pyromaniac",
+            "fr": "Pyromane"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pyromane.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pyromane-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pyromane.png"
+        }
       }
     },
-    "name": "Pyromane",
+    "name": {
+      "en": "Pyromaniac",
+      "fr": "Pyromane"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Mages",
@@ -2381,14 +3344,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Embraseuse"
+          "name": {
+            "en": "Kindler",
+            "fr": "Embraseuse"
+          }
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/embraseuse.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/embraseuse-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/embraseuse.png"
+        }
       }
     },
-    "name": "Embraseuse",
+    "name": {
+      "en": "Kindler",
+      "fr": "Embraseuse"
+    },
     "type": "Unite",
     "cost": 3,
     "faction": "Mages",
@@ -2404,14 +3376,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Élémentaire de feu"
+          "name": {
+            "en": "Fire Elemental",
+            "fr": "Élémentaire de feu"
+          }
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/elementaire.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/elementaire-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/elementaire.png"
+        }
       }
     },
-    "name": "Élémentaire de feu",
+    "name": {
+      "en": "Fire Elemental",
+      "fr": "Élémentaire de feu"
+    },
     "type": "Unite",
     "cost": 3,
     "faction": "Mages",
@@ -2427,14 +3408,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Mage des cendres"
+          "name": {
+            "en": "Ash Mage",
+            "fr": "Mage des cendres"
+          }
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mage-cendres.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mage-cendres-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mage-cendres.png"
+        }
       }
     },
-    "name": "Mage des cendres",
+    "name": {
+      "en": "Ash Mage",
+      "fr": "Mage des cendres"
+    },
     "type": "Unite",
     "cost": 3,
     "faction": "Mages",
@@ -2450,14 +3440,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Phénix"
+          "name": {
+            "en": "Phoenix",
+            "fr": "Phénix"
+          }
         },
         "type": "Unite",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/phenix.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/phenix-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/phenix.png"
+        }
       }
     },
-    "name": "Phénix",
+    "name": {
+      "en": "Phoenix",
+      "fr": "Phénix"
+    },
     "type": "Unite",
     "cost": 4,
     "faction": "Mages",
@@ -2473,14 +3472,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Incarnation du brasier"
+          "name": {
+            "en": "Blaze Incarnate",
+            "fr": "Incarnation du brasier"
+          }
         },
         "type": "Unite",
         "cost": 5,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/incarnation.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/incarnation-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/incarnation.png"
+        }
       }
     },
-    "name": "Incarnation du brasier",
+    "name": {
+      "en": "Blaze Incarnate",
+      "fr": "Incarnation du brasier"
+    },
     "type": "Unite",
     "cost": 5,
     "faction": "Mages",
@@ -2496,14 +3504,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Trait de feu"
+          "name": {
+            "en": "Fire Bolt",
+            "fr": "Trait de feu"
+          }
         },
         "type": "Sort",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/trait-feu.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/trait-feu-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/trait-feu.png"
+        }
       }
     },
-    "name": "Trait de feu",
+    "name": {
+      "en": "Fire Bolt",
+      "fr": "Trait de feu"
+    },
     "type": "Sort",
     "cost": 1,
     "faction": "Mages",
@@ -2517,14 +3534,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Boule de feu"
+          "name": {
+            "en": "Fireball",
+            "fr": "Boule de feu"
+          }
         },
         "type": "Sort",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/boule-feu.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/boule-feu-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/boule-feu.png"
+        }
       }
     },
-    "name": "Boule de feu",
+    "name": {
+      "en": "Fireball",
+      "fr": "Boule de feu"
+    },
     "type": "Sort",
     "cost": 3,
     "faction": "Mages",
@@ -2538,14 +3564,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Météore"
+          "name": {
+            "en": "Meteor",
+            "fr": "Météore"
+          }
         },
         "type": "Sort",
         "cost": 5,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/meteore.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/meteore-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/meteore.png"
+        }
       }
     },
-    "name": "Météore",
+    "name": {
+      "en": "Meteor",
+      "fr": "Météore"
+    },
     "type": "Sort",
     "cost": 5,
     "faction": "Mages",
@@ -2559,14 +3594,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Garçon de cave"
+          "name": {
+            "en": "Cellar Boy",
+            "fr": "Garçon de cave"
+          }
         },
         "type": "Unite",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/garcon-cave.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/garcon-cave-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/garcon-cave.png"
+        }
       }
     },
-    "name": "Garçon de cave",
+    "name": {
+      "en": "Cellar Boy",
+      "fr": "Garçon de cave"
+    },
     "type": "Unite",
     "cost": 1,
     "faction": "Ivrognes",
@@ -2582,14 +3626,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Tonnelier"
+          "name": {
+            "en": "Cooper",
+            "fr": "Tonnelier"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tonnelier.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tonnelier-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/tonnelier.png"
+        }
       }
     },
-    "name": "Tonnelier",
+    "name": {
+      "en": "Cooper",
+      "fr": "Tonnelier"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Ivrognes",
@@ -2605,14 +3658,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Pilier de comptoir"
+          "name": {
+            "en": "Barfly",
+            "fr": "Pilier de comptoir"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pilier.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pilier-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pilier.png"
+        }
       }
     },
-    "name": "Pilier de comptoir",
+    "name": {
+      "en": "Barfly",
+      "fr": "Pilier de comptoir"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Ivrognes",
@@ -2628,14 +3690,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Gardienne du fût"
+          "name": {
+            "en": "Cask Keeper",
+            "fr": "Gardienne du fût"
+          }
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gardienne-fut.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gardienne-fut-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gardienne-fut.png"
+        }
       }
     },
-    "name": "Gardienne du fût",
+    "name": {
+      "en": "Cask Keeper",
+      "fr": "Gardienne du fût"
+    },
     "type": "Unite",
     "cost": 3,
     "faction": "Ivrognes",
@@ -2651,14 +3722,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Videuse en chef"
+          "name": {
+            "en": "Head Bouncer",
+            "fr": "Videuse en chef"
+          }
         },
         "type": "Unite",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/videuse-chef.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/videuse-chef-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/videuse-chef.png"
+        }
       }
     },
-    "name": "Videuse en chef",
+    "name": {
+      "en": "Head Bouncer",
+      "fr": "Videuse en chef"
+    },
     "type": "Unite",
     "cost": 4,
     "faction": "Ivrognes",
@@ -2674,14 +3754,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Ours de la brasserie"
+          "name": {
+            "en": "Brewery Bear",
+            "fr": "Ours de la brasserie"
+          }
         },
         "type": "Unite",
         "cost": 5,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ours.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ours-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ours.png"
+        }
       }
     },
-    "name": "Ours de la brasserie",
+    "name": {
+      "en": "Brewery Bear",
+      "fr": "Ours de la brasserie"
+    },
     "type": "Unite",
     "cost": 5,
     "faction": "Ivrognes",
@@ -2697,14 +3786,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Fermeture !"
+          "name": {
+            "en": "Closing Time!",
+            "fr": "Fermeture !"
+          }
         },
         "type": "Sort",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/fermeture.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/fermeture-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/fermeture.png"
+        }
       }
     },
-    "name": "Fermeture !",
+    "name": {
+      "en": "Closing Time!",
+      "fr": "Fermeture !"
+    },
     "type": "Sort",
     "cost": 2,
     "faction": "Ivrognes",
@@ -2718,14 +3816,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Cuisinier de la taverne"
+          "name": {
+            "en": "Tavern Cook",
+            "fr": "Cuisinier de la taverne"
+          }
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cuisinier.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cuisinier-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cuisinier.png"
+        }
       }
     },
-    "name": "Cuisinier de la taverne",
+    "name": {
+      "en": "Tavern Cook",
+      "fr": "Cuisinier de la taverne"
+    },
     "type": "Unite",
     "cost": 3,
     "faction": "Ivrognes",
@@ -2741,14 +3848,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Semeuse"
+          "name": {
+            "en": "Sower",
+            "fr": "Semeuse"
+          }
         },
         "type": "Unite",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/semeuse.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/semeuse-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/semeuse.png"
+        }
       }
     },
-    "name": "Semeuse",
+    "name": {
+      "en": "Sower",
+      "fr": "Semeuse"
+    },
     "type": "Unite",
     "cost": 1,
     "faction": "Druides",
@@ -2764,14 +3880,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Herboriste"
+          "name": {
+            "en": "Herbalist",
+            "fr": "Herboriste"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/herboriste.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/herboriste-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/herboriste.png"
+        }
       }
     },
-    "name": "Herboriste",
+    "name": {
+      "en": "Herbalist",
+      "fr": "Herboriste"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Druides",
@@ -2787,14 +3912,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Druide greffeur"
+          "name": {
+            "en": "Grafter Druid",
+            "fr": "Druide greffeur"
+          }
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/greffeur.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/greffeur-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/greffeur.png"
+        }
       }
     },
-    "name": "Druide greffeur",
+    "name": {
+      "en": "Grafter Druid",
+      "fr": "Druide greffeur"
+    },
     "type": "Unite",
     "cost": 3,
     "faction": "Druides",
@@ -2814,14 +3948,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Ours des clairières"
+          "name": {
+            "en": "Glade Bear",
+            "fr": "Ours des clairières"
+          }
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ours-clairiere.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ours-clairiere-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ours-clairiere.png"
+        }
       }
     },
-    "name": "Ours des clairières",
+    "name": {
+      "en": "Glade Bear",
+      "fr": "Ours des clairières"
+    },
     "type": "Unite",
     "cost": 3,
     "faction": "Druides",
@@ -2837,14 +3980,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Cerf ancestral"
+          "name": {
+            "en": "Ancestral Stag",
+            "fr": "Cerf ancestral"
+          }
         },
         "type": "Unite",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cerf.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cerf-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/cerf.png"
+        }
       }
     },
-    "name": "Cerf ancestral",
+    "name": {
+      "en": "Ancestral Stag",
+      "fr": "Cerf ancestral"
+    },
     "type": "Unite",
     "cost": 4,
     "faction": "Druides",
@@ -2863,14 +4015,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Récolte abondante"
+          "name": {
+            "en": "Bountiful Harvest",
+            "fr": "Récolte abondante"
+          }
         },
         "type": "Sort",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/recolte.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/recolte-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/recolte.png"
+        }
       }
     },
-    "name": "Récolte abondante",
+    "name": {
+      "en": "Bountiful Harvest",
+      "fr": "Récolte abondante"
+    },
     "type": "Sort",
     "cost": 2,
     "faction": "Druides",
@@ -2884,14 +4045,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Crapaud vénéneux"
+          "name": {
+            "en": "Venomous Toad",
+            "fr": "Crapaud vénéneux"
+          }
         },
         "type": "Unite",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/crapaud.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/crapaud-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/crapaud.png"
+        }
       }
     },
-    "name": "Crapaud vénéneux",
+    "name": {
+      "en": "Venomous Toad",
+      "fr": "Crapaud vénéneux"
+    },
     "type": "Unite",
     "cost": 1,
     "faction": "Druides",
@@ -2907,14 +4077,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Araignée des ronces"
+          "name": {
+            "en": "Bramble Spider",
+            "fr": "Araignée des ronces"
+          }
         },
         "type": "Unite",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/araignee-ronces.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/araignee-ronces-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/araignee-ronces.png"
+        }
       }
     },
-    "name": "Araignée des ronces",
+    "name": {
+      "en": "Bramble Spider",
+      "fr": "Araignée des ronces"
+    },
     "type": "Unite",
     "cost": 1,
     "faction": "Druides",
@@ -2930,14 +4109,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Mur de ronces"
+          "name": {
+            "en": "Bramble Wall",
+            "fr": "Mur de ronces"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mur-ronces.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mur-ronces-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mur-ronces.png"
+        }
       }
     },
-    "name": "Mur de ronces",
+    "name": {
+      "en": "Bramble Wall",
+      "fr": "Mur de ronces"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Druides",
@@ -2953,14 +4141,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Sorcière des marais"
+          "name": {
+            "en": "Swamp Witch",
+            "fr": "Sorcière des marais"
+          }
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sorciere.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sorciere-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/sorciere.png"
+        }
       }
     },
-    "name": "Sorcière des marais",
+    "name": {
+      "en": "Swamp Witch",
+      "fr": "Sorcière des marais"
+    },
     "type": "Unite",
     "cost": 3,
     "faction": "Druides",
@@ -2976,14 +4173,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Mandragore"
+          "name": {
+            "en": "Mandrake",
+            "fr": "Mandragore"
+          }
         },
         "type": "Unite",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mandragore.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mandragore-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/mandragore.png"
+        }
       }
     },
-    "name": "Mandragore",
+    "name": {
+      "en": "Mandrake",
+      "fr": "Mandragore"
+    },
     "type": "Unite",
     "cost": 4,
     "faction": "Druides",
@@ -2999,14 +4205,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Enchevêtrement"
+          "name": {
+            "en": "Entanglement",
+            "fr": "Enchevêtrement"
+          }
         },
         "type": "Sort",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/enchevetrement.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/enchevetrement-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/enchevetrement.png"
+        }
       }
     },
-    "name": "Enchevêtrement",
+    "name": {
+      "en": "Entanglement",
+      "fr": "Enchevêtrement"
+    },
     "type": "Sort",
     "cost": 2,
     "faction": "Druides",
@@ -3020,14 +4235,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Louveteau"
+          "name": {
+            "en": "Wolf Cub",
+            "fr": "Louveteau"
+          }
         },
         "type": "Unite",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/louveteau.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/louveteau-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/louveteau.png"
+        }
       }
     },
-    "name": "Louveteau",
+    "name": {
+      "en": "Wolf Cub",
+      "fr": "Louveteau"
+    },
     "type": "Unite",
     "cost": 1,
     "faction": "Druides",
@@ -3043,14 +4267,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Faucon chasseur"
+          "name": {
+            "en": "Hunting Falcon",
+            "fr": "Faucon chasseur"
+          }
         },
         "type": "Unite",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/faucon.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/faucon-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/faucon.png"
+        }
       }
     },
-    "name": "Faucon chasseur",
+    "name": {
+      "en": "Hunting Falcon",
+      "fr": "Faucon chasseur"
+    },
     "type": "Unite",
     "cost": 1,
     "faction": "Druides",
@@ -3066,14 +4299,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Chasseresse"
+          "name": {
+            "en": "Huntress",
+            "fr": "Chasseresse"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chasseresse.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chasseresse-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chasseresse.png"
+        }
       }
     },
-    "name": "Chasseresse",
+    "name": {
+      "en": "Huntress",
+      "fr": "Chasseresse"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Druides",
@@ -3092,14 +4334,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Lynx des ombres"
+          "name": {
+            "en": "Shadow Lynx",
+            "fr": "Lynx des ombres"
+          }
         },
         "type": "Unite",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lynx.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lynx-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lynx.png"
+        }
       }
     },
-    "name": "Lynx des ombres",
+    "name": {
+      "en": "Shadow Lynx",
+      "fr": "Lynx des ombres"
+    },
     "type": "Unite",
     "cost": 2,
     "faction": "Druides",
@@ -3115,14 +4366,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Loup alpha"
+          "name": {
+            "en": "Alpha Wolf",
+            "fr": "Loup alpha"
+          }
         },
         "type": "Unite",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/loup-alpha.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/loup-alpha-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/loup-alpha.png"
+        }
       }
     },
-    "name": "Loup alpha",
+    "name": {
+      "en": "Alpha Wolf",
+      "fr": "Loup alpha"
+    },
     "type": "Unite",
     "cost": 3,
     "faction": "Druides",
@@ -3141,14 +4401,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Ours enragé"
+          "name": {
+            "en": "Enraged Bear",
+            "fr": "Ours enragé"
+          }
         },
         "type": "Unite",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ours-enrage.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ours-enrage-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/ours-enrage.png"
+        }
       }
     },
-    "name": "Ours enragé",
+    "name": {
+      "en": "Enraged Bear",
+      "fr": "Ours enragé"
+    },
     "type": "Unite",
     "cost": 4,
     "faction": "Druides",
@@ -3164,14 +4433,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Grand loup blanc"
+          "name": {
+            "en": "Great White Wolf",
+            "fr": "Grand loup blanc"
+          }
         },
         "type": "Unite",
         "cost": 5,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/loup-blanc.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/loup-blanc-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/loup-blanc.png"
+        }
       }
     },
-    "name": "Grand loup blanc",
+    "name": {
+      "en": "Great White Wolf",
+      "fr": "Grand loup blanc"
+    },
     "type": "Unite",
     "cost": 5,
     "faction": "Druides",
@@ -3190,14 +4468,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Hallali"
+          "name": {
+            "en": "Tally-Ho",
+            "fr": "Hallali"
+          }
         },
         "type": "Sort",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/hallali.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/hallali-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/hallali.png"
+        }
       }
     },
-    "name": "Hallali",
+    "name": {
+      "en": "Tally-Ho",
+      "fr": "Hallali"
+    },
     "type": "Sort",
     "cost": 2,
     "faction": "Druides",
@@ -3214,22 +4501,37 @@
     "face": {
       "front": {
         "name": {
-          "name": "Gobelin fouineur"
+          "name": {
+            "en": "Goblin Snoop",
+            "fr": "Gobelin fouineur"
+          }
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gobelin.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gobelin-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gobelin.png"
+        }
       },
       "back": {
         "name": {
-          "name": "Hobgobelin"
+          "name": {
+            "en": "Hobgoblin",
+            "fr": "Hobgobelin"
+          }
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gobelin-verso.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gobelin-verso-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/gobelin-verso.png"
+        }
       }
     },
-    "name": "Gobelin fouineur",
+    "name": {
+      "en": "Goblin Snoop",
+      "fr": "Gobelin fouineur"
+    },
     "type": "Monstre",
     "cost": 0,
     "faction": "Mine des Gobelins",
@@ -3243,22 +4545,37 @@
     "face": {
       "front": {
         "name": {
-          "name": "Rat des galeries"
+          "name": {
+            "en": "Tunnel Rat",
+            "fr": "Rat des galeries"
+          }
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/rat.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/rat-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/rat.png"
+        }
       },
       "back": {
         "name": {
-          "name": "Rat géant"
+          "name": {
+            "en": "Giant Rat",
+            "fr": "Rat géant"
+          }
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/rat-verso.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/rat-verso-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/rat-verso.png"
+        }
       }
     },
-    "name": "Rat des galeries",
+    "name": {
+      "en": "Tunnel Rat",
+      "fr": "Rat des galeries"
+    },
     "type": "Monstre",
     "cost": 0,
     "faction": "Mine des Gobelins",
@@ -3272,22 +4589,37 @@
     "face": {
       "front": {
         "name": {
-          "name": "Archer gobelin"
+          "name": {
+            "en": "Goblin Archer",
+            "fr": "Archer gobelin"
+          }
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/archer.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/archer-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/archer.png"
+        }
       },
       "back": {
         "name": {
-          "name": "Tireur gobelin"
+          "name": {
+            "en": "Goblin Sharpshooter",
+            "fr": "Tireur gobelin"
+          }
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/archer-verso.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/archer-verso-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/archer-verso.png"
+        }
       }
     },
-    "name": "Archer gobelin",
+    "name": {
+      "en": "Goblin Archer",
+      "fr": "Archer gobelin"
+    },
     "type": "Monstre",
     "cost": 0,
     "faction": "Mine des Gobelins",
@@ -3301,22 +4633,37 @@
     "face": {
       "front": {
         "name": {
-          "name": "Chaman gobelin"
+          "name": {
+            "en": "Goblin Shaman",
+            "fr": "Chaman gobelin"
+          }
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chaman.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chaman-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chaman.png"
+        }
       },
       "back": {
         "name": {
-          "name": "Grand chaman"
+          "name": {
+            "en": "Great Shaman",
+            "fr": "Grand chaman"
+          }
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chaman-verso.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chaman-verso-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/chaman-verso.png"
+        }
       }
     },
-    "name": "Chaman gobelin",
+    "name": {
+      "en": "Goblin Shaman",
+      "fr": "Chaman gobelin"
+    },
     "type": "Monstre",
     "cost": 0,
     "faction": "Mine des Gobelins",
@@ -3330,22 +4677,37 @@
     "face": {
       "front": {
         "name": {
-          "name": "Araignée des puits"
+          "name": {
+            "en": "Pit Spider",
+            "fr": "Araignée des puits"
+          }
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/araignee.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/araignee-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/araignee.png"
+        }
       },
       "back": {
         "name": {
-          "name": "Reine araignée"
+          "name": {
+            "en": "Spider Queen",
+            "fr": "Reine araignée"
+          }
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/araignee-verso.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/araignee-verso-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/araignee-verso.png"
+        }
       }
     },
-    "name": "Araignée des puits",
+    "name": {
+      "en": "Pit Spider",
+      "fr": "Araignée des puits"
+    },
     "type": "Monstre",
     "cost": 0,
     "faction": "Mine des Gobelins",
@@ -3359,22 +4721,37 @@
     "face": {
       "front": {
         "name": {
-          "name": "Golem de minerai"
+          "name": {
+            "en": "Ore Golem",
+            "fr": "Golem de minerai"
+          }
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/golem.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/golem-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/golem.png"
+        }
       },
       "back": {
         "name": {
-          "name": "Golem de cristal"
+          "name": {
+            "en": "Crystal Golem",
+            "fr": "Golem de cristal"
+          }
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/golem-verso.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/golem-verso-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/golem-verso.png"
+        }
       }
     },
-    "name": "Golem de minerai",
+    "name": {
+      "en": "Ore Golem",
+      "fr": "Golem de minerai"
+    },
     "type": "Monstre",
     "cost": 0,
     "faction": "Mine des Gobelins",
@@ -3388,22 +4765,37 @@
     "face": {
       "front": {
         "name": {
-          "name": "Contremaître hobgobelin"
+          "name": {
+            "en": "Hobgoblin Foreman",
+            "fr": "Contremaître hobgobelin"
+          }
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/contremaitre.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/contremaitre-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/contremaitre.png"
+        }
       },
       "back": {
         "name": {
-          "name": "Chef de guerre"
+          "name": {
+            "en": "Warchief",
+            "fr": "Chef de guerre"
+          }
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/contremaitre-verso.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/contremaitre-verso-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/contremaitre-verso.png"
+        }
       }
     },
-    "name": "Contremaître hobgobelin",
+    "name": {
+      "en": "Hobgoblin Foreman",
+      "fr": "Contremaître hobgobelin"
+    },
     "type": "Monstre",
     "cost": 0,
     "faction": "Mine des Gobelins",
@@ -3417,22 +4809,37 @@
     "face": {
       "front": {
         "name": {
-          "name": "Troll des mines"
+          "name": {
+            "en": "Mine Troll",
+            "fr": "Troll des mines"
+          }
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/troll.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/troll-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/troll.png"
+        }
       },
       "back": {
         "name": {
-          "name": "Troll ancien"
+          "name": {
+            "en": "Ancient Troll",
+            "fr": "Troll ancien"
+          }
         },
         "type": "Monstre",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/troll-verso.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/troll-verso-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/troll-verso.png"
+        }
       }
     },
-    "name": "Troll des mines",
+    "name": {
+      "en": "Mine Troll",
+      "fr": "Troll des mines"
+    },
     "type": "Monstre",
     "cost": 0,
     "faction": "Mine des Gobelins",
@@ -3446,14 +4853,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Grombak, roi gobelin"
+          "name": {
+            "en": "Grombak, Goblin King",
+            "fr": "Grombak, roi gobelin"
+          }
         },
         "type": "Boss",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/grombak.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/grombak-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/grombak.png"
+        }
       }
     },
-    "name": "Grombak, roi gobelin",
+    "name": {
+      "en": "Grombak, Goblin King",
+      "fr": "Grombak, roi gobelin"
+    },
     "type": "Boss",
     "cost": 0,
     "faction": "Mine des Gobelins",
@@ -3467,14 +4883,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Lanterne du mineur"
+          "name": {
+            "en": "Miner's Lantern",
+            "fr": "Lanterne du mineur"
+          }
         },
         "type": "Relique",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lanterne.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lanterne-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/lanterne.png"
+        }
       }
     },
-    "name": "Lanterne du mineur",
+    "name": {
+      "en": "Miner's Lantern",
+      "fr": "Lanterne du mineur"
+    },
     "type": "Relique",
     "cost": 0,
     "faction": "Relique",
@@ -3485,14 +4910,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Pioche runique"
+          "name": {
+            "en": "Rune Pickaxe",
+            "fr": "Pioche runique"
+          }
         },
         "type": "Relique",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pioche-runique.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pioche-runique-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/pioche-runique.png"
+        }
       }
     },
-    "name": "Pioche runique",
+    "name": {
+      "en": "Rune Pickaxe",
+      "fr": "Pioche runique"
+    },
     "type": "Relique",
     "cost": 0,
     "faction": "Relique",
@@ -3503,14 +4937,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Bourse du contremaître"
+          "name": {
+            "en": "Foreman's Purse",
+            "fr": "Bourse du contremaître"
+          }
         },
         "type": "Relique",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bourse.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bourse-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/bourse.png"
+        }
       }
     },
-    "name": "Bourse du contremaître",
+    "name": {
+      "en": "Foreman's Purse",
+      "fr": "Bourse du contremaître"
+    },
     "type": "Relique",
     "cost": 0,
     "faction": "Relique",
@@ -3521,14 +4964,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Carte au trésor"
+          "name": {
+            "en": "Treasure Map",
+            "fr": "Carte au trésor"
+          }
         },
         "type": "Tresor",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/carte-tresor.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/carte-tresor-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/carte-tresor.png"
+        }
       }
     },
-    "name": "Carte au trésor",
+    "name": {
+      "en": "Treasure Map",
+      "fr": "Carte au trésor"
+    },
     "type": "Tresor",
     "cost": 0,
     "faction": "Relique",
@@ -3539,14 +4991,23 @@
     "face": {
       "front": {
         "name": {
-          "name": "Énergie"
+          "name": {
+            "en": "Energy",
+            "fr": "Énergie"
+          }
         },
         "type": "Energie",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/energie.png"
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/energie-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/energie.png"
+        }
       }
     },
-    "name": "Énergie",
+    "name": {
+      "en": "Energy",
+      "fr": "Énergie"
+    },
     "type": "Energie",
     "cost": 0,
     "faction": "Energie",
