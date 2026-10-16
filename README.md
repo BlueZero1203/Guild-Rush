@@ -15,4 +15,6 @@ Après une modif de `bible/03_cartes.csv` ou `bible/05_donjon_mine.csv` :
 python3 tools/from_bible.py
 ```
 
-Le script régénère `cards.json`, les images des cartes, les jetons et l'aide de `gamefile.json`, puis signale les decks de `decks.json` qui ne respectent plus la règle de deck. Les anciens scripts (`generate.py`, `board_layout.py`, `format_v2.py`, `format_v3.py`) restent pour l'historique du plateau ; `generate.py` fournit le dessin des cartes.
+Le script régénère `cards.json`, les images des cartes, les jetons et l'aide de `gamefile.json`, puis signale les decks de `decks.json` qui ne respectent plus la règle de deck.
+
+Les définitions des mots-clés et états viennent de `bible/00_glossaire.md` : chaque carte rappelle en petit, sous son texte, ceux qu'elle utilise (s'il reste de la place), et l'aide de `gamefile.json` (menu Help) contient le lexique complet. Après une modif du glossaire, relancer le script. Les anciens scripts (`generate.py`, `board_layout.py`, `format_v2.py`, `format_v3.py`) restent pour l'historique du plateau ; `generate.py` fournit le dessin des cartes.

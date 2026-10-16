@@ -355,6 +355,28 @@ def rich_lines(draw, text, fnt, fnt_b, max_w):
     return lines
 
 
+def rappels(d, items, y, bottom, size):
+    """Rappel des mots-clés (« **Terme** : définition ») en petit, sous le texte ; on retire la fin si ça ne tient pas."""
+    while items:
+        for sz in range(size, 12, -1):
+            f, fb = font(sz), font(sz, True)
+            lh = int(sz * 1.25)
+            blocs = [rich_lines(d, it, f, fb, W - 72) for it in items]
+            if y + 8 + sum(len(b) for b in blocs) * lh <= bottom:
+                d.line((32, y, W - 32, y), fill=(110, 110, 120), width=1)
+                y += 8
+                for b in blocs:
+                    for line in b:
+                        x = 36
+                        for w, gras in line:
+                            fnt = fb if gras else f
+                            d.text((x, y), w, font=fnt, fill=(200, 200, 210))
+                            x += d.textlength(w + " ", font=fnt)
+                        y += lh
+                return
+        items = items[:-1]
+
+
 def draw_card(c, path):
     pal_key = c["faction"] if c["faction"] in PALETTE else c["type"]
     if c["type"] in ("Monstre", "Boss", "Energie"):
@@ -419,6 +441,7 @@ def draw_card(c, path):
             d.text((x, y), w, font=fnt, fill="white")
             x += d.textlength(w + " ", font=fnt)
         y += lh
+    rappels(d, c.get("rappels") or [], y + 6, box_bottom, min(size - 4, 17))
 
     # Stats
     if c["power"] is not None:
