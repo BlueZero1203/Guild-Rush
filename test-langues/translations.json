@@ -1,0 +1,25 @@
+{
+  "additionalLanguages": [
+    "fr"
+  ],
+  "en": {
+    "Types": {
+      "Unite": "Unit",
+      "Sort": "Spell",
+      "Gardien": "Guardian"
+    },
+    "UI text": {
+      "translations.customHelp": "ENGLISH HELP (test). If you read this, the help follows the language."
+    }
+  },
+  "fr": {
+    "Types": {
+      "Unite": "Unité",
+      "Sort": "Sort",
+      "Gardien": "Gardien"
+    },
+    "UI text": {
+      "translations.customHelp": "AIDE EN FRANÇAIS (test). Si tu lis ceci, l'aide suit la langue."
+    }
+  }
+}

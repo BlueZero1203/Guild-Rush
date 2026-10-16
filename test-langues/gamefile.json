@@ -1,0 +1,737 @@
+{
+  "name": "Guild Rush (test langues)",
+  "cardRotation": 90,
+  "customHelp": "Guild Rush (proto) · donjon : Mine des Gobelins. Règles complètes : livret/livret.md du dépôt.\nBut : le plus de trésors. Fin : un joueur à 12 trésors en fin de manche, ou boss tué (fin de ce tour). Égalité : tueur du boss, puis le plus de monstres tués.\nPlateau : 4 salles en ligne (voisine = ±1), un monstre chacune. Face à chaque salle, une Expédition par joueur (3 unités max, jetons compris). Le Camp touche toutes tes Expéditions, sans limite ; ce n'est pas une salle.\nTour : Repos (énergie au max, 3 puis +1 par manche jusqu'à 6 ; pioche 1 ; soin des unités En soin ; passif du Gardien) → Stratagème (Éclaireurs, Bluff face cachée, lever le camp) → Assaut → Retrait (trésors au compteur, niveau du Terrain).\nAssaut : une unité posée arrive directement dans l'Expédition voulue ou au Camp (TCG Arena la pose en Exp. 1 : glisse-la). Une unité en jeu se déplace 1 fois par tour (Expédition voisine, Camp, ou du Camp vers n'importe quelle Expédition). Blessée : seulement vers le Camp (En soin).\nCombat (optionnel), salle par salle : Duel (annonce-le dans le chat ; l'adversaire répond d'abord, puis Réflexe / bonus de Terrain / passe ; 2 passes = frappes). Puis le monstre frappe 1 attaquant choisi par l'adversaire, tes attaquants frappent ensemble, puis (Mêlée) les unités adverses. 1 frappe par unité et par tour.\nCoup de grâce : le tueur (contrôleur du dernier dégât) prend tous les trésors et la relique. Repli : après une Mêlée perdue, tes unités qui ont attaqué peuvent rentrer au Camp. Un sort se lance dans une salle où tu as une unité (Portée : ou voisine).\nRaid (dès la manche 2, 1 par Assaut) : après un kill dans une salle, tes unités de cette salle attaquent le Camp adverse. Réussi si plus de raiders que de défenseurs debout (Gardien compris) : 1 trésor volé, +1 si le Gardien est Assommé.\nMonstre tué : l'hôte le met dans « Monstres vaincus », le tueur ajoute ses trésors (pastille dorée) à son compteur. Icône Relique : « Prendre la relique » dans le panneau Donjon. Automatique : salles vides remplies au début de chaque tour ; évolution en fin de manche.\nTerrain : commence à côté du Gardien, glisse-le dans une Expédition à ton 1er Assaut. Niv 1 à la pose, +1 au Retrait s'il n'a pas bougé (3 max, niv. 3 = Fief). Lever le camp : Expédition voisine, -1 niveau. Détruit par l'adversaire : +1 trésor pour lui (pillage), revient au niv. 1 à ton Assaut suivant.\nCompteur = Trésors. PV et Puissance : compteurs de la carte (clic droit > Toggle counter 1 = PV, touche C ; counter 2 = Puissance, Ctrl C). Jetons : Sève, Arcane, Mise, Niveau 1-3, états (Sonné, Empoisonné, Rapide, Insensible, Ivre, Gueule de bois, Contrecoup, Entravé, En soin, Égide, Piège, Glyphe).\nDeck : 1 Gardien + 1 Terrain de sa faction + 30 cartes de la faction, dont 20 min. du pool du Gardien (3 ex. max, Signature 1). TCG Arena ne vérifie pas la règle des 20.\nJetons Pousse et Loup : clic droit sur la carte qui les invoque.\n\nLEXIQUE (bible/00_glossaire.md ; rappelé en bas des cartes qui l'utilisent)\nMêlée : les deux joueurs dans la même salle. Ordre : monstre, joueur actif, adversaire. Le coup de grâce prend tout.\nRepli : après une Mêlée perdue, une unité qui a attaqué peut retourner au Camp (pas si Entravée).\nPillage : détruire le Terrain adverse = +1 trésor.\nBlessé : unité qui a au moins 1 dégât sur ses PV de base. Déplacement normal : seulement vers le Camp.\nLever le camp : déplacer le Terrain vers une Expédition voisine (-1 niveau).\nSignature : 1 exemplaire max par deck.\nRapide : après son combat à ton Assaut, l'unité peut changer de salle (hors limite de déplacement) et attaquer 1 fois de plus.\nRéflexe : jouable en Duel. Sans Réflexe, un sort se joue à ton Assaut, hors Duel.\nPortée : l'unité peut attaquer dans une salle voisine de son Expédition ; le monstre ne riposte pas ; elle ne compte pas comme présente dans cette salle (pas de Mêlée, pas de Fief, pas de Repli). Respecte Protecteur. Sur un sort : il peut viser une salle voisine d'une de tes unités.\nRenfort : se déclenche quand l'unité est rappelée au Camp pendant un raid.\nProtecteur : une attaque (unité ou monstre) contre tes unités ou ton Terrain de sa salle doit le viser. Sorts, effets et Embuscades ciblent librement. Protège même Sonné ; au raid, passe avant le Gardien.\nÉclaireur : se pose au Stratagème, directement dans l'Expédition voulue, et ne change plus de salle ce tour. Son effet « Stratagème : » se redéclenche à chacun de tes Stratagèmes tant qu'il est en Expédition.\nBluff : posé face cachée dans une Expédition au Stratagème, révélé à l'Assaut.\nTente ta chance : révèle la carte du dessus de ta pioche, puis mets-la sous ta pioche. Réussite si son coût est 2 ou plus. Pioche vide : échec.\nEmbuscade : effet à son arrivée.\nSonné : ne frappe pas à son prochain combat. Sonné pendant son attaque : cette attaque est annulée.\nEmpoisonné : -1 PV à chaque Repos de son propriétaire, jusqu'au soin.\nInsensible : ne peut pas être Sonné ce tour (Whisky).\nIvre : a bu un alcool ce tour (un 2e = Sonné).\nGueule de bois : Sonné jusqu'à la fin de ton prochain tour (Rhum).\nContrecoup : -2 PV à ton prochain Repos (Absinthe).\nEntravé : ne peut pas changer de salle (Toile).\nEn soin : unité blessée arrivée au Camp. Soignée complètement à ton prochain Repos, puis reste au Camp jusqu'à la fin de ce tour.\nAssommé : Gardien à 0 PV, ne défend plus ; revient à son prochain Repos (PV au max).\nPiège : jeton face cachée posé par un Éclaireur sur sa salle (1 par joueur et par salle, hors limite de 3). Se déclenche sur la 1re unité adverse qui entre dans la salle (jetons compris), puis défaussé.\nMise : jeton sur le Tonneau des paris (3 max), gagné par monstre tué ici. 3 Mises = 1 trésor au Retrait. Perdues si le baril explose.\nLeurre : Piège sans effet, posé à la place du vrai pour bluffer.\nÉgide : ignore le prochain coup reçu (tous ses dégâts, d'une même source), puis disparaît. Non cumulable. Ne bloque pas les pertes de PV (Empoisonné, Contrecoup).\nGlyphe : jeton face visible posé par un Mage sur une salle (2 max par joueur et par salle, hors limite de 3). La 1re unité adverse qui entre dans la salle ou y attaque (Portée comprise) prend 1 dégât et est Sonnée, puis un Glyphe est retiré. 1 seul Glyphe se déclenche par unité et par tour.\nPinte : -1 PV au baril (-2 alcool fort) → effet sur une unité.\nEncaisser : 1 fois par tour, le baril subit à la place d'une de tes unités de sa salle tous les dégâts d'un coup.\nSève : jetons sur le bosquet (4 max), payent les recettes.\nArcane : jetons sur le cercle (4 max), +1 par sort que tu lances, payent les Incantations. Une Incantation n'est pas un sort.\nSurcharge : jusqu'à 6, chaque jeton au-dessus de 4 inflige 1 dégât au cercle à ton Repos.",
+  "deckBuilding": {
+    "mainFilters": [
+      "faction",
+      "gardien",
+      "type",
+      "cost"
+    ],
+    "formats": [
+      {
+        "title": "Proto (cartes de test)",
+        "gameplay": "Standard",
+        "customCategories": [
+          "Gardien",
+          "Terrain"
+        ],
+        "deckRuleset": "Proto",
+        "legalityCode": "PROTO"
+      }
+    ],
+    "deckRulesets": {
+      "Proto": {
+        "checkCardLegality": true,
+        "general": {
+          "min": 30,
+          "max": 30,
+          "maxPerCard": 3
+        },
+        "categories": [
+          {
+            "category": "Gardien",
+            "min": 1,
+            "max": 1,
+            "ignoreTotalCount": true
+          },
+          {
+            "category": "Terrain",
+            "min": 1,
+            "max": 1,
+            "ignoreTotalCount": true
+          }
+        ]
+      }
+    }
+  },
+  "gameplay": {
+    "Standard": {
+      "defaultNotes": "Compteur = Trésors",
+      "countersStartingValues": [
+        0
+      ],
+      "mulligan": {
+        "startingHandSize": 5
+      },
+      "newTurn": {
+        "drawOnStart": false,
+        "drawPerTurn": 1,
+        "firstPlayerTokenName": "Initiative"
+      },
+      "tokens": [
+        {
+          "name": "Initiative",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/initiative.png",
+          "isUnique": true
+        }
+      ],
+      "draggableTokens": [
+        {
+          "id": "Seve",
+          "name": "Sève",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/seve.png"
+        },
+        {
+          "id": "Niv1",
+          "name": "Niveau 1",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/niv1.png"
+        },
+        {
+          "id": "Niv2",
+          "name": "Niveau 2",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/niv2.png"
+        },
+        {
+          "id": "Niv3",
+          "name": "Niveau 3 (Fief)",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/niv3.png"
+        },
+        {
+          "id": "Sonne",
+          "name": "Sonné : ne frappe pas à son prochain combat",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/sonne.png"
+        },
+        {
+          "id": "Empoisonne",
+          "name": "Empoisonné : perd 1 PV à chaque Repos de son propriétaire, jusqu'à être soigné",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/empoisonne.png"
+        },
+        {
+          "id": "Rapide",
+          "name": "Rapide (gagné ce tour)",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/rapide.png"
+        },
+        {
+          "id": "Insensible",
+          "name": "Insensible : ne peut pas être Sonné ce tour (Whisky)",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/insensible.png"
+        },
+        {
+          "id": "Ivre",
+          "name": "Ivre : a bu un alcool ce tour (un 2e = Sonné)",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/ivre.png"
+        },
+        {
+          "id": "GueuleDeBois",
+          "name": "Gueule de bois : Sonné jusqu'à la fin de ton prochain tour (Rhum)",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/gueuledebois.png"
+        },
+        {
+          "id": "Contrecoup",
+          "name": "Contrecoup : perd 2 PV à ton prochain Repos (Absinthe)",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/contrecoup.png"
+        },
+        {
+          "id": "Entrave",
+          "name": "Entravé : ne peut pas changer de salle (Toile)",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/entrave.png"
+        },
+        {
+          "id": "EnSoin",
+          "name": "En soin : blessé au Camp, soigné à ton prochain Repos puis reste au Camp ce tour",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/ensoin.png"
+        },
+        {
+          "id": "Piege",
+          "name": "Piège (Éclaireur), face cachée ; Leurre possible",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/piege.png"
+        },
+        {
+          "id": "Arcane",
+          "name": "Arcane (Mages) : jetons sur le cercle, payent les Incantations",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/arcane.png"
+        },
+        {
+          "id": "Mise",
+          "name": "Mise (Tonneau des paris) : 3 Mises = 1 trésor au Retrait",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/mise.png"
+        },
+        {
+          "id": "Egide",
+          "name": "Égide : ignore le prochain coup reçu",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/egide.png"
+        },
+        {
+          "id": "Glyphe",
+          "name": "Glyphe (Mages) : 1 dégât et Sonné à la 1re unité adverse qui entre ou attaque ici",
+          "image": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/tokens/glyphe.png"
+        }
+      ],
+      "beforeGameStart": {
+        "chooseAnotherStartingPlayer": true,
+        "initialBoardSetup": {
+          "0": [
+            {
+              "createCardId": "energie",
+              "count": 3,
+              "destination": "Energie"
+            },
+            {
+              "createCardId": "grombak",
+              "count": 1,
+              "destination": "Boss",
+              "overrideState": {
+                "isHidden": "no"
+              }
+            },
+            {
+              "createCardId": "gobelin",
+              "count": 1,
+              "destination": "Monstres"
+            },
+            {
+              "createCardId": "rat",
+              "count": 1,
+              "destination": "Monstres"
+            },
+            {
+              "createCardId": "archer",
+              "count": 1,
+              "destination": "Monstres"
+            },
+            {
+              "createCardId": "chaman",
+              "count": 1,
+              "destination": "Monstres"
+            },
+            {
+              "createCardId": "araignee",
+              "count": 1,
+              "destination": "Monstres"
+            },
+            {
+              "createCardId": "golem",
+              "count": 1,
+              "destination": "Monstres"
+            },
+            {
+              "createCardId": "contremaitre",
+              "count": 1,
+              "destination": "Monstres"
+            },
+            {
+              "createCardId": "troll",
+              "count": 1,
+              "destination": "Monstres"
+            }
+          ],
+          "1": [
+            {
+              "createCardId": "energie",
+              "count": 3,
+              "destination": "Energie"
+            }
+          ]
+        }
+      },
+      "sections": {
+        "layout": {
+          "direction": "column",
+          "content": [
+            {
+              "direction": "row",
+              "content": [
+                {
+                  "section": "BF1",
+                  "style": {
+                    "width": "15%",
+                    "flex": "0 0 auto",
+                    "borderRadius": "6px",
+                    "backgroundColor": "rgba(240,200,60,0.20)",
+                    "border": "1px solid rgba(240,200,60,0.55)",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EEXP%C3%89DITION 1%3C/text%3E%3C/svg%3E\")",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundPosition": "left 22px top 3px",
+                    "marginLeft": "9.0%"
+                  }
+                },
+                {
+                  "section": "BF2",
+                  "style": {
+                    "width": "15%",
+                    "flex": "0 0 auto",
+                    "borderRadius": "6px",
+                    "backgroundColor": "rgba(240,200,60,0.20)",
+                    "border": "1px solid rgba(240,200,60,0.55)",
+                    "marginLeft": "1.2%",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EEXP%C3%89DITION 2%3C/text%3E%3C/svg%3E\")",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundPosition": "left 22px top 3px"
+                  }
+                },
+                {
+                  "section": "BF3",
+                  "style": {
+                    "width": "15%",
+                    "flex": "0 0 auto",
+                    "borderRadius": "6px",
+                    "backgroundColor": "rgba(240,200,60,0.20)",
+                    "border": "1px solid rgba(240,200,60,0.55)",
+                    "marginLeft": "1.2%",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EEXP%C3%89DITION 3%3C/text%3E%3C/svg%3E\")",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundPosition": "left 22px top 3px"
+                  }
+                },
+                {
+                  "section": "BF4",
+                  "style": {
+                    "width": "15%",
+                    "flex": "0 0 auto",
+                    "borderRadius": "6px",
+                    "backgroundColor": "rgba(240,200,60,0.20)",
+                    "border": "1px solid rgba(240,200,60,0.55)",
+                    "marginLeft": "1.2%",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EEXP%C3%89DITION 4%3C/text%3E%3C/svg%3E\")",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundPosition": "left 22px top 3px"
+                  }
+                },
+                {
+                  "section": "Gardien",
+                  "style": {
+                    "width": "23.4%",
+                    "flex": "0 0 auto",
+                    "borderRadius": "6px",
+                    "backgroundColor": "rgba(245,170,60,0.20)",
+                    "border": "1px solid rgba(245,170,60,0.55)",
+                    "marginLeft": "1.2%",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EGARDIEN%3C/text%3E%3C/svg%3E\")",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundPosition": "left 22px top 3px"
+                  }
+                }
+              ],
+              "style": {
+                "justifyContent": "center"
+              },
+              "isSymmetricalForOpponents": true
+            },
+            {
+              "direction": "row",
+              "content": [
+                {
+                  "section": "Energie",
+                  "style": {
+                    "width": "31.2%",
+                    "flex": "0 0 auto",
+                    "borderRadius": "6px",
+                    "backgroundColor": "rgba(175,85,205,0.20)",
+                    "border": "1px solid rgba(175,85,205,0.55)",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3E%C3%89NERGIE%3C/text%3E%3C/svg%3E\")",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundPosition": "left 22px top 3px",
+                    "marginLeft": "9.0%"
+                  }
+                },
+                {
+                  "section": "Camp",
+                  "style": {
+                    "width": "55.8%",
+                    "flex": "0 0 auto",
+                    "borderRadius": "6px",
+                    "backgroundColor": "rgba(255,205,160,0.20)",
+                    "border": "1px solid rgba(255,205,160,0.55)",
+                    "marginLeft": "1.2%",
+                    "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ECAMP %C2%B7 D%C3%89FENSEURS, BLESS%C3%89ES, RELIQUES%3C/text%3E%3C/svg%3E\")",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundPosition": "left 22px top 3px"
+                  }
+                }
+              ],
+              "style": {
+                "justifyContent": "center",
+                "marginBottom": "12vh"
+              },
+              "isSymmetricalForOpponents": true
+            }
+          ]
+        },
+        "sharedZone": {
+          "height": 14,
+          "layout": {
+            "direction": "column",
+            "content": [
+              {
+                "direction": "row",
+                "content": [
+                  {
+                    "section": "Donjon",
+                    "style": {
+                      "width": "9%",
+                      "overflow": "visible"
+                    }
+                  },
+                  {
+                    "section": "Salle1",
+                    "style": {
+                      "width": "15%",
+                      "flex": "0 0 auto",
+                      "borderRadius": "6px",
+                      "backgroundColor": "rgba(225,70,50,0.20)",
+                      "border": "1px solid rgba(225,70,50,0.55)",
+                      "marginLeft": "9%",
+                      "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EMONSTRE 1%3C/text%3E%3C/svg%3E\")",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundPosition": "left 22px top 3px"
+                    }
+                  },
+                  {
+                    "section": "Salle2",
+                    "style": {
+                      "width": "15%",
+                      "flex": "0 0 auto",
+                      "borderRadius": "6px",
+                      "backgroundColor": "rgba(225,70,50,0.20)",
+                      "border": "1px solid rgba(225,70,50,0.55)",
+                      "marginLeft": "1.2%",
+                      "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EMONSTRE 2%3C/text%3E%3C/svg%3E\")",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundPosition": "left 22px top 3px"
+                    }
+                  },
+                  {
+                    "section": "Salle3",
+                    "style": {
+                      "width": "15%",
+                      "flex": "0 0 auto",
+                      "borderRadius": "6px",
+                      "backgroundColor": "rgba(225,70,50,0.20)",
+                      "border": "1px solid rgba(225,70,50,0.55)",
+                      "marginLeft": "1.2%",
+                      "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EMONSTRE 3%3C/text%3E%3C/svg%3E\")",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundPosition": "left 22px top 3px"
+                    }
+                  },
+                  {
+                    "section": "Salle4",
+                    "style": {
+                      "width": "15%",
+                      "flex": "0 0 auto",
+                      "borderRadius": "6px",
+                      "backgroundColor": "rgba(225,70,50,0.20)",
+                      "border": "1px solid rgba(225,70,50,0.55)",
+                      "marginLeft": "1.2%",
+                      "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EMONSTRE 4%3C/text%3E%3C/svg%3E\")",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundPosition": "left 22px top 3px"
+                    }
+                  },
+                  {
+                    "section": "Boss",
+                    "style": {
+                      "width": "7%",
+                      "flex": "0 0 auto",
+                      "borderRadius": "6px",
+                      "backgroundColor": "rgba(225,70,50,0.20)",
+                      "border": "1px solid rgba(225,70,50,0.55)",
+                      "marginLeft": "1.2%",
+                      "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EBOSS%3C/text%3E%3C/svg%3E\")",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundPosition": "left 22px top 3px"
+                    }
+                  },
+                  {
+                    "section": "Monstres",
+                    "style": {
+                      "width": "7%",
+                      "flex": "0 0 auto",
+                      "borderRadius": "6px",
+                      "backgroundColor": "rgba(150,150,150,0.20)",
+                      "border": "1px solid rgba(150,150,150,0.55)",
+                      "marginLeft": "1.2%",
+                      "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EPIOCHE%3C/text%3E%3C/svg%3E\")",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundPosition": "left 4px bottom 1px"
+                    }
+                  },
+                  {
+                    "section": "CimetiereMonstres",
+                    "style": {
+                      "width": "7%",
+                      "flex": "0 0 auto",
+                      "borderRadius": "6px",
+                      "backgroundColor": "rgba(150,150,150,0.20)",
+                      "border": "1px solid rgba(150,150,150,0.55)",
+                      "marginLeft": "1.2%",
+                      "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3ED%C3%89FAUSSE%3C/text%3E%3C/svg%3E\")",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundPosition": "left 4px bottom 1px"
+                    }
+                  },
+                  {
+                    "section": "Coulisse",
+                    "style": {
+                      "width": "0",
+                      "position": "absolute",
+                      "opacity": 0,
+                      "pointerEvents": "none",
+                      "scale": 0
+                    }
+                  }
+                ],
+                "style": {
+                  "justifyContent": "center"
+                }
+              }
+            ]
+          }
+        },
+        "sectionsDict": {
+          "Camp": {
+            "isHidden": "no",
+            "height": 14,
+            "alignment": "START",
+            "displayedTitle": "Camp (blessées, reliques)",
+            "logWhenPlayed": true
+          },
+          "Salle1": {
+            "isHidden": "no",
+            "height": 13,
+            "alignment": "CENTER",
+            "displayedTitle": "Monstre salle 1",
+            "logWhenPlayed": true
+          },
+          "Salle2": {
+            "isHidden": "no",
+            "height": 13,
+            "alignment": "CENTER",
+            "displayedTitle": "Monstre salle 2",
+            "logWhenPlayed": true
+          },
+          "Salle3": {
+            "isHidden": "no",
+            "height": 13,
+            "alignment": "CENTER",
+            "displayedTitle": "Monstre salle 3",
+            "logWhenPlayed": true
+          },
+          "Salle4": {
+            "isHidden": "no",
+            "height": 13,
+            "alignment": "CENTER",
+            "displayedTitle": "Monstre salle 4",
+            "logWhenPlayed": true
+          },
+          "Boss": {
+            "isHidden": "no",
+            "height": 13,
+            "alignment": "CENTER",
+            "displayedTitle": "Boss (entre quand la pioche est vide)"
+          },
+          "Monstres": {
+            "isHidden": "yes",
+            "height": 13,
+            "alignment": "DECK",
+            "displayedTitle": "Pioche de monstres"
+          },
+          "CimetiereMonstres": {
+            "isHidden": "no",
+            "height": 13,
+            "alignment": "DECK",
+            "displayedTitle": "Monstres vaincus"
+          },
+          "Gardien": {
+            "isHidden": "no",
+            "height": 14,
+            "alignment": "CENTER",
+            "displayedTitle": "Gardien",
+            "logWhenPlayed": true
+          },
+          "Energie": {
+            "isHidden": "no",
+            "height": 14,
+            "alignment": "START",
+            "displayedTitle": "Énergie",
+            "noAutoPayTo": true,
+            "keepTappedNewTurn": true
+          },
+          "Donjon": {
+            "type": "custom",
+            "isShared": true,
+            "isHidden": "no",
+            "height": 13,
+            "alignment": "CENTER",
+            "displayedTitle": "Donjon",
+            "defaultValue": {
+              "nom": "Mine des Gobelins",
+              "manche": 1,
+              "pioche": 4,
+              "boss": false,
+              "arrivee": {
+                "Salle1": 0,
+                "Salle2": 0,
+                "Salle3": 0,
+                "Salle4": 0
+              },
+              "reliques": [
+                "lanterne",
+                "pioche-runique",
+                "bourse"
+              ]
+            },
+            "blueprint": {
+              "type": "div",
+              "props": {
+                "style": {
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "gap": "8px",
+                  "height": "200%",
+                  "color": "white",
+                  "textAlign": "center",
+                  "position": "absolute",
+                  "left": "0",
+                  "top": "8%",
+                  "width": "100%",
+                  "backgroundColor": "rgba(255,255,255,0.05)",
+                  "border": "1px solid rgba(255,255,255,0.18)",
+                  "borderRadius": "10px",
+                  "zIndex": "5"
+                }
+              },
+              "children": [
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "fontSize": "1.0em",
+                      "fontWeight": "bold"
+                    }
+                  },
+                  "children": "{{ game.data.Donjon.nom }}"
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "fontSize": "1.15em",
+                      "fontWeight": "bold",
+                      "color": "#f0c040"
+                    }
+                  },
+                  "children": "Manche {{ game.data.Donjon.manche }}"
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "fontSize": "0.85em",
+                      "opacity": "0.85"
+                    }
+                  },
+                  "children": "{{ game.data.Donjon.boss ? 'Le boss est entré !' : 'Pioche : ' + game.data.Donjon.pioche + ' monstre(s)' }}"
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "fontSize": "0.85em",
+                      "opacity": "0.85"
+                    }
+                  },
+                  "children": "Reliques : {{ (game.data.Donjon.reliques || []).length }} / 3"
+                },
+                {
+                  "type": "button",
+                  "props": {
+                    "className": "btn btn-warning btn-sm"
+                  },
+                  "onClick": "const d=game.data.Donjon;const r=d.reliques||[];if(!r.length){functions.chatLog('Plus aucune relique dans le donjon.');return;}const id=r[0];d.reliques=r.slice(1);await functions.createCard(id,'Camp');functions.chatLog('Relique gagnée : '+({\"lanterne\": \"Lanterne du mineur\", \"pioche-runique\": \"Pioche runique\", \"bourse\": \"Bourse du contremaître\"}[id]||id)+' (au Camp).');await functions.repositionCards();",
+                  "children": "Prendre la relique"
+                },
+                {
+                  "type": "button",
+                  "props": {
+                    "className": "btn btn-secondary btn-sm",
+                    "title": "Lanterne : le monstre du dessus de la pioche passe en dessous"
+                  },
+                  "onClick": "const d=game.data.Donjon;if(!game.isHost){d.lanterne=Date.now();functions.chatLog('Lanterne : demande envoyée à l’hôte.');return;}d.lanterne=Date.now();d.lanterneFait=d.lanterne;const n=(cards.Monstres??[]).length;if(n<2){functions.chatLog('Lanterne : rien à réordonner.');}else{await functions.drawFromExtraDeck('Monstres',1,false,'Coulisse');for(let i=0;i<n-1;i++){await functions.drawFromExtraDeck('Monstres',1,true,'Coulisse');}for(let i=0;i<n;i++){await functions.drawFromExtraDeck('Coulisse',1,true,'Monstres');}functions.chatLog('Lanterne : le monstre du dessus est passé sous la pioche.');await functions.repositionCards();}",
+                  "children": "Dessus → dessous"
+                }
+              ]
+            },
+            "events": {
+              "onPlayersReady": "if(!game.isHost)return;\nawait functions.shuffleSection('Monstres');\nconst d=game.data.Donjon;\nfor(const s of ['Salle1','Salle2','Salle3','Salle4']){await functions.drawFromExtraDeck('Monstres',1,false,s);d.arrivee[s]=0;}\nd.manche=1;d.pioche=4;d.boss=false;\nconst r=[...(d.reliques||[])];for(let i=r.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[r[i],r[j]]=[r[j],r[i]];}d.reliques=r;\nfunctions.chatLog('Mine des Gobelins : 4 monstres dans les salles, 4 dans la pioche, puis Grombak.');\nawait functions.repositionCards();",
+              "onNewTurn": "const n=game.turn?.count??1, tp=game.turn?.totalPlayers||2;\nconst m=Math.ceil(n/tp);\nif(game.turn?.isMyTurn){\n  const max=Math.min(6,2+m);\n  const en=cards.Energie??[];\n  for(let i=en.length;i<max;i++){await functions.createCard('energie','Energie');}\n  const t=en.filter(c=>c.isTapped);\n  if(t.length){await functions.updateCards(t,{isTapped:false});}\n  functions.chatLog('Repos (manche '+m+') : énergie '+max+' / '+max+'.');\n}\nif(game.isHost && n>1){\n  const d=game.data.Donjon; d.arrivee=d.arrivee||{};\n  const pm=Math.ceil((n-1)/tp);\n  const salles=['Salle1','Salle2','Salle3','Salle4'];\n  let pioche=(cards.Monstres??[]).length; const boss=(cards.Boss??[])[0];\n  for(const s of salles){\n    if((cards[s]??[]).length) continue;\n    if(pioche>0){await functions.drawFromExtraDeck('Monstres',1,false,s);pioche--;d.arrivee[s]=pm;functions.chatLog('Retrait : un monstre entre dans la salle '+s.slice(-1)+'.');}\n    else if(boss && !d.boss){await functions.moveCard(boss,s);d.boss=true;d.arrivee[s]=pm;functions.chatLog('Retrait : le boss entre dans la salle '+s.slice(-1)+' !');}\n  }\n  if(m>pm){\n    const evo=[];\n    for(const s of salles){for(const c of (cards[s]??[])){\n      if(!c.isFlipped && (d.arrivee[s]??0)<pm && functions.getCardData(c)?.type==='Monstre') evo.push(c);}}\n    if(evo.length){await functions.updateCards(evo,{isFlipped:true});functions.chatLog('Fin de manche '+pm+' : '+evo.length+' monstre(s) évoluent.');}\n    d.manche=m;\n  }\n  d.pioche=pioche;\n  await functions.repositionCards();\n}",
+              "onUpdate": "if(!game.isHost)return;const d=game.data.Donjon;if(d.lanterne&&d.lanterne!==d.lanterneFait){d.lanterneFait=d.lanterne;const n=(cards.Monstres??[]).length;if(n<2){functions.chatLog('Lanterne : rien à réordonner.');}else{await functions.drawFromExtraDeck('Monstres',1,false,'Coulisse');for(let i=0;i<n-1;i++){await functions.drawFromExtraDeck('Monstres',1,true,'Coulisse');}for(let i=0;i<n;i++){await functions.drawFromExtraDeck('Coulisse',1,true,'Monstres');}functions.chatLog('Lanterne : le monstre du dessus est passé sous la pioche.');await functions.repositionCards();}}"
+            }
+          },
+          "BF1": {
+            "isHidden": "no",
+            "height": 14,
+            "alignment": "CENTER",
+            "displayedTitle": "Expédition 1",
+            "logWhenPlayed": true
+          },
+          "BF2": {
+            "isHidden": "no",
+            "height": 14,
+            "alignment": "CENTER",
+            "displayedTitle": "Expédition 2",
+            "logWhenPlayed": true
+          },
+          "BF3": {
+            "isHidden": "no",
+            "height": 14,
+            "alignment": "CENTER",
+            "displayedTitle": "Expédition 3",
+            "logWhenPlayed": true
+          },
+          "BF4": {
+            "isHidden": "no",
+            "height": 14,
+            "alignment": "CENTER",
+            "displayedTitle": "Expédition 4",
+            "logWhenPlayed": true
+          },
+          "Coulisse": {
+            "isHidden": "yes",
+            "height": 1,
+            "alignment": "DECK",
+            "displayedTitle": "Coulisse"
+          }
+        },
+        "autoPlayFromHand": {
+          "Unite": "BF1",
+          "Gardien": "Gardien",
+          "Relique": "Camp",
+          "Tresor": "Camp",
+          "Monstre": "Salle1",
+          "Boss": "Boss",
+          "Energie": "Energie",
+          "Terrain": "BF1"
+        },
+        "categoriesAlreadyOnBoard": [
+          "Gardien->Gardien",
+          "Terrain->Gardien"
+        ],
+        "autoPlayFromStack": {
+          "Unite": "BF1",
+          "Gardien": "Gardien",
+          "Relique": "Camp",
+          "Tresor": "Camp",
+          "Monstre": "Salle1",
+          "Boss": "Boss",
+          "Energie": "Energie",
+          "Sort": "Discard",
+          "Terrain": "BF1"
+        }
+      }
+    }
+  },
+  "cards": {
+    "dataUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/test-langues/test-langues/cards.json",
+    "cardBack": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/back.png",
+    "cardBackColor": "#2a2240"
+  },
+  "defaultRessources": {
+    "decksUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/decks.json"
+  },
+  "translationsUrl": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/test-langues/test-langues/translations.json"
+}
