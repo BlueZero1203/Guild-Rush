@@ -188,11 +188,28 @@ AIDE = [
     "Coup de grâce : le tueur (contrôleur du dernier dégât) prend tous les trésors et la relique. Repli : après une Mêlée perdue, tes unités qui ont attaqué peuvent rentrer au Camp. Un sort se lance dans une salle où tu as une unité (Portée : ou voisine).",
     "Raid (dès la manche 2, 1 par Assaut) : après un kill dans une salle, tes unités de cette salle attaquent le Camp adverse. Réussi si plus de raiders que de défenseurs debout (Gardien compris) : 1 trésor volé, +1 si le Gardien est Assommé.",
     "Monstre tué : l'hôte le met dans « Monstres vaincus », le tueur ajoute ses trésors (pastille dorée) à son compteur. Icône Relique : « Prendre la relique » dans le panneau Donjon. Automatique : salles vides remplies au début de chaque tour ; évolution en fin de manche.",
-    "Terrain : commence à côté du Gardien, glisse-le dans une Expédition à ton 1er Assaut. Niv 1 à la pose, +1 au Retrait s'il n'a pas bougé (3 max, niv. 3 = Fief). Lever le camp : Expédition voisine, -1 niveau. Détruit par l'adversaire : +1 trésor pour lui (pillage), revient au niv. 1 à ton Assaut suivant.",
+    "Terrain : commence à côté du Gardien, glisse-le dans une Expédition à ton 1er Assaut. Niv 1 à la pose, +1 au Retrait s'il n'a pas bougé (3 max, niv. 3 = Fief). Lever le camp : Expédition voisine, -1 niveau. Détruit par l'adversaire : +1 trésor pour lui (pillage), revient au niv. 1 à ton Assaut suivant. Recto verso : bouton « Retourner mon Terrain » du panneau Donjon pour voir le menu (verso) puis revenir au recto.",
     "Compteur = Trésors. PV et Puissance : compteurs de la carte (clic droit > Toggle counter 1 = PV, touche C ; counter 2 = Puissance, Ctrl C). Jetons : Sève, Arcane, Mise, Niveau 1-3, états (Sonné, Empoisonné, Rapide, Insensible, Ivre, Gueule de bois, Contrecoup, Entravé, En soin, Égide, Piège, Glyphe).",
     "Deck : 1 Gardien + 1 Terrain de sa faction + 30 cartes de la faction, dont 20 min. du pool du Gardien (3 ex. max, Signature 1). TCG Arena ne vérifie pas la règle des 20.",
     "Jetons Pousse et Loup : clic droit sur la carte qui les invoque.",
 ]
+
+
+RETOURNER = (
+    "const t=[];for(const s of ['Gardien','Camp','BF1','BF2','BF3','BF4']){for(const c of (cards[s]??[])){"
+    "if(functions.getCardData(c)?.type==='Terrain')t.push(c);}}"
+    "if(!t.length){functions.chatLog('Aucun Terrain à retourner.');return;}"
+    "const v=!t[0].isFlipped;await functions.updateCards(t,{isFlipped:v});"
+    "functions.chatLog(v?'Terrain retourné : verso (menu).':'Terrain retourné : recto.');"
+)
+
+
+def bouton_retourner(G):
+    """Bouton du panneau Donjon : TCG Arena n'a pas d'option « retourner » au clic droit pour les cartes double face."""
+    kids = G["sections"]["sectionsDict"]["Donjon"]["blueprint"]["children"]
+    kids[:] = [k for k in kids if k.get("children") != "Retourner mon Terrain"]
+    kids.append({"type": "button", "props": {"className": "btn btn-info btn-sm", "title": "Recto (jeu) ↔ verso (menu)"},
+                 "onClick": RETOURNER, "children": "Retourner mon Terrain"})
 
 
 def maj_gamefile():
@@ -206,6 +223,7 @@ def maj_gamefile():
         jeton(tid.lower(), txt, coul)
         toks.append({"id": tid, "name": nom, "image": f"{BASE}/img/tokens/{tid.lower()}.png"})
     G["draggableTokens"] = toks
+    bouton_retourner(G)
     g["customHelp"] = "\n".join(AIDE)
     if "gardien" not in g["deckBuilding"]["mainFilters"]:
         g["deckBuilding"]["mainFilters"].insert(1, "gardien")
