@@ -3,6 +3,7 @@
 TCG 1v1 : deux guildes se disputent les trésors d'un même donjon. Prototype jouable sur TCG Arena.
 
 - **Règles** : [`livret/livret.md`](livret/livret.md) (version mise en page : `livret/livret.html`).
+- **Decks préconstruits** : [`livret/decks.md`](livret/decks.md), générés par `tools/decks.py` (un par Gardien).
 - **Bible** (source de vérité) : [`bible/`](bible/) — glossaire, règles core, factions, cartes (`03_cartes.csv`), journal des décisions, donjon (`05_donjon_mine.csv`).
 - **TCG Arena** : `gamefile.json` (à importer), `cards.json`, `decks.json` et `img/` sont lus depuis la branche `main`.
 
