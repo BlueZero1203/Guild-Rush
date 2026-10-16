@@ -2645,7 +2645,10 @@
       "PROTO": 1
     },
     "power": 2,
-    "hp": 7
+    "hp": 7,
+    "tokens": [
+      "glyphe"
+    ]
   },
   "sanctuaire": {
     "id": "sanctuaire",
@@ -2690,7 +2693,10 @@
     "_legal": {
       "PROTO": 1
     },
-    "hp": 7
+    "hp": 7,
+    "tokens": [
+      "glyphe"
+    ]
   },
   "scribe": {
     "id": "scribe",
@@ -2722,7 +2728,10 @@
       "PROTO": 3
     },
     "power": 0,
-    "hp": 3
+    "hp": 3,
+    "tokens": [
+      "glyphe"
+    ]
   },
   "veilleur": {
     "id": "veilleur",
@@ -2978,7 +2987,10 @@
       "PROTO": 3
     },
     "power": 2,
-    "hp": 5
+    "hp": 5,
+    "tokens": [
+      "glyphe"
+    ]
   },
   "colosse": {
     "id": "colosse",
@@ -3100,7 +3112,10 @@
     "gardien": "orsin",
     "_legal": {
       "PROTO": 1
-    }
+    },
+    "tokens": [
+      "glyphe"
+    ]
   },
   "ignis": {
     "id": "ignis",
@@ -5011,6 +5026,33 @@
     "type": "Energie",
     "cost": 0,
     "faction": "Energie",
+    "isToken": true
+  },
+  "glyphe": {
+    "id": "glyphe",
+    "face": {
+      "front": {
+        "name": {
+          "name": {
+            "en": "Glyph",
+            "fr": "Glyphe"
+          }
+        },
+        "type": "Marqueur",
+        "cost": 0,
+        "image": {
+          "en": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/glyphe-en.png",
+          "fr": "https://raw.githubusercontent.com/BlueZero1203/Guild-Rush/main/img/cards/glyphe.png"
+        }
+      }
+    },
+    "name": {
+      "en": "Glyph",
+      "fr": "Glyphe"
+    },
+    "type": "Marqueur",
+    "cost": 0,
+    "faction": "Mages",
     "isToken": true
   }
 }
