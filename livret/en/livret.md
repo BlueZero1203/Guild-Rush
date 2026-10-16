@@ -76,6 +76,8 @@ At the start of each turn, empty rooms receive the next monster (the boss when t
 
 ### Fighting
 
+**In short: Declare, Duel, then Monster → You → Them.** The monster always strikes first, unless a card says otherwise.
+
 Attacking is **optional**: being in a room without attacking triggers nothing. You fight **room by room**, in any order; one combat ends before the next begins. Between two combats you can still play and move units.
 
 1. **Declare.** Choose your attackers in this room (and at **Reach** from a neighboring one) and, for **each one**, its target: the monster, an enemy unit or the enemy Terrain in the room (**Protector** applies). A Stunned unit can be declared: it won't strike.

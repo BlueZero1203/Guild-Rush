@@ -76,6 +76,8 @@ Au début de chaque tour, les salles vides reçoivent le monstre suivant (le bos
 
 ### Combattre
 
+**En bref : Annonce, Duel, puis Monstre → Toi → Lui.** Le monstre frappe toujours en premier, sauf si une carte dit le contraire.
+
 Attaquer est **optionnel** : être dans une salle sans attaquer ne déclenche rien. Tu combats **salle par salle**, dans l'ordre que tu veux ; un combat se termine avant le suivant. Entre deux combats, tu peux encore poser et déplacer.
 
 1. **Annonce.** Choisis tes attaquants dans cette salle (et à **Portée** depuis une voisine) et, pour **chacun**, sa cible : le monstre, une unité adverse ou le Terrain adverse de la salle (**Protecteur** respecté). Une unité Sonnée peut être annoncée : elle ne frappera pas.
