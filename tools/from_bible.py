@@ -31,7 +31,6 @@ LANGS = ("fr", "en")
 A_RETRADUIRE = []
 
 gen.PALETTE["Mages"] = ((30, 34, 70), (130, 140, 230))
-gen.TYPE_LABEL["Marqueur"] = "Marqueur"
 TYPES = {"Unité": "Unite", "Sort": "Sort", "Gardien": "Gardien", "Terrain": "Terrain"}
 
 
@@ -161,10 +160,7 @@ def rappels_pour(texte, lang="fr"):
 
 def invoque(texte):
     t = texte.lower()
-    out = [j for j in ("pousse", "loup") if j in t and "jeton." not in t]
-    if "pose" in t and "glyphe" in t:   # le Glyphe est une carte jeton, posée dans l'Expédition face à sa salle
-        out.append("glyphe")
-    return out
+    return [j for j in ("pousse", "loup") if j in t and "jeton." not in t]
 
 
 def lire_csv(chemin):
@@ -250,22 +246,14 @@ def communes():
         "**Raid:** a successful raid can take it instead of the 1st stolen treasure."))
     com["energie"]["en"] = dict(name="Energy", text=(
         "Tap it to pay 1.\nAll untap at your Rest.\nMax: 3 in round 1, +1 per round, 6 at most."))
-    glyphe = gen.C("glyphe", "Glyphe", "Marqueur", 0, "Mages", rich(
-        "Jeton. Se pose dans ton Expédition face à sa salle ; hors limite de 3, 2 max par salle. / "
-        "La 1re unité adverse qui entre dans la salle ou y attaque (Portée comprise) prend 1 dégât et est Sonnée, "
-        "puis un Glyphe est retiré. 1 seul Glyphe par unité et par tour."), legal=False, token=True)
-    glyphe["en"] = dict(name="Glyph", text=rich(
-        "Token. Placed in your Expedition facing its room; outside the limit of 3, 2 max per room. / "
-        "The 1st enemy unit that enters the room or attacks in it (Reach included) takes 1 damage and is Stunned, "
-        "then a Glyph is removed. Only 1 Glyph per unit per turn.", "en"))
-    return list(com.values()) + [glyphe]
+    return list(com.values())
 
 
 # Libellés dessinés sur les cartes anglaises (generate.py a les libellés français)
 DESSIN_EN = dict(
     LABELS={"evolue_big": "EVOLVED", "relique": "◆ RELIC", "illus": "art to come", "evolue": " (evolved)",
             "tresor": ("treasure", "treasure"), "P": "PWR", "PV": "HP"},
-    TYPE_LABEL={"Marqueur": "Marker", "Gardien": "Guardian", "Unite": "Unit", "Sort": "Spell", "Terrain": "Terrain", "Monstre": "Monster",
+    TYPE_LABEL={"Gardien": "Guardian", "Unite": "Unit", "Sort": "Spell", "Terrain": "Terrain", "Monstre": "Monster",
                 "Boss": "Boss", "Relique": "Relic", "Tresor": "Treasure", "Energie": "Energy", "Menu": "Menu"},
     FACTION_LABEL={"Ivrognes": "Drunkards", "Druides": "Druids", "Mages": "Mages", gen.MINE: "Goblin Mine"},
 )
@@ -342,8 +330,9 @@ def ecrire_cartes(cards_list):
 JETONS_NEUFS = [
     ("Ressource", "Ressource : Sève, Arcane ou Mise, sur ton Terrain (1 jeton = 1)", "◆", (200, 160, 30)),
     ("Egide", "Égide : ignore le prochain coup reçu", "ÉGIDE", (90, 160, 200)),
+    ("Glyphe", "Glyphe (Mages) : 1 dégât et Sonné à la 1re unité adverse qui entre ou attaque ici", "GLY|PHE", (110, 60, 180)),
 ]
-JETONS_RETIRES = {"Seve", "Arcane", "Mise", "Glyphe"}   # remplacés par Ressource ; le Glyphe est une carte jeton
+JETONS_RETIRES = {"Seve", "Arcane", "Mise"}   # remplacés par Ressource
 NOMS = {  # libellés à jour des jetons existants
     "Sonne": "Sonné : ne frappe pas à son prochain combat",
     "GueuleDeBois": "Gueule de bois : Sonné jusqu'à la fin de ton prochain tour (Rhum)",
@@ -380,9 +369,9 @@ AIDE = [
     "Raid (dès la manche 2, 1 par Assaut) : après un kill dans une salle, tes unités de cette salle attaquent le Camp adverse. Réussi si plus de raiders que de défenseurs debout (Gardien compris) : 1 trésor volé, +1 si le Gardien est Assommé.",
     "Monstre tué : l'hôte le met dans « Monstres vaincus », le tueur ajoute ses trésors (pastille dorée) à son compteur. Icône Relique : « Prendre la relique » dans le panneau Donjon. Automatique : salles vides remplies au début de chaque tour ; évolution en fin de manche.",
     "Terrain : commence à côté du Gardien, glisse-le dans une Expédition à ton 1er Assaut. Niv 1 à la pose, +1 au Retrait s'il n'a pas bougé (3 max, niv. 3 = Fief). Lever le camp : Expédition voisine, -1 niveau. Détruit par l'adversaire : +1 trésor pour lui (pillage), revient au niv. 1 à ton Assaut suivant.",
-    "Compteur = Trésors. PV et Puissance : compteurs de la carte (clic droit > Toggle counter 1 = PV, touche C ; counter 2 = Puissance, Ctrl C). Jetons à glisser sur les cartes : Ressource (Sève, Arcane ou Mise : 1 jeton = 1, sur ton Terrain), Niveau 1-3, états (Sonné, Empoisonné, Rapide, Insensible, Ivre, Gueule de bois, Contrecoup, Entravé, En soin, Égide, Piège).",
+    "Compteur = Trésors. PV et Puissance : compteurs de la carte (clic droit > Toggle counter 1 = PV, touche C ; counter 2 = Puissance, Ctrl C). Jetons à glisser sur les cartes : Ressource (Sève, Arcane ou Mise : 1 jeton = 1, sur ton Terrain), Niveau 1-3, états (Sonné, Empoisonné, Rapide, Insensible, Ivre, Gueule de bois, Contrecoup, Entravé, En soin, Égide, Piège, Glyphe). Glyphe : glisse-le sur le monstre de sa salle.",
     "Deck : 1 Gardien + 1 Terrain de sa faction + 30 cartes de la faction, dont 20 min. du pool du Gardien (3 ex. max, Signature 1). TCG Arena ne vérifie pas la règle des 20.",
-    "Cartes jetons Pousse, Loup et Glyphe : clic droit sur la carte qui les invoque ou les pose. Le Glyphe va dans ton Expédition face à sa salle (hors limite de 3).",
+    "Jetons Pousse et Loup : clic droit sur la carte qui les invoque.",
 ]
 
 
@@ -397,9 +386,9 @@ AIDE_EN = [  # à garder en phase avec AIDE
     "Raid (from round 2, 1 per Assault): after a kill in a room, your units in that room attack the enemy Camp. Success if more raiders than standing defenders (Guardian included): 1 treasure stolen, +1 if the Guardian is Knocked out.",
     "Monster killed: the host puts it in “Defeated monsters”, the killer adds its treasure (gold badge) to their counter. Relic icon: “Take the relic” in the Dungeon panel. Automatic: empty rooms refilled at the start of each turn; evolution at the end of the round.",
     "Terrain: starts next to the Guardian, drag it to an Expedition on your 1st Assault. Lvl 1 when placed, +1 at Withdrawal if it didn't move (3 max, lvl 3 = Stronghold). Break camp: neighboring Expedition, -1 level. Destroyed by the opponent: +1 treasure for them (plunder), comes back at lvl 1 on your next Assault.",
-    "Counter = Treasure. HP and Power: card counters (right click > Toggle counter 1 = HP, key C; counter 2 = Power, Ctrl C). Tokens to drag onto cards: Resource (Sap, Arcana or Wager: 1 token = 1, on your Terrain), Level 1-3, states (Stunned, Poisoned, Swift, Unflinching, Tipsy, Hangover, Backlash, Snared, Recovering, Aegis, Trap).",
+    "Counter = Treasure. HP and Power: card counters (right click > Toggle counter 1 = HP, key C; counter 2 = Power, Ctrl C). Tokens to drag onto cards: Resource (Sap, Arcana or Wager: 1 token = 1, on your Terrain), Level 1-3, states (Stunned, Poisoned, Swift, Unflinching, Tipsy, Hangover, Backlash, Snared, Recovering, Aegis, Trap, Glyph). Glyph: drag it onto the monster of its room.",
     "Deck: 1 Guardian + 1 Terrain of its faction + 30 cards of the faction, including 20 min. from the Guardian's pool (3 copies max, Signature 1). TCG Arena doesn't check the rule of 20.",
-    "Sprout, Wolf and Glyph token cards: right click on the card that summons or places them. A Glyph goes in your Expedition facing its room (outside the limit of 3).",
+    "Sprout and Wolf tokens: right click on the card that summons them.",
     "Language: Options menu (English / Français).",
 ]
 
@@ -417,7 +406,7 @@ UI_EN = {
     "Expédition 1": "Expedition 1", "Expédition 2": "Expedition 2", "Expédition 3": "Expedition 3",
     "Expédition 4": "Expedition 4", "Coulisse": "Backstage",
     "Ressource : Sève, Arcane ou Mise, sur ton Terrain (1 jeton = 1)": "Resource: Sap, Arcana or Wager, on your Terrain (1 token = 1)",
-    "Marqueur": "Marker", "Niveau 1": "Level 1", "Niveau 2": "Level 2", "Niveau 3 (Fief)": "Level 3 (Stronghold)",
+    "Niveau 1": "Level 1", "Niveau 2": "Level 2", "Niveau 3 (Fief)": "Level 3 (Stronghold)",
     "Sonné : ne frappe pas à son prochain combat": "Stunned: doesn't strike in its next combat",
     "Empoisonné : perd 1 PV à chaque Repos de son propriétaire, jusqu'à être soigné":
         "Poisoned: loses 1 HP at each of its owner's Rests, until healed",
@@ -431,6 +420,8 @@ UI_EN = {
         "Recovering: wounded in the Camp, healed at your next Rest then stays in the Camp that turn",
     "Piège (Éclaireur), face cachée ; Leurre possible": "Trap (Scout), face down; Decoy possible",
     "Égide : ignore le prochain coup reçu": "Aegis: ignores the next hit received",
+    "Glyphe (Mages) : 1 dégât et Sonné à la 1re unité adverse qui entre ou attaque ici":
+        "Glyph (Mages): 1 damage and Stunned to the 1st enemy unit that enters or attacks here",
     "Ivrognes de Guss — La Taverne": "Guss's Drunkards — The Tavern", "Ivrognes de Rosa — Poudrière": "Rosa's Drunkards — Powder Keg",
     "Ivrognes de Robin — Tapis vert": "Robin's Drunkards — Green Felt",
     "Druides de Cernun — Bosquet ancien": "Cernun's Druids — Ancient Grove", "Druides de Belladone — Ronces": "Belladonna's Druids — Brambles",
