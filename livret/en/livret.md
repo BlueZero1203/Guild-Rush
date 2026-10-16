@@ -75,22 +75,28 @@ At the start of each turn, empty rooms receive the next monster (the boss when t
 
 ### Fighting
 
-Attacking is **optional**. Staying in a room without attacking triggers nothing.
+Attacking is **optional**: being in a room without attacking triggers nothing. You fight **room by room**, in any order; one combat ends before the next begins. Between two combats you can still play and move units.
 
-Room by room, choose your attackers and their target: the monster, an enemy unit or the enemy Terrain (Protector applies). Then:
+1. **Declare.** Choose your attackers in this room (and at **Reach** from a neighboring one) and, for **each one**, its target: the monster, an enemy unit or the enemy Terrain in the room (**Protector** applies). A Stunned unit can be declared: it won't strike.
+2. **Duel.** Your opponent goes first: a **Reflex** card, a bonus from their Terrain if it is in this room, or pass. Then you, and so on. Two passes in a row: the Duel is over.
+3. **The monster strikes** 1 of your **present** attackers, **chosen by your opponent** (Protector applies). It strikes even if you attack another target. Units at Reach are not present.
+4. **Your attackers all strike at the same time.** Those that are dead or Stunned don't strike. Damage = Power.
+5. **Brawl**, only if your opponent has units in their Expedition facing this room: each one strikes once at the target of its choice (your units, your Terrain or the monster). If some strike the monster, it first strikes back at 1 of them, chosen by you.
 
-1. **Duel.** Your opponent responds first, then each player in turn plays a **Reflex** card, a bonus from their Terrain (if the Duel takes place in its room), or passes. Two passes in a row: strike.
-2. **The monster strikes** 1 of your present attackers, **chosen by your opponent**.
-3. **Your standing attackers strike together.** Damage = Power.
-4. **Brawl** (your opponent has units in the room): each one strikes once at the target of its choice in the room. If some strike the monster, it first strikes back at 1 of them, chosen by you.
+Each unit strikes **once per player turn**: a unit that struck in a Brawl during your turn can still attack on its own turn. **Swift**: after its combat, the unit may change rooms and attack once more.
 
-Each unit strikes **once per turn** (Swift: once more after changing rooms).
+> **Example.** Room 2: a Goblin Snoop (2/3, 1 treasure). You have Drunken Soldier (4/4) and Barmaid (1/3) in your Exp. 2; your opponent has a Wolf Cub (2/1) in theirs.
+> 1. You declare: Drunken Soldier → Goblin, Barmaid → Wolf Cub.
+> 2. Duel: your opponent passes, you pass.
+> 3. The Goblin strikes: your opponent picks the Barmaid (2 damage, she has 1 HP left).
+> 4. Your strikes: Drunken Soldier deals 4 damage to the Goblin (dead), Barmaid deals 1 to the Wolf Cub (dead). You take the treasure.
+> 5. Brawl: the Wolf Cub is dead, it doesn't strike.
 
 ### The killing blow
 
 A monster's **killer** is the player who controls the source of the last damage (unit, spell, Terrain). They take **all** of the monster's treasure, and its relic if it has one. In a Brawl, the kill can be stolen.
 
-**Fall back**: after a lost Brawl, your units that attacked may return to the Camp (not if Snared).
+**Fall back**: if your opponent kills the monster during a Brawl, your units that attacked may return to the Camp (not if Snared).
 
 ### Spells
 

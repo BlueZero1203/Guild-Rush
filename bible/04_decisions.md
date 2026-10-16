@@ -13,6 +13,9 @@
 - [OK] Le [?] « Mages et Savants pas conçus » est clos : Mages faits, Savants en pause.
 
 ## Résolution du combat (2026-10-16)
+- [OK] Chaque attaquant choisit sa cible ; tes frappes tombent en même temps ; le monstre frappe dès que tu attaques dans sa salle.
+- [OK] « 1 frappe par tour » compte par tour de joueur : frapper en Mêlée au tour adverse n'empêche pas d'attaquer à son tour.
+- [OK] Mêlée perdue = l'adversaire a tué le monstre.
 - [OK] Combat par salle : 1 Duel, puis le monstre, tes attaquants ensemble, les unités adverses (Mêlée).
 - [OK] Le monstre frappe 1 seul attaquant présent, choisi par l'adversaire (compense l'absence de réaction au monstre).
 - [OK] En Mêlée, le monstre riposte aussi sur 1 unité adverse qui le frappe, choisie par le joueur actif.

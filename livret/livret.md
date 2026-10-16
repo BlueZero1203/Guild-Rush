@@ -75,22 +75,28 @@ Au début de chaque tour, les salles vides reçoivent le monstre suivant (le bos
 
 ### Combattre
 
-Attaquer est **optionnel**. Rester dans une salle sans attaquer ne déclenche rien.
+Attaquer est **optionnel** : être dans une salle sans attaquer ne déclenche rien. Tu combats **salle par salle**, dans l'ordre que tu veux ; un combat se termine avant le suivant. Entre deux combats, tu peux encore poser et déplacer.
 
-Salle par salle, choisis tes attaquants et leur cible : le monstre, une unité adverse ou le Terrain adverse (Protecteur respecté). Puis :
+1. **Annonce.** Choisis tes attaquants dans cette salle (et à **Portée** depuis une voisine) et, pour **chacun**, sa cible : le monstre, une unité adverse ou le Terrain adverse de la salle (**Protecteur** respecté). Une unité Sonnée peut être annoncée : elle ne frappera pas.
+2. **Duel.** L'adversaire joue en premier : une carte **Réflexe**, un bonus de son Terrain s'il est dans cette salle, ou il passe. Puis toi, et ainsi de suite. Deux passes de suite : le Duel est fini.
+3. **Le monstre frappe** 1 de tes attaquants **présents**, **au choix de l'adversaire** (Protecteur respecté). Il frappe même si tu attaques une autre cible. Les unités à Portée ne sont pas présentes.
+4. **Tes attaquants frappent tous en même temps.** Ceux qui sont morts ou Sonnés ne frappent pas. Dégâts = Puissance.
+5. **Mêlée**, seulement si l'adversaire a des unités dans son Expédition face à cette salle : chacune frappe 1 fois la cible de son choix (tes unités, ton Terrain ou le monstre). Si certaines frappent le monstre, il riposte d'abord sur 1 d'entre elles, que tu choisis.
 
-1. **Duel.** L'adversaire répond d'abord, puis chacun joue à tour de rôle une carte **Réflexe**, un bonus de son Terrain (si le Duel a lieu dans sa salle), ou passe. Deux passes de suite : on frappe.
-2. **Le monstre frappe** 1 de tes attaquants présents, **choisi par l'adversaire**.
-3. **Tes attaquants debout frappent ensemble.** Dégâts = Puissance.
-4. **Mêlée** (l'adversaire a des unités dans la salle) : chacune frappe 1 fois la cible de son choix dans la salle. Si certaines frappent le monstre, il riposte d'abord sur 1 d'entre elles, choisie par toi.
+Chaque unité frappe **1 fois par tour de joueur** : une unité qui a frappé en Mêlée pendant ton tour pourra attaquer au sien. **Rapide** : après son combat, l'unité peut changer de salle et attaquer 1 fois de plus.
 
-Chaque unité frappe **1 fois par tour** (Rapide : 1 fois de plus après avoir changé de salle).
+> **Exemple.** Salle 2 : un Gobelin fouineur (2/3, 1 trésor). Tu as Soldat ivre (4/4) et Serveuse (1/3) dans ton Exp. 2 ; l'adversaire a un Louveteau (2/1) dans la sienne.
+> 1. Tu annonces : Soldat ivre → Gobelin, Serveuse → Louveteau.
+> 2. Duel : l'adversaire passe, tu passes.
+> 3. Le Gobelin frappe : l'adversaire choisit la Serveuse (2 dégâts, elle garde 1 PV).
+> 4. Tes frappes : Soldat ivre met 4 dégâts au Gobelin (mort), Serveuse 1 dégât au Louveteau (mort). Tu prends le trésor.
+> 5. Mêlée : le Louveteau est mort, il ne frappe pas.
 
 ### Le coup de grâce
 
 Le **tueur** d'un monstre est le joueur qui contrôle la source du dernier dégât (unité, sort, Terrain). Il prend **tous** les trésors du monstre, et sa relique s'il en a une. En Mêlée, le kill se vole.
 
-**Repli** : après une Mêlée perdue, tes unités qui ont attaqué peuvent retourner au Camp (pas si Entravées).
+**Repli** : si l'adversaire tue le monstre pendant une Mêlée, tes unités qui ont attaqué peuvent retourner au Camp (pas si Entravées).
 
 ### Les sorts
 

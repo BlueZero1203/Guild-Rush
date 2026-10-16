@@ -1,6 +1,6 @@
 # Guild Rush — Glossary (EN)
 Translation of `bible/00_glossaire.md`, which remains the reference. One line per term.
-<!-- fr_sha1: 5e04919d7a3df48b7b188eeaa17c220d79bd4cc8 (00_glossaire.md traduit) -->
+<!-- fr_sha1: c91a789d511ef7c248889a64e63ec8379b3c9067 (00_glossaire.md traduit) -->
 
 ## Structure
 - **Round**: one turn of each player. **Turn**: Rest → Scheme → Assault → Withdrawal.
@@ -20,7 +20,7 @@ Translation of `bible/00_glossaire.md`, which remains the reference. One line pe
 - **Combat**: your attackers in a room against their targets. The monster strikes 1 attacker (chosen by the opponent), then your attackers together, then (Brawl) the enemy units. 1 strike per unit per turn; damage = Power. Being in a room without attacking triggers nothing.
 - **Duel**: opened by each combat, before the strikes. The opponent answers first, then Reflex card / Terrain bonus / pass. 2 passes = strikes.
 - **Brawl**: both players in the same room. Order: monster, active player, opponent. The killing blow takes everything.
-- **Fall back**: after a lost Brawl, a unit that attacked may return to the Camp (not if Snared).
+- **Fall back**: if the opponent kills the monster during a Brawl, a unit that attacked may return to the Camp (not if Snared).
 - **Raid**: after a success in a room, your units in that room attack the enemy Camp (1 per Assault, from round 2). Success = treasure stolen.
 - **Plunder**: destroying the enemy Terrain = +1 treasure.
 - **Enemy**: enemy unit, Guardian or Terrain. A monster is never an enemy. **Target**: any unit, Guardian, Terrain or monster, on either side.

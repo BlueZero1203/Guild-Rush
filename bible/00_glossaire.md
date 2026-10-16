@@ -19,7 +19,7 @@ Une ligne par terme. Si un terme est ici, il n'est jamais réexpliqué ailleurs.
 - **Combat** : tes attaquants d'une salle contre leurs cibles. Le monstre frappe 1 attaquant (choisi par l'adversaire), puis tes attaquants ensemble, puis (Mêlée) les unités adverses. 1 frappe par unité et par tour ; dégâts = Puissance. Être dans une salle sans attaquer ne déclenche rien.
 - **Duel** : ouvert par chaque combat, avant les frappes. L'adversaire répond d'abord, puis carte Réflexe / bonus de Terrain / passe. 2 passes = frappes.
 - **Mêlée** : les deux joueurs dans la même salle. Ordre : monstre, joueur actif, adversaire. Le coup de grâce prend tout.
-- **Repli** : après une Mêlée perdue, une unité qui a attaqué peut retourner au Camp (pas si Entravée).
+- **Repli** : si l'adversaire tue le monstre pendant une Mêlée, une unité qui a attaqué peut retourner au Camp (pas si Entravée).
 - **Raid** : après un succès en salle, tes unités de cette salle attaquent le Camp adverse (1 par Assaut, dès la manche 2). Réussi = vol de trésors.
 - **Pillage** : détruire le Terrain adverse = +1 trésor.
 - **Ennemi** : unité, Gardien ou Terrain adverse. Un monstre n'est jamais un ennemi. **Cible** : n'importe quelle unité, Gardien, Terrain ou monstre, des deux camps.
