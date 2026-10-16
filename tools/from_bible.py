@@ -212,10 +212,17 @@ def cartes_guildes():
     return out
 
 
+# Monstres neutres de la Mine : jamais dans un deck, ajoutés à la pioche par la partie
+MINE_NEUTRES = ("sapeur", "mimique")
+
+
 def cartes_donjon():
     out = []
     with open(os.path.join(BIBLE, "05_donjon_mine.csv"), encoding="utf-8") as fh:
-        for r in csv.DictReader(fh):
+        lignes = list(csv.DictReader(fh))
+    reliques = {r["id"]: r for r in lignes if r["type"] == "Relique"}
+    if True:
+        for r in lignes:
             tr = traduction(TR_DONJON, r, ("nom", "texte"))
             en = tr or dict(r)
             lang_en = "en" if tr else "fr"
@@ -224,9 +231,18 @@ def cartes_donjon():
                 c["en"] = dict(name=en["nom"], text=rich(en["texte"], lang_en))
                 out.append(c)
                 continue
-            c = gen.C(r["id"], r["nom"], r["type"], 0, gen.MINE, rich(r["texte"]), int(r["P"]), int(r["PV"]),
-                      legal=False, token=True, tresors=int(r["tresors"]), relique=r["relique"] == "oui")
-            c["en"] = dict(name=en["nom"], text=rich(en["texte"], lang_en))
+            neutre = r["id"] in MINE_NEUTRES
+            texte, texte_en = r["texte"], en["texte"]
+            if r["relique"]:
+                # Élite : sa relique est imprimée sous son texte (aperçu avant de la tuer)
+                rel = reliques[r["relique"]]
+                rel_en = TR_DONJON.get(rel["id"]) or rel
+                texte += f" / ◆ {rel['nom']} : {rel['texte']}"
+                texte_en += f" / ◆ {rel_en['nom']}: {rel_en['texte']}"
+            c = gen.C(r["id"], r["nom"], r["type"], 0, gen.MINE, rich(texte), int(r["P"]), int(r["PV"]),
+                      legal=False if neutre else 1, token=neutre, tresors=int(r["tresors"]),
+                      relique=bool(r["relique"]))
+            c["en"] = dict(name=en["nom"], text=rich(texte_en, lang_en))
             out.append(c)  # une seule face : plus d'évolution (Élites), verso libre pour le full art
     return out
 
@@ -363,10 +379,10 @@ AIDE = [
     "Combat (optionnel), salle par salle, dans l'ordre que tu veux : annonce tes attaquants et la cible de chacun, puis Duel (annonce-le dans le chat ; l'adversaire joue ou passe en premier, puis Réflexe / bonus de Terrain / passe ; 2 passes = frappes). Puis le monstre frappe 1 attaquant présent choisi par l'adversaire (même si tu vises autre chose), tes attaquants frappent tous en même temps, puis (Mêlée) les unités adverses de la salle frappent la cible de leur choix. 1 frappe par unité et par tour de joueur.",
     "Coup de grâce : le tueur (contrôleur du dernier dégât) prend tous les trésors et la relique. Repli : si l'adversaire tue le monstre pendant une Mêlée, tes unités qui ont attaqué peuvent rentrer au Camp. Un sort se lance dans une salle où tu as une unité (Portée : ou voisine).",
     "Raid (dès la manche 2, 1 par Assaut) : après un kill dans une salle, tes unités de cette salle attaquent le Camp adverse. Réussi si plus de raiders que de défenseurs debout (Gardien compris) : 1 trésor volé, +1 si le Gardien est Assommé.",
-    "Monstre tué : l'hôte le met dans « Monstres vaincus », le tueur ajoute ses trésors (pastille dorée) à son compteur. Élite (icône Relique) : « Prendre la relique » dans le panneau Donjon. Les monstres n'évoluent pas. Automatique : salles vides remplies au début de chaque tour. Boss : effet « Règne » actif dès le début.",
+    "Monstre tué : l'hôte le met dans « Monstres vaincus », le tueur ajoute ses trésors (pastille dorée) à son compteur. Élite (icône Relique, relique imprimée sur la carte) : « Prendre la relique » dans le panneau Donjon donne celle de la dernière Élite vaincue. Les monstres n'évoluent pas. Automatique : salles vides remplies au début de chaque tour. Boss : effet « Règne » actif dès le début.",
     "Terrain : commence à côté du Gardien, glisse-le dans une Expédition à ton 1er Assaut. Niv 1 à la pose, +1 au Retrait s'il n'a pas bougé (3 max, niv. 3 = Fief). Lever le camp : Expédition voisine, -1 niveau. Détruit par l'adversaire : +1 trésor pour lui (pillage), revient au niv. 1 à ton Assaut suivant.",
     "Compteur = Trésors. PV et Puissance : compteurs de la carte (clic droit > Toggle counter 1 = PV, touche C ; counter 2 = Puissance, Ctrl C). Jetons à glisser sur les cartes : Ressource (Sève, Arcane ou Mise : 1 jeton = 1, sur ton Terrain), Niveau 1-3, états (Sonné, Empoisonné, Rapide, Insensible, Ivre, Gueule de bois, Contrecoup, Entravé, En soin, Égide, Piège, Glyphe). Glyphe : glisse-le sur le monstre de sa salle.",
-    "Deck : 1 Gardien + 1 Terrain de sa faction + 30 cartes de la faction, dont 20 min. du pool du Gardien (3 ex. max, Signature 1). TCG Arena ne vérifie pas la règle des 20.",
+    "Deck : 1 Gardien + 1 Terrain de sa faction + 30 cartes de la faction, dont 20 min. du pool du Gardien (3 ex. max, Signature 1). TCG Arena ne vérifie pas la règle des 20. Donjon perso : 4 monstres (2 Élites, 2 normaux, 9 trésors max) et 1 boss ; au début, l'hôte mélange les monstres des deux decks avec le Sapeur et le Mimique.",
     "Jetons Pousse et Loup : clic droit sur la carte qui les invoque.",
 ]
 
@@ -380,10 +396,10 @@ AIDE_EN = [  # à garder en phase avec AIDE
     "Combat (optional), room by room, in any order: declare your attackers and each one's target, then Duel (announce it in the chat; the opponent plays or passes first, then Reflex / Terrain bonus / pass; 2 passes = strikes). Then the monster strikes 1 present attacker chosen by the opponent (even if you target something else), your attackers all strike at the same time, then (Brawl) the enemy units in the room strike the target of their choice. 1 strike per unit per player turn.",
     "Killing blow: the killer (controller of the last damage) takes all the treasure and the relic. Fall back: if the opponent kills the monster during a Brawl, your units that attacked may return to the Camp. A spell is cast in a room where you have a unit (Reach: or neighboring).",
     "Raid (from round 2, 1 per Assault): after a kill in a room, your units in that room attack the enemy Camp. Success if more raiders than standing defenders (Guardian included): 1 treasure stolen, +1 if the Guardian is Knocked out.",
-    "Monster killed: the host puts it in “Defeated monsters”, the killer adds its treasure (gold badge) to their counter. Elite (relic icon): “Take the relic” in the Dungeon panel. Monsters don't evolve. Automatic: empty rooms refilled at the start of each turn. Boss: its “Reign” effect is active from the start.",
+    "Monster killed: the host puts it in “Defeated monsters”, the killer adds its treasure (gold badge) to their counter. Elite (relic icon, relic printed on the card): “Take the relic” in the Dungeon panel gives the relic of the last Elite defeated. Monsters don't evolve. Automatic: empty rooms refilled at the start of each turn. Boss: its “Reign” effect is active from the start.",
     "Terrain: starts next to the Guardian, drag it to an Expedition on your 1st Assault. Lvl 1 when placed, +1 at Withdrawal if it didn't move (3 max, lvl 3 = Stronghold). Break camp: neighboring Expedition, -1 level. Destroyed by the opponent: +1 treasure for them (plunder), comes back at lvl 1 on your next Assault.",
     "Counter = Treasure. HP and Power: card counters (right click > Toggle counter 1 = HP, key C; counter 2 = Power, Ctrl C). Tokens to drag onto cards: Resource (Sap, Arcana or Wager: 1 token = 1, on your Terrain), Level 1-3, states (Stunned, Poisoned, Swift, Unflinching, Tipsy, Hangover, Backlash, Snared, Recovering, Aegis, Trap, Glyph). Glyph: drag it onto the monster of its room.",
-    "Deck: 1 Guardian + 1 Terrain of its faction + 30 cards of the faction, including 20 min. from the Guardian's pool (3 copies max, Signature 1). TCG Arena doesn't check the rule of 20.",
+    "Deck: 1 Guardian + 1 Terrain of its faction + 30 cards of the faction, including 20 min. from the Guardian's pool (3 copies max, Signature 1). TCG Arena doesn't check the rule of 20. Personal dungeon: 4 monsters (2 Elites, 2 normal, 9 treasure max) and 1 boss; at the start, the host shuffles both decks' monsters with the Sapper and the Mimic.",
     "Sprout and Wolf tokens: right click on the card that summons them.",
     "Language: Options menu (English / Français).",
 ]
@@ -400,7 +416,7 @@ UI_EN = {
     "Boss (entre quand la pioche est vide)": "Boss (enters when the deck is empty)", "Pioche de monstres": "Monster deck",
     "Monstres vaincus": "Defeated monsters", "Énergie": "Energy", "Donjon": "Dungeon",
     "Expédition 1": "Expedition 1", "Expédition 2": "Expedition 2", "Expédition 3": "Expedition 3",
-    "Expédition 4": "Expedition 4", "Coulisse": "Backstage",
+    "Expédition 4": "Expedition 4", "Coulisse": "Backstage", "Donjon perso": "Personal dungeon",
     "Ressource : Sève, Arcane ou Mise, sur ton Terrain (1 jeton = 1)": "Resource: Sap, Arcana or Wager, on your Terrain (1 token = 1)",
     "Niveau 1": "Level 1", "Niveau 2": "Level 2", "Niveau 3 (Fief)": "Level 3 (Stronghold)",
     "Sonné : ne frappe pas à son prochain combat": "Stunned: doesn't strike in its next combat",

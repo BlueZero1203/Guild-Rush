@@ -2,10 +2,10 @@ id,nom,type,P,PV,tresors,texte,relique
 gobelin,Gobelin fouineur,Monstre,2,3,1,"Il fouille, il mord, il s'enfuit avec ce qu'il trouve.",
 rat,Rat des galeries,Monstre,1,3,1,Embuscade : 1 dégât à chaque unité de sa salle.,
 archer,Archer gobelin,Monstre,2,2,1,Embuscade : 2 dégâts à une unité de sa salle (guilde la plus riche d'abord).,
-chaman,Grand chaman,Monstre,2,6,3,Les autres monstres ont +1/+1.,oui
-araignee,Reine araignée,Monstre,3,6,3,Toile : les unités de sa salle ne peuvent pas changer de salle.,oui
+chaman,Grand chaman,Monstre,2,6,3,Les autres monstres ont +1/+1.,lanterne
+araignee,Reine araignée,Monstre,3,6,3,Toile : les unités de sa salle ne peuvent pas changer de salle.,pioche-runique
 golem,Golem de minerai,Monstre,2,7,2,Carapace : chaque attaque lui inflige 1 dégât de moins.,
-contremaitre,Chef de guerre,Monstre,4,7,4,Riposte : frappe aussi une 2e unité de la salle.,oui
+contremaitre,Chef de guerre,Monstre,4,7,4,Riposte : frappe aussi une 2e unité de la salle.,bourse
 troll,Troll des mines,Monstre,4,6,3,"Régénération : au Retrait, il est soigné complètement.",
 sapeur,Sapeur gobelin,Monstre,2,2,1,Dernier souffle : 2 dégâts à chaque unité de sa salle.,
 mimique,Wagonnet mimique,Monstre,3,4,2,Embuscade : vole 1 trésor à la guilde la plus riche (égalité : aucune) et le garde sur lui. Qui le tue prend aussi ce trésor.,

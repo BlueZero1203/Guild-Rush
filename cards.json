@@ -4521,9 +4521,11 @@
     "type": "Monstre",
     "cost": 0,
     "faction": "Mine des Gobelins",
+    "_legal": {
+      "PROTO": 1
+    },
     "power": 2,
     "hp": 3,
-    "isToken": true,
     "tresors": 1
   },
   "rat": {
@@ -4551,9 +4553,11 @@
     "type": "Monstre",
     "cost": 0,
     "faction": "Mine des Gobelins",
+    "_legal": {
+      "PROTO": 1
+    },
     "power": 1,
     "hp": 3,
-    "isToken": true,
     "tresors": 1
   },
   "archer": {
@@ -4581,9 +4585,11 @@
     "type": "Monstre",
     "cost": 0,
     "faction": "Mine des Gobelins",
+    "_legal": {
+      "PROTO": 1
+    },
     "power": 2,
     "hp": 2,
-    "isToken": true,
     "tresors": 1
   },
   "chaman": {
@@ -4611,9 +4617,11 @@
     "type": "Monstre",
     "cost": 0,
     "faction": "Mine des Gobelins",
+    "_legal": {
+      "PROTO": 1
+    },
     "power": 2,
     "hp": 6,
-    "isToken": true,
     "tresors": 3
   },
   "araignee": {
@@ -4641,9 +4649,11 @@
     "type": "Monstre",
     "cost": 0,
     "faction": "Mine des Gobelins",
+    "_legal": {
+      "PROTO": 1
+    },
     "power": 3,
     "hp": 6,
-    "isToken": true,
     "tresors": 3
   },
   "golem": {
@@ -4671,9 +4681,11 @@
     "type": "Monstre",
     "cost": 0,
     "faction": "Mine des Gobelins",
+    "_legal": {
+      "PROTO": 1
+    },
     "power": 2,
     "hp": 7,
-    "isToken": true,
     "tresors": 2
   },
   "contremaitre": {
@@ -4701,9 +4713,11 @@
     "type": "Monstre",
     "cost": 0,
     "faction": "Mine des Gobelins",
+    "_legal": {
+      "PROTO": 1
+    },
     "power": 4,
     "hp": 7,
-    "isToken": true,
     "tresors": 4
   },
   "troll": {
@@ -4731,9 +4745,11 @@
     "type": "Monstre",
     "cost": 0,
     "faction": "Mine des Gobelins",
+    "_legal": {
+      "PROTO": 1
+    },
     "power": 4,
     "hp": 6,
-    "isToken": true,
     "tresors": 3
   },
   "sapeur": {
@@ -4821,9 +4837,11 @@
     "type": "Boss",
     "cost": 0,
     "faction": "Mine des Gobelins",
+    "_legal": {
+      "PROTO": 1
+    },
     "power": 6,
     "hp": 18,
-    "isToken": true,
     "tresors": 6
   },
   "lanterne": {
