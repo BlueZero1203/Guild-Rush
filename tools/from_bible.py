@@ -158,6 +158,14 @@ def rappels_pour(texte, lang="fr"):
     return out
 
 
+def cap_note(cap, lang="fr"):
+    """« Sève : 4 max ici. » -> rappel en gras comme ceux du lexique."""
+    if not cap:
+        return None
+    terme, sep, reste = cap.partition(" : " if lang == "fr" else ": ")
+    return f"**{terme}**{sep}{reste}" if lang == "fr" else f"**{terme}:** {reste}"
+
+
 def invoque(texte):
     t = texte.lower()
     return [j for j in ("pousse", "loup") if j in t and "jeton." not in t]
@@ -206,8 +214,13 @@ def cartes_guildes():
                 recto_en, _, verso_en = texte_en.partition(" || ")
                 c["en"]["text"] = terrain_rich(recto_en, lang_en)
                 if verso:
-                    c["back"] = dict(text=terrain_rich(verso), recto=False, big="MENU")
-                    c["en"]["back"] = dict(text=terrain_rich(verso_en, lang_en))
+                    # 1re ligne du menu « Sève : 4 max ici. » : imprimée en bas, à la place des rappels.
+                    cap, _, reste = verso.partition(" / ")
+                    cap_en, _, reste_en = verso_en.partition(" / ")
+                    if " max " not in cap:
+                        cap, reste, cap_en, reste_en = "", verso, "", verso_en
+                    c["back"] = dict(text=terrain_rich(reste), recto=False, big="MENU", note=cap_note(cap))
+                    c["en"]["back"] = dict(text=terrain_rich(reste_en, lang_en), note=cap_note(cap_en, lang_en))
             out.append(c)
     return out
 
@@ -305,7 +318,7 @@ def ecrire_cartes(cards_list):
             if c.get("back"):
                 back = dict(c["back"], **(en.get("back") or {})) if lang == "en" else c["back"]
                 b = dict(v, **back, verso=True, back=None)
-                b["rappels"] = []  # menu : pas de rappel des mots-clés (choix de Lucas)
+                b["rappels"] = [b["note"]] if b.get("note") else []  # menu : seulement le max de ressources (choix de Lucas)
                 dessiner(b, os.path.join(out_dir, f"{c['id']}-verso{suffixe[lang]}.png"), lang)
                 noms_b[lang], images_b[lang] = b["name"], f"{BASE}/img/cards/{c['id']}-verso{suffixe[lang]}.png"
         nom = par_langue(noms["fr"], noms["en"])
