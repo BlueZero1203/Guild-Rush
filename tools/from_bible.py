@@ -305,7 +305,7 @@ def ecrire_cartes(cards_list):
             if c.get("back"):
                 back = dict(c["back"], **(en.get("back") or {})) if lang == "en" else c["back"]
                 b = dict(v, **back, verso=True, back=None)
-                b["rappels"] = rappels_pour(b["text"], lang)
+                b["rappels"] = []  # menu : pas de rappel des mots-clés (choix de Lucas)
                 dessiner(b, os.path.join(out_dir, f"{c['id']}-verso{suffixe[lang]}.png"), lang)
                 noms_b[lang], images_b[lang] = b["name"], f"{BASE}/img/cards/{c['id']}-verso{suffixe[lang]}.png"
         nom = par_langue(noms["fr"], noms["en"])
