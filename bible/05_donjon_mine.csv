@@ -7,7 +7,7 @@ araignee,Reine araignée,Monstre,3,6,3,Toile : les unités de sa salle ne peuven
 golem,Golem de minerai,Monstre,2,7,2,Carapace : chaque attaque lui inflige 1 dégât de moins.,
 contremaitre,Chef de guerre,Monstre,4,7,4,Riposte : frappe aussi une 2e unité de la salle.,bourse
 ver,Ver des profondeurs,Monstre,4,7,3,"Dévoreur : quand il tue une unité, +1 Puissance jusqu'à sa mort.",ecaille
-troll,Troll des mines,Monstre,4,6,3,"Régénération : au Retrait, il est soigné complètement.",
+troll,Troll des mines,Monstre,4,6,3,"Régénération : à chaque Retrait (des deux joueurs), il est soigné complètement.",
 sapeur,Sapeur gobelin,Monstre,2,2,1,Dernier souffle : 2 dégâts à chaque unité de sa salle.,
 mimique,Wagonnet mimique,Monstre,3,4,2,Embuscade : vole 1 trésor à la guilde la plus riche (égalité : aucune) et le garde sur lui. Qui le tue prend aussi ce trésor.,
 grombak,"Grombak, roi gobelin",Boss,6,18,6,"Entre quand la pioche de monstres est vide. / Règne : les monstres en jeu ont +1 PV. / Enragé : à 9 PV ou moins, +2 Puissance. / Fin : sa mort termine la partie à la fin du tour.",

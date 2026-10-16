@@ -287,8 +287,8 @@ a{color:var(--accent)}
   <ul>
     <li>It has HP, doesn't strike and doesn't block raids. An enemy unit fighting in its room can attack it.</li>
     <li><strong>Bonuses</strong>: during your Assault, or during any Duel in its room, even on your opponent's turn. They target your units in the room.</li>
-    <li><strong>Level</strong>: Lvl 1 when placed, +1 at Withdrawal if it hasn't moved (3 max). At Lvl 3, it's a <span class="kw">Stronghold</span>: +1 treasure per monster killed in its room by your units or spells.</li>
-    <li><strong>Break camp</strong> (Scheme): move it to an adjacent Expedition; it loses 1 level.</li>
+    <li><strong>Level</strong>: Lvl 1 when placed, +1 at Withdrawal if it hasn't moved since your last Withdrawal (3 max). At Lvl 3, it's a <span class="kw">Stronghold</span>: +1 treasure per monster killed in its room by your units or spells.</li>
+    <li><strong>Break camp</strong> (Scheme): once per Scheme, move it to an adjacent Expedition; it loses 1 level.</li>
     <li><strong>Destroyed</strong>: it returns at Lvl 1 at your next Assault. If your opponent destroyed it, they gain +1 treasure (<span class="kw">plunder</span>).</li>
   </ul>
 </section>
@@ -310,7 +310,7 @@ a{color:var(--accent)}
       <tr><td>1 HP</td><td class="wrap1">Beer +1 PWR · Cider +2 HP · Mead heals 2</td></tr>
       <tr><td>2 HP</td><td class="wrap1">Rum +2 PWR then Hangover · Whisky Unflinching · Absinthe +3 PWR then Backlash</td></tr>
     </table></div>
-    <p><strong>Mixing</strong>: 2 drinks in the same turn = Stunned. <strong>Soak</strong>: once per turn, the barrel takes a hit instead of a unit in its room. <strong>Last round</strong>, once per game: the pint empties the barrel, which explodes.</p>
+    <p><strong>Drink effects</strong>: until the end of the turn. <strong>Mixing</strong>: 2 drinks in the same turn = Stunned. <strong>Soak</strong>: once per turn, the barrel takes a hit instead of a unit in its room. <strong>Last round</strong>, once per game: the pint empties the barrel, which explodes.</p>
     <div class="tbl"><table>
       <tr><th>Guardian</th><th>Style</th><th>Terrain</th></tr>
       <tr><td>Guss the Innkeeper · 3/7</td><td class="wrap1"><span class="style">Balanced</span>Daily Special, defenders +1 PWR</td><td class="wrap1">Oak Barrel (Aura +1 PWR)</td></tr>
@@ -348,9 +348,9 @@ a{color:var(--accent)}
   <h2><span class="n">13</span>Keywords</h2>
   <div class="tbl"><table>
     <tr><th>Keyword</th><th>Effect</th></tr>
-    <tr><td>Arrival</td><td class="wrap1">When played.</td></tr>
+    <tr><td>Arrival</td><td class="wrap1">When you play it from your hand (not a token).</td></tr>
     <tr><td>Last breath</td><td class="wrap1">When it dies.</td></tr>
-    <tr><td>Combat</td><td class="wrap1">During the unit's combat.</td></tr>
+    <tr><td>Combat</td><td class="wrap1">At the Declare step of a combat where it attacks, is attacked or strikes in a Brawl, until the end of that combat.</td></tr>
     <tr><td>Monster kill</td><td class="wrap1">When it deals the blow that kills a monster.</td></tr>
     <tr><td>Spellcast</td><td class="wrap1">When you play a Spell card.</td></tr>
     <tr><td>Revealed</td><td class="wrap1">When its Bluff card is flipped.</td></tr>
@@ -360,14 +360,16 @@ a{color:var(--accent)}
     <tr><td>Reach</td><td class="wrap1">Attacks a room adjacent to its Expedition. The monster doesn't strike back; the unit is not present in the room (no Brawl, no Stronghold, no Fall back). Respects Protector.</td></tr>
     <tr><td>Protector</td><td class="wrap1">Attacks (units and monsters) against your units or your Terrain in its room must target it. Spells and effects target freely. Protects even when Stunned; in a raid, goes before the Guardian.</td></tr>
     <tr><td>Reinforce</td><td class="wrap1">When the unit is recalled to the Camp during a raid.</td></tr>
+    <tr><td>Camp defense</td><td class="wrap1">When your Camp is raided, at the Effects step of the raid.</td></tr>
     <tr><td>Scout</td><td class="wrap1">Placed during the Scheme in the Expedition you choose and doesn't move again this turn. Its "Scheme:" effect repeats at each of your Schemes.</td></tr>
-    <tr><td>Bluff</td><td class="wrap1">Placed face down during the Scheme, revealed at the Assault.</td></tr>
+    <tr><td>Bluff</td><td class="wrap1">Placed face down during the Scheme, revealed at the start of your Assault. While hidden, it counts toward the limit of 3 but can't be attacked or targeted.</td></tr>
     <tr><td>Try your luck</td><td class="wrap1">Reveal the top card of your deck, then put it on the bottom. Success if its cost is 2 or more.</td></tr>
-    <tr><td>Ambush</td><td class="wrap1">Monster: effect when it arrives.</td></tr>
+    <tr><td>Ambush</td><td class="wrap1">Monster: effect when it fills an empty room at the start of a turn (not at setup).</td></tr>
     <tr><td>Signature</td><td class="wrap1">1 copy max per deck.</td></tr>
     <tr><td>Token</td><td class="wrap1">Summoned unit (Sprout 1/1, Wolf 2/1). Counts toward the limit of 3; full Expedition: no summon.</td></tr>
   </table></div>
   <p><strong>Enemy</strong>: an opposing unit, Guardian or Terrain; a monster is never an enemy. <strong>Target</strong>: anything, monsters included.</p>
+  <p><strong>This turn</strong>: until the end of the current turn, even on your opponent's turn. A bonus with no written duration is permanent. Every "X per turn" resets each turn, yours and your opponent's. <strong>In its room / In the Tavern…</strong>: continuous effect, while the condition is true.</p>
 </section>
 
 <section id="etats">
@@ -375,15 +377,15 @@ a{color:var(--accent)}
   <div class="tbl"><table>
     <tr><th>Condition</th><th>Effect</th></tr>
     <tr><td>Stunned</td><td class="wrap1">Doesn't strike in its next combat; its current attack is cancelled.</td></tr>
-    <tr><td>Poisoned</td><td class="wrap1">-1 HP at each of its owner's Rests, until healed.</td></tr>
-    <tr><td>Snared</td><td class="wrap1">Can't change rooms.</td></tr>
+    <tr><td>Poisoned</td><td class="wrap1">-1 HP at each of its owner's Rests, until healed. At Rest, poison comes before healing.</td></tr>
+    <tr><td>Snared</td><td class="wrap1">Can't change rooms, until the end of its owner's next turn (Web, Gatekeeper: while the source is there).</td></tr>
     <tr><td>Unflinching</td><td class="wrap1">Can't be Stunned this turn.</td></tr>
     <tr><td>Tipsy</td><td class="wrap1">Drank this turn; a 2nd drink = Stunned.</td></tr>
     <tr><td>Hangover</td><td class="wrap1">Stunned until the end of your next turn.</td></tr>
     <tr><td>Backlash</td><td class="wrap1">-2 HP at your next Rest.</td></tr>
     <tr><td>Recovering</td><td class="wrap1">Wounded in the Camp: fully healed at your next Rest, then stays in the Camp that turn.</td></tr>
     <tr><td>Knocked out</td><td class="wrap1">Guardian at 0 HP: no longer defends, returns at its next Rest with full HP.</td></tr>
-    <tr><td>Aegis</td><td class="wrap1">Ignores the next hit received, then disappears. Doesn't stack; doesn't block HP loss.</td></tr>
+    <tr><td>Aegis</td><td class="wrap1">Ignores the next hit received, then disappears. Stays until it absorbs a hit. Doesn't stack; doesn't block HP loss.</td></tr>
     <tr><td>Trap</td><td class="wrap1">Face down, placed by a Scout (1 per player per room). Hits the 1st enemy unit that enters. A Decoy is a fake Trap.</td></tr>
     <tr><td>Glyph</td><td class="wrap1">Face up, placed by a Mage (2 max per player per room). The 1st enemy unit that enters or attacks here, Reach included, takes 1 damage and is Stunned. 1 Glyph per unit per turn.</td></tr>
     <tr><td>Wager</td><td class="wrap1">On the Betting Keg (3 max), +1 per monster killed here. 3 Wagers = 1 treasure at Withdrawal.</td></tr>

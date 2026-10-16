@@ -144,8 +144,8 @@ Après le raid, les blessés des deux camps passent En soin, les morts sont déf
 
 - Il a des PV, ne frappe pas et ne bloque pas les raids. Une unité adverse qui combat dans sa salle peut l'attaquer.
 - **Bonus** : à ton Assaut, ou pendant n'importe quel Duel dans sa salle (même au tour adverse). Ils visent tes unités de la salle.
-- **Niveau** : niv. 1 à la pose, +1 au Retrait s'il n'a pas bougé (3 max). Au niv. 3, c'est un **Fief** : +1 trésor par monstre tué dans sa salle par tes unités ou tes sorts.
-- **Lever le camp** (Stratagème) : déplace-le vers une Expédition voisine, il perd 1 niveau.
+- **Niveau** : niv. 1 à la pose, +1 au Retrait s'il n'a pas bougé depuis ton dernier Retrait (3 max). Au niv. 3, c'est un **Fief** : +1 trésor par monstre tué dans sa salle par tes unités ou tes sorts.
+- **Lever le camp** (Stratagème) : 1 fois par Stratagème, déplace-le vers une Expédition voisine, il perd 1 niveau.
 - **Détruit** : il revient au niv. 1 à ton Assaut suivant. Si l'adversaire l'a détruit, il gagne +1 trésor (**pillage**).
 
 ## 11. La Carte au trésor
@@ -164,7 +164,7 @@ Bagarre et gros corps autour du baril. **Pinte** : le baril perd des PV pour fai
 | 1 PV | Bière +1 P · Cidre +2 PV · Hydromel soigne 2 |
 | 2 PV | Rhum +2 P puis Gueule de bois · Whisky Insensible · Absinthe +3 P puis Contrecoup |
 
-Mélange : 2 alcools le même tour = Sonné. **Encaisser** : 1 fois par tour, le baril prend un coup à la place d'une unité de sa salle. **Dernière tournée** (1 fois par partie) : la pinte vide le baril, qui explose.
+**Effets des alcools** : jusqu'à la fin du tour. **Mélange** : 2 alcools le même tour = Sonné. **Encaisser** : 1 fois par tour, le baril prend un coup à la place d'une unité de sa salle. **Dernière tournée** (1 fois par partie) : la pinte vide le baril, qui explose.
 
 | Gardien | Style | Terrain |
 |---|---|---|
@@ -196,9 +196,9 @@ Peu de corps, beaucoup de sorts : frapper à Portée et prendre les coups de gr�
 
 | Mot-clé | Effet |
 |---|---|
-| **Arrivée** | À la pose. |
+| **Arrivée** | Quand tu la poses depuis ta main (pas un jeton). |
 | **Dernier souffle** | À la mort. |
-| **Combat** | Pendant le combat de l'unité. |
+| **Combat** | À l'Annonce d'un combat où elle attaque, est attaquée ou frappe en Mêlée, jusqu'à la fin de ce combat. |
 | **Tue un monstre** | Quand elle porte le coup qui tue un monstre. |
 | **Sort lancé** | Quand tu joues une carte Sort. |
 | **Révélé** | Quand sa carte Bluff est retournée. |
@@ -208,29 +208,32 @@ Peu de corps, beaucoup de sorts : frapper à Portée et prendre les coups de gr�
 | **Portée** | Attaque une salle voisine de son Expédition. Le monstre ne riposte pas ; l'unité n'est pas présente dans la salle (ni Mêlée, ni Fief, ni Repli). Respecte Protecteur. |
 | **Protecteur** | Les attaques (unités et monstres) contre tes unités ou ton Terrain de sa salle doivent le viser. Sorts et effets ciblent librement. Protège même Sonné ; au raid, passe avant le Gardien. |
 | **Renfort** | Quand l'unité est rappelée au Camp pendant un raid. |
+| **Défense du Camp** | Quand ton Camp est raidé, à l'étape Effets du raid. |
 | **Éclaireur** | Se pose au Stratagème dans l'Expédition voulue, ne bouge plus ce tour. Son effet « Stratagème : » revient à chacun de tes Stratagèmes. |
-| **Bluff** | Posée face cachée au Stratagème, révélée à l'Assaut. |
+| **Bluff** | Posée face cachée au Stratagème, révélée au début de ton Assaut. Cachée, elle compte dans la limite de 3 mais ne peut être ni attaquée ni ciblée. |
 | **Tente ta chance** | Révèle le dessus de ta pioche, puis mets-le dessous. Réussite si son coût est 2 ou plus. |
-| **Embuscade** | Monstre : effet à son arrivée. |
+| **Embuscade** | Monstre : effet quand il remplit une salle vide en début de tour (pas à la mise en place). |
 | **Signature** | 1 exemplaire max par deck. |
 | **Jeton** | Unité invoquée (Pousse 1/1, Loup 2/1). Compte dans la limite de 3. Expédition pleine : pas d'invocation. |
 
 **Ennemi** : unité, Gardien ou Terrain adverse ; un monstre n'est jamais un ennemi. **Cible** : n'importe quoi, monstres compris.
 
+**Ce tour** : jusqu'à la fin du tour en cours, même au tour adverse. Un bonus sans durée écrite est permanent. Tout « X par tour » se recompte à chaque tour, le tien et celui de l'adversaire. **Dans sa salle / Dans la Taverne…** : effet continu, tant que la condition est vraie.
+
 ## 14. États
 
 | État | Effet |
 |---|---|
-| **Sonné** | Ne frappe pas à son prochain combat (son attaque en cours est annulée). |
-| **Empoisonné** | -1 PV à chaque Repos de son propriétaire, jusqu'au soin. |
-| **Entravé** | Ne peut pas changer de salle. |
+| **Sonné** | Ne frappe pas à son prochain combat, attaque ou Mêlée (son attaque en cours est annulée), puis le jeton part. Sans combat, il part à la fin du prochain tour de son propriétaire. Monstre Sonné : ne frappe pas et ne riposte pas jusqu'à la fin du tour. |
+| **Empoisonné** | -1 PV à chaque Repos de son propriétaire, jusqu'au soin. Au Repos, le poison passe avant le soin. |
+| **Entravé** | Ne peut pas changer de salle, jusqu'à la fin du prochain tour de son propriétaire (Toile, Portier : tant que la source est là). |
 | **Insensible** | Ne peut pas être Sonné ce tour. |
 | **Ivre** | A bu ce tour ; un 2e alcool = Sonné. |
 | **Gueule de bois** | Sonné jusqu'à la fin de ton prochain tour. |
 | **Contrecoup** | -2 PV à ton prochain Repos. |
 | **En soin** | Blessé au Camp : soigné complètement à ton prochain Repos, puis reste au Camp ce tour-là. |
 | **Assommé** | Gardien à 0 PV : ne défend plus, revient à son prochain Repos avec tous ses PV. |
-| **Égide** | Ignore le prochain coup reçu, puis disparaît. Non cumulable ; ne bloque pas les pertes de PV. |
+| **Égide** | Ignore le prochain coup reçu, puis disparaît. Reste jusqu'au coup absorbé. Non cumulable ; ne bloque pas les pertes de PV. |
 | **Piège** | Face cachée, posé par un Éclaireur (1 par joueur et par salle). Touche la 1re unité adverse qui entre. Un **Leurre** est un faux Piège. |
 | **Glyphe** | Face visible, posé par un Mage (2 max par joueur et par salle). La 1re unité adverse qui entre ou attaque ici (Portée comprise) prend 1 dégât et est Sonnée. 1 Glyphe par unité et par tour. |
 | **Mise** | Sur le Tonneau des paris (3 max), +1 par monstre tué ici. 3 Mises = 1 trésor au Retrait. |

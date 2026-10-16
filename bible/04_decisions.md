@@ -90,6 +90,7 @@
 - [OK] Premières cartes Éclaireur : Renard des fourrés, Pisteuse des ronces (Druides), Gamin des ruelles, Contrebandier (Ivrognes).
 
 ## Combat (2026-10-16)
+- [OK] « Ce tour » = jusqu'à la fin du tour en cours ; bonus sans durée = permanent ; « X par tour » se recompte à chaque tour ; Sonné/Entravé durent au plus jusqu'à la fin du prochain tour de leur propriétaire ; monstre Sonné jusqu'à la fin du tour ; Égide reste jusqu'au coup absorbé (propositions/timing-durees.md).
 - [OK] Un sort Réflexe se lance aussi à ton Assaut, hors Duel, comme un sort normal ; il peut en plus se jouer en Duel.
 - [OK] Ennemi = unité, Gardien ou Terrain adverse ; un monstre n'est jamais un ennemi. Cible = tout, monstres compris. Les effets de zone ne touchent pas les monstres.
 - [OK] Un sort ne se lance que dans une salle où tu as une unité (Portée : ou une salle voisine). Le Terrain ne compte pas. Le tueur est le contrôleur du dernier dégât.

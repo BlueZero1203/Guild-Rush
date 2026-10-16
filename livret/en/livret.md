@@ -144,8 +144,8 @@ After the raid, the wounded on both sides become Recovering, the dead are discar
 
 - It has HP, doesn't strike and doesn't block raids. An enemy unit fighting in its room can attack it.
 - **Bonuses**: during your Assault, or during any Duel in its room (even on your opponent's turn). They target your units in the room.
-- **Level**: Lvl 1 when placed, +1 at Withdrawal if it hasn't moved (3 max). At Lvl 3, it's a **Stronghold**: +1 treasure per monster killed in its room by your units or spells.
-- **Break camp** (Scheme): move it to an adjacent Expedition; it loses 1 level.
+- **Level**: Lvl 1 when placed, +1 at Withdrawal if it hasn't moved since your last Withdrawal (3 max). At Lvl 3, it's a **Stronghold**: +1 treasure per monster killed in its room by your units or spells.
+- **Break camp** (Scheme): once per Scheme, move it to an adjacent Expedition; it loses 1 level.
 - **Destroyed**: it returns at Lvl 1 at your next Assault. If your opponent destroyed it, they gain +1 treasure (**plunder**).
 
 ## 11. The Treasure map
@@ -164,7 +164,7 @@ Brawling and big bodies around the barrel. **Pint**: the barrel loses HP to make
 | 1 HP | Beer +1 PWR · Cider +2 HP · Mead heals 2 |
 | 2 HP | Rum +2 PWR then Hangover · Whisky Unflinching · Absinthe +3 PWR then Backlash |
 
-Mixing: 2 drinks in the same turn = Stunned. **Soak**: once per turn, the barrel takes a hit instead of a unit in its room. **Last round** (once per game): the pint empties the barrel, which explodes.
+**Drink effects**: until the end of the turn. **Mixing**: 2 drinks in the same turn = Stunned. **Soak**: once per turn, the barrel takes a hit instead of a unit in its room. **Last round** (once per game): the pint empties the barrel, which explodes.
 
 | Guardian | Style | Terrain |
 |---|---|---|
@@ -196,9 +196,9 @@ Few bodies, lots of spells: strike with Reach and take the killing blows. **Arca
 
 | Keyword | Effect |
 |---|---|
-| **Arrival** | When played. |
+| **Arrival** | When you play it from your hand (not a token). |
 | **Last breath** | When it dies. |
-| **Combat** | During the unit's combat. |
+| **Combat** | At the Declare step of a combat where it attacks, is attacked or strikes in a Brawl, until the end of that combat. |
 | **Monster kill** | When it deals the blow that kills a monster. |
 | **Spellcast** | When you play a Spell card. |
 | **Revealed** | When its Bluff card is flipped. |
@@ -208,29 +208,32 @@ Few bodies, lots of spells: strike with Reach and take the killing blows. **Arca
 | **Reach** | Attacks a room adjacent to its Expedition. The monster doesn't strike back; the unit is not present in the room (no Brawl, no Stronghold, no Fall back). Respects Protector. |
 | **Protector** | Attacks (units and monsters) against your units or your Terrain in its room must target it. Spells and effects target freely. Protects even when Stunned; in a raid, goes before the Guardian. |
 | **Reinforce** | When the unit is recalled to the Camp during a raid. |
+| **Camp defense** | When your Camp is raided, at the Effects step of the raid. |
 | **Scout** | Placed during the Scheme in the Expedition you choose, doesn't move again this turn. Its "Scheme:" effect repeats at each of your Schemes. |
-| **Bluff** | Placed face down during the Scheme, revealed at the Assault. |
+| **Bluff** | Placed face down during the Scheme, revealed at the start of your Assault. While hidden, it counts toward the limit of 3 but can't be attacked or targeted. |
 | **Try your luck** | Reveal the top card of your deck, then put it on the bottom. Success if its cost is 2 or more. |
-| **Ambush** | Monster: effect when it arrives. |
+| **Ambush** | Monster: effect when it fills an empty room at the start of a turn (not at setup). |
 | **Signature** | 1 copy max per deck. |
 | **Token** | Summoned unit (Sprout 1/1, Wolf 2/1). Counts toward the limit of 3. Full Expedition: no summon. |
 
 **Enemy**: an opposing unit, Guardian or Terrain; a monster is never an enemy. **Target**: anything, monsters included.
 
+**This turn**: until the end of the current turn, even on your opponent's turn. A bonus with no written duration is permanent. Every "X per turn" resets each turn, yours and your opponent's. **In its room / In the Tavern…**: continuous effect, while the condition is true.
+
 ## 14. Conditions
 
 | Condition | Effect |
 |---|---|
-| **Stunned** | Doesn't strike in its next combat (its current attack is cancelled). |
-| **Poisoned** | -1 HP at each of its owner's Rests, until healed. |
-| **Snared** | Can't change rooms. |
+| **Stunned** | Doesn't strike in its next combat, attack or Brawl (its current attack is cancelled), then the token goes away. With no combat, it goes away at the end of its owner's next turn. Stunned monster: doesn't strike or strike back until the end of the turn. |
+| **Poisoned** | -1 HP at each of its owner's Rests, until healed. At Rest, poison comes before healing. |
+| **Snared** | Can't change rooms, until the end of its owner's next turn (Web, Gatekeeper: while the source is there). |
 | **Unflinching** | Can't be Stunned this turn. |
 | **Tipsy** | Drank this turn; a 2nd drink = Stunned. |
 | **Hangover** | Stunned until the end of your next turn. |
 | **Backlash** | -2 HP at your next Rest. |
 | **Recovering** | Wounded in the Camp: fully healed at your next Rest, then stays in the Camp that turn. |
 | **Knocked out** | Guardian at 0 HP: no longer defends, returns at its next Rest with full HP. |
-| **Aegis** | Ignores the next hit received, then disappears. Doesn't stack; doesn't block HP loss. |
+| **Aegis** | Ignores the next hit received, then disappears. Stays until it absorbs a hit. Doesn't stack; doesn't block HP loss. |
 | **Trap** | Face down, placed by a Scout (1 per player per room). Hits the 1st enemy unit that enters. A **Decoy** is a fake Trap. |
 | **Glyph** | Face up, placed by a Mage (2 max per player per room). The 1st enemy unit that enters or attacks here (Reach included) takes 1 damage and is Stunned. 1 Glyph per unit per turn. |
 | **Wager** | On the Betting Keg (3 max), +1 per monster killed here. 3 Wagers = 1 treasure at Withdrawal. |
