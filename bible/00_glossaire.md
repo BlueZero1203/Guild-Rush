@@ -42,7 +42,7 @@ Une ligne par terme. Si un terme est ici, il n'est jamais réexpliqué ailleurs.
 ## Mots-clés
 - **Arrivée** : à la pose. **Dernier souffle** : à la mort. **Combat** : pendant son combat. **Tue un monstre** : quand elle porte le coup qui tue un monstre. **Sort lancé** : quand tu joues une carte Sort (une Incantation n'en est pas une). **Révélé** : quand sa carte Bluff est retournée. **Retrait** : à ta phase de Retrait.
 - **Rapide** : après son combat à ton Assaut, l'unité peut changer de salle (hors limite de déplacement) et attaquer 1 fois de plus.
-- **Réflexe** : jouable en Duel. Sans Réflexe, un sort se joue à ton Assaut, hors Duel.
+- **Réflexe** : jouable en Duel, en plus de ton Assaut. Sans Réflexe, un sort se joue seulement à ton Assaut, hors Duel.
 - **Portée** : l'unité peut attaquer dans une salle voisine de son Expédition ; le monstre ne riposte pas ; elle ne compte pas comme présente dans cette salle (pas de Mêlée, pas de Fief, pas de Repli). Respecte Protecteur. Sur un sort : il peut viser une salle voisine d'une de tes unités.
 - **Renfort** : se déclenche quand l'unité est rappelée au Camp pendant un raid.
 - **Protecteur** : une attaque (unité ou monstre) contre tes unités ou ton Terrain de sa salle doit le viser. Sorts, effets et Embuscades ciblent librement. Protège même Sonné ; au raid, passe avant le Gardien.

@@ -1,6 +1,6 @@
 # Guild Rush — Glossary (EN)
 Translation of `bible/00_glossaire.md`, which remains the reference. One line per term.
-<!-- fr_sha1: 92dbda3a6e34713fd691b467cf3d07fb363943c3 (00_glossaire.md traduit) -->
+<!-- fr_sha1: fb2315f35c1ac8e1d537e396355767afde529c51 (00_glossaire.md traduit) -->
 
 ## Structure
 - **Round**: one turn of each player. **Turn**: Rest → Scheme → Assault → Withdrawal.
@@ -43,7 +43,7 @@ Translation of `bible/00_glossaire.md`, which remains the reference. One line pe
 ## Keywords
 - **Arrival**: when played. **Last breath**: on death. **Combat**: during its combat. **Monster kill**: when it deals the blow that kills a monster. **Spellcast**: when you play a Spell card (an Incantation isn't one). **Revealed**: when its Bluff card is turned over. **Withdrawal**: at your Withdrawal phase.
 - **Swift**: after its combat on your Assault, the unit may change room (outside the movement limit) and attack 1 more time.
-- **Reflex**: playable in a Duel. Without Reflex, a spell is played on your Assault, outside a Duel.
+- **Reflex**: playable in a Duel, as well as on your Assault. Without Reflex, a spell is played only on your Assault, outside a Duel.
 - **Reach**: the unit can attack in a room neighboring its Expedition; the monster doesn't strike back; it doesn't count as present in that room (no Brawl, no Stronghold, no Fall back). Respects Protector. On a spell: it can target a room neighboring one of your units.
 - **Reinforce**: triggers when the unit is called back to the Camp during a raid.
 - **Protector**: an attack (unit or monster) against your units or your Terrain in its room must target it. Spells, effects and Ambushes target freely. Protects even when Stunned; in a raid, comes before the Guardian.

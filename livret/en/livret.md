@@ -104,7 +104,7 @@ A monster's **killer** is the player who controls the source of the last damage 
 ### Spells
 
 - A spell is cast in a room where you have a **unit** (your Terrain doesn't count). With **Reach**: also an adjacent room.
-- Without **Reflex**, a spell is played during your Assault, outside a Duel. With Reflex, it is played in a Duel, even on your opponent's turn.
+- Without **Reflex**, a spell is played during your Assault, outside a Duel. With Reflex, it can also be played in a Duel, even on your opponent's turn.
 
 ## 7. Damage and healing
 
@@ -204,7 +204,7 @@ Few bodies, lots of spells: strike with Reach and take the killing blows. **Arca
 | **Revealed** | When its Bluff card is flipped. |
 | **Withdrawal** | During your Withdrawal phase. |
 | **Swift** | After its combat during your Assault, changes rooms (outside the limit) and attacks once more. |
-| **Reflex** | Playable in a Duel. |
+| **Reflex** | Playable in a Duel, as well as during your Assault. |
 | **Reach** | Attacks a room adjacent to its Expedition. The monster doesn't strike back; the unit is not present in the room (no Brawl, no Stronghold, no Fall back). Respects Protector. |
 | **Protector** | Attacks (units and monsters) against your units or your Terrain in its room must target it. Spells and effects target freely. Protects even when Stunned; in a raid, goes before the Guardian. |
 | **Reinforce** | When the unit is recalled to the Camp during a raid. |

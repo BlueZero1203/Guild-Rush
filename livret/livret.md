@@ -104,7 +104,7 @@ Le **tueur** d'un monstre est le joueur qui contrôle la source du dernier dég�
 ### Les sorts
 
 - Un sort se lance dans une salle où tu as une **unité** (ton Terrain ne compte pas). Avec **Portée** : aussi une salle voisine.
-- Sans **Réflexe**, un sort se joue à ton Assaut, hors Duel. Avec Réflexe, il se joue en Duel, même au tour adverse.
+- Sans **Réflexe**, un sort se joue à ton Assaut, hors Duel. Avec Réflexe, il se joue aussi en Duel, même au tour adverse.
 
 ## 7. Dégâts et soin
 
@@ -204,7 +204,7 @@ Peu de corps, beaucoup de sorts : frapper à Portée et prendre les coups de gr�
 | **Révélé** | Quand sa carte Bluff est retournée. |
 | **Retrait** | À ta phase de Retrait. |
 | **Rapide** | Après son combat à ton Assaut, change de salle (hors limite) et attaque 1 fois de plus. |
-| **Réflexe** | Jouable en Duel. |
+| **Réflexe** | Jouable en Duel, en plus de ton Assaut. |
 | **Portée** | Attaque une salle voisine de son Expédition. Le monstre ne riposte pas ; l'unité n'est pas présente dans la salle (ni Mêlée, ni Fief, ni Repli). Respecte Protecteur. |
 | **Protecteur** | Les attaques (unités et monstres) contre tes unités ou ton Terrain de sa salle doivent le viser. Sorts et effets ciblent librement. Protège même Sonné ; au raid, passe avant le Gardien. |
 | **Renfort** | Quand l'unité est rappelée au Camp pendant un raid. |
