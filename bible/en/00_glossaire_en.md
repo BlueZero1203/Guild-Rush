@@ -1,6 +1,6 @@
 # Guild Rush — Glossary (EN)
 Translation of `bible/00_glossaire.md`, which remains the reference. One line per term.
-<!-- fr_sha1: 92dbda3a6e34713fd691b467cf3d07fb363943c3 (00_glossaire.md traduit) -->
+<!-- fr_sha1: e122ddbd166877d8c1900e91fa13add160cb8fab (00_glossaire.md traduit) -->
 
 ## Structure
 - **Round**: one turn of each player. **Turn**: Rest → Scheme → Assault → Withdrawal.
@@ -26,6 +26,7 @@ Translation of `bible/00_glossaire.md`, which remains the reference. One line pe
 - **Raid**: after a success in a room, your units in that room attack the enemy Camp (1 per Assault, from round 2). Success = treasure stolen.
 - **Plunder**: destroying the enemy Terrain = +1 treasure.
 - **Enemy**: enemy unit, Guardian or Terrain. A monster is never an enemy. **Target**: any unit, Guardian, Terrain or monster, on either side.
+- **Duration**: tag at the end of an effect. [turn]: end of the current turn, even the opponent's. [combat]: end of that combat. [raid]: end of that raid. [Rest]: your next Rest. [next turn]: end of its owner's next turn. [1 hit]: until it is used. No tag: instant or permanent. Every "X per turn" resets each turn, yours and your opponent's.
 
 - **Damage**: stays on the card (tokens) until healed. At 0 HP: death (Terrain: destroyed; Guardian: Knocked out).
 - **Bonus HP**: HP buffs (+X HP, +X/+X) take damage first and disappear when the buff ends. Damage they absorb doesn't stay.
@@ -35,38 +36,40 @@ Translation of `bible/00_glossaire.md`, which remains the reference. One line pe
 ## Cards
 - **Guardian**: guild leader (1 per deck), Rest and Camp defense passives. Its **pool**: its 10 units + 3 own spells.
 - **Terrain**: barrel (Drunkards), grove (Druids) or circle (Mages). HP, doesn't strike, levels 1-3.
-- **Level**: Lvl 1 when placed; +1 at Withdrawal if it didn't move (max 3). Lvl 3 = **Stronghold** (+1 treasure / monster killed here by your units or your spells).
-- **Break camp**: move the Terrain to a neighboring Expedition (-1 level).
+- **Level**: Lvl 1 when placed; +1 at Withdrawal if it didn't move since your last Withdrawal (max 3). Lvl 3 = **Stronghold** (+1 treasure / monster killed here by your units or your spells).
+- **Break camp**: move the Terrain to a neighboring Expedition (-1 level). Once per Scheme.
 - **Signature**: 1 copy max per deck.
 - **Token**: summoned unit (Sprout 1/1, Wolf 2/1), counts toward the limit of 3. Full Expedition: no summon.
+- **Camp defense**: effect that applies when your Camp is raided, at the Effects step of the raid.
+- **In its room / In the Tavern…**: continuous effect, active while the condition is true.
 
 ## Keywords
-- **Arrival**: when played. **Last breath**: on death. **Combat**: during its combat. **Monster kill**: when it deals the blow that kills a monster. **Spellcast**: when you play a Spell card (an Incantation isn't one). **Revealed**: when its Bluff card is turned over. **Withdrawal**: at your Withdrawal phase.
+- **Arrival**: when you play it from your hand (not a token). **Last breath**: on death. **Combat**: at the Declare step of a combat where it attacks, is attacked or strikes in a Brawl, [combat]. **Monster kill**: when it deals the blow that kills a monster. **Spellcast**: when you play a Spell card (an Incantation isn't one). **Revealed**: when its Bluff card is turned over. **Withdrawal**: at your Withdrawal phase.
 - **Swift**: after its combat on your Assault, the unit may change room (outside the movement limit) and attack 1 more time.
-- **Reflex**: playable in a Duel. Without Reflex, a spell is played on your Assault, outside a Duel.
+- **Reflex**: playable in a Duel, as well as on your Assault. Without Reflex, a spell is played only on your Assault, outside a Duel.
 - **Reach**: the unit can attack in a room neighboring its Expedition; the monster doesn't strike back; it doesn't count as present in that room (no Brawl, no Stronghold, no Fall back). Respects Protector. On a spell: it can target a room neighboring one of your units.
 - **Reinforce**: triggers when the unit is called back to the Camp during a raid.
 - **Protector**: an attack (unit or monster) against your units or your Terrain in its room must target it. Spells, effects and Ambushes target freely. Protects even when Stunned; in a raid, comes before the Guardian.
 - **Scout**: played at Scheme, directly in the chosen Expedition, and doesn't change room this turn. Its "Scheme:" effect triggers again at each of your Schemes while it is in an Expedition.
-- **Bluff**: placed face down in an Expedition at Scheme, revealed at Assault.
+- **Bluff**: placed face down in an Expedition at Scheme, revealed at the start of your Assault. While hidden, it counts toward the limit of 3 but can't be attacked or targeted.
 - **Try your luck**: reveal the top card of your deck, then put it at the bottom of your deck. Success if its cost is 2 or more. Empty deck: failure.
-- **Ambush** (monster): effect when it arrives.
+- **Ambush** (monster): effect when it fills an empty room at the start of a turn (not at setup).
 
 ## States (tokens)
-- **Stunned**: doesn't strike in its next combat. Stunned during its attack: that attack is canceled.
-- **Poisoned**: -1 HP at each of its owner's Rests, until healed.
-- **Swift**: has gained the Swift keyword until end of turn.
-- **Unflinching**: can't be Stunned this turn (Whisky).
-- **Tipsy**: drank a drink this turn (a 2nd = Stunned).
-- **Hangover**: Stunned until the end of your next turn (Rum).
+- **Stunned**: doesn't strike in its next combat (attack or Brawl), then the token goes away; with no combat: [next turn]. Stunned during its attack: that attack is canceled. Stunned monster: doesn't strike or strike back [turn].
+- **Poisoned**: -1 HP at each of its owner's Rests, until healed. At Rest, poison applies before healing.
+- **Swift**: has the Swift keyword [turn].
+- **Unflinching**: can't be Stunned [turn] (Whisky).
+- **Tipsy**: drank a drink (a 2nd = Stunned) [turn].
+- **Hangover**: Stunned [next turn] (Rum).
 - **Backlash**: -2 HP at your next Rest (Absinthe).
-- **Snared**: can't change room (Web).
+- **Snared**: can't change room [next turn] (Web, Gatekeeper: while the source is in the room).
 - **Recovering**: wounded unit that arrived at the Camp. Fully healed at your next Rest, then stays at the Camp until the end of that turn.
 - **Knocked out**: Guardian at 0 HP, no longer defends; comes back at its next Rest (HP to max).
 - **Trap**: face-down token set by a Scout on its room (1 per player per room, outside the limit of 3). Triggers on the 1st enemy unit that enters the room (tokens included), then discarded.
 - **Wager**: token on the Betting Keg (3 max), gained per monster killed here. 3 Wagers = 1 treasure at Withdrawal. Lost if the barrel explodes.
 - **Decoy**: Trap with no effect, set instead of the real one to bluff.
-- **Aegis**: ignores the next hit received (all its damage, from one source), then disappears. Doesn't stack. Doesn't block HP losses (Poisoned, Backlash).
+- **Aegis**: ignores the next hit received (all its damage, from one source) [1 hit]. Doesn't stack. Doesn't block HP losses (Poisoned, Backlash).
 - **Glyph**: face-up token placed by a Mage on a room (2 max per player per room, outside the limit of 3). The 1st enemy unit that enters the room or attacks in it (Reach included) takes 1 damage and is Stunned, then a Glyph is removed. Only 1 Glyph triggers per unit per turn.
 
 ## Resources

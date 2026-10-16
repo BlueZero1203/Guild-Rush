@@ -101,6 +101,7 @@ ol.steps>li::before{counter-increment:s;content:counter(s);position:absolute;lef
 .style{display:inline-block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;border:1px solid currentColor;border-radius:3px;padding:0 .35rem;margin-right:.35rem;color:var(--muted)}
 footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font-family:var(--f-ui);font-size:.88rem;color:var(--muted)}
 a{color:var(--accent)}
+.dur{display:inline-block;background:var(--gold);color:#2a1a05;border-radius:999px;padding:0 .45em;font-family:var(--f-ui);font-weight:700;font-size:.85em;line-height:1.35}
 </style>
 </head>
 <body>
@@ -216,6 +217,7 @@ a{color:var(--accent)}
   </ul>
 
   <h3>Combattre</h3>
+  <div class="note"><strong>En bref : Annonce, Duel, puis Monstre → Toi → Lui.</strong> Le monstre frappe toujours en premier, sauf si une carte dit le contraire.</div>
   <p>Attaquer est <strong>optionnel</strong> : être dans une salle sans attaquer ne déclenche rien. Tu combats <strong>salle par salle</strong>, dans l'ordre que tu veux ; un combat se termine avant le suivant. Entre deux combats, tu peux encore poser et déplacer.</p>
   <ol class="steps">
     <li><strong>Annonce.</strong> Choisis tes attaquants dans cette salle (et à <span class="kw">Portée</span> depuis une voisine) et, pour <strong>chacun</strong>, sa cible : le monstre, une unité adverse ou le Terrain adverse de la salle (<span class="kw">Protecteur</span> respecté). Une unité Sonnée peut être annoncée : elle ne frappera pas.</li>
@@ -233,7 +235,7 @@ a{color:var(--accent)}
   <h3>Les sorts</h3>
   <ul>
     <li>Un sort se lance dans une salle où tu as une <strong>unité</strong> ; ton Terrain ne compte pas. Avec <span class="kw">Portée</span> : aussi une salle voisine.</li>
-    <li>Sans Réflexe, un sort se joue à ton Assaut, hors Duel. Avec Réflexe, il se joue en Duel, même au tour adverse.</li>
+    <li>Sans Réflexe, un sort se joue à ton Assaut, hors Duel. Avec Réflexe, il se joue aussi en Duel, même au tour adverse.</li>
   </ul>
 </section>
 
@@ -286,8 +288,8 @@ a{color:var(--accent)}
   <ul>
     <li>Il a des PV, ne frappe pas et ne bloque pas les raids. Une unité adverse qui combat dans sa salle peut l'attaquer.</li>
     <li><strong>Bonus</strong> : à ton Assaut, ou pendant n'importe quel Duel dans sa salle, même au tour adverse. Ils visent tes unités de la salle.</li>
-    <li><strong>Niveau</strong> : niv. 1 à la pose, +1 au Retrait s'il n'a pas bougé (3 max). Au niv. 3, c'est un <span class="kw">Fief</span> : +1 trésor par monstre tué dans sa salle par tes unités ou tes sorts.</li>
-    <li><strong>Lever le camp</strong> (Stratagème) : déplace-le vers une Expédition voisine ; il perd 1 niveau.</li>
+    <li><strong>Niveau</strong> : niv. 1 à la pose, +1 au Retrait s'il n'a pas bougé depuis ton dernier Retrait (3 max). Au niv. 3, c'est un <span class="kw">Fief</span> : +1 trésor par monstre tué dans sa salle par tes unités ou tes sorts.</li>
+    <li><strong>Lever le camp</strong> (Stratagème) : 1 fois par Stratagème, déplace-le vers une Expédition voisine ; il perd 1 niveau.</li>
     <li><strong>Détruit</strong> : il revient au niv. 1 à ton Assaut suivant. Si l'adversaire l'a détruit, il gagne +1 trésor (<span class="kw">pillage</span>).</li>
   </ul>
 </section>
@@ -309,7 +311,7 @@ a{color:var(--accent)}
       <tr><td>1 PV</td><td class="wrap1">Bière +1 P · Cidre +2 PV · Hydromel soigne 2</td></tr>
       <tr><td>2 PV</td><td class="wrap1">Rhum +2 P puis Gueule de bois · Whisky Insensible · Absinthe +3 P puis Contrecoup</td></tr>
     </table></div>
-    <p><strong>Mélange</strong> : 2 alcools le même tour = Sonné. <strong>Encaisser</strong> : 1 fois par tour, le baril prend un coup à la place d'une unité de sa salle. <strong>Dernière tournée</strong>, 1 fois par partie : la pinte vide le baril, qui explose.</p>
+    <p><strong>Effets des alcools</strong> : <span class="dur">tour</span>. <strong>Mélange</strong> : 2 alcools le même tour = Sonné. <strong>Encaisser</strong> : 1 fois par tour, le baril prend un coup à la place d'une unité de sa salle. <strong>Dernière tournée</strong>, 1 fois par partie : la pinte vide le baril, qui explose.</p>
     <div class="tbl"><table>
       <tr><th>Gardien</th><th>Style</th><th>Terrain</th></tr>
       <tr><td>Guss le tavernier · 3/7</td><td class="wrap1"><span class="style">Équilibré</span>Plat du jour, défenseurs +1 P</td><td class="wrap1">Baril de chêne (Aura +1 P)</td></tr>
@@ -347,26 +349,28 @@ a{color:var(--accent)}
   <h2><span class="n">13</span>Mots-clés</h2>
   <div class="tbl"><table>
     <tr><th>Mot-clé</th><th>Effet</th></tr>
-    <tr><td>Arrivée</td><td class="wrap1">À la pose.</td></tr>
+    <tr><td>Arrivée</td><td class="wrap1">Quand tu la poses depuis ta main (pas un jeton).</td></tr>
     <tr><td>Dernier souffle</td><td class="wrap1">À la mort.</td></tr>
-    <tr><td>Combat</td><td class="wrap1">Pendant le combat de l'unité.</td></tr>
+    <tr><td>Combat</td><td class="wrap1">À l'Annonce d'un combat où elle attaque, est attaquée ou frappe en Mêlée <span class="dur">combat</span>.</td></tr>
     <tr><td>Tue un monstre</td><td class="wrap1">Quand elle porte le coup qui tue un monstre.</td></tr>
     <tr><td>Sort lancé</td><td class="wrap1">Quand tu joues une carte Sort.</td></tr>
     <tr><td>Révélé</td><td class="wrap1">Quand sa carte Bluff est retournée.</td></tr>
     <tr><td>Retrait</td><td class="wrap1">À ta phase de Retrait.</td></tr>
     <tr><td>Rapide</td><td class="wrap1">Après son combat à ton Assaut, change de salle (hors limite) et attaque 1 fois de plus.</td></tr>
-    <tr><td>Réflexe</td><td class="wrap1">Jouable en Duel.</td></tr>
+    <tr><td>Réflexe</td><td class="wrap1">Jouable en Duel, en plus de ton Assaut.</td></tr>
     <tr><td>Portée</td><td class="wrap1">Attaque une salle voisine de son Expédition. Le monstre ne riposte pas ; l'unité n'est pas présente dans la salle (ni Mêlée, ni Fief, ni Repli). Respecte Protecteur.</td></tr>
     <tr><td>Protecteur</td><td class="wrap1">Les attaques (unités et monstres) contre tes unités ou ton Terrain de sa salle doivent le viser. Sorts et effets ciblent librement. Protège même Sonné ; au raid, passe avant le Gardien.</td></tr>
     <tr><td>Renfort</td><td class="wrap1">Quand l'unité est rappelée au Camp pendant un raid.</td></tr>
+    <tr><td>Défense du Camp</td><td class="wrap1">Quand ton Camp est raidé, à l'étape Effets du raid.</td></tr>
     <tr><td>Éclaireur</td><td class="wrap1">Se pose au Stratagème dans l'Expédition voulue et ne bouge plus ce tour. Son effet « Stratagème : » revient à chacun de tes Stratagèmes.</td></tr>
-    <tr><td>Bluff</td><td class="wrap1">Posée face cachée au Stratagème, révélée à l'Assaut.</td></tr>
+    <tr><td>Bluff</td><td class="wrap1">Posée face cachée au Stratagème, révélée au début de ton Assaut. Cachée, elle compte dans la limite de 3 mais ne peut être ni attaquée ni ciblée.</td></tr>
     <tr><td>Tente ta chance</td><td class="wrap1">Révèle le dessus de ta pioche, puis mets-le dessous. Réussite si son coût est 2 ou plus.</td></tr>
-    <tr><td>Embuscade</td><td class="wrap1">Monstre : effet à son arrivée.</td></tr>
+    <tr><td>Embuscade</td><td class="wrap1">Monstre : effet quand il remplit une salle vide en début de tour (pas à la mise en place).</td></tr>
     <tr><td>Signature</td><td class="wrap1">1 exemplaire max par deck.</td></tr>
     <tr><td>Jeton</td><td class="wrap1">Unité invoquée (Pousse 1/1, Loup 2/1). Compte dans la limite de 3 ; Expédition pleine : pas d'invocation.</td></tr>
   </table></div>
   <p><strong>Ennemi</strong> : unité, Gardien ou Terrain adverse ; un monstre n'est jamais un ennemi. <strong>Cible</strong> : n'importe quoi, monstres compris.</p>
+  <p><strong>Durée</strong> : étiquette à la fin d'un effet. <span class="dur">tour</span> : fin du tour en cours, même au tour adverse. <span class="dur">combat</span> : fin de ce combat. <span class="dur">raid</span> : fin de ce raid. <span class="dur">Repos</span> : ton prochain Repos. <span class="dur">prochain tour</span> : fin du prochain tour de son propriétaire. <span class="dur">1 coup</span> : jusqu'à ce qu'il serve. Sans étiquette : instantané ou permanent. Tout « X par tour » se recompte à chaque tour, le tien et celui de l'adversaire. <strong>Dans sa salle / Dans la Taverne…</strong> : effet continu, tant que la condition est vraie.</p>
 </section>
 
 <section id="etats">
@@ -374,15 +378,15 @@ a{color:var(--accent)}
   <div class="tbl"><table>
     <tr><th>État</th><th>Effet</th></tr>
     <tr><td>Sonné</td><td class="wrap1">Ne frappe pas à son prochain combat ; son attaque en cours est annulée.</td></tr>
-    <tr><td>Empoisonné</td><td class="wrap1">-1 PV à chaque Repos de son propriétaire, jusqu'au soin.</td></tr>
-    <tr><td>Entravé</td><td class="wrap1">Ne peut pas changer de salle.</td></tr>
-    <tr><td>Insensible</td><td class="wrap1">Ne peut pas être Sonné ce tour.</td></tr>
-    <tr><td>Ivre</td><td class="wrap1">A bu ce tour ; un 2e alcool = Sonné.</td></tr>
-    <tr><td>Gueule de bois</td><td class="wrap1">Sonné jusqu'à la fin de ton prochain tour.</td></tr>
+    <tr><td>Empoisonné</td><td class="wrap1">-1 PV à chaque Repos de son propriétaire, jusqu'au soin. Au Repos, le poison passe avant le soin.</td></tr>
+    <tr><td>Entravé</td><td class="wrap1">Ne peut pas changer de salle <span class="dur">prochain tour</span> (Toile, Portier : tant que la source est là).</td></tr>
+    <tr><td>Insensible</td><td class="wrap1">Ne peut pas être Sonné <span class="dur">tour</span>.</td></tr>
+    <tr><td>Ivre</td><td class="wrap1">A bu un alcool ; un 2e = Sonné <span class="dur">tour</span>.</td></tr>
+    <tr><td>Gueule de bois</td><td class="wrap1">Sonné <span class="dur">prochain tour</span>.</td></tr>
     <tr><td>Contrecoup</td><td class="wrap1">-2 PV à ton prochain Repos.</td></tr>
     <tr><td>En soin</td><td class="wrap1">Blessé au Camp : soigné complètement à ton prochain Repos, puis reste au Camp ce tour-là.</td></tr>
     <tr><td>Assommé</td><td class="wrap1">Gardien à 0 PV : ne défend plus, revient à son prochain Repos avec tous ses PV.</td></tr>
-    <tr><td>Égide</td><td class="wrap1">Ignore le prochain coup reçu, puis disparaît. Non cumulable ; ne bloque pas les pertes de PV.</td></tr>
+    <tr><td>Égide</td><td class="wrap1">Ignore le prochain coup reçu <span class="dur">1 coup</span>. Non cumulable ; ne bloque pas les pertes de PV.</td></tr>
     <tr><td>Piège</td><td class="wrap1">Face cachée, posé par un Éclaireur (1 par joueur et par salle). Touche la 1re unité adverse qui entre. Un Leurre est un faux Piège.</td></tr>
     <tr><td>Glyphe</td><td class="wrap1">Face visible, posé par un Mage (2 max par joueur et par salle). La 1re unité adverse qui entre ou attaque ici, Portée comprise, prend 1 dégât et est Sonnée. 1 Glyphe par unité et par tour.</td></tr>
     <tr><td>Mise</td><td class="wrap1">Sur le Tonneau des paris (3 max), +1 par monstre tué ici. 3 Mises = 1 trésor au Retrait.</td></tr>

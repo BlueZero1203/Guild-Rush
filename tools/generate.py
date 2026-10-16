@@ -329,6 +329,32 @@ for _c in CARDS:
 
 
 
+# Étiquette de durée ([tour], [combat]…) : dessinée comme une pastille dorée.
+TAG = re.compile(r"^\[([^\]]+)\](.*)$")
+PILL, PILL_TXT, PILL_PAD = (225, 190, 70), (40, 25, 5), 6
+
+
+def word_w(draw, w, f, fb, b):
+    m = TAG.match(w)
+    if not m:
+        return draw.textlength(w, font=fb if b else f)
+    return draw.textlength(m[1], font=fb) + 2 * PILL_PAD + draw.textlength(m[2], font=fb if b else f)
+
+
+def draw_word(d, x, y, w, f, fb, b, fill):
+    """Dessine un mot (ou une étiquette en pastille) et renvoie sa largeur."""
+    m = TAG.match(w)
+    if not m:
+        d.text((x, y), w, font=fb if b else f, fill=fill)
+        return d.textlength(w, font=fb if b else f)
+    lw = d.textlength(m[1], font=fb)
+    d.rounded_rectangle((x, y, x + lw + 2 * PILL_PAD, y + int(f.size * 1.2)), radius=f.size // 2, fill=PILL)
+    d.text((x + PILL_PAD, y), m[1], font=fb, fill=PILL_TXT)
+    x2 = x + lw + 2 * PILL_PAD
+    d.text((x2, y), m[2], font=fb if b else f, fill=fill)
+    return x2 - x + d.textlength(m[2], font=fb if b else f)
+
+
 def rich_lines(draw, text, fnt, fnt_b, max_w):
     """Découpe un texte avec **gras** en lignes de segments (mot, gras?)."""
     words = []
@@ -336,7 +362,7 @@ def rich_lines(draw, text, fnt, fnt_b, max_w):
         for j, chunk in enumerate(part.split("\n")):
             if j:
                 words.append(("\n", False))
-            for w in chunk.split():
+            for w in re.findall(r"\[[^\]]*\]\S*|\S+", chunk):   # une étiquette [prochain tour] reste un seul mot
                 words.append((w, i % 2 == 1))
     lines, cur, cur_w = [], [], 0
     space = draw.textlength(" ", font=fnt)
@@ -346,7 +372,7 @@ def rich_lines(draw, text, fnt, fnt_b, max_w):
                 lines.append(cur)
             cur, cur_w = [], 0
             continue
-        ww = draw.textlength(w, font=fnt_b if b else fnt)
+        ww = word_w(draw, w, fnt, fnt_b, b)
         add = ww if not cur else ww + space
         if cur and cur_w + add > max_w:
             lines.append(cur)
@@ -373,9 +399,7 @@ def rappels(d, items, y, bottom, size):
                     for line in b:
                         x = 36
                         for w, gras in line:
-                            fnt = fb if gras else f
-                            d.text((x, y), w, font=fnt, fill=(200, 200, 210))
-                            x += d.textlength(w + " ", font=fnt)
+                            x += draw_word(d, x, y, w, f, fb, gras, (200, 200, 210)) + d.textlength(" ", font=fb if gras else f)
                         y += lh
                 return
         items = items[:-1]
@@ -442,9 +466,7 @@ def draw_card(c, path):
     for line in lines:
         x = 32
         for w, b in line:
-            fnt = fb if b else f
-            d.text((x, y), w, font=fnt, fill="white")
-            x += d.textlength(w + " ", font=fnt)
+            x += draw_word(d, x, y, w, f, fb, b, "white") + d.textlength(" ", font=fb if b else f)
         y += lh
     rappels(d, c.get("rappels") or [], y + 6, box_bottom, min(size - 4, 17))
 
