@@ -61,6 +61,7 @@
 - [OK] Format Terrains : le Gardien vient avec un Terrain qui porte les bonus de la guilde (alcools, recettes) et leur prix.
 - [OK] Les Livres de recettes sont fusionnés dans les bosquets.
 - [OK] Niveaux 1-3, Fief au niv. 3, pillage +1 trésor.
+- [OK] Terrains recto verso : recto = illustration + ce que l'adversaire doit lire (passifs, Encaisser, explosion) ; verso = menu (ressource et recettes). Rappels du glossaire retirés des cartes (2026-10-16).
 - [OK] Dernière tournée : 1 fois par partie, coûte tous les PV du baril (jamais réduit) ; baril explosé revient au niv. 1 à ton Assaut suivant, sans pillage (2026-10-16).
 - [NON] Système de Réserve (alcools et ingrédients en cartes à part) : remplacé par les Terrains. Archivé sur la branche `archive-reserve`.
 

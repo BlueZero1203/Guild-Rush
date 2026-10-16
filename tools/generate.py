@@ -370,10 +370,10 @@ def draw_card(c, path):
     while d.textlength(c["name"], font=tf) > W - 150 and tf.size > 16:
         tf = font(tf.size - 1, True)
     d.text((W // 2 + (0 if c["type"] in ("Terrain", "Menu") else 24), 61), c["name"], font=tf, fill=(20, 14, 10), anchor="mm")
-    fiche = c["type"] in ("Terrain", "Menu")
+    fiche = c["type"] in ("Terrain", "Menu") and not c.get("recto")   # recto d'un Terrain : illustré
     top = 168 if fiche else 330   # bas de l'illustration (plus de place pour le texte des fiches)
     # Coût (ou trésors pour un monstre : pastille dorée ; rien pour une fiche)
-    if fiche:
+    if fiche or c["type"] == "Terrain":
         pass
     elif c.get("tresors") is not None:
         d.ellipse((30, 28, 94, 92), fill=(232, 186, 60), outline="white", width=3)
@@ -384,7 +384,7 @@ def draw_card(c, path):
 
     # Illustration (placeholder)
     d.rounded_rectangle((24, 114, W - 25, top), radius=14, fill=(12, 10, 10))
-    big = "ÉVOLUÉ" if c.get("verso") else TYPE_LABEL[c["type"]].upper()
+    big = c.get("big") or ("ÉVOLUÉ" if c.get("verso") else TYPE_LABEL[c["type"]].upper())
     d.text((W // 2, 136 if fiche else 205), big, font=font(30 if fiche else 44, True), fill=frame, anchor="mm")
     if c.get("relique"):
         d.rounded_rectangle((W - 190, 122, W - 33, 160), radius=10, fill=(225, 190, 70))
@@ -402,7 +402,7 @@ def draw_card(c, path):
     d.text((30, top + 16), tl, font=font(22, True), fill=frame)
 
     # Texte de règles (taille auto)
-    box_bottom = H - 112 if c["power"] is not None else H - 36
+    box_bottom = H - 112 if c["power"] is not None or c.get("recto") else H - 36
     size = 24
     while True:
         f, fb = font(size), font(size, True)
@@ -426,6 +426,9 @@ def draw_card(c, path):
             d.rounded_rectangle((x0, H - 98, x0 + 130, H - 28), radius=14, fill=(15, 15, 25),
                                 outline="white", width=3)
             d.text((x0 + 65, H - 63), label, font=font(34, True), fill="white", anchor="mm")
+    elif c.get("recto"):
+        d.rounded_rectangle((W - 154, H - 98, W - 24, H - 28), radius=14, fill=(15, 15, 25), outline="white", width=3)
+        d.text((W - 89, H - 63), f"PV {c['hp_terrain']}", font=font(34, True), fill="white", anchor="mm")
     img.save(path, optimize=True)
 
 

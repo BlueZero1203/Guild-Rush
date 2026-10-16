@@ -40,7 +40,7 @@ Le plus de trésors gagne. Égalité : le tueur du boss, sinon celui qui a tué 
 - **Salles** : 4 en ligne, chacune avec un monstre. Voisine = numéro ±1.
 - **Expéditions** : une par salle et par joueur, face à la salle. **3 unités max** (jetons compris).
 - **Camp** : ta zone de repli et de soin, hors du donjon. Il touche toutes tes Expéditions, n'a pas de limite d'unités et n'est jamais une salle. Ton Gardien y vit.
-- Ton **Terrain** se pose dans une Expédition. Sa salle est ta **Taverne / Forêt / Cercle**.
+- Ton **Terrain** se pose dans une Expédition. Sa salle est ta **Taverne / Forêt / Cercle**. La carte est recto verso : le recto, visible en jeu, porte ses PV et ses passifs ; le verso donne son menu (pintes, recettes ou Incantations).
 
 ## 4. Mise en place
 

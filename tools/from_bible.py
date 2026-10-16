@@ -47,6 +47,14 @@ def rich(texte):
     return "\n".join(lignes)
 
 
+def terrain_rich(texte):
+    t = rich(texte)
+    for niv in ("Niv. 2 :", "Niv. 3 :"):
+        t = t.replace(f". {niv}", f".\n**{niv}**")
+    t = t.replace("**Encaisser. À 0 PV :**", "**Encaisser.**\n**À 0 PV :**")
+    return "\n".join(f"**{l}**" if l.endswith(" :") else l for l in t.split("\n"))
+
+
 def invoque(texte):
     t = texte.lower()
     return [j for j in ("pousse", "loup") if j in t and "jeton." not in t]
@@ -66,12 +74,13 @@ def cartes_guildes():
                       p, pv, legal=False if jeton else int(r["max"]), token=jeton, tokens=invoque(r["texte"]))
             c["gardien"] = r["gardien"]
             if typ == "Terrain":
-                t = c["text"]
-                for niv in ("Niv. 2 :", "Niv. 3, Fief :"):
-                    t = t.replace(f". {niv}", f".\n**{niv}**")
-                t = t.replace("\nPinte (", "\n**Pinte** (")
-                c["text"] = f"**{pv} PV.**\n" + t
+                # Recto verso : « recto || verso ». Recto illustré (ce que l'adversaire doit lire), verso = menu.
+                recto, _, verso = r["texte"].partition(" || ")
+                c["text"] = terrain_rich(recto)
+                c["recto"] = True
                 c["hp_terrain"] = pv
+                if verso:
+                    c["back"] = dict(text=terrain_rich(verso), recto=False, big="MENU")
             out.append(c)
     return out
 
