@@ -101,6 +101,7 @@ ol.steps>li::before{counter-increment:s;content:counter(s);position:absolute;lef
 .style{display:inline-block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;border:1px solid currentColor;border-radius:3px;padding:0 .35rem;margin-right:.35rem;color:var(--muted)}
 footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font-family:var(--f-ui);font-size:.88rem;color:var(--muted)}
 a{color:var(--accent)}
+.dur{display:inline-block;background:var(--gold);color:#2a1a05;border-radius:999px;padding:0 .45em;font-family:var(--f-ui);font-weight:700;font-size:.85em;line-height:1.35}
 </style>
 </head>
 <body>
@@ -310,7 +311,7 @@ a{color:var(--accent)}
       <tr><td>1 HP</td><td class="wrap1">Beer +1 PWR · Cider +2 HP · Mead heals 2</td></tr>
       <tr><td>2 HP</td><td class="wrap1">Rum +2 PWR then Hangover · Whisky Unflinching · Absinthe +3 PWR then Backlash</td></tr>
     </table></div>
-    <p><strong>Drink effects</strong>: until the end of the turn. <strong>Mixing</strong>: 2 drinks in the same turn = Stunned. <strong>Soak</strong>: once per turn, the barrel takes a hit instead of a unit in its room. <strong>Last round</strong>, once per game: the pint empties the barrel, which explodes.</p>
+    <p><strong>Drink effects</strong>: <span class="dur">turn</span>. <strong>Mixing</strong>: 2 drinks in the same turn = Stunned. <strong>Soak</strong>: once per turn, the barrel takes a hit instead of a unit in its room. <strong>Last round</strong>, once per game: the pint empties the barrel, which explodes.</p>
     <div class="tbl"><table>
       <tr><th>Guardian</th><th>Style</th><th>Terrain</th></tr>
       <tr><td>Guss the Innkeeper · 3/7</td><td class="wrap1"><span class="style">Balanced</span>Daily Special, defenders +1 PWR</td><td class="wrap1">Oak Barrel (Aura +1 PWR)</td></tr>
@@ -350,7 +351,7 @@ a{color:var(--accent)}
     <tr><th>Keyword</th><th>Effect</th></tr>
     <tr><td>Arrival</td><td class="wrap1">When you play it from your hand (not a token).</td></tr>
     <tr><td>Last breath</td><td class="wrap1">When it dies.</td></tr>
-    <tr><td>Combat</td><td class="wrap1">At the Declare step of a combat where it attacks, is attacked or strikes in a Brawl, until the end of that combat.</td></tr>
+    <tr><td>Combat</td><td class="wrap1">At the Declare step of a combat where it attacks, is attacked or strikes in a Brawl <span class="dur">combat</span>.</td></tr>
     <tr><td>Monster kill</td><td class="wrap1">When it deals the blow that kills a monster.</td></tr>
     <tr><td>Spellcast</td><td class="wrap1">When you play a Spell card.</td></tr>
     <tr><td>Revealed</td><td class="wrap1">When its Bluff card is flipped.</td></tr>
@@ -369,7 +370,7 @@ a{color:var(--accent)}
     <tr><td>Token</td><td class="wrap1">Summoned unit (Sprout 1/1, Wolf 2/1). Counts toward the limit of 3; full Expedition: no summon.</td></tr>
   </table></div>
   <p><strong>Enemy</strong>: an opposing unit, Guardian or Terrain; a monster is never an enemy. <strong>Target</strong>: anything, monsters included.</p>
-  <p><strong>This turn</strong>: until the end of the current turn, even on your opponent's turn. A bonus with no written duration is permanent. Every "X per turn" resets each turn, yours and your opponent's. <strong>In its room / In the Tavern…</strong>: continuous effect, while the condition is true.</p>
+  <p><strong>Duration</strong>: tag at the end of an effect. <span class="dur">turn</span>: end of the current turn, even on your opponent's turn. <span class="dur">combat</span>: end of that combat. <span class="dur">raid</span>: end of that raid. <span class="dur">Rest</span>: your next Rest. <span class="dur">next turn</span>: end of its owner's next turn. <span class="dur">1 hit</span>: until it is used. No tag: instant or permanent. Every "X per turn" resets each turn, yours and your opponent's. <strong>In its room / In the Tavern…</strong>: continuous effect, while the condition is true.</p>
 </section>
 
 <section id="etats">
@@ -378,14 +379,14 @@ a{color:var(--accent)}
     <tr><th>Condition</th><th>Effect</th></tr>
     <tr><td>Stunned</td><td class="wrap1">Doesn't strike in its next combat; its current attack is cancelled.</td></tr>
     <tr><td>Poisoned</td><td class="wrap1">-1 HP at each of its owner's Rests, until healed. At Rest, poison comes before healing.</td></tr>
-    <tr><td>Snared</td><td class="wrap1">Can't change rooms, until the end of its owner's next turn (Web, Gatekeeper: while the source is there).</td></tr>
-    <tr><td>Unflinching</td><td class="wrap1">Can't be Stunned this turn.</td></tr>
-    <tr><td>Tipsy</td><td class="wrap1">Drank this turn; a 2nd drink = Stunned.</td></tr>
-    <tr><td>Hangover</td><td class="wrap1">Stunned until the end of your next turn.</td></tr>
+    <tr><td>Snared</td><td class="wrap1">Can't change rooms <span class="dur">next turn</span> (Web, Gatekeeper: while the source is there).</td></tr>
+    <tr><td>Unflinching</td><td class="wrap1">Can't be Stunned <span class="dur">turn</span>.</td></tr>
+    <tr><td>Tipsy</td><td class="wrap1">Drank a drink; a 2nd = Stunned <span class="dur">turn</span>.</td></tr>
+    <tr><td>Hangover</td><td class="wrap1">Stunned <span class="dur">next turn</span>.</td></tr>
     <tr><td>Backlash</td><td class="wrap1">-2 HP at your next Rest.</td></tr>
     <tr><td>Recovering</td><td class="wrap1">Wounded in the Camp: fully healed at your next Rest, then stays in the Camp that turn.</td></tr>
     <tr><td>Knocked out</td><td class="wrap1">Guardian at 0 HP: no longer defends, returns at its next Rest with full HP.</td></tr>
-    <tr><td>Aegis</td><td class="wrap1">Ignores the next hit received, then disappears. Stays until it absorbs a hit. Doesn't stack; doesn't block HP loss.</td></tr>
+    <tr><td>Aegis</td><td class="wrap1">Ignores the next hit received <span class="dur">1 hit</span>. Doesn't stack; doesn't block HP loss.</td></tr>
     <tr><td>Trap</td><td class="wrap1">Face down, placed by a Scout (1 per player per room). Hits the 1st enemy unit that enters. A Decoy is a fake Trap.</td></tr>
     <tr><td>Glyph</td><td class="wrap1">Face up, placed by a Mage (2 max per player per room). The 1st enemy unit that enters or attacks here, Reach included, takes 1 damage and is Stunned. 1 Glyph per unit per turn.</td></tr>
     <tr><td>Wager</td><td class="wrap1">On the Betting Keg (3 max), +1 per monster killed here. 3 Wagers = 1 treasure at Withdrawal.</td></tr>

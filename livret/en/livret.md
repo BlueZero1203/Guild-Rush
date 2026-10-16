@@ -164,7 +164,7 @@ Brawling and big bodies around the barrel. **Pint**: the barrel loses HP to make
 | 1 HP | Beer +1 PWR · Cider +2 HP · Mead heals 2 |
 | 2 HP | Rum +2 PWR then Hangover · Whisky Unflinching · Absinthe +3 PWR then Backlash |
 
-**Drink effects**: until the end of the turn. **Mixing**: 2 drinks in the same turn = Stunned. **Soak**: once per turn, the barrel takes a hit instead of a unit in its room. **Last round** (once per game): the pint empties the barrel, which explodes.
+**Drink effects**: [turn]. **Mixing**: 2 drinks in the same turn = Stunned. **Soak**: once per turn, the barrel takes a hit instead of a unit in its room. **Last round** (once per game): the pint empties the barrel, which explodes.
 
 | Guardian | Style | Terrain |
 |---|---|---|
@@ -198,7 +198,7 @@ Few bodies, lots of spells: strike with Reach and take the killing blows. **Arca
 |---|---|
 | **Arrival** | When you play it from your hand (not a token). |
 | **Last breath** | When it dies. |
-| **Combat** | At the Declare step of a combat where it attacks, is attacked or strikes in a Brawl, until the end of that combat. |
+| **Combat** | At the Declare step of a combat where it attacks, is attacked or strikes in a Brawl [combat]. |
 | **Monster kill** | When it deals the blow that kills a monster. |
 | **Spellcast** | When you play a Spell card. |
 | **Revealed** | When its Bluff card is flipped. |
@@ -218,22 +218,22 @@ Few bodies, lots of spells: strike with Reach and take the killing blows. **Arca
 
 **Enemy**: an opposing unit, Guardian or Terrain; a monster is never an enemy. **Target**: anything, monsters included.
 
-**This turn**: until the end of the current turn, even on your opponent's turn. A bonus with no written duration is permanent. Every "X per turn" resets each turn, yours and your opponent's. **In its room / In the Tavern…**: continuous effect, while the condition is true.
+**Duration**: tag at the end of an effect. [turn]: end of the current turn, even on your opponent's turn. [combat]: end of that combat. [raid]: end of that raid. [Rest]: your next Rest. [next turn]: end of its owner's next turn. [1 hit]: until it is used. No tag: instant or permanent. Every "X per turn" resets each turn, yours and your opponent's. **In its room / In the Tavern…**: continuous effect, while the condition is true.
 
 ## 14. Conditions
 
 | Condition | Effect |
 |---|---|
-| **Stunned** | Doesn't strike in its next combat, attack or Brawl (its current attack is cancelled), then the token goes away. With no combat, it goes away at the end of its owner's next turn. Stunned monster: doesn't strike or strike back until the end of the turn. |
+| **Stunned** | Doesn't strike in its next combat, attack or Brawl (its current attack is cancelled), then the token goes away. With no combat: [next turn]. Stunned monster: doesn't strike or strike back [turn]. |
 | **Poisoned** | -1 HP at each of its owner's Rests, until healed. At Rest, poison comes before healing. |
-| **Snared** | Can't change rooms, until the end of its owner's next turn (Web, Gatekeeper: while the source is there). |
-| **Unflinching** | Can't be Stunned this turn. |
-| **Tipsy** | Drank this turn; a 2nd drink = Stunned. |
-| **Hangover** | Stunned until the end of your next turn. |
+| **Snared** | Can't change rooms [next turn] (Web, Gatekeeper: while the source is there). |
+| **Unflinching** | Can't be Stunned [turn]. |
+| **Tipsy** | Drank a drink; a 2nd = Stunned [turn]. |
+| **Hangover** | Stunned [next turn]. |
 | **Backlash** | -2 HP at your next Rest. |
 | **Recovering** | Wounded in the Camp: fully healed at your next Rest, then stays in the Camp that turn. |
 | **Knocked out** | Guardian at 0 HP: no longer defends, returns at its next Rest with full HP. |
-| **Aegis** | Ignores the next hit received, then disappears. Stays until it absorbs a hit. Doesn't stack; doesn't block HP loss. |
+| **Aegis** | Ignores the next hit received [1 hit]. Doesn't stack; doesn't block HP loss. |
 | **Trap** | Face down, placed by a Scout (1 per player per room). Hits the 1st enemy unit that enters. A **Decoy** is a fake Trap. |
 | **Glyph** | Face up, placed by a Mage (2 max per player per room). The 1st enemy unit that enters or attacks here (Reach included) takes 1 damage and is Stunned. 1 Glyph per unit per turn. |
 | **Wager** | On the Betting Keg (3 max), +1 per monster killed here. 3 Wagers = 1 treasure at Withdrawal. |

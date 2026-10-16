@@ -6,12 +6,12 @@ chaman,Great Shaman,Other monsters have +1/+1.,Grand chaman,Les autres monstres 
 araignee,Spider Queen,Web: units in its room can't change room.,Reine araignée,Toile : les unités de sa salle ne peuvent pas changer de salle.
 golem,Ore Golem,Carapace: each attack deals 1 less damage to it.,Golem de minerai,Carapace : chaque attaque lui inflige 1 dégât de moins.
 contremaitre,Warchief,Riposte: also strikes a 2nd unit in the room.,Chef de guerre,Riposte : frappe aussi une 2e unité de la salle.
-ver,Deep Worm,"Devourer: when it kills a unit, +1 Power until its death.",Ver des profondeurs,"Dévoreur : quand il tue une unité, +1 Puissance jusqu'à sa mort."
+ver,Deep Worm,"Devourer: when it kills a unit, +1 Power.",Ver des profondeurs,"Dévoreur : quand il tue une unité, +1 Puissance."
 troll,Mine Troll,"Regeneration: at each Withdrawal (both players'), it is fully healed.",Troll des mines,"Régénération : à chaque Retrait (des deux joueurs), il est soigné complètement."
 sapeur,Goblin Sapper,Last breath: 2 damage to each unit in its room.,Sapeur gobelin,Dernier souffle : 2 dégâts à chaque unité de sa salle.
 mimique,Mimic Minecart,Ambush: steals 1 treasure from the richest guild (tie: none) and keeps it on itself. Whoever kills it also takes that treasure.,Wagonnet mimique,Embuscade : vole 1 trésor à la guilde la plus riche (égalité : aucune) et le garde sur lui. Qui le tue prend aussi ce trésor.
 grombak,"Grombak, Goblin King","Enters when the monster deck is empty. / Reign: monsters in play have +1 HP. / Enraged: at 9 HP or less, +2 Power. / End: its death ends the game at the end of the turn.","Grombak, roi gobelin","Entre quand la pioche de monstres est vide. / Règne : les monstres en jeu ont +1 PV. / Enragé : à 9 PV ou moins, +2 Puissance. / Fin : sa mort termine la partie à la fin du tour."
 lanterne,Miner's Lantern,Scheme: look at the top monster of the deck; you may put it at the bottom.,Lanterne du mineur,Stratagème : regarde le monstre du dessus de la pioche ; tu peux le mettre en dessous.
-pioche-runique,Rune Pickaxe,Assault: your first unit that attacks a monster has +2 Power for this combat.,Pioche runique,Assaut : ta première unité qui attaque un monstre a +2 Puissance pour ce combat.
+pioche-runique,Rune Pickaxe,Assault: your first unit that attacks a monster has +2 Power [combat].,Pioche runique,Assaut : ta première unité qui attaque un monstre a +2 Puissance [combat].
 bourse,Foreman's Purse,"Withdrawal: if you killed at least one monster this turn, +1 treasure.",Bourse du contremaître,"Retrait : si tu as tué au moins un monstre ce tour, +1 trésor."
-ecaille,Worm Scale,Assault: one of your units has +2 HP until the end of the turn.,Écaille du ver,Assaut : une de tes unités a +2 PV jusqu'à la fin du tour.
+ecaille,Worm Scale,Assault: one of your units has +2 HP [turn].,Écaille du ver,Assaut : une de tes unités a +2 PV [tour].

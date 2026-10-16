@@ -25,7 +25,7 @@ Une ligne par terme. Si un terme est ici, il n'est jamais réexpliqué ailleurs.
 - **Raid** : après un succès en salle, tes unités de cette salle attaquent le Camp adverse (1 par Assaut, dès la manche 2). Réussi = vol de trésors.
 - **Pillage** : détruire le Terrain adverse = +1 trésor.
 - **Ennemi** : unité, Gardien ou Terrain adverse. Un monstre n'est jamais un ennemi. **Cible** : n'importe quelle unité, Gardien, Terrain ou monstre, des deux camps.
-- **Ce tour** : jusqu'à la fin du tour en cours, même si c'est le tour adverse. Un bonus sans durée écrite est permanent. Tout « X par tour » se recompte à chaque tour, le tien et celui de l'adversaire.
+- **Durée** : étiquette à la fin d'un effet. [tour] : fin du tour en cours, même adverse. [combat] : fin de ce combat. [raid] : fin de ce raid. [Repos] : ton prochain Repos. [prochain tour] : fin du prochain tour de son propriétaire. [1 coup] : jusqu'à ce qu'il serve. Sans étiquette : instantané ou permanent. Tout « X par tour » se recompte à chaque tour, le tien et celui de l'adversaire.
 
 - **Dégâts** : restent sur la carte (jetons) jusqu'au soin. À 0 PV : mort (Terrain : détruit ; Gardien : Assommé).
 - **PV bonus** : les buffs de PV (+X PV, +X/+X) prennent les dégâts en premier et disparaissent à la fin du buff. Les dégâts qu'ils absorbent ne restent pas.
@@ -43,7 +43,7 @@ Une ligne par terme. Si un terme est ici, il n'est jamais réexpliqué ailleurs.
 - **Dans sa salle / Dans la Taverne…** : effet continu, actif tant que la condition est vraie.
 
 ## Mots-clés
-- **Arrivée** : quand tu la poses depuis ta main (pas un jeton). **Dernier souffle** : à la mort. **Combat** : à l'Annonce d'un combat où elle attaque, est attaquée ou frappe en Mêlée, jusqu'à la fin de ce combat. **Tue un monstre** : quand elle porte le coup qui tue un monstre. **Sort lancé** : quand tu joues une carte Sort (une Incantation n'en est pas une). **Révélé** : quand sa carte Bluff est retournée. **Retrait** : à ta phase de Retrait.
+- **Arrivée** : quand tu la poses depuis ta main (pas un jeton). **Dernier souffle** : à la mort. **Combat** : à l'Annonce d'un combat où elle attaque, est attaquée ou frappe en Mêlée, [combat]. **Tue un monstre** : quand elle porte le coup qui tue un monstre. **Sort lancé** : quand tu joues une carte Sort (une Incantation n'en est pas une). **Révélé** : quand sa carte Bluff est retournée. **Retrait** : à ta phase de Retrait.
 - **Rapide** : après son combat à ton Assaut, l'unité peut changer de salle (hors limite de déplacement) et attaquer 1 fois de plus.
 - **Réflexe** : jouable en Duel, en plus de ton Assaut. Sans Réflexe, un sort se joue seulement à ton Assaut, hors Duel.
 - **Portée** : l'unité peut attaquer dans une salle voisine de son Expédition ; le monstre ne riposte pas ; elle ne compte pas comme présente dans cette salle (pas de Mêlée, pas de Fief, pas de Repli). Respecte Protecteur. Sur un sort : il peut viser une salle voisine d'une de tes unités.
@@ -55,20 +55,20 @@ Une ligne par terme. Si un terme est ici, il n'est jamais réexpliqué ailleurs.
 - **Embuscade** (monstre) : effet quand il remplit une salle vide en début de tour (pas à la mise en place).
 
 ## États (jetons)
-- **Sonné** : ne frappe pas à son prochain combat (attaque ou Mêlée), puis le jeton part ; sans combat, il part à la fin du prochain tour de son propriétaire. Sonné pendant son attaque : cette attaque est annulée. Monstre Sonné : ne frappe pas et ne riposte pas jusqu'à la fin du tour.
+- **Sonné** : ne frappe pas à son prochain combat (attaque ou Mêlée), puis le jeton part ; sans combat : [prochain tour]. Sonné pendant son attaque : cette attaque est annulée. Monstre Sonné : ne frappe pas et ne riposte pas [tour].
 - **Empoisonné** : -1 PV à chaque Repos de son propriétaire, jusqu'au soin. Au Repos, le poison s'applique avant le soin.
-- **Rapide** : a gagné le mot-clé Rapide jusqu'à la fin du tour.
-- **Insensible** : ne peut pas être Sonné ce tour (Whisky).
-- **Ivre** : a bu un alcool ce tour (un 2e = Sonné).
-- **Gueule de bois** : Sonné jusqu'à la fin de ton prochain tour (Rhum).
+- **Rapide** : a le mot-clé Rapide [tour].
+- **Insensible** : ne peut pas être Sonné [tour] (Whisky).
+- **Ivre** : a bu un alcool (un 2e = Sonné) [tour].
+- **Gueule de bois** : Sonné [prochain tour] (Rhum).
 - **Contrecoup** : -2 PV à ton prochain Repos (Absinthe).
-- **Entravé** : ne peut pas changer de salle, jusqu'à la fin du prochain tour de son propriétaire (Toile, Portier : tant que la source est dans la salle).
+- **Entravé** : ne peut pas changer de salle [prochain tour] (Toile, Portier : tant que la source est dans la salle).
 - **En soin** : unité blessée arrivée au Camp. Soignée complètement à ton prochain Repos, puis reste au Camp jusqu'à la fin de ce tour.
 - **Assommé** : Gardien à 0 PV, ne défend plus ; revient à son prochain Repos (PV au max).
 - **Piège** : jeton face cachée posé par un Éclaireur sur sa salle (1 par joueur et par salle, hors limite de 3). Se déclenche sur la 1re unité adverse qui entre dans la salle (jetons compris), puis défaussé.
 - **Mise** : jeton sur le Tonneau des paris (3 max), gagné par monstre tué ici. 3 Mises = 1 trésor au Retrait. Perdues si le baril explose.
 - **Leurre** : Piège sans effet, posé à la place du vrai pour bluffer.
-- **Égide** : ignore le prochain coup reçu (tous ses dégâts, d'une même source), puis disparaît. Non cumulable. Ne bloque pas les pertes de PV (Empoisonné, Contrecoup). Reste jusqu'au coup absorbé.
+- **Égide** : ignore le prochain coup reçu (tous ses dégâts, d'une même source) [1 coup]. Non cumulable. Ne bloque pas les pertes de PV (Empoisonné, Contrecoup).
 - **Glyphe** : jeton face visible posé par un Mage sur une salle (2 max par joueur et par salle, hors limite de 3). La 1re unité adverse qui entre dans la salle ou y attaque (Portée comprise) prend 1 dégât et est Sonnée, puis un Glyphe est retiré. 1 seul Glyphe se déclenche par unité et par tour.
 
 ## Ressources
