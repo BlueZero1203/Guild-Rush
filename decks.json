@@ -7,6 +7,8 @@
       "categoriesOrder": [
         "Gardien",
         "Terrain",
+        "Monstre",
+        "Boss",
         "Unite",
         "Sort"
       ],
@@ -19,6 +21,30 @@
       "Terrain": [
         {
           "id": "baril-chene",
+          "count": 1
+        }
+      ],
+      "Monstre": [
+        {
+          "id": "chaman",
+          "count": 1
+        },
+        {
+          "id": "araignee",
+          "count": 1
+        },
+        {
+          "id": "gobelin",
+          "count": 1
+        },
+        {
+          "id": "rat",
+          "count": 1
+        }
+      ],
+      "Boss": [
+        {
+          "id": "grombak",
           "count": 1
         }
       ],
@@ -94,6 +120,8 @@
       "categoriesOrder": [
         "Gardien",
         "Terrain",
+        "Monstre",
+        "Boss",
         "Unite",
         "Sort"
       ],
@@ -106,6 +134,30 @@
       "Terrain": [
         {
           "id": "baril-explosif",
+          "count": 1
+        }
+      ],
+      "Monstre": [
+        {
+          "id": "contremaitre",
+          "count": 1
+        },
+        {
+          "id": "araignee",
+          "count": 1
+        },
+        {
+          "id": "gobelin",
+          "count": 1
+        },
+        {
+          "id": "rat",
+          "count": 1
+        }
+      ],
+      "Boss": [
+        {
+          "id": "grombak",
           "count": 1
         }
       ],
@@ -189,6 +241,8 @@
       "categoriesOrder": [
         "Gardien",
         "Terrain",
+        "Monstre",
+        "Boss",
         "Unite",
         "Sort"
       ],
@@ -201,6 +255,30 @@
       "Terrain": [
         {
           "id": "tonneau-paris",
+          "count": 1
+        }
+      ],
+      "Monstre": [
+        {
+          "id": "ver",
+          "count": 1
+        },
+        {
+          "id": "chaman",
+          "count": 1
+        },
+        {
+          "id": "archer",
+          "count": 1
+        },
+        {
+          "id": "gobelin",
+          "count": 1
+        }
+      ],
+      "Boss": [
+        {
+          "id": "grombak",
           "count": 1
         }
       ],
@@ -276,6 +354,8 @@
       "categoriesOrder": [
         "Gardien",
         "Terrain",
+        "Monstre",
+        "Boss",
         "Unite",
         "Sort"
       ],
@@ -288,6 +368,30 @@
       "Terrain": [
         {
           "id": "bosquet",
+          "count": 1
+        }
+      ],
+      "Monstre": [
+        {
+          "id": "chaman",
+          "count": 1
+        },
+        {
+          "id": "araignee",
+          "count": 1
+        },
+        {
+          "id": "golem",
+          "count": 1
+        },
+        {
+          "id": "gobelin",
+          "count": 1
+        }
+      ],
+      "Boss": [
+        {
+          "id": "grombak",
           "count": 1
         }
       ],
@@ -367,6 +471,8 @@
       "categoriesOrder": [
         "Gardien",
         "Terrain",
+        "Monstre",
+        "Boss",
         "Unite",
         "Sort"
       ],
@@ -379,6 +485,30 @@
       "Terrain": [
         {
           "id": "bosquet-poison",
+          "count": 1
+        }
+      ],
+      "Monstre": [
+        {
+          "id": "araignee",
+          "count": 1
+        },
+        {
+          "id": "ver",
+          "count": 1
+        },
+        {
+          "id": "rat",
+          "count": 1
+        },
+        {
+          "id": "golem",
+          "count": 1
+        }
+      ],
+      "Boss": [
+        {
+          "id": "grombak",
           "count": 1
         }
       ],
@@ -458,6 +588,8 @@
       "categoriesOrder": [
         "Gardien",
         "Terrain",
+        "Monstre",
+        "Boss",
         "Unite",
         "Sort"
       ],
@@ -470,6 +602,30 @@
       "Terrain": [
         {
           "id": "bosquet-ombre",
+          "count": 1
+        }
+      ],
+      "Monstre": [
+        {
+          "id": "ver",
+          "count": 1
+        },
+        {
+          "id": "contremaitre",
+          "count": 1
+        },
+        {
+          "id": "rat",
+          "count": 1
+        },
+        {
+          "id": "gobelin",
+          "count": 1
+        }
+      ],
+      "Boss": [
+        {
+          "id": "grombak",
           "count": 1
         }
       ],
@@ -549,6 +705,8 @@
       "categoriesOrder": [
         "Gardien",
         "Terrain",
+        "Monstre",
+        "Boss",
         "Unite",
         "Sort"
       ],
@@ -561,6 +719,30 @@
       "Terrain": [
         {
           "id": "cercle",
+          "count": 1
+        }
+      ],
+      "Monstre": [
+        {
+          "id": "chaman",
+          "count": 1
+        },
+        {
+          "id": "araignee",
+          "count": 1
+        },
+        {
+          "id": "archer",
+          "count": 1
+        },
+        {
+          "id": "golem",
+          "count": 1
+        }
+      ],
+      "Boss": [
+        {
+          "id": "grombak",
           "count": 1
         }
       ],
@@ -640,6 +822,8 @@
       "categoriesOrder": [
         "Gardien",
         "Terrain",
+        "Monstre",
+        "Boss",
         "Unite",
         "Sort"
       ],
@@ -652,6 +836,30 @@
       "Terrain": [
         {
           "id": "sanctuaire",
+          "count": 1
+        }
+      ],
+      "Monstre": [
+        {
+          "id": "araignee",
+          "count": 1
+        },
+        {
+          "id": "chaman",
+          "count": 1
+        },
+        {
+          "id": "golem",
+          "count": 1
+        },
+        {
+          "id": "rat",
+          "count": 1
+        }
+      ],
+      "Boss": [
+        {
+          "id": "grombak",
           "count": 1
         }
       ],
@@ -731,6 +939,8 @@
       "categoriesOrder": [
         "Gardien",
         "Terrain",
+        "Monstre",
+        "Boss",
         "Unite",
         "Sort"
       ],
@@ -743,6 +953,30 @@
       "Terrain": [
         {
           "id": "foyer",
+          "count": 1
+        }
+      ],
+      "Monstre": [
+        {
+          "id": "ver",
+          "count": 1
+        },
+        {
+          "id": "araignee",
+          "count": 1
+        },
+        {
+          "id": "golem",
+          "count": 1
+        },
+        {
+          "id": "rat",
+          "count": 1
+        }
+      ],
+      "Boss": [
+        {
+          "id": "grombak",
           "count": 1
         }
       ],

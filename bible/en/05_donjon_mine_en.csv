@@ -1,13 +1,17 @@
-id,nom,texte,evolue_nom,evo_texte,fr_nom,fr_texte,fr_evolue_nom,fr_evo_texte
-gobelin,Goblin Snoop,"It rummages, it bites, it runs off with whatever it finds.",Hobgoblin,"Bigger, meaner, richer.",Gobelin fouineur,"Il fouille, il mord, il s'enfuit avec ce qu'il trouve.",Hobgobelin,"Plus grand, plus méchant, plus riche."
-rat,Tunnel Rat,Ambush: 1 damage to each unit in its room.,Giant Rat,Bite: a unit it wounds is Stunned.,Rat des galeries,Embuscade : 1 dégât à chaque unité de sa salle.,Rat géant,Morsure : une unité qu'il blesse est Sonnée.
-archer,Goblin Archer,Ambush: 2 damage to a unit in its room (richest guild first).,Goblin Sharpshooter,"Combat: 1 damage to the first unit that attacks it, before the hit.",Archer gobelin,Embuscade : 2 dégâts à une unité de sa salle (guilde la plus riche d'abord).,Tireur gobelin,"Combat : 1 dégât à la première unité qui l'attaque, avant le coup."
-chaman,Goblin Shaman,Other monsters have +1 Power.,Great Shaman,Other monsters have +1/+1.,Chaman gobelin,Les autres monstres ont +1 Puissance.,Grand chaman,Les autres monstres ont +1/+1.
-araignee,Pit Spider,Ambush: a unit in its room is Stunned.,Spider Queen,Web: units in its room can't change room.,Araignée des puits,Embuscade : une unité de sa salle est Sonnée.,Reine araignée,Toile : les unités de sa salle ne peuvent pas changer de salle.
-golem,Ore Golem,Carapace: each attack deals 1 less damage to it.,Crystal Golem,Carapace: each attack deals 1 less damage to it.,Golem de minerai,Carapace : chaque attaque lui inflige 1 dégât de moins.,Golem de cristal,Carapace : chaque attaque lui inflige 1 dégât de moins.
-contremaitre,Hobgoblin Foreman,He counts the nuggets. And the fingers.,Warchief,Riposte: also strikes a 2nd unit in the room.,Contremaître hobgobelin,Il compte les pépites. Et les doigts.,Chef de guerre,Riposte : frappe aussi une 2e unité de la salle.
-troll,Mine Troll,"Regeneration: at Withdrawal, it is fully healed.",Ancient Troll,"Regeneration: at Withdrawal, it is fully healed.",Troll des mines,"Régénération : au Retrait, il est soigné complètement.",Troll ancien,"Régénération : au Retrait, il est soigné complètement."
-grombak,"Grombak, Goblin King","Enters when the monster deck is empty. / Enraged: at 9 HP or less, +2 Power. / End: its death ends the game at the end of the turn.",,,"Grombak, roi gobelin","Entre quand la pioche de monstres est vide. / Enragé : à 9 PV ou moins, +2 Puissance. / Fin : sa mort termine la partie à la fin du tour.",,
-lanterne,Miner's Lantern,Scheme: look at the top monster of the deck; you may put it at the bottom.,,,Lanterne du mineur,Stratagème : regarde le monstre du dessus de la pioche ; tu peux le mettre en dessous.,,
-pioche-runique,Rune Pickaxe,Assault: your first unit that attacks a monster has +2 Power for this combat.,,,Pioche runique,Assaut : ta première unité qui attaque un monstre a +2 Puissance pour ce combat.,,
-bourse,Foreman's Purse,"Withdrawal: if you killed at least one monster this turn, +1 treasure.",,,Bourse du contremaître,"Retrait : si tu as tué au moins un monstre ce tour, +1 trésor.",,
+id,nom,texte,fr_nom,fr_texte
+gobelin,Goblin Snoop,"It rummages, it bites, it runs off with whatever it finds.",Gobelin fouineur,"Il fouille, il mord, il s'enfuit avec ce qu'il trouve."
+rat,Tunnel Rat,Ambush: 1 damage to each unit in its room.,Rat des galeries,Embuscade : 1 dégât à chaque unité de sa salle.
+archer,Goblin Archer,Ambush: 2 damage to a unit in its room (richest guild first).,Archer gobelin,Embuscade : 2 dégâts à une unité de sa salle (guilde la plus riche d'abord).
+chaman,Great Shaman,Other monsters have +1/+1.,Grand chaman,Les autres monstres ont +1/+1.
+araignee,Spider Queen,Web: units in its room can't change room.,Reine araignée,Toile : les unités de sa salle ne peuvent pas changer de salle.
+golem,Ore Golem,Carapace: each attack deals 1 less damage to it.,Golem de minerai,Carapace : chaque attaque lui inflige 1 dégât de moins.
+contremaitre,Warchief,Riposte: also strikes a 2nd unit in the room.,Chef de guerre,Riposte : frappe aussi une 2e unité de la salle.
+ver,Deep Worm,"Devourer: when it kills a unit, +1 Power until its death.",Ver des profondeurs,"Dévoreur : quand il tue une unité, +1 Puissance jusqu'à sa mort."
+troll,Mine Troll,"Regeneration: at Withdrawal, it is fully healed.",Troll des mines,"Régénération : au Retrait, il est soigné complètement."
+sapeur,Goblin Sapper,Last breath: 2 damage to each unit in its room.,Sapeur gobelin,Dernier souffle : 2 dégâts à chaque unité de sa salle.
+mimique,Mimic Minecart,Ambush: steals 1 treasure from the richest guild (tie: none) and keeps it on itself. Whoever kills it also takes that treasure.,Wagonnet mimique,Embuscade : vole 1 trésor à la guilde la plus riche (égalité : aucune) et le garde sur lui. Qui le tue prend aussi ce trésor.
+grombak,"Grombak, Goblin King","Enters when the monster deck is empty. / Reign: monsters in play have +1 HP. / Enraged: at 9 HP or less, +2 Power. / End: its death ends the game at the end of the turn.","Grombak, roi gobelin","Entre quand la pioche de monstres est vide. / Règne : les monstres en jeu ont +1 PV. / Enragé : à 9 PV ou moins, +2 Puissance. / Fin : sa mort termine la partie à la fin du tour."
+lanterne,Miner's Lantern,Scheme: look at the top monster of the deck; you may put it at the bottom.,Lanterne du mineur,Stratagème : regarde le monstre du dessus de la pioche ; tu peux le mettre en dessous.
+pioche-runique,Rune Pickaxe,Assault: your first unit that attacks a monster has +2 Power for this combat.,Pioche runique,Assaut : ta première unité qui attaque un monstre a +2 Puissance pour ce combat.
+bourse,Foreman's Purse,"Withdrawal: if you killed at least one monster this turn, +1 treasure.",Bourse du contremaître,"Retrait : si tu as tué au moins un monstre ce tour, +1 trésor."
+ecaille,Worm Scale,Assault: one of your units has +2 HP until the end of the turn.,Écaille du ver,Assaut : une de tes unités a +2 PV jusqu'à la fin du tour.

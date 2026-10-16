@@ -1,13 +1,17 @@
-id,nom,type,P,PV,tresors,texte,relique,evolue_nom,evo_P,evo_PV,evo_tresors,evo_texte
-gobelin,Gobelin fouineur,Monstre,2,3,1,"Il fouille, il mord, il s'enfuit avec ce qu'il trouve.",,Hobgobelin,3,5,2,"Plus grand, plus méchant, plus riche."
-rat,Rat des galeries,Monstre,1,3,1,Embuscade : 1 dégât à chaque unité de sa salle.,,Rat géant,2,5,2,Morsure : une unité qu'il blesse est Sonnée.
-archer,Archer gobelin,Monstre,2,2,1,Embuscade : 2 dégâts à une unité de sa salle (guilde la plus riche d'abord).,,Tireur gobelin,3,4,2,"Combat : 1 dégât à la première unité qui l'attaque, avant le coup."
-chaman,Chaman gobelin,Monstre,1,4,2,Les autres monstres ont +1 Puissance.,oui,Grand chaman,2,6,3,Les autres monstres ont +1/+1.
-araignee,Araignée des puits,Monstre,2,4,2,Embuscade : une unité de sa salle est Sonnée.,oui,Reine araignée,3,6,3,Toile : les unités de sa salle ne peuvent pas changer de salle.
-golem,Golem de minerai,Monstre,2,7,2,Carapace : chaque attaque lui inflige 1 dégât de moins.,,Golem de cristal,3,9,3,Carapace : chaque attaque lui inflige 1 dégât de moins.
-contremaitre,Contremaître hobgobelin,Monstre,3,5,2,Il compte les pépites. Et les doigts.,oui,Chef de guerre,4,7,4,Riposte : frappe aussi une 2e unité de la salle.
-troll,Troll des mines,Monstre,4,6,3,"Régénération : au Retrait, il est soigné complètement.",,Troll ancien,5,8,4,"Régénération : au Retrait, il est soigné complètement."
-grombak,"Grombak, roi gobelin",Boss,6,18,6,"Entre quand la pioche de monstres est vide. / Enragé : à 9 PV ou moins, +2 Puissance. / Fin : sa mort termine la partie à la fin du tour.",,,,,,
-lanterne,Lanterne du mineur,Relique,,,,Stratagème : regarde le monstre du dessus de la pioche ; tu peux le mettre en dessous.,,,,,,
-pioche-runique,Pioche runique,Relique,,,,Assaut : ta première unité qui attaque un monstre a +2 Puissance pour ce combat.,,,,,,
-bourse,Bourse du contremaître,Relique,,,,"Retrait : si tu as tué au moins un monstre ce tour, +1 trésor.",,,,,,
+id,nom,type,P,PV,tresors,texte,relique
+gobelin,Gobelin fouineur,Monstre,2,3,1,"Il fouille, il mord, il s'enfuit avec ce qu'il trouve.",
+rat,Rat des galeries,Monstre,1,3,1,Embuscade : 1 dégât à chaque unité de sa salle.,
+archer,Archer gobelin,Monstre,2,2,1,Embuscade : 2 dégâts à une unité de sa salle (guilde la plus riche d'abord).,
+chaman,Grand chaman,Monstre,2,6,3,Les autres monstres ont +1/+1.,lanterne
+araignee,Reine araignée,Monstre,3,6,3,Toile : les unités de sa salle ne peuvent pas changer de salle.,pioche-runique
+golem,Golem de minerai,Monstre,2,7,2,Carapace : chaque attaque lui inflige 1 dégât de moins.,
+contremaitre,Chef de guerre,Monstre,4,7,4,Riposte : frappe aussi une 2e unité de la salle.,bourse
+ver,Ver des profondeurs,Monstre,4,7,3,"Dévoreur : quand il tue une unité, +1 Puissance jusqu'à sa mort.",ecaille
+troll,Troll des mines,Monstre,4,6,3,"Régénération : au Retrait, il est soigné complètement.",
+sapeur,Sapeur gobelin,Monstre,2,2,1,Dernier souffle : 2 dégâts à chaque unité de sa salle.,
+mimique,Wagonnet mimique,Monstre,3,4,2,Embuscade : vole 1 trésor à la guilde la plus riche (égalité : aucune) et le garde sur lui. Qui le tue prend aussi ce trésor.,
+grombak,"Grombak, roi gobelin",Boss,6,18,6,"Entre quand la pioche de monstres est vide. / Règne : les monstres en jeu ont +1 PV. / Enragé : à 9 PV ou moins, +2 Puissance. / Fin : sa mort termine la partie à la fin du tour.",
+lanterne,Lanterne du mineur,Relique,,,,Stratagème : regarde le monstre du dessus de la pioche ; tu peux le mettre en dessous.,
+pioche-runique,Pioche runique,Relique,,,,Assaut : ta première unité qui attaque un monstre a +2 Puissance pour ce combat.,
+bourse,Bourse du contremaître,Relique,,,,"Retrait : si tu as tué au moins un monstre ce tour, +1 trésor.",
+ecaille,Écaille du ver,Relique,,,,Assaut : une de tes unités a +2 PV jusqu'à la fin du tour.,

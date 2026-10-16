@@ -1,6 +1,6 @@
 # Guild Rush — Glossary (EN)
 Translation of `bible/00_glossaire.md`, which remains the reference. One line per term.
-<!-- fr_sha1: c91a789d511ef7c248889a64e63ec8379b3c9067 (00_glossaire.md traduit) -->
+<!-- fr_sha1: 92dbda3a6e34713fd691b467cf3d07fb363943c3 (00_glossaire.md traduit) -->
 
 ## Structure
 - **Round**: one turn of each player. **Turn**: Rest → Scheme → Assault → Withdrawal.
@@ -8,6 +8,8 @@ Translation of `bible/00_glossaire.md`, which remains the reference. One line pe
 - **Expedition**: your zone facing a room (Exp. 1-4), same neighbors as its room. 3 units max, tokens included.
 - **Camp**: your fallback and healing zone, targeted by raids. Touches all your Expeditions; it isn't a room (not a neighbor, not Reach, not Glyph). No unit limit.
 - **Enter**: arrive in a room (play, move, return from the Camp).
+- **Elite**: a stronger monster that carries a relic. Doesn't evolve.
+- **Reign**: a boss's effect, active from setup until its death.
 - **Tavern / Forest / Circle**: the room where your Terrain is (barrel / grove / circle).
 
 ## Phases

@@ -150,6 +150,7 @@ a{color:var(--accent)}
     <tr><td>Gardien</td><td class="wrap1">1 : le chef de ta guilde.</td></tr>
     <tr><td>Terrain</td><td class="wrap1">1, de la faction du Gardien, au choix.</td></tr>
     <tr><td>Deck</td><td class="wrap1">30 cartes de ta faction, dont <strong>20 minimum du pool de ton Gardien</strong>.</td></tr>
+    <tr><td>Donjon perso</td><td class="wrap1">4 monstres (2 <strong>Élites</strong>, 2 normaux, 1 ex. chacun, <strong>9 trésors max</strong> au total) et 1 boss.</td></tr>
   </table></div>
   <ul>
     <li>3 exemplaires max par carte, 1 seul pour une <span class="kw">Signature</span>.</li>
@@ -184,9 +185,9 @@ a{color:var(--accent)}
 <section id="miseenplace">
   <h2><span class="n">4</span>Mise en place</h2>
   <ol class="steps">
-    <li>Mélange les 8 monstres de la Mine. Pose-en 1 dans chaque salle ; les 4 autres forment la pioche de monstres. Le boss Grombak attend à côté.</li>
+    <li>Tire au sort le premier joueur. Le second choisit l'un des 2 boss apportés ; il attend à côté du donjon et son <strong>Règne</strong> s'applique dès maintenant.</li>
+    <li>Mélange face cachée les 8 monstres des joueurs et les 2 monstres de la Mine (Sapeur gobelin, Wagonnet mimique). Pose-en 1 dans chaque salle ; les 6 autres forment la pioche de monstres.</li>
     <li>Chaque joueur pose son Gardien au Camp et son Terrain à côté, mélange son deck et pioche <strong>5 cartes</strong>.</li>
-    <li>Tire au sort le premier joueur.</li>
     <li>Au 1er Assaut, chaque joueur pose son Terrain dans l'Expédition de son choix.</li>
   </ol>
 </section>
@@ -249,12 +250,14 @@ a{color:var(--accent)}
 <section id="donjon">
   <h2><span class="n">8</span>Le donjon</h2>
   <ul>
-    <li>Chaque monstre a des <strong>trésors</strong> (pastille dorée) ; certains portent une <strong>relique</strong>.</li>
+    <li>Chaque monstre a des <strong>trésors</strong> (pastille dorée). Une <strong>Élite</strong> porte aussi une <strong>relique</strong>.</li>
     <li><span class="kw">Embuscade</span> : effet quand le monstre arrive.</li>
     <li>Les dégâts d'un monstre restent d'un tour à l'autre.</li>
-    <li><strong>Évolution</strong> : à la fin d'une manche, un monstre en jeu depuis une manche entière se retourne sur sa face évoluée, sans dégâts. Plus fort, plus riche.</li>
-    <li>Le <strong>boss</strong> entre quand la pioche est vide. Le tuer termine la partie à la fin du tour.</li>
+    <li>Les monstres n'évoluent pas.</li>
+    <li>Un monstre ne profite pas à son propriétaire : trésors et relique vont au tueur, quel qu'il soit.</li>
+    <li>Le <strong>boss</strong> entre quand la pioche est vide. Son <strong>Règne</strong> agit dès la mise en place. Le tuer termine la partie à la fin du tour.</li>
   </ul>
+  <p><strong>Prototype</strong> : tant que les decks n'ont pas leurs monstres, on joue avec les 10 monstres de la Mine et Grombak (Règne : les monstres en jeu ont +1 PV).</p>
   <div class="tbl"><table>
     <tr><th>Relique de la Mine</th><th>Effet</th></tr>
     <tr><td>Lanterne du mineur</td><td class="wrap1">Stratagème : regarde le monstre du dessus de la pioche ; tu peux le mettre en dessous.</td></tr>

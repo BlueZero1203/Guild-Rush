@@ -1,7 +1,7 @@
 {
   "name": "Guild Rush (proto)",
   "cardRotation": 90,
-  "customHelp": "Guild Rush (proto) · dungeon: Goblin Mine. Full rules: livret/en/livret.md in the repository.\nGoal: the most treasure. End: a player at 12 treasure at the end of a round, or boss killed (end of that turn). Tie: the boss killer, then the most monsters killed.\nBoard: 4 rooms in a row (neighbor = ±1), one monster each. Facing each room, one Expedition per player (3 units max, tokens included). The Camp touches all your Expeditions, no limit; it isn't a room.\nTurn: Rest (energy to max, 3 then +1 per round up to 6; draw 1; heal Recovering units; Guardian passive) → Scheme (Scouts, face-down Bluff, break camp) → Assault → Withdrawal (treasure to the counter, Terrain level).\nAssault: a unit you play arrives directly in the Expedition you want or in the Camp (TCG Arena puts it in Exp. 1: drag it). A unit in play moves once per turn (neighboring Expedition, Camp, or from the Camp to any Expedition). Wounded: only toward the Camp (Recovering).\nCombat (optional), room by room, in any order: declare your attackers and each one's target, then Duel (announce it in the chat; the opponent plays or passes first, then Reflex / Terrain bonus / pass; 2 passes = strikes). Then the monster strikes 1 present attacker chosen by the opponent (even if you target something else), your attackers all strike at the same time, then (Brawl) the enemy units in the room strike the target of their choice. 1 strike per unit per player turn.\nKilling blow: the killer (controller of the last damage) takes all the treasure and the relic. Fall back: if the opponent kills the monster during a Brawl, your units that attacked may return to the Camp. A spell is cast in a room where you have a unit (Reach: or neighboring).\nRaid (from round 2, 1 per Assault): after a kill in a room, your units in that room attack the enemy Camp. Success if more raiders than standing defenders (Guardian included): 1 treasure stolen, +1 if the Guardian is Knocked out.\nMonster killed: the host puts it in “Defeated monsters”, the killer adds its treasure (gold badge) to their counter. Relic icon: “Take the relic” in the Dungeon panel. Automatic: empty rooms refilled at the start of each turn; evolution at the end of the round.\nTerrain: starts next to the Guardian, drag it to an Expedition on your 1st Assault. Lvl 1 when placed, +1 at Withdrawal if it didn't move (3 max, lvl 3 = Stronghold). Break camp: neighboring Expedition, -1 level. Destroyed by the opponent: +1 treasure for them (plunder), comes back at lvl 1 on your next Assault.\nCounter = Treasure. HP and Power: card counters (right click > Toggle counter 1 = HP, key C; counter 2 = Power, Ctrl C). Tokens to drag onto cards: Resource (Sap, Arcana or Wager: 1 token = 1, on your Terrain), Level 1-3, states (Stunned, Poisoned, Swift, Unflinching, Tipsy, Hangover, Backlash, Snared, Recovering, Aegis, Trap, Glyph). Glyph: drag it onto the monster of its room.\nDeck: 1 Guardian + 1 Terrain of its faction + 30 cards of the faction, including 20 min. from the Guardian's pool (3 copies max, Signature 1). TCG Arena doesn't check the rule of 20.\nSprout and Wolf tokens: right click on the card that summons them.\nLanguage: Options menu (English / Français).\n\nGLOSSARY (bible/en/00_glossaire_en.md; recalled at the bottom of the cards that use it)\nBrawl: both players in the same room. Order: monster, active player, opponent. The killing blow takes everything.\nFall back: if the opponent kills the monster during a Brawl, a unit that attacked may return to the Camp (not if Snared).\nPlunder: destroying the enemy Terrain = +1 treasure.\nWounded: unit with at least 1 damage on its base HP. Normal movement: only toward the Camp.\nBreak camp: move the Terrain to a neighboring Expedition (-1 level).\nSignature: 1 copy max per deck.\nSwift: after its combat on your Assault, the unit may change room (outside the movement limit) and attack 1 more time.\nReflex: playable in a Duel. Without Reflex, a spell is played on your Assault, outside a Duel.\nReach: the unit can attack in a room neighboring its Expedition; the monster doesn't strike back; it doesn't count as present in that room (no Brawl, no Stronghold, no Fall back). Respects Protector. On a spell: it can target a room neighboring one of your units.\nReinforce: triggers when the unit is called back to the Camp during a raid.\nProtector: an attack (unit or monster) against your units or your Terrain in its room must target it. Spells, effects and Ambushes target freely. Protects even when Stunned; in a raid, comes before the Guardian.\nScout: played at Scheme, directly in the chosen Expedition, and doesn't change room this turn. Its \"Scheme:\" effect triggers again at each of your Schemes while it is in an Expedition.\nBluff: placed face down in an Expedition at Scheme, revealed at Assault.\nTry your luck: reveal the top card of your deck, then put it at the bottom of your deck. Success if its cost is 2 or more. Empty deck: failure.\nAmbush: effect when it arrives.\nStunned: doesn't strike in its next combat. Stunned during its attack: that attack is canceled.\nPoisoned: -1 HP at each of its owner's Rests, until healed.\nUnflinching: can't be Stunned this turn (Whisky).\nTipsy: drank a drink this turn (a 2nd = Stunned).\nHangover: Stunned until the end of your next turn (Rum).\nBacklash: -2 HP at your next Rest (Absinthe).\nSnared: can't change room (Web).\nRecovering: wounded unit that arrived at the Camp. Fully healed at your next Rest, then stays at the Camp until the end of that turn.\nKnocked out: Guardian at 0 HP, no longer defends; comes back at its next Rest (HP to max).\nTrap: face-down token set by a Scout on its room (1 per player per room, outside the limit of 3). Triggers on the 1st enemy unit that enters the room (tokens included), then discarded.\nWager: token on the Betting Keg (3 max), gained per monster killed here. 3 Wagers = 1 treasure at Withdrawal. Lost if the barrel explodes.\nDecoy: Trap with no effect, set instead of the real one to bluff.\nAegis: ignores the next hit received (all its damage, from one source), then disappears. Doesn't stack. Doesn't block HP losses (Poisoned, Backlash).\nGlyph: face-up token placed by a Mage on a room (2 max per player per room, outside the limit of 3). The 1st enemy unit that enters the room or attacks in it (Reach included) takes 1 damage and is Stunned, then a Glyph is removed. Only 1 Glyph triggers per unit per turn.\nPint: -1 HP to the barrel (-2 strong drink) → effect on a unit.\nSoak: once per turn, the barrel takes all the damage of one hit instead of one of your units in its room.\nSap: tokens on the grove (4 max), pay for recipes.\nArcana: tokens on the circle (4 max), +1 per spell you cast, pay for Incantations. An Incantation isn't a spell.\nOverload: up to 6, each token above 4 deals 1 damage to the circle at your Rest.",
+  "customHelp": "Guild Rush (proto) · dungeon: Goblin Mine. Full rules: livret/en/livret.md in the repository.\nGoal: the most treasure. End: a player at 12 treasure at the end of a round, or boss killed (end of that turn). Tie: the boss killer, then the most monsters killed.\nBoard: 4 rooms in a row (neighbor = ±1), one monster each. Facing each room, one Expedition per player (3 units max, tokens included). The Camp touches all your Expeditions, no limit; it isn't a room.\nTurn: Rest (energy to max, 3 then +1 per round up to 6; draw 1; heal Recovering units; Guardian passive) → Scheme (Scouts, face-down Bluff, break camp) → Assault → Withdrawal (treasure to the counter, Terrain level).\nAssault: a unit you play arrives directly in the Expedition you want or in the Camp (TCG Arena puts it in Exp. 1: drag it). A unit in play moves once per turn (neighboring Expedition, Camp, or from the Camp to any Expedition). Wounded: only toward the Camp (Recovering).\nCombat (optional), room by room, in any order: declare your attackers and each one's target, then Duel (announce it in the chat; the opponent plays or passes first, then Reflex / Terrain bonus / pass; 2 passes = strikes). Then the monster strikes 1 present attacker chosen by the opponent (even if you target something else), your attackers all strike at the same time, then (Brawl) the enemy units in the room strike the target of their choice. 1 strike per unit per player turn.\nKilling blow: the killer (controller of the last damage) takes all the treasure and the relic. Fall back: if the opponent kills the monster during a Brawl, your units that attacked may return to the Camp. A spell is cast in a room where you have a unit (Reach: or neighboring).\nRaid (from round 2, 1 per Assault): after a kill in a room, your units in that room attack the enemy Camp. Success if more raiders than standing defenders (Guardian included): 1 treasure stolen, +1 if the Guardian is Knocked out.\nMonster killed: the host puts it in “Defeated monsters”, the killer adds its treasure (gold badge) to their counter. Elite (relic icon, relic printed on the card): “Take the relic” in the Dungeon panel gives the relic of the last Elite defeated. Monsters don't evolve. Automatic: empty rooms refilled at the start of each turn. Boss: its “Reign” effect is active from the start.\nTerrain: starts next to the Guardian, drag it to an Expedition on your 1st Assault. Lvl 1 when placed, +1 at Withdrawal if it didn't move (3 max, lvl 3 = Stronghold). Break camp: neighboring Expedition, -1 level. Destroyed by the opponent: +1 treasure for them (plunder), comes back at lvl 1 on your next Assault.\nCounter = Treasure. HP and Power: card counters (right click > Toggle counter 1 = HP, key C; counter 2 = Power, Ctrl C). Tokens to drag onto cards: Resource (Sap, Arcana or Wager: 1 token = 1, on your Terrain), Level 1-3, states (Stunned, Poisoned, Swift, Unflinching, Tipsy, Hangover, Backlash, Snared, Recovering, Aegis, Trap, Glyph). Glyph: drag it onto the monster of its room.\nDeck: 1 Guardian + 1 Terrain of its faction + 30 cards of the faction, including 20 min. from the Guardian's pool (3 copies max, Signature 1). TCG Arena doesn't check the rule of 20. Personal dungeon: 4 monsters (2 Elites, 2 normal, 9 treasure max) and 1 boss; at the start, the host shuffles both decks' monsters with the Sapper and the Mimic.\nSprout and Wolf tokens: right click on the card that summons them.\nLanguage: Options menu (English / Français).\n\nGLOSSARY (bible/en/00_glossaire_en.md; recalled at the bottom of the cards that use it)\nBrawl: both players in the same room. Order: monster, active player, opponent. The killing blow takes everything.\nFall back: if the opponent kills the monster during a Brawl, a unit that attacked may return to the Camp (not if Snared).\nPlunder: destroying the enemy Terrain = +1 treasure.\nWounded: unit with at least 1 damage on its base HP. Normal movement: only toward the Camp.\nBreak camp: move the Terrain to a neighboring Expedition (-1 level).\nSignature: 1 copy max per deck.\nSwift: after its combat on your Assault, the unit may change room (outside the movement limit) and attack 1 more time.\nReflex: playable in a Duel. Without Reflex, a spell is played on your Assault, outside a Duel.\nReach: the unit can attack in a room neighboring its Expedition; the monster doesn't strike back; it doesn't count as present in that room (no Brawl, no Stronghold, no Fall back). Respects Protector. On a spell: it can target a room neighboring one of your units.\nReinforce: triggers when the unit is called back to the Camp during a raid.\nProtector: an attack (unit or monster) against your units or your Terrain in its room must target it. Spells, effects and Ambushes target freely. Protects even when Stunned; in a raid, comes before the Guardian.\nScout: played at Scheme, directly in the chosen Expedition, and doesn't change room this turn. Its \"Scheme:\" effect triggers again at each of your Schemes while it is in an Expedition.\nBluff: placed face down in an Expedition at Scheme, revealed at Assault.\nTry your luck: reveal the top card of your deck, then put it at the bottom of your deck. Success if its cost is 2 or more. Empty deck: failure.\nAmbush: effect when it arrives.\nStunned: doesn't strike in its next combat. Stunned during its attack: that attack is canceled.\nPoisoned: -1 HP at each of its owner's Rests, until healed.\nUnflinching: can't be Stunned this turn (Whisky).\nTipsy: drank a drink this turn (a 2nd = Stunned).\nHangover: Stunned until the end of your next turn (Rum).\nBacklash: -2 HP at your next Rest (Absinthe).\nSnared: can't change room (Web).\nRecovering: wounded unit that arrived at the Camp. Fully healed at your next Rest, then stays at the Camp until the end of that turn.\nKnocked out: Guardian at 0 HP, no longer defends; comes back at its next Rest (HP to max).\nTrap: face-down token set by a Scout on its room (1 per player per room, outside the limit of 3). Triggers on the 1st enemy unit that enters the room (tokens included), then discarded.\nWager: token on the Betting Keg (3 max), gained per monster killed here. 3 Wagers = 1 treasure at Withdrawal. Lost if the barrel explodes.\nDecoy: Trap with no effect, set instead of the real one to bluff.\nAegis: ignores the next hit received (all its damage, from one source), then disappears. Doesn't stack. Doesn't block HP losses (Poisoned, Backlash).\nGlyph: face-up token placed by a Mage on a room (2 max per player per room, outside the limit of 3). The 1st enemy unit that enters the room or attacks in it (Reach included) takes 1 damage and is Stunned, then a Glyph is removed. Only 1 Glyph triggers per unit per turn.\nPint: -1 HP to the barrel (-2 strong drink) → effect on a unit.\nSoak: once per turn, the barrel takes all the damage of one hit instead of one of your units in its room.\nSap: tokens on the grove (4 max), pay for recipes.\nArcana: tokens on the circle (4 max), +1 per spell you cast, pay for Incantations. An Incantation isn't a spell.\nOverload: up to 6, each token above 4 deals 1 damage to the circle at your Rest.",
   "deckBuilding": {
     "mainFilters": [
       "faction",
@@ -15,7 +15,9 @@
         "gameplay": "Standard",
         "customCategories": [
           "Gardien",
-          "Terrain"
+          "Terrain",
+          "Monstre",
+          "Boss"
         ],
         "deckRuleset": "Proto",
         "legalityCode": "PROTO"
@@ -39,6 +41,18 @@
           {
             "category": "Terrain",
             "min": 1,
+            "max": 1,
+            "ignoreTotalCount": true
+          },
+          {
+            "category": "Monstre",
+            "min": 0,
+            "max": 4,
+            "ignoreTotalCount": true
+          },
+          {
+            "category": "Boss",
+            "min": 0,
             "max": 1,
             "ignoreTotalCount": true
           }
@@ -165,46 +179,6 @@
               "overrideState": {
                 "isHidden": "no"
               }
-            },
-            {
-              "createCardId": "gobelin",
-              "count": 1,
-              "destination": "Monstres"
-            },
-            {
-              "createCardId": "rat",
-              "count": 1,
-              "destination": "Monstres"
-            },
-            {
-              "createCardId": "archer",
-              "count": 1,
-              "destination": "Monstres"
-            },
-            {
-              "createCardId": "chaman",
-              "count": 1,
-              "destination": "Monstres"
-            },
-            {
-              "createCardId": "araignee",
-              "count": 1,
-              "destination": "Monstres"
-            },
-            {
-              "createCardId": "golem",
-              "count": 1,
-              "destination": "Monstres"
-            },
-            {
-              "createCardId": "contremaitre",
-              "count": 1,
-              "destination": "Monstres"
-            },
-            {
-              "createCardId": "troll",
-              "count": 1,
-              "destination": "Monstres"
             }
           ],
           "1": [
@@ -291,6 +265,16 @@
                     "backgroundImage": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='22'%3E%3Ctext x='0' y='15' font-family='Arial,sans-serif' font-size='12' font-weight='700' letter-spacing='1' fill='rgba%28255,255,255,0.40%29'%3EGARDIEN %C2%B7 GUARDIAN%3C/text%3E%3C/svg%3E\")",
                     "backgroundRepeat": "no-repeat",
                     "backgroundPosition": "left 22px top 3px"
+                  }
+                },
+                {
+                  "section": "Reserve",
+                  "style": {
+                    "width": "0",
+                    "position": "absolute",
+                    "opacity": 0,
+                    "pointerEvents": "none",
+                    "scale": 0
                   }
                 }
               ],
@@ -549,7 +533,7 @@
             "defaultValue": {
               "nom": "Mine des Gobelins",
               "manche": 1,
-              "pioche": 4,
+              "pioche": 0,
               "boss": false,
               "arrivee": {
                 "Salle1": 0,
@@ -557,11 +541,7 @@
                 "Salle3": 0,
                 "Salle4": 0
               },
-              "reliques": [
-                "lanterne",
-                "pioche-runique",
-                "bourse"
-              ]
+              "relDonnees": 0
             },
             "blueprint": {
               "type": "div",
@@ -625,14 +605,14 @@
                       "opacity": "0.85"
                     }
                   },
-                  "children": "Reliques : {{ (game.data.Donjon.reliques || []).length }} / 3"
+                  "children": "Reliques prises : {{ game.data.Donjon.relDonnees || 0 }}"
                 },
                 {
                   "type": "button",
                   "props": {
                     "className": "btn btn-warning btn-sm"
                   },
-                  "onClick": "const d=game.data.Donjon;const r=d.reliques||[];if(!r.length){functions.chatLog('Plus aucune relique dans le donjon.');return;}const id=r[0];d.reliques=r.slice(1);await functions.createCard(id,'Camp');functions.chatLog('Relique gagnée : '+({\"lanterne\": \"Lanterne du mineur\", \"pioche-runique\": \"Pioche runique\", \"bourse\": \"Bourse du contremaître\"}[id]||id)+' (au Camp).');await functions.repositionCards();",
+                  "onClick": "const d=game.data.Donjon;const R={chaman:'lanterne',araignee:'pioche-runique',contremaitre:'bourse',ver:'ecaille'};const N={lanterne:'Lanterne du mineur','pioche-runique':'Pioche runique',bourse:'Bourse du contremaître',ecaille:'Écaille du ver'};const el=(cards.CimetiereMonstres??[]).map(c=>functions.getCardData(c)?.id).filter(id=>R[id]);const n=d.relDonnees||0;if(el.length<=n){functions.chatLog('Aucune Élite vaincue dont la relique reste à prendre.');return;}const id=R[el[n]];d.relDonnees=n+1;await functions.createCard(id,'Camp');functions.chatLog('Relique gagnée : '+N[id]+' (au Camp).');await functions.repositionCards();",
                   "children": "Prendre la relique"
                 },
                 {
@@ -647,9 +627,9 @@
               ]
             },
             "events": {
-              "onPlayersReady": "if(!game.isHost)return;\nawait functions.shuffleSection('Monstres');\nconst d=game.data.Donjon;\nfor(const s of ['Salle1','Salle2','Salle3','Salle4']){await functions.drawFromExtraDeck('Monstres',1,false,s);d.arrivee[s]=0;}\nd.manche=1;d.pioche=4;d.boss=false;\nconst r=[...(d.reliques||[])];for(let i=r.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[r[i],r[j]]=[r[j],r[i]];}d.reliques=r;\nfunctions.chatLog('Mine des Gobelins : 4 monstres dans les salles, 4 dans la pioche, puis Grombak.');\nawait functions.repositionCards();",
-              "onNewTurn": "const n=game.turn?.count??1, tp=game.turn?.totalPlayers||2;\nconst m=Math.ceil(n/tp);\nif(game.turn?.isMyTurn){\n  const max=Math.min(6,2+m);\n  const en=cards.Energie??[];\n  for(let i=en.length;i<max;i++){await functions.createCard('energie','Energie');}\n  const t=en.filter(c=>c.isTapped);\n  if(t.length){await functions.updateCards(t,{isTapped:false});}\n  functions.chatLog('Repos (manche '+m+') : énergie '+max+' / '+max+'.');\n}\nif(game.isHost && n>1){\n  const d=game.data.Donjon; d.arrivee=d.arrivee||{};\n  const pm=Math.ceil((n-1)/tp);\n  const salles=['Salle1','Salle2','Salle3','Salle4'];\n  let pioche=(cards.Monstres??[]).length; const boss=(cards.Boss??[])[0];\n  for(const s of salles){\n    if((cards[s]??[]).length) continue;\n    if(pioche>0){await functions.drawFromExtraDeck('Monstres',1,false,s);pioche--;d.arrivee[s]=pm;functions.chatLog('Retrait : un monstre entre dans la salle '+s.slice(-1)+'.');}\n    else if(boss && !d.boss){await functions.moveCard(boss,s);d.boss=true;d.arrivee[s]=pm;functions.chatLog('Retrait : le boss entre dans la salle '+s.slice(-1)+' !');}\n  }\n  if(m>pm){\n    const evo=[];\n    for(const s of salles){for(const c of (cards[s]??[])){\n      if(!c.isFlipped && (d.arrivee[s]??0)<pm && functions.getCardData(c)?.type==='Monstre') evo.push(c);}}\n    if(evo.length){await functions.updateCards(evo,{isFlipped:true});functions.chatLog('Fin de manche '+pm+' : '+evo.length+' monstre(s) évoluent.');}\n    d.manche=m;\n  }\n  d.pioche=pioche;\n  await functions.repositionCards();\n}",
-              "onUpdate": "if(!game.isHost)return;const d=game.data.Donjon;if(d.lanterne&&d.lanterne!==d.lanterneFait){d.lanterneFait=d.lanterne;const n=(cards.Monstres??[]).length;if(n<2){functions.chatLog('Lanterne : rien à réordonner.');}else{await functions.drawFromExtraDeck('Monstres',1,false,'Coulisse');for(let i=0;i<n-1;i++){await functions.drawFromExtraDeck('Monstres',1,true,'Coulisse');}for(let i=0;i<n;i++){await functions.drawFromExtraDeck('Coulisse',1,true,'Monstres');}functions.chatLog('Lanterne : le monstre du dessus est passé sous la pioche.');await functions.repositionCards();}}"
+              "onPlayersReady": "const d=game.data.Donjon;\nconst mes=(cards.Reserve??[]).map(c=>functions.getCardData(c)).filter(x=>x&&x.type==='Monstre').map(x=>x.id);\nif(game.isHost){d.listeHote=mes;}else{d.listeInvite=mes;return;}\nfor(let t=0;t<20&&!game.data.Donjon.listeInvite;t++){await new Promise(r=>setTimeout(r,500));}\nconst force=true;\nif(!game.isHost||d.construit)return;\nconst MINE=['gobelin','rat','archer','chaman','araignee','golem','contremaitre','troll'];\nconst DEFAUT=['chaman','araignee','gobelin','rat'];\nconst h=d.listeHote, i=d.listeInvite;\nif(!force&&!(h&&i))return;\nd.construit=true;\nlet ids;\nif(!(h&&h.length)&&!(i&&i.length)){ids=[...MINE];functions.chatLog('Aucun deck n’a de monstres : on joue la Mine complète.');}\nelse{ids=[...((h&&h.length)?h:DEFAUT),...((i&&i.length)?i:DEFAUT)];if(!(h&&h.length)||!(i&&i.length))functions.chatLog('Un deck sans monstres : 4 monstres de base à sa place.');}\nids.push('sapeur','mimique');\nfor(const id of ids){await functions.createCard(id,'Monstres');}\nawait functions.shuffleSection('Monstres');\nd.arrivee=d.arrivee||{};\nfor(const s of ['Salle1','Salle2','Salle3','Salle4']){await functions.drawFromExtraDeck('Monstres',1,false,s);d.arrivee[s]=0;}\nd.manche=1;d.pioche=ids.length-4;d.boss=false;d.relDonnees=0;\nfunctions.chatLog('Mine des Gobelins : '+ids.length+' monstres (4 dans les salles, '+(ids.length-4)+' dans la pioche), puis le boss. Règne actif dès maintenant.');\nawait functions.repositionCards();\n",
+              "onNewTurn": "const n=game.turn?.count??1, tp=game.turn?.totalPlayers||2;\nconst m=Math.ceil(n/tp);\nif(game.turn?.isMyTurn){\n  const max=Math.min(6,2+m);\n  const en=cards.Energie??[];\n  for(let i=en.length;i<max;i++){await functions.createCard('energie','Energie');}\n  const t=en.filter(c=>c.isTapped);\n  if(t.length){await functions.updateCards(t,{isTapped:false});}\n  functions.chatLog('Repos (manche '+m+') : énergie '+max+' / '+max+'.');\n}\nif(game.isHost && n>1){\n  const d=game.data.Donjon; d.arrivee=d.arrivee||{};\n  const pm=Math.ceil((n-1)/tp);\n  const salles=['Salle1','Salle2','Salle3','Salle4'];\n  let pioche=(cards.Monstres??[]).length; const boss=(cards.Boss??[])[0];\n  for(const s of salles){\n    if((cards[s]??[]).length) continue;\n    if(pioche>0){await functions.drawFromExtraDeck('Monstres',1,false,s);pioche--;d.arrivee[s]=pm;functions.chatLog('Retrait : un monstre entre dans la salle '+s.slice(-1)+'.');}\n    else if(boss && !d.boss){await functions.moveCard(boss,s);d.boss=true;d.arrivee[s]=pm;functions.chatLog('Retrait : le boss entre dans la salle '+s.slice(-1)+' !');}\n  }\n  if(m>pm){\n    d.manche=m;\n  }\n  d.pioche=pioche;\n  await functions.repositionCards();\n}",
+              "onUpdate": "if(!game.isHost)return;\n{const force=false;\nconst d=game.data.Donjon;\nif(!d.construit){\nconst MINE=['gobelin','rat','archer','chaman','araignee','golem','contremaitre','troll'];\nconst DEFAUT=['chaman','araignee','gobelin','rat'];\nconst h=d.listeHote, i=d.listeInvite;\nif(force||(h&&i)){\nd.construit=true;\nlet ids;\nif(!(h&&h.length)&&!(i&&i.length)){ids=[...MINE];functions.chatLog('Aucun deck n’a de monstres : on joue la Mine complète.');}\nelse{ids=[...((h&&h.length)?h:DEFAUT),...((i&&i.length)?i:DEFAUT)];if(!(h&&h.length)||!(i&&i.length))functions.chatLog('Un deck sans monstres : 4 monstres de base à sa place.');}\nids.push('sapeur','mimique');\nfor(const id of ids){await functions.createCard(id,'Monstres');}\nawait functions.shuffleSection('Monstres');\nd.arrivee=d.arrivee||{};\nfor(const s of ['Salle1','Salle2','Salle3','Salle4']){await functions.drawFromExtraDeck('Monstres',1,false,s);d.arrivee[s]=0;}\nd.manche=1;d.pioche=ids.length-4;d.boss=false;d.relDonnees=0;\nfunctions.chatLog('Mine des Gobelins : '+ids.length+' monstres (4 dans les salles, '+(ids.length-4)+' dans la pioche), puis le boss. Règne actif dès maintenant.');\nawait functions.repositionCards();\n}}}\nconst d=game.data.Donjon;if(d.lanterne&&d.lanterne!==d.lanterneFait){d.lanterneFait=d.lanterne;const n=(cards.Monstres??[]).length;if(n<2){functions.chatLog('Lanterne : rien à réordonner.');}else{await functions.drawFromExtraDeck('Monstres',1,false,'Coulisse');for(let i=0;i<n-1;i++){await functions.drawFromExtraDeck('Monstres',1,true,'Coulisse');}for(let i=0;i<n;i++){await functions.drawFromExtraDeck('Coulisse',1,true,'Monstres');}functions.chatLog('Lanterne : le monstre du dessus est passé sous la pioche.');await functions.repositionCards();}}"
             }
           },
           "BF1": {
@@ -685,6 +665,12 @@
             "height": 1,
             "alignment": "DECK",
             "displayedTitle": "Coulisse"
+          },
+          "Reserve": {
+            "isHidden": "yes",
+            "height": 1,
+            "alignment": "DECK",
+            "displayedTitle": "Donjon perso"
           }
         },
         "autoPlayFromHand": {
@@ -699,7 +685,9 @@
         },
         "categoriesAlreadyOnBoard": [
           "Gardien->Gardien",
-          "Terrain->Gardien"
+          "Terrain->Gardien",
+          "Monstre->Reserve",
+          "Boss->Reserve"
         ],
         "autoPlayFromStack": {
           "Unite": "BF1",

@@ -1,13 +1,22 @@
 # Guild Rush — Journal des décisions
 `[OK]` validé · `[NON]` rejeté (avec la raison) · `[?]` ouvert. On ajoute en haut, on ne réécrit pas.
 
+## Monstres dans les decks (2026-10-16)
+- [OK] Chaque joueur apporte 4 monstres (2 Élites à relique, 2 normaux) et 1 boss ; la Mine ajoute 2 monstres neutres, Sapeur gobelin et Wagonnet mimique (10 au total). Simu ~59 % fin à 12, J1 52 %.
+- [OK] Plus d'évolution. Élite = carte à une face, stats de l'ancien verso + relique ; monstres normaux à une face ; verso libre pour le full art.
+- [OK] Un monstre ne profite pas à son propriétaire ; reliques neutres.
+- [OK] Le second joueur choisit le boss parmi les 2 apportés ; effet « Règne : » dès la mise en place.
+- [NON] Évolution après une manche entière : tout le donjon évoluait en manche 1 (playtest). Remplacée par les Élites.
+- [?] Proposé : chaque Élite a sa relique, imprimée sur sa carte (Grand chaman → Lanterne du mineur, Reine araignée → Pioche runique, Chef de guerre → Bourse du contremaître, Ver des profondeurs → Écaille du ver). 4e Élite : Ver des profondeurs 4/7, 3 trésors, Dévoreur. Decks de base : 2 Élites + 2 normaux + Grombak (livret/decks.md).
+- [?] À tester : plafond de 9 trésors pour les 4 monstres ; Lanterne trop forte quand on connaît ses monstres ; boss = fin de manche si J1 vole le boss ; Règne de Grombak (+1 PV aux monstres en jeu) à tester.
+
 ## Plateau (2026-10-16)
 - [OK] 4 salles en ligne (1-2-3-4), voisine = ±1. Camp hors du donjon, touche toutes les Expéditions, pas une salle, sans limite.
 - [OK] Pose directe dans l'Expédition voulue (plus de transit par l'Exp. 1) ; entrer = s'arrêter.
 - [?] À tester : Terrain au centre (salles 2-3) trop fort pour les Mages ?
 
 ## Dégâts (2026-10-16)
-- [OK] Dégâts persistants jusqu'au soin. PV bonus absorbés en premier. Blessé = dégât sur les PV de base, ne va qu'au Camp. En soin : soigné au Repos, rate un tour. Monstre qui évolue : verso sans dégâts.
+- [OK] Dégâts persistants jusqu'au soin. PV bonus absorbés en premier. Blessé = dégât sur les PV de base, ne va qu'au Camp. En soin : soigné au Repos, rate un tour.
 
 ## Rédaction (2026-10-16)
 - [OK] Le [?] « Mages et Savants pas conçus » est clos : Mages faits, Savants en pause.
@@ -92,9 +101,8 @@
 - [OK] 4 salles, 3 unités max par Expédition (jetons compris).
 - [OK] Énergie : 3 à la manche 1, +1 par manche, max 6.
 - [OK] Fin : boss tué (fin du tour) ou 12 trésors en fin de manche.
-- [OK] Monstres recto/verso : évolution après une manche entière en jeu.
 
 ## Ouvert
-- [?] Donjon : 6 monstres en pioche au lieu de 4 (2 nouveaux monstres), pour équilibrer fin à 12 / fin au boss.
+- [OK] Donjon : 6 monstres en pioche (voir Monstres dans les decks, 2026-10-16).
 - [OK] Carte au trésor : rattrapage seulement (+1 au Retrait si mené), arrive fin de manche 1 chez le dernier, volable par raid à la place du 1er trésor.
 - [OK] Clos (2026-10-16) : Mages conçus, Savants en pause (voir Rédaction).

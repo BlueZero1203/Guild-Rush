@@ -7,6 +7,8 @@ Une ligne par terme. Si un terme est ici, il n'est jamais réexpliqué ailleurs.
 - **Expédition** : ta zone face à une salle (Exp. 1-4), mêmes voisines que sa salle. 3 unités max, jetons compris.
 - **Camp** : ta zone de repli et de soin, ciblée par les raids. Touche toutes tes Expéditions ; ce n'est pas une salle (ni voisine, ni Portée, ni Glyphe). Pas de limite d'unités.
 - **Entrer** : arriver dans une salle (pose, déplacement, retour du Camp).
+- **Élite** : monstre plus fort qui porte une relique. N'évolue pas.
+- **Règne** : effet d'un boss, actif dès la mise en place et jusqu'à sa mort.
 - **Taverne / Forêt / Cercle** : la salle où se trouve ton Terrain (baril / bosquet / cercle).
 
 ## Phases

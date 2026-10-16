@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""Decks préconstruits : un par Gardien (1 Gardien + son Terrain + 30 cartes, 20 min. de son pool).
+"""Decks préconstruits : un par Gardien (1 Gardien + son Terrain + 30 cartes, 20 min. de son pool)
+et son donjon perso (4 monstres : 2 Élites + 2 normaux, 9 trésors max ; 1 boss).
 
 Usage : python3 tools/decks.py   (après tools/from_bible.py, qui écrit cards.json)
 """
+import csv
 import json
 import os
 
@@ -48,9 +50,25 @@ DECKS = [
         "trait-feu": 3, "boule-feu": 2, "meteore": 1, "projectile": 3, "dissipation": 1}),
 ]
 
+# Donjon perso de chaque deck : 2 Élites, 2 monstres normaux, 1 boss
+DONJONS = {
+    "precon-guss": ["chaman", "araignee", "gobelin", "rat"],
+    "precon-rosa": ["contremaitre", "araignee", "gobelin", "rat"],
+    "precon-robin": ["ver", "chaman", "archer", "gobelin"],
+    "precon-cernun": ["chaman", "araignee", "golem", "gobelin"],
+    "precon-belladone": ["araignee", "ver", "rat", "golem"],
+    "precon-sylve": ["ver", "contremaitre", "rat", "gobelin"],
+    "precon-soffia": ["chaman", "araignee", "archer", "golem"],
+    "precon-orsin": ["araignee", "chaman", "golem", "rat"],
+    "precon-ignis": ["ver", "araignee", "golem", "rat"],
+}
+BOSS = "grombak"
+
 
 def main():
     cards = json.load(open(os.path.join(ROOT, "cards.json"), encoding="utf-8"))
+    with open(os.path.join(ROOT, "bible", "05_donjon_mine.csv"), encoding="utf-8") as fh:
+        elites = {r["id"] for r in csv.DictReader(fh) if r["relique"]}
     out = []
     for did, title, gardien, terrain, liste in DECKS:
         fac = cards[gardien]["faction"]
@@ -62,13 +80,18 @@ def main():
         total = sum(liste.values())
         pool = sum(n for cid, n in liste.items() if cards[cid].get("gardien") == gardien)
         assert total == 30 and pool >= 20, (did, total, pool)
-        L = {"categoriesOrder": ["Gardien", "Terrain", "Unite", "Sort"],
+        monstres = DONJONS[did]
+        tresors = sum(cards[m]["tresors"] for m in monstres)
+        assert len(set(monstres)) == 4 and len(elites & set(monstres)) == 2 and tresors <= 9, (did, monstres, tresors)
+        assert all(cards[m]["type"] == "Monstre" and "_legal" in cards[m] for m in monstres), did
+        L = {"categoriesOrder": ["Gardien", "Terrain", "Monstre", "Boss", "Unite", "Sort"],
              "Gardien": [{"id": gardien, "count": 1}], "Terrain": [{"id": terrain, "count": 1}],
+             "Monstre": [{"id": m, "count": 1} for m in monstres], "Boss": [{"id": BOSS, "count": 1}],
              "Unite": [{"id": k, "count": v} for k, v in liste.items() if cards[k]["type"] == "Unite"],
              "Sort": [{"id": k, "count": v} for k, v in liste.items() if cards[k]["type"] == "Sort"],
              "Sideboard": [], "_maybeboard": []}
         out.append({"id": did, "title": title, "format": "Proto (cartes de test)", "deckList": L})
-        print(f"{did}: 30 cartes, {pool} du pool")
+        print(f"{did}: 30 cartes, {pool} du pool, donjon {', '.join(monstres)} ({tresors} trésors)")
     json.dump(out, open(os.path.join(ROOT, "decks.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=2)
 
 
