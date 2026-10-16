@@ -328,11 +328,11 @@ def ecrire_cartes(cards_list):
 
 # --- jetons à glisser sur les cartes (même style que format_v3) ---
 JETONS_NEUFS = [
-    ("Arcane", "Arcane (Mages) : jetons sur le cercle, payent les Incantations", "ARCANE", (80, 90, 190)),
-    ("Mise", "Mise (Tonneau des paris) : 3 Mises = 1 trésor au Retrait", "MISE", (200, 160, 30)),
+    ("Ressource", "Ressource : Sève, Arcane ou Mise, sur ton Terrain (1 jeton = 1)", "◆", (200, 160, 30)),
     ("Egide", "Égide : ignore le prochain coup reçu", "ÉGIDE", (90, 160, 200)),
     ("Glyphe", "Glyphe (Mages) : 1 dégât et Sonné à la 1re unité adverse qui entre ou attaque ici", "GLY|PHE", (110, 60, 180)),
 ]
+JETONS_RETIRES = {"Seve", "Arcane", "Mise"}   # remplacés par Ressource
 NOMS = {  # libellés à jour des jetons existants
     "Sonne": "Sonné : ne frappe pas à son prochain combat",
     "GueuleDeBois": "Gueule de bois : Sonné jusqu'à la fin de ton prochain tour (Rhum)",
@@ -369,7 +369,7 @@ AIDE = [
     "Raid (dès la manche 2, 1 par Assaut) : après un kill dans une salle, tes unités de cette salle attaquent le Camp adverse. Réussi si plus de raiders que de défenseurs debout (Gardien compris) : 1 trésor volé, +1 si le Gardien est Assommé.",
     "Monstre tué : l'hôte le met dans « Monstres vaincus », le tueur ajoute ses trésors (pastille dorée) à son compteur. Icône Relique : « Prendre la relique » dans le panneau Donjon. Automatique : salles vides remplies au début de chaque tour ; évolution en fin de manche.",
     "Terrain : commence à côté du Gardien, glisse-le dans une Expédition à ton 1er Assaut. Niv 1 à la pose, +1 au Retrait s'il n'a pas bougé (3 max, niv. 3 = Fief). Lever le camp : Expédition voisine, -1 niveau. Détruit par l'adversaire : +1 trésor pour lui (pillage), revient au niv. 1 à ton Assaut suivant.",
-    "Compteur = Trésors. PV et Puissance : compteurs de la carte (clic droit > Toggle counter 1 = PV, touche C ; counter 2 = Puissance, Ctrl C). Jetons : Sève, Arcane, Mise, Niveau 1-3, états (Sonné, Empoisonné, Rapide, Insensible, Ivre, Gueule de bois, Contrecoup, Entravé, En soin, Égide, Piège, Glyphe).",
+    "Compteur = Trésors. PV et Puissance : compteurs de la carte (clic droit > Toggle counter 1 = PV, touche C ; counter 2 = Puissance, Ctrl C). Jetons à glisser sur les cartes : Ressource (Sève, Arcane ou Mise : 1 jeton = 1, sur ton Terrain), Niveau 1-3, états (Sonné, Empoisonné, Rapide, Insensible, Ivre, Gueule de bois, Contrecoup, Entravé, En soin, Égide, Piège, Glyphe). Glyphe : glisse-le sur le monstre de sa salle.",
     "Deck : 1 Gardien + 1 Terrain de sa faction + 30 cartes de la faction, dont 20 min. du pool du Gardien (3 ex. max, Signature 1). TCG Arena ne vérifie pas la règle des 20.",
     "Jetons Pousse et Loup : clic droit sur la carte qui les invoque.",
 ]
@@ -386,7 +386,7 @@ AIDE_EN = [  # à garder en phase avec AIDE
     "Raid (from round 2, 1 per Assault): after a kill in a room, your units in that room attack the enemy Camp. Success if more raiders than standing defenders (Guardian included): 1 treasure stolen, +1 if the Guardian is Knocked out.",
     "Monster killed: the host puts it in “Defeated monsters”, the killer adds its treasure (gold badge) to their counter. Relic icon: “Take the relic” in the Dungeon panel. Automatic: empty rooms refilled at the start of each turn; evolution at the end of the round.",
     "Terrain: starts next to the Guardian, drag it to an Expedition on your 1st Assault. Lvl 1 when placed, +1 at Withdrawal if it didn't move (3 max, lvl 3 = Stronghold). Break camp: neighboring Expedition, -1 level. Destroyed by the opponent: +1 treasure for them (plunder), comes back at lvl 1 on your next Assault.",
-    "Counter = Treasure. HP and Power: card counters (right click > Toggle counter 1 = HP, key C; counter 2 = Power, Ctrl C). Tokens: Sap, Arcana, Wager, Level 1-3, states (Stunned, Poisoned, Swift, Unflinching, Tipsy, Hangover, Backlash, Snared, Recovering, Aegis, Trap, Glyph).",
+    "Counter = Treasure. HP and Power: card counters (right click > Toggle counter 1 = HP, key C; counter 2 = Power, Ctrl C). Tokens to drag onto cards: Resource (Sap, Arcana or Wager: 1 token = 1, on your Terrain), Level 1-3, states (Stunned, Poisoned, Swift, Unflinching, Tipsy, Hangover, Backlash, Snared, Recovering, Aegis, Trap, Glyph). Glyph: drag it onto the monster of its room.",
     "Deck: 1 Guardian + 1 Terrain of its faction + 30 cards of the faction, including 20 min. from the Guardian's pool (3 copies max, Signature 1). TCG Arena doesn't check the rule of 20.",
     "Sprout and Wolf tokens: right click on the card that summons them.",
     "Language: Options menu (English / Français).",
@@ -405,7 +405,8 @@ UI_EN = {
     "Monstres vaincus": "Defeated monsters", "Énergie": "Energy", "Donjon": "Dungeon",
     "Expédition 1": "Expedition 1", "Expédition 2": "Expedition 2", "Expédition 3": "Expedition 3",
     "Expédition 4": "Expedition 4", "Coulisse": "Backstage",
-    "Sève": "Sap", "Niveau 1": "Level 1", "Niveau 2": "Level 2", "Niveau 3 (Fief)": "Level 3 (Stronghold)",
+    "Ressource : Sève, Arcane ou Mise, sur ton Terrain (1 jeton = 1)": "Resource: Sap, Arcana or Wager, on your Terrain (1 token = 1)",
+    "Niveau 1": "Level 1", "Niveau 2": "Level 2", "Niveau 3 (Fief)": "Level 3 (Stronghold)",
     "Sonné : ne frappe pas à son prochain combat": "Stunned: doesn't strike in its next combat",
     "Empoisonné : perd 1 PV à chaque Repos de son propriétaire, jusqu'à être soigné":
         "Poisoned: loses 1 HP at each of its owner's Rests, until healed",
@@ -418,8 +419,6 @@ UI_EN = {
     "En soin : blessé au Camp, soigné à ton prochain Repos puis reste au Camp ce tour":
         "Recovering: wounded in the Camp, healed at your next Rest then stays in the Camp that turn",
     "Piège (Éclaireur), face cachée ; Leurre possible": "Trap (Scout), face down; Decoy possible",
-    "Arcane (Mages) : jetons sur le cercle, payent les Incantations": "Arcana (Mages): tokens on the circle, pay for Incantations",
-    "Mise (Tonneau des paris) : 3 Mises = 1 trésor au Retrait": "Wager (Betting Keg): 3 Wagers = 1 treasure at Withdrawal",
     "Égide : ignore le prochain coup reçu": "Aegis: ignores the next hit received",
     "Glyphe (Mages) : 1 dégât et Sonné à la 1re unité adverse qui entre ou attaque ici":
         "Glyph (Mages): 1 damage and Stunned to the 1st enemy unit that enters or attacks here",
@@ -450,7 +449,11 @@ def maj_gamefile():
     p = os.path.join(ROOT, "gamefile.json")
     g = json.load(open(p, encoding="utf-8"))
     G = g["gameplay"]["Standard"]
-    toks = [t for t in G["draggableTokens"] if t["id"] not in {j[0] for j in JETONS_NEUFS}]
+    toks = [t for t in G["draggableTokens"] if t["id"] not in {j[0] for j in JETONS_NEUFS} | JETONS_RETIRES]
+    for tid in JETONS_RETIRES:
+        img = os.path.join(ROOT, "img", "tokens", f"{tid.lower()}.png")
+        if os.path.exists(img):
+            os.remove(img)
     for t in toks:
         t["name"] = NOMS.get(t["id"], t["name"])
     for tid, nom, txt, coul in JETONS_NEUFS:
