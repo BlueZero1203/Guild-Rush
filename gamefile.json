@@ -67,7 +67,13 @@
         0
       ],
       "mulligan": {
-        "startingHandSize": 5
+        "startingHandSize": 5,
+        "mulliganCount": { "min": 0, "max": 1 },
+        "mulliganCycle": {
+          "info": "Mulligan : une seule fois, toute ta main repart dans le deck et tu repioches 5. / Mulligan once: your whole hand goes back into your deck and you draw 5.",
+          "steps": ["toBottom", "shuffle", "draw"],
+          "selectionRange": { "min": 99, "max": 99 }
+        }
       },
       "newTurn": {
         "drawOnStart": false,
