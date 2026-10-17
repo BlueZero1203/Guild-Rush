@@ -7,6 +7,13 @@ TCG 1v1 : deux guildes se disputent les trésors d'un même donjon. Prototype jo
 - **Bible** (source de vérité) : [`bible/`](bible/) — glossaire, règles core, factions, cartes (`03_cartes.csv`), journal des décisions, donjon (`05_donjon_mine.csv`).
 - **TCG Arena** : `gamefile.json` (à importer), `cards.json`, `decks.json` et `img/` sont lus depuis la branche `main`.
 
+## Liens (toujours à jour)
+
+- **Jouer au proto** : [ouvrir dans TCG Arena](https://tcg-arena.fr/load/aHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGQmx1ZVplcm8xMjAzJTJGR3VpbGQtUnVzaCUyRm1haW4lMkZnYW1lZmlsZS5qc29u) (charge `gamefile.json` de `main`).
+- **Livret PDF** : [français](https://github.com/BlueZero1203/Guild-Rush/releases/download/livret/Guild_Rush_livret.pdf) · [English](https://github.com/BlueZero1203/Guild-Rush/releases/download/livret/Guild_Rush_rules_EN.pdf).
+
+À chaque changement de `bible/`, `tools/` ou `livret/` fusionné dans `main`, l'action [`maj-auto`](.github/workflows/maj-auto.yml) relance `tools/from_bible.py`, pousse les cartes et le gamefile régénérés sur `main`, puis réimprime le livret en PDF dans la release `livret`. GitHub garde le contenu de `main` en cache ~5 min : attendre un peu, puis lancer une nouvelle partie.
+
 ## Mettre à jour les cartes
 
 Après une modif de `bible/03_cartes.csv` ou `bible/05_donjon_mine.csv` :
