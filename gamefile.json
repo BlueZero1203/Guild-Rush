@@ -70,9 +70,9 @@
         "startingHandSize": 5,
         "mulliganCount": { "min": 0, "max": 1 },
         "mulliganCycle": {
-          "info": "Mulligan : une seule fois, toute ta main repart dans le deck et tu repioches 5. / Mulligan once: your whole hand goes back into your deck and you draw 5.",
+          "info": "Mulligan : une seule fois, choisis 1 à 3 cartes, elles repartent dans le deck et tu en repioches autant (ou garde ta main). / Mulligan once: pick 1 to 3 cards, they go back into your deck and you draw as many (or keep your hand).",
           "steps": ["toBottom", "shuffle", "draw"],
-          "selectionRange": { "min": 99, "max": 99 }
+          "selectionRange": { "min": 1, "max": 3 }
         }
       },
       "newTurn": {
