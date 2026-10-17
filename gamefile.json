@@ -70,9 +70,9 @@
         "startingHandSize": 5,
         "mulliganCount": { "min": 0, "max": 1 },
         "mulliganCycle": {
-          "info": "Mulligan : une seule fois, toute ta main repart dans le deck et tu repioches 5. / Mulligan once: your whole hand goes back into your deck and you draw 5.",
+          "info": "Mulligan : une seule fois, choisis 1 à 3 cartes, elles repartent dans le deck et tu en repioches autant (ou garde ta main). / Mulligan once: pick 1 to 3 cards, they go back into your deck and you draw as many (or keep your hand).",
           "steps": ["toBottom", "shuffle", "draw"],
-          "selectionRange": { "min": 99, "max": 99 }
+          "selectionRange": { "min": 1, "max": 3 }
         }
       },
       "newTurn": {
@@ -592,43 +592,6 @@
                     }
                   },
                   "children": "Manche {{ game.data.Donjon.manche }}"
-                },
-                {
-                  "type": "div",
-                  "props": {
-                    "style": {
-                      "fontSize": "0.85em",
-                      "opacity": "0.85"
-                    }
-                  },
-                  "children": "{{ game.data.Donjon.boss ? 'Le boss est entré !' : 'Pioche : ' + game.data.Donjon.pioche + ' monstre(s)' }}"
-                },
-                {
-                  "type": "div",
-                  "props": {
-                    "style": {
-                      "fontSize": "0.85em",
-                      "opacity": "0.85"
-                    }
-                  },
-                  "children": "Reliques prises : {{ game.data.Donjon.relDonnees || 0 }}"
-                },
-                {
-                  "type": "button",
-                  "props": {
-                    "className": "btn btn-warning btn-sm"
-                  },
-                  "onClick": "const d=game.data.Donjon;const R={chaman:'lanterne',araignee:'pioche-runique',contremaitre:'bourse',ver:'ecaille'};const N={lanterne:'Lanterne du mineur','pioche-runique':'Pioche runique',bourse:'Bourse du contremaître',ecaille:'Écaille du ver'};const el=(cards.CimetiereMonstres??[]).map(c=>functions.getCardData(c)?.id).filter(id=>R[id]);const n=d.relDonnees||0;if(el.length<=n){functions.chatLog('Aucune Élite vaincue dont la relique reste à prendre.');return;}const id=R[el[n]];d.relDonnees=n+1;await functions.createCard(id,'Camp');functions.chatLog('Relique gagnée : '+N[id]+' (au Camp).');await functions.repositionCards();",
-                  "children": "Prendre la relique"
-                },
-                {
-                  "type": "button",
-                  "props": {
-                    "className": "btn btn-secondary btn-sm",
-                    "title": "Lanterne : le monstre du dessus de la pioche passe en dessous"
-                  },
-                  "onClick": "const d=game.data.Donjon;if(!game.isHost){d.lanterne=Date.now();functions.chatLog('Lanterne : demande envoyée à l’hôte.');return;}d.lanterne=Date.now();d.lanterneFait=d.lanterne;const n=(cards.Monstres??[]).length;if(n<2){functions.chatLog('Lanterne : rien à réordonner.');}else{await functions.drawFromExtraDeck('Monstres',1,false,'Coulisse');for(let i=0;i<n-1;i++){await functions.drawFromExtraDeck('Monstres',1,true,'Coulisse');}for(let i=0;i<n;i++){await functions.drawFromExtraDeck('Coulisse',1,true,'Monstres');}functions.chatLog('Lanterne : le monstre du dessus est passé sous la pioche.');await functions.repositionCards();}",
-                  "children": "Dessus → dessous"
                 }
               ]
             },

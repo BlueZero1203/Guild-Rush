@@ -47,7 +47,7 @@ Le plus de trésors gagne. Égalité : le tueur du boss, sinon celui qui a tué 
 
 1. Tire au sort le premier joueur. Le second choisit l'un des 2 boss apportés ; il attend à côté du donjon et son **Règne** s'applique dès maintenant.
 2. Mélange face cachée les 8 monstres des joueurs et les 2 monstres de la Mine (Sapeur gobelin, Wagonnet mimique). Pose-en 1 dans chaque salle ; les 6 autres forment la pioche de monstres.
-3. Chaque joueur pose son Gardien au Camp, son Terrain à côté, mélange son deck et pioche **5 cartes**. Il peut faire **un seul mulligan** : remettre toute sa main dans le deck, mélanger et repiocher 5 cartes, qu'il doit garder. Le premier joueur décide d'abord.
+3. Chaque joueur pose son Gardien au Camp, son Terrain à côté, mélange son deck et pioche **5 cartes**. Il peut faire **un seul mulligan** : remettre 1 à 3 cartes de sa main dans le deck, mélanger et repiocher autant, puis garder sa main. Le premier joueur décide d'abord.
 4. Au 1er Assaut, chaque joueur pose son Terrain dans l'Expédition de son choix.
 
 ## 5. Le tour
