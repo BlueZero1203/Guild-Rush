@@ -1,0 +1,77 @@
+# À chaque changement poussé sur main :
+#  1. régénère cards.json, les images, les jetons et l'aide de gamefile.json depuis bible/ (tools/from_bible.py)
+#     et les pousse sur main s'ils ont changé → TCG Arena (qui lit main) est à jour ;
+#  2. imprime le livret (FR et EN) en PDF et le dépose dans la release « livret » (lien fixe).
+name: Mise à jour auto (proto + livret PDF)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "bible/**"
+      - "tools/**"
+      - "livret/**"
+      - ".github/workflows/maj-auto.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: maj-auto
+  cancel-in-progress: false
+
+jobs:
+  maj:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Dépendances (Pillow, polices DejaVu des cartes)
+        run: |
+          pip install pillow==12.3.0
+          sudo apt-get install -y --no-install-recommends fonts-dejavu-core
+
+      - name: Cartes et gamefile depuis la bible
+        run: python3 tools/from_bible.py
+
+      - name: Pousser les fichiers régénérés
+        run: |
+          git add -A cards.json gamefile.json translations.json img
+          if git diff --cached --quiet; then
+            echo "Rien à régénérer."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Proto régénéré depuis la bible (${GITHUB_SHA::7})"
+            git push origin HEAD:main
+          fi
+
+      - name: Livret en PDF (FR et EN)
+        run: |
+          mkdir -p out
+          for src in "livret/livret.html:out/Guild_Rush_livret.pdf" "livret/en/livret.html:out/Guild_Rush_rules_EN.pdf"; do
+            google-chrome --headless --no-sandbox --disable-gpu --no-pdf-header-footer \
+              --run-all-compositor-stages-before-draw --virtual-time-budget=15000 \
+              --print-to-pdf="${src#*:}" "file://$PWD/${src%%:*}"
+            test -s "${src#*:}"
+          done
+
+      - name: Release « livret » (lien fixe)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          NOTES="Livret mis à jour automatiquement à chaque changement poussé sur main (dernier : ${GITHUB_SHA::7}, $(date -u +%F)).
+
+          Jouer au proto sur TCG Arena : https://tcg-arena.fr/load/aHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGQmx1ZVplcm8xMjAzJTJGR3VpbGQtUnVzaCUyRm1haW4lMkZnYW1lZmlsZS5qc29u"
+          if ! gh release view livret >/dev/null 2>&1; then
+            gh release create livret --title "Livret de règles (à jour)" --notes "$NOTES" --latest
+          fi
+          gh release upload livret out/*.pdf --clobber
+          gh release edit livret --notes "$NOTES"
