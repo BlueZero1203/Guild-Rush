@@ -2,6 +2,7 @@
 `[OK]` validé · `[NON]` rejeté (avec la raison) · `[?]` ouvert. On ajoute en haut, on ne réécrit pas.
 
 ## Monstres dans les decks (2026-10-16)
+- [OK] Chaque Élite a sa relique, imprimée sur sa carte (Grand chaman → Lanterne du mineur, Reine araignée → Pioche runique, Chef de guerre → Bourse du contremaître, Ver des profondeurs → Écaille du ver). 4e Élite : Ver des profondeurs 4/7, 3 trésors, Dévoreur. Clôt le [?] « Proposé » ci-dessous, déjà appliqué dans 05 (2026-10-17).
 - [OK] Chaque joueur apporte 4 monstres (2 Élites à relique, 2 normaux) et 1 boss ; la Mine ajoute 2 monstres neutres, Sapeur gobelin et Wagonnet mimique (10 au total). Simu ~59 % fin à 12, J1 52 %.
 - [OK] Plus d'évolution. Élite = carte à une face, stats de l'ancien verso + relique ; monstres normaux à une face ; verso libre pour le full art.
 - [OK] Un monstre ne profite pas à son propriétaire ; reliques neutres.
