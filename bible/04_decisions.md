@@ -104,7 +104,7 @@
 - [OK] 4 salles, 3 unités max par Expédition (jetons compris).
 - [OK] Énergie : 3 à la manche 1, +1 par manche, max 6.
 - [OK] Fin : boss tué (fin du tour) ou 12 trésors en fin de manche.
-- [OK] Mulligan : une seule fois, toute la main (repioche 5, sans pénalité) (2026-10-17).
+- [OK] Mulligan : une seule fois, 1 à 3 cartes au choix remises dans le deck, repioche autant (sans pénalité) (2026-10-17).
 
 ## Ouvert
 - [OK] Donjon : 6 monstres en pioche (voir Monstres dans les decks, 2026-10-16).

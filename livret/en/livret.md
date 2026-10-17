@@ -47,7 +47,7 @@ Most treasure wins. Tie: the boss's killer wins, otherwise whoever killed the mo
 
 1. Randomly determine the first player. The second player chooses one of the 2 bosses brought; it waits beside the dungeon and its **Reign** applies from now on.
 2. Shuffle face down the players' 8 monsters and the 2 Mine monsters (Goblin Sapper, Mimic Minecart). Place 1 in each room; the other 6 form the monster deck.
-3. Each player places their Guardian in their Camp and their Terrain beside it, shuffles their deck and draws **5 cards**. Each player may **mulligan once**: shuffle their whole hand back into the deck and draw 5 new cards, which they must keep. The first player decides first.
+3. Each player places their Guardian in their Camp and their Terrain beside it, shuffles their deck and draws **5 cards**. Each player may **mulligan once**: shuffle 1 to 3 cards from their hand back into the deck and draw that many, then keep that hand. The first player decides first.
 4. At the 1st Assault, each player places their Terrain in the Expedition of their choice.
 
 ## 5. The turn
